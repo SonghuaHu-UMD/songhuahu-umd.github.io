@@ -2,9 +2,9 @@
 title: "Modeling Usage Frequencies and Vehicle Preferences in a Large-scale Electric Vehicle Sharing System"
 collection: publications
 permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
+excerpt: ''
 date: 2020-03-12
-venue: 'Journal 1'
+venue: 'IEEE Intelligent Transportation Systems Magazine'
 paperurl: 'https://ieeexplore.ieee.org/document/9034087'
 citation: 'Hu, Songhua, Kun Xie, Xiaonian Shan, Hangfei Lin, and Xiaohong Chen. "Modeling Usage Frequencies and Vehicle Preferences in a Large-Scale Electric Vehicle Sharing System." IEEE Intelligent Transportation Systems Magazine (2020).'
 ---
