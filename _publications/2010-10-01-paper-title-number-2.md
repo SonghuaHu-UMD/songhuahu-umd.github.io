@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2010-10-01-paper-title-number-2
 excerpt: ''
 date: 2019-12-01
-venue: 'Journal 1'
+venue: 'Transportation Research Part D: Transport and Environment'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S1361920919311058'
 citation: 'Hu, Songhua, Peng Chen, Feifei Xin, and Chi Xie. "Exploring the effect of battery capacity on electric vehicle sharing programs using a simulation approach." Transportation Research Part D: Transport and Environment 77 (2019): 164-177.'
 ---
