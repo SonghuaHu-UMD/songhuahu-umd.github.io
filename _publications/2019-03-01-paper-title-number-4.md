@@ -1,5 +1,5 @@
 ---
-title: "Exploring the effect of battery capacity on electric vehicle sharing programs using a simulation approach"
+title: "Estimating traffic volume for local streets with imbalanced data"
 collection: publications
 permalink: /publication/2019-03-01-paper-title-number-4
 excerpt: ''
