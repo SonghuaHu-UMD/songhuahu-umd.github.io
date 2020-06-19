@@ -84,11 +84,11 @@ author:
   avatar           : "head1.jpg"
   bio              : "Traffic Simulation, Big-data Computing, Spatiotemporal Network"
   location         : "MD, U.S."
-  employer         : "Maryland Transportation Institute (MTI)"
+  employer         : "Maryland Transportation Institute"
   googlescholar    : "https://scholar.google.co.jp/citations?user=uVIbQyAAAAAJ&hl=en"
   email            : "hsonghua@UMD.EDU"
-  researchgate     :  "https://www.researchgate.net/profile/Songhua_Hu2"
-  zhihu            :  "https://www.zhihu.com/people/hu-song-hua-39"
+  researchgate     : "https://www.researchgate.net/profile/Songhua_Hu2"
+  zhihu            : "https://www.zhihu.com/people/hu-song-hua-39"
   uri              :
   bitbucket        :
   codepen          :
@@ -105,7 +105,7 @@ author:
   orcid            : "https://orcid.org/0000-0002-0731-3080"
   pinterest        :
   soundcloud       :
-  stackoverflow    : "https://stackoverflow.com/users/10863091/songhua-hu"
+  stackoverflow    : "users/10863091/songhua-hu"
   steam            :
   tumblr           :
   vine             :
