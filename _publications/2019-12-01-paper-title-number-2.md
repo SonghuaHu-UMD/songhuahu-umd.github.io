@@ -1,7 +1,7 @@
 ---
 title: "Exploring the effect of battery capacity on electric vehicle sharing programs using a simulation approach"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/2019-12-01-paper-title-number-2
 excerpt: ''
 date: 2019-12-01
 venue: 'Transportation Research Part D: Transport and Environment'

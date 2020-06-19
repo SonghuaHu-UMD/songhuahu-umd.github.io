@@ -1,7 +1,7 @@
 ---
 title: "Modeling Usage Frequencies and Vehicle Preferences in a Large-scale Electric Vehicle Sharing System"
 collection: publications
-permalink: /publication/2015-10-01-paper-title-number-3
+permalink: /publication/2020-03-12-paper-title-number-3
 excerpt: ''
 date: 2020-03-12
 venue: 'IEEE Intelligent Transportation Systems Magazine'

@@ -1,7 +1,7 @@
 ---
 title: "Promoting carsharing attractiveness and efficiency: An exploratory analysis"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2018-12-01-paper-title-number-1
 excerpt: ''
 date: 2018-12-01
 venue: 'Transportation Research Part D: Transport and Environment'
