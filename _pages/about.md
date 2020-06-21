@@ -41,24 +41,28 @@ Education
 
 Work experience
 ======
-* 2019: Graduate Research Assistant
+* **2019**: Graduate Research Assistant
   * Maryland Transportation Institute
-* Spring 2019: Data Scientist
+* **Spring 2019**: Data Scientist
   * Shanghai Electric Vehicle Public Data Collecting, Monitoring and Research Center (上海市新能源汽车公共数据采集与监测研究中心)
-* 2018: Data Scientist
+* **2018**: Data Scientist
   * Shanghai International Motor City (group) co. Ltd, EVCARD (上海国际汽车城(集团)有限公司, 环球车享汽车租赁有限公司)
-* Summer 2017: Data Scientist
+* **Summer 2017**: Data Scientist
   * Shenzhen Urban Transport Planning Center (深圳市城市交通规划设计研究中心)
-* Summer 2016: Traffic Simulation Engineer
+* **Summer 2016**: Traffic Simulation Engineer
   * Wuhan Transport Planning & Design Co., Ltd (武汉市交通规划设计有限公司)
 
  
 Skills
 ======
-* **Programming Language**: Python, Spark, R, Matlab, SQL, C++, VB.
-* **Traffic Simulation**: Vissim, TransCAD, Synchro, AnyLogic, DTALite.
-* **Spatial analysis**: ArcGIS, Gephi, Geopandas.
-* **Cloud Computing**: AWS-EMR, AWS-EC2.
+* **Programming Language**
+    * Python, Spark, R, Matlab, SQL, Html, C++, VB.
+* **Traffic Simulation**
+    * Vissim, TransCAD, Synchro, AnyLogic, DTALite.
+* **Spatial analysis**
+    * ArcGIS, Gephi, Geopandas.
+* **Cloud Computing**
+    * AWS-EMR, AWS-EC2.
 
 Awards
 ======
