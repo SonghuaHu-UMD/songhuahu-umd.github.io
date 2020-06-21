@@ -8,7 +8,8 @@ tags:
   - category2
 ---
 
-###Coming soon! 
+Coming soon!
+------
 
-This page is still blank now. I am currently writing blogs on [Zhihu] (https://zhuanlan.zhihu.com/songhuahu) in Chinese, 
+I am currently writing blogs on [Zhihu] (https://zhuanlan.zhihu.com/songhuahu) in Chinese, 
 and I am planning to write my future blogs in English and posted them on this website.
