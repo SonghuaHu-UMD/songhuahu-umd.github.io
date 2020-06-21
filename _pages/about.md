@@ -106,4 +106,4 @@ Peng Chen and **Songhua Hu**, 2020.
 
 For more info
 ------
-For more information you can also visit my blog in [Zhihu](https://zhuanlan.zhihu.com/songhuahu).
+For more information please visit my blog in [Zhihu](https://zhuanlan.zhihu.com/songhuahu).
