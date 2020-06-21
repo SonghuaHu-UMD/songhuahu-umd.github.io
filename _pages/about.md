@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hello! My name is Songhua Hu. Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/), Department of Civil & Environmental Engineering, University of Maryland, College Park. 
+Hello! My name is Songhua Hu, a first-year Ph.D. student at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
+My supervisor is Dr. [Lei Zhang](https://lei.umd.edu/).
+Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019. My research interests focus on Big data and cloud computing, Smart cities and shared mobility, Statistics modeling and deep learning, Dynamic spatiotemporal network, and Integrated multi-modal traffic simulation. 
 
 Research Interests
@@ -26,10 +28,10 @@ I am now interested in comparing different shared mobility systems across the U.
 I am working with a team from Maryland Robotics Center to integrate the e-scooter into Vissim based on social force models.
 
 ### Dynamic spatiotemporal network
-My Ph.D. career will mainly focus on the implement of network theory into human mobility. My current research efforts include three folds.
-First, the visualization, quantification, and identification of dynamic human movement network; 
-Second, the combination of Long Short Term Memory networks and graph convolutional networks (LSTM-GCN);
-Third, the implement of cloud-based distributed spatiotemporal computing framework.
+My Ph.D. career mainly focuses on the implement of network theory into human mobility. My current research efforts include three folds.
+First, the visualization, quantification, and identification of dynamic human movement network.
+Second, the combination of Long Short Term Memory networks and graph convolutional networks (LSTM-GCN).
+Third, the implement of cloud-based distributed computing technology into large-scale spatiotemporal computation.
 
 Education
 ======
@@ -53,10 +55,10 @@ Work experience
  
 Skills
 ======
-* Programming Language: Python, Spark, R, Matlab, SQL, C++, VB.
-* Traffic Simulation: Vissim, TransCAD, Synchro, AnyLogic, DTALite.
-* Spatial analysis: ArcGIS, Gephi, Geopandas.
-* Cloud Computing: AWS-EMR, AWS-EC2.
+* **Programming Language**: Python, Spark, R, Matlab, SQL, C++, VB.
+* **Traffic Simulation**: Vissim, TransCAD, Synchro, AnyLogic, DTALite.
+* **Spatial analysis**: ArcGIS, Gephi, Geopandas.
+* **Cloud Computing**: AWS-EMR, AWS-EC2.
 
 Awards
 ======
