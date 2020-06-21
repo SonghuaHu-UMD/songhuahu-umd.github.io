@@ -83,6 +83,27 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
 
+Working Papers
+======
+* **Do Personalized Economic Incentives Work in Promoting Shared Mobility? Examining Customer Churn Using a Time-Varying Cox Model.** 
+Songhua Hu, Peng Chen, and Xiaohong Chen, 2019.
+    * Under Review at *Transportation Research Part C: Emerging Technologies*
+* **A Big-Data Driven Approach to Analyzing and Modeling Human Mobility Trend under Non-Pharmaceutical Interventions during COVID-19 Pandemic.** 
+Songhua Hu, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang, 2020.
+    * Under Review at *Transportation Research Part C: Emerging Technologies*
+* **Predicting Shared-Car Use and Examining Nonlinear Effects Using Gradient Boosting Regression Trees.** 
+Songhua Hu, Chenfeng Xiong, and Lei Zhang, 2019.
+    * Under Review at *International Journal of Sustainable Transportation*
+* **Mobile device data reveals mobility increase after partial reopening and its strong correlation to COVID-19 infections.** 
+Chenfeng Xiong, Songhua Hu, Mofeng Yang, Weiyu Luo, and Lei Zhang, 2020.
+    * Under Review at *Proceedings of the National Academy of Sciences of the United States of America*
+* **Mobile Device Location Data Reveals Human Mobility Response to Stay-at-Home Orders during the COVID-19 Pandemic in the U.S.** 
+Chenfeng Xiong, Songhua Hu, Mofeng Yang, Hannah Younes, Weiyu Luo, Sepehr Ghader, and Lei Zhang, 2020.
+    * Under Review at *Journal of the Royal Society Interface*
+* **Complementary or Competing? Studying the Relationship Between E-Scooter Sharing and Bikesharing.** 
+Peng Chen and Songhua Hu, 2020.
+    * Under Review at *Journal of Planning Education and Research*
+
 For more info
 ------
 For more information you can also visit my blog in [Zhihu](https://zhuanlan.zhihu.com/songhuahu).
