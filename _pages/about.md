@@ -83,4 +83,4 @@ Talks
 
 For more info
 ------
-For more information you can also visit my blog in Zhihu [here](https://zhuanlan.zhihu.com/songhuahu) 
+For more information you can also visit my blog in [Zhihu](https://zhuanlan.zhihu.com/songhuahu).
