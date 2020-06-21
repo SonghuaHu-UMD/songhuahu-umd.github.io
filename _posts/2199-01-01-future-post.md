@@ -11,5 +11,4 @@ tags:
 Coming soon!
 ------
 
-I am currently writing blogs on [Zhihu] (https://zhuanlan.zhihu.com/songhuahu) in Chinese, 
-and I am planning to write my future blogs in English and posted them on this website.
+I am currently writing blogs on [Zhihu](https://zhuanlan.zhihu.com/songhuahu) in Chinese. I am planning to write my future blogs in English and posted them on this website.
