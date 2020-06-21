@@ -12,7 +12,9 @@ Hello! My name is Songhua Hu, a first-year Ph.D. student at Department of Civil 
 My supervisor is Dr. [Lei Zhang](https://lei.umd.edu/).
 Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019. My research interests focus on Big data and cloud computing, Smart cities and shared mobility, Statistics modeling and deep learning, Dynamic spatiotemporal network, and Integrated multi-modal traffic simulation. 
+
 ***
+
 Research Interests
 ======
 ### Integrated multi-modal traffic simulation
@@ -32,13 +34,17 @@ My Ph.D. career mainly focuses on the implement of network theory into human mob
 First, the visualization, quantification, and identification of dynamic human movement network.
 Second, the combination of Long Short Term Memory networks and graph convolutional networks (LSTM-GCN).
 Third, the implement of cloud-based distributed computing technology into large-scale spatiotemporal computation.
+
 ***
+
 Education
 ======
 * Ph.D. student, University of Maryland, College Park.
 * M.S., Tongji University, 2019.
 * B.S., Huazhong University of Science and Technology, 2016.
+
 ***
+
 Work experience
 ======
 * **2019**: Graduate Research Assistant
@@ -51,8 +57,9 @@ Work experience
   * Shenzhen Urban Transport Planning Center (深圳市城市交通规划设计研究中心)
 * **Summer 2016**: Traffic Simulation Engineer
   * Wuhan Transport Planning & Design Co., Ltd (武汉市交通规划设计有限公司)
+
 ***
- 
+
 Skills
 ======
 * **Programming Language**
@@ -63,6 +70,7 @@ Skills
     * ArcGIS, Gephi, Geopandas.
 * **Cloud Computing**
     * AWS-EMR, AWS-EC2.
+
 ***
 
 Awards
@@ -77,13 +85,15 @@ Awards
 * National Scholarship, 2013.
 
 ***
+
 Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
  
- ***
+***
+
 Talks
 ======
   <ul>{% for post in site.talks %}
@@ -91,6 +101,7 @@ Talks
   {% endfor %}</ul>
 
 ***
+
 Under Review
 ======
 * Do Personalized Economic Incentives Work in Promoting Shared Mobility? Examining Customer Churn Using a Time-Varying Cox Model.
@@ -113,6 +124,7 @@ Peng Chen and **Songhua Hu**, 2020.
     * Under Review at *Journal of Planning Education and Research*
 
 ***
+
 For more info
 ------
 For more information please visit my blog in [Zhihu](https://zhuanlan.zhihu.com/songhuahu).
