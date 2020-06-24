@@ -66,10 +66,12 @@ Skills
     * Python, Spark, R, Matlab, SQL, Html, C++, VB.
 * **Traffic Simulation**
     * Vissim, TransCAD, Synchro, AnyLogic, DTALite.
-* **Spatial analysis**
+* **Spatial Analysis**
     * ArcGIS, Gephi, Geopandas.
 * **Cloud Computing**
     * AWS-EMR, AWS-EC2.
+* **Machine Learning**
+    * XGBoost, GBM, RF, LSTM, GCN.
 
 ***
 
