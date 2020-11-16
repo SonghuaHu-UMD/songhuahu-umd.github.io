@@ -117,6 +117,8 @@ Chenfeng Xiong, **Songhua Hu**, Mofeng Yang, Hannah Younes, Weiyu Luo, Sepehr Gh
 * Complementary or Competing? Studying the Relationship Between E-Scooter Sharing and Bikesharing.
 Peng Chen and **Songhua Hu**, 2020.
     * Under Review at *Journal of Planning Education and Research*
+
+
 ***
 
 For more info
