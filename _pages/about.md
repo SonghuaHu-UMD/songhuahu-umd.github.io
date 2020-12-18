@@ -114,7 +114,12 @@ Under Review
 * Complementary or Competing? Studying the Relationship Between E-Scooter Sharing and Bikesharing.
 Peng Chen and **Songhua Hu**, 2020.
     * Under Review at *Journal of Planning Education and Research*
-  
+* Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic.
+**Songhua Hu**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang, 2020.
+    * Under Review at *Journal of Transport Geography*
+* Examining the relationship between scooter sharing and bikesharing: A joint structural equation modeling approach.
+Yi Jing, **Songhua Hu**, Hangfei Lin, 2020.
+    * Under Review at *Transportation Letters*
 ***
 
 For more info
