@@ -26,7 +26,6 @@ Currently, I am working on the development of an integrated multi-modal traffic 
 I have one-year internship in EVCARD, the biggest carsharing program in China, as a data science to help support station placement and vehicle relocation. 
 I have published several papers related to carsharing based on the data from EVCARD. 
 I am now interested in comparing different shared mobility systems across the U.S., and the emerging shared micromobility like e-scooters. 
-I am working with a team from Maryland Robotics Center to integrate the e-scooter into Vissim based on social force models.
 
 ### Dynamic spatiotemporal network
 My Ph.D. career mainly focuses on the implement of network theory into human mobility. My current research efforts include three folds.
@@ -62,7 +61,7 @@ Work experience
 Skills
 ======
 * **Programming Language**
-    * Python, Spark, R, Matlab, SQL, Html, C++, VB.
+    * Python, Spark, R, Matlab, SQL, Html, VB.
 * **Traffic Simulation**
     * Vissim, TransCAD, Synchro, AnyLogic, DTALite.
 * **Spatial Analysis**
@@ -70,7 +69,7 @@ Skills
 * **Cloud Computing**
     * AWS-EMR, AWS-EC2.
 * **Machine Learning**
-    * XGBoost, GBM, RF, LSTM, GCN.
+    * XGBoost, GBM, LSTM, GCN.
 
 ***
 
