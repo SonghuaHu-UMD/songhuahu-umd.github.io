@@ -120,6 +120,8 @@ Peng Chen and **Songhua Hu**, 2020.
 * Examining the relationship between scooter sharing and bikesharing: A joint structural equation modeling approach.
 Yi Jing, **Songhua Hu**, Hangfei Lin, 2020.
     * Under Review at *Transportation Letters*
+  
+
 ***
 
 For more info
