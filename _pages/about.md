@@ -20,7 +20,7 @@ Research Interests
 I have six-years experiences in traffic simulation. 
 I am experienced in Vissim, Synchro, TransCAD, and AnyLogic. 
 I have leaded various micro and macro traffic simulation projects in different cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan. 
-Currently, I am working on the development of an integrated multi-modal traffic simulation framework driven by the agent-based deep learning methods and the high-speed dynamic traffic assignment tools.
+Currently, I am working on the development of an integrated multi-modal traffic simulation framework driven by agent-based deep learning and high-speed dynamic traffic assignment tools.
 
 ### Smart cities and shared mobility
 I have one-year internship in EVCARD, the biggest carsharing program in China, as a data science to help support station placement and vehicle relocation. 
