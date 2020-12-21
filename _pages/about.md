@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! My name is Songhua Hu, a second-year Ph.D. student at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
+Hello! My name is Songhua Hu(胡松华), a second-year Ph.D. student at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
 My supervisor is Dr. Lei Zhang. Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019. My research interests focus on Big data and cloud computing, Smart cities and shared mobility, Statistics modeling and deep learning, Dynamic spatiotemporal network, and Integrated multi-modal traffic simulation. 
 
@@ -25,7 +25,7 @@ Currently, I am working on the development of an integrated multi-modal traffic 
 ### Smart cities and shared mobility
 I have one-year internship in EVCARD, the biggest carsharing program in China, as a data science to help support station placement and vehicle relocation. 
 I have published several papers related to carsharing based on the data from EVCARD. 
-I am now interested in comparing different shared mobility systems across the U.S., and the emerging shared micromobility like e-scooters. 
+I am now interested in the mixed shared mobility ecosystem across the U.S., and the emerging shared micromobility like e-scooters. 
 
 ### Dynamic spatiotemporal network
 My Ph.D. career mainly focuses on the implement of network theory into human mobility. My current research efforts include three folds.
