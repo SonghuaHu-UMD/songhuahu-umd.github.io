@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! My name is Songhua Hu(胡松华), a second-year Ph.D. student at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
+Cheers! My name is Songhua Hu(胡松华), a second-year Ph.D. student at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
 My supervisor is Dr. Lei Zhang. Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019. My research interests focus on Big data and cloud computing, Smart cities and shared mobility, Statistics modeling and deep learning, Dynamic spatiotemporal network, and Integrated multi-modal traffic simulation. 
 
