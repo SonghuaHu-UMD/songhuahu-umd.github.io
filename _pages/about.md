@@ -107,20 +107,13 @@ Under Review
 * Do Personalized Economic Incentives Work in Promoting Shared Mobility? Examining Customer Churn Using a Time-Varying Cox Model.
 **Songhua Hu**, Peng Chen, and Xiaohong Chen, 2019.
     * Under Review at *Transportation Research Part C: Emerging Technologies*
-* A Big-Data Driven Approach to Analyzing and Modeling Human Mobility Trend under Non-Pharmaceutical Interventions during COVID-19 Pandemic. 
-**Songhua Hu**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang, 2020.
-    * Under Review at *Transportation Research Part C: Emerging Technologies*
 * Complementary or Competing? Studying the Relationship Between E-Scooter Sharing and Bikesharing.
 Peng Chen and **Songhua Hu**, 2020.
     * Under Review at *Journal of Planning Education and Research*
 * Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic.
 **Songhua Hu**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang, 2020.
     * Under Review at *Journal of Transport Geography*
-* Examining the relationship between scooter sharing and bikesharing: A joint structural equation modeling approach.
-Yi Jing, **Songhua Hu**, Hangfei Lin, 2020.
-    * Under Review at *Transportation Letters*
   
-
 ***
 
 For more info
