@@ -113,7 +113,6 @@ Under Review
 * Complementary or Competing? Studying the Relationship Between E-Scooter Sharing and Bikesharing.
 Peng Chen and **Songhua Hu**, 2019.
     * Under Review at *Journal of Planning Education and Research*
-
   
 ***
 
