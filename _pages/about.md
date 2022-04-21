@@ -13,19 +13,20 @@ My supervisor is Dr. Lei Zhang and Dr. Chenfeng Xiong. Currently, I work as a gr
 I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019.
 My research mainly focuses on leveraging emerging multisource transportation-related big data, such as mobile device location data, social media, mobility service transactions, transit smart-card data, and automatic road traffic sensors records, 
 to quantify population-representative and near-real-time human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and estimate multimodal, high-resolution travel demand.
+
 ***
 
 Research Interests
 ======
 ### Big-data-driven human mobility modelling
-I propose a big-data-driven travel demand modelling framework to model, predict, and simulate large-scale human movement aggregately and disaggregately, leveraging massive location-based services (LBS) data, integrating a set of statistical methods, deep learning technologies, and simulation tools.
-I introduce a spatiotemporal graph neural network (STGNN) to model and predict PA/OD time-series matrices. 
+My PhD career focuses on building a big-data-driven travel demand modelling framework to model, predict, and simulate large-scale human movement aggregately and disaggregately, leveraging massive location-based services (LBS) data, integrating a set of statistical methods, deep learning technologies, and simulation tools.
+Specifically, I introduce a spatiotemporal graph neural network (STGNN) to model and predict PA/OD time-series matrices. 
 I propose a temporal hierarchical transformer (THT) to learn and predict individual-level trips in future-year scenarios. 
-I finally integrate the aforementioned results with transport simulation tools to achieve a complete travel demand modelling process.
+I finally integrate the prediction with transport simulation tools to achieve a complete travel demand modelling process.
 
 ### Integrated modeling transport and epidemiology
-I build a range of integrated mathematic models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission during the COVID-19 pandemic, 
-controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
+During the COVID-19 pandemic, I work on building integrated mathematical and statistical models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
+
 
 ### Smart cities and shared mobility
 I have one-year internship in EVCARD, the biggest carsharing program in China, as a data scientist to help support station placement and vehicle relocation. 
