@@ -32,7 +32,7 @@ Related work has lead to several high-caliber publications, including one [PNAS 
 <img src="images/F21.png" width="900" title='Framework'/>
 
 ### Mobility as a service (MaaS) and shared mobility
-I have worked on shared mobility and MaaS since my master career with [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) and [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) from Tongji University and [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF.
+I have worked on shared mobility and MaaS since my master career, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm), [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) from Tongji University, and [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF.
 I investigate various emerging shared mobility systems in China and US to provide empirical evidence on who is using shared mobility, 
 how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to prevent users from churning, 
 and how to encourage the integration of various forms of transport services. 
