@@ -27,19 +27,20 @@ I finally integrate the prediction with transport simulation tools like DTALite 
 
 ### Integrated modeling transport and epidemiology
 During the COVID-19 pandemic, I work on building integrated mathematical and statistical models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
-
-
+Related work has lead to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 
 ### Smart cities and shared mobility
-I have one-year internship in EVCARD, the biggest carsharing program in China, as a data scientist to help support station placement and vehicle relocation. 
-I have published several papers related to carsharing based on the data from EVCARD. 
-I am now interested in the mixed shared mobility ecosystem across the U.S., and the emerging shared micromobility like e-scooters. 
+I work on shared mobility and MaaS since my master career with [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF and Prof. Hangfei Lin and Prof. Xiaohong Chen from Tongji University.
+I investigate various emerging shared mobility systems (carsharing, bikesharing, and scooter sharing) in China and US to provide empirical evidence on who is using shared mobility, 
+how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to attract more users and prevent users from churning, 
+and how to encourage the integration of various forms of transport services such as driving, public transit, shared mobility, and walking/biking.
+By employing innovative machine learning, statistical and simulation technologies, my research strengthens the understanding of nonlinear relationships between shared mobility demand and various determinants.
 
 ### Integrated multi-modal traffic simulation
 I have six-years experiences in traffic simulation.
 I am experienced in Vissim, Synchro, TransCAD, and AnyLogic.
-I have leaded various micro and macro traffic simulation projects in different cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan.
-Currently, I am also working with [Prof.Xuesong Zhou](https://isearch.asu.edu/profile/2182101) from ASU on the development of an integrated multi-modal traffic simulation framework driven by agent-based modelling and dynamic traffic assignment.
+I have leaded various micro and macro traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
+Currently, I am also working with [Prof.Xuesong Zhou](https://isearch.asu.edu/profile/2182101) from ASU on the development of multi-modal traffic simulation framework integrating agent-based modelling and dynamic traffic assignment.
 
 ***
 
