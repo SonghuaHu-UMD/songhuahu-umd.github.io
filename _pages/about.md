@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
-My supervisor is Dr.[Lei Zhang] (https://mti.umd.edu/national-transportation-center-contact-information) and Dr.[Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
+My supervisor is [Prof.Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information) and [Prof.Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019.
 My research mainly focuses on leveraging emerging multisource transportation-related big data, such as mobile device location data, social media, mobility service transactions, transit smart-card data, and automatic road traffic sensors records, 
 to quantify population-representative and near-real-time human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and estimate multimodal, high-resolution travel demand.
@@ -19,13 +19,15 @@ to quantify population-representative and near-real-time human mobility, analyze
 Research Interests
 ======
 ### Big-data-driven human mobility modelling
-My PhD career focuses on building a big-data-driven travel demand modelling framework to model, predict, and simulate large-scale human movement aggregately and disaggregately, leveraging massive location-based services (LBS) data, integrating a set of statistical methods, deep learning technologies, and simulation tools.
+My PhD career focuses on building a big-data-driven travel demand modelling framework to model, predict, and simulate large-scale human movement aggregately and disaggregately, leveraging massive location-based services (LBS) data, 
+integrating a set of statistical methods, deep learning models, simulation tools, and cloud-computing technologies.
 Specifically, I introduce a spatiotemporal graph neural network (STGNN) to model and predict PA/OD time-series matrices. 
 I propose a temporal hierarchical transformer (THT) to learn and predict individual-level trips in future-year scenarios. 
-I finally integrate the prediction with transport simulation tools to achieve a complete travel demand modelling process.
+I finally integrate the prediction with transport simulation tools like DTALite and MATSim to achieve a complete travel demand modelling process.
 
 ### Integrated modeling transport and epidemiology
 During the COVID-19 pandemic, I work on building integrated mathematical and statistical models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
+
 
 
 ### Smart cities and shared mobility
@@ -37,7 +39,7 @@ I am now interested in the mixed shared mobility ecosystem across the U.S., and 
 I have six-years experiences in traffic simulation.
 I am experienced in Vissim, Synchro, TransCAD, and AnyLogic.
 I have leaded various micro and macro traffic simulation projects in different cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan.
-Currently, I am also working with Dr.[Xuesong Zhou](https://isearch.asu.edu/profile/2182101) from ASU on the development of an integrated multi-modal traffic simulation framework driven by agent-based modelling and dynamic traffic assignment.
+Currently, I am also working with [Prof.Xuesong Zhou](https://isearch.asu.edu/profile/2182101) from ASU on the development of an integrated multi-modal traffic simulation framework driven by agent-based modelling and dynamic traffic assignment.
 
 ***
 
