@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Songhua Hu"
-  avatar           : "head3.jpg"
+  avatar           : "head4.jpg"
   bio              : "Traffic Simulation, Big-data Computing, Spatiotemporal Network"
   location         : "MD, U.S."
   employer         : "Maryland Transportation Institute"
@@ -308,4 +308,4 @@ compress_html:
   ignore:
     envs: development
 
-theme: jekyll-theme-slate
+#theme: jekyll-theme-slate
