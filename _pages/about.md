@@ -10,7 +10,6 @@ redirect_from:
 
 Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
 My supervisor is [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information) and [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
-I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019.
 My research mainly focuses on leveraging emerging multisource transportation-related big data, such as mobile device location data, social media, mobility service transactions, transit smart-card data, and automatic road traffic sensors records, 
 to quantify population-representative and near-real-time human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and estimate multimodal, high-resolution travel demand.
 
@@ -30,7 +29,7 @@ During the COVID-19 pandemic, I work on building integrated mathematical and sta
 Related work has lead to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 
 ### Smart cities and shared mobility
-I work on shared mobility and MaaS since my master career with [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF and Prof. Hangfei Lin and Prof. Xiaohong Chen from Tongji University.
+I have worked on shared mobility and MaaS since my master career with [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF and [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) and [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) from Tongji University.
 I investigate various emerging shared mobility systems (carsharing, bikesharing, and scooter sharing) in China and US to provide empirical evidence on who is using shared mobility, 
 how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to attract more users and prevent users from churning, 
 and how to encourage the integration of various forms of transport services such as driving, public transit, shared mobility, and walking/biking.
