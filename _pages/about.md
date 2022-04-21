@@ -33,7 +33,7 @@ I have worked on shared mobility and MaaS since my master career with [Prof. Han
 I investigate various emerging shared mobility systems in China and US to provide empirical evidence on who is using shared mobility, 
 how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to prevent users from churning, 
 and how to encourage the integration of various forms of transport services. 
-After joining UMD, I am now the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to provide personalized, dynamic incentives to travelers in the nation’s capital region.
+After joining UMD, I am the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to provide personalized incentives to travelers in DC area.
 
 ### Integrated multi-modal traffic simulation
 I have six-years experiences in traffic simulation.
