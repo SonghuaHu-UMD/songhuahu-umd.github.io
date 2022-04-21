@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
-My supervisor is Dr. Lei Zhang and Dr. Chenfeng Xiong. Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
+My supervisor is Dr.[Lei Zhang] (https://mti.umd.edu/national-transportation-center-contact-information) and Dr.[Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019.
 My research mainly focuses on leveraging emerging multisource transportation-related big data, such as mobile device location data, social media, mobility service transactions, transit smart-card data, and automatic road traffic sensors records, 
 to quantify population-representative and near-real-time human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and estimate multimodal, high-resolution travel demand.
@@ -37,7 +37,7 @@ I am now interested in the mixed shared mobility ecosystem across the U.S., and 
 I have six-years experiences in traffic simulation.
 I am experienced in Vissim, Synchro, TransCAD, and AnyLogic.
 I have leaded various micro and macro traffic simulation projects in different cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan.
-Currently, I am also working with Dr. Xuesong Zhou from ASU on the development of an integrated multi-modal traffic simulation framework driven by agent-based modelling and dynamic traffic assignment.
+Currently, I am also working with Dr.[Xuesong Zhou](https://isearch.asu.edu/profile/2182101) from ASU on the development of an integrated multi-modal traffic simulation framework driven by agent-based modelling and dynamic traffic assignment.
 
 ***
 
