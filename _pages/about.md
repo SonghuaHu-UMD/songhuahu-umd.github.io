@@ -20,20 +20,20 @@ Research Interests
 ### Big-data-driven human mobility modelling
 My PhD career focuses on building a big-data-driven travel demand modelling framework to model, predict, and simulate large-scale human movement aggregately and disaggregately, leveraging massive location-based services (LBS) data, 
 integrating a set of statistical methods, deep learning models, simulation tools, and cloud-computing technologies.
-Specifically, I introduce a spatiotemporal graph neural network (STGNN) to model and predict PA/OD time-series matrices. 
-I propose a temporal hierarchical transformer (THT) to learn and predict individual-level trips in future-year scenarios. 
-I finally integrate the prediction with transport simulation tools like DTALite and MATSim to achieve a complete travel demand modelling process.
+I introduce a spatiotemporal graph neural network (STGNN) to predict PA/OD time-series matrices and a temporal hierarchical transformer (THT) to predict individual-level trips. 
+Predictions are integrated with transport simulation tools like DTALite and MATSim to achieve a complete travel demand modelling process.
 
 ### Integrated modeling transport and epidemiology
-During the COVID-19 pandemic, I work on building integrated mathematical and statistical models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
+During the COVID-19 pandemic, I work on building integrated mathematical and statistical models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, 
+controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
 Related work has lead to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 
 ### Smart cities and shared mobility
-I have worked on shared mobility and MaaS since my master career with [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF and [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) and [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) from Tongji University.
+I have worked on shared mobility and MaaS since my master career with[Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) and [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) from Tongji University and [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF.
 I investigate various emerging shared mobility systems (carsharing, bikesharing, and scooter sharing) in China and US to provide empirical evidence on who is using shared mobility, 
 how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to attract more users and prevent users from churning, 
 and how to encourage the integration of various forms of transport services such as driving, public transit, shared mobility, and walking/biking.
-By employing innovative machine learning, statistical and simulation technologies, my research strengthens the understanding of nonlinear relationships between shared mobility demand and various determinants.
+By employing innovative machine learning and statistical technologies, my research strengthens the understanding of nonlinear relationships between shared mobility demand and various determinants.
 
 ### Integrated multi-modal traffic simulation
 I have six-years experiences in traffic simulation.
@@ -69,7 +69,7 @@ Work experience
 Skills
 ======
 * **Programming Language**
-    * Python, PySpark, R, Matlab, SQL, Html, VB.
+    * Python, R, PySpark, Matlab, SQL, Html, VB.
 * **Traffic Simulation**
     * Vissim, TransCAD, Synchro, AnyLogic, DTALite.
 * **Spatial Analysis**
