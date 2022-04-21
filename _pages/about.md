@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Cheers! My name is Songhua Hu(胡松华), a second-year Ph.D. student at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
+Cheers! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
 My supervisor is Dr. Lei Zhang. Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019. My research interests focus on Big data and cloud computing, Smart cities and shared mobility, Statistics modeling and deep learning, Dynamic spatiotemporal network, and Integrated multi-modal traffic simulation. 
 
@@ -37,7 +37,7 @@ Third, the implement of cloud-based distributed computing technology into large-
 
 Education
 ======
-* Ph.D. student, University of Maryland, College Park.
+* Ph.D. candidate, University of Maryland, College Park.
 * M.S., Tongji University, 2019.
 * B.S., Huazhong University of Science and Technology, 2016.
 
@@ -61,7 +61,7 @@ Work experience
 Skills
 ======
 * **Programming Language**
-    * Python, Spark, R, Matlab, SQL, Html, VB.
+    * Python, PySpark, R, Matlab, SQL, Html, VB.
 * **Traffic Simulation**
     * Vissim, TransCAD, Synchro, AnyLogic, DTALite.
 * **Spatial Analysis**
@@ -75,14 +75,16 @@ Skills
 
 Awards
 ======
-* The Graduate School's Dean’s Fellowship at University of Maryland, College Park, 2019.
-* The Excellent Master Scholarship of Tongji University, 2018.
-* The Second Price in China Big Data Innovation Competition, 2017.
-* Social Responsibility Award in BMW Next Mobility Youth Camp, 2016.
-* Pacemaker to Merit Student of Huazhong University of Science and Technology, 2015.
-* National Encouragement scholarship, 2015.
-* National Scholarship, 2014.
-* National Scholarship, 2013.
+* Outstanding Graduate Assistant (top 2%), University of Maryland, College Park, 2021.
+* CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
+* The Graduate School's Dean’s Fellowship, University of Maryland, College Park, 2019.
+* The Excellent Master Scholarship, Tongji University, 2018.
+* Second Price, China Big Data Innovation Competition, 2017.
+* Social Responsibility Award, BMW Next Mobility Youth Camp, 2016.
+* Pacemaker to Merit Student, Huazhong University of Science and Technology, 2015.
+* National Encouragement scholarship, Huazhong University of Science and Technology, 2015.
+* National Scholarship, Huazhong University of Science and Technology, 2014.
+* National Scholarship, Huazhong University of Science and Technology, 2013.
 
 ***
 
@@ -104,12 +106,15 @@ Talks
 
 Under Review
 ======
-* Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic.
-**Songhua Hu**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang, 2020.
-    * Under Review at *Journal of Transport Geography*
-* Do Personalized Economic Incentives Work in Promoting Shared Mobility? Examining Customer Churn Using a Time-Varying Cox Model.
-**Songhua Hu**, Peng Chen, and Xiaohong Chen, 2019.
+* High-Dimensional Population Flow Time Series Forecasting Via an Interpretable Hierarchical Transformer.
+**Songhua Hu**, Chenfeng Xiong, 2022.
     * Under Review at *Transportation Research Part C: Emerging Technologies*
+* Vaccination, Mobility, and COVID-19 Health Outcomes: Empirical Comparison Before and During the Outbreak of SARS‐Cov‐2 B.1.1.529 (Omicron) Variant.
+**Songhua Hu**, Chenfeng Xiong, Xin Yuan, Xuqiu Wang, 2022.
+    * Under Review at *Health & Place*
+* COVID-19 Vaccine Hesitancy Cannot Fully Explain Disparities in Vaccination Coverage across the Contiguous United States.
+**Songhua Hu**, Chenfeng Xiong, 2022.
+    * Under Review at *Social science & medicine*
 * Complementary or Competing? Studying the Relationship Between E-Scooter Sharing and Bikesharing.
 Peng Chen and **Songhua Hu**, 2019.
     * Under Review at *Journal of Planning Education and Research*
