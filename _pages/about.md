@@ -22,6 +22,7 @@ My PhD career focuses on building a big-data-driven travel demand modelling fram
 integrating a set of statistical methods, deep learning models, simulation tools, and cloud-computing technologies.
 I introduce a spatiotemporal graph neural network (STGNN) to predict PA/OD time-series matrices and a temporal hierarchical transformer (THT) to predict individual-level trips. 
 Predictions are integrated with transport simulation tools like DTALite and MATSim to achieve a complete travel demand modelling process.
+<img src="images/head1.jpg" width="900" title='Framework'/>
 
 ### Integrated modelling transport and epidemiology
 During the COVID-19 pandemic, I work on building integrated mathematical and statistical models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, 
