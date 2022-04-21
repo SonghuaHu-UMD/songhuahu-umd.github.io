@@ -36,12 +36,14 @@ I investigate various emerging shared mobility systems in China and US to provid
 how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to prevent users from churning, 
 and how to encourage the integration of various forms of transport services. 
 After joining UMD, I am the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to provide personalized incentives to travelers in DC area.
+<img src="images/F3.png" width="900" title='Framework'/>
 
 ### Integrated multi-modal traffic simulation
 I have six-years experiences in traffic simulation.
 I am experienced in Vissim, Synchro, TransCAD, and AnyLogic.
 I have leaded various micro and macro traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
 Currently, I am also working with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) from ASU on the development of multi-modal traffic simulation framework integrating agent-based modelling and dynamic traffic assignment.
+<img src="images/F4.png" width="900" title='Framework'/>
 
 ***
 
