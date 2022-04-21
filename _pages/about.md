@@ -22,12 +22,13 @@ My PhD career focuses on building a big-data-driven travel demand modelling fram
 integrating a set of statistical methods, deep learning models, simulation tools, and cloud-computing technologies.
 I introduce a spatiotemporal graph neural network (STGNN) to predict PA/OD time-series matrices and a temporal hierarchical transformer (THT) to predict individual-level trips. 
 Predictions are integrated with transport simulation tools like DTALite and MATSim to achieve a complete travel demand modelling process.
-<img src="images/F1.jpg" width="900" title='Framework'/>
+<img src="images/F1.png" width="900" title='Framework'/>
 
 ### Integrated modelling transport and epidemiology
 During the COVID-19 pandemic, I work on building integrated mathematical and statistical models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, 
 controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
 Related work has lead to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
+<img src="images/F2.png" width="900" title='Framework'/>
 
 ### Mobility as a service (MaaS) and shared mobility
 I have worked on shared mobility and MaaS since my master career with [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) and [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) from Tongji University and [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF.
