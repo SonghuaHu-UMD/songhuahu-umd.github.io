@@ -28,13 +28,12 @@ During the COVID-19 pandemic, I work on building integrated mathematical and sta
 controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
 Related work has lead to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 
-### Smart cities and shared mobility
+### Mobility as a service (MaaS) and shared mobility
 I have worked on shared mobility and MaaS since my master career with [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) and [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) from Tongji University and [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF.
 I investigate various emerging shared mobility systems in China and US to provide empirical evidence on who is using shared mobility, 
 how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to prevent users from churning, 
 and how to encourage the integration of various forms of transport services.
 I am also the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to provide personalized, dynamic incentives to travelers in the nation’s capital region.
-
 
 ### Integrated multi-modal traffic simulation
 I have six-years experiences in traffic simulation.
@@ -46,7 +45,7 @@ Currently, I am also working with [Prof. Xuesong Zhou](https://isearch.asu.edu/p
 
 Education
 ======
-* Ph.D. candidate, University of Maryland, College Park, 2023 (Expected).
+* Ph.D., University of Maryland, College Park, 2023 (Expected).
 * M.S., Tongji University, 2019.
 * B.S., Huazhong University of Science and Technology, 2016.
 
