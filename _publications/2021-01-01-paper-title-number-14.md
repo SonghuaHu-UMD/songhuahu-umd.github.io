@@ -1,0 +1,12 @@
+---
+title: "Do racial and ethnic disparities in following stay-at-home orders influence COVID-19 health outcomes? A mediation analysis approach"
+collection: publications
+permalink: /publication/2021-01-01-paper-title-number-14
+excerpt: ''
+date: 2021-11-11
+venue: 'Plos one'
+paperurl: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0259803'
+citation: 'Hu, Songhua, Weiyu Luo, Aref Darzi, Yixuan Pan, Guangchen Zhao, Yuxuan Liu, and Chenfeng Xiong. "Do racial and ethnic disparities in following stay-at-home orders influence COVID-19 health outcomes? A mediation analysis approach." PloS one 16, no. 11 (2021): e0259803.'
+---
+Racial/ethnic disparities are among the top-selective underlying determinants associated with the disproportional impact of the COVID-19 pandemic on human mobility and health outcomes. This study jointly examined county-level racial/ethnic differences in compliance with stay-at-home orders and COVID-19 health outcomes during 2020, leveraging two-year geo-tracking data of mobile devices across ~4.4 million point-of-interests (POIs) in the contiguous United States. Through a set of structural equation modeling, this study quantified how racial/ethnic differences in following stay-at-home orders could mediate COVID-19 health outcomes, controlling for state effects, socioeconomics, demographics, occupation, and partisanship. Results showed that counties with higher Asian populations decreased most in their travel, both in terms of reducing their overall POIs’ visiting and increasing their staying home percentage. Moreover, counties with higher White populations experienced the lowest infection rate, while counties with higher African American populations presented the highest case-fatality ratio. Additionally, control variables, particularly partisanship, median household income, percentage of elders, and urbanization, significantly accounted for the county differences in human mobility and COVID-19 health outcomes. Mediation analyses further revealed that human mobility only statistically influenced infection rate but not case-fatality ratio, and such mediation effects varied substantially among racial/ethnic compositions. Last, robustness check of racial gradient at census block group level documented consistent associations but greater magnitude. Taken together, these findings suggest that US residents’ responses to COVID-19 are subject to an entrenched and consequential racial/ethnic divide.
+[Download paper here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0259803)
