@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hi, Welcome to my website!"
+title: "Welcome to my website!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,36 +8,41 @@ redirect_from:
   - /about.html
 ---
 
-Cheers! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
-My supervisor is Dr. Lei Zhang. Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
-I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019. My research interests focus on Big data and cloud computing, Smart cities and shared mobility, Statistics modeling and deep learning, Dynamic spatiotemporal network, and Integrated multi-modal traffic simulation. 
-
+Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
+My supervisor is Dr. Lei Zhang and Dr. Chenfeng Xiong. Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
+I received my B.S. degree in Transportation Engineering from Huazhong University of Science and Technology in 2016 and a M.S. degree in Transportation Engineering from Tongji University in 2019.
+My research mainly focuses on leveraging emerging multisource transportation-related big data, such as mobile device location data, social media, mobility service transactions, transit smart-card data, and automatic road traffic sensors records, 
+to quantify population-representative and near-real-time human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and estimate multimodal, high-resolution travel demand.
 ***
 
 Research Interests
 ======
-### Integrated multi-modal traffic simulation
-I have six-years experiences in traffic simulation. 
-I am experienced in Vissim, Synchro, TransCAD, and AnyLogic. 
-I have leaded various micro and macro traffic simulation projects in different cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan. 
-Currently, I am working on the development of an integrated multi-modal traffic simulation framework driven by agent-based deep learning and high-speed dynamic traffic assignment tools.
+### Big-data-driven human mobility modelling
+I propose a big-data-driven travel demand modelling framework to model, predict, and simulate large-scale human movement aggregately and disaggregately, leveraging massive location-based services (LBS) data, integrating a set of statistical methods, deep learning technologies, and simulation tools.
+I introduce a spatiotemporal graph neural network (STGNN) to model and predict PA/OD time-series matrices. 
+I propose a temporal hierarchical transformer (THT) to learn and predict individual-level trips in future-year scenarios. 
+I finally integrate the aforementioned results with transport simulation tools to achieve a complete travel demand modelling process.
+
+### Integrated modeling transport and epidemiology
+I build a range of integrated mathematic models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission during the COVID-19 pandemic, 
+controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
 
 ### Smart cities and shared mobility
-I have one-year internship in EVCARD, the biggest carsharing program in China, as a data science to help support station placement and vehicle relocation. 
+I have one-year internship in EVCARD, the biggest carsharing program in China, as a data scientist to help support station placement and vehicle relocation. 
 I have published several papers related to carsharing based on the data from EVCARD. 
 I am now interested in the mixed shared mobility ecosystem across the U.S., and the emerging shared micromobility like e-scooters. 
 
-### Dynamic spatiotemporal network
-My Ph.D. career mainly focuses on the implement of network theory into human mobility. My current research efforts include three folds.
-First, the visualization, quantification, and identification of dynamic human movement network.
-Second, the combination of Long Short Term Memory networks and graph convolutional networks (LSTM-GCN).
-Third, the implement of cloud-based distributed computing technology into large-scale spatiotemporal computation.
+### Integrated multi-modal traffic simulation
+I have six-years experiences in traffic simulation.
+I am experienced in Vissim, Synchro, TransCAD, and AnyLogic.
+I have leaded various micro and macro traffic simulation projects in different cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan.
+Currently, I am also working with Dr. Xuesong Zhou from ASU on the development of an integrated multi-modal traffic simulation framework driven by agent-based modelling and dynamic traffic assignment.
 
 ***
 
 Education
 ======
-* Ph.D. candidate, University of Maryland, College Park.
+* Ph.D. candidate, University of Maryland, College Park, 2023 (Expected).
 * M.S., Tongji University, 2019.
 * B.S., Huazhong University of Science and Technology, 2016.
 
@@ -69,7 +74,7 @@ Skills
 * **Cloud Computing**
     * AWS-EMR, AWS-EC2.
 * **Machine Learning**
-    * XGBoost, GBM, LSTM, GCN.
+    * RNN, Transformer, Graph neural network, Tree-based model, Explainable AI.
 
 ***
 
