@@ -45,7 +45,7 @@ Currently, I am also working with [Prof. Xuesong Zhou](https://isearch.asu.edu/p
 
 Education
 ======
-* Ph.D., Transportation Engineering, University of Maryland, College Park, 09/2019~2023 (Expected).
+* Ph.D., Transportation Engineering, University of Maryland, College Park, MD, USA, 09/2019~2023 (Expected).
 * M.S., Transportation Engineering, Tongji University, Shanghai, China, 09/2016~06/2019.
 * B.S., Transportation Engineering, Huazhong University of Science and Technology, Wuhan, Hubei, China, 09/2012~06/2016.
 
