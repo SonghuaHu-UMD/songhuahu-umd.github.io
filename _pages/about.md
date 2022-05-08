@@ -138,3 +138,5 @@ Peng Chen and **Songhua Hu**, 2019.
 For more info
 ------
 For more information please visit my blog in [Zhihu](https://zhuanlan.zhihu.com/songhuahu).
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=zU9DbdqNwD8PS5IHucVNU8GV_lJolPyn6nhjUQYN5FI&cl=ffffff&w=a"></script>
