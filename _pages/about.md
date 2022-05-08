@@ -139,4 +139,5 @@ For more info
 ------
 For more information please visit my blog in [Zhihu](https://zhuanlan.zhihu.com/songhuahu).
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=zU9DbdqNwD8PS5IHucVNU8GV_lJolPyn6nhjUQYN5FI&cl=ffffff&w=a"></script>
+------
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=zU9DbdqNwD8PS5IHucVNU8GV_lJolPyn6nhjUQYN5FI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
