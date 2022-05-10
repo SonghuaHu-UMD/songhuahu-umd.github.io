@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
-My supervisor is [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information) and [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
+My supervisor is [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld), [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information), and [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 My research mainly focuses on leveraging emerging multisource transportation-related big data, such as mobile device location data, social media, mobility service transactions, transit smart-card data, and automatic road traffic sensors records, 
 to quantify population-representative and near-real-time human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and estimate multimodal, high-resolution travel demand.
 
