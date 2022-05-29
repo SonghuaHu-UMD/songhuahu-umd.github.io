@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-<embed src="{{ site.baseurl }}/files/Songhua Hu's CV_2022.pdf" width="600" height="700" type='application/pdf'>
+<embed src="https://songhuahu-umd.github.io/files/Songhua Hu's CV_2022.pdf" width="600" height="700" type='application/pdf'>
