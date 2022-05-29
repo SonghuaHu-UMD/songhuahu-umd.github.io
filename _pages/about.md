@@ -127,8 +127,8 @@ Under Review
 **Songhua Hu**, Chenfeng Xiong, Xin Yuan, Xuqiu Wang, 2022.
     * Under Review at *Health & Place*
 * COVID-19 Vaccine Hesitancy Cannot Fully Explain Disparities in Vaccination Coverage across the Contiguous United States.
-**Songhua Hu**, Chenfeng Xiong, 2022.
-    * Under Review at *Social science & medicine*
+**Songhua Hu**, Chenfeng Xiong, Qingchen Li, and Zitong Wang, 2022.
+    * Under Review at *Vaccine*
 * Complementary or Competing? Studying the Relationship Between E-Scooter Sharing and Bikesharing.
 Peng Chen and **Songhua Hu**, 2019.
     * Under Review at *Journal of Planning Education and Research*
