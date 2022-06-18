@@ -60,7 +60,7 @@ Awards
 ======
 * [Outstanding Graduate Assistant (top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards), University of Maryland, College Park, 2021.
 * CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
-* [The Graduate School's Dean’s Fellowship](https://gradschool.umd.edu/funding/student-fellowships-awards/university-deans-and-merit-program), University of Maryland, College Park, 2019.
+* The Graduate School's Dean’s Fellowship, University of Maryland, College Park, 2019.
 * The Excellent Master Scholarship, Tongji University, 2018.
 * Second Price, [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
 * Social Responsibility Award, [BMW Next Mobility Youth Camp](http://www.chinanews.com.cn/auto/2016/12-02/8081476.shtml), 2016.
