@@ -9,19 +9,20 @@ redirect_from:
 ---
 
 Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
-My supervisor is [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld), [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information), and [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). Currently, I work as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
-My research mainly focuses on leveraging emerging multisource transportation-related big data, such as mobile device location data, social media, mobility service transactions, transit smart-card data, and automatic road traffic sensors records, 
-to quantify population-representative and near-real-time human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and estimate multimodal, high-resolution travel demand.
+My supervisors include [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld) | [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information) | [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). 
+I am now working as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
+I am dedicated to smart city computing, both at the collective and individual levels, with particular emphasis on large-scale spatiotemporal network modelling. Specifically, my work intends to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a host of statistical models, deep learning methods, and simulation techniques,
+to forecast population-representative human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and ultimately mesh them with advanced traffic simulation techniques .
 
 ***
 
 Research Interests
 ======
 ### Big-data-driven human mobility modelling
-My PhD career focuses on building a big-data-driven travel demand modelling framework to model, predict, and simulate large-scale human movement aggregately and disaggregately, leveraging massive location-based services (LBS) data, 
+My PhD career is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive location-based services (LBS) data and other transportation-related data, 
 integrating a set of statistical methods, deep learning models, simulation tools, and cloud-computing technologies.
-I introduce a spatiotemporal graph neural network (STGNN) to predict PA/OD time-series matrices and a temporal hierarchical transformer (THT) to predict individual-level trips. 
-Predictions are integrated with transport simulation tools like DTALite and MATSim to achieve a complete travel demand modelling process.
+I introduce a temporal graph convolution neural network (TGCN) to predict PA/OD time-series matrices and a hierarchical semantic-based framework to simultaneously predict the activity, departure time, and location of the next trip. 
+Predictions are integrated with advanced traffic simulation tools like DTALite and MATSim to achieve a holistic travel demand modelling process.
 <img src="images/F1.png" width="900" title='Framework'/>
 
 ### Integrated modelling transport and epidemiology
@@ -50,40 +51,9 @@ Currently, I am also working with [Prof. Xuesong Zhou](https://isearch.asu.edu/p
 
 Education
 ======
-* Ph.D., Transportation Engineering, University of Maryland, College Park, MD, USA, 09/2019~2023 (Expected).
-* M.S., Transportation Engineering, Tongji University, Shanghai, China, 09/2016~06/2019.
-* B.S., Transportation Engineering, Huazhong University of Science and Technology, Wuhan, Hubei, China, 09/2012~06/2016.
-
-***
-
-Work experience
-======
-* **2019: Graduate Research Assistant**
-  * Maryland Transportation Institute
-* **Spring 2019: Data Scientist**
-  * Shanghai Electric Vehicle Public Data Collecting, Monitoring and Research Center (上海市新能源汽车公共数据采集与监测研究中心)
-* **2018: Data Scientist**
-  * Shanghai International Motor City (group) Co. Ltd (上海国际汽车城(集团)有限公司)
-  * EVCARD Co. Ltd (环球车享汽车租赁有限公司)
-* **Summer 2017: Data Scientist**
-  * Shenzhen Urban Transport Planning Center Co. Ltd (深圳市城市交通规划设计研究中心)
-* **Summer 2016: Transport Engineer**
-  * Wuhan Transport Planning & Design Co. Ltd (武汉市交通规划设计有限公司)
-
-***
-
-Skills
-======
-* **Programming Language**
-    * Python, R, PySpark, Matlab, SQL, Html, VB.
-* **Traffic Simulation**
-    * Vissim, TransCAD, Synchro, AnyLogic, DTALite.
-* **Spatial Analysis**
-    * ArcGIS, Gephi, Geopandas.
-* **Cloud Computing**
-    * AWS-EMR, AWS-EC2.
-* **Machine Learning**
-    * RNN, Transformer, Graph neural network, Tree-based model, Explainable AI.
+* Ph.D., Transportation Engineering, University of Maryland, College Park, MD, USA, 09/2019 - 12/2022 (Expected).
+* M.S., Transportation Engineering, Tongji University, Shanghai, China, 09/2016 - 06/2019.
+* B.S., Transportation Engineering, Huazhong University of Science and Technology, Wuhan, Hubei, China, 09/2012 - 06/2016.
 
 ***
 
@@ -118,6 +88,42 @@ Talks
 
 ***
 
+Journal Reviewer
+======
+* Accident Analysis and Prevention
+* Cambridge Journal of Regions, Economy and Society
+* Cities
+* IEEE Access
+* International Journal of Transportation Science and Technology
+* Geo-spatial Information Science
+* Journal of Planning Education and Research
+* Journal of Transport Geography
+* Journal of Transport and Land Use
+* Journal of Advanced Transportation
+* PLOS One
+* Regional Studies
+* Sustainable Cities and Society
+* Scientific Reports
+* Transportation Research Part B: Methodological
+* Transportation Research Part D: Transport and Environment
+* Transport Policy
+* Traffic Injury Prevention
+* Travel Behavior and Society
+* Transportation Letters
+* Transportation Research Record
+
+***
+
+Conference Reviewer
+======
+* TRB Transportation Research Board Annual Meeting
+* COTA International Conference of Transportation Professionals
+* IACP International Association of China Planning
+* IEEE Intelligent Transportation Systems Society Conference Management System
+
+***
+
+
 Under Review
 ======
 * High-Dimensional Population Flow Time Series Forecasting Via an Interpretable Hierarchical Transformer.
@@ -133,6 +139,37 @@ Under Review
 Peng Chen and **Songhua Hu**, 2019.
     * Under Review at *Journal of Planning Education and Research*
   
+***
+
+Work experience
+======
+* **2019: Graduate Research Assistant**
+  * Maryland Transportation Institute
+* **Spring 2019: Data Scientist**
+  * Shanghai Electric Vehicle Public Data Collecting, Monitoring and Research Center (上海市新能源汽车公共数据采集与监测研究中心)
+* **2018: Data Scientist**
+  * Shanghai International Motor City (group) Co. Ltd (上海国际汽车城(集团)有限公司)
+  * EVCARD Co. Ltd (环球车享汽车租赁有限公司)
+* **Summer 2017: Data Scientist**
+  * Shenzhen Urban Transport Planning Center Co. Ltd (深圳市城市交通规划设计研究中心)
+* **Summer 2016: Transport Engineer**
+  * Wuhan Transport Planning & Design Co. Ltd (武汉市交通规划设计有限公司)
+
+***
+
+Skills
+======
+* **Programming Language**
+  * Python, R, PySpark, Matlab, SQL, Html, VB.
+* **Traffic Simulation**
+  * Vissim (&COM), TransCAD, Synchro, AnyLogic, DTALite.
+* **Spatial Analysis**
+  * ArcGIS, Gephi, Geopandas, QGIS.
+* **Cloud Computing**
+  * AWS-EMR, AWS-EC2.
+* **Machine Learning**
+  * RNN, Transformer, (Temporal) Graph neural network, Tree-based model, Explainable AI.
+
 ***
 
 For more info
