@@ -73,17 +73,40 @@ Awards
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+1.	**Hu, Songhua**, Mingyang Chen, Yuan Jiang, Wei Sun, and Chenfeng Xiong. "Examining factors associated with bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems." Journal of Transport Geography 98 (2022): 103271.
+2.	**Hu, Songhua**, Chenfeng Xiong, Hannah Younes, Mofeng Yang, Aref Darzi, and Zhiyu Catherine Jin. "Examining spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from the contiguous United States." Sustainable cities and society 76 (2022): 103506.
+3.	**Hu, Songhua**, Weiyu Luo, Aref Darzi, Yixuan Pan, Guangchen Zhao, Yuxuan Liu, and Chenfeng Xiong. "Do racial and ethnic disparities in following stay-at-home orders influence COVID-19 health outcomes? A mediation analysis approach." PloS one 16, no. 11 (2021): e0259803.
+4.	Luo, Weiyu, Wei Guo, **Songhua Hu**, Mofeng Yang, Xinyuan Hu, and Chenfeng Xiong. "Flatten the curve: Empirical evidence on how non-pharmaceutical interventions substituted pharmaceutical treatments during COVID-19 pandemic." Plos one 16, no. 10 (2021): e0258379.
+5.	**Hu, Songhua**, Peng Chen, and Xiaohong Chen. "Do personalized economic incentives work in promoting shared mobility? Examining customer churn using a time-varying Cox model." Transportation Research Part C: Emerging Technologies 128 (2021): 103224.
+6.	**Hu, Songhua**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang. "Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic." Journal of transport geography 91 (2021): 102997.
+7.	**Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
+8.	**Hu, Songhua**, and Peng Chen. "Who left riding transit? Examining socioeconomic disparities in the impact of COVID-19 on ridership." Transportation Research Part D: Transport and Environment 90 (2021): 102654.
+9.	Xiong, Chenfeng, **Songhua Hu**, Mofeng Yang, Hannah Younes, Weiyu Luo, Sepehr Ghader, and Lei Zhang. "Mobile device location data reveal human mobility response to state-level stay-at-home orders during the COVID-19 pandemic in the USA." Journal of the Royal Society Interface 17, no. 173 (2020): 20200344.
+10.	Xiong, Chenfeng, **Songhua Hu**, Mofeng Yang, Weiyu Luo, and Lei Zhang. "Mobile device data reveal the dynamics in a positive relationship between human mobility and COVID-19 infections." Proceedings of the National Academy of Sciences 117, no. 44 (2020): 27087-27089.
+11.	Zhang, Lei, Aref Darzi, Sepehr Ghader, Michael L. Pack, Chenfeng Xiong, Mofeng Yang, Qianqian Sun, AliAkbar Kabiri, and **Songhua Hu**. "Interactive covid-19 mobility impact and social distancing analysis platform." Transportation Research Record (2020): 03611981211043813.
+12.	Wang, Tao, **Songhua Hu***, and Yuan Jiang. "Predicting shared-car use and examining nonlinear effects using gradient boosting regression trees." International Journal of Sustainable Transportation 15, no. 12 (2020): 893-907.
+13.	**Hu, Songhua**, Kun Xie, Xiaonian Shan, Hangfei Lin, and Xiaohong Chen. "Modeling usage frequencies and vehicle preferences in a large-scale electric vehicle sharing system." IEEE Intelligent Transportation Systems Magazine (2020): 1-10.
+14.	**Hu, Songhua**, Peng Chen, Feifei Xin, and Chi Xie. "Exploring the effect of battery capacity on electric vehicle sharing programs using a simulation approach." Transportation Research Part D: Transport and Environment 77 (2019): 164-177.
+15.	Chen, Peng, **Songhua Hu***, Qing Shen, Hangfei Lin, and Chi Xie. "Estimating traffic volume for local streets with imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610.
+16.	**Hu, Songhua**, Peng Chen, Hangfei Lin, Chi Xie, and Xiaohong Chen. "Promoting carsharing attractiveness and efficiency: An exploratory analysis." Transportation Research Part D: Transport and Environment 65 (2018): 229-243.
  
 ***
 
 Talks
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+1.	**Hu, Songhua**, Weiyu Luo, Aref Darzi, Yixuan Pan, Guangchen Zhao, Yuxuan Liu, and Chenfeng Xiong. Do Racial and Ethnic Disparities in Maintaining Social distancing Influence COVID-19 Health Outcomes? A Mediation Analysis Approach, Transportation Research Board 101st Annual Meeting (2022), Washington DC.
+2.	**Hu, Songhua**, Chenfeng Xiong, Hannah Younes, Mofeng Yang, Aref Darzi, and Zhiyu Catherine Jin. Examining spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from the contiguous United States, Transportation Research Board 101st Annual Meeting (2022), Washington DC.
+3.	Xiong, Chenfeng, **Songhua Hu**, Mofeng Yang, Hannah Younes, Weiyu Luo, Sepehr Ghader, and Lei Zhang. Mobile device location data reveal human mobility response to state-level stay-at-home orders during the COVID-19 pandemic in the USA, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
+4.	**Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
+5.	Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
+6.	Jing, Yi, **Songhua Hu**, and Hangfei Lin. Joint Analysis of Scooter Sharing and Bikesharing Usage: A Structural Equation Modeling Approach, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
+7.	**Hu, Songhua**, Peng Chen, and Xiaohong Chen. Do Personalized Economic Incentives Work in Promoting Shared Mobility? Examining Customer Churn Using a Time-Varying Cox Model, Transportation Research Board 99th Annual Meeting (2020), Washington DC.
+8.	**Hu, Songhua**, Peng Chen, Feifei Xin, and Chi Xie. Exploring the effect of battery capacity on electric vehicle sharing programs using a simulation approach, Transportation Research Board 99th Annual Meeting (2020), Washington DC.
+9.	Chen, Peng, **Songhua Hu**, Qing Shen, Hangfei Lin, and Chi Xie. Estimating traffic volume for local streets with imbalanced data, Transportation Research Board 98th Annual Meeting (2019), Washington DC.
+10.	**Hu, Songhua**, Hangfei Lin, Kun Xie, Xiaohong Chen, and Hongjie Shi. Modeling users’ vehicles selection behavior in urban carsharing program, The 21st IEEE International Conference on Intelligent Transportation Systems (2018).
+11.	**Hu, Songhua**, Hangfei Lin, Kun Xie, Jianjun Dai, and Jiandong Qui. Impacts of rain and waterlogging on traffic speed and volume on urban roads, The 21st IEEE International Conference on Intelligent Transportation Systems (2018).
+12.	**Hu, Songhua**, Jianjun Dai, Jiandong Qiu, and Hangfei Lin. Identification of Urban Road Waterlogging Using Floating Car Data. In CICTP 2018: Intelligence, Connectivity, and Mobility (pp. 1885-1894)(2018). Reston, VA: American Society of Civil Engineers.
+
 
 ***
 
