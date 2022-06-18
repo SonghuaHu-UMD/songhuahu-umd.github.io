@@ -40,9 +40,8 @@ and how to encourage the integration of various forms of mobility services. I am
 After joining University of Maryland, I am the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to assign personalized incentives to travelers in DC area.
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
-### Integrated multi-modal traffic simulation
-I have six-years experiences in traditional traffic simulation.
-I am experienced in [Vissim](https://zhuanlan.zhihu.com/p/38350957), [TransCAD](https://zhuanlan.zhihu.com/p/61273834), [AnyLogic](https://zhuanlan.zhihu.com/p/66526593), [DTALite](https://zhuanlan.zhihu.com/p/152268601), and Synchro.
+### Integrated multimodal multidimensional traffic simulation
+I am experienced in traditional traffic simulation tools including [Vissim](https://zhuanlan.zhihu.com/p/38350957), [TransCAD](https://zhuanlan.zhihu.com/p/61273834), [AnyLogic](https://zhuanlan.zhihu.com/p/66526593), and [DTALite](https://zhuanlan.zhihu.com/p/152268601), and Synchro.
 I have leaded a range of traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
 I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) on the development of the open-source multimodal traffic simulation framework, named DTALite, integrating agent-based modelling and dynamic traffic assignment.
 <img src="images/F4.png" width="900" title='Framework'/>
