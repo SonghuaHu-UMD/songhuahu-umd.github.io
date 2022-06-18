@@ -26,7 +26,7 @@ Predictions are integrated with advanced traffic simulation tools like DTALite a
 <img src="images/F1.png" width="900" title='Framework'/>
 
 ### Integrated modelling transport and epidemiology
-During the COVID-19 pandemic, I work on building integrated mathematical and statistical models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, 
+During the COVID-19 pandemic, I focused my research on building integrated mathematical and epidemiological models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, 
 controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
 Related work has lead to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 <img src="images/F2.png" width="900" title='Framework'/>
@@ -34,17 +34,17 @@ Related work has lead to several high-caliber publications, including one [PNAS 
 
 ### Mobility as a service (MaaS) and shared mobility
 I have worked on shared mobility and MaaS since 2018, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) | [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) | [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx).
-I investigate various emerging shared mobility systems in China and US to provide empirical evidence on who is using shared mobility, 
+I have investigated various emerging shared mobility programs in China and US to provide empirical evidence on who is using shared mobility, 
 how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to prevent users from churning, 
-and how to encourage the integration of various forms of transport services. 
-After joining UMD, I am the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to assign personalized incentives to travelers in DC area.
+and how to encourage the integration of various forms of mobility services. I am also among the first to examine the nonlinear relationship between shared mobility usage and built environment via advanced statistical models and machine learning methods.
+After joining University of Maryland, I am the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to assign personalized incentives to travelers in DC area.
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
 ### Integrated multi-modal traffic simulation
-I have six-years experiences in traffic simulation.
-I am experienced in Vissim, Synchro, TransCAD, and AnyLogic.
-I have leaded various micro and macro traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
-I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) on the development of the open-source multimodal traffic simulation framework integrating agent-based modelling and dynamic traffic assignment.
+I have six-years experiences in traditional traffic simulation.
+I am experienced in [Vissim](https://zhuanlan.zhihu.com/p/38350957), [TransCAD](https://zhuanlan.zhihu.com/p/61273834), [AnyLogic](https://zhuanlan.zhihu.com/p/66526593), [DTALite](https://zhuanlan.zhihu.com/p/152268601), and Synchro.
+I have leaded a range of traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
+I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) on the development of the open-source multimodal traffic simulation framework, named DTALite, integrating agent-based modelling and dynamic traffic assignment.
 <img src="images/F4.png" width="900" title='Framework'/>
 
 ***
