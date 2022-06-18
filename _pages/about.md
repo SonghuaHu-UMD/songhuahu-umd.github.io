@@ -33,18 +33,18 @@ Related work has lead to several high-caliber publications, including one [PNAS 
 <img src="images/F21.png" width="900" title='Framework'/>
 
 ### Mobility as a service (MaaS) and shared mobility
-I have worked on shared mobility and MaaS since my master career, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm), [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) from Tongji University, and [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx) from USF.
+I have worked on shared mobility and MaaS since 2018, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) | [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) | [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx).
 I investigate various emerging shared mobility systems in China and US to provide empirical evidence on who is using shared mobility, 
 how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to prevent users from churning, 
 and how to encourage the integration of various forms of transport services. 
-After joining UMD, I am the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to provide personalized incentives to travelers in DC area.
+After joining UMD, I am the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to assign personalized incentives to travelers in DC area.
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
 ### Integrated multi-modal traffic simulation
 I have six-years experiences in traffic simulation.
 I am experienced in Vissim, Synchro, TransCAD, and AnyLogic.
 I have leaded various micro and macro traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
-Currently, I am also working with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) from ASU on the development of multi-modal traffic simulation framework integrating agent-based modelling and dynamic traffic assignment.
+I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) on the development of the open-source multimodal traffic simulation framework integrating agent-based modelling and dynamic traffic assignment.
 <img src="images/F4.png" width="900" title='Framework'/>
 
 ***
