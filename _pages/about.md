@@ -71,7 +71,7 @@ Awards
 
 ***
 
-Publications
+Journal Publications
 ======
 1.	**Hu, Songhua**, Mingyang Chen, Yuan Jiang, Wei Sun, and Chenfeng Xiong. "Examining factors associated with bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems." Journal of Transport Geography 98 (2022): 103271.
 2.	**Hu, Songhua**, Chenfeng Xiong, Hannah Younes, Mofeng Yang, Aref Darzi, and Zhiyu Catherine Jin. "Examining spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from the contiguous United States." Sustainable cities and society 76 (2022): 103506.
@@ -92,7 +92,7 @@ Publications
  
 ***
 
-Talks
+Conference Presentations
 ======
 1.	**Hu, Songhua**, Weiyu Luo, Aref Darzi, Yixuan Pan, Guangchen Zhao, Yuxuan Liu, and Chenfeng Xiong. Do Racial and Ethnic Disparities in Maintaining Social distancing Influence COVID-19 Health Outcomes? A Mediation Analysis Approach, Transportation Research Board 101st Annual Meeting (2022), Washington DC.
 2.	**Hu, Songhua**, Chenfeng Xiong, Hannah Younes, Mofeng Yang, Aref Darzi, and Zhiyu Catherine Jin. Examining spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from the contiguous United States, Transportation Research Board 101st Annual Meeting (2022), Washington DC.
