@@ -11,7 +11,7 @@ redirect_from:
 Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
 My supervisors include [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld) | [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information) | [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). 
 I am now working as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
-I am dedicated to smart city computing, both at the collective and individual levels, with particular emphasis on large-scale spatiotemporal network modelling. Specifically, my work intends to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a host of statistical models, deep learning methods, and simulation techniques,
+I am dedicated to smart city computing, at both collective and individual levels, with particular emphasis on large-scale spatiotemporal network modelling. Specifically, my work intends to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a host of statistical models, deep learning methods, and simulation techniques,
 to forecast population-representative human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and mesh them with advanced traffic simulation techniques.
 
 ***
@@ -21,8 +21,8 @@ Research Interests
 ### Big-data-driven human mobility modelling
 My PhD career is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive location-based services (LBS) data and other transportation-related data, 
 integrating a set of statistical methods, deep learning models, simulation tools, and cloud-computing technologies.
-I introduce a temporal graph convolution neural network (TGCN) to predict PA/OD time-series matrices and a hierarchical semantic-based framework to simultaneously predict the activity, departure time, and location of the next trip. 
-Predictions are integrated with advanced traffic simulation tools like DTALite and MATSim to achieve a holistic travel demand modelling process.
+I introduce a temporal graph convolution neural network (TGCN) to predict multimodal PA/OD time-series matrices and a hierarchical semantic-based framework to simultaneously predict the activity, departure time, and location of the next trip. 
+Predictions are integrated with advanced traffic simulation tools like DTALite and MATSim to achieve a holistic travel demand modelling.
 <img src="images/F1.png" width="900" title='Framework'/>
 
 ### Integrated modelling transport and epidemiology
