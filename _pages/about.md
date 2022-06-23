@@ -64,7 +64,7 @@ Awards
 * The Excellent Master Scholarship, Tongji University, 2018.
 * Second Price, [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
 * Social Responsibility Award, [BMW Next Mobility Youth Camp](http://www.chinanews.com.cn/auto/2016/12-02/8081476.shtml), 2016.
-* [Pacemaker to Merit Student](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and Technology, 2015.
+* [Pacemaker to Merit Student (校三好学生标兵)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and Technology, 2015.
 * National Encouragement scholarship, Huazhong University of Science and Technology, 2015.
 * National Scholarship, Huazhong University of Science and Technology, 2014.
 * National Scholarship, Huazhong University of Science and Technology, 2013.
