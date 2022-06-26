@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at Department of Civil & Environmental Engineering, University of Maryland, College Park. 
+Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at the Department of Civil & Environmental Engineering, University of Maryland, College Park. 
 My supervisors include [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld) | [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information) | [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). 
 I am now working as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I am dedicated to smart city computing, at both collective and individual levels, with particular emphasis on large-scale spatiotemporal network modelling. Specifically, my work intends to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a host of statistical models, deep learning methods, and simulation techniques,
@@ -19,7 +19,7 @@ to forecast population-representative human mobility, analyze individual-level t
 Research Interests
 ======
 ### Big-data-driven human mobility modelling
-My PhD career is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive location-based services (LBS) data and other transportation-related data, 
+My PhD dissertation, entitled "My dissertation is "A BIG-DATA-DRIVEN FRAMEWORK FOR TRAVEL DEMAND (AKA HUMAN MOBILITY) ESTIMATION, PREDICTION, AND SIMULATION", is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive location-based services (LBS) data and other transportation-related data, 
 integrating a set of statistical methods, deep learning models, simulation tools, and cloud-computing technologies.
 I introduce a temporal graph convolution neural network (TGCN) to predict multimodal PA/OD time-series matrices and a hierarchical semantic-based framework to simultaneously predict the activity, departure time, and location of the next trip. 
 Predictions are integrated with advanced traffic simulation tools like DTALite and MATSim to achieve a holistic travel demand modelling.
@@ -28,7 +28,7 @@ Predictions are integrated with advanced traffic simulation tools like DTALite a
 ### Integrated modelling transport and epidemiology
 During the COVID-19 pandemic, I focused my research on building integrated mathematical and epidemiological models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, 
 controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
-Related work has lead to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
+Related work has led to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 <img src="images/F2.png" width="900" title='Framework'/>
 <img src="images/F21.png" width="900" title='Framework'/>
 
@@ -37,12 +37,12 @@ I have worked on shared mobility and MaaS since 2018, advised by [Prof. Hangfei 
 I have investigated various emerging shared mobility programs in China and US to provide empirical evidence on who is using shared mobility, 
 how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to prevent users from churning, 
 and how to encourage the integration of various forms of mobility services. I am also among the first to examine the nonlinear relationship between shared mobility usage and built environment via advanced statistical models and machine learning methods.
-After joining University of Maryland, I am the main developer of first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to assign personalized incentives to travelers in DC area.
+After joining University of Maryland, I am the main developer of the first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to assign personalized incentives to travelers in DC area.
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
 ### Integrated multimodal multidimensional traffic simulation
-I am experienced in traditional traffic simulation tools including [Vissim](https://zhuanlan.zhihu.com/p/38350957), [TransCAD](https://zhuanlan.zhihu.com/p/61273834), [AnyLogic](https://zhuanlan.zhihu.com/p/66526593), and [DTALite](https://zhuanlan.zhihu.com/p/152268601), and Synchro.
-I have leaded a range of traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
+I am experienced in traditional traffic simulation tools including [Vissim](https://zhuanlan.zhihu.com/p/38350957), [TransCAD](https://zhuanlan.zhihu.com/p/61273834), [AnyLogic](https://zhuanlan.zhihu.com/p/66526593), [DTALite](https://zhuanlan.zhihu.com/p/152268601), and Synchro.
+I have led a range of traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
 I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) on the development of the open-source multimodal traffic simulation framework, named DTALite, integrating agent-based modelling and dynamic traffic assignment.
 <img src="images/F4.png" width="900" title='Framework'/>
 
@@ -58,14 +58,14 @@ Education
 
 Awards
 ======
-* [Outstanding Graduate Assistant (top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards), University of Maryland, College Park, 2021.
+* [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards), University of Maryland, College Park, 2021.
 * CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
 * The Graduate School's Dean’s Fellowship, University of Maryland, College Park, 2019.
 * The Excellent Master Scholarship, Tongji University, 2018.
 * Second Price, [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
 * Social Responsibility Award, [BMW Next Mobility Youth Camp](http://www.chinanews.com.cn/auto/2016/12-02/8081476.shtml), 2016.
-* [Pacemaker to Merit Student (校三好学生标兵)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and Technology, 2015.
-* National Encouragement scholarship, Huazhong University of Science and Technology, 2015.
+* [Pacemaker to Merit Student (Top 20)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and Technology, 2015.
+* National Encouragement Scholarship, Huazhong University of Science and Technology, 2015.
 * National Scholarship, Huazhong University of Science and Technology, 2014.
 * National Scholarship, Huazhong University of Science and Technology, 2013.
 
@@ -110,7 +110,7 @@ Conference Presentations
 
 ***
 
-Journal Reviewer
+[Journal Reviewer](https://publons.com/researcher/4832727/songhua-hu/peer-review/)
 ======
 * Accident Analysis and Prevention
 * Cambridge Journal of Regions, Economy and Society
@@ -150,16 +150,16 @@ Under Review
 ======
 * High-Dimensional Population Flow Time Series Forecasting Via an Interpretable Hierarchical Transformer.
 **Songhua Hu**, Chenfeng Xiong, 2022.
-    * Under Review at *Transportation Research Part C: Emerging Technologies*
+    * Under Review at *Transportation Research Part C: Emerging Technologies* (Second Round)
 * Vaccination, Mobility, and COVID-19 Health Outcomes: Empirical Comparison Before and During the Outbreak of SARS‐Cov‐2 B.1.1.529 (Omicron) Variant.
 **Songhua Hu**, Chenfeng Xiong, Xin Yuan, Xuqiu Wang, 2022.
-    * Under Review at *Health & Place*
+    * Under Review at *Health & Place* (First Round)
 * COVID-19 Vaccine Hesitancy Cannot Fully Explain Disparities in Vaccination Coverage across the Contiguous United States.
 **Songhua Hu**, Chenfeng Xiong, Qingchen Li, and Zitong Wang, 2022.
-    * Under Review at *Vaccine*
+    * Under Review at *Vaccine* (First Round)
 * Complementary or Competing? Studying the Relationship Between E-Scooter Sharing and Bikesharing.
 Peng Chen and **Songhua Hu**, 2019.
-    * Under Review at *Journal of Planning Education and Research*
+    * Under Review at *Journal of Planning Education and Research* (Fourth Round)
   
 ***
 
@@ -174,7 +174,7 @@ Work experience
   * EVCARD Co. Ltd (环球车享汽车租赁有限公司)
 * **Summer 2017: Data Scientist**
   * Shenzhen Urban Transport Planning Center Co. Ltd (深圳市城市交通规划设计研究中心)
-* **Summer 2016: Transport Engineer**
+* **Summer 2016: Transportation Engineer**
   * Wuhan Transport Planning & Design Co. Ltd (武汉市交通规划设计有限公司)
 
 ***
