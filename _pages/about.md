@@ -171,26 +171,26 @@ Work experience
 ======
 * **2019: Graduate Research Assistant**
   * Maryland Transportation Institute
-* **Spring 2019: Data Scientist**
+* **2019: Data Scientist (Intern)**
   * Shanghai Electric Vehicle Public Data Collecting, Monitoring and Research Center (上海市新能源汽车公共数据采集与监测研究中心)
-* **2018: Data Scientist**
+* **2018: Data Scientist (Intern)**
   * Shanghai International Motor City (group) Co. Ltd (上海国际汽车城(集团)有限公司)
   * EVCARD Co. Ltd (环球车享汽车租赁有限公司)
-* **Summer 2017: Data Scientist**
+* **2017: Data Scientist (Intern)**
   * Shenzhen Urban Transport Planning Center Co. Ltd (深圳市城市交通规划设计研究中心)
-* **Summer 2016: Transportation Engineer**
+* **2016: Transportation Engineer (Intern)**
   * Wuhan Transport Planning & Design Co. Ltd (武汉市交通规划设计有限公司)
 
 ***
 
 Skills
 ======
-* **Programming Language**
+* **Programming**
   * Python, R, PySpark, Matlab, SQL, Html, VB.
 * **Traffic Simulation**
   * Vissim (&COM), TransCAD, Synchro, AnyLogic, DTALite.
 * **Spatial Analysis**
-  * ArcGIS, Gephi, Geopandas, QGIS.
+  * ArcGIS, Geopandas, Gephi, NetworkX.
 * **Cloud Computing**
   * AWS-EMR, AWS-EC2.
 * **Machine Learning**
