@@ -58,6 +58,7 @@ I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/218
 My current work focuses on meshing the big travel data with advanced traffic simulation tools with high computational efficiency to achieve fine-grained citywide simulation. 
 
 <img src="images/F4.png" width="900" title='Framework'/>
+<img src="images/F40.png" width="900" title='Framework'/>
 
 ***
 
