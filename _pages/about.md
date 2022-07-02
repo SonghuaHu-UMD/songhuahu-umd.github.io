@@ -19,7 +19,7 @@ to forecast population-representative human mobility, analyze individual-level t
 Research Interests
 ======
 ### Big-data-driven human mobility modelling
-My PhD dissertation, entitled "A BIG-DATA-DRIVEN FRAMEWORK FOR TRAVEL DEMAND ESTIMATION, PREDICTION, AND SIMULATION", is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive mobile device location data and other transportation-related data, 
+My PhD dissertation, entitled **"A BIG-DATA-DRIVEN FRAMEWORK FOR TRAVEL DEMAND ESTIMATION, PREDICTION, AND SIMULATION"**, is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive mobile device location data and other transportation-related data, 
 integrating a host of statistical methods, deep learning models, simulation tools, and cloud-computing techniques.
 I introduce a temporal graph convolution neural network (TGCN) to predict multimodal PA/OD time-series matrices and a hierarchical semantic-based framework to simultaneously predict the activity, departure time, and location of the next trip. 
 Predictions are integrated with advanced traffic simulation tools like DTALite and MATSim to achieve a holistic travel demand modelling.  
