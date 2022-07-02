@@ -35,9 +35,9 @@ Related work has led to several high-caliber publications, including one [PNAS p
 <img src="images/F21.png" width="900" title='Framework'/>
 
 ### Explainable AI in transportation domain
-I am particularly interested in empowering the interpretability of black-box machine learning models by pre-designing interpretation-oriented intrinsic parameters, or by applying post hoc model-agnostic interpretation techniques such as feature importance, partial dependence plot, and SHapley Additive exPlanations.
-I have incorporated these fantastic concepts into different transportation-related tasks such as travel demand estimation and crowd flow time series forecasting, to understand the patterns learned by the model from massive travel data.
-Several promising topics I am now working on include interpreting the machine learning models in search of casual insights and empirically comparing novel interpretation techniques.
+I am particularly interested in interpreting black-box machine learning models by pre-designing interpretation-oriented parameters, or by applying post hoc model-agnostic interpretation techniques such as feature importance, partial dependence plot, and SHapley Additive exPlanations.
+I have incorporated these fantastic concepts into different transportation-related tasks such as travel demand estimation and crowd flow time series forecasting, to delineate the patterns learned by the model from massive travel data.
+Several promising topics I am now working on include interpreting the machine learning models in search of casual insights and empirically comparing different novel interpretation techniques.
 
 <img src="images/F11.png" width="900" title='Framework'/>
 
