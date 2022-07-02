@@ -19,20 +19,18 @@ to forecast population-representative human mobility, analyze individual-level t
 Research Interests
 ======
 ### Big-data-driven human mobility modelling
-My PhD dissertation, entitled "A BIG-DATA-DRIVEN FRAMEWORK FOR TRAVEL DEMAND (AKA HUMAN MOBILITY) ESTIMATION, PREDICTION, AND SIMULATION", is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive location-based services (LBS) data and other transportation-related data, 
+My PhD dissertation, entitled "A BIG-DATA-DRIVEN FRAMEWORK FOR TRAVEL DEMAND ESTIMATION, PREDICTION, AND SIMULATION", is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive mobile device location data and other transportation-related data, 
 integrating a host of statistical methods, deep learning models, simulation tools, and cloud-computing techniques.
 I introduce a temporal graph convolution neural network (TGCN) to predict multimodal PA/OD time-series matrices and a hierarchical semantic-based framework to simultaneously predict the activity, departure time, and location of the next trip. 
 Predictions are integrated with advanced traffic simulation tools like DTALite and MATSim to achieve a holistic travel demand modelling.  
 
 <img src="images/F1.png" width="900" title='Framework'/>
 
-### Integrated modelling transport and epidemiology
-During the COVID-19 pandemic, I focused my research on building integrated mathematical and epidemiological models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission, 
-controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
-Related work has led to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).  
+### Explainable AI
+I am particularly interested in empowering the interpretability of black-box machine learning models by examining pre-designed learnable parameters, or by applying post hoc model-agnostic interpretation techniques.
 
-<img src="images/F2.png" width="900" title='Framework'/>
-<img src="images/F21.png" width="900" title='Framework'/>
+<img src="images/F11.png" width="900" title='Framework'/>
+<img src="images/F12.png" width="900" title='Framework'/>
 
 ### Mobility as a service (MaaS) and shared mobility
 I have worked on shared mobility and MaaS since 2018, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) | [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) | [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx).
@@ -43,7 +41,7 @@ After joining University of Maryland, I am the main developer of the first-in-th
 
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
-### Integrated multimodal multidimensional traffic simulation
+### Integrated multidimensional traffic simulation
 I am experienced in traditional traffic simulation tools including [Vissim](https://zhuanlan.zhihu.com/p/38350957), [TransCAD](https://zhuanlan.zhihu.com/p/61273834), [AnyLogic](https://zhuanlan.zhihu.com/p/66526593), [DTALite](https://zhuanlan.zhihu.com/p/152268601), and Synchro.
 I have led a range of traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
 I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) on the development of the open-source multimodal traffic simulation framework, named DTALite, integrating agent-based modelling and dynamic traffic assignment.  
