@@ -27,8 +27,9 @@ Predictions are integrated with advanced traffic simulation tools like DTALite a
 <img src="images/F1.png" width="900" title='Framework'/>
 
 ### Explainable AI in transportation domain
-I am particularly interested in empowering the interpretability of black-box machine learning models by pre-designing interpretation-oriented learnable parameters, or by applying post hoc model-agnostic interpretation techniques such as feature importance, partial dependence plot, and SHapley Additive exPlanations.
-I am dedicated to incorporate these fantastic concepts into different transportation-related tasks such as travel demand estimation and crowd flow time series forecasting.
+I am particularly interested in empowering the interpretability of black-box machine learning models by pre-designing interpretation-oriented intrinsic parameters, or by applying post hoc model-agnostic interpretation techniques such as feature importance, partial dependence plot, and SHapley Additive exPlanations.
+I have incorporated these fantastic concepts into different transportation-related tasks such as travel demand estimation and crowd flow time series forecasting, to understand the patterns learned by the model from massive travel data.
+Several promising topics I am now working on include interpreting the machine learning models in search of casual insights and empirically comparing novel interpretation techniques.
 
 <img src="images/F11.png" width="900" title='Framework'/>
 <img src="images/F12.png" width="900" title='Framework'/>
