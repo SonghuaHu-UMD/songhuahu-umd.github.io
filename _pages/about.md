@@ -11,8 +11,9 @@ redirect_from:
 Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at the Department of Civil & Environmental Engineering, University of Maryland, College Park. 
 My supervisors include [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld) | [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information) | [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). 
 I am now working as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
-I am dedicated to smart city computing, at both collective and individual levels, with particular emphasis on large-scale spatiotemporal network modelling. Specifically, my work intends to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a host of statistical models, deep learning methods, and simulation techniques,
-to forecast population-representative human mobility, analyze individual-level travel behaviors, understand shared mobility services and “Mobility as a service” (MaaS) infrastructure, and mesh them with advanced traffic simulation techniques.
+I am dedicated to smart city computing, at both collective and individual levels, with particular emphasis on large-scale spatiotemporal network modelling. 
+Specifically, my work intends to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a set of statistical models, deep learning methods, simulation tools, and cloud-computing techniques,
+to forecast population-representative human mobility, analyze individual-level travel behaviors, understand “Mobility as a service” (MaaS) infrastructure, and mesh them with advanced traffic simulation tools.
 
 ***
 
@@ -20,9 +21,8 @@ Research Interests
 ======
 ### Big-data-driven human mobility modelling
 My PhD dissertation, entitled **"A BIG-DATA-DRIVEN FRAMEWORK FOR TRAVEL DEMAND ESTIMATION, PREDICTION, AND SIMULATION"**, is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive mobile device location data and other transportation-related data, 
-integrating a host of statistical methods, deep learning models, simulation tools, and cloud-computing techniques.
-I introduce a temporal graph convolution neural network (TGCN) to predict multimodal PA/OD time-series matrices and a hierarchical semantic-based framework to simultaneously predict the activity, departure time, and location of the next trip. 
-Predictions are integrated with advanced traffic simulation tools like DTALite and MATSim to achieve a holistic travel demand modelling.  
+integrating statistical methods, deep learning models, simulation tools, and cloud-computing techniques.
+
 
 <img src="images/F1.png" width="900" title='Framework'/>
 
@@ -37,23 +37,21 @@ Related work has led to several high-caliber publications, including one [PNAS p
 ### Explainable AI in transportation domain
 I am particularly interested in empowering black-box machine learning models with interpretability by pre-designing interpretation-oriented parameters, or by applying post hoc model-agnostic interpretation techniques such as feature importance, partial dependence plot, and SHapley Additive exPlanations.
 I have incorporated these fantastic concepts into different transportation-related tasks such as travel demand estimation and crowd flow time series forecasting, to delineate the patterns learned by the model from massive travel data.
-Several promising topics I am now working on include interpreting the machine learning models in search of casual insights and empirically comparing different novel interpretation techniques.
 
 <img src="images/F11.png" width="900" title='Framework'/>
 <img src="images/F12.png" width="900" title='Framework'/>
 
 ### Mobility as a service (MaaS) and shared mobility
-I have worked on shared mobility and MaaS since 2018, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) | [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) | [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx).
-I have investigated various emerging shared mobility programs in China and US to provide empirical evidence on who is using shared mobility, 
-how to promote efficiency and attractiveness of shared mobility, how to use personalized incentives to prevent users from churning, 
-and how to encourage the integration of various forms of mobility services. I am also among the first to examine the nonlinear relationship between shared mobility usage and built environment via advanced statistical models and machine learning methods.
-After joining University of Maryland, I am the main developer of the first-in-the-nation coordinated MaaS mobile phone application, [incenTrip](https://incentrip.org), to assign personalized incentives to travelers in DC area.  
+I have worked on shared mobility since 2018, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) | [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) | [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx).
+I have investigated various shared mobility programs to provide empirical evidence on who is using shared mobility, 
+how to promote its efficiency, how to use incentives to prevent users from churning, and how to encourage the multimodal integration. 
+After joining University of Maryland, I am the main developer of the first-in-the-nation coordinated MaaS mobile phone app, [incenTrip](https://incentrip.org), to assign personalized incentives to travelers in MD-DC-VA area.  
 
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
 ### Integrated multidimensional traffic simulation
 I am experienced in traditional traffic simulation tools including [Vissim](https://zhuanlan.zhihu.com/p/38350957), [TransCAD](https://zhuanlan.zhihu.com/p/61273834), [AnyLogic](https://zhuanlan.zhihu.com/p/66526593), [DTALite](https://zhuanlan.zhihu.com/p/152268601), and Synchro.
-I have led a range of traffic simulation projects in different Chinese cities such as Wuhan, Shanghai, Shenzhen, Suzhou, and Taiyuan, and US states like Maryland, DC, and Virginia.
+I have technically led a set of traffic simulation projects in China and US.
 I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) on the development of the open-source multimodal traffic simulation framework, named DTALite, integrating agent-based modelling and dynamic traffic assignment.
 My current work focuses on meshing the big travel data with advanced traffic simulation tools with high computational efficiency to achieve fine-grained citywide simulation. 
 
