@@ -44,7 +44,7 @@ I have incorporated these fantastic concepts into different transportation tasks
 ### Mobility as a service (MaaS) and shared mobility
 I have worked on shared mobility since 2018, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) | [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) | [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx).
 I have investigated various shared mobility programs to provide empirical evidence on who is using shared mobility, 
-how to promote its efficiency, how to use incentives to prevent users from churning, and how to encourage the multimodal integration. 
+how to promote its efficiency, how to use incentives to prevent user churning, and how to encourage multimodal integration. 
 After joining University of Maryland, I am the main developer of the first-in-the-nation coordinated MaaS mobile phone app, [incenTrip](https://incentrip.org), to assign personalized incentives to travelers in MD-DC-VA area.  
 
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
