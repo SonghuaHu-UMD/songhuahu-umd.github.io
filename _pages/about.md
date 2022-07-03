@@ -12,15 +12,15 @@ Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at th
 My supervisors include [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld) | [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information) | [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). 
 I am now working as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I am dedicated to smart city computing, at both collective and individual levels, with particular emphasis on large-scale spatiotemporal network modelling. 
-Specifically, my work intends to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a set of statistical models, deep learning methods, simulation tools, and cloud-computing techniques,
-to forecast population-representative human mobility, analyze individual-level travel behaviors, understand “Mobility as a service” (MaaS) infrastructure, and mesh them with advanced traffic simulation tools.
+Specifically, my work is intended to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a set of statistical models, deep learning methods, simulation tools, and cloud-computing techniques,
+for forecasting population-representative human mobility, analyzing individual-level travel behaviors, understanding “Mobility as a service” (MaaS) infrastructure, and meshing them with advanced traffic simulation tools.
 
 ***
 
 Research Interests
 ======
 ### Big-data-driven human mobility modelling
-My PhD dissertation, entitled **"A BIG-DATA-DRIVEN FRAMEWORK FOR TRAVEL DEMAND ESTIMATION, PREDICTION, AND SIMULATION"**, is committed to constructing an end-to-end big-data-driven travel demand modelling framework to estimate, predict, and simulate large-scale human movement, aggregately and disaggregately, leveraging massive mobile device location data and other transportation-related data, 
+My PhD dissertation, entitled **"A BIG-DATA-DRIVEN FRAMEWORK FOR TRAVEL DEMAND ESTIMATION, PREDICTION, AND SIMULATION"**, is devoted to constructing an end-to-end big-data-driven travel demand modelling framework for estimating, predicting, and simulating large-scale human movement, aggregately and disaggregately, leveraging massive mobile device location data and other transportation-related data, 
 integrating statistical methods, deep learning models, simulation tools, and cloud-computing techniques.
 
 
