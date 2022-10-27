@@ -8,8 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at the Department of Civil & Environmental Engineering, University of Maryland, College Park. 
-My supervisors include [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld) and [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). 
+Greetings! My name is Songhua Hu (胡松华), a last-year Ph.D. candidate at the Department of Civil & Environmental Engineering, University of Maryland, College Park. 
+My supervisor is [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld).
 I am now working as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I am dedicated to smart city computing, at both collective and individual levels, with particular emphasis on large-scale spatiotemporal network modelling. 
 Specifically, my work is intended to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a set of statistical models, deep learning methods, simulation tools, and cloud-computing techniques,
@@ -28,13 +28,13 @@ integrating statistical methods, deep learning models, simulation tools, and clo
 
 ### Spatiotemporal graph neural network in crowd flow prediction
 I propose a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network (Multi-ATGCN), a general deep learning framework that fuses multi-view spatial structures, multi-head temporal patterns, and various external effects, for citywide multi-step crowd inflow forecasting.
-Experiments on two real-world citywide crow flow prediction tasks demonstrate a steady performance improvement and comparable computational efficiency of Multi-ATGCN over state-of-the-art baselines.
+Experiments on two real-world tasks demonstrate a steady performance improvement and comparable computational efficiency of Multi-ATGCN over state-of-the-art baselines.
 
 <img src="images/FN21.png" width="900" title='Framework'/>
 <img src="images/FN22.png" width="900" title='Framework'/>
 
 ### Integrated modelling transport and epidemiology
-During the COVID-19 pandemic, I focused my research on building integrated mathematical and epidemiological models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission,
+During the COVID-19 pandemic, I have closely worked together with [Prof. Chenfeng Xiong](https://www1.villanova.edu/university/engineering/academic-programs/departments/civil-environmental/directory/biodetail.html?mail=chenfeng.xiong@villanova.edu&xsl=bio_long) on building integrated mathematical and epidemiological models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission,
 controlling for racial/ethnic, socioeconomic, demographic, occupation, and partisanship disparities.
 Related work has led to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 
