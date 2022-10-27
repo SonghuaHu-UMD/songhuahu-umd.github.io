@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 Greetings! My name is Songhua Hu (胡松华), a third-year Ph.D. candidate at the Department of Civil & Environmental Engineering, University of Maryland, College Park. 
-My supervisors include [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld) | [Prof. Lei Zhang](https://mti.umd.edu/national-transportation-center-contact-information) | [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). 
+My supervisors include [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld) and [Prof. Chenfeng Xiong](https://cee.umd.edu/clark/faculty/855/Chenfeng-Xiong). 
 I am now working as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
 I am dedicated to smart city computing, at both collective and individual levels, with particular emphasis on large-scale spatiotemporal network modelling. 
 Specifically, my work is intended to leverage crowdsourced mobile device location data, digital social structure, and mobility service transactions, in tandem with a set of statistical models, deep learning methods, simulation tools, and cloud-computing techniques,
@@ -20,11 +20,18 @@ for forecasting population-representative human mobility, analyzing individual-l
 Research Interests
 ======
 ### Big-data-driven human mobility modelling
-My PhD dissertation, entitled **"A BIG-DATA-DRIVEN FRAMEWORK FOR TRAVEL DEMAND ESTIMATION, PREDICTION, AND SIMULATION"**, is devoted to constructing an end-to-end big-data-driven travel demand modelling framework for estimating, predicting, and simulating large-scale human movement, aggregately and disaggregately, leveraging massive mobile device location data and other transportation-related data, 
+My PhD dissertation, entitled **"A big-data-driven framework for spatiotemporal travel demand estimation and prediction"**, is devoted to constructing an end-to-end big-data-driven travel demand modelling framework for estimating, predicting, and simulating large-scale human movement, aggregately and disaggregately, leveraging massive mobile device location data and other transportation-related data, 
 integrating statistical methods, deep learning models, simulation tools, and cloud-computing techniques.
 
 
 <img src="images/F1.png" width="900" title='Framework'/>
+
+### Spatiotemporal graph neural network in crowd flow prediction
+I propose a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network (Multi-ATGCN), a general deep learning framework that fuses multi-view spatial structures, multi-head temporal patterns, and various external effects, for citywide multi-step crowd inflow forecasting.
+Experiments on two real-world citywide crow flow prediction tasks demonstrate a steady performance improvement and comparable computational efficiency of Multi-ATGCN over state-of-the-art baselines.
+
+<img src="images/FN21.png" width="900" title='Framework'/>
+<img src="images/FN22.png" width="900" title='Framework'/>
 
 ### Integrated modelling transport and epidemiology
 During the COVID-19 pandemic, I focused my research on building integrated mathematical and epidemiological models to jointly examine relationships among human mobility, non-pharmaceutical interventions, and virus transmission,
