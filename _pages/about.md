@@ -171,13 +171,13 @@ Under Review
 ======
 * Revisiting travel demand using big data: an empirical comparison of explainable machine learning models.
 **Songhua Hu**, Chenfeng Xiong, Peng Chen, Paul Schonfeld, 2022.
-  * Under Review at *Transportation Research Part C: Emerging Technologies* 
+  * Under Review at *Transportation Research Part A: Policy and Practice* 
 * High-Dimensional Population Flow Time Series Forecasting Via an Interpretable Hierarchical Transformer.
 **Songhua Hu**, Chenfeng Xiong, 2022.
     * Under Review at *Transportation Research Part C: Emerging Technologies* 
 * Vaccination, Mobility, and COVID-19 Health Outcomes: Empirical Comparison Before and During the Outbreak of SARS‐Cov‐2 B.1.1.529 (Omicron) Variant.
 **Songhua Hu**, Chenfeng Xiong, Xin Yuan, Xuqiu Wang, 2022.
-    * Under Review at *Health & Place* 
+    * Under Review at *Brain, Behavior, and Immunity* 
 * Complementary or Competing? Studying the Relationship Between E-Scooter Sharing and Bikesharing.
 Peng Chen and **Songhua Hu**, 2019.
     * Under Review at *Journal of Planning Education and Research* 
