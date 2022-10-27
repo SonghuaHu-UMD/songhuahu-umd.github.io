@@ -27,7 +27,7 @@ integrating statistical methods, deep learning models, simulation tools, and clo
 <img src="images/F1.png" width="900" title='Framework'/>
 
 ### Spatiotemporal graph neural network in crowd flow prediction
-I propose a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network (Multi-ATGCN), a general deep learning framework that fuses multi-view spatial structures, multi-head temporal patterns, and various external effects, for citywide multi-step crowd inflow forecasting.
+I propose a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network ([Multi-ATGCN](https://github.com/SonghuaHu-UMD/MultiSTGraph)), a general deep learning framework that fuses multi-view spatial structures, multi-head temporal patterns, and various external effects, for citywide multi-step crowd inflow forecasting.
 Experiments on two real-world tasks demonstrate a steady performance improvement and comparable computational efficiency of Multi-ATGCN over state-of-the-art baselines.
 
 <img src="images/FN21.png" width="900" title='Framework'/>
