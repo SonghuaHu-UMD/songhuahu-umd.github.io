@@ -47,10 +47,10 @@ a general deep learning framework for citywide multi-step human mobility forecas
 Experiments on two real-world tasks demonstrate its steady performance improvement over state-of-the-art baselines. 
 I also propose a hierarchical activity-based framework for simultaneously predicting the activity, time, and location of the next trip for each device. 
 
-<img src="images/FN21.png" width="900" title='Framework'/>
-<img src="images/FN22.png" width="900" title='Framework'/>
+<img src="images/FF2.png" width="900" title='Framework'/>
 
 ### Related Publications/Working Papers
+<img src="images/FF21.png" width="400" title='Framework'/> <img src="images/FF22.png" width="400" title='Framework'/>
 1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Part C: Emerging Technologies 146 (2023): 103962.
 2. **Hu, Songhua**, Yiqun Xie, Chenfeng Xiong, Paul Schonfeld, Multi-ATGCN: A multi-graph multi-head adaptive temporal graph convolutional network for multivariable crowd inflow forecasting (2023). (Intended for KDD 2023)
 3. **Hu, Songhua**, Yiqun Xie, Peng Chen, Paul Schonfeld, Nationwide spatiotemporal population flow forecasting via temporal fusion graph convolutional neural network: a comparative analysis. (2023). (Intended for IEEE Transactions on Intelligent Transportation Systems)
