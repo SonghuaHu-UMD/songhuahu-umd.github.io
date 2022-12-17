@@ -49,7 +49,7 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 <img src="images/FN21.png" width="900" title='Framework'/>
 <img src="images/FN22.png" width="900" title='Framework'/>
 
-### Related Publications/Working Paper
+### Related Publications/Working Papers
 1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Part C: Emerging Technologies 146 (2023): 103962.
 2. **Hu, Songhua**, Yiqun Xie, Chenfeng Xiong, Paul Schonfeld, Multi-ATGCN: A multi-graph multi-head adaptive temporal graph convolutional network for multivariable crowd inflow forecasting (2023). (Intended for KDD 2023)
 3. **Hu, Songhua**, Yiqun Xie, Peng Chen, Paul Schonfeld, Nationwide spatiotemporal population flow forecasting via temporal fusion graph convolutional neural network: a comparative analysis. (2023). (Intended for IEEE Transactions on Intelligent Transportation Systems)
@@ -190,7 +190,7 @@ Conference Reviewer
 Skills
 ======
 * **Programming**
-  * Python (pandas, numpy, pytorch, sklearn), R (dplyr, ggplot2, car, lavaan, mgcv, spdep), SQL (MySQL, pgAdmin, Impala, Oracle), Matlab, Git, Java, HTML
+  * **Python** (pandas, numpy, pytorch, sklearn), **R** (dplyr, ggplot2, car, lavaan, mgcv, spdep), **SQL** (MySQL, pgAdmin, Impala, Oracle), Matlab, Git, Java, HTML
 * **Traffic Simulation**
   * Vissim (&COM), TransCAD, Synchro, AnyLogic, DTALite
 * **Spatial Analysis**
@@ -198,9 +198,9 @@ Skills
 * **Cloud Computing**
   * AWS (S3, EMR, EC2), PySpark
 * **ML/DL/AI**
-  * Machine learning (RF, XGBoost, LightGBM), Explainable AI (SHAP, PDP, ALE), Deep learning (FNN, CNN, (Attention) RNN, Transformer, (Temporal) Graph NN)
+  * **Machine learning** (RF, XGBoost, LightGBM), **Explainable AI** (SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (Attention) RNN, Transformer, (Temporal) Graph NN)
 * **Statistics**
-  * Causal inference (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), Survival analysis, Regression (Generalized linear models, Generialzied additive (mixed) models, Partial least squares), Spatial econometrics
+  * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **Survival analysis**, **Regression** (Generalized linear models, Generialzied additive (mixed) models, Partial least squares), **Spatial econometrics**
 
 ***
 
