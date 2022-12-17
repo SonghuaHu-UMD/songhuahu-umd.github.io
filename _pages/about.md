@@ -37,8 +37,7 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 6. Yang, Mofeng, Weiyu Luo, Mohammad Ashoori, Jina Mahmoudi, Chenfeng Xiong, Jiawei Lu, Guangchen Zhao, Saeed Saleh Namadi, **Songhua Hu**, and Aliakbar Kabiri, A big-data driven framework to estimating vehicle volume based on mobile device location data, Transportation Research Board 102th Annual Meeting (2023), Washington DC. 
 7. Chen, Peng, **Songhua Hu***, Qing Shen, Hangfei Lin, and Chi Xie. "Estimating traffic volume for local streets with imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610.
 8. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
-</sub> 
-
+</sub>
 
 ## Large-scale spatiotemporal network forecasting
 Spatiotemporal human mobility forecasting plays a key role in urban management. 
@@ -54,7 +53,8 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 
 ### Related Publications
 1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
-
+2. **Hu, Songhua**, Yiqun Xie, Chenfeng Xiong, Paul Schonfeld, Multi-ATGCN: A multi-graph multi-head adaptive temporal graph convolutional network for multivariable crowd inflow forecasting (2023). (Intended for KDD 2023)
+3. **Hu, Songhua**, Yiqun Xie, Peng Chen, Paul Schonfeld, Nationwide spatiotemporal population flow forecasting via temporal fusion graph convolutional neural network: a comparative analysis. (2023). (Intended for IEEE Transactions on Intelligent Transportation Systems)
 
 ## Sustainable, equitable, and resilient mobility infrastructure
 Unexpected events would lead to substantial impacts on mobility systems and irreversibly change human travel behaviors. 
