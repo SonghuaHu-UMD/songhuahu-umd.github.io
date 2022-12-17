@@ -18,19 +18,19 @@ I establish a set of advanced computing and modeling frameworks integrating AI-d
 
 Research Interests
 ======
-### Big-data-driven human mobility estimation
-Travel demand modeling is the key element of transportation planning. 
+## Big-data-driven human mobility estimation
 Traditional travel demand models heavily rely on travel surveys, which are costly, laborious, and suffer from small-sample and infrequent issues. 
 My Ph.D. dissertation focuses on building a big-data-driven digital twin model for estimating and forecasting human mobility at both collective and individual levels 
 using location data from over 100 million monthly active mobile devices in the US. 
 Specifically, My work is intended to leverage emerging big data, such as mobile device location data, digital social structure, traffic sensor records, and mobility transaction data, 
 to extract population-representative trip itineraries, estimate multi-modal Origin-Destination matrices, and analyze individual travel behaviors. 
-Future research will mesh estimated human mobility with large-scale traffic simulation tools such as dynamic traffic assignment and agent-based simulation 
-to obtain citywide road-level traffic flow parameters.
 
-<img src="images/F1.png" width="900" title='Framework'/>
+### Related Publications
 
-### Large-scale spatiotemporal network forecasting
+
+<img src="images/F1.png" width="300" title='Framework'/>
+
+## Large-scale spatiotemporal network forecasting
 Spatiotemporal human mobility forecasting plays a key role in urban management. 
 However, due to complex spatiotemporal dependencies and heterogeneous external effects, this task is challenging. 
 My ongoing research focuses on large-scale spatiotemporal network forecasting using deep learning methods. 
@@ -38,46 +38,35 @@ I proposed a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Networ
 a general deep learning framework for citywide multi-step human mobility forecasting. 
 Experiments on two real-world tasks demonstrate its steady performance improvement over state-of-the-art baselines. 
 I also propose a hierarchical activity-based framework for simultaneously predicting the activity, time, and location of the next trip for each individual. 
-Follow-up research will expand the framework to support multi-task learning (i.e., multi-modal demand forecasting), 
-walk-forward validation (i.e., capturing effects of unexpected events), and physical-guided learning (i.e., integration with discrete choice models).
 
 <img src="images/FN21.png" width="900" title='Framework'/>
 <img src="images/FN22.png" width="900" title='Framework'/>
 
-### Sustainable, equitable, and resilient mobility infrastructure
-Unexpected events would lead to substantial impacts on mobility systems and irreversibly change human travel behaviors.
+## Sustainable, equitable, and resilient mobility infrastructure
+Unexpected events would lead to substantial impacts on mobility systems and irreversibly change human travel behaviors. 
+My work focuses on qualitatively and quantitatively examining the time-varying resilience of transportation infrastructure under abnormal interventions, for example, modeling road traffic flow under inclement weather 
+and comparing recovery patterns of multi-modal travel demand during the COVID-19 pandemic. 
+My particular attention to accessibility inequities, policy barriers, and resilient disparities in underserved communities 
+under unusual interventions provides valuable suggestions for a more sustainable, equitable, and resilient urban system.
 
-
-### Integrated modeling of travel behavior and public health
+## Integrated modeling of travel behavior and public health
 During the COVID-19 pandemic, non-pharmaceutical interventions were widely employed to contain the dissemination of the virus by restricting people's travel and physical contact. 
 I have closely worked together with [Prof. Chenfeng Xiong](https://www1.villanova.edu/university/engineering/academic-programs/departments/civil-environmental/directory/biodetail.html?mail=chenfeng.xiong@villanova.edu&xsl=bio_long) 
 on building integrated econometric, epidemiological, and simulation models to examine (causal) relations among human mobility, public policies, vaccination, and virus transmission, which are critical to policy assessment, disease outbreak prediction, and public health management.
 Related work has led to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
-Future work will extend the methodological framework to other highly contagious diseases such as SARS-Cov-2 variants, AIDS, and influenza, to support general disease prevention and control measures.
 
 <img src="images/F2.png" width="900" title='Framework'/>
 <img src="images/F21.png" width="900" title='Framework'/>
 
-### Explainable AI in transportation domain
-I am particularly interested in empowering black-box machine(deep) learning models with interpretability by pre-designing interpretation-oriented parameters, or by applying post hoc model-agnostic interpretation techniques such as partial dependence plot, and SHapley Additive exPlanations.
-I have incorporated these fantastic concepts into different transportation tasks such as travel demand estimation and crowd flow time series forecasting, to delineate the patterns learned by the model from massive travel data.
-
-<img src="images/F11.png" width="900" title='Framework'/>
-<img src="images/F12.png" width="900" title='Framework'/>
-
-### Mobility as a service (MaaS) and shared mobility
+## Mobility as a service (MaaS) and shared mobility
 I have extensive research experience in shared and smart mobility. 
 In Tongji University, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm) | [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm) | [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx), 
 I have investigated various shared mobility programs to provide empirical evidence on how to promote their efficiency, how to allocate incentives to prevent user turnover, and how to encourage multi-modal integration.
 After joining University of Maryland, I am the technical leader of the first-in-the-nation MaaS APP "incenTrip" project, funded by USDOE and USDOT, to provide green travel options and personalized incentives for real-world travelers. 
-My future studies will focus on the combination of electrification, sharing, and automation, 
-for example, quantifying the impact of shared autonomous vehicles on current transportation systems, 
-understanding how charging infrastructure would influence the efficiency of electric mobility systems, 
-and building simulation and optimization models to support the routing, charging, and fleet management of shared automatic vehicles in a mixed-traffic environment.
 
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
-### Integrated multidimensional traffic simulation
+## Integrated multidimensional traffic simulation
 I am experienced in traditional traffic simulation tools including [Vissim](https://zhuanlan.zhihu.com/p/38350957), [TransCAD](https://zhuanlan.zhihu.com/p/61273834), [AnyLogic](https://zhuanlan.zhihu.com/p/66526593), [DTALite](https://zhuanlan.zhihu.com/p/152268601), and Synchro.
 I have technically led a set of traffic simulation projects in China and US.
 I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) on the development of the open-source multimodal traffic simulation framework, named DTALite, integrating agent-based modelling and dynamic traffic assignment.
