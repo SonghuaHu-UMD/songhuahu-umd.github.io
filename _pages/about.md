@@ -30,16 +30,15 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 ### Related Publications
 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
 2. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. Revisiting travel demand using big data: an empirical comparison of explainable machine learning models, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
-3. Zhao, Guangchen, Chenfeng Xiong, **Songhua Hu**, Mofeng Yang, Aliakbar Kabiri, Aref Darzi, and Yixuan Pan. A novel measurement of job accessibility based on mobile device location data, Transportation Research Board 102th Annual Meeting (2023), Washington DC. 
-4. Zhang, Lei, Aref Darzi, Sepehr Ghader, Michael L. Pack, Chenfeng Xiong, Mofeng Yang, Qianqian Sun, AliAkbar Kabiri, and **Songhua Hu**. "Interactive covid-19 mobility impact and social distancing analysis platform." Transportation Research Record (2020): 03611981211043813.
-5. Sun, Qianqian, Yixuan Pan, Weiyi Zhou, Aliakbar Kabiri, Mofeng Yang, Guangchen Zhao, **Songhua Hu**, Mohammad Ashoori, Saeed Saleh Namadi, and Aref Darzi. National truck travel demand estimation using GPS data, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
-6. Yang, Mofeng, Weiyu Luo, Mohammad Ashoori, Jina Mahmoudi, Chenfeng Xiong, Jiawei Lu, Guangchen Zhao, Saeed Saleh Namadi, **Songhua Hu**, and Aliakbar Kabiri, A big-data driven framework to estimating vehicle volume based on mobile device location data, Transportation Research Board 102th Annual Meeting (2023), Washington DC. 
-7. Chen, Peng, **Songhua Hu***, Qing Shen, Hangfei Lin, and Chi Xie. "Estimating traffic volume for local streets with imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610.
-8. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
+3. Chen, Peng, **Songhua Hu***, Qing Shen, Hangfei Lin, and Chi Xie. "Estimating traffic volume for local streets with imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610.
+4. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
+5. Zhao, Guangchen, Chenfeng Xiong, **Songhua Hu**, Mofeng Yang, Aliakbar Kabiri, Aref Darzi, and Yixuan Pan. A novel measurement of job accessibility based on mobile device location data, Transportation Research Board 102th Annual Meeting (2023), Washington DC. 
+6. Zhang, Lei, Aref Darzi, Sepehr Ghader, Michael L. Pack, Chenfeng Xiong, Mofeng Yang, Qianqian Sun, AliAkbar Kabiri, and **Songhua Hu**. "Interactive covid-19 mobility impact and social distancing analysis platform." Transportation Research Record (2020): 03611981211043813.
+7. Sun, Qianqian, Yixuan Pan, Weiyi Zhou, Aliakbar Kabiri, Mofeng Yang, Guangchen Zhao, **Songhua Hu**, Mohammad Ashoori, Saeed Saleh Namadi, and Aref Darzi. National truck travel demand estimation using GPS data, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
+8. Yang, Mofeng, Weiyu Luo, Mohammad Ashoori, Jina Mahmoudi, Chenfeng Xiong, Jiawei Lu, Guangchen Zhao, Saeed Saleh Namadi, **Songhua Hu**, and Aliakbar Kabiri, A big-data driven framework to estimating vehicle volume based on mobile device location data, Transportation Research Board 102th Annual Meeting (2023), Washington DC. 
 
 ## Large-scale spatiotemporal network forecasting
-Spatiotemporal mobility forecasting plays a key role in urban management. 
-However, due to complex spatiotemporal dependencies and heterogeneous external effects, this task is challenging. 
+Spatiotemporal mobility forecasting is challenging due to complex spatiotemporal dependencies and heterogeneous external effects. 
 My ongoing research focuses on large-scale spatiotemporal network forecasting using deep learning methods. 
 I proposed a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network ([Multi-ATGCN](https://github.com/SonghuaHu-UMD/MultiSTGraph)), 
 a general deep learning framework for citywide multi-step human mobility forecasting. 
@@ -55,11 +54,11 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 3. **Hu, Songhua**, Yiqun Xie, Peng Chen, Paul Schonfeld, Nationwide spatiotemporal population flow forecasting via temporal fusion graph convolutional neural network: a comparative analysis. (2023). (Intended for IEEE Transactions on Intelligent Transportation Systems)
 
 ## Sustainable, equitable, and resilient mobility infrastructure
-Unexpected events would lead to substantial impacts on mobility systems and irreversibly change human travel behaviors. 
+Unexpected events lead to substantial impacts on mobility systems and irreversibly change human travel behaviors. 
 My work focuses on qualitatively and quantitatively examining the time-varying resilience of transportation infrastructure under abnormal interventions, for example, modeling road traffic flow under inclement weather 
 and comparing recovery patterns of multi-modal travel demand during the COVID-19 pandemic. 
 My particular attention to accessibility inequities, policy barriers, and resilient disparities in underserved communities 
-under unusual interventions provides valuable suggestions for a more sustainable, equitable, and resilient urban system.
+under unusual interventions provides valuable suggestions for a more sustainable, equitable, and resilient urban mobility system.
 
 ### Related Publications
 1. Sun, Qianqian, Weiyi Zhou, Aliakbar Kabiri, Aref Darzi, **Songhua Hu**, Hannah Younes, and Lei Zhang. " COVID-19 and income profile: How people in different income groups responded to disease outbreak, case study of the United States." Regional Science Policy & Practice (2022).
@@ -148,7 +147,7 @@ Awards
 ***
 
 
-[Journal Reviewer](https://publons.com/researcher/4832727/songhua-hu/peer-review/)
+Journal Reviewer
 ======
 * Accident Analysis and Prevention
 * Applied Geography
