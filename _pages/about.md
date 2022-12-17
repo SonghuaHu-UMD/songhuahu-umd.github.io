@@ -52,7 +52,7 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 <img src="images/FN22.png" width="900" title='Framework'/>
 
 ### Related Publications
-1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
+1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Part C: Emerging Technologies 146 (2023): 103962.
 2. **Hu, Songhua**, Yiqun Xie, Chenfeng Xiong, Paul Schonfeld, Multi-ATGCN: A multi-graph multi-head adaptive temporal graph convolutional network for multivariable crowd inflow forecasting (2023). (Intended for KDD 2023)
 3. **Hu, Songhua**, Yiqun Xie, Peng Chen, Paul Schonfeld, Nationwide spatiotemporal population flow forecasting via temporal fusion graph convolutional neural network: a comparative analysis. (2023). (Intended for IEEE Transactions on Intelligent Transportation Systems)
 
