@@ -38,13 +38,13 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 8. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
 
 ## Large-scale spatiotemporal network forecasting
-Spatiotemporal human mobility forecasting plays a key role in urban management. 
+Spatiotemporal mobility forecasting plays a key role in urban management. 
 However, due to complex spatiotemporal dependencies and heterogeneous external effects, this task is challenging. 
 My ongoing research focuses on large-scale spatiotemporal network forecasting using deep learning methods. 
 I proposed a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network ([Multi-ATGCN](https://github.com/SonghuaHu-UMD/MultiSTGraph)), 
 a general deep learning framework for citywide multi-step human mobility forecasting. 
 Experiments on two real-world tasks demonstrate its steady performance improvement over state-of-the-art baselines. 
-I also propose a hierarchical activity-based framework for simultaneously predicting the activity, time, and location of the next trip for each individual. 
+I also propose a hierarchical activity-based framework for simultaneously predicting the activity, time, and location of the next trip for each device. 
 
 <img src="images/FN21.png" width="900" title='Framework'/>
 <img src="images/FN22.png" width="900" title='Framework'/>
@@ -80,7 +80,8 @@ Related work has led to several high-caliber publications, including one [PNAS p
 <img src="images/F21.png" width="900" title='Framework'/>
 
 ### Related Publications
-<font size="3">
+
+[//]: # (<font size="3">)
 
 1. **Hu, Songhua**, Chenfeng Xiong, Qingchen Li, Zitong Wang, and Yuan Jiang. "COVID-19 vaccine hesitancy cannot fully explain disparities in vaccination coverage across the contiguous United States." Vaccine (2022).
 2. **Hu, Songhua**, Chenfeng Xiong, Hannah Younes, Mofeng Yang, Aref Darzi, and Zhiyu Catherine Jin. "Examining spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from the contiguous United States." Sustainable cities and society 76 (2022): 103506.
@@ -88,7 +89,8 @@ Related work has led to several high-caliber publications, including one [PNAS p
 4. Luo, Weiyu, Wei Guo, **Songhua Hu**, Mofeng Yang, Xinyuan Hu, and Chenfeng Xiong. "Flatten the curve: Empirical evidence on how non-pharmaceutical interventions substituted pharmaceutical treatments during COVID-19 pandemic." Plos one 16, no. 10 (2021): e0258379.
 5. Xiong, Chenfeng, **Songhua Hu**, Mofeng Yang, Weiyu Luo, and Lei Zhang. "Mobile device data reveal the dynamics in a positive relationship between human mobility and COVID-19 infections." Proceedings of the National Academy of Sciences 117, no. 44 (2020): 27087-27089.
 6. **Hu, Songhua**, Chenfeng Xiong, Xin Yuan, and Xuqiu Wang. Vaccination, Mobility, and COVID-19 Health Outcomes: Empirical Comparison Before and During the Outbreak of SARS-Cov-2 B.1.1.529 (Omicron) Variant, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
-</font>
+
+[//]: # (</font>)
 
 ## Mobility as a service (MaaS) and shared mobility
 I have extensive research experience in shared and smart mobility. 
