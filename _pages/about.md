@@ -25,9 +25,11 @@ using location data from over 100 million monthly active mobile devices in the U
 Specifically, My work is intended to leverage emerging big data, such as mobile device location data, digital social structure, traffic sensor records, and mobility transaction data, 
 to extract population-representative trip itineraries, estimate multi-modal Origin-Destination matrices, and analyze individual travel behaviors.
 
-<img src="images/F1.png" width="425" title='Framework'/><img src="images/F11.png" width="425" title='Framework'/>
+<img src="images/FF1.png" width="900" title='Framework'/>
 
 ### Related Publications
+<img src="images/FF11.png" width="400" title='Framework'/> <img src="images/FF12.png" width="400" title='Framework'/>
+
 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
 2. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. Revisiting travel demand using big data: an empirical comparison of explainable machine learning models, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
 3. Chen, Peng, **Songhua Hu***, Qing Shen, Hangfei Lin, and Chi Xie. "Estimating traffic volume for local streets with imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610.
