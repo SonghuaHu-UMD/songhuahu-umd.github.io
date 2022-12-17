@@ -28,7 +28,6 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 <img src="images/F1.png" width="900" title='Framework'/>
 
 ### Related Publications
-<sub> 
 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
 2. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. Revisiting travel demand using big data: an empirical comparison of explainable machine learning models, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
 3. Zhao, Guangchen, Chenfeng Xiong, **Songhua Hu**, Mofeng Yang, Aliakbar Kabiri, Aref Darzi, and Yixuan Pan. A novel measurement of job accessibility based on mobile device location data, Transportation Research Board 102th Annual Meeting (2023), Washington DC. 
@@ -37,7 +36,6 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 6. Yang, Mofeng, Weiyu Luo, Mohammad Ashoori, Jina Mahmoudi, Chenfeng Xiong, Jiawei Lu, Guangchen Zhao, Saeed Saleh Namadi, **Songhua Hu**, and Aliakbar Kabiri, A big-data driven framework to estimating vehicle volume based on mobile device location data, Transportation Research Board 102th Annual Meeting (2023), Washington DC. 
 7. Chen, Peng, **Songhua Hu***, Qing Shen, Hangfei Lin, and Chi Xie. "Estimating traffic volume for local streets with imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610.
 8. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
-</sub>
 
 ## Large-scale spatiotemporal network forecasting
 Spatiotemporal human mobility forecasting plays a key role in urban management. 
@@ -51,7 +49,7 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 <img src="images/FN21.png" width="900" title='Framework'/>
 <img src="images/FN22.png" width="900" title='Framework'/>
 
-### Related Publications
+### Related Publications/Working Paper
 1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Part C: Emerging Technologies 146 (2023): 103962.
 2. **Hu, Songhua**, Yiqun Xie, Chenfeng Xiong, Paul Schonfeld, Multi-ATGCN: A multi-graph multi-head adaptive temporal graph convolutional network for multivariable crowd inflow forecasting (2023). (Intended for KDD 2023)
 3. **Hu, Songhua**, Yiqun Xie, Peng Chen, Paul Schonfeld, Nationwide spatiotemporal population flow forecasting via temporal fusion graph convolutional neural network: a comparative analysis. (2023). (Intended for IEEE Transactions on Intelligent Transportation Systems)
@@ -183,15 +181,17 @@ Conference Reviewer
 Skills
 ======
 * **Programming**
-  * Python, R, Matlab, SQL, Html, VB.
+  * Python (pandas, numpy, pytorch, sklearn), R (dplyr, ggplot2, car, lavaan, mgcv, spdep), SQL (MySQL, pgAdmin, Impala, Oracle), Matlab, Git, Java, HTML
 * **Traffic Simulation**
-  * Vissim (&COM), TransCAD, Synchro, AnyLogic, DTALite.
+  * Vissim (&COM), TransCAD, Synchro, AnyLogic, DTALite
 * **Spatial Analysis**
-  * ArcGIS, Geopandas, Gephi, NetworkX.
+  * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx
 * **Cloud Computing**
-  * AWS-EMR, AWS-EC2, PySpark
+  * AWS (S3, EMR, EC2), PySpark
 * **ML/DL/AI**
-  * (Temporal) Graph neural network, CNN, RNN, Transformer, Tree-based model, Explainable AI.
+  * Machine learning (RF, XGBoost, LightGBM), Explainable AI (SHAP, PDP, ALE), Deep learning (FNN, CNN, (Attention) RNN, Transformer, (Temporal) Graph NN)
+* **Statistics**
+  * Causal inference (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), Survival analysis, Regression (Generalized linear models, Generialzied additive (mixed) models, Partial least squares), Spatial econometrics
 
 ***
 
