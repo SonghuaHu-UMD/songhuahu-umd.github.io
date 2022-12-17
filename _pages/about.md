@@ -119,9 +119,15 @@ My current work focuses on meshing the big travel data with advanced traffic sim
 
 Education
 ======
-* Ph.D., Transportation Engineering, University of Maryland, College Park, 2019 - 2022 (Expected).
-* M.S., Transportation Engineering, Tongji University, 2016 - 2019.
-* B.S., Transportation Engineering, Huazhong University of Science and Technology, 2012 - 2016.
+* **Ph.D. (ABD), Transportation Engineering**
+  * University of Maryland, College Park, 09/2019 - 02/2023 (Expected).
+  * Dissertation: “A big-data-driven framework for spatiotemporal travel demand estimation and prediction”
+* **M.S., Transportation Engineering**
+  * Tongji University, 09/2016 - 06/2019
+  * Thesis: “Promoting electric vehicle utilization in large-scale carsharing systems: Factors analysis and relocation simulation”
+* **B.S., Transportation Engineering**
+  * Huazhong University of Science and Technology, 09/2012 - 06/2016
+  * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
 
 ***
 
