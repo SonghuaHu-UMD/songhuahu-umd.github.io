@@ -28,8 +28,8 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 <img src="images/FF1.png" width="900"/>
 
 ### Related Publications
-<img src="images/FF11.png" width="150" hspace="5"/> <img src="images/FF12.png" width="150" hspace="5"/>
-<img src="images/FF13.gif" width="150" hspace="5"/> <img src="images/FF14.gif" width="150" hspace="5"/>
+<img src="images/FF11.png" width="200" hspace="5"/> <img src="images/FF12.png" width="200" hspace="5"/>
+<img src="images/FF13.gif" width="200" hspace="5"/> 
 
 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
 2. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. Revisiting travel demand using big data: an empirical comparison of explainable machine learning models, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
@@ -51,8 +51,8 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 <img src="images/FF2.png" width="900"/>
 
 ### Related Publications/Working Papers
-<img src="images/FF21.png" width="150" hspace="5"/> <img src="images/FF22.png" width="150" hspace="5"/>
-<img src="images/FF23.gif" width="150" hspace="5"/> <img src="images/FF24.png" width="150" hspace="5"/>
+<img src="images/FF21.png" width="200" hspace="5"/> <img src="images/FF22.png" width="200" hspace="5"/>
+<img src="images/FF23.gif" width="200" hspace="5"/> 
 
 1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Part C: Emerging Technologies 146 (2023): 103962.
 2. **Hu, Songhua**, Yiqun Xie, Chenfeng Xiong, Paul Schonfeld, Multi-ATGCN: A multi-graph multi-head adaptive temporal graph convolutional network for multivariable crowd inflow forecasting (2023). (Intended for KDD 2023)
