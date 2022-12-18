@@ -1,23 +1,23 @@
 ---
 layout: archive
 title: "Big-data-driven human mobility estimation"
-permalink: /Big-data-driven human mobility estimation/
+permalink: /Human Mobility/
 author_profile: true
 ---
 
-## Big-data-driven human mobility estimation
 Traditional travel demand models heavily rely on travel surveys, which are costly, laborious, and suffer from small-sample and infrequent issues. 
 My Ph.D. dissertation focuses on building a big-data-driven digital twin model for estimating and forecasting human mobility at both collective and individual levels 
 using location data from over 100 million monthly active mobile devices in the US. 
 Specifically, My work is intended to leverage emerging big data, such as mobile device location data, digital social structure, traffic sensor records, and mobility transaction data, 
 to extract population-representative trip itineraries, estimate multi-modal Origin-Destination matrices, and analyze individual travel behaviors.
 
-<img src="images/FF1.png" width="900"/>
+<img src="https://songhuahu-umd.github.io/images/FF1.png" width="900"/>
 
 ### Related Publications
 
-<img src="images/FF12.png" width="240" hspace="5"/> <img src="images/FF11.png" width="240" hspace="5"/>
-<img src="images/FF13.gif" width="240" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF12.png" width="240" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF11.png" width="240" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="240" hspace="5"/> 
 
 
 > 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.

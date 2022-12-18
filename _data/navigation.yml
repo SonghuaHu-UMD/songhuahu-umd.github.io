@@ -18,20 +18,20 @@ main:
   - title: "CV"
     url: /cv/
 
-  - title: "Big-data-driven human mobility estimation"
-    url: /Big-data-driven human mobility estimation/
+  - title: "Human Mobility"
+    url: /Human Mobility/
 
-  - title: "Large-scale spatiotemporal network forecasting"
-    url: /Large-scale spatiotemporal network forecasting/
+  - title: "Spatiotemporal Network"
+    url: /Spatiotemporal Network/
 
-  - title: "Big-data-driven human mobility estimation"
-    url: /Big-data-driven human mobility estimation/
+  - title: "Infrastructure Resilience"
+    url: /Infrastructure Resilience/
 
-  - title: "Big-data-driven human mobility estimation"
-    url: /Big-data-driven human mobility estimation/
+  - title: "Public Health"
+    url: /Public Health/
 
-  - title: "Big-data-driven human mobility estimation"
-    url: /Big-data-driven human mobility estimation/
+  - title: "Shared Mobility"
+    url: /Shared Mobility/
 #
 #  - title: "Guide"
 #    url: /markdown/
