@@ -3,16 +3,23 @@ permalink: /
 title: ""
 excerpt: "About me"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+redirect_from:
+
+- /about/
+- /about.html
+
 ---
 
-Greetings! My name is Songhua Hu (胡松华), a ABD Ph.D. candidate at the Department of Civil & Environmental Engineering, University of Maryland, College Park. 
+Greetings! My name is Songhua Hu (胡松华), a ABD Ph.D. candidate at the Department of Civil & Environmental Engineering,
+University of Maryland, College Park.
 My supervisor is [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld).
 I am now working as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
-As a transportation and mobility researcher, my research mainly focuses on ubiquitous computing (human mobility), spatiotemporal network modeling, infrastructure resilience, and health geography. 
-I establish a set of advanced computing and modeling frameworks integrating AI-driven methods, statistical and econometric models, traffic simulation, and cloud computing techniques for ingesting multisource travel-related big data, constructing digit-twin mobility systems, forecasting future spatiotemporal mobility networks, and disentangling complex relationships among human travel behaviors and external factors.
+As a transportation and mobility researcher, my research mainly focuses on ubiquitous computing (human mobility),
+spatiotemporal network modeling, infrastructure resilience, and health geography.
+I establish a set of advanced computing and modeling frameworks integrating AI-driven methods, statistical and
+econometric models, traffic simulation, and cloud computing techniques for ingesting multisource travel-related big
+data, constructing digit-twin mobility systems, forecasting future spatiotemporal mobility networks, and disentangling
+complex relationships among human travel behaviors and external factors.
 
 ***
 
@@ -30,20 +37,23 @@ Research Interests
 
 Education
 ======
+
 * **Ph.D. (ABD), Transportation Engineering**
-  * University of Maryland, College Park, 09/2019 - 02/2023 (Expected).
-  * Dissertation: “A big-data-driven framework for spatiotemporal travel demand estimation and prediction”
+    * University of Maryland, College Park, 09/2019 - 02/2023 (Expected).
+    * Dissertation: “A big-data-driven framework for spatiotemporal travel demand estimation and prediction”
 * **M.S., Transportation Engineering**
-  * Tongji University, 09/2016 - 06/2019
-  * Thesis: “Promoting electric vehicle utilization in large-scale carsharing systems: Factors analysis and relocation simulation”
+    * Tongji University, 09/2016 - 06/2019
+    * Thesis: “Promoting electric vehicle utilization in large-scale carsharing systems: Factors analysis and relocation
+      simulation”
 * **B.S., Transportation Engineering**
-  * Huazhong University of Science and Technology, 09/2012 - 06/2016
-  * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
+    * Huazhong University of Science and Technology, 09/2012 - 06/2016
+    * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
 
 ***
 
 Publications
 ======
+
 * **3** papers published in _Transportation Research Part C: Emerging Technologies_ (_3 First-Authored_).
 * **3** papers published in _Transportation Research Part D: Transport and Environment_ (_3 First-Authored_).
 * **2** papers published in _Journal of Transport Geography_ (_2 First-Authored_).
@@ -53,7 +63,8 @@ Publications
 * **1** paper published in _Journal of the Royal Society Interface_.
 * **1** paper published in _International Journal of Sustainable Transportation_.
 * **2** papers published in _Transportation Research Record_.
-* **2** papers published in _IEEE International Conference on Intelligent Transportation Systems (ITSC)_ (_2 First-Authored_).
+* **2** papers published in _IEEE International Conference on Intelligent Transportation Systems (ITSC)_ (_2
+  First-Authored_).
 * **>10** posters/presentations in _Transportation Research Board Annual Meeting_.
 
 See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)
@@ -63,13 +74,19 @@ See full list here: [Google Scholar](https://scholar.google.com/citations?user=u
 
 Awards
 ======
-* [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards), University of Maryland, College Park, 2021.
+
+* [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards)
+  , University of Maryland, College Park, 2021.
 * CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
 * The Graduate School's Dean’s Fellowship, University of Maryland, College Park, 2019.
 * The Excellent Master Scholarship, Tongji University, 2018.
-* Second Price, [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
-* Social Responsibility Award, [BMW Next Mobility Youth Camp](http://www.chinanews.com.cn/auto/2016/12-02/8081476.shtml), 2016.
-* [Pacemaker to Merit Student (Top 20)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and Technology, 2015.
+* Second
+  Price, [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml),
+  2017.
+* Social Responsibility Award, [BMW Next Mobility Youth Camp](http://www.chinanews.com.cn/auto/2016/12-02/8081476.shtml)
+  , 2016.
+* [Pacemaker to Merit Student (Top 20)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and
+  Technology, 2015.
 * National Encouragement Scholarship, Huazhong University of Science and Technology, 2015.
 * National Scholarship, Huazhong University of Science and Technology, 2014.
 * National Scholarship, Huazhong University of Science and Technology, 2013.
@@ -78,18 +95,23 @@ Awards
 
 Skills
 ======
+
 * **Programming**
-  * **Python** (pandas, numpy, pytorch, sklearn), **R** (dplyr, ggplot2, car, lavaan, mgcv, spdep), **SQL** (MySQL, pgAdmin, Impala, Oracle), Matlab, Git, Java, HTML
+    * **Python** (pandas, numpy, pytorch, sklearn), **R** (dplyr, ggplot2, car, lavaan, mgcv, spdep), **SQL** (MySQL,
+      pgAdmin, Impala, Oracle), Matlab, Git, Java, HTML
 * **Traffic Simulation**
-  * Vissim (&COM), TransCAD, Synchro, AnyLogic, DTALite
+    * Vissim (&COM), TransCAD, Synchro, AnyLogic, DTALite
 * **Spatial/Network Analysis**
-  * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx
+    * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx
 * **Cloud Computing**
-  * AWS (S3, EMR, EC2), PySpark
+    * AWS (S3, EMR, EC2), PySpark
 * **Statistics**
-  * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **Survival analysis**, **Regression** (Generalized linear models, Generialzied additive (mixed) models, Partial least squares), **Spatial econometrics**
+    * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **
+      Survival analysis**, **Regression** (Generalized linear models, Generialzied additive (mixed) models, Partial
+      least squares), **Spatial econometrics**
 * **ML/DL/AI**
-  * **Machine learning** (RF, XGBoost, LightGBM), **Explainable AI** (SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (Attention) RNN, Transformer, (Temporal) Graph NN)
+    * **Machine learning** (RF, XGBoost, LightGBM), **Explainable AI** (SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (
+      Attention) RNN, Transformer, (Temporal) Graph NN)
 
 ***
 
