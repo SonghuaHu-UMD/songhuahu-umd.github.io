@@ -57,58 +57,20 @@ Awards
 
 ***
 
-
-Journal Reviewer
-======
-* Accident Analysis and Prevention
-* Applied Geography
-* Cambridge Journal of Regions, Economy and Society
-* Cities
-* IEEE Access
-* International Journal of Transportation Science and Technology
-* Geo-spatial Information Science
-* Journal of Planning Education and Research
-* Journal of Transport Geography
-* Journal of Transport and Land Use
-* Journal of Advanced Transportation
-* PLOS One
-* Regional Studies
-* Sustainable Cities and Society
-* Scientific Reports
-* Transportation Research Part B: Methodological
-* Transportation Research Part D: Transport and Environment
-* Transport Policy
-* Traffic Injury Prevention
-* Travel Behavior and Society
-* Transportation Letters
-* Transportation Research Record
-
-***
-
-Conference Reviewer
-======
-* TRB Transportation Research Board Annual Meeting
-* COTA International Conference of Transportation Professionals
-* IACP International Association of China Planning
-* IEEE Intelligent Transportation Systems Society Conference Management System
-
-***
-
-
 Skills
 ======
 * **Programming**
   * **Python** (pandas, numpy, pytorch, sklearn), **R** (dplyr, ggplot2, car, lavaan, mgcv, spdep), **SQL** (MySQL, pgAdmin, Impala, Oracle), Matlab, Git, Java, HTML
 * **Traffic Simulation**
   * Vissim (&COM), TransCAD, Synchro, AnyLogic, DTALite
-* **Spatial Analysis**
+* **Spatial/Network Analysis**
   * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx
 * **Cloud Computing**
   * AWS (S3, EMR, EC2), PySpark
-* **ML/DL/AI**
-  * **Machine learning** (RF, XGBoost, LightGBM), **Explainable AI** (SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (Attention) RNN, Transformer, (Temporal) Graph NN)
 * **Statistics**
   * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **Survival analysis**, **Regression** (Generalized linear models, Generialzied additive (mixed) models, Partial least squares), **Spatial econometrics**
+* **ML/DL/AI**
+  * **Machine learning** (RF, XGBoost, LightGBM), **Explainable AI** (SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (Attention) RNN, Transformer, (Temporal) Graph NN)
 
 ***
 

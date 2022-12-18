@@ -13,6 +13,6 @@ My current work focuses on meshing the big travel data with advanced traffic sim
 
 <img src="https://songhuahu-umd.github.io/images/FF6.png" width="1000" title='Framework'/>
 
-<img src="https://songhuahu-umd.github.io/images/FF61.png" width="315" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF62.jpg" width="315" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF63.png" width="315" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF61.png" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF62.jpg" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF63.png" width="310" hspace="5"/> 

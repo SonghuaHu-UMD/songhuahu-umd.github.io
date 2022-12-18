@@ -14,9 +14,9 @@ After joining University of Maryland, I am the technical leader of the first-in-
 <iframe src="https://songhuahu-umd.github.io/images/Bikeshare_Heatmap.html" height="500" width="950"></iframe>
 
 ### Related Publications
-<img src="https://songhuahu-umd.github.io/images/FF51.jpeg" width="315" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF52.jpeg" width="315" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF53.png" width="315" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF51.jpeg" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF52.jpeg" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF53.png" width="310" hspace="5"/> 
 
 > 1. **Hu, Songhua**, Mingyang Chen, Yuan Jiang, Wei Sun, and Chenfeng Xiong. "Examining factors associated with bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems." Journal of Transport Geography 98 (2022): 103271.
 > 2. **Hu, Songhua**, Peng Chen, and Xiaohong Chen. "Do personalized economic incentives work in promoting shared mobility? Examining customer churn using a time-varying Cox model." Transportation Research Part C: Emerging Technologies 128 (2021): 103224.

@@ -14,9 +14,9 @@ Related work has led to several high-caliber publications, including one [PNAS p
 <img src="https://songhuahu-umd.github.io/images/FF4.png" width="1000"/>
 
 ### Related Publications
-<img src="https://songhuahu-umd.github.io/images/FF41.png" width="315" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF42.png" width="315" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF43.png" width="315" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF41.png" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF42.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF43.png" width="310" hspace="5"/> 
 
 > 1. **Hu, Songhua**, Chenfeng Xiong, Qingchen Li, Zitong Wang, and Yuan Jiang. "COVID-19 vaccine hesitancy cannot fully explain disparities in vaccination coverage across the contiguous United States." Vaccine (2022).
 > 2. **Hu, Songhua**, Chenfeng Xiong, Hannah Younes, Mofeng Yang, Aref Darzi, and Zhiyu Catherine Jin. "Examining spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from the contiguous United States." Sustainable cities and society 76 (2022): 103506.
