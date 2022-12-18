@@ -13,7 +13,7 @@ Related work has led to several high-caliber publications, including one [PNAS p
 
 <img src="https://songhuahu-umd.github.io/images/FF4.png" width="1000"/>
 
-### Related Publications
+## Related Publications
 <img src="https://songhuahu-umd.github.io/images/FF41.png" width="310" hspace="5"/> 
 <img src="https://songhuahu-umd.github.io/images/FF42.png" width="310" hspace="5"/>
 <img src="https://songhuahu-umd.github.io/images/FF43.png" width="310" hspace="5"/> 

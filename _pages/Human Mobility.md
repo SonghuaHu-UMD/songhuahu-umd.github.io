@@ -13,7 +13,7 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 
 <img src="https://songhuahu-umd.github.io/images/FF1.png" width="1000"/>
 
-### Related Publications
+## Related Publications
 
 <img src="https://songhuahu-umd.github.io/images/FF12.png" width="310" hspace="5"/> 
 <img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>

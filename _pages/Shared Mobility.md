@@ -13,7 +13,7 @@ After joining University of Maryland, I am the technical leader of the first-in-
 
 <iframe src="https://songhuahu-umd.github.io/images/Bikeshare_Heatmap.html" height="500" width="950"></iframe>
 
-### Related Publications
+## Related Publications
 <img src="https://songhuahu-umd.github.io/images/FF51.jpeg" width="310" hspace="5"/> 
 <img src="https://songhuahu-umd.github.io/images/FF52.jpeg" width="310" hspace="5"/>
 <img src="https://songhuahu-umd.github.io/images/FF53.png" width="310" hspace="5"/> 

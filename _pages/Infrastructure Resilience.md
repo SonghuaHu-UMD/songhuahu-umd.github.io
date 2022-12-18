@@ -14,7 +14,7 @@ under unusual interventions provides valuable suggestions for a more sustainable
 
 <img src="https://songhuahu-umd.github.io/images/FF3.png" width="1000"/>
 
-### Related Publications
+## Related Publications
 
 <img src="https://songhuahu-umd.github.io/images/FF31.png" width="310" hspace="5"/> 
 <img src="https://songhuahu-umd.github.io/images/FF32.png" width="310" hspace="5"/>
