@@ -28,8 +28,8 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 <img src="images/FF1.png" width="900"/>
 
 ### Related Publications
-<img src="images/FF12.png" width="230" hspace="5"/> <img src="images/FF11.png" width="230" hspace="5"/>
-<img src="images/FF13.gif" width="230" hspace="5"/> 
+<img src="images/FF12.png" width="240" hspace="5"/> <img src="images/FF11.png" width="240" hspace="5"/>
+<img src="images/FF13.gif" width="240" hspace="5"/> 
 
 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
 2. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. Revisiting travel demand using big data: an empirical comparison of explainable machine learning models, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
@@ -51,8 +51,8 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 <img src="images/FF2.png" width="900"/>
 
 ### Related Publications/Working Papers
-<img src="images/FF21.png" width="230" hspace="5"/> <img src="images/FF22.png" width="230" hspace="5"/>
-<img src="images/FF23.gif" width="230" hspace="5"/> 
+<img src="images/FF21.png" width="240" hspace="5"/> <img src="images/FF22.png" width="240" hspace="5"/>
+<img src="images/FF23.gif" width="240" hspace="5"/> 
 
 1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Part C: Emerging Technologies 146 (2023): 103962.
 2. **Hu, Songhua**, Yiqun Xie, Chenfeng Xiong, Paul Schonfeld, Multi-ATGCN: A multi-graph multi-head adaptive temporal graph convolutional network for multivariable crowd inflow forecasting (2023). (Intended for KDD 2023)
@@ -69,8 +69,8 @@ under unusual interventions provides valuable suggestions for a more sustainable
 
 ### Related Publications
 
-<img src="images/FF31.png" width="230" hspace="5"/> <img src="images/FF32.png" width="230" hspace="5"/>
-<img src="images/FF33.png" width="230" hspace="5"/> 
+<img src="images/FF31.png" width="240" hspace="5"/> <img src="images/FF32.png" width="240" hspace="5"/>
+<img src="images/FF33.png" width="240" hspace="5"/> 
 
 1. **Hu, Songhua**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang. "Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic." Journal of transport geography 91 (2021): 102997.
 2. **Hu, Songhua**, and Peng Chen. "Who left riding transit? Examining socioeconomic disparities in the impact of COVID-19 on ridership." Transportation Research Part D: Transport and Environment 90 (2021): 102654.
@@ -89,8 +89,8 @@ Related work has led to several high-caliber publications, including one [PNAS p
 <img src="images/FF4.png" width="900"/>
 
 ### Related Publications
-<img src="images/FF41.png" width="230" hspace="5"/> <img src="images/FF42.png" width="230" hspace="5"/>
-<img src="images/FF43.png" width="230" hspace="5"/> 
+<img src="images/FF41.png" width="240" hspace="5"/> <img src="images/FF42.png" width="240" hspace="5"/>
+<img src="images/FF43.png" width="240" hspace="5"/> 
 
 1. **Hu, Songhua**, Chenfeng Xiong, Qingchen Li, Zitong Wang, and Yuan Jiang. "COVID-19 vaccine hesitancy cannot fully explain disparities in vaccination coverage across the contiguous United States." Vaccine (2022).
 2. **Hu, Songhua**, Chenfeng Xiong, Hannah Younes, Mofeng Yang, Aref Darzi, and Zhiyu Catherine Jin. "Examining spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from the contiguous United States." Sustainable cities and society 76 (2022): 103506.
@@ -109,8 +109,8 @@ After joining University of Maryland, I am the technical leader of the first-in-
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
 ### Related Publications
-<img src="images/FF51.png" width="230" hspace="5"/> <img src="images/FF52.jpeg" width="230" hspace="5"/>
-<img src="images/FF53.png" width="230" hspace="5"/> 
+<img src="images/FF51.png" width="240" hspace="5"/> <img src="images/FF52.jpeg" width="240" hspace="5"/>
+<img src="images/FF53.png" width="240" hspace="5"/> 
 
 1. **Hu, Songhua**, Mingyang Chen, Yuan Jiang, Wei Sun, and Chenfeng Xiong. "Examining factors associated with bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems." Journal of Transport Geography 98 (2022): 103271.
 2. **Hu, Songhua**, Peng Chen, and Xiaohong Chen. "Do personalized economic incentives work in promoting shared mobility? Examining customer churn using a time-varying Cox model." Transportation Research Part C: Emerging Technologies 128 (2021): 103224.
@@ -129,8 +129,8 @@ My current work focuses on meshing the big travel data with advanced traffic sim
 
 <img src="images/FF6.png" width="900" title='Framework'/>
 
-<img src="images/FF61.png" width="230" hspace="5"/> <img src="images/FF62.jpg" width="230" hspace="5"/>
-<img src="images/FF63.png" width="230" hspace="5"/> 
+<img src="images/FF61.png" width="240" hspace="5"/> <img src="images/FF62.jpg" width="240" hspace="5"/>
+<img src="images/FF63.png" width="240" hspace="5"/> 
 
 [//]: # (<img src="images/F40.png" width="900" title='Framework'/>)
 
