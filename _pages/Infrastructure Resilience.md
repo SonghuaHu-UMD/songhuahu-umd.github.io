@@ -6,7 +6,6 @@ author_profile: true
 ---
 
 
-## Sustainable, equitable, and resilient mobility infrastructure
 Unexpected events lead to substantial impacts on mobility systems and irreversibly change human travel behaviors. 
 My work focuses on qualitatively and quantitatively examining the time-varying resilience of transportation infrastructure under abnormal interventions, for example, modeling road traffic flow under inclement weather 
 and comparing recovery patterns of multi-modal travel demand during the COVID-19 pandemic. 

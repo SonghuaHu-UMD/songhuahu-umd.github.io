@@ -6,7 +6,6 @@ author_profile: true
 ---
 
 
-## Integrated modeling of travel behavior and public health
 During the COVID-19 pandemic, non-pharmaceutical interventions were widely employed to contain the dissemination of the virus by restricting people's travel and physical contact. 
 I have closely worked together with [Prof. Chenfeng Xiong](https://www1.villanova.edu/university/engineering/academic-programs/departments/civil-environmental/directory/biodetail.html?mail=chenfeng.xiong@villanova.edu&xsl=bio_long) 
 on building integrated econometric, epidemiological, and simulation models to examine (causal) relations among human mobility, public policies, vaccination, and virus transmission, which are critical to policy assessment, disease outbreak prediction, and public health management.
