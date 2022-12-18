@@ -30,6 +30,7 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 ### Related Publications
 <img src="images/FF11.png" width="350" hspace="20"/> <img src="images/FF12.png" width="350" hspace="20"/>
 <img src="images/FF13.gif" width="350" hspace="20"/> <img src="images/FF14.gif" width="350" hspace="20"/> 
+
 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
 2. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. Revisiting travel demand using big data: an empirical comparison of explainable machine learning models, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
 3. Chen, Peng, **Songhua Hu***, Qing Shen, Hangfei Lin, and Chi Xie. "Estimating traffic volume for local streets with imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610.
