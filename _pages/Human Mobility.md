@@ -18,6 +18,9 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 <img src="https://songhuahu-umd.github.io/images/FF12.png" width="310" hspace="5"/> 
 <img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
 <img src="https://songhuahu-umd.github.io/images/FF13.gif" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF14.gif" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF15.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF16.gif" width="310" hspace="5"/> 
 
 ### Journals
 > 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
