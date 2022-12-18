@@ -56,7 +56,9 @@ Publications
 * **2** papers published in _IEEE International Conference on Intelligent Transportation Systems (ITSC)_ (_2 First-Authored_).
 * **>10** posters/presentations in _Transportation Research Board Annual Meeting_.
 
-See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en).
+See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)
+
+
 ***
 
 Awards
