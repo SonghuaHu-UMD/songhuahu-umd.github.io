@@ -15,9 +15,9 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 <img src="https://songhuahu-umd.github.io/images/FF2.png" width="1000"/>
 
 ## Related Publications/Working Papers
-<img src="https://songhuahu-umd.github.io/images/FF21.png" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF22.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF21.png" width="310" hspace="5"/>
 <img src="https://songhuahu-umd.github.io/images/FF23.gif" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF22.png" width="310" hspace="5"/>
 
 ### Journals
 > 1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Part C: Emerging Technologies 146 (2023): 103962.

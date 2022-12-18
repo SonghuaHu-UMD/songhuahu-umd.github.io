@@ -14,14 +14,6 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 <img src="https://songhuahu-umd.github.io/images/FF1.png" width="1000"/>
 
 ## Related Publications
-
-<img src="https://songhuahu-umd.github.io/images/FF12.png" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF14.gif" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF15.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF16.gif" width="310" hspace="5"/> 
-
 ### Journals
 > 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
 > 2. Zhang, Lei, Aref Darzi, Sepehr Ghader, Michael L. Pack, Chenfeng Xiong, Mofeng Yang, Qianqian Sun, AliAkbar Kabiri, and **Songhua Hu**. "Interactive covid-19 mobility impact and social distancing analysis platform." Transportation Research Record (2020): 03611981211043813.
@@ -33,3 +25,11 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 > 3. Sun, Qianqian, Yixuan Pan, Weiyi Zhou, Aliakbar Kabiri, Mofeng Yang, Guangchen Zhao, **Songhua Hu**, Mohammad Ashoori, Saeed Saleh Namadi, and Aref Darzi. National truck travel demand estimation using GPS data, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
 > 4. Yang, Mofeng, Weiyu Luo, Mohammad Ashoori, Jina Mahmoudi, Chenfeng Xiong, Jiawei Lu, Guangchen Zhao, Saeed Saleh Namadi, **Songhua Hu**, and Aliakbar Kabiri, A big-data driven framework to estimating vehicle volume based on mobile device location data, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
 > 5. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
+
+
+<img src="https://songhuahu-umd.github.io/images/FF12.png" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF14.gif" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF15.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF16.gif" width="310" hspace="5"/> 
