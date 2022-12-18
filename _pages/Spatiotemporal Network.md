@@ -22,9 +22,9 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 > 1. **Hu, Songhua**, Yiqun Xie, Chenfeng Xiong, Paul Schonfeld, Multi-ATGCN: A multi-graph multi-head adaptive temporal graph convolutional network for multivariable crowd inflow forecasting (2023). (Intended for KDD 2023)
 > 2. **Hu, Songhua**, Yiqun Xie, Peng Chen, Paul Schonfeld, Nationwide spatiotemporal population flow forecasting via temporal fusion graph convolutional neural network: a comparative analysis. (2023). (Intended for IEEE Transactions on Intelligent Transportation Systems)
 
-<img src="https://songhuahu-umd.github.io/images/FF21.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF23.gif" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF22.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF24.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF26.png" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF25.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF21.png" width="310" hspace="5" align="center"/>
+<img src="https://songhuahu-umd.github.io/images/FF23.gif" width="310" hspace="5" align="center"/> 
+<img src="https://songhuahu-umd.github.io/images/FF22.png" width="310" hspace="5" align="center"/>
+<img src="https://songhuahu-umd.github.io/images/FF24.png" width="310" hspace="5" align="center"/>
+<img src="https://songhuahu-umd.github.io/images/FF26.png" width="310" hspace="5" align="center"/> 
+<img src="https://songhuahu-umd.github.io/images/FF25.png" width="310" hspace="5" align="center"/>
