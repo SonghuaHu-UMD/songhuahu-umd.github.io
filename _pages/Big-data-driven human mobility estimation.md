@@ -1,3 +1,10 @@
+---
+layout: archive
+title: "Big-data-driven human mobility estimation"
+permalink: /Big-data-driven human mobility estimation/
+author_profile: true
+---
+
 ## Big-data-driven human mobility estimation
 Traditional travel demand models heavily rely on travel surveys, which are costly, laborious, and suffer from small-sample and infrequent issues. 
 My Ph.D. dissertation focuses on building a big-data-driven digital twin model for estimating and forecasting human mobility at both collective and individual levels 
