@@ -54,18 +54,18 @@ Education
 Publications
 ======
 
-* **3** papers published in **_Transportation Research Part C: Emerging Technologies_** (**3** First-Authored).
-* **3** papers published in **_Transportation Research Part D: Transport and Environment_** (**3** First-Authored).
-* **2** papers published in **_Journal of Transport Geography_** (**2** First-Authored).
-* **1** paper published in **_Sustainable Cities and Society_** (**1** First-Authored).
-* **1** paper published in **_IEEE Intelligent Transportation Systems Magazine_** (**1** First-Authored).
-* **1** paper published in **_Proceedings of the National Academy of Sciences_**.
-* **1** paper published in **_Journal of the Royal Society Interface_**.
-* **1** paper published in **_International Journal of Sustainable Transportation_**.
-* **2** papers published in **_Transportation Research Record_**.
-* **2** papers published in **_IEEE International Conference on Intelligent Transportation Systems (ITSC)_** (**2**
+* **3** papers published in _Transportation Research Part C: Emerging Technologies_ (**3** First-Authored).
+* **3** papers published in _Transportation Research Part D: Transport and Environment_ (**3** First-Authored).
+* **2** papers published in _Journal of Transport Geography_ (**2** First-Authored).
+* **1** paper published in _Sustainable Cities and Society_ (**1** First-Authored).
+* **1** paper published in _IEEE Intelligent Transportation Systems Magazine_ (**1** First-Authored).
+* **1** paper published in _Proceedings of the National Academy of Sciences_.
+* **1** paper published in _Journal of the Royal Society Interface_.
+* **1** paper published in _International Journal of Sustainable Transportation_.
+* **2** papers published in _Transportation Research Record_.
+* **2** papers published in _IEEE International Conference on Intelligent Transportation Systems (ITSC)_ (**2**
   First-Authored).
-* **>10** posters/presentations in **_Transportation Research Board Annual Meeting_**.
+* **>10** posters/presentations in _Transportation Research Board Annual Meeting_.
 
 See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)
 
@@ -106,9 +106,7 @@ Skills
 * **Cloud Computing**
     * AWS (S3, EMR, EC2), PySpark
 * **Statistics**
-    * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **
-      Survival analysis**, **Regression** (Generalized linear models, Generialzied additive (mixed) models, Partial
-      least squares), **Spatial econometrics**
+    * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **Survival analysis**, **Regression** (Generalized linear models, Generialzied additive (mixed) models, Partial least squares), **Spatial econometrics**
 * **ML/DL/AI**
     * **Machine learning** (RF, XGBoost, LightGBM), **Explainable AI** (SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (
       Attention) RNN, Transformer, (Temporal) Graph NN)
