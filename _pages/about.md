@@ -28,7 +28,7 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 <img src="images/FF1.png" width="900"/>
 
 ### Related Publications
-<img src="images/FF11.png" width="230" hspace="5"/> <img src="images/FF12.png" width="230" hspace="5"/>
+<img src="images/FF12.png" width="230" hspace="5"/> <img src="images/FF11.png" width="230" hspace="5"/>
 <img src="images/FF13.gif" width="230" hspace="5"/> 
 
 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
@@ -68,13 +68,17 @@ under unusual interventions provides valuable suggestions for a more sustainable
 <img src="images/FF3.png" width="900"/>
 
 ### Related Publications
-2. **Hu, Songhua**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang. "Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic." Journal of transport geography 91 (2021): 102997.
-3. **Hu, Songhua**, and Peng Chen. "Who left riding transit? Examining socioeconomic disparities in the impact of COVID-19 on ridership." Transportation Research Part D: Transport and Environment 90 (2021): 102654.
-4. Xiong, Chenfeng, **Songhua Hu**, Mofeng Yang, Hannah Younes, Weiyu Luo, Sepehr Ghader, and Lei Zhang. "Mobile device location data reveal human mobility response to state-level stay-at-home orders during the COVID-19 pandemic in the USA." Journal of the Royal Society Interface 17, no. 173 (2020): 20200344.
-5. Chen, Peng, Xiankui Yang, Yu Zhang, and **Songhua Hu**. The Renaissance of Transit and Ridesharing: From Pandemic Towards the New Normal, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
-6. **Hu, Songhua**, Hangfei Lin, Kun Xie, Jianjun Dai, and Jiandong Qui. Impacts of rain and waterlogging on traffic speed and volume on urban roads, The 21st IEEE International Conference on Intelligent Transportation Systems (2018).
-7. **Hu, Songhua**, Jianjun Dai, Jiandong Qiu, and Hangfei Lin. Identification of Urban Road Waterlogging Using Floating Car Data. In CICTP 2018: Intelligence, Connectivity, and Mobility (pp. 1885-1894)(2018). Reston, VA: American Society of Civil Engineers.
-8. Sun, Qianqian, Weiyi Zhou, Aliakbar Kabiri, Aref Darzi, **Songhua Hu**, Hannah Younes, and Lei Zhang. " COVID-19 and income profile: How people in different income groups responded to disease outbreak, case study of the United States." Regional Science Policy & Practice (2022).
+
+<img src="images/FF31.png" width="230" hspace="5"/> <img src="images/FF32.jpeg" width="230" hspace="5"/>
+<img src="images/FF33.png" width="230" hspace="5"/> 
+
+1. **Hu, Songhua**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang. "Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic." Journal of transport geography 91 (2021): 102997.
+2. **Hu, Songhua**, and Peng Chen. "Who left riding transit? Examining socioeconomic disparities in the impact of COVID-19 on ridership." Transportation Research Part D: Transport and Environment 90 (2021): 102654.
+3. Xiong, Chenfeng, **Songhua Hu**, Mofeng Yang, Hannah Younes, Weiyu Luo, Sepehr Ghader, and Lei Zhang. "Mobile device location data reveal human mobility response to state-level stay-at-home orders during the COVID-19 pandemic in the USA." Journal of the Royal Society Interface 17, no. 173 (2020): 20200344.
+4. Chen, Peng, Xiankui Yang, Yu Zhang, and **Songhua Hu**. The Renaissance of Transit and Ridesharing: From Pandemic Towards the New Normal, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
+5. **Hu, Songhua**, Hangfei Lin, Kun Xie, Jianjun Dai, and Jiandong Qui. Impacts of rain and waterlogging on traffic speed and volume on urban roads, The 21st IEEE International Conference on Intelligent Transportation Systems (2018).
+6. **Hu, Songhua**, Jianjun Dai, Jiandong Qiu, and Hangfei Lin. Identification of Urban Road Waterlogging Using Floating Car Data. In CICTP 2018: Intelligence, Connectivity, and Mobility (pp. 1885-1894)(2018). Reston, VA: American Society of Civil Engineers.
+7. Sun, Qianqian, Weiyi Zhou, Aliakbar Kabiri, Aref Darzi, **Songhua Hu**, Hannah Younes, and Lei Zhang. " COVID-19 and income profile: How people in different income groups responded to disease outbreak, case study of the United States." Regional Science Policy & Practice (2022).
 
 ## Integrated modeling of travel behavior and public health
 During the COVID-19 pandemic, non-pharmaceutical interventions were widely employed to contain the dissemination of the virus by restricting people's travel and physical contact. 
@@ -82,10 +86,12 @@ I have closely worked together with [Prof. Chenfeng Xiong](https://www1.villanov
 on building integrated econometric, epidemiological, and simulation models to examine (causal) relations among human mobility, public policies, vaccination, and virus transmission, which are critical to policy assessment, disease outbreak prediction, and public health management.
 Related work has led to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 
-<img src="images/F2.png" width="900" title='Framework'/>
-<img src="images/F21.png" width="900" title='Framework'/>
+<img src="images/FF4.png" width="900"/>
 
 ### Related Publications
+<img src="images/FF41.png" width="230" hspace="5"/> <img src="images/FF42.png" width="230" hspace="5"/>
+<img src="images/FF43.png" width="230" hspace="5"/> 
+
 1. **Hu, Songhua**, Chenfeng Xiong, Qingchen Li, Zitong Wang, and Yuan Jiang. "COVID-19 vaccine hesitancy cannot fully explain disparities in vaccination coverage across the contiguous United States." Vaccine (2022).
 2. **Hu, Songhua**, Chenfeng Xiong, Hannah Younes, Mofeng Yang, Aref Darzi, and Zhiyu Catherine Jin. "Examining spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from the contiguous United States." Sustainable cities and society 76 (2022): 103506.
 3. **Hu, Songhua**, Weiyu Luo, Aref Darzi, Yixuan Pan, Guangchen Zhao, Yuxuan Liu, and Chenfeng Xiong. "Do racial and ethnic disparities in following stay-at-home orders influence COVID-19 health outcomes? A mediation analysis approach." PloS one 16, no. 11 (2021): e0259803.
@@ -103,6 +109,9 @@ After joining University of Maryland, I am the technical leader of the first-in-
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
 ### Related Publications
+<img src="images/FF51.png" width="230" hspace="5"/> <img src="images/FF52.png" width="230" hspace="5"/>
+<img src="images/FF53.png" width="230" hspace="5"/> 
+
 1. **Hu, Songhua**, Mingyang Chen, Yuan Jiang, Wei Sun, and Chenfeng Xiong. "Examining factors associated with bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems." Journal of Transport Geography 98 (2022): 103271.
 2. **Hu, Songhua**, Peng Chen, and Xiaohong Chen. "Do personalized economic incentives work in promoting shared mobility? Examining customer churn using a time-varying Cox model." Transportation Research Part C: Emerging Technologies 128 (2021): 103224.
 3. Wang, Tao, **Songhua Hu***, and Yuan Jiang. "Predicting shared-car use and examining nonlinear effects using gradient boosting regression trees." International Journal of Sustainable Transportation 15, no. 12 (2020): 893-907.
@@ -118,7 +127,10 @@ I have technically led a set of traffic simulation projects in China and US.
 I have also worked with [Prof. Xuesong Zhou](https://isearch.asu.edu/profile/2182101) on the development of the open-source multimodal traffic simulation framework, named DTALite, integrating agent-based modelling and dynamic traffic assignment.
 My current work focuses on meshing the big travel data with advanced traffic simulation tools with high computational efficiency to achieve fine-grained citywide simulation. 
 
-<img src="images/F4.png" width="900" title='Framework'/>
+<img src="images/FF6.png" width="900" title='Framework'/>
+
+<img src="images/FF61.png" width="230" hspace="5"/> <img src="images/FF62.png" width="230" hspace="5"/>
+<img src="images/FF63.png" width="230" hspace="5"/> 
 
 [//]: # (<img src="images/F40.png" width="900" title='Framework'/>)
 
