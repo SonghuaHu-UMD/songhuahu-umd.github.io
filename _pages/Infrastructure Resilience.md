@@ -30,6 +30,6 @@ under unusual interventions provides valuable suggestions for a more sustainable
 <img src="https://songhuahu-umd.github.io/images/FF31.png" width="310" hspace="5"/> 
 <img src="https://songhuahu-umd.github.io/images/FF32.png" width="310" hspace="5"/>
 <img src="https://songhuahu-umd.github.io/images/FF33.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF34.png" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF34.jpeg" width="310" hspace="5"/> 
 <img src="https://songhuahu-umd.github.io/images/FF35.png" width="310" hspace="5"/>
 <img src="https://songhuahu-umd.github.io/images/FF36.png" width="310" hspace="5"/> 
