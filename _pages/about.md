@@ -19,12 +19,12 @@ I establish a set of advanced computing and modeling frameworks integrating AI-d
 Research Interests
 ======
 
-+ [Urban Computing and Human Mobility](https://songhuahu-umd.github.io/_pages/Human_Mobility.md)
-+ Spatiotemporal Network Modeling
-+ Infrastructure Sustainability, Resilience, and Equity 
-+ Computational Epidemiology and Health Geography
-+ Mobility as a service (MaaS) and shared mobility 
-+ Integrated multidimensional traffic simulation
++ [Urban Computing and Human Mobility](https://songhuahu-umd.github.io/Human%20Mobility)
++ [Spatiotemporal Network Modeling](https://songhuahu-umd.github.io/Spatiotemporal%20Network)
++ [Infrastructure Sustainability, Resilience, and Equity](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
++ [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
++ [Mobility as a service (MaaS) and shared mobility](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Integrated multidimensional traffic simulation](https://songhuahu-umd.github.io/Traffic%20Simulation)
 
 ***
 
