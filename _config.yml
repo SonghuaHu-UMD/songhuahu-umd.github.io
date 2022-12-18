@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Songhua Hu / Ph.D. (ABD) at UMD"
+title                    : "Songhua Hu / Ph.D. (ABD)"
 title_separator          : "-"
 name                     : &name "Sam Hu"
 description              : &description "Human mobility, Big-data Computing, Spatiotemporal Network, Traffic Simulation"

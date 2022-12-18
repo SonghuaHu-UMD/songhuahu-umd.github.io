@@ -4,8 +4,10 @@ title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+
+[//]: # (  - /about/)
+
+[//]: # (  - /about.html)
 ---
 
 Greetings! My name is Songhua Hu (胡松华), a ABD Ph.D. candidate at the Department of Civil & Environmental Engineering, University of Maryland, College Park. 
