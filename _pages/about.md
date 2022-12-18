@@ -69,7 +69,7 @@ under unusual interventions provides valuable suggestions for a more sustainable
 
 ### Related Publications
 
-<img src="images/FF31.png" width="230" hspace="5"/> <img src="images/FF32.jpeg" width="230" hspace="5"/>
+<img src="images/FF31.png" width="230" hspace="5"/> <img src="images/FF32.png" width="230" hspace="5"/>
 <img src="images/FF33.png" width="230" hspace="5"/> 
 
 1. **Hu, Songhua**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang. "Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic." Journal of transport geography 91 (2021): 102997.
@@ -109,7 +109,7 @@ After joining University of Maryland, I am the technical leader of the first-in-
 <iframe src="images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
 
 ### Related Publications
-<img src="images/FF51.png" width="230" hspace="5"/> <img src="images/FF52.png" width="230" hspace="5"/>
+<img src="images/FF51.png" width="230" hspace="5"/> <img src="images/FF52.jpeg" width="230" hspace="5"/>
 <img src="images/FF53.png" width="230" hspace="5"/> 
 
 1. **Hu, Songhua**, Mingyang Chen, Yuan Jiang, Wei Sun, and Chenfeng Xiong. "Examining factors associated with bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems." Journal of Transport Geography 98 (2022): 103271.
