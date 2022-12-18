@@ -12,13 +12,13 @@ and comparing recovery patterns of multi-modal travel demand during the COVID-19
 My particular attention to accessibility inequities, policy barriers, and resilient disparities in underserved communities 
 under unusual interventions provides valuable suggestions for a more sustainable, equitable, and resilient urban mobility system.
 
-<img src="https://songhuahu-umd.github.io/images/FF3.png" width="900"/>
+<img src="https://songhuahu-umd.github.io/images/FF3.png" width="1000"/>
 
 ### Related Publications
 
-<img src="https://songhuahu-umd.github.io/images/FF31.png" width="240" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF32.png" width="240" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF33.png" width="240" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF31.png" width="300" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF32.png" width="300" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF33.png" width="300" hspace="5"/> 
 
 > 1. **Hu, Songhua**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang. "Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic." Journal of transport geography 91 (2021): 102997.
 > 2. **Hu, Songhua**, and Peng Chen. "Who left riding transit? Examining socioeconomic disparities in the impact of COVID-19 on ridership." Transportation Research Part D: Transport and Environment 90 (2021): 102654.

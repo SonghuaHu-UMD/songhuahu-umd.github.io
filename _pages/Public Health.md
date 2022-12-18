@@ -11,7 +11,7 @@ I have closely worked together with [Prof. Chenfeng Xiong](https://www1.villanov
 on building integrated econometric, epidemiological, and simulation models to examine (causal) relations among human mobility, public policies, vaccination, and virus transmission, which are critical to policy assessment, disease outbreak prediction, and public health management.
 Related work has led to several high-caliber publications, including one [PNAS paper](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117), over 5 top transportation papers, and an online [University of Maryland COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 
-<img src="https://songhuahu-umd.github.io/images/FF4.png" width="900"/>
+<img src="https://songhuahu-umd.github.io/images/FF4.png" width="1000"/>
 
 ### Related Publications
 <img src="https://songhuahu-umd.github.io/images/FF41.png" width="300" hspace="5"/> 

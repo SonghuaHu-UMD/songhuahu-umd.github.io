@@ -11,13 +11,13 @@ using location data from over 100 million monthly active mobile devices in the U
 Specifically, My work is intended to leverage emerging big data, such as mobile device location data, digital social structure, traffic sensor records, and mobility transaction data, 
 to extract population-representative trip itineraries, estimate multi-modal Origin-Destination matrices, and analyze individual travel behaviors.
 
-<img src="https://songhuahu-umd.github.io/images/FF1.png" width="900"/>
+<img src="https://songhuahu-umd.github.io/images/FF1.png" width="1000"/>
 
 ### Related Publications
 
-<img src="https://songhuahu-umd.github.io/images/FF12.png" width="240" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF11.png" width="240" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="240" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF12.png" width="300" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="300" hspace="5"/> 
 
 
 > 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.

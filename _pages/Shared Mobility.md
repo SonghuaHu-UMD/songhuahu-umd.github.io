@@ -11,12 +11,12 @@ In Tongji University, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/
 I have investigated various shared mobility programs to provide empirical evidence on how to promote their efficiency, how to allocate incentives to prevent user turnover, and how to encourage multi-modal integration.
 After joining University of Maryland, I am the technical leader of the first-in-the-nation MaaS APP "incenTrip" project, funded by USDOE and USDOT, to provide green travel options and personalized incentives for real-world travelers. 
 
-<iframe src="https://songhuahu-umd.github.io/images/Bikeshare_Heatmap.html" height="500" width="750"></iframe>
+<iframe src="https://songhuahu-umd.github.io/images/Bikeshare_Heatmap.html" height="1000" width="750"></iframe>
 
 ### Related Publications
-<img src="https://songhuahu-umd.github.io/images/FF51.jpeg" width="240" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF52.jpeg" width="240" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF53.png" width="240" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF51.jpeg" width="300" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF52.jpeg" width="300" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF53.png" width="300" hspace="5"/> 
 
 > 1. **Hu, Songhua**, Mingyang Chen, Yuan Jiang, Wei Sun, and Chenfeng Xiong. "Examining factors associated with bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems." Journal of Transport Geography 98 (2022): 103271.
 > 2. **Hu, Songhua**, Peng Chen, and Xiaohong Chen. "Do personalized economic incentives work in promoting shared mobility? Examining customer churn using a time-varying Cox model." Transportation Research Part C: Emerging Technologies 128 (2021): 103224.
