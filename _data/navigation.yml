@@ -17,6 +17,9 @@ main:
     
   - title: "CV"
     url: /cv/
+
+  - title: "Big-data-driven human mobility estimation"
+    url: /Big-data-driven human mobility estimation/
 #
 #  - title: "Guide"
 #    url: /markdown/
