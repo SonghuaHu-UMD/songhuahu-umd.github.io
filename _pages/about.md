@@ -28,8 +28,8 @@ to extract population-representative trip itineraries, estimate multi-modal Orig
 <img src="images/FF1.png" width="900"/>
 
 ### Related Publications
-<img src="images/FF11.png" width="325" hspace="20"/> <img src="images/FF12.png" width="325" hspace="20"/>
-<img src="images/FF13.gif" width="325" hspace="20"/> <img src="images/FF14.gif" width="325" hspace="20"/>
+<img src="images/FF11.png" width="200" hspace="5"/> <img src="images/FF12.png" width="200" hspace="5"/>
+<img src="images/FF13.gif" width="200" hspace="5"/> <img src="images/FF14.gif" width="200" hspace="5"/>
 
 1. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic." Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
 2. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. Revisiting travel demand using big data: an empirical comparison of explainable machine learning models, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
@@ -51,8 +51,8 @@ I also propose a hierarchical activity-based framework for simultaneously predic
 <img src="images/FF2.png" width="900"/>
 
 ### Related Publications/Working Papers
-<img src="images/FF21.png" width="325" hspace="20"/> <img src="images/FF22.png" width="325" hspace="20"/>
-<img src="images/FF23.gif" width="325" hspace="20"/> <img src="images/FF24.gif" width="325" hspace="20"/>
+<img src="images/FF21.png" width="200" hspace="5"/> <img src="images/FF22.png" width="200" hspace="5"/>
+<img src="images/FF23.gif" width="200" hspace="5"/> <img src="images/FF24.png" width="200" hspace="5"/>
 
 1. **Hu, Songhua**, Chenfeng Xiong. High-dimensional population flow time series forecasting via an interpretable hierarchical transformer, Transportation Research Part C: Emerging Technologies 146 (2023): 103962.
 2. **Hu, Songhua**, Yiqun Xie, Chenfeng Xiong, Paul Schonfeld, Multi-ATGCN: A multi-graph multi-head adaptive temporal graph convolutional network for multivariable crowd inflow forecasting (2023). (Intended for KDD 2023)
@@ -65,14 +65,16 @@ and comparing recovery patterns of multi-modal travel demand during the COVID-19
 My particular attention to accessibility inequities, policy barriers, and resilient disparities in underserved communities 
 under unusual interventions provides valuable suggestions for a more sustainable, equitable, and resilient urban mobility system.
 
+<img src="images/FF3.png" width="900"/>
+
 ### Related Publications
-1. Sun, Qianqian, Weiyi Zhou, Aliakbar Kabiri, Aref Darzi, **Songhua Hu**, Hannah Younes, and Lei Zhang. " COVID-19 and income profile: How people in different income groups responded to disease outbreak, case study of the United States." Regional Science Policy & Practice (2022).
 2. **Hu, Songhua**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang. "Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic." Journal of transport geography 91 (2021): 102997.
 3. **Hu, Songhua**, and Peng Chen. "Who left riding transit? Examining socioeconomic disparities in the impact of COVID-19 on ridership." Transportation Research Part D: Transport and Environment 90 (2021): 102654.
 4. Xiong, Chenfeng, **Songhua Hu**, Mofeng Yang, Hannah Younes, Weiyu Luo, Sepehr Ghader, and Lei Zhang. "Mobile device location data reveal human mobility response to state-level stay-at-home orders during the COVID-19 pandemic in the USA." Journal of the Royal Society Interface 17, no. 173 (2020): 20200344.
 5. Chen, Peng, Xiankui Yang, Yu Zhang, and **Songhua Hu**. The Renaissance of Transit and Ridesharing: From Pandemic Towards the New Normal, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
 6. **Hu, Songhua**, Hangfei Lin, Kun Xie, Jianjun Dai, and Jiandong Qui. Impacts of rain and waterlogging on traffic speed and volume on urban roads, The 21st IEEE International Conference on Intelligent Transportation Systems (2018).
 7. **Hu, Songhua**, Jianjun Dai, Jiandong Qiu, and Hangfei Lin. Identification of Urban Road Waterlogging Using Floating Car Data. In CICTP 2018: Intelligence, Connectivity, and Mobility (pp. 1885-1894)(2018). Reston, VA: American Society of Civil Engineers.
+8. Sun, Qianqian, Weiyi Zhou, Aliakbar Kabiri, Aref Darzi, **Songhua Hu**, Hannah Younes, and Lei Zhang. " COVID-19 and income profile: How people in different income groups responded to disease outbreak, case study of the United States." Regional Science Policy & Practice (2022).
 
 ## Integrated modeling of travel behavior and public health
 During the COVID-19 pandemic, non-pharmaceutical interventions were widely employed to contain the dissemination of the virus by restricting people's travel and physical contact. 
