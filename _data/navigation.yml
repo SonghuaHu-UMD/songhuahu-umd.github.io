@@ -21,10 +21,10 @@ main:
   - title: "Human Mobility"
     url: /Human Mobility/
 
-  - title: "Spatiotemporal Network"
+  - title: "ST Network"
     url: /Spatiotemporal Network/
 
-  - title: "Infrastructure Resilience"
+  - title: "Resilience"
     url: /Infrastructure Resilience/
 
   - title: "Public Health"
@@ -32,6 +32,9 @@ main:
 
   - title: "Shared Mobility"
     url: /Shared Mobility/
+
+  - title: "Simulation"
+    url: /Traffic Simulation/
 #
 #  - title: "Guide"
 #    url: /markdown/
