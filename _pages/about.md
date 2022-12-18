@@ -129,7 +129,7 @@ My current work focuses on meshing the big travel data with advanced traffic sim
 
 <img src="images/FF6.png" width="900" title='Framework'/>
 
-<img src="images/FF61.png" width="230" hspace="5"/> <img src="images/FF62.png" width="230" hspace="5"/>
+<img src="images/FF61.png" width="230" hspace="5"/> <img src="images/FF62.jpg" width="230" hspace="5"/>
 <img src="images/FF63.png" width="230" hspace="5"/> 
 
 [//]: # (<img src="images/F40.png" width="900" title='Framework'/>)
