@@ -15,11 +15,6 @@ under unusual interventions provides valuable suggestions for a more sustainable
 <img src="https://songhuahu-umd.github.io/images/FF3.png" width="1000"/>
 
 ## Related Publications
-
-<img src="https://songhuahu-umd.github.io/images/FF31.png" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF32.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF33.png" width="310" hspace="5"/> 
-
 ### Journals
 > 1. **Hu, Songhua**, Chenfeng Xiong, Zhanqin Liu, and Lei Zhang. "Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic." Journal of transport geography 91 (2021): 102997.
 > 2. **Hu, Songhua**, and Peng Chen. "Who left riding transit? Examining socioeconomic disparities in the impact of COVID-19 on ridership." Transportation Research Part D: Transport and Environment 90 (2021): 102654.
@@ -30,3 +25,11 @@ under unusual interventions provides valuable suggestions for a more sustainable
 > 1. Chen, Peng, Xiankui Yang, Yu Zhang, and **Songhua Hu**. The Renaissance of Transit and Ridesharing: From Pandemic Towards the New Normal, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
 > 2. **Hu, Songhua**, Hangfei Lin, Kun Xie, Jianjun Dai, and Jiandong Qui. Impacts of rain and waterlogging on traffic speed and volume on urban roads, The 21st IEEE International Conference on Intelligent Transportation Systems (2018).
 > 3. **Hu, Songhua**, Jianjun Dai, Jiandong Qiu, and Hangfei Lin. Identification of Urban Road Waterlogging Using Floating Car Data. In CICTP 2018: Intelligence, Connectivity, and Mobility (pp. 1885-1894)(2018). Reston, VA: American Society of Civil Engineers.
+
+
+<img src="https://songhuahu-umd.github.io/images/FF31.png" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF32.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF33.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF34.png" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF35.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF36.png" width="310" hspace="5"/> 

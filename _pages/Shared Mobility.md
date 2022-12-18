@@ -14,10 +14,6 @@ After joining University of Maryland, I am the technical leader of the first-in-
 <iframe src="https://songhuahu-umd.github.io/images/Bikeshare_Heatmap.html" height="500" width="950"></iframe>
 
 ## Related Publications
-<img src="https://songhuahu-umd.github.io/images/FF51.jpeg" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF52.jpeg" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF53.png" width="310" hspace="5"/> 
-
 ### Journals
 > 1. **Hu, Songhua**, Mingyang Chen, Yuan Jiang, Wei Sun, and Chenfeng Xiong. "Examining factors associated with bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems." Journal of Transport Geography 98 (2022): 103271.
 > 2. **Hu, Songhua**, Peng Chen, and Xiaohong Chen. "Do personalized economic incentives work in promoting shared mobility? Examining customer churn using a time-varying Cox model." Transportation Research Part C: Emerging Technologies 128 (2021): 103224.
@@ -30,3 +26,9 @@ After joining University of Maryland, I am the technical leader of the first-in-
 > 1. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Joint Analysis of Scooter Sharing and Bikesharing Usage: A Structural Equation Modeling Approach, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
 > 2. **Hu, Songhua**, Hangfei Lin, Kun Xie, Xiaohong Chen, and Hongjie Shi. Modeling users’ vehicles selection behavior in urban carsharing program, The 21st IEEE International Conference on Intelligent Transportation Systems (2018).
 
+<img src="https://songhuahu-umd.github.io/images/FF51.jpeg" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF52.jpeg" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF53.png" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF54.png" width="310" hspace="5"/> 
+<img src="https://songhuahu-umd.github.io/images/FF55.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF56.png" width="310" hspace="5"/> 
