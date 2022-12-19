@@ -30,8 +30,8 @@ Research Interests
 + [Spatiotemporal Network Modeling](https://songhuahu-umd.github.io/Spatiotemporal%20Network)
 + [Infrastructure Sustainability, Resilience, and Equity](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
-+ [Mobility as a service (MaaS) and shared mobility](https://songhuahu-umd.github.io/Shared%20Mobility)
-+ [Integrated multidimensional traffic simulation](https://songhuahu-umd.github.io/Traffic%20Simulation)
++ [Mobility as a service (MaaS) and Shared Mobility](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Multidimensional Multimodal Traffic Simulation](https://songhuahu-umd.github.io/Traffic%20Simulation)
 
 ***
 
@@ -108,9 +108,11 @@ Skills
 * **Cloud Computing**
     * AWS (S3, EMR, EC2), PySpark
 * **Statistics**
-    * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **Survival analysis**, **Regression** (Generalized linear models, Generialzied additive (mixed) models, Partial least squares), **Spatial econometrics**
+    * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **Time series** (ARIMA, SARIMA),
+  **Survival analysis**(Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generialzied additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
+  **Spatial econometrics** (SER, SLR, SDR, GWR, GTWR), **Discrete choice model** (Multinomial, Mixed, Nested)
 * **ML/DL/AI**
-    * **Machine learning** (RF, XGBoost, LightGBM), **Explainable AI** (SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (
+    * **Machine learning** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (Relative importance, SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (
       Attention) RNN, Transformer, (Temporal) Graph NN)
 
 ***
