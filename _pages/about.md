@@ -71,7 +71,6 @@ Publications
 
 See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)
 
-
 ***
 
 Awards
