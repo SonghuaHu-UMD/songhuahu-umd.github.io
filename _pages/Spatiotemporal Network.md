@@ -32,6 +32,7 @@ the next trip for each device.
      temporal fusion graph convolutional neural network: a comparative analysis. (2023). (Intended for IEEE Transactions
      on Intelligent Transportation Systems)
 
+
 <p align="center">
 <img src="https://songhuahu-umd.github.io/images/FF21.png" width="310" hspace="5" align="center"/>
 <img src="https://songhuahu-umd.github.io/images/FF23.gif" width="310" hspace="5" align="center"/> 
