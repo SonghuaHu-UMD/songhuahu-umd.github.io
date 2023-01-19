@@ -20,6 +20,6 @@ efficiency to achieve fine-grained citywide simulation.
 
 <p align="center">
 <img src="https://songhuahu-umd.github.io/images/FF61.gif" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF62.jpg" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF62.gif" width="310" hspace="5"/>
 <img src="https://songhuahu-umd.github.io/images/FF63.png" width="310" hspace="5"/> 
 </p>
