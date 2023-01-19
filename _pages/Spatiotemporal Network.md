@@ -36,7 +36,7 @@ the next trip for each device.
 <img src="https://songhuahu-umd.github.io/images/FF21.png" width="310" hspace="5" align="center"/>
 <img src="https://songhuahu-umd.github.io/images/FF23.gif" width="310" hspace="5" align="center"/> 
 <img src="https://songhuahu-umd.github.io/images/FF22.png" width="310" hspace="5" align="center"/>
-<img src="https://songhuahu-umd.github.io/images/FF24.png" width="310" hspace="5" align="center"/>
+<img src="https://songhuahu-umd.github.io/images/FF28.png" width="310" hspace="5" align="center"/>
 <img src="https://songhuahu-umd.github.io/images/FF26.png" width="310" hspace="5" align="center"/> 
 <img src="https://songhuahu-umd.github.io/images/FF25.png" width="310" hspace="5" align="center"/>
 </p>
