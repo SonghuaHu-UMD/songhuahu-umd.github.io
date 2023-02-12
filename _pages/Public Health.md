@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Integrated modeling of travel behavior and public health"
+title: "Integrated modeling of human mobility and public health"
 permalink: /Public Health/
 author_profile: true
 ---

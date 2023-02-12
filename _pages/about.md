@@ -108,7 +108,7 @@ Skills
     * AWS (S3, EMR, EC2), PySpark
 * **Statistics**
     * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **Time series** (ARIMA, SARIMA),
-  **Survival analysis**(Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generialzied additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
+  **Survival analysis**(Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
   **Spatial econometrics** (SER, SLR, SDR, GWR, GTWR), **Discrete choice model** (Multinomial, Mixed, Nested)
 * **ML/DL/AI**
     * **Machine learning** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (Relative importance, SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (
