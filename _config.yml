@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Songhua Hu / Ph.D. (ABD)"
+title                    : "Songhua Hu, Ph.D."
 title_separator          : "-"
 name                     : &name "Sam Hu"
 description              : &description "Human mobility, Big-data Computing, Spatiotemporal Network, Traffic Simulation"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Songhua Hu"
   avatar           : "head4.jpg"
-  bio              : "Ubiquitous Computing, Human Mobility, Spatiotemporal Network, Resilience, Health Geography, Shared Mobility"
-  location         : "MD, U.S."
+  bio              : "Urban Computing, Spatiotemporal Network, Economics, Resilience, Health"
+  location         : "Cambridge, MA, USA"
 #  employer         : "Maryland Transportation Institute"
   googlescholar    : "https://scholar.google.co.jp/citations?user=uVIbQyAAAAAJ&hl=en"
   email            : "hsonghua@UMD.EDU"

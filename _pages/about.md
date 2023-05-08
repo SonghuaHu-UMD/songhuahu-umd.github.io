@@ -42,6 +42,7 @@ Education
 * **B.S., Transportation Engineering**
     * Huazhong University of Science and Technology, 09/2012 - 06/2016
     * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
+
 ***
 
 Publications
