@@ -10,16 +10,12 @@ redirect_from:
 
 ---
 
-Greetings! My name is Songhua Hu (胡松华), a ABD Ph.D. candidate at the Department of Civil & Environmental Engineering,
-University of Maryland, College Park.
-My supervisor is [Prof. Paul Schonfeld](https://cee.umd.edu/clark/faculty/291/Paul-Schonfeld).
-I am now working as a graduate research assistant at the [Maryland Transportation Institute](https://mti.umd.edu/).
-As a transportation and mobility researcher, my research mainly focuses on ubiquitous computing (human mobility),
-spatiotemporal network modeling, infrastructure resilience, and health geography.
-I establish a set of advanced computing and modeling frameworks integrating AI-driven methods, statistical and
-econometric models, traffic simulation, and cloud computing techniques for ingesting multisource travel-related big
-data, constructing digit-twin mobility systems, forecasting future spatiotemporal mobility networks, and disentangling
-complex relationships among human travel behaviors and external factors.
+Greetings! My name is Songhua Hu (胡松华), and I am a Postdoctoral Research Associate at [MIT Senseable City Lab](https://senseable.mit.edu/) (starting in June 2023). 
+I hold a Ph.D. in Transportation Engineering from the University of Maryland, College Park. My research interests revolve around the intersection of transportation and data science, 
+with a focus on Urban Computing (Human Mobility), Spatiotemporal Network Modeling, Transportation Economics, Computational Social Science, and Health Geography.
+I enjoy exploring novel solutions to complex transportation problems and am always eager to experiment with emerging coding and modelling techniques.
+My research is grounded in a diverse set of AI-driven models, statistical models, econometric theories, traffic simulation, and cloud computing techniques.
+Currently, I'm working on several exciting projects, including constructing digit-twin urban mobility system, forecasting spatiotemporal mobility network dynamics , and mining cross-disciplinary big data sources.
 
 ***
 
@@ -38,8 +34,8 @@ Research Interests
 Education
 ======
 
-* **Ph.D. (ABD), Transportation Engineering**
-    * University of Maryland, College Park, 09/2019 - 02/2023 (Expected).
+* **Ph.D., Transportation Engineering**
+    * University of Maryland, College Park, 09/2019 - 03/2023.
     * Dissertation: “A big-data-driven framework for spatiotemporal travel demand estimation and prediction”
 * **M.S., Transportation Engineering**
     * Tongji University, 09/2016 - 06/2019
@@ -48,7 +44,6 @@ Education
 * **B.S., Transportation Engineering**
     * Huazhong University of Science and Technology, 09/2012 - 06/2016
     * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
-
 ***
 
 Publications
@@ -111,7 +106,7 @@ Skills
   **Survival analysis**(Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
   **Spatial econometrics** (SER, SLR, SDR, GWR, GTWR), **Discrete choice model** (Multinomial, Mixed, Nested)
 * **ML/DL/AI**
-    * **Machine learning** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (Relative importance, SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (
+    * **Machine learning** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (SHAP, PDP, ALE), **Deep learning** (FNN, CNN, (
       Attention) RNN, Transformer, (Temporal) Graph NN)
 
 ***
