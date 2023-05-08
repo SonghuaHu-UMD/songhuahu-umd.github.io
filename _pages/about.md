@@ -10,11 +10,10 @@ redirect_from:
 
 ---
 Greetings! My name is Songhua Hu (胡松华), and I am a Postdoctoral Research Associate at [MIT Senseable City Lab](https://senseable.mit.edu/) (starting in June 2023). 
-I hold a Ph.D. in Transportation Engineering from the University of Maryland, College Park. My research interests revolve around the intersection of transportation and data science, 
+My research interests revolve around the intersection of transportation and data science, 
 with a focus on Urban Computing (Human Mobility), Spatiotemporal Network Modeling, Transportation Economics, Computational Social Science, and Health Geography.
 I enjoy exploring novel solutions to complex transportation problems and am always eager to experiment with emerging coding and modelling techniques.
 My research is grounded in a diverse set of AI-driven models, statistical models, econometric theories, traffic simulation, and cloud computing techniques.
-Currently, I'm working on several exciting projects, including constructing digit-twin urban mobility system, forecasting spatiotemporal mobility network dynamics , and mining cross-disciplinary big data sources.
 
 ***
 
