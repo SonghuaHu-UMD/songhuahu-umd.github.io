@@ -69,23 +69,21 @@ See full list here: [Google Scholar](https://scholar.google.com/citations?user=u
 
 Awards
 ======
-* CEE Best Doctoral Research Award (Top 1), University of Maryland, College Park, 2023.
+* CEE Best Doctoral Research Award (Rank 1st), University of Maryland, College Park, 2023.
 * Outstanding Reviewer, Transportation Research Part D: Transport and Environment, 2023.
 * [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards)
   , University of Maryland, College Park, 2021.
 * CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
 * The Graduate School's Dean’s Fellowship, University of Maryland, College Park, 2019.
 * The Excellent Master Scholarship, Tongji University, 2018.
-* Second
-  Price, [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml),
-  2017.
+* Second Price, [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
 * Social Responsibility Award, [BMW Next Mobility Youth Camp](http://www.chinanews.com.cn/auto/2016/12-02/8081476.shtml)
   , 2016.
-* [Pacemaker to Merit Student (Top 20/7000)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and
+* [Highest Undergraduate Scholarship (20 out of 7,000 per year)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and
   Technology, 2015.
-* National Encouragement Scholarship (Top 1/64), Huazhong University of Science and Technology, 2015.
-* National Scholarship (Top 1/64), Huazhong University of Science and Technology, 2014.
-* National Scholarship (Top 1/64), Huazhong University of Science and Technology, 2013.
+* National Encouragement Scholarship (Rank 1st/64), Huazhong University of Science and Technology, 2015.
+* National Scholarship (Rank 1st/64), Huazhong University of Science and Technology, 2014.
+* National Scholarship (Rank 1st/64), Huazhong University of Science and Technology, 2013.
 
 ***
 
