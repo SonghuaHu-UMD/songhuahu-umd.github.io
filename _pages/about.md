@@ -9,7 +9,7 @@ redirect_from:
 - /about.html
 
 ---
-Greetings! My name is Songhua Hu (胡松华), and I am a Postdoctoral Research Associate at [MIT Senseable City Lab](https://senseable.mit.edu/) (starting in June 2023). 
+Greetings! My name is Songhua Hu (胡松华), and I am a Postdoctoral Research Fellow at [MIT Senseable City Lab](https://senseable.mit.edu/) (starting in June 2023). 
 My research interests revolve around the intersection of transportation and data science, 
 with a focus on Urban Computing (Human Mobility), Spatiotemporal Network Modeling, Transportation Economics, Computational Social Science, and Health Geography.
 I enjoy exploring novel solutions to complex transportation problems and am always eager to experiment with emerging coding and modelling techniques.
@@ -47,21 +47,21 @@ Education
 
 Publications
 ======
-
+* _Proceedings of the National Academy of Sciences_ (**1** Paper).
 * _Transportation Research Part C: Emerging Technologies_ (**3** Papers, **3** First-Authored).
 * _Transportation Research Part D: Transport and Environment_ (**3** Papers, **3** First-Authored).
 * _Journal of Transport Geography_ (**2** Papers, **2** First-Authored).
 * _Sustainable Cities and Society_ (**1** Paper, **1** First-Authored).
 * _IEEE Intelligent Transportation Systems Magazine_ (**1** Paper, **1** First-Authored).
-* _Proceedings of the National Academy of Sciences_ (**1** Paper).
 * _Journal of the Royal Society Interface_ (**1** Paper).
-* _Vaccine_ (**1** Paper, **1** First-Authored).
-* _International Journal of Sustainable Transportation_ (**1** Paper).
-* _Transportation Research Record_ (**1** Paper).
+* _Vaccine_ (**2** Paper, **2** First-Authored).
 * _PLOS One_ (**2** Papers, **1** First-Authored).
+* _Health & Place_ (**1** Paper).
+* _International Journal of Sustainable Transportation_ (**1** Paper).
+* _Transportation Research Record_ (**2** Paper).
 * _IEEE International Conference on Intelligent Transportation Systems (ITSC)_ (**2** Papers, **2**
   First-Authored).
-* _Transportation Research Board Annual Meeting_ (**>10** Posters/Presentations).
+* _Transportation Research Board Annual Meeting_ (**>20** Posters/Presentations).
 
 See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)
 
@@ -69,7 +69,8 @@ See full list here: [Google Scholar](https://scholar.google.com/citations?user=u
 
 Awards
 ======
-
+* CEE Best Doctoral Research Award (Top 1), University of Maryland, College Park, 2023.
+* Outstanding Reviewer, Transportation Research Part D: Transport and Environment, 2023.
 * [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards)
   , University of Maryland, College Park, 2021.
 * CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
@@ -80,11 +81,11 @@ Awards
   2017.
 * Social Responsibility Award, [BMW Next Mobility Youth Camp](http://www.chinanews.com.cn/auto/2016/12-02/8081476.shtml)
   , 2016.
-* [Pacemaker to Merit Student (Top 20)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and
+* [Pacemaker to Merit Student (Top 20/7000)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and
   Technology, 2015.
-* National Encouragement Scholarship, Huazhong University of Science and Technology, 2015.
-* National Scholarship, Huazhong University of Science and Technology, 2014.
-* National Scholarship, Huazhong University of Science and Technology, 2013.
+* National Encouragement Scholarship (Top 1/64), Huazhong University of Science and Technology, 2015.
+* National Scholarship (Top 1/64), Huazhong University of Science and Technology, 2014.
+* National Scholarship (Top 1/64), Huazhong University of Science and Technology, 2013.
 
 ***
 
