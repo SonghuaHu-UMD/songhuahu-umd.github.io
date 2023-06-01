@@ -76,12 +76,12 @@ Awards
 * CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
 * The Graduate School's Dean’s Fellowship, University of Maryland, College Park, 2019.
 * The Excellent Master Scholarship, Tongji University, 2018.
-* Second Price, [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
+* Second Price (2nd/100), [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
 * Social Responsibility Award, [BMW Next Mobility Youth Camp](http://www.chinanews.com.cn/auto/2016/12-02/8081476.shtml)
   , 2016.
 * [Highest Undergraduate Scholarship (20 out of 7,000)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and
   Technology, 2015.
-* National Scholarship (Rank 1st/64), Huazhong University of Science and Technology, 2013, 2014, 2015.
+* National Scholarship (1st/64), Huazhong University of Science and Technology, 2013, 2014, 2015.
 
 ***
 
