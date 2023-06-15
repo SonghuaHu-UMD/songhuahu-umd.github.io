@@ -48,17 +48,18 @@ Education
 Publications
 ======
 * _Proceedings of the National Academy of Sciences_ (**1** Paper).
+* _Transportation Research Part A: Policy and Practice_ (**1** Paper, **1** First-Authored).
 * _Transportation Research Part C: Emerging Technologies_ (**3** Papers, **3** First-Authored).
 * _Transportation Research Part D: Transport and Environment_ (**3** Papers, **3** First-Authored).
 * _Journal of Transport Geography_ (**2** Papers, **2** First-Authored).
 * _Sustainable Cities and Society_ (**1** Paper, **1** First-Authored).
 * _IEEE Intelligent Transportation Systems Magazine_ (**1** Paper, **1** First-Authored).
 * _Journal of the Royal Society Interface_ (**1** Paper).
-* _Vaccine_ (**2** Paper, **2** First-Authored).
+* _Vaccine_ (**2** Papers, **2** First-Authored).
 * _PLOS One_ (**2** Papers, **1** First-Authored).
 * _Health & Place_ (**1** Paper).
 * _International Journal of Sustainable Transportation_ (**1** Paper).
-* _Transportation Research Record_ (**2** Paper).
+* _Transportation Research Record_ (**2** Papers).
 * _IEEE International Conference on Intelligent Transportation Systems (ITSC)_ (**2** Papers, **2**
   First-Authored).
 * _Transportation Research Board Annual Meeting_ (**>20** Posters/Presentations).
