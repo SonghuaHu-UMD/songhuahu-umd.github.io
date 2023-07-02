@@ -23,8 +23,12 @@ online [University of Maryland COVID-19 Impact Analysis Platform](https://data.c
 
 ### Journals
 
+> 1. **Hu, Songhua**, Chenfeng Xiong, Yingrui Zhao, Xin Yuan, and Xuqiu Wang. "Vaccination, Mobility, and COVID-19 Health Outcomes:
+      Empirical Comparison Before and During the Outbreak of SARS-Cov-2 B.1.1.529 (Omicron) Variant." Vaccine (2023).
+> 2. Wei, Ran, Yujia Zhang, Song Gao, Brandon J. Brown, **Songhua Hu**, and Bruce G. Link.
+"Health disparity in the spread of COVID-19: Evidence from social distancing, risk of interactions, and access to testing." Health & place 82 (2023): 103031.
 > 1. **Hu, Songhua**, Chenfeng Xiong, Qingchen Li, Zitong Wang, and Yuan Jiang. "COVID-19 vaccine hesitancy cannot fully
-     explain disparities in vaccination coverage across the contiguous United States." Vaccine (2022).
+    explain disparities in vaccination coverage across the contiguous United States." Vaccine (2022).
 > 2. **Hu, Songhua**, Chenfeng Xiong, Hannah Younes, Mofeng Yang, Aref Darzi, and Zhiyu Catherine Jin. "Examining
      spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from
      the contiguous United States." Sustainable cities and society 76 (2022): 103506.
@@ -38,11 +42,6 @@ online [University of Maryland COVID-19 Impact Analysis Platform](https://data.c
      a positive relationship between human mobility and COVID-19 infections." Proceedings of the National Academy of
      Sciences 117, no. 44 (2020): 27087-27089.
 
-### Conferences
-
-> 1. **Hu, Songhua**, Chenfeng Xiong, Xin Yuan, and Xuqiu Wang. Vaccination, Mobility, and COVID-19 Health Outcomes:
-     Empirical Comparison Before and During the Outbreak of SARS-Cov-2 B.1.1.529 (Omicron) Variant, Transportation
-     Research Board 102th Annual Meeting (2023), Washington DC.
 
 <p align="center">
 <img src="https://songhuahu-umd.github.io/images/FF41.png" width="310" hspace="5"/> 
