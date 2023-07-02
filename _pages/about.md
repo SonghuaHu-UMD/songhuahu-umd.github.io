@@ -106,5 +106,24 @@ Skills
 
 ***
 
+Reviews
+======
+* **Journal Article Reviewer**
+  * **Transportation**: Accident Analysis and Prevention; International Journal of Transportation Science and Technology; Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation; 
+  Transportation Research Part B: Methodological; Transportation Research Part D: Transport and Environment; Transport Policy; 
+  Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record; 
+  Transportation Research Interdisciplinary Perspectives.
+  * **Planning and GIS**: Cambridge Journal of Regions, Economy and Society; Cities; Geo-spatial Information Science; 
+  Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society;
+  * **Health**: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific;
+  * **Multidisciplinary**: IEEE Access; Nature Cities; Scientific Reports; PLOS One; Qeios; 
+
+* **Conference Proceeding Reviewer**
+  * TRB Transportation Research Board Annual Meeting; 
+  COTA International Conference of Transportation Professionals; 
+  IACP International Association of China Planning; 
+  IEEE Intelligent Transportation Systems Society Conference Management System
+
+
 ------
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=848383&w=288&t=n&d=zU9DbdqNwD8PS5IHucVNU8GV_lJolPyn6nhjUQYN5FI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
