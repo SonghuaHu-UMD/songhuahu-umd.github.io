@@ -92,9 +92,9 @@ Reviews
     Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
     Transportation Research Interdisciplinary Perspectives.
   * **Planning and GIS**: Cambridge Journal of Regions, Economy and Society; Cities; Geo-spatial Information Science;
-    Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society;
-  * **Health**: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific;
-  * **Multidisciplinary**: IEEE Access; Nature Cities; Scientific Reports; PLOS One; Qeios;
+    Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society.
+  * **Health**: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
+  * **Multidisciplinary**: IEEE Access; Nature Cities; Scientific Reports; PLOS One; Qeios.
 
 * **Conference Proceeding Reviewer**
   * TRB Transportation Research Board Annual Meeting;
