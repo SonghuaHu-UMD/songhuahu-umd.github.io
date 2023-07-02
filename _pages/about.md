@@ -9,7 +9,7 @@ redirect_from:
 - /about.html
 
 ---
-Greetings! My name is Songhua Hu (胡松华), and I am a Postdoctoral Research Fellow at [MIT Senseable City Lab](https://senseable.mit.edu/) (starting in June 2023). 
+Greetings! My name is Songhua Hu (胡松华), and I am a Postdoctoral Research Fellow at [MIT Senseable City Lab](https://senseable.mit.edu/). 
 My research interests revolve around the intersection of transportation and data science, 
 with a focus on Urban Computing (Human Mobility), Spatiotemporal Network Modeling, Transportation Economics, Computational Social Science, and Health Geography.
 I enjoy exploring novel solutions to complex transportation problems and am always eager to experiment with emerging coding and modelling techniques.
@@ -33,8 +33,8 @@ Education
 ======
 
 * **Ph.D., Transportation Engineering**
-    * University of Maryland, College Park, 09/2019 - 03/2023.
-    * Dissertation: “A big-data-driven framework for spatiotemporal travel demand estimation and prediction”
+    * University of Maryland, College Park, 09/2019 - 05/2023.
+    * Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
 * **M.S., Transportation Engineering**
     * Tongji University, 09/2016 - 06/2019
     * Thesis: “Promoting electric vehicle utilization in large-scale carsharing systems: Factors analysis and relocation
@@ -70,7 +70,7 @@ See full list here: [Google Scholar](https://scholar.google.com/citations?user=u
 
 Awards
 ======
-* CEE Best Doctoral Research Award, University of Maryland, College Park, 2023.
+* [CEE Best Doctoral Research Award](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards), University of Maryland, College Park, 2023.
 * Outstanding Reviewer, Transportation Research Part D: Transport and Environment, 2023.
 * [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards)
   , University of Maryland, College Park, 2021.
@@ -78,9 +78,7 @@ Awards
 * The Graduate School's Dean’s Fellowship, University of Maryland, College Park, 2019.
 * Graduate Merit Scholarship, Tongji University, 2018.
 * Second Price (2nd/140), [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
-* Social Responsibility Award, [BMW Next Mobility Youth Camp](http://www.chinanews.com.cn/auto/2016/12-02/8081476.shtml)
-  , 2016.
-* [Undergraduate Merit Scholarship (20 out of 7,000)](http://news.hust.edu.cn/info/1007/2164.htm), Huazhong University of Science and
+* [Undergraduate Merit Scholarship](http://news.hust.edu.cn/info/1007/2164.htm) (20 out of 7,000), Huazhong University of Science and
   Technology, 2015.
 * National Scholarship (1st/64), Huazhong University of Science and Technology, 2013, 2014, 2015.
 
