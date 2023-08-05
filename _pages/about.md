@@ -87,14 +87,14 @@ Awards
 Reviews
 ======
 * **Journal Article Reviewer**
-  * **Transportation**: Accident Analysis and Prevention; International Journal of Transportation Science and Technology; Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
+  * **Transportation**: Accident Analysis and Prevention; IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
     Transportation Research Part B: Methodological; Transportation Research Part D: Transport and Environment; Transport Policy;
     Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
     Transportation Research Interdisciplinary Perspectives.
   * **Planning and GIS**: Cambridge Journal of Regions, Economy and Society; Cities; Geo-spatial Information Science;
     Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society.
   * **Health**: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
-  * **Multidisciplinary**: IEEE Access; Nature Cities; Scientific Reports; PLOS One; Qeios.
+  * **Multidisciplinary**: Cogent Engineering; IEEE Access; Nature Cities; Scientific Reports; PLOS One; Qeios.
 
 * **Conference Proceeding Reviewer**
   * TRB Transportation Research Board Annual Meeting;
