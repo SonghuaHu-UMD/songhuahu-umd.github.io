@@ -10,7 +10,7 @@ redirect_from:
 
 ---
 Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/). 
-Before joining MIT, I earned my Ph.D. in Transportation Engineering from the University of Maryland, College Park.
+Before joining MIT, I earned my Ph.D. in Transportation Engineering from the University of Maryland, College Park. 
 My research explores the nexus of human mobility, urban sensing, and data mining, 
 with a particular emphasis on Mobility Sensing and Computing, Network Resilience, Next-generation Travel Demand Modelling, and Health Geography.
 
@@ -25,7 +25,7 @@ Research Interests
 ======
 
 + [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
-+ [Next-generation Travel Demand Modelling (Next-gen TDM)](https://songhuahu-umd.github.io/Traffic%20Simulation)
++ [Next-generation Travel Demand Modelling (NextGen TDM)](https://songhuahu-umd.github.io/Traffic%20Simulation)
 + [Transportation Network Resilience](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
 + [Miscellaneous: Transportation Economics, Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
