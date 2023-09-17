@@ -36,8 +36,6 @@ Education
 * **Ph.D., Transportation Engineering**
     * University of Maryland, College Park, 2019 - 2023.
     * Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
-* **M.S., Computer Science (Machine Learning)**
-    * Georgia Institute of Technology, 2023 - Present.
 * **M.S., Transportation Engineering**
     * Tongji University, 2016 - 2019
     * Thesis: “Promoting electric vehicle utilization in large-scale carsharing systems: Factors analysis and relocation
