@@ -10,12 +10,12 @@ redirect_from:
 
 ---
 Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
-My research explores the dynamic intersection of human mobility, urban sensing, and data mining, 
-with a particular emphasis on Mobility Sensing and Computing, Urban Mobility Resilience, Computational Social Science, and Health Geography.
+My research explores the intersection of human mobility, urban sensing, and data mining, 
+with a particular emphasis on Mobility Sensing and Computing, Network Resilience, Travel Demand Modelling, and Health Geography.
 
-I have a deep passion for seeking novel solutions to complex urban transportation challenges and am always eager to experiment with emerging sensing and modelling techniques. 
-Throughout my research journey, I've been working with a diverse set of sensors (_Mobile phones, Cameras, Floating cars, Social media_) using different modelling approaches (_Deep learning, Statistics, Simulation, Network science, Cloud computing_). 
-My work has been applied to various scenarios, spanning travel demand modeling, transportation economics, traffic simulation, disaster response, mobility as a Service (MaaS), epidemiology, traffic emissions, and environmental health.
+I'm passionate about seeking innovative solutions for complex urban transportation challenges using emerging sensing and modelling techniques. 
+I've been working with a diverse set of sensors (_Mobile phones, Traffic cameras, Floating cars, Social media_) using different modelling approaches (_Deep learning, Statistics, Simulation, Network science, Cloud computing_). 
+My work has been applied to various scenarios: _Digit-twin mobility system, Next-generation travel demand modelling, Disaster response, Social sentiment and perception, Travel behavioral economics, Mobility as a Service (MaaS), Traffic emission, Environmental justice, and Epidemiology_.
 
 ***
 
@@ -24,7 +24,7 @@ Research Interests
 
 + [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
 + [Transportation Resilience, Sustainability, and Equity](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
-+ [Next-generation Travel Demand Modelling](https://songhuahu-umd.github.io/Traffic%20Simulation)
++ [Next-generation Travel Demand Modelling (Next-gen TDM)](https://songhuahu-umd.github.io/Traffic%20Simulation)
 + [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
 + [Mobility as a service (MaaS) and Shared Mobility](https://songhuahu-umd.github.io/Shared%20Mobility)
 
