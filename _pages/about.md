@@ -9,11 +9,13 @@ redirect_from:
 - /about.html
 
 ---
-Greetings! My name is Songhua Hu (胡松华), and I am a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
-My research interests revolve around the intersection of human travel, urban sensing, and data mining, 
-with a focus on Mobility Sensing and Computing, Urban Network Resilience, Computational Social Science, and Health Geography.
-I enjoy exploring novel solutions to complex human travel problems and am eager to experiment with emerging sensing and modelling techniques.
-My research is grounded in a diverse set of sensors (_Mobile phones, Cameras, Social media..._) and models (_Deep learning, Statistics, Simulation, Network Science, Cloud computing, ..._).
+Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
+My research explores the dynamic intersection of human mobility, urban sensing, and data mining, 
+with a particular emphasis on Mobility Sensing and Computing, Urban Mobility Resilience, Computational Social Science, and Health Geography.
+
+I have a deep passion for seeking novel solutions to complex urban transportation challenges and am always eager to experiment with emerging sensing and modelling techniques. 
+Throughout my research journey, I've been working with a diverse set of sensors (_Mobile phones, Cameras, Floating cars, Social media_) using different modelling approaches (_Deep learning, Statistics, Simulation, Network science, Cloud computing_). 
+My work has been applied to various scenarios, spanning travel demand modeling, transportation economics, traffic simulation, disaster response, mobility as a Service (MaaS), epidemiology, traffic emissions, and environmental health.
 
 ***
 
