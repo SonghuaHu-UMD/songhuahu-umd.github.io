@@ -12,7 +12,7 @@ redirect_from:
 Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/). 
 Before joining MIT, I earned my Ph.D. in Transportation Engineering from the University of Maryland, College Park. 
 My research explores the nexus of human mobility, urban sensing, and data mining, 
-with a particular emphasis on Mobility Sensing and Computing, Network Resilience, Next-generation Travel Demand Modelling, and Health Geography.
+with a particular emphasis on Human Mobility Sensing and Computing, Next-Generation Travel Demand Modelling, Mobility and Community Resilience, and Public Health Geography.
 
 I'm passionate about seeking innovative solutions for complex urban transportation challenges using emerging crowdsensing and modelling techniques. 
 I've been working with a diverse set of sensors (_Mobile phones, Mobile applications, Traffic cameras, Floating cars, Social media_) using different modelling approaches (_Deep learning, Statistics, Simulation, Network science, Cloud computing_). 
@@ -24,9 +24,9 @@ Disaster response and community resilience, Social sentiment and perception, Tra
 Research Interests
 ======
 
-+ [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
-+ [Next-generation Travel Demand Modelling (NextGen TDM)](https://songhuahu-umd.github.io/Traffic%20Simulation)
-+ [Transportation Network Resilience](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
++ [Human Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
++ [Next-Generation Travel Demand Modelling (NextGen TDM)](https://songhuahu-umd.github.io/Traffic%20Simulation)
++ [Mobility and Community Resilience](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
 + [Miscellaneous: Transportation Economics, Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
 
