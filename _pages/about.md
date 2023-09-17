@@ -120,12 +120,14 @@ Skills
 * **Machine learning**
     * **Tree-based models** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (SHAP, PDP, ALE).
 * **Traffic Simulation**
-  * **Micro** (Vissim (&COM), Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
+  * **Micro** (Vissim, Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
 * **(Spatiotemporal) Network Analysis**
   * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx.
 * **Cloud Computing**
   * AWS (S3, EMR, EC2), PySpark.
+
 ***
+
 
 
 ------

@@ -14,27 +14,27 @@ main:
         
 #  - title: "Blog Posts"
 #    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
 
-  - title: "Human Mobility"
+  - title: "Urban Sensing"
     url: /Human Mobility/
 
-  - title: "ST Network"
-    url: /Spatiotemporal Network/
+#  - title: "ST Network"
+#    url: /Spatiotemporal Network/
 
   - title: "Resilience"
     url: /Infrastructure Resilience/
 
+  - title: "Next-gen TDM"
+    url: /Traffic Simulation/
+
   - title: "Public Health"
     url: /Public Health/
 
-  - title: "Shared Mobility"
+  - title: "MaaS"
     url: /Shared Mobility/
 
-  - title: "Simulation"
-    url: /Traffic Simulation/
+  - title: "CV"
+    url: /cv/
 #
 #  - title: "Guide"
 #    url: /markdown/
