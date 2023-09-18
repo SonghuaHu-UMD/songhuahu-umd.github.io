@@ -33,15 +33,12 @@ Research Highlights
 Education
 ======
 
-* **Ph.D., Transportation Engineering**
-    * University of Maryland, College Park, 2019 - 2023.
+* **Ph.D., Transportation Engineering, University of Maryland, College Park, 2019 - 2023**
     * Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
-* **M.S., Transportation Engineering**
-    * Tongji University, 2016 - 2019
+* **M.S., Transportation Engineering, Tongji University, 2016 - 2019**
     * Thesis: “Promoting electric vehicle utilization in large-scale carsharing systems: Factors analysis and relocation
       simulation”
-* **B.S., Transportation Engineering**
-    * Huazhong University of Science and Technology, 2012 - 2016
+* **B.S., Transportation Engineering, Huazhong University of Science and Technology, 2012 - 2016**
     * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
 
 ***
@@ -61,11 +58,11 @@ Publications
 * _Health & Place_ (**1** Paper).
 * _International Journal of Sustainable Transportation_ (**1** Paper).
 * _Transportation Research Record_ (**2** Papers).
-* _IEEE International Conference on Intelligent Transportation Systems (ITSC)_ (**2** Papers, **2**
+* _IEEE International Conference on Intelligent Transportation Systems_ (**2** Papers, **2**
   First-Authored).
 * _Transportation Research Board Annual Meeting_ (**>20** Posters/Presentations).
 
-See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)
+<span style="color: purple">See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)</span>
 
 ***
 
@@ -103,28 +100,25 @@ Reviews
     IACP International Association of China Planning;
     IEEE Intelligent Transportation Systems Society Conference Management System
 
-See full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)
+<span style="color: purple">See full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)</span>
 
 Skills
 ======
 
 * **Programming**
     * **Python** (pandas, ultralytics, opencv, pytorch, sklearn, pymc), **R** (dplyr, car, lavaan, mgcv, spdep), **SQL** (MySQL,
-      pgAdmin, Impala, Oracle), Matlab, Git, Java, HTML.
+      pgAdmin, Impala, Oracle), **Cloud Computing** (PySpark, EMR), Matlab, Git, Bash, Java, HTML.
 * **Statistics**
     * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), BSTS), **Time series** (ARIMA, SARIMA),
   **Survival analysis**(Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
   **Spatial econometrics** (SER, SLR, SDR, GWR, GTWR), **Discrete choice model** (Multinomial, Mixed, Nested).
-* **Deep learning**
-  *  **Time series forecasting** (CNN, LSTM, GRU, Transformer), **Graph neural network** (STGCN), **Computer vision** (Vehicle/Pedestrian Detection, Tracking, Segmentation), **Natural language processing** (Text mining, Topic modelling, Sentiment analysis, LLM).
-* **Machine learning**
-    * **Tree models** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (SHAP, PDP, ALE).
+* **Deep learning/Machine learning**
+  *  **Time series forecasting** (CNN, LSTM, GRU, Transformer), **Graph neural network** (STGCN), **Computer vision** (Vehicle/Pedestrian Detection, Tracking, Segmentation), **Natural language processing** (Text mining, Topic modelling, Sentiment analysis, LLM), 
+  **Tree models** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (SHAP, PDP, ALE).
 * **Traffic Simulation**
   * **Micro** (Vissim, Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
 * **(Spatiotemporal) Network Analysis**
   * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx.
-* **Cloud Computing**
-  * AWS (S3, EMR, EC2), PySpark.
 
 ***
 
