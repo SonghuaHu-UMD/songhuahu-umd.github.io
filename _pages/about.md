@@ -10,7 +10,7 @@ redirect_from:
 
 ---
 Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
-My research explores the nexus of **human mobility**, **urban sensing**, and **transportation network**. 
+My research explores the nexus of **urban sensing**, **human mobility** and **transportation network**. 
 I'm passionate about seeking innovative solutions for complex urban transportation challenges using emerging crowdsensing and modelling techniques. 
 
 I've been working with a diverse set of sensors <span style="color: green"> (_Mobile phones, Mobile apps, Traffic cameras, Floating cars, Social media_)</span> using different modelling approaches <span style="color: orange"> (_Deep learning, Statistics, Simulation, Network science, Cloud computing_)</span>. 
@@ -85,14 +85,14 @@ Awards
 Reviews
 ======
 * **Journal Article Reviewer**
-  * <span style="color: gold">**Transportation**</span>: Accident Analysis and Prevention; IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
+  * <span style="color: orange">**Transportation**</span>: Accident Analysis and Prevention; IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
     Transportation Research Part B: Methodological; Transportation Research Part D: Transport and Environment; Transport Policy;
     Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
     Transportation Research Interdisciplinary Perspectives.
-  * <span style="color: gold">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society; Cities; Computational Urban Science; Geo-spatial Information Science;
+  * <span style="color: orange">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society; Cities; Computational Urban Science; Geo-spatial Information Science;
     Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society.
-  * <span style="color: gold">**Public Health**</span>: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
-  * <span style="color: gold">**Multidisciplinary**</span>: Cogent Engineering; IEEE Access; Nature Cities; Scientific Reports; PLOS One.
+  * <span style="color: orange">**Public Health**</span>: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
+  * <span style="color: orange">**Multidisciplinary**</span>: Cogent Engineering; IEEE Access; Nature Cities; Scientific Reports; PLOS One.
 
 * **Conference Proceeding Reviewer**
   * TRB Transportation Research Board Annual Meeting;
