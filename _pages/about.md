@@ -9,24 +9,21 @@ redirect_from:
 - /about.html
 
 ---
-Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/). 
-Before joining MIT, I earned my Ph.D. in Transportation Engineering from the University of Maryland, College Park. 
-My research explores the nexus of human mobility, urban sensing, and data mining, 
-with a particular emphasis on Human Mobility Sensing and Computing, Next-Generation Travel Demand Modelling, Mobility and Community Resilience, and Public Health Geography.
-
+Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
+My research explores the nexus of human mobility, urban sensing, and data mining. 
 I'm passionate about seeking innovative solutions for complex urban transportation challenges using emerging crowdsensing and modelling techniques. 
-I've been working with a diverse set of sensors (_Mobile phones, Mobile applications, Traffic cameras, Floating cars, Social media_) using different modelling approaches (_Deep learning, Statistics, Simulation, Network science, Cloud computing_). 
-My work has been applied to various scenarios such as _Digit-twin mobility system, Mobility as a Service (MaaS), Travel behavioral economics, 
-Disaster response and community resilience, Social sentiment and perception, Transportation decarbonization, Environmental justice, and Epidemiology_.
+I've been working with a diverse set of sensors (_Mobile phones, Mobile apps, Traffic cameras, Floating cars, Social media_) with different modelling approaches (_Deep learning, Statistics, Simulation, Network science, Cloud computing_). 
+My work has been applied to various scenarios such as _Digit-twin mobility system, Travel demand modelling, Mobility as a Service (MaaS), Travel behavioral economics, 
+Disaster response, Social sentiment and perception, Transportation decarbonization, Environmental justice, and Epidemiology_.
 
 ***
 
-Research Interests
+Research Highlights
 ======
 
-+ [Human Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
++ [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
 + [Next-Generation Travel Demand Modelling (NextGen TDM)](https://songhuahu-umd.github.io/Traffic%20Simulation)
-+ [Mobility and Community Resilience](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
++ [Disaster Response and Community Resilience](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
 + [Miscellaneous: Transportation Economics, Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
 
@@ -96,7 +93,7 @@ Reviews
     Transportation Research Interdisciplinary Perspectives.
   * **Planning and GIS**: Cambridge Journal of Regions, Economy and Society; Cities; Computational Urban Science; Geo-spatial Information Science;
     Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society.
-  * **Health**: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
+  * **Public Health**: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
   * **Multidisciplinary**: Cogent Engineering; IEEE Access; Nature Cities; Scientific Reports; PLOS One.
 
 * **Conference Proceeding Reviewer**
