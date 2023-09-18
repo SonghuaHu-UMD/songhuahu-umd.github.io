@@ -45,22 +45,22 @@ Education
 
 Publications
 ======
-* _Proceedings of the National Academy of Sciences_ <span style="color: cyan"> (**1** Paper)</span>.
-* _Transportation Research Part A: Policy and Practice_ <span style="color: cyan">(**1** Paper, **1** First-Authored)</span>.
-* _Transportation Research Part C: Emerging Technologies_ <span style="color: cyan">(**3** Papers, **3** First-Authored)</span>.
-* _Transportation Research Part D: Transport and Environment_ <span style="color: cyan">(**3** Papers, **3** First-Authored)</span>.
-* _Journal of Transport Geography_ <span style="color: cyan">(**2** Papers, **2** First-Authored)</span>.
-* _Sustainable Cities and Society_ <span style="color: cyan">(**1** Paper, **1** First-Authored)</span>.
-* _IEEE Intelligent Transportation Systems Magazine_ <span style="color: cyan">(**1** Paper, **1** First-Authored)</span>.
-* _Journal of the Royal Society Interface_ <span style="color: cyan">(**1** Paper)</span>.
-* _Vaccine_ <span style="color: cyan">(**2** Papers, **2** First-Authored)</span>.
-* _PLOS One_ <span style="color: cyan">(**2** Papers, **1** First-Authored)</span>.
-* _Health & Place_ <span style="color: cyan">(**1** Paper)</span>.
-* _International Journal of Sustainable Transportation_ <span style="color: cyan">(**1** Paper)</span>.
-* _Transportation Research Record_ <span style="color: cyan">(**2** Papers)</span>.
-* _IEEE International Conference on Intelligent Transportation Systems_ <span style="color: cyan">(**2** Papers, **2**
+* _Proceedings of the National Academy of Sciences_ <span style="color: maroon"> (**1** Paper)</span>.
+* _Transportation Research Part A: Policy and Practice_ <span style="color: maroon">(**1** Paper, **1** First-Authored)</span>.
+* _Transportation Research Part C: Emerging Technologies_ <span style="color: maroon">(**3** Papers, **3** First-Authored)</span>.
+* _Transportation Research Part D: Transport and Environment_ <span style="color: maroon">(**3** Papers, **3** First-Authored)</span>.
+* _Journal of Transport Geography_ <span style="color: maroon">(**2** Papers, **2** First-Authored)</span>.
+* _Sustainable Cities and Society_ <span style="color: maroon">(**1** Paper, **1** First-Authored)</span>.
+* _IEEE Intelligent Transportation Systems Magazine_ <span style="color: maroon">(**1** Paper, **1** First-Authored)</span>.
+* _Journal of the Royal Society Interface_ <span style="color: maroon">(**1** Paper)</span>.
+* _Vaccine_ <span style="color: maroon">(**2** Papers, **2** First-Authored)</span>.
+* _PLOS One_ <span style="color: maroon">(**2** Papers, **1** First-Authored)</span>.
+* _Health & Place_ <span style="color: maroon">(**1** Paper)</span>.
+* _International Journal of Sustainable Transportation_ <span style="color: maroon">(**1** Paper)</span>.
+* _Transportation Research Record_ <span style="color: maroon">(**2** Papers)</span>.
+* _IEEE International Conference on Intelligent Transportation Systems_ <span style="color: maroon">(**2** Papers, **2**
   First-Authored)</span>.
-* _Transportation Research Board Annual Meeting_ <span style="color: cyan">(**>20** Posters/Presentations)</span>.
+* _Transportation Research Board Annual Meeting_ <span style="color: maroon">(**>20** Posters/Presentations)</span>.
 
 <span style="color: purple">See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)</span>
 
