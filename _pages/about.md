@@ -33,34 +33,34 @@ Research Highlights
 Education
 ======
 
-* **Ph.D., Transportation Engineering, University of Maryland, College Park, 2023**
+* Ph.D., Transportation Engineering, University of Maryland, College Park, 2023
     * Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
-* **M.S., Transportation Engineering, Tongji University, 2019**
+* M.S., Transportation Engineering, Tongji University, 2019
     * Thesis: “Promoting electric vehicle utilization in large-scale carsharing systems: Factors analysis and relocation
       simulation”
-* **B.S., Transportation Engineering, Huazhong University of Science and Technology, 2016**
+* B.S., Transportation Engineering, Huazhong University of Science and Technology, 2016
     * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
 
 ***
 
 Publications
 ======
-* _Proceedings of the National Academy of Sciences_ (**1** Paper).
-* _Transportation Research Part A: Policy and Practice_ (**1** Paper, **1** First-Authored).
-* _Transportation Research Part C: Emerging Technologies_ (**3** Papers, **3** First-Authored).
-* _Transportation Research Part D: Transport and Environment_ (**3** Papers, **3** First-Authored).
-* _Journal of Transport Geography_ (**2** Papers, **2** First-Authored).
-* _Sustainable Cities and Society_ (**1** Paper, **1** First-Authored).
-* _IEEE Intelligent Transportation Systems Magazine_ (**1** Paper, **1** First-Authored).
-* _Journal of the Royal Society Interface_ (**1** Paper).
-* _Vaccine_ (**2** Papers, **2** First-Authored).
-* _PLOS One_ (**2** Papers, **1** First-Authored).
-* _Health & Place_ (**1** Paper).
-* _International Journal of Sustainable Transportation_ (**1** Paper).
-* _Transportation Research Record_ (**2** Papers).
-* _IEEE International Conference on Intelligent Transportation Systems_ (**2** Papers, **2**
-  First-Authored).
-* _Transportation Research Board Annual Meeting_ (**>20** Posters/Presentations).
+* _Proceedings of the National Academy of Sciences_ <span style="color: cyan"> (**1** Paper)</span>.
+* _Transportation Research Part A: Policy and Practice_ <span style="color: cyan">(**1** Paper, **1** First-Authored)</span>.
+* _Transportation Research Part C: Emerging Technologies_ <span style="color: cyan">(**3** Papers, **3** First-Authored)</span>.
+* _Transportation Research Part D: Transport and Environment_ <span style="color: cyan">(**3** Papers, **3** First-Authored)</span>.
+* _Journal of Transport Geography_ <span style="color: cyan">(**2** Papers, **2** First-Authored)</span>.
+* _Sustainable Cities and Society_ <span style="color: cyan">(**1** Paper, **1** First-Authored)</span>.
+* _IEEE Intelligent Transportation Systems Magazine_ <span style="color: cyan">(**1** Paper, **1** First-Authored)</span>.
+* _Journal of the Royal Society Interface_ <span style="color: cyan">(**1** Paper)</span>.
+* _Vaccine_ <span style="color: cyan">(**2** Papers, **2** First-Authored)</span>.
+* _PLOS One_ <span style="color: cyan">(**2** Papers, **1** First-Authored)</span>.
+* _Health & Place_ <span style="color: cyan">(**1** Paper)</span>.
+* _International Journal of Sustainable Transportation_ <span style="color: cyan">(**1** Paper)</span>.
+* _Transportation Research Record_ <span style="color: cyan">(**2** Papers)</span>.
+* _IEEE International Conference on Intelligent Transportation Systems_ <span style="color: cyan">(**2** Papers, **2**
+  First-Authored)</span>.
+* _Transportation Research Board Annual Meeting_ <span style="color: cyan">(**>20** Posters/Presentations)</span>.
 
 <span style="color: purple">See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)</span>
 
@@ -85,14 +85,14 @@ Awards
 Reviews
 ======
 * **Journal Article Reviewer**
-  * **Transportation**: Accident Analysis and Prevention; IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
+  * <span style="color: gold">**Transportation**</span>: Accident Analysis and Prevention; IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
     Transportation Research Part B: Methodological; Transportation Research Part D: Transport and Environment; Transport Policy;
     Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
     Transportation Research Interdisciplinary Perspectives.
-  * **Planning and GIS**: Cambridge Journal of Regions, Economy and Society; Cities; Computational Urban Science; Geo-spatial Information Science;
+  * <span style="color: gold">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society; Cities; Computational Urban Science; Geo-spatial Information Science;
     Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society.
-  * **Public Health**: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
-  * **Multidisciplinary**: Cogent Engineering; IEEE Access; Nature Cities; Scientific Reports; PLOS One.
+  * <span style="color: gold">**Public Health**</span>: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
+  * <span style="color: gold">**Multidisciplinary**</span>: Cogent Engineering; IEEE Access; Nature Cities; Scientific Reports; PLOS One.
 
 * **Conference Proceeding Reviewer**
   * TRB Transportation Research Board Annual Meeting;
