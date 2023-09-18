@@ -21,11 +21,11 @@ main:
 #  - title: "ST Network"
 #    url: /Spatiotemporal Network/
 
-  - title: "Urban Resilience"
-    url: /Infrastructure Resilience/
-
   - title: "NextGen TDM"
     url: /Traffic Simulation/
+
+  - title: "Urban Resilience"
+    url: /Infrastructure Resilience/
 
   - title: "Public Health"
     url: /Public Health/

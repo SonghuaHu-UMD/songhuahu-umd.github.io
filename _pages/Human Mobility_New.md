@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Urban Mobility Sensing and Computing"
-permalink: /Human Mobility/
+permalink: /Human Mobility New/
 author_profile: true
 ---
 
