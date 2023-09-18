@@ -5,44 +5,38 @@ permalink: /Human Mobility/
 author_profile: true
 ---
 
-Traditional travel demand models heavily rely on travel surveys, which are costly, laborious, and suffer from
-small-sample and infrequent issues.
-My Ph.D. dissertation focuses on building a big-data-driven digital twin model for estimating and forecasting human
-mobility at both collective and individual levels
-using location data from over 100 million monthly active mobile devices in the US.
-Specifically, My work is intended to leverage emerging big data, such as mobile device location data, digital social
-structure, traffic sensor records, and mobility transaction data,
-to extract population-representative trip itineraries, estimate multi-modal Origin-Destination matrices, and analyze
-individual travel behaviors.
+Nowadays, advanced wireless communication, unobtrusive positioning technologies, ubiquitous camera surveillance system, 
+and large-scale computing infrastructures have produced vast amounts of transportation data, 
+changing the way to monitor, measure, and model human travel. 
+My work has covered most of the popular data sources in the transportation domain over recent years. 
+I firmly believe a well-designed fusion of these emerging data can make the urban transportation system more senseable, intelligent, and efficient.
 
-<img src="https://songhuahu-umd.github.io/images/FF1.png" width="1000"/>
+### Mobile Device: Detailed individual spatiotemporal travel information
+
+### Traffic Camera: Visual footage on vehicle, pedestrian, and road infrastructure  
+
+### Social Media: Crowdsourced social attitude, sentiment and perception
 
 ## Related Publications
-
-### Journals
 > 1. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. "Examining nonlinearity in population inflow estimation using big data: 
 An empirical comparison of explainable machine learning models", Transportation Research Part A: Policy and Practice 174 (2023): 103743.
 > 2. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach
      to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic."
      Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
+> 3. Yang, Mofeng, Weiyu Luo, Mohammad Ashoori, Jina Mahmoudi, Chenfeng Xiong, Jiawei Lu, Guangchen Zhao, Saeed Saleh Namadi, **Songhua Hu**, and Aliakbar Kabiri, A big-data driven framework to estimating vehicle volume based on
+  mobile device location data, Transportation Research Record (2023): 03611981231174240.
 > 3. Zhang, Lei, Aref Darzi, Sepehr Ghader, Michael L. Pack, Chenfeng Xiong, Mofeng Yang, Qianqian Sun, AliAkbar Kabiri,
      and **Songhua Hu**. "Interactive covid-19 mobility impact and social distancing analysis platform." Transportation
      Research Record (2020): 03611981211043813.
 > 4. Chen, Peng, **Songhua Hu***, Qing Shen, Hangfei Lin, and Chi Xie. "Estimating traffic volume for local streets with
-     imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610.
-
-### Conferences
-
-> 1. Zhao, Guangchen, Chenfeng Xiong, **Songhua Hu**, Mofeng Yang, Aliakbar Kabiri, Aref Darzi, and Yixuan Pan. A novel
+     imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610. 
+> 5. Zhao, Guangchen, Chenfeng Xiong, **Songhua Hu**, Mofeng Yang, Aliakbar Kabiri, Aref Darzi, and Yixuan Pan. A novel
      measurement of job accessibility based on mobile device location data, Transportation Research Board 102th Annual
-     Meeting (2023), Washington DC.
-> 2. Sun, Qianqian, Yixuan Pan, Weiyi Zhou, Aliakbar Kabiri, Mofeng Yang, Guangchen Zhao, **Songhua Hu**, Mohammad
+     Meeting (2023), Washington DC. 
+> 6. Sun, Qianqian, Yixuan Pan, Weiyi Zhou, Aliakbar Kabiri, Mofeng Yang, Guangchen Zhao, **Songhua Hu**, Mohammad
      Ashoori, Saeed Saleh Namadi, and Aref Darzi. National truck travel demand estimation using GPS data, Transportation
      Research Board 102th Annual Meeting (2023), Washington DC.
-> 3. Yang, Mofeng, Weiyu Luo, Mohammad Ashoori, Jina Mahmoudi, Chenfeng Xiong, Jiawei Lu, Guangchen Zhao, Saeed Saleh
-     Namadi, **Songhua Hu**, and Aliakbar Kabiri, A big-data driven framework to estimating vehicle volume based on
-     mobile device location data, Transportation Research Board 102th Annual Meeting (2023), Washington DC.
-> 4. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of
+> 8. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of
      Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual
      Meeting (2021), Washington DC.
 

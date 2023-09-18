@@ -22,7 +22,7 @@ Disaster response, Social sentiment and perception, Transportation decarbonizati
 Research Highlights
 ======
 
-+ [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility_New)
++ [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
 + [Next-Generation Travel Demand Modelling (NextGen TDM)](https://songhuahu-umd.github.io/Traffic%20Simulation)
 + [Disaster Response and Community Resilience](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
