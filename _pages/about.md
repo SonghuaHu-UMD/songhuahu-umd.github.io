@@ -14,7 +14,7 @@ My research explores the nexus of **urban sensing**, **human mobility** and **tr
 I'm passionate about seeking innovative solutions for complex urban transportation challenges using emerging crowdsensing and modelling techniques. 
 
 I've been working with a diverse set of sensors <span style="color: green"> (_Mobile phones, Mobile apps, Traffic cameras, Floating cars, Social media_)</span> using different modelling approaches <span style="color: orange"> (_Deep learning, Statistics, Simulation, Network science, Cloud computing_)</span>. 
-My work has been applied to various scenarios such as <span style="color: blue"> _Digit-twin mobility system, Travel demand modelling, Mobility as a Service (MaaS), Travel behavioral economics, 
+My work has been applied to various scenarios such as <span style="color: blue"> _Digit-twin mobility system, Travel demand modelling, Transport geography, Mobility as a Service (MaaS), Travel behavioral economics, 
 Disaster response, Social sentiment and perception, Transportation decarbonization, Environmental justice, and Travel and Infectious Disease_</span>.
 
 ***
@@ -22,7 +22,7 @@ Disaster response, Social sentiment and perception, Transportation decarbonizati
 Research Highlights
 ======
 
-+ [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
++ [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility_New)
 + [Next-Generation Travel Demand Modelling (NextGen TDM)](https://songhuahu-umd.github.io/Traffic%20Simulation)
 + [Disaster Response and Community Resilience](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
@@ -62,7 +62,7 @@ Publications
   First-Authored)</span>.
 * _Transportation Research Board Annual Meeting_ <span style="color: maroon">(**>20** Posters/Presentations)</span>.
 
-<span style="color: purple">See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)</span>
+<span style="color: purple">**See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
 
 ***
 
@@ -100,24 +100,24 @@ Reviews
     IACP International Association of China Planning;
     IEEE Intelligent Transportation Systems Society Conference Management System
 
-<span style="color: purple">See full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)</span>
+<span style="color: purple">**See full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)**</span>
 
 Skills
 ======
 
-* **Programming**
+* <span style="color: green">**Programming**</span>
     * **Python** (pandas, ultralytics, opencv, pytorch, sklearn, pymc), **R** (dplyr, car, lavaan, mgcv, spdep), **SQL** (MySQL,
       pgAdmin, Impala, Oracle), **Cloud Computing** (PySpark, EMR), Matlab, Git, Bash, Java, HTML.
-* **Statistics**
+* <span style="color: green">**Statistics**</span>
     * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), BSTS), **Time series** (ARIMA, SARIMA),
   **Survival analysis** (Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
   **Spatial econometrics** (SER, SLR, SDR, GWR, GTWR), **Discrete choice model** (Multinomial, Mixed, Nested).
-* **Deep learning/Machine learning**
+* <span style="color: green">**Deep learning/Machine learning**</span>
   *  **Time series forecasting** (CNN, LSTM, GRU, Transformer), **Graph neural network** (STGCN), **Computer vision** (Vehicle/Pedestrian Detection, Tracking, Segmentation), **Natural language processing** (Text mining, Topic modelling, Sentiment analysis, LLM), 
   **Tree models** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (SHAP, PDP, ALE).
-* **Traffic Simulation**
+* <span style="color: green">**Traffic Simulation**</span>
   * **Micro** (Vissim, Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
-* **(Spatiotemporal) Network Analysis**
+* <span style="color: green">**(Spatiotemporal) Network Analysis**</span>
   * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx.
 
 ***
