@@ -33,12 +33,12 @@ Research Highlights
 Education
 ======
 
-* **Ph.D., Transportation Engineering, University of Maryland, College Park, 2019 - 2023**
+* **Ph.D., Transportation Engineering, University of Maryland, College Park, 2023**
     * Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
-* **M.S., Transportation Engineering, Tongji University, 2016 - 2019**
+* **M.S., Transportation Engineering, Tongji University, 2019**
     * Thesis: “Promoting electric vehicle utilization in large-scale carsharing systems: Factors analysis and relocation
       simulation”
-* **B.S., Transportation Engineering, Huazhong University of Science and Technology, 2012 - 2016**
+* **B.S., Transportation Engineering, Huazhong University of Science and Technology, 2016**
     * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
 
 ***
@@ -78,7 +78,7 @@ Awards
 * Second Price (2/140), [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
 * [Undergraduate Merit Scholarship](http://news.hust.edu.cn/info/1007/2164.htm) (20/7000), Huazhong University of Science and
   Technology, 2015.
-* National Scholarship (1/64), Huazhong University of Science and Technology, 2013, 2014, 2015.
+* National Scholarship (1/64), Huazhong University of Science and Technology, 2013 - 2015.
 
 ***
 
@@ -110,7 +110,7 @@ Skills
       pgAdmin, Impala, Oracle), **Cloud Computing** (PySpark, EMR), Matlab, Git, Bash, Java, HTML.
 * **Statistics**
     * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), BSTS), **Time series** (ARIMA, SARIMA),
-  **Survival analysis**(Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
+  **Survival analysis** (Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
   **Spatial econometrics** (SER, SLR, SDR, GWR, GTWR), **Discrete choice model** (Multinomial, Mixed, Nested).
 * **Deep learning/Machine learning**
   *  **Time series forecasting** (CNN, LSTM, GRU, Transformer), **Graph neural network** (STGCN), **Computer vision** (Vehicle/Pedestrian Detection, Tracking, Segmentation), **Natural language processing** (Text mining, Topic modelling, Sentiment analysis, LLM), 
