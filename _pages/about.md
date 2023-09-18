@@ -12,6 +12,7 @@ redirect_from:
 Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
 My research explores the nexus of human mobility, urban sensing, and data mining. 
 I'm passionate about seeking innovative solutions for complex urban transportation challenges using emerging crowdsensing and modelling techniques. 
+
 I've been working with a diverse set of sensors (_Mobile phones, Mobile apps, Traffic cameras, Floating cars, Social media_) with different modelling approaches (_Deep learning, Statistics, Simulation, Network science, Cloud computing_). 
 My work has been applied to various scenarios such as _Digit-twin mobility system, Travel demand modelling, Mobility as a Service (MaaS), Travel behavioral economics, 
 Disaster response, Social sentiment and perception, Transportation decarbonization, Environmental justice, and Epidemiology_.
@@ -111,13 +112,13 @@ Skills
     * **Python** (pandas, ultralytics, opencv, pytorch, sklearn, pymc), **R** (dplyr, car, lavaan, mgcv, spdep), **SQL** (MySQL,
       pgAdmin, Impala, Oracle), Matlab, Git, Java, HTML.
 * **Statistics**
-    * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), Bayesian structural time series), **Time series** (ARIMA, SARIMA),
+    * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), BSTS), **Time series** (ARIMA, SARIMA),
   **Survival analysis**(Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
   **Spatial econometrics** (SER, SLR, SDR, GWR, GTWR), **Discrete choice model** (Multinomial, Mixed, Nested).
 * **Deep learning**
-  *  **Time series forecasting** (LSTM, GRU, Transformer), **Graph neural network** (STGCN), **Computer vision** (Vehicle/Pedestrian Detection, Tracking, Segmentation), **Natural language processing** (Text mining, Topic modelling, Sentiment analysis, LLM).
+  *  **Time series forecasting** (CNN, LSTM, GRU, Transformer), **Graph neural network** (STGCN), **Computer vision** (Vehicle/Pedestrian Detection, Tracking, Segmentation), **Natural language processing** (Text mining, Topic modelling, Sentiment analysis, LLM).
 * **Machine learning**
-    * **Tree-based models** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (SHAP, PDP, ALE).
+    * **Tree models** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (SHAP, PDP, ALE).
 * **Traffic Simulation**
   * **Micro** (Vissim, Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
 * **(Spatiotemporal) Network Analysis**
