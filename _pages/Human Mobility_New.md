@@ -11,11 +11,20 @@ changing the way to monitor, measure, and model human travel.
 My work has covered most of the popular data sources in the transportation domain over recent years. 
 I firmly believe a well-designed fusion of these emerging data can make the urban transportation system more senseable, intelligent, and efficient.
 
-### Mobile Device: Detailed individual spatiotemporal travel information
+### Mobile Device
+Detailed individual spatiotemporal travel information.
 
-### Traffic Camera: Visual footage on vehicle, pedestrian, and road infrastructure  
+<p align="center">
+<img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="310" hspace="5"/>
+<img src="https://songhuahu-umd.github.io/images/FF16.gif" width="310" hspace="5"/>
+</p>
 
-### Social Media: Crowdsourced social attitude, sentiment and perception
+### Traffic Camera
+Visual footage on vehicle, pedestrian, and road infrastructure  
+
+### Social Media
+Crowdsourced social attitude, sentiment and perception
 
 ## Related Publications
 > 1. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. "Examining nonlinearity in population inflow estimation using big data: 
@@ -39,12 +48,3 @@ An empirical comparison of explainable machine learning models", Transportation 
 > 8. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of
      Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual
      Meeting (2021), Washington DC.
-
-<p align="center">
-<img src="https://songhuahu-umd.github.io/images/FF12.png" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF14.gif" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF15.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF16.gif" width="310" hspace="5"/>
-</p>
