@@ -6,25 +6,33 @@ author_profile: true
 ---
 
 Nowadays, advanced wireless communication, unobtrusive positioning technologies, ubiquitous camera surveillance system, 
-and large-scale computing infrastructures have produced vast amounts of transportation data, 
-changing the way to monitor, measure, and model human travel. 
-My work has covered most of the popular data sources in the transportation domain over recent years. 
-I firmly believe a well-designed fusion of these emerging data can make the urban transportation system more senseable, intelligent, and efficient.
+and large-scale big data infrastructures have generated extensive volumes of transportation data,
+revolutionizing the approach to monitoring, quantifying, and modeling human travel. 
+My work has encompassed a wide range of prevalent data sources within the transportation field in recent years.
+My ultimate objective is to fuse these emerging data sources to enhance urban transportation systems, 
+rendering them more perceptible, intelligent, and efficient.
 
-### Mobile Device
-Detailed individual spatiotemporal travel information.
+### Mobile Phone
+The 21st century witnessed the wide spread of mobile phones with positioning sensors.
+Data from positioning sensors inside mobile phones (and other mobile devices) are passively collected, 
+providing massive spatiotemporal information on individual-level mobility patterns. 
+Compared with traditional surveys or static sensors, mobile phone location data have 
+population-representative penetration rate, large spatial coverage, long and continuous temporal span, and near-real-time update frequency. 
+
+See some of my research using the mobile phone location data:
 
 <p align="center">
 <img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF16.gif" width="310" hspace="5"/>
+
+[//]: # (<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="310" hspace="5"/>)
+[//]: # (<img src="https://songhuahu-umd.github.io/images/FF16.gif" width="310" hspace="5"/>)
 </p>
 
 ### Traffic Camera
-Visual footage on vehicle, pedestrian, and road infrastructure  
+Visual footage on vehicle, pedestrian, and road infrastructure
 
 ### Social Media
-Crowdsourced social attitude, sentiment and perception
+Crowdsourced social attitude, sentiment and perception. 
 
 ## Related Publications
 > 1. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. "Examining nonlinearity in population inflow estimation using big data: 

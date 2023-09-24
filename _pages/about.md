@@ -15,7 +15,7 @@ I'm passionate about seeking innovative solutions for complex urban transportati
 
 I've been working with a diverse set of sensors <span style="color: green"> (_Mobile phones, Mobile apps, Traffic cameras, Floating cars, Social media_)</span> using different modelling approaches <span style="color: orange"> (_Deep learning, Statistics, Simulation, Network science, Cloud computing_)</span>. 
 My work has been applied to various scenarios such as <span style="color: blue"> _Digit-twin mobility system, Travel demand modelling, Transport geography, Mobility as a Service (MaaS), Travel behavioral economics, 
-Disaster response and resilience, Transportation decarbonization, and Travel and Infectious Disease_</span>.
+Disaster response, Transportation decarbonization, and Travel and Infectious Disease_</span>.
 
 ***
 
