@@ -10,7 +10,7 @@ and large-scale big data infrastructures have generated extensive volumes of tra
 revolutionizing the approach to monitoring, quantifying, and modeling human travel. 
 My research aims to fuse these emerging data sources to make urban transportation systems more senseable, intelligent, and efficient.
 
-### <span style="color: green"> Mobile Phone Location </span>
+### <span style="color: green"> Mobile Phone Location </span> 📱📱📱🚶🚶🚶
 The 21st century witnessed the wide spread of mobile phones with positioning sensors.
 Mobile phone location data contain massive spatiotemporal information on individual travel. 
 Compared with traditional surveys and static sensors, mobile phone data have 
@@ -32,7 +32,7 @@ We also document that the states' stay-at-home policies have only led to about a
 
 ---
 
-### <span style="color: green"> Traffic Camera Footage </span>
+### <span style="color: green"> Traffic Camera Footage </span> 📹📹📹🚘🚘🚘
 Traffic cameras play a crucial role in traffic flow monitoring and traffic violation capture. 
 These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
 My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
@@ -44,17 +44,18 @@ pedestrian volume, and > 3000 vehicle modes from camera footage, providing more 
 
 > <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10"></a>
 Most traffic cameras installed in the urban area only provide low-FPS footage to the public. 
-We propose a unified framework capable of extract traffic flow data from videos of varying quality, 
-covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1) videos. 
+We propose a unified framework capable of extract traffic flow from videos of varying quality, 
+covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1). 
 Our approach integrates fundamental diagram, distance-based tracking, and ByteTrack methods, tailored to the respective FPS types. 
 We also develop an entirely automated traffic detector generator that leverages vanishing point detection and road segmentation techniques.
 
 ---
 
-### <span style="color: green"> Social Media Text </span>
+
+### <span style="color: green"> Social Media Text </span>💬💬💬👥👥👥
 Social media comments provide a rich source of text data containing population attitudes, sentiments and perceptions.
-My research centers on extracting human sentiments regarding topics related to urban planning and travel, 
-such as parking challenges in dense city center and fast-growing food delivery services. 
+Harnessing Large Language Model (LLM), my research focuses on extracting human sentiments regarding topics related to urban planning and travel, 
+such as parking issues, accessibility challenges, and fast-growing food delivery services. 
 I also fuse them with mobile phone location data to track how individuals respond to natural disasters.
 
 > <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/social_media.jpg" width="300" hspace="10"></a>
