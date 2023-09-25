@@ -10,7 +10,7 @@ and large-scale big data infrastructures have generated extensive volumes of tra
 revolutionizing the approach to monitoring, quantifying, and modeling human travel. 
 My research aims to fuse these emerging data sources to make urban transportation systems more senseable, intelligent, and efficient.
 
-### <span style="color: blue"> Mobile Phone Location </span>
+### <span style="color: green"> Mobile Phone Location </span>
 The 21st century witnessed the wide spread of mobile phones with positioning sensors.
 Mobile phone location data contain massive spatiotemporal information on individual travel. 
 Compared with traditional surveys and static sensors, mobile phone data have 
@@ -31,7 +31,7 @@ stopped decreasing soon after each state announced the stay-at-home order.
 A set of longitudinal models is then developed and confirms that the states' stay-at-home policies have only led to about a 5% reduction in average daily human mobility.
 ---
 
-### <span style="color: blue"> Traffic Camera Footage </span>
+### <span style="color: green"> Traffic Camera Footage </span>
 Traffic cameras play a crucial role in traffic flow monitoring and traffic violation capture. 
 These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
 My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
@@ -53,7 +53,7 @@ Furthermore, we've developed an entirely automated traffic detector generator th
 
 ---
 
-### <span style="color: blue"> Social Media Text </span>
+### <span style="color: green"> Social Media Text </span>
 Social media comments provide a rich source of text data containing population attitudes, sentiments and perceptions.
 My research centers on extracting human sentiments regarding topics related to urban planning and travel, 
 such as parking challenges in dense city center and fast-growing food delivery services. 
