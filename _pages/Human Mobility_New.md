@@ -18,13 +18,12 @@ Data from positioning sensors inside mobile phones contain massive spatiotempora
 Compared with traditional surveys and static sensors, mobile phone location data have 
 population-representative penetration rate, wide spatiotemporal coverage, and near-real-time update frequency. 
 
-See some of my research using the mobile phone location data:
+#### Representative research
+<a href="https://data.covid.umd.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
 
-| <img style="float: right;" src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="10"> | Using mobile device location data of over 150 million monthly active samples in the US, 
-the study successfully measures human mobility with three main metrics at the county level: 
-daily average number of trips per person; daily average person-miles traveled; and daily percentage of residents staying home. |
-
-
+Using mobile device location data of over 150 million monthly active samples in the US, 
+we successfully measures how human mobility change during the COVID-19 pandemic using three metrics: 
+average number of trips per person; average person-miles traveled; and percentage of residents staying home. 
 
 ### Traffic Camera
 Visual footage on vehicle, pedestrian, and road infrastructure
