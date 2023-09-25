@@ -24,7 +24,7 @@ we successfully measures how human mobility change during the COVID-19 pandemic 
 average trips per person, average person-miles traveled, and percentage of residents staying home. Date are updated daily 
 and made publicly available via an [online platform](https://data.covid.umd.edu/).
 
-> <a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF3.png" width="300" hspace="20"></a>
+> <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2020.0344"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF3.png" width="300" hspace="20"></a>
 By analyzing the mobile device location data during the pandemic, we find a spontaneous mobility reduction that occurred 
 regardless of government actions and a ‘floor’ phenomenon, where human mobility reached a lower bound and 
 stopped decreasing soon after each state announced the stay-at-home order.
