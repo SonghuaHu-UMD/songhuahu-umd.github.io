@@ -48,9 +48,9 @@ such as parking challenges in dense city center and fast-growing food delivery s
 I also fuse them with mobile phone location data to track how individuals respond to natural disasters. 
 I leverage the Large Language Model (LLM) to enhance the efficiency and accuracy of text mining.
 
-<img style="float: left" src="https://songhuahu-umd.github.io/images/spatial_dis_g0.png" width="300" hspace="10">
+<img style="float: left" src="https://songhuahu-umd.github.io/images/social_media.jpg" width="300" hspace="10">
 
 > The surge in food delivery services is reshaping lifestyles and urban form.
-Through an analysis of customer reviews of food delivery services extracted from a nationwide Google review dataset since 2019, 
-we aim to examine how people's attitudes to food delivery services have changed before and after the pandemic, 
-and to identify the primary factors influencing customer sentiments in this context.
+Through an analysis of customer reviews of food delivery services extracted from a nationwide Google Reviews dataset since 2019, 
+we aim to examine how people's attitudes to food delivery services change before and after the pandemic, 
+and to identify the key factors related to customer sentiments in this context.
