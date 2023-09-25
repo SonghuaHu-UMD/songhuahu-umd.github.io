@@ -43,11 +43,11 @@ Via cutting-edge object detection, tracking, and segmentation method, we extract
 pedestrian volume, and > 3000 vehicle modes from camera footage, providing more accurate and detailed inputs for traffic emission models.
 
 > <a href="https://senseable.mit.edu/"><img style="float: right" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10"></a>
-Most traffic cameras installed in the urban area only provide low-FPS footage to the public. 
+Most traffic cameras installed in the urban area only store low-FPS footage. 
 We propose a unified framework capable of extract traffic flow from videos of varying quality, 
-covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1). 
-Our approach integrates fundamental diagram, distance-based tracking, and ByteTrack methods, tailored to the respective FPS types. 
-We also develop an entirely automated traffic detector generator that leverages vanishing point detection and road segmentation techniques.
+covering super-low FPS, low FPS, and high FPS. 
+Our approach integrates fundamental diagram, distance-based tracking, and ByteTrack, tailored to the respective FPS. 
+We also develop an entirely automated traffic detector generator base on vanishing points and road segmentation.
 
 ---
 

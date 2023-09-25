@@ -53,7 +53,6 @@ We also develop an entirely automated traffic detector generator that leverages 
 
 ---
 
-
 ### <span style="color: green"> Multi-dimensional Traffic Simulation </span>🚦🚦🚦🚗🚗🚗
 Social media comments provide a rich source of text data containing population attitudes, sentiments and perceptions.
 Harnessing Large Language Model (LLM), my research focuses on extracting human sentiments regarding topics related to urban planning and travel, 
