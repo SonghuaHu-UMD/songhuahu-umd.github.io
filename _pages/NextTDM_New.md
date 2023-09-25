@@ -24,7 +24,7 @@ The whole pipeline is employed on AWS EMR, a cloud-computing server, to timely q
 > <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF12.png" width="300" hspace="20"></a>
 Using nationwide census block group-level trip flow derived from mobile devices as the proxy of travel demand, 
 I examine its relations with socioeconomics, demographics, and land use. 
-A host of tree-based machine learning models and interpretation techniques are extensively compared to determine the 
+Various machine learning models and interpretation techniques are extensively compared to determine the 
 best model and justify interpretation robustness. Pronounced nonlinearities, threshold effects, and interaction effects are observed.
 
 ---
@@ -48,14 +48,12 @@ The whole framework is applied on a county-level dataset covering over 18,000 re
 
 ### <span style="color: green"> Multi-dimensional Traffic Simulation </span>🚦🚦🚦🚗🚗🚗
 
-> <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF62.gif" width="300" hspace="10"></a>
-The final step is to integrate forecasted outcomes with advanced traffic simulation tools to complete the last puzzle of a travel demand model.
-At an aggregated level, the predicted OD matrices are fed into a dynamic traffic assignment tool, DTALite, 
-to generate link traffic speed and volume.
-Simulated results are compared with field observations to validate the whole data-driven travel demand model.
+> <a href="https://songhuahu-umd.github.io/NextTDM/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF62.gif" width="300" hspace="10"></a>
+Integrating forecasted travel demand with traffic simulators complete the last puzzle of a travel demand model.
+At an aggregated level, I feed the predicted OD matrices into a dynamic traffic assignment tool, DTALite, to generate link traffic speed and volume.
+Simulated results are compared with field observations collected from roadside sensors to validate the whole data-driven travel demand model.
 
-> <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF61.gif" width="300" hspace="10"></a>
-The high-resolution mobile device location data provide detailed individual travel information, which is more compatible with behavior-oriented agent-based simulations. 
-My ongoing research focuses on feeding the forecasted trip itinerary into micro simulators (e.g., Vissim, SUMO), 
-or agent-based simulators (e.g., MATSim) to generate link-level travel flow measures, 
-which can directly guide traffic management, transportation planning, and infrastructure construction. 
+> <a href="https://songhuahu-umd.github.io/NextTDM/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF61.gif" width="300" hspace="10"></a>
+Mobile device location data provide detailed individual travel information, which is more compatible with behavior-oriented agent-based simulators. 
+My ongoing research focuses on meshing the forecasted trip itinerary with micro simulators (e.g., Vissim, SUMO), 
+or agent-based simulators (e.g., MATSim) with high computational efficiency to achieve fine-grained citywide simulation. 
