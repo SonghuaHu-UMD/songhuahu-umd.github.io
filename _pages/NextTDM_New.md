@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Urban Mobility Sensing and Computing"
-permalink: /Human Mobility New/
+title: "Next-Generation Travel Demand Modelling"
+permalink: /NextTDM/
 author_profile: true
 ---
 
@@ -20,13 +20,13 @@ high penetration rate, wide spatiotemporal coverage, and real-time update freque
 My research demonstrates its strong capability in modelling travel demand, disease transmission, 
 accessibility, and social equity:
 
-> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a> 
+> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF151.png" width="300" hspace="20"></a> 
 Using location data of over 150 million monthly active mobile devices in the US, 
 we successfully measures how human mobility change during the COVID-19 pandemic using three metrics: 
 average trips per person, average person-miles traveled, and percentage of residents staying home. Date are updated daily 
 and made publicly available via an [online platform](https://data.covid.umd.edu/).
 
-> <a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF3.png" width="300" hspace="20"></a>
+> <a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF12.png" width="300" hspace="20"></a>
 By analyzing the mobile device location data during the pandemic, we find a spontaneous mobility reduction that occurred 
 regardless of government actions and a ‘floor’ phenomenon, where human mobility reached a lower bound and 
 stopped decreasing soon after each state announced the stay-at-home order.
@@ -39,12 +39,12 @@ Traffic cameras play a crucial role in traffic flow monitoring and traffic viola
 These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
 My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
 
-> <a href="https://senseable.mit.edu/"><img style="float: right" src="https://songhuahu-umd.github.io/images/Camera0.png" width="300" hspace="10"></a>
+> <a href="https://senseable.mit.edu/"><img style="float: right" src="https://songhuahu-umd.github.io/images/FF2.png" width="300" hspace="10"></a>
 By scraping camera footage from ~ 800 traffic cameras in New York, we reconstruct a citywide emission model to quantify pedestrian exposure to traffic emission considering environmental justice.
 Via cutting-edge object detection, tracking, and segmentation method, we extract real-time traffic flow, 
 pedestrian volume, and > 3000 vehicle modes from camera footage, providing more accurate and detailed inputs for traffic emission models.
 
-> <a href="https://senseable.mit.edu/"><img style="float: right" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10"></a>
+> <a href="https://senseable.mit.edu/"><img style="float: right" src="https://songhuahu-umd.github.io/images/FF16.gif" width="300" hspace="10"></a>
 Most traffic cameras installed in the urban area only provide low-FPS footage to the public. 
 We propose a unified framework capable of extract traffic flow from videos of varying quality, 
 covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1). 
@@ -59,8 +59,14 @@ Harnessing Large Language Model (LLM), my research focuses on extracting human s
 such as parking issues, accessibility challenges, and fast-growing food delivery services. 
 I also fuse them with mobile phone location data to track how individuals respond to natural disasters.
 
-> <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/social_media.jpg" width="300" hspace="10"></a>
+> <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF62.gif" width="300" hspace="10"></a>
 The surge in food delivery services is reshaping lifestyles and urban form.
 Through an analysis of customer reviews of food delivery services extracted from nationwide Google Reviews, 
 we examine how people's attitudes to food delivery change over time and identify the key related factors. 
+By fusing with mobile phone location data, we further infer whether the growth of delivery services would decrease in-person visit to restaurants.
+
+> <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF61.gif" width="300" hspace="10"></a>
+The surge in food delivery services is reshaping lifestyles and urban form.
+Through an analysis of customer reviews of food delivery services extracted from nationwide Google Reviews,
+we examine how people's attitudes to food delivery change over time and identify the key related factors.
 By fusing with mobile phone location data, we further infer whether the growth of delivery services would decrease in-person visit to restaurants.

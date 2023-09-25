@@ -16,13 +16,13 @@ main:
 #    url: /year-archive/
 
   - title: "Urban Sensing"
-    url: /Human Mobility New/
+    url: /Urban Sensing/
 
 #  - title: "ST Network"
 #    url: /Spatiotemporal Network/
 
   - title: "NextGen TDM"
-    url: /Traffic Simulation/
+    url: /NextTDM/ # /Traffic Simulation/
 
   - title: "Urban Resilience"
     url: /Infrastructure Resilience/
