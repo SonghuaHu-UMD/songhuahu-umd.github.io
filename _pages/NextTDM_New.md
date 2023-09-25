@@ -49,7 +49,11 @@ The whole framework was applied on a county-level dataset covering over 18,000 d
 
 > <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF62.gif" width="300" hspace="10"></a>
 The final step is to integrate forecasted outcomes with advanced traffic simulation tools to complete the last puzzle of a travel demand model.
-At an aggregated level, the predicted OD matrices are fed into a dynamic traffic assignment tool, DTALite, generate link traffic measures such as speed and volume.
+At an aggregated level, the predicted OD matrices are fed into a dynamic traffic assignment tool, DTALite, to generate link traffic measures such as speed and volume.
 Simulated results are compared with field observations collected by loop detectors and floating cars to validate the whole data-driven travel demand model.
 
 > <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF61.gif" width="300" hspace="10"></a>
+The high-resolution mobile device location data provide detailed individual travel information, which is more compatible with behavior-oriented agent-based simulations. 
+My ongoing research focuses on feeding the forecasted trip itinerary into micro simulators (e.g., Vissim, SUMO), 
+or agent-based simulators (e.g., MATSim) to generate link-level travel flow measures, 
+which can directly guide traffic management, transportation planning, and infrastructure construction. 
