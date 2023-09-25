@@ -42,7 +42,12 @@ By scraping camera footage from ~ 800 traffic cameras in New York, we reconstruc
 Via cutting-edge object detection, tracking, and segmentation method, we extract real-time traffic flow, 
 pedestrian volume, and > 3000 vehicle modes from camera footage, providing more accurate and detailed inputs for traffic emission models.
 
-> <a href="https://senseable.mit.edu/"> <img style="float: right" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10"> </a> Most traffic cameras installed in the urban area only provide low-FPS footage to the public. We propose a unified framework capable of extract traffic flow from videos of varying quality, covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1). Our approach integrates fundamental diagram, distance-based tracking, and ByteTrack methods, tailored to the respective FPS types. We also develop an entirely automated traffic detector generator that leverages vanishing point detection and road segmentation techniques.
+> <a href="https://senseable.mit.edu/"><img style="float: right" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10"></a>
+Most traffic cameras installed in the urban area only provide low-FPS footage to the public. 
+We propose a unified framework capable of extract traffic flow from videos of varying quality, 
+covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1). 
+Our approach integrates fundamental diagram, distance-based tracking, and ByteTrack methods, tailored to the respective FPS types. 
+We also develop an entirely automated traffic detector generator that leverages vanishing point detection and road segmentation techniques.
 
 ---
 
