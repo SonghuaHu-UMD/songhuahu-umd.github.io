@@ -39,6 +39,11 @@ Via cutting-edge object detection, tracking, and segmentation method, we extract
 pedestrian volume, and over 3000 vehicle modes from camera footage. 
 Extracted information provide more accurate and detailed inputs for both micro and macro traffic emission models.
 
+<img style="float: left" src="https://songhuahu-umd.github.io/images/camera1.png" width="300" hspace="10">
+
+> Current studies mainly focus on high-resolution high-FPS traffic video installed on freeway. 
+However, most traffic cameras installed in the urban areas only provide low-resolution low-FPS footage. We 
+
 ---
 
 ### Social Media Text
@@ -52,5 +57,5 @@ I also fuse them with mobile phone location data to track how individuals respon
 > The surge in food delivery services is reshaping lifestyles and urban form.
 Through an analysis of customer reviews of food delivery services extracted from nationwide Google Reviews, 
 we aim to examine how people's attitudes to food delivery change before and after the pandemic, 
-and to identify the key factors related to customer sentiments in this context. By fusing with mobile device location data,
-we further examine whether the growth of delivery services would decrease restaurants' in-person foot traffic.
+and to identify the key related factors. By fusing with mobile phone location data,
+we further examine whether the growth of delivery services would decrease restaurants' in-person visit.
