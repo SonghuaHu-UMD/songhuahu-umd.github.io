@@ -12,11 +12,11 @@ My research aims to fuse these emerging data sources to make urban transportatio
 
 ### Mobile Phone Location
 The 21st century witnessed the wide spread of mobile phones with positioning sensors.
-Data from positioning sensors inside mobile phones contain massive spatiotemporal information on individual travel. 
+Mobile phone location data contain massive spatiotemporal information on individual travel. 
 Compared with traditional surveys and static sensors, mobile phone location data have 
-population-representative penetration rate, wide spatiotemporal coverage, and near-real-time update frequency. 
-My research have demonstrated its strong capability in travel demand modelling, infectious disease control, 
-accessibility analysis, and social equity:
+high penetration rate, wide spatiotemporal coverage, and near-real-time update frequency. 
+My research demonstrates its strong capability in travel demand modelling, infectious disease control, 
+accessibility analysis, and social equity assessment:
 
 <a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
 > Using location data of over 150 million monthly active mobile devices in the US, 
@@ -27,42 +27,31 @@ and made publicly available via an [online platform](https://data.covid.umd.edu/
 ---
 
 ### Traffic Camera Footage
-Traffic cameras have been installed by local DOT over the world to help monitor traffic flow and capture traffic violation.
-These cameras contain rich visual information on vehicle, pedestrian, and road infrastructure. My research have involved 
-them into traffic flow monitoring, traffic emission estimation, and environmental justice:
+Traffic cameras, deployed by local government worldwide, play a crucial role in traffic flow monitoring and traffic violation capture. 
+These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
+My research leverages them for tasks such as traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
 
 <img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10">
 
 > By scraping traffic footage from over 800 cameras in New York, we reconstruct a citywide
 bottom-up emission model to quantify pedestrian exposure to traffic emission considering potential environmental justice.
-Via cutting-edge object detection, tracking, and segmentation method, we extract detailed traffic flow information, 
+Via cutting-edge object detection, tracking, and segmentation method, we extract detailed traffic flow, 
 pedestrian volume, and over 3000 vehicle modes from camera footage. 
 Extracted information provide more accurate and detailed inputs for both micro and macro traffic emission models.
 
 ---
 
 ### Social Media Text
-Crowdsourced social attitude, sentiment and perception. 
+Social media posts and comments provide a rich source of text data containing population attitudes, sentiments and perceptions.
+My research centers on extracting these attitudes and sentiments from Google Reviews related to urban planning and human travel, 
+such as parking issues in dense city center and fast-growing delivery services in restaurants. 
+I also fuse them with mobile phone location data to monitor how individuals respond to various natural disasters：
 
-## Related Publications
-> 1. **Hu, Songhua**, Chenfeng Xiong, Peng Chen, and Paul Schonfeld. "Examining nonlinearity in population inflow estimation using big data: 
-An empirical comparison of explainable machine learning models", Transportation Research Part A: Policy and Practice 174 (2023): 103743.
-> 2. **Hu, Songhua**, Chenfeng Xiong, Mofeng Yang, Hannah Younes, Weiyu Luo, and Lei Zhang. "A big-data driven approach
-     to analyzing and modeling human mobility trend under non-pharmaceutical interventions during COVID-19 pandemic."
-     Transportation Research Part C: Emerging Technologies 124 (2021): 102955.
-> 3. Yang, Mofeng, Weiyu Luo, Mohammad Ashoori, Jina Mahmoudi, Chenfeng Xiong, Jiawei Lu, Guangchen Zhao, Saeed Saleh Namadi, **Songhua Hu**, and Aliakbar Kabiri, A big-data driven framework to estimating vehicle volume based on
-  mobile device location data, Transportation Research Record (2023): 03611981231174240.
-> 3. Zhang, Lei, Aref Darzi, Sepehr Ghader, Michael L. Pack, Chenfeng Xiong, Mofeng Yang, Qianqian Sun, AliAkbar Kabiri,
-     and **Songhua Hu**. "Interactive covid-19 mobility impact and social distancing analysis platform." Transportation
-     Research Record (2020): 03611981211043813.
-> 4. Chen, Peng, **Songhua Hu***, Qing Shen, Hangfei Lin, and Chi Xie. "Estimating traffic volume for local streets with
-     imbalanced data." Transportation research record 2673, no. 3 (2019): 598-610. 
-> 5. Zhao, Guangchen, Chenfeng Xiong, **Songhua Hu**, Mofeng Yang, Aliakbar Kabiri, Aref Darzi, and Yixuan Pan. A novel
-     measurement of job accessibility based on mobile device location data, Transportation Research Board 102th Annual
-     Meeting (2023), Washington DC. 
-> 6. Sun, Qianqian, Yixuan Pan, Weiyi Zhou, Aliakbar Kabiri, Mofeng Yang, Guangchen Zhao, **Songhua Hu**, Mohammad
-     Ashoori, Saeed Saleh Namadi, and Aref Darzi. National truck travel demand estimation using GPS data, Transportation
-     Research Board 102th Annual Meeting (2023), Washington DC.
-> 8. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Estimating Traffic Volume with Limited Observations: A Combination of
-     Sampling Expansion and Geographically Weighted Poisson Regression, Transportation Research Board 100th Annual
-     Meeting (2021), Washington DC.
+<img style="float: left" src="https://songhuahu-umd.github.io/images/spatial_dis_g0.png" width="300" hspace="10">
+
+> The surge in food delivery services is reshaping lifestyles, travel patterns, and urban form.
+People may visit restaurants less frequently, and more restaurants may escape from city center to suburban 
+with lower rental costs, evolving into "dark kitchens".
+Through an analysis of customer reviews of food delivery services extracted from a nationwide Google review dataset since 2019, 
+we aim to examine how people's attitudes to food delivery services have changed before and after the pandemic, 
+and to identify the primary factors influencing customer sentiments in this context.
