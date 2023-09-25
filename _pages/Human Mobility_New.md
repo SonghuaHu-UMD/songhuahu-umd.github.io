@@ -21,12 +21,12 @@ population-representative penetration rate, large spatial coverage, long and con
 
 See some of my research using the mobile phone location data:
 
-<p align="center">
-<img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
+<img style="float: right;" src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="10">
+Using mobile device location data of over 150 million monthly active samples in the United States (U.S.), 
+the study successfully measures human mobility with three main metrics at the county level: 
+daily average number of trips per person; daily average person-miles traveled; and daily percentage of residents staying home.
 
-[//]: # (<img src="https://songhuahu-umd.github.io/images/FF13.gif" width="310" hspace="5"/>)
-[//]: # (<img src="https://songhuahu-umd.github.io/images/FF16.gif" width="310" hspace="5"/>)
-</p>
+
 
 ### Traffic Camera
 Visual footage on vehicle, pedestrian, and road infrastructure
