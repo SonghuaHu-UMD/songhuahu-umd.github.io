@@ -20,18 +20,16 @@ high penetration rate, wide spatiotemporal coverage, and real-time update freque
 My research demonstrates its strong capability in modelling travel demand, disease transmission, 
 accessibility, and social equity:
 
-> <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF151.png" width="300" hspace="20"></a> 
-Using location data of over 150 million monthly active mobile devices in the US, 
-we successfully measures how human mobility change during the COVID-19 pandemic using three metrics: 
-average trips per person, average person-miles traveled, and percentage of residents staying home. Date are updated daily 
-and made publicly available via an [online platform](https://data.covid.umd.edu/).
+> <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b"><img style="float: left" src="https://songhuahu-umd.github.io/images/FFF1.png" width="300" hspace="20"></a> 
+In my PhD dissertation, I build a pipeline to extract multimodal OD matrix from mobile device location data, including 
+home&work identification, trip identification, mode imputation, population weighting, and result validation. 
 
-> <a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF12.png" width="300" hspace="20"></a>
-By analyzing the mobile device location data during the pandemic, we find a spontaneous mobility reduction that occurred 
-regardless of government actions and a ‘floor’ phenomenon, where human mobility reached a lower bound and 
-stopped decreasing soon after each state announced the stay-at-home order.
-We also document that the states' stay-at-home policies have only led to about a 5% reduction in average human mobility.
-
+> <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF12.png" width="300" hspace="20"></a>
+Using the nationwide census block group (CBG)-level trip flow derived from mobile device locations as the proxy of travel demand, 
+we examine its relations with various factors including socioeconomics, demographics, land use, and CBG attributes. 
+A host of tree-based machine learning models and interpretation techniques are extensively compared to determine the 
+best model architecture and justify interpretation robustness. Pronounced nonlinearities, threshold effects, and interaction effects 
+are observed in relations among travel demand and most of its determinants
 ---
 
 ### <span style="color: green"> Deep-learning-based Travel Demand Forecasting </span> 📈📈📈📉📉📉
