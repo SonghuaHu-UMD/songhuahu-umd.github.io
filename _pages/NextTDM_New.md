@@ -24,7 +24,7 @@ The whole pipeline is employed on AWS EMR, a cloud-computing server, to timely q
 > <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF12.png" width="300" hspace="20"></a>
 Using nationwide census block group-level trip flow derived from mobile devices as the proxy of travel demand, 
 I examine its relations with socioeconomics, demographics, and land use. 
-Various machine learning models and interpretation techniques are extensively compared to determine the 
+Over 6*8 machine learning models and interpretation techniques are compared to determine the 
 best model and justify interpretation robustness. Pronounced nonlinearities, threshold effects, and interaction effects are observed.
 
 ---
@@ -55,5 +55,5 @@ Simulated results are compared with field observations collected from roadside s
 
 > <a href="https://songhuahu-umd.github.io/NextTDM/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF61.gif" width="300" hspace="10"></a>
 Mobile device location data provide detailed individual travel information, which is more compatible with behavior-oriented agent-based simulators. 
-My ongoing research focuses on meshing the forecasted trip itinerary with micro simulators (e.g., Vissim, SUMO), 
-or agent-based simulators (e.g., MATSim) with high computational efficiency to achieve fine-grained citywide simulation. 
+My ongoing research focuses on meshing the forecasted trip itinerary with micro (Vissim, SUMO) 
+or agent-based simulators (MATSim) with high computational efficiency to achieve fine-grained citywide simulation. 
