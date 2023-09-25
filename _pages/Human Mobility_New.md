@@ -41,8 +41,8 @@ Extracted information provide more accurate and detailed inputs for both micro a
 
 <img style="float: left" src="https://songhuahu-umd.github.io/images/Camera1.png" width="300" hspace="10">
 
-> Current studies mainly focus on high-resolution high-FPS traffic video installed on freeway. 
-However, most traffic cameras installed in the urban areas only provide low-resolution low-FPS footage. 
+> Current studies mainly focus on high-FPS traffic video installed on freeway. 
+However, most traffic cameras installed in the urban area only provide low-FPS footage. 
 We propose a unified framework that can extract traffic flow information from traffic videos with different quality, 
 covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1). 
 
