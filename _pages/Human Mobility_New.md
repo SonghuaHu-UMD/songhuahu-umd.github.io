@@ -12,34 +12,35 @@ My work has encompassed a wide range of prevalent data sources within the transp
 My ultimate objective is to fuse these emerging data sources to enhance urban transportation systems, 
 rendering them more perceptible, intelligent, and efficient.
 
-### Mobile Phone
+### Mobile Phone Location
 The 21st century witnessed the wide spread of mobile phones with positioning sensors.
 Data from positioning sensors inside mobile phones contain massive spatiotemporal information on individual travel. 
 Compared with traditional surveys and static sensors, mobile phone location data have 
 population-representative penetration rate, wide spatiotemporal coverage, and near-real-time update frequency. 
 My research have demonstrated its strong capability in travel demand modelling, infectious disease control, 
-accessibility analysis, and social equity.
+accessibility analysis, and social equity:
 
-**Related Research:**
-
----
-<a href="https://data.covid.umd.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="10"></a>
-Using location data of over 150 million monthly active mobile devices in the US, 
+<a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
+> Using location data of over 150 million monthly active mobile devices in the US, 
 we successfully measures how human mobility change during the COVID-19 pandemic using three metrics: 
 average number of trips per person; average person-miles traveled; and percentage of residents staying home. The mobility informatics are analyzed daily 
-and made available to the public via the [UMD COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
+and made available to the public via an [online platform](https://data.covid.umd.edu/).
 
 ---
 
-### Traffic Camera
-Visual footage on vehicle, pedestrian, and road infrastructure
+### Traffic Camera Footage
+Traffic cameras have been installed by local DOT over the world to help monitor traffic flow and capture traffic violation.
+These cameras contain rich visual information on vehicle, pedestrian, and road infrastructure. My research have demonstrated 
+its strong capability in traffic flow monitoring, traffic emission estimation, and environmental justice:
 
-**Related Research:**
-
----
 <img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10">
 
+> By scraping traffic footage from over 800 cameras in New York City, we reconstruct a citywide
+bottom-up emission model to quantify pedestrian exposure to traffic emission considering potential environmental justice.
+Via cutting-edge object detection, tracking, and segmentation method, we extract detailed traffic flow information (speed, volume, density, etc.), 
+pedestrian volume, and over 3000 vehicle modes and types from camera footage. These details are validated via free floating cars and roadside sensors
 
+---
 
 ### Social Media
 Crowdsourced social attitude, sentiment and perception. 
