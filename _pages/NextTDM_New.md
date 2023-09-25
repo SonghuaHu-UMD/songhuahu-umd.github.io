@@ -23,9 +23,9 @@ The whole pipeline is employed on AWS EMR to timely quantify large-scale human t
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF12.png" width="300" hspace="20"></a>
 Using the nationwide census block group-level trip flow derived from mobile device locations as the proxy of travel demand, 
-we examine its relations with various factors including socioeconomics, demographics, and land use. 
+I examine its relations with various factors including socioeconomics, demographics, and land use. 
 A host of tree-based machine learning models and interpretation techniques are extensively compared to determine the 
-best model and justify interpretation robustness. We observed pronounced nonlinearities, threshold effects, and interaction effects.
+best model and justify interpretation robustness. Pronounced nonlinearities, threshold effects, and interaction effects are observed.
 
 ---
 
@@ -33,7 +33,7 @@ best model and justify interpretation robustness. We observed pronounced nonline
 
 > <a href="https://github.com/SonghuaHu-UMD/MultiSTGraph"><img style="float: right" src="https://songhuahu-umd.github.io/images/FF2.png" width="300" hspace="10"></a>
 OD flow forecasting is challenging due to complex spatiotemporal dependencies and heterogeneous external
-effects. I proposed a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network ([Multi-ATGCN](https://github.com/SonghuaHu-UMD/MultiSTGraph)),
+effects. I propose a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network ([Multi-ATGCN](https://github.com/SonghuaHu-UMD/MultiSTGraph)),
 a general deep learning framework for citywide multi-step OD flow forecasting.
 Experiments on two real-world tasks demonstrate its steady performance improvement over state-of-the-art baselines.
 
