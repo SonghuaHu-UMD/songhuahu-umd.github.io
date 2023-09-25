@@ -43,14 +43,14 @@ Extracted information provide more accurate and detailed inputs for both micro a
 
 ### Social Media Text
 Social media comments provide a rich source of text data containing population attitudes, sentiments and perceptions.
-My research centers on extracting human sentiments regarding topics related to urban planning and travel from Google Reviews, 
+My research centers on extracting human sentiments regarding topics related to urban planning and travel, 
 such as parking challenges in dense city center and fast-growing food delivery services. 
-I also fuse them with mobile phone location data to track how individuals respond to natural disasters. 
-I leverage the Large Language Model (LLM) to enhance the efficiency and accuracy of text mining.
+I also fuse them with mobile phone location data to track how individuals respond to natural disasters.
 
 <img style="float: left" src="https://songhuahu-umd.github.io/images/social_media.jpg" width="300" hspace="10">
 
 > The surge in food delivery services is reshaping lifestyles and urban form.
-Through an analysis of customer reviews of food delivery services extracted from a nationwide Google Reviews dataset since 2019, 
+Through an analysis of customer reviews of food delivery services extracted from nationwide Google Reviews, 
 we aim to examine how people's attitudes to food delivery change before and after the pandemic, 
-and identify the key factors related to customer sentiments in this context.
+and to identify the key factors related to customer sentiments in this context. By fusing with mobile device location data,
+we further examine whether the growth of delivery services would decrease restaurants' in-person foot traffic.
