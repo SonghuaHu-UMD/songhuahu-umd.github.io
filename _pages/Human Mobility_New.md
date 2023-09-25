@@ -28,7 +28,8 @@ and made publicly available via an [online platform](https://data.covid.umd.edu/
 By analyzing the mobile device location data during the pandemic, we find a spontaneous mobility reduction that occurred 
 regardless of government actions and a ‘floor’ phenomenon, where human mobility reached a lower bound and 
 stopped decreasing soon after each state announced the stay-at-home order.
-A set of longitudinal models is then developed and confirms that the states' stay-at-home policies have only led to about a 5% reduction in average daily human mobility.
+We also document that the states' stay-at-home policies have only led to about a 5% reduction in average human mobility.
+
 ---
 
 ### <span style="color: green"> Traffic Camera Footage </span>
@@ -36,16 +37,13 @@ Traffic cameras play a crucial role in traffic flow monitoring and traffic viola
 These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
 My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
 
-<img style="float: left" src="https://songhuahu-umd.github.io/images/Camera0.png" width="300" hspace="10">
-
-> By scraping camera footage from over 800 traffic cameras in New York, we reconstruct a citywide emission model to 
-quantify pedestrian exposure to traffic emission considering environmental justice.
+> <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/Camera0.png" width="300" hspace="10"></a>
+By scraping camera footage from over 800 traffic cameras in New York, we reconstruct a citywide emission model to quantify pedestrian exposure to traffic emission considering environmental justice.
 Via cutting-edge object detection, tracking, and segmentation method, we extract detailed traffic flow, 
 pedestrian volume, and > 3000 vehicle modes from camera footage, providing more accurate and detailed inputs for both micro and macro traffic emission models.
 
-<img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10">
-
-> Currently, most traffic cameras installed in the urban area only provide low-FPS footage to the public. 
+> <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10"></a>
+Currently, most traffic cameras installed in the urban area only provide low-FPS footage to the public. 
 We propose a unified framework capable of extract traffic flow data from videos of varying quality, 
 covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1) videos. 
 Our approach integrates the fundamental diagram, distance-based tracking, and ByteTrack methods, tailored to the respective FPS types. 
@@ -59,9 +57,8 @@ My research centers on extracting human sentiments regarding topics related to u
 such as parking challenges in dense city center and fast-growing food delivery services. 
 I also fuse them with mobile phone location data to track how individuals respond to natural disasters.
 
-<img style="float: left" src="https://songhuahu-umd.github.io/images/social_media.jpg" width="300" hspace="10">
-
-> The surge in food delivery services is reshaping lifestyles and urban form.
+> <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/social_media.jpg" width="300" hspace="10"></a>
+The surge in food delivery services is reshaping lifestyles and urban form.
 Through an analysis of customer reviews of food delivery services extracted from nationwide Google Reviews, 
 we aim to examine how people's attitudes to food delivery change before and after the pandemic, 
 and to identify the key related factors. By fusing with mobile phone location data,
