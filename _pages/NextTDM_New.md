@@ -8,12 +8,11 @@ author_profile: true
 Traditional travel demand models heavily rely on travel surveys, which are costly, laborious, and suffer from
 small-sample and infrequent issues.
 My Ph.D. dissertation focuses on building a next-generation travel demand model which is fully big-data-driven.
-Specifically, My work is intended to leverage emerging big data, such as mobile device location data, digital social
-structure, traffic sensor records, and mobility transaction data,
-to extract population-representative trip itineraries, estimate multi-modal Origin-Destination matrices, and analyze
-individual travel behaviors.
+This includes 1) a normative pipeline for parsing multi-source travel data to derive trip rosters and 
+multi-modal OD matrices, 2) a set of spatiotemporal neural networks for forecasting future travel demand, and 3) 
+a set of traffic simulation tools for simulating traffic flow at both individual and aggregated level.
 
-### <span style="color: green"> Mobile Phone Location </span> 📱📱📱🚶🚶🚶
+### <span style="color: green"> Big-data-driven Travel Demand Estimation </span> 📑📑📑🚩🚩🚩
 The 21st century witnessed the wide spread of mobile phones with positioning sensors.
 Mobile phone location data contain massive spatiotemporal information on individual travel. 
 Compared with traditional surveys and static sensors, mobile phone data have 
@@ -35,7 +34,7 @@ We also document that the states' stay-at-home policies have only led to about a
 
 ---
 
-### <span style="color: green"> Traffic Camera Footage </span> 📹📹📹🚘🚘🚘
+### <span style="color: green"> Deep-learning-based Travel Demand Forecasting </span> 📈📈📈📉📉📉
 Traffic cameras play a crucial role in traffic flow monitoring and traffic violation capture. 
 These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
 My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
@@ -55,7 +54,7 @@ We also develop an entirely automated traffic detector generator that leverages 
 ---
 
 
-### <span style="color: green"> Social Media Text </span>💬💬💬👥👥👥
+### <span style="color: green"> Multi-dimensional Traffic Simulation </span>🚦🚦🚦🚗🚗🚗
 Social media comments provide a rich source of text data containing population attitudes, sentiments and perceptions.
 Harnessing Large Language Model (LLM), my research focuses on extracting human sentiments regarding topics related to urban planning and travel, 
 such as parking issues, accessibility challenges, and fast-growing food delivery services. 
