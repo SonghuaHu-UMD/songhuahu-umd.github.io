@@ -16,7 +16,7 @@ Mobile phone location data contain massive spatiotemporal information on individ
 Compared with traditional surveys and static sensors, mobile phone data have 
 high penetration rate, wide spatiotemporal coverage, and real-time update frequency. 
 My research demonstrates its strong capability in modelling travel demand, disease transmission, 
-data-driven accessibility, and social equity:
+accessibility, and social equity:
 
 <a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
 > Using location data of over 150 million monthly active mobile devices in the US, 
