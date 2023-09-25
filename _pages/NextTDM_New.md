@@ -7,9 +7,7 @@ author_profile: true
 
 Traditional travel demand models heavily rely on travel surveys, which are costly, laborious, and suffer from
 small-sample and infrequent issues.
-My Ph.D. dissertation focuses on building a big-data-driven digital twin model for estimating and forecasting human
-mobility at both collective and individual levels
-using location data from over 100 million monthly active mobile devices in the US.
+My Ph.D. dissertation focuses on building a next-generation travel demand model which is fully big-data-driven.
 Specifically, My work is intended to leverage emerging big data, such as mobile device location data, digital social
 structure, traffic sensor records, and mobility transaction data,
 to extract population-representative trip itineraries, estimate multi-modal Origin-Destination matrices, and analyze
