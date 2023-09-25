@@ -18,12 +18,17 @@ high penetration rate, wide spatiotemporal coverage, and real-time update freque
 My research demonstrates its strong capability in modelling travel demand, disease transmission, 
 accessibility, and social equity:
 
-<a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
-> Using location data of over 150 million monthly active mobile devices in the US, 
+> <a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a> 
+Using location data of over 150 million monthly active mobile devices in the US, 
 we successfully measures how human mobility change during the COVID-19 pandemic using three metrics: 
 average trips per person, average person-miles traveled, and percentage of residents staying home. Date are updated daily 
 and made publicly available via an [online platform](https://data.covid.umd.edu/).
 
+> <a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF3.png" width="300" hspace="20"></a>
+By analyzing the mobile device location data during the pandemic, we find a spontaneous mobility reduction that occurred 
+regardless of government actions and a ‘floor’ phenomenon, where human mobility reached a lower bound and 
+stopped decreasing soon after each state announced the stay-at-home order.
+A set of longitudinal models is then developed and confirms that the states' stay-at-home policies have only led to about a 5% reduction in average daily human mobility.
 ---
 
 ### <span style="color: blue"> Traffic Camera Footage </span>
@@ -40,12 +45,11 @@ pedestrian volume, and > 3000 vehicle modes from camera footage, providing more 
 
 <img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10">
 
-> Current studies mainly focus on high-FPS traffic video installed on freeway. 
-However, most traffic cameras installed in the urban area only provide low-FPS footage. 
-We propose a unified framework that can extract traffic flow information from traffic videos with different quality, 
-covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1) videos, by involving the fundamental diagram, 
-the distance-based tracking, and the ByteTrack, respectively. 
-We also design a fully automatic traffic flow detector generator by using vanishing points detection and road segmentation.
+> Currently, most traffic cameras installed in the urban area only provide low-FPS footage to the public. 
+We propose a unified framework capable of extract traffic flow data from videos of varying quality, 
+covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1) videos. 
+Our approach integrates the fundamental diagram, distance-based tracking, and ByteTrack methods, tailored to the respective FPS types. 
+Furthermore, we've developed an entirely automated traffic detector generator that leverages vanishing point detection and road segmentation techniques.
 
 ---
 
