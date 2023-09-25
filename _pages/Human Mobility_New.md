@@ -15,8 +15,8 @@ The 21st century witnessed the wide spread of mobile phones with positioning sen
 Mobile phone location data contain massive spatiotemporal information on individual travel. 
 Compared with traditional surveys and static sensors, mobile phone data have 
 high penetration rate, wide spatiotemporal coverage, and real-time update frequency. 
-My research demonstrates its strong capability in travel demand modelling, infectious disease control, 
-accessibility analysis, and social equity assessment:
+My research demonstrates its strong capability in modelling travel demand, disease transmission, 
+data-driven accessibility, and social equity:
 
 <a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
 > Using location data of over 150 million monthly active mobile devices in the US, 
@@ -27,7 +27,7 @@ and made publicly available via an [online platform](https://data.covid.umd.edu/
 ---
 
 ### Traffic Camera Footage
-Traffic cameras, deployed by local government worldwide, play a crucial role in traffic flow monitoring and traffic violation capture. 
+Traffic cameras play a crucial role in traffic flow monitoring and traffic violation capture. 
 These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
 My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
 
