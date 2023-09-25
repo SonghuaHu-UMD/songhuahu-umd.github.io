@@ -13,8 +13,8 @@ My research aims to fuse these emerging data sources to make urban transportatio
 ### Mobile Phone Location
 The 21st century witnessed the wide spread of mobile phones with positioning sensors.
 Mobile phone location data contain massive spatiotemporal information on individual travel. 
-Compared with traditional surveys and static sensors, mobile phone location data have 
-high penetration rate, wide spatiotemporal coverage, and near-real-time update frequency. 
+Compared with traditional surveys and static sensors, mobile phone data have 
+high penetration rate, wide spatiotemporal coverage, and real-time update frequency. 
 My research demonstrates its strong capability in travel demand modelling, infectious disease control, 
 accessibility analysis, and social equity assessment:
 
@@ -29,7 +29,7 @@ and made publicly available via an [online platform](https://data.covid.umd.edu/
 ### Traffic Camera Footage
 Traffic cameras, deployed by local government worldwide, play a crucial role in traffic flow monitoring and traffic violation capture. 
 These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
-My research leverages them for tasks such as traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
+My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
 
 <img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10">
 
@@ -52,5 +52,5 @@ I leverage the Large Language Model (LLM) to enhance the efficiency and accuracy
 
 > The surge in food delivery services is reshaping lifestyles and urban form.
 Through an analysis of customer reviews of food delivery services extracted from a nationwide Google Reviews dataset since 2019, 
-we aim to examine how people's attitudes to food delivery services change before and after the pandemic, 
-and to identify the key factors related to customer sentiments in this context.
+we aim to examine how people's attitudes to food delivery change before and after the pandemic, 
+and identify the key factors related to customer sentiments in this context.
