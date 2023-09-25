@@ -38,16 +38,16 @@ These cameras contain continuous ground-truth visual information on vehicles, pe
 My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
 
 > <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/Camera0.png" width="300" hspace="10"></a>
-By scraping camera footage from over 800 traffic cameras in New York, we reconstruct a citywide emission model to quantify pedestrian exposure to traffic emission considering environmental justice.
-Via cutting-edge object detection, tracking, and segmentation method, we extract detailed traffic flow, 
-pedestrian volume, and > 3000 vehicle modes from camera footage, providing more accurate and detailed inputs for both micro and macro traffic emission models.
+By scraping camera footage from ~ 800 traffic cameras in New York, we reconstruct a citywide emission model to quantify pedestrian exposure to traffic emission considering environmental justice.
+Via cutting-edge object detection, tracking, and segmentation method, we extract real-time traffic flow, 
+pedestrian volume, and > 3000 vehicle modes from camera footage, providing more accurate and detailed inputs for traffic emission models.
 
 > <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10"></a>
-Currently, most traffic cameras installed in the urban area only provide low-FPS footage to the public. 
+Most traffic cameras installed in the urban area only provide low-FPS footage to the public. 
 We propose a unified framework capable of extract traffic flow data from videos of varying quality, 
 covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1) videos. 
-Our approach integrates the fundamental diagram, distance-based tracking, and ByteTrack methods, tailored to the respective FPS types. 
-Furthermore, we've developed an entirely automated traffic detector generator that leverages vanishing point detection and road segmentation techniques.
+Our approach integrates fundamental diagram, distance-based tracking, and ByteTrack methods, tailored to the respective FPS types. 
+We also develop an entirely automated traffic detector generator that leverages vanishing point detection and road segmentation techniques.
 
 ---
 
@@ -60,6 +60,5 @@ I also fuse them with mobile phone location data to track how individuals respon
 > <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/social_media.jpg" width="300" hspace="10"></a>
 The surge in food delivery services is reshaping lifestyles and urban form.
 Through an analysis of customer reviews of food delivery services extracted from nationwide Google Reviews, 
-we aim to examine how people's attitudes to food delivery change before and after the pandemic, 
-and to identify the key related factors. By fusing with mobile phone location data,
-we further examine whether the growth of delivery services would decrease in-person visit to restaurant.
+we examine how people's attitudes to food delivery change over time and identify the key related factors. 
+By fusing with mobile phone location data, we further infer whether the growth of delivery services would decrease in-person visit to restaurants.
