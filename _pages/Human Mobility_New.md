@@ -24,14 +24,22 @@ accessibility analysis, and social equity.
 
 ---
 <a href="https://data.covid.umd.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="10"></a>
-Using mobile device location data of over 150 million monthly active samples in the US, 
+Using location data of over 150 million monthly active mobile devices in the US, 
 we successfully measures how human mobility change during the COVID-19 pandemic using three metrics: 
-average number of trips per person; average person-miles traveled; and percentage of residents staying home. 
+average number of trips per person; average person-miles traveled; and percentage of residents staying home. The mobility informatics are analyzed daily 
+and made available to the public via the [UMD COVID-19 Impact Analysis Platform](https://data.covid.umd.edu/).
 
 ---
 
 ### Traffic Camera
 Visual footage on vehicle, pedestrian, and road infrastructure
+
+**Related Research:**
+
+---
+<img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10">
+
+
 
 ### Social Media
 Crowdsourced social attitude, sentiment and perception. 
