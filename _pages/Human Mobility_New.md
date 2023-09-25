@@ -14,17 +14,15 @@ rendering them more perceptible, intelligent, and efficient.
 
 ### Mobile Phone
 The 21st century witnessed the wide spread of mobile phones with positioning sensors.
-Data from positioning sensors inside mobile phones (and other mobile devices) are passively collected, 
-providing massive spatiotemporal information on individual-level mobility patterns. 
-Compared with traditional surveys or static sensors, mobile phone location data have 
-population-representative penetration rate, large spatial coverage, long and continuous temporal span, and near-real-time update frequency. 
+Data from positioning sensors inside mobile phones contain massive spatiotemporal information on individual travel. 
+Compared with traditional surveys and static sensors, mobile phone location data have 
+population-representative penetration rate, wide spatiotemporal coverage, and near-real-time update frequency. 
 
 See some of my research using the mobile phone location data:
 
-<img style="float: right;" src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="10">
-Using mobile device location data of over 150 million monthly active samples in the United States (U.S.), 
+| <img style="float: right;" src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="10"> | Using mobile device location data of over 150 million monthly active samples in the US, 
 the study successfully measures human mobility with three main metrics at the county level: 
-daily average number of trips per person; daily average person-miles traveled; and daily percentage of residents staying home.
+daily average number of trips per person; daily average person-miles traveled; and daily percentage of residents staying home. |
 
 
 
