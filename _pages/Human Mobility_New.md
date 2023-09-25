@@ -8,9 +8,7 @@ author_profile: true
 Nowadays, advanced wireless communication, unobtrusive positioning technologies, ubiquitous camera surveillance system, 
 and large-scale big data infrastructures have generated extensive volumes of transportation data,
 revolutionizing the approach to monitoring, quantifying, and modeling human travel. 
-My work has encompassed a wide range of prevalent data sources within the transportation field in recent years.
-My ultimate objective is to fuse these emerging data sources to enhance urban transportation systems, 
-rendering them more perceptible, intelligent, and efficient.
+My research aims to fuse these emerging data sources to make urban transportation systems more senseable, intelligent, and efficient.
 
 ### Mobile Phone Location
 The 21st century witnessed the wide spread of mobile phones with positioning sensors.
@@ -23,26 +21,27 @@ accessibility analysis, and social equity:
 <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
 > Using location data of over 150 million monthly active mobile devices in the US, 
 we successfully measures how human mobility change during the COVID-19 pandemic using three metrics: 
-average number of trips per person; average person-miles traveled; and percentage of residents staying home. The mobility informatics are analyzed daily 
-and made available to the public via an [online platform](https://data.covid.umd.edu/).
+average number of trips per person, average person-miles traveled, and percentage of residents staying home. The mobility informatics are analyzed daily 
+and made publicly available via an [online platform](https://data.covid.umd.edu/).
 
 ---
 
 ### Traffic Camera Footage
 Traffic cameras have been installed by local DOT over the world to help monitor traffic flow and capture traffic violation.
-These cameras contain rich visual information on vehicle, pedestrian, and road infrastructure. My research have demonstrated 
-its strong capability in traffic flow monitoring, traffic emission estimation, and environmental justice:
+These cameras contain rich visual information on vehicle, pedestrian, and road infrastructure. My research have involved 
+them into traffic flow monitoring, traffic emission estimation, and environmental justice:
 
 <img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10">
 
-> By scraping traffic footage from over 800 cameras in New York City, we reconstruct a citywide
+> By scraping traffic footage from over 800 cameras in New York, we reconstruct a citywide
 bottom-up emission model to quantify pedestrian exposure to traffic emission considering potential environmental justice.
-Via cutting-edge object detection, tracking, and segmentation method, we extract detailed traffic flow information (speed, volume, density, etc.), 
-pedestrian volume, and over 3000 vehicle modes and types from camera footage. These details are validated via free floating cars and roadside sensors
+Via cutting-edge object detection, tracking, and segmentation method, we extract detailed traffic flow information, 
+pedestrian volume, and over 3000 vehicle modes from camera footage. 
+Extracted information provide more accurate and detailed inputs for both micro and macro traffic emission models.
 
 ---
 
-### Social Media
+### Social Media Text
 Crowdsourced social attitude, sentiment and perception. 
 
 ## Related Publications
