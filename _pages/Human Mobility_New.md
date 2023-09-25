@@ -18,10 +18,10 @@ population-representative penetration rate, wide spatiotemporal coverage, and ne
 My research have demonstrated its strong capability in travel demand modelling, infectious disease control, 
 accessibility analysis, and social equity:
 
-<a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
+<a href="https://journals.sagepub.com/doi/full/10.1177/03611981211043813"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
 > Using location data of over 150 million monthly active mobile devices in the US, 
 we successfully measures how human mobility change during the COVID-19 pandemic using three metrics: 
-average number of trips per person, average person-miles traveled, and percentage of residents staying home. The mobility informatics are analyzed daily 
+average trips per person, average person-miles traveled, and percentage of residents staying home. Date are updated daily 
 and made publicly available via an [online platform](https://data.covid.umd.edu/).
 
 ---
