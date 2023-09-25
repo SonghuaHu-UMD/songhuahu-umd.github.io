@@ -33,18 +33,19 @@ My research leverages them for traffic flow monitoring, traffic emission estimat
 
 <img style="float: left" src="https://songhuahu-umd.github.io/images/Camera0.png" width="300" hspace="10">
 
-> By scraping traffic footage from over 800 cameras in New York, we reconstruct a citywide
-bottom-up emission model to quantify pedestrian exposure to traffic emission considering potential environmental justice.
+> By scraping camera footage from over 800 traffic cameras in New York, we reconstruct a citywide emission model to 
+quantify pedestrian exposure to traffic emission considering environmental justice.
 Via cutting-edge object detection, tracking, and segmentation method, we extract detailed traffic flow, 
-pedestrian volume, and over 3000 vehicle modes from camera footage. 
-Extracted information provide more accurate and detailed inputs for both micro and macro traffic emission models.
+pedestrian volume, and > 3000 vehicle modes from camera footage, providing more accurate and detailed inputs for both micro and macro traffic emission models.
 
 <img style="float: left" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10">
 
 > Current studies mainly focus on high-FPS traffic video installed on freeway. 
 However, most traffic cameras installed in the urban area only provide low-FPS footage. 
 We propose a unified framework that can extract traffic flow information from traffic videos with different quality, 
-covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1). 
+covering super-low FPS (< 1/5), low FPS (1/5 - 1), and high FPS (>1) videos, by involving the fundamental diagram, 
+the distance-based tracking, and the ByteTrack, respectively. 
+We also design a fully automatic traffic flow detector generator by using vanishing points detection and road segmentation.
 
 ---
 
