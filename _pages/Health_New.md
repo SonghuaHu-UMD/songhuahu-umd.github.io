@@ -21,9 +21,10 @@ This relationship is found to be much stronger in partially reopened regions.
 > <a href="https://www.sciencedirect.com/science/article/pii/S2210670721007721"><img style="float: left" src="https://songhuahu-umd.github.io/images/racial.jpg" width="300" hspace="20"></a>
 In another set of studies, we focus on seeking the socioeconomic roots of health disparities in COVID-19 pandemic 
 by exploring the relationships between COVID-19 health outcomes and a range of exogenous factors, 
-including socioeconomics, demographics, occupation, race, and partisanship. 
-My work has gained interest from NIH in sponsoring its further development into an integrated agent-based 
-human mobility and epidemiology model to forecast future infection spatiotemporal dynamics.
+including socioeconomics, demographics, occupation, race, and partisanship.
+We find salient structural inequalities: Social distancing is a “privilege” for those in advantaged socioeconomic status, 
+while disadvantaged populations consistently bearing a larger brunt of case and death tolls, regardless of high vaccination rates.
+
 
 ---
 
@@ -37,7 +38,7 @@ challenging the popular narrative that portrays vaccine hesitancy as a root caus
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0264410X23006175"><img style="float: right" src="https://songhuahu-umd.github.io/images/FF4.png" width="300" hspace="10"></a>
 Leveraging over two years of county-level US data, we investigate relationships among vaccination, human mobility, and COVID-19 health outcomes.
-Results show that vaccine effectiveness against case rate lost significance during the Omicron surge, while its effectiveness against case-fatality rate remained significant. 
-We also find salient structural inequalities: Disadvantaged populations consistently bearing a larger brunt of case and death tolls, regardless of high vaccination rates.
-
+Results show that vaccine effectiveness against case rate lost significance during the Omicron surge, while its effectiveness against case-fatality rate remained significant.
+My work has gained interest from NIH in sponsoring its further development into an integrated agent-based
+human mobility and epidemiology model to forecast future infection spatiotemporal dynamics.
 ---
