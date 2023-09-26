@@ -20,9 +20,9 @@ This relationship is found to be much stronger in partially reopened regions.
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S2210670721007721"><img style="float: left" src="https://songhuahu-umd.github.io/images/racial.jpg" width="300" hspace="20"></a>
 We focus on seeking the socioeconomic roots of health disparities in COVID-19 pandemic 
-by exploring the relationships between COVID-19 health outcomes and other exogenous factors, 
-including socioeconomics, demographics, occupation, race, and partisanship.
-We find salient structural inequalities: Social distancing is a “privilege” for those in advantaged socioeconomic status, 
+by exploring the relationships between COVID-19 outcomes and other exogenous factors, 
+including socioeconomics, demographics, occupation, and partisanship.
+We find salient structural inequality: Social distancing is a “privilege” for advantaged socioeconomic groups, 
 while disadvantaged groups consistently bearing a larger brunt of case and death tolls, regardless of high vaccination rates.
 
 ---
