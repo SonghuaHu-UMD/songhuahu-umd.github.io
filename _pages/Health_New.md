@@ -11,7 +11,7 @@ I focus on building integrated econometric, epidemiological, and simulation mode
 among human mobility, public policies, vaccination, and virus transmission, controlling for confounding effects from socioeconomic conditions.
 In the future, I intend to extend my research to a broad scope of health scenarios such as SARS-Cov-2 variants, AIDS, and influenza.
 
-### <span style="color: green"> Human Mobility and Infectious Disease </span> 😷 😷 😷 🏃🏃🏃
+### <span style="color: green"> Human Mobility, Infectious Disease, and Health Disparity</span> 😷 😷 😷 🏃🏃🏃
 
 > <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2010836117"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF43.png" width="300" hspace="20"></a>
 At the beginning of COVID-19 pandemic, we quantify the change of mobility inflow across the nation and statistically model the time-varying relationship between inflow and the infections.
@@ -19,16 +19,15 @@ Our analysis highlights the dynamics in a positive relationship between mobility
 This relationship is found to be much stronger in partially reopened regions. 
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S2210670721007721"><img style="float: left" src="https://songhuahu-umd.github.io/images/racial.jpg" width="300" hspace="20"></a>
-In another set of studies, we focus on seeking the socioeconomic roots of health disparities in COVID-19 pandemic 
-by exploring the relationships between COVID-19 health outcomes and a range of exogenous factors, 
+We focus on seeking the socioeconomic roots of health disparities in COVID-19 pandemic 
+by exploring the relationships between COVID-19 health outcomes and other exogenous factors, 
 including socioeconomics, demographics, occupation, race, and partisanship.
 We find salient structural inequalities: Social distancing is a “privilege” for those in advantaged socioeconomic status, 
-while disadvantaged populations consistently bearing a larger brunt of case and death tolls, regardless of high vaccination rates.
-
+while disadvantaged groups consistently bearing a larger brunt of case and death tolls, regardless of high vaccination rates.
 
 ---
 
-### <span style="color: green"> Human Mobility, Vaccination, and Health Disparity </span> 💉💉💉🏃🏃🏃
+### <span style="color: green"> Human Mobility, Vaccination, and Pandemic </span> 💉💉💉🏃🏃🏃
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0264410X22009471"><img style="float: right" src="https://songhuahu-umd.github.io/images/FF41.png" width="300" hspace="10"></a>
 Vaccine hesitancy has been identified as a major obstacle preventing comprehensive immunization coverage.
@@ -39,6 +38,7 @@ challenging the popular narrative that portrays vaccine hesitancy as a root caus
 > <a href="https://www.sciencedirect.com/science/article/pii/S0264410X23006175"><img style="float: right" src="https://songhuahu-umd.github.io/images/FF4.png" width="300" hspace="10"></a>
 Leveraging over two years of county-level US data, we investigate relationships among vaccination, human mobility, and COVID-19 health outcomes.
 Results show that vaccine effectiveness against case rate lost significance during the Omicron surge, while its effectiveness against case-fatality rate remained significant.
-My work has gained interest from NIH in sponsoring its further development into an integrated agent-based
+My work has gained interest from NIH in sponsoring its further development into an agent-based
 human mobility and epidemiology model to forecast future infection spatiotemporal dynamics.
+
 ---
