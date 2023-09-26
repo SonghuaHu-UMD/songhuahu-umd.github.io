@@ -31,14 +31,16 @@ more increase before the pandemic to more decrease during the pandemic.
 
 > <a href="https://ieeexplore.ieee.org/abstract/document/8569639"><img style="float: right" src="https://songhuahu-umd.github.io/images/Flood.png" width="300" hspace="10"></a>
 Heavy rain can induce road flooding especially in the urban areas due to poor drainage systems. Effectively identifying
-the flooding road segment can help people plan their travel reasonably and reduce losses. Combining the precipitation with traffic flow information, 
-we develop an automatic road flooding detection algorithm and deployed it to Shenzhen City in China. Result shows the algorithm performs
+the flooding road segment can help people plan their travel reasonably and reduce losses. 
+Combining social media posts, precipitation, and traffic flow information, we develop an automatic road flooding detection algorithm 
+and deploy it to Shenzhen City, China. Result shows that our algorithm performs
 satisfactorily with a 68%–90% detection rate and a 1.5%–2% false alarm rate.
 
 > <a href="https://senseable.mit.edu/"><img style="float: right" src="https://songhuahu-umd.github.io/images/weatherroad.png" width="300" hspace="10"></a>
 Crowdsourced data offer new opportunities to monitor and investigate changes in road traffic flow during extreme weather. 
-We utilize diverse crowdsourced data from mobile devices and the community-driven navigation app, Waze, to examine the impact of three weather events – floods, winter storms, and fog – on road traffic.
-We find overall winter storms have the greatest impact on road traffic. 
-At a link level, lower-class roads with lower average speeds and volumes experience milder changes.
+We utilize diverse crowdsourced data from mobile devices and the community-driven navigation app, Waze, to 
+examine the impact of three weather events – floods, winter storms, and fog – on road traffic.
+We find overall winter storms have the greatest impact on road traffic, while at a link level, 
+lower-class roads with lower average speeds and volumes experience milder impact.
 
 ---

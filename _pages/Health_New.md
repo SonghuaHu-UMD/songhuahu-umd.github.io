@@ -8,8 +8,10 @@ author_profile: true
 During the COVID-19 pandemic, non-pharmaceutical interventions were widely employed to contain the dissemination of the virus by restricting people’s travel and physical contact. 
 I have build integrated econometric, epidemiological, and simulation models to examine (causal) relations among human mobility, public policies, vaccination, and virus transmission, 
 which are critical to policy assessment, disease outbreak prediction, and public health management. 
+In the future, I intend to extend my research to a broad scope of public health scenarios covering 
+more contagious diseases such as SARS-Cov-2 variants, AIDS, and influenza.
 
-### <span style="color: green"> Human Mobility and Infectious Disease </span> 🏥🏥🏥🚶🚶🚶
+### <span style="color: green"> Human Mobility and Infectious Disease </span> 😷 😷 😷 🏃🏃🏃
 
 > <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2010836117"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF43.png" width="300" hspace="20"></a>
 The COVID-19 pandemic has led to a globally unprecedented decline in transit ridership. We leverage the 20-years daily transit ridership data in Chicago to infer the impact of COVID-19 on ridership using the Bayesian structural time series model, 
@@ -29,7 +31,7 @@ Also, stations near the city center or located in high-income areas go from more
 
 ---
 
-### <span style="color: green"> Human Mobility and Vaccination </span> 💉💉💉🚶🚶🚶
+### <span style="color: green"> Human Mobility and Vaccination </span> 💉💉💉🏃🏃🏃
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0264410X22009471"><img style="float: right" src="https://songhuahu-umd.github.io/images/FF41.png" width="300" hspace="10"></a>
 Heavy rain can induce road flooding especially in the urban areas due to their poor drainage systems, 
