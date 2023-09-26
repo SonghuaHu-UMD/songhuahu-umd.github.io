@@ -24,8 +24,8 @@ main:
   - title: "NextGen TDM"
     url: /NextTDM/ # /Traffic Simulation/
 
-  - title: "Urban Resilience"
-    url: /Infrastructure Resilience/
+  - title: "Travel Resilience"
+    url: /Resilience/
 
   - title: "Public Health"
     url: /Public Health/

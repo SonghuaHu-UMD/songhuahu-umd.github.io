@@ -11,8 +11,7 @@ My work focuses on qualitatively and quantitatively examining the time-varying r
 infrastructure under abnormal interventions, for example, modeling road traffic flow under inclement weather
 and comparing recovery patterns of multi-modal travel demand during the COVID-19 pandemic.
 My particular attention to accessibility inequities, policy barriers, and resilient disparities in underserved
-communities
-under unusual interventions provides valuable suggestions for a more sustainable, equitable, and resilient urban
+communities under unusual interventions provides valuable suggestions for a more sustainable, equitable, and resilient urban
 mobility system.
 
 <img src="https://songhuahu-umd.github.io/images/FF3.png" width="1000"/>
