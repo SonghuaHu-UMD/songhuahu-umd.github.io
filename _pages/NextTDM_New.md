@@ -23,7 +23,7 @@ The whole pipeline is employed on AWS EMR, a cloud-computing server, to timely q
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF12.png" width="300" hspace="20"></a>
 Using nationwide census block group-level trip flow derived from mobile devices as the proxy of travel demand, 
-I examine its relations with socioeconomics, demographics, and land use. 
+We examine its relations with socioeconomics, demographics, and land use. 
 Over 6*8 machine learning models and interpretation techniques are compared to determine the 
 best model and justify interpretation robustness. Pronounced nonlinearities, threshold effects, and interaction effects are observed.
 
@@ -33,14 +33,14 @@ best model and justify interpretation robustness. Pronounced nonlinearities, thr
 
 > <a href="https://github.com/SonghuaHu-UMD/MultiSTGraph"><img style="float: right" src="https://songhuahu-umd.github.io/images/FF2.png" width="300" hspace="10"></a>
 OD flow forecasting is challenging due to complex spatiotemporal dependencies and heterogeneous external
-effects. I propose a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network ([Multi-ATGCN](https://github.com/SonghuaHu-UMD/MultiSTGraph)),
+effects. We propose a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network ([Multi-ATGCN](https://github.com/SonghuaHu-UMD/MultiSTGraph)),
 a general deep learning framework for citywide multi-step OD flow forecasting.
 Experiments on two real-world tasks demonstrate its steady performance improvement over state-of-the-art baselines.
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0968090X22003758"><img style="float: right" src="https://songhuahu-umd.github.io/images/FF16.gif" width="300" hspace="10"></a>
 Individual mobility forecasting is more challenging because of high randomness of individual travels, 
 multi-structure forecasting tasks, and imbalanced distributions of places and activities.
-I propose a hierarchical activity-based framework for simultaneously predicting the activity, time, and location of
+We propose a hierarchical activity-based framework for simultaneously predicting the activity, time, and location of
 the next trip for each device. Meanwhile, loss functions in the semantic segmentation domain are introduced to address the imbalanced classification issue.
 The whole framework is applied on a county-level dataset covering over 18,000 residents and showed acceptable prediction accuracy.
 
@@ -50,7 +50,7 @@ The whole framework is applied on a county-level dataset covering over 18,000 re
 
 > <a href="https://songhuahu-umd.github.io/NextTDM/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF62.gif" width="300" hspace="10"></a>
 Integrating forecasted travel demand with traffic simulators complete the last puzzle of a travel demand model.
-At an aggregated level, I feed the predicted OD matrices into a dynamic traffic assignment tool, DTALite, to generate link traffic speed and volume.
+At an aggregated level, we feed the predicted OD matrices into a dynamic traffic assignment tool, DTALite, to generate link traffic speed and volume.
 Simulated results are compared with field observations collected from roadside sensors to validate the whole data-driven travel demand model.
 
 > <a href="https://songhuahu-umd.github.io/NextTDM/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF61.gif" width="300" hspace="10"></a>

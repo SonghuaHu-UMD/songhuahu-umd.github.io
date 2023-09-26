@@ -19,11 +19,11 @@ controlling confounding effects of socioeconomic disparities.
 Results show that ridership declined more in regions with more commercial lands and higher percentages of white, educated, and high-income individuals.
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0966692321000508"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF31.png" width="300" hspace="20"></a>
-Leveraging two-year trips from the largest bikesharing program in Chicago, 
-we examine the spatiotemporal evolution of bikesharing usage across the pandemic and compares it with other travel modes.
+Leveraging two-year bikesharing trips in Chicago, we examine the spatiotemporal evolution of bikesharing usage 
+across the pandemic and compares it with other travel modes.
 We find that bikesharing is more resilient compared with transit, driving, and walking.
-Deep socio-economic inequities also exist: stations located in high-income areas go from more increase before the pandemic to more decrease during the pandemic.
-
+Deep socio-economic inequities also exist: stations located in high-income areas go from 
+more increase before the pandemic to more decrease during the pandemic.
 
 ---
 
@@ -40,6 +40,5 @@ Crowdsourced data offer new opportunities to monitor and investigate changes in 
 We utilize diverse crowdsourced data from mobile devices and the community-driven navigation app, Waze, to examine the impact of three weather events – floods, winter storms, and fog – on road traffic.
 We find overall winter storms have the greatest impact on road traffic. 
 At a link level, lower-class roads with lower average speeds and volumes experience milder changes.
-
 
 ---
