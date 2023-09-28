@@ -110,7 +110,7 @@ Skills
       pgAdmin, Impala, Oracle), **Cloud Computing** (PySpark, EMR), Matlab, Git, Bash, Java, HTML.
 * <span style="color: green">**Statistics**</span>
     * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), BSTS), **Time series** (ARIMA, SARIMA),
-  **Survival analysis** (Cox, Time-varying Cox), **Regression** (Generalized linear models (Poission, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
+  **Survival analysis** (Cox, Time-varying Cox), **Regression** (Generalized linear models (Poisson, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
   **Spatial econometrics** (SER, SLR, SDR, GWR, GTWR), **Discrete choice model** (Multinomial, Mixed, Nested).
 * <span style="color: green">**Deep learning/Machine learning**</span>
   *  **Time series forecasting** (CNN, LSTM, GRU, Transformer), **Graph neural network** (STGCN), **Computer vision** (Vehicle/Pedestrian Detection, Tracking, Segmentation), **Natural language processing** (Text mining, Topic modelling, Sentiment analysis, LLM), 
