@@ -20,8 +20,8 @@ accessibility, and social equity:
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a> 
 Using location data of over 150 million monthly active mobile devices in the US, 
-we successfully measures how human mobility change during the COVID-19 pandemic using three metrics: 
-average trips per person, average person-miles traveled, and percentage of residents staying home. Date are updated daily 
+we successfully measure how human mobility change during the COVID-19 pandemic using three metrics: 
+average trips per person, average person-miles traveled, and percentage of residents staying home. Data are updated daily 
 and made publicly available via an [online platform](https://data.covid.umd.edu/).
 
 > <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2020.0344"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF3.png" width="300" hspace="20"></a>
