@@ -23,7 +23,7 @@ We focus on seeking the socioeconomic roots of health disparities in COVID-19 pa
 by exploring the relationships between COVID-19 outcomes and other exogenous factors, 
 including socioeconomics, demographics, occupation, and partisanship.
 We find salient structural inequality: Social distancing is a “privilege” for advantaged socioeconomic groups, 
-while disadvantaged groups consistently bearing a larger brunt of case and death tolls, regardless of high vaccination rates.
+while disadvantaged groups consistently bear a larger brunt of case and death tolls, regardless of high vaccination rates.
 
 ---
 

@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 Unexpected events, such as natural disasters, diseases, and extreme weather events, lead to substantial impacts on human travel.
-My work focuses on quantitatively examining the time-varying patterns of human travel before, during, and after theses abnormal interventions.
+My work focuses on quantitatively examining the time-varying patterns of human travel before, during, and after these abnormal interventions.
 My particular attention to accessibility inequities, policy barriers, and resilient disparities in underserved
 communities under unusual interventions provides valuable suggestions for building a more sustainable, equitable, and resilient urban
 mobility system.
@@ -14,13 +14,13 @@ mobility system.
 ### <span style="color: green"> Multi-modal Travel Demand Resilience to Diseases</span> 🚌🚌🚌🚲🚲🚲
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S1361920920308397"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF33.png" width="300" hspace="20"></a>
-The COVID-19 pandemic has led to a globally unprecedented decline in transit ridership. We leverage the 20-years daily transit ridership data in Chicago to infer the impact of COVID-19 on ridership using the Bayesian structural time series model, 
+The COVID-19 pandemic has led to a globally unprecedented decline in transit ridership. We leverage the 20-year daily transit ridership data in Chicago to infer the impact of COVID-19 on ridership using the Bayesian structural time series model, 
 controlling confounding effects of socioeconomic disparities. 
 Results show that ridership declined more in regions with more commercial lands and higher percentages of white, educated, and high-income individuals.
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0966692321000508"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF31.png" width="300" hspace="20"></a>
 Leveraging two-year bikesharing trips in Chicago, we examine the spatiotemporal evolution of bikesharing usage 
-across the pandemic and compares it with other travel modes.
+across the pandemic and compare it with other travel modes.
 We find that bikesharing is more resilient compared with transit, driving, and walking.
 Deep socio-economic inequities also exist: stations located in high-income areas go from 
 more increase before the pandemic to more decrease during the pandemic.
@@ -30,7 +30,7 @@ more increase before the pandemic to more decrease during the pandemic.
 ### <span style="color: green"> Link-level Road Traffic Resilience to Extreme Weather</span> ❄️❄️❄️🚧🚧🚧
 
 > <a href="https://ieeexplore.ieee.org/abstract/document/8569639"><img style="float: right" src="https://songhuahu-umd.github.io/images/Flood.png" width="300" hspace="10"></a>
-Heavy rain can induce road flooding especially in the urban areas due to poor drainage systems. Effectively identifying
+Heavy rain can induce road flooding, especially in the urban areas due to poor drainage systems. Effectively identifying
 the flooding road segment can help people plan their travel reasonably and reduce losses. 
 Combining social media posts, precipitation, and traffic flow information, we develop an automatic road flooding detection algorithm 
 and deploy it to Shenzhen City, China. Result shows that our algorithm performs

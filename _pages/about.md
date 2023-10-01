@@ -10,7 +10,7 @@ redirect_from:
 
 ---
 Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
-My research explores the nexus of **urban sensing**, **human mobility** and **transportation system**. 
+My research explores the nexus of **urban sensing**, **human mobility**, and **transportation system**. 
 I'm passionate about seeking innovative solutions for complex urban transportation challenges using emerging crowdsensing and modelling techniques. 
 
 I've been working with a diverse set of sensors <span style="color: green"> (_Mobile phones, Mobile apps, Traffic cameras, Floating cars, Social media_)</span> using different modelling approaches <span style="color: orange"> (_Deep learning, Statistics, Simulation, Network science, Cloud computing_)</span>. 
@@ -62,7 +62,7 @@ Publications
   First-Authored)</span>.
 * _Transportation Research Board Annual Meeting_ <span style="color: maroon">(**>20** Posters/Presentations)</span>.
 
-<span style="color: purple">**See full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
+<span style="color: purple">**See the full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
 
 ***
 
@@ -70,8 +70,7 @@ Awards
 ======
 * [UMD CEE Best Doctoral Research Award](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards), University of Maryland, College Park, 2023.
 * Outstanding Reviewer, Transportation Research Part D: Transport and Environment, 2023.
-* [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards)
-  , University of Maryland, College Park, 2021.
+* [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards), University of Maryland, College Park, 2021.
 * CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
 * The Graduate School's Dean’s Fellowship, University of Maryland, College Park, 2019.
 * Graduate Merit Scholarship, Tongji University, 2018.
@@ -100,7 +99,7 @@ Reviews
     IACP International Association of China Planning;
     IEEE Intelligent Transportation Systems Society Conference Management System
 
-<span style="color: purple">**See full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)**</span>
+<span style="color: purple">**See the full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)**</span>
 
 Skills
 ======

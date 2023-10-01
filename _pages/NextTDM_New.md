@@ -42,14 +42,14 @@ Individual mobility forecasting is more challenging because of high randomness o
 multi-structure forecasting tasks, and imbalanced distributions of places and activities.
 We propose a hierarchical activity-based framework for simultaneously predicting the activity, time, and location of
 the next trip for each device. Meanwhile, loss functions in the semantic segmentation domain are introduced to address the imbalanced classification issue.
-The whole framework is applied on a county-level dataset covering over 18,000 residents and showed acceptable prediction accuracy.
+The whole framework is applied on a county-level dataset covering over 18,000 residents and shows acceptable prediction accuracy.
 
 ---
 
 ### <span style="color: green"> Multi-dimensional Traffic Simulation </span>🚦🚦🚦🚗🚗🚗
 
 > <a href="https://songhuahu-umd.github.io/NextTDM/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF62.gif" width="300" hspace="10"></a>
-Integrating forecasted travel demand with traffic simulators complete the last puzzle of a travel demand model.
+Integrating forecasted travel demand with traffic simulators completes the last puzzle of a travel demand model.
 At an aggregated level, we feed the predicted OD matrices into a dynamic traffic assignment tool, DTALite, to generate link traffic speed and volume.
 Simulated results are compared with field observations collected from roadside sensors to validate the whole data-driven travel demand model.
 

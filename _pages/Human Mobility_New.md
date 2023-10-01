@@ -5,7 +5,7 @@ permalink: /Urban Sensing/
 author_profile: true
 ---
 
-Nowadays, advanced wireless communication, unobtrusive positioning technologies, ubiquitous camera surveillance system, 
+Nowadays, advanced wireless communication, unobtrusive positioning technologies, ubiquitous camera surveillance systems, 
 and large-scale big data infrastructures have generated extensive volumes of transportation data,
 revolutionizing the approach to monitoring, quantifying, and modeling human travel. 
 My research aims to fuse these emerging data sources to make urban transportation systems more senseable, intelligent, and efficient.
@@ -20,7 +20,7 @@ accessibility, and social equity:
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a> 
 Using location data of over 150 million monthly active mobile devices in the US, 
-we successfully measure how human mobility change during the COVID-19 pandemic using three metrics: 
+we successfully measure how human mobility changed during the COVID-19 pandemic using three metrics: 
 average trips per person, average person-miles traveled, and percentage of residents staying home. Data are updated daily 
 and made publicly available via an [online platform](https://data.covid.umd.edu/).
 
@@ -39,21 +39,21 @@ My research leverages them for traffic flow monitoring, traffic emission estimat
 
 > <a href="https://senseable.mit.edu/"><img style="float: right" src="https://songhuahu-umd.github.io/images/Camera0.png" width="300" hspace="10"></a>
 By scraping camera footage from ~ 800 traffic cameras in New York, we reconstruct a citywide emission model to quantify pedestrian exposure to traffic emission considering environmental justice.
-Via cutting-edge object detection, tracking, and segmentation method, we extract real-time traffic flow, 
+Via cutting-edge object detection, tracking, and segmentation methods, we extract real-time traffic flow, 
 pedestrian volume, and > 3000 vehicle modes from camera footage, providing more accurate and detailed inputs for traffic emission models.
 
 > <a href="https://senseable.mit.edu/"><img style="float: right" src="https://songhuahu-umd.github.io/images/camera0.gif" width="300" hspace="10"></a>
 Most traffic cameras installed in the urban area only store low-FPS footage. 
-We propose a unified framework capable of extract traffic flow from videos of varying quality, 
+We propose a unified framework capable of extracting traffic flow from videos of varying quality, 
 covering super-low FPS, low FPS, and high FPS. 
 Our approach integrates fundamental diagram, distance-based tracking, and ByteTrack, tailored to the respective FPS. 
-We also develop an entirely automated traffic detector generator base on vanishing points and road segmentation.
+We also develop an entirely automated traffic detector generator based on vanishing points and road segmentation.
 
 ---
 
 
 ### <span style="color: green"> Social Media Text </span>💬💬💬👥👥👥
-Social media comments provide a rich source of text data containing population attitudes, sentiments and perceptions.
+Social media comments provide a rich source of text data containing population attitudes, sentiments, and perceptions.
 Harnessing Large Language Model (LLM), my research focuses on extracting human sentiments regarding topics related to urban planning and travel, 
 such as parking issues, accessibility challenges, and fast-growing food delivery services. 
 I also fuse them with mobile phone location data to track how individuals respond to natural disasters.
@@ -62,4 +62,4 @@ I also fuse them with mobile phone location data to track how individuals respon
 The surge in food delivery services is reshaping lifestyles and urban form.
 Through an analysis of customer reviews of food delivery services extracted from nationwide Google Reviews, 
 we examine how people's attitudes to food delivery change over time and identify the key related factors. 
-By fusing with mobile phone location data, we further infer whether the growth of delivery services would decrease in-person visit to restaurants.
+By fusing with mobile phone location data, we further infer whether the growth of delivery services would decrease in-person visits to restaurants.
