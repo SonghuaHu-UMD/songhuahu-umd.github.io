@@ -7,9 +7,6 @@ author_profile: true
 
 
 I have extensive research experience in shared and smart mobility.
-In Tongji University, advised by [Prof. Hangfei Lin](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhf.htm)
-| [Prof. Xiaohong Chen](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/cxh.htm)
-| [Prof. Peng Chen](https://www.usf.edu/arts-sciences/departments/public-affairs/about-us/faculty/pchen.aspx),
 I have investigated various shared mobility programs to provide empirical evidence on how to promote their efficiency,
 how to allocate incentives to prevent user turnover, and how to encourage multi-modal integration.
 After joining University of Maryland, I am the technical leader of the first-in-the-nation MaaS APP "incenTrip" project,
