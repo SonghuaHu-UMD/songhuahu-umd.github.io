@@ -23,10 +23,10 @@ Research Highlights
 ======
 
 + [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
-+ [Next-Generation Travel Demand Modelling (NextGen TDM)](https://songhuahu-umd.github.io/Traffic%20Simulation)
++ [Digital-twin Cities and Spatiotemporal Data Mining](https://songhuahu-umd.github.io/Traffic%20Simulation)
 + [Disaster Response and Community Resilience](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
-+ [Miscellaneous: Transportation Economics, Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Miscellaneous: Transportation Sustainability, Transportation Economics, Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
 
 ***
 
@@ -46,20 +46,20 @@ Education
 Publications
 ======
 * _Proceedings of the National Academy of Sciences_ <span style="color: maroon"> (**1** Paper)</span>.
-* _Transportation Research Part A: Policy and Practice_ <span style="color: maroon">(**1** Paper, **1** First-Authored)</span>.
-* _Transportation Research Part C: Emerging Technologies_ <span style="color: maroon">(**3** Papers, **3** First-Authored)</span>.
-* _Transportation Research Part D: Transport and Environment_ <span style="color: maroon">(**3** Papers, **3** First-Authored)</span>.
-* _Journal of Transport Geography_ <span style="color: maroon">(**2** Papers, **2** First-Authored)</span>.
-* _Sustainable Cities and Society_ <span style="color: maroon">(**1** Paper, **1** First-Authored)</span>.
-* _IEEE Intelligent Transportation Systems Magazine_ <span style="color: maroon">(**1** Paper, **1** First-Authored)</span>.
+* _Transportation Research Part A: Policy and Practice_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
+* _Transportation Research Part C: Emerging Technologies_ <span style="color: maroon">(**4** Papers, **3** First-Author)</span>.
+* _Transportation Research Part D: Transport and Environment_ <span style="color: maroon">(**3** Papers, **3** First-Author)</span>.
+* _Journal of Transport Geography_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
+* _Sustainable Cities and Society_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
+* _IEEE Intelligent Transportation Systems Magazine_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
 * _Journal of the Royal Society Interface_ <span style="color: maroon">(**1** Paper)</span>.
-* _Vaccine_ <span style="color: maroon">(**2** Papers, **2** First-Authored)</span>.
-* _PLOS One_ <span style="color: maroon">(**2** Papers, **1** First-Authored)</span>.
+* _Vaccine_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
+* _PLOS One_ <span style="color: maroon">(**2** Papers, **1** First-Author)</span>.
 * _Health & Place_ <span style="color: maroon">(**1** Paper)</span>.
 * _International Journal of Sustainable Transportation_ <span style="color: maroon">(**1** Paper)</span>.
 * _Transportation Research Record_ <span style="color: maroon">(**2** Papers)</span>.
 * _IEEE International Conference on Intelligent Transportation Systems_ <span style="color: maroon">(**2** Papers, **2**
-  First-Authored)</span>.
+  First-Author)</span>.
 * _Transportation Research Board Annual Meeting_ <span style="color: maroon">(**>20** Posters/Presentations)</span>.
 
 <span style="color: purple">**See the full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
@@ -68,6 +68,7 @@ Publications
 
 Awards
 ======
+* Chinese Overseas Transportation Association (COTA) Best Dissertation Award, 2023.
 * [UMD CEE Best Doctoral Research Award](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards), University of Maryland, College Park, 2023.
 * Outstanding Reviewer, Transportation Research Part D: Transport and Environment, 2023.
 * [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards), University of Maryland, College Park, 2021.
@@ -85,7 +86,8 @@ Reviews
 ======
 * **Journal Article Reviewer**
   * <span style="color: orange">**Transportation**</span>: Accident Analysis and Prevention; IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
-    Transportation Research Part B: Methodological; Transportation Research Part D: Transport and Environment; Transport Policy;
+    Transportation; Transportation Research Part B: Methodological; Transportation Research Part C: Emerging Technologies; 
+    Transportation Research Part D: Transport and Environment; Transport Policy;
     Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
     Transportation Research Interdisciplinary Perspectives.
   * <span style="color: orange">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society; Cities; Computational Urban Science; Geo-spatial Information Science;
