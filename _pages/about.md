@@ -46,13 +46,14 @@ Education
 Publications
 ======
 * _Proceedings of the National Academy of Sciences_ <span style="color: maroon"> (**1** Paper)</span>.
-* _Transportation Research Part A: Policy and Practice_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
+* _Transportation Research Part A: Policy and Practice_ <span style="color: maroon">(**4** Papers, **2** First-Author)</span>.
 * _Transportation Research Part C: Emerging Technologies_ <span style="color: maroon">(**4** Papers, **3** First-Author)</span>.
 * _Transportation Research Part D: Transport and Environment_ <span style="color: maroon">(**3** Papers, **3** First-Author)</span>.
 * _Journal of Transport Geography_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
 * _Sustainable Cities and Society_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
 * _IEEE Intelligent Transportation Systems Magazine_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
 * _Journal of the Royal Society Interface_ <span style="color: maroon">(**1** Paper)</span>.
+* _Journal of Planning Education and Research_ <span style="color: maroon">(**1** Paper)</span>.
 * _Vaccine_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
 * _PLOS One_ <span style="color: maroon">(**2** Papers, **1** First-Author)</span>.
 * _Health & Place_ <span style="color: maroon">(**1** Paper)</span>.
