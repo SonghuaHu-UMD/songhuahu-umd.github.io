@@ -9,7 +9,7 @@ redirect_from:
 - /about.html
 
 ---
-Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
+Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at MIT.
 My research explores the nexus of **urban sensing**, **human mobility**, and **transportation system**. 
 I'm passionate about seeking innovative solutions for complex urban transportation challenges using emerging crowdsensing and modelling techniques. 
 
