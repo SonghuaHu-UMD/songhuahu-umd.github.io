@@ -52,6 +52,7 @@ Publications
 * _Journal of Transport Geography_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
 * _Sustainable Cities and Society_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
 * _IEEE Intelligent Transportation Systems Magazine_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
+* _International Journal of Disaster Risk Reduction_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
 * _Journal of the Royal Society Interface_ <span style="color: maroon">(**1** Paper)</span>.
 * _Journal of Planning Education and Research_ <span style="color: maroon">(**1** Paper)</span>.
 * _Vaccine_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
@@ -86,15 +87,19 @@ Awards
 Reviews
 ======
 * **Journal Article Reviewer**
-  * <span style="color: orange">**Transportation**</span>: Accident Analysis and Prevention; IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
-    Transportation; Transportation Research Part B: Methodological; Transportation Research Part C: Emerging Technologies; 
+  * <span style="color: orange">**Transportation**</span>: Accident Analysis and Prevention; Computer-Aided Civil and Infrastructure Engineering; 
+    IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Intelligent Transportation Infrastructure;
+    Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
+    Transportation; Transportation Research Part A: Policy and Practice; Transportation Research Part B: Methodological; Transportation Research Part C: Emerging Technologies; 
     Transportation Research Part D: Transport and Environment; Transport Policy;
     Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
     Transportation Research Interdisciplinary Perspectives.
-  * <span style="color: orange">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society; Cities; Computational Urban Science; Geo-spatial Information Science;
+  * <span style="color: orange">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society; Cities; 
+    Computational Urban Science; Geo-spatial Information Science; International Journal of Geographical Information Science;
     Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society.
   * <span style="color: orange">**Public Health**</span>: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
-  * <span style="color: orange">**Multidisciplinary**</span>: Cogent Engineering; IEEE Access; Nature Cities; Scientific Reports; PLOS One.
+  * <span style="color: orange">**Multidisciplinary**</span>: Cogent Engineering; IEEE Access; Information Fusion; International Journal of Data Science and Analytics; 
+    Nature Cities; Scientific Reports; Technological Forecasting and Social Change; PLOS One.
 
 * **Conference Proceeding Reviewer**
   * TRB Transportation Research Board Annual Meeting;
