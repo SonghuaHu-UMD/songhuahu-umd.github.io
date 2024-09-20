@@ -13,11 +13,11 @@ Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at MIT speciali
 My work leverages big data and new computational methods to advance smart, sustainable, resilient, and equitable mobility systems.
 
 My research specifically involves: 1) Collecting and fusing multi-structured mobility data collected from
-<span style="color: green"> _Mobile phones, City cameras, Connected vehicles, and Social media_</span>. 2)
-Simulating and forecasting large-scale human movement under both <span style="color: orange"> Recurrent and Non-Recurrent 
-scenarios</span>. 3) Modeling the interaction among <span style="color: purple"> Human Mobility, Urban Environment, Civil Infrastructure, Public Health, and Social Equity</span>. 
+<span style="color: Yellowgreen"> Mobile phones, City cameras, Connected vehicles, and Social media</span>. 2)
+Simulating and forecasting large-scale human movement under <span style="color: red"> both Recurrent and Non-Recurrent 
+scenarios</span>. 3) Modeling the interaction among <span style="color: Yellowgreen"> Human Mobility, Urban Environment, Civil Infrastructure, Public Health, and Social Equity</span>. 
 
-My theoretical foundation surrounds <span style="color: red">_Sptiotemporal Deep learning, Statistics, Traffic Simulation, Complex Network Science_</span>.
+My theoretical foundation surrounds <span style="color: Darkorange">_Sptiotemporal Deep learning, Statistics, Traffic Simulation, Complex Network Science_</span>.
 Applications of my work span areas such as:
 <span style="color: royalblue"> **Sustainable Mobility** </span> (Vehicle Emission Estimation, Vehicle Electrification, Mobility as a Service (MaaS)),
 <span style="color: royalblue">**Emergency Response** </span>(Network Resilience, Community Vulnerability), 
