@@ -15,13 +15,14 @@ These devices generate vast amounts of spatiotemporal data on individual travel.
 Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, broader spatiotemporal coverage, and real-time updates. 
 My research showcases their powerful capability in modeling travel demand, vehicle emissions, disease transmission, and network resilience.
 
-<a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
+<p align="center">
+    <img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
+    <em>image_caption</em>
+    <img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
+    <img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
+</p>
 
-<a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
-
-<a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>
-
-
+[//]: # (<a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>)
 
 ---
 
