@@ -11,12 +11,17 @@ redirect_from:
 ---
 Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at MIT specializing in urban mobility sensing and computing.
 My research lies in leveraging big data and advanced computational methods to enhance urban transportation systems, 
-minimize environmental impact, and support equitable and efficient transport planning.
+minimize environmental impact of road traffic, and support equitable and efficient transportation planning.
 
 Specifically, my research aims to: 
-1) Collect, organize, and fuse multi-structured mobility data crowdsouring from <span style="color: green"> _Mobile phones, City cameras, Connected vehicles, and Social media_</span>; 
-2) Replicate, simulate, and forecast large-scale human movement patterns over long periods under both recurrent and non-recurrent scenarios.  
-3) Examine the interaction between human mobility and urban environment, civil infrastructure, public health, and community equity.
+
+1)  Collect, organize, and fuse multi-structured mobility data crowdsouring from <span style="color: green"> _Mobile phones, City cameras, Connected vehicles, and Social media_</span>. 
+2)  Replicate, simulate, and forecast large-scale human movement patterns over long periods under both recurrent and non-recurrent scenarios.  
+3)  Examine the interaction between human mobility and urban environment, civil infrastructure, public health, and community equity. 
+
+<span style="color: orange"> (_Deep learning, Statistics, Simulation, Network science, Cloud computing_)</span>,
+My work has been applied to various scenarios such as <span style="color: blue"> _Digit-twin mobility system, Travel demand modelling, Transport geography, Mobility as a Service (MaaS), Travel behavioral economics, 
+Disaster response, Transportation decarbonization, and Travel and Infectious Disease_</span>.
 
 ***
 
@@ -27,9 +32,9 @@ Research Interests
 + [Spatiotemporal AI](https://songhuahu-umd.github.io/Traffic%20Simulation)
 + [Emergency Response](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Transport and Health](https://songhuahu-umd.github.io/Public%20Health)
-+ [Sustainable Mobility](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Sustainable Mobility]
 + [Transportation Economics](https://songhuahu-umd.github.io/Shared%20Mobility)
-+ [Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Mobility as a service (MaaS)]
 
 ***
 
