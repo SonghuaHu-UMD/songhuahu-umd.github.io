@@ -13,11 +13,12 @@ Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at MIT speciali
 My work leverages big data and new computational methods to advance smart, sustainable, resilient, and equitable mobility systems.
 
 My research specifically involves: 1) Collecting and fusing multi-structured mobility data collected from
-<span style="color: Yellowgreen"> Mobile phones, City cameras, Connected vehicles, and Social media</span>. 2)
+<span style="color: Yellowgreen"> Mobile Phones, City Cameras, Connected Vehicles, and Social Media</span>. 2)
 Simulating and forecasting large-scale human movement under <span style="color: red"> both Recurrent and Non-Recurrent 
-scenarios</span>. 3) Modeling the interaction among <span style="color: Yellowgreen"> Human Mobility, Urban Environment, Civil Infrastructure, Public Health, and Social Equity</span>. 
+scenarios</span>. 3) Modeling the interaction between <span style="color: Yellowgreen">**Human Mobility**</span> and 
+<span style="color: Yellowgreen"> Urban Environment, Transport Network, Public Health, and Social Equity</span>. 
 
-My theoretical foundation surrounds <span style="color: Darkorange">_**Sptiotemporal Deep learning, Statistics, Traffic Simulation, Complex Network Science**_</span>.
+My theoretical foundation surrounds <span style="color: Darkorange">_**Deep learning, Statistics, Traffic Simulation, Network Science**_</span>.
 Applications of my work span areas such as:
 <span style="color: royalblue"> **Sustainable Mobility** </span> (Vehicle Emission Estimation, Vehicle Electrification, Mobility as a Service (MaaS)),
 <span style="color: royalblue">**Emergency Response** </span>(Network Resilience, Community Vulnerability), 
@@ -29,7 +30,7 @@ Applications of my work span areas such as:
 Research Interests
 ======
 
-+ [Mobility Crowdsensing](https://songhuahu-umd.github.io/Human%20Mobility)
++ [Mobility Crowdsensing](https://songhuahu-umd.github.io/CrowdSensing)
 + [Spatiotemporal AI](https://songhuahu-umd.github.io/Traffic%20Simulation)
 + [Emergency Response](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Transport and Health](https://songhuahu-umd.github.io/Public%20Health)
