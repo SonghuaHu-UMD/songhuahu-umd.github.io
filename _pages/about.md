@@ -21,7 +21,7 @@ My theoretical foundation surrounds <span style="color: red">_Sptiotemporal Deep
 Applications of my work span areas such as:
 <span style="color: blue"> **Sustainable Mobility** </span> (Vehicle Emission Estimation, Vehicle Electrification, Mobility as a Service (MaaS)),
 <span style="color: blue">**Emergency Response** </span>(Network Resilience, Community Vulnerability), <span style="color: blue">**Transport and Health** </span>(Computational Epidemiology, Human Exposure, Health Disparity),
-<span style="color: blue">**Transportation Planning** </span>(Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis, Public Perception, Accessibility)</span>.
+<span style="color: blue">**Transportation Planning and Management** </span>(Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis, Public Perception, Accessibility).
 
 ***
 
