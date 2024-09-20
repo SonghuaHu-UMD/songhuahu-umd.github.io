@@ -22,7 +22,7 @@ Applications of my work span areas such as:
 <span style="color: royalblue"> **Sustainable Mobility** </span> (Vehicle Emission Estimation, Vehicle Electrification, Mobility as a Service (MaaS)),
 <span style="color: royalblue">**Emergency Response** </span>(Network Resilience, Community Vulnerability), 
 <span style="color: royalblue">**Transport and Health** </span>(Computational Epidemiology, Human Exposure, Health Disparity),
-<span style="color: royalblue">**Transportation Planning** </span>(Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis, Public Perception, Accessibility).
+<span style="color: royalblue">**Transportation Planning, Management, and Operation** </span>(Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis, Public Perception, Accessibility).
 
 ***
 
@@ -126,7 +126,7 @@ Skills
 * <span style="color: gray">**Deep learning/Machine learning**</span>
   *  Explainable AI, Spatiotemporal forecasting, Graph neural network, Computer vision, Natural language processing, Traditional ML.
 * <span style="color: gray">**Traffic Simulation**</span>
-  * **Micro** (Vissim, Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
+  * Micro (Vissim, Sumo), Agent (MATSim, DTALite, AnyLogic), Macro (TransCAD, Visum).
 * <span style="color: gray">**(Spatiotemporal) Network Analysis**</span>
   * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx.
 
