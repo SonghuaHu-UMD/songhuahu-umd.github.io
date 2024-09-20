@@ -17,7 +17,7 @@ My research specifically involves: 1) Collecting and fusing multi-structured mob
 Simulating and forecasting large-scale human movement under <span style="color: red"> both Recurrent and Non-Recurrent 
 scenarios</span>. 3) Modeling the interaction among <span style="color: Yellowgreen"> Human Mobility, Urban Environment, Civil Infrastructure, Public Health, and Social Equity</span>. 
 
-My theoretical foundation surrounds <span style="color: Darkorange">_Sptiotemporal Deep learning, Statistics, Traffic Simulation, Complex Network Science_</span>.
+My theoretical foundation surrounds <span style="color: Darkorange">_**Sptiotemporal Deep learning, Statistics, Traffic Simulation, Complex Network Science**_</span>.
 Applications of my work span areas such as:
 <span style="color: royalblue"> **Sustainable Mobility** </span> (Vehicle Emission Estimation, Vehicle Electrification, Mobility as a Service (MaaS)),
 <span style="color: royalblue">**Emergency Response** </span>(Network Resilience, Community Vulnerability), 
@@ -114,20 +114,20 @@ Reviews
     IACP International Association of China Planning;
     IEEE Intelligent Transportation Systems Society Conference Management System
 
-<span style="color: purple">**See the full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)**</span>
+<span style="color: Yellowgreen">**See the full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)**</span>
 
 Skills
 ======
 
-* <span style="color: Darkorange">**Programming**</span>
+* <span style="color: gray">**Programming**</span>
     * Python, R, SQL, Cloud Computing (Spark, AWS), Matlab, Git, Bash, Java, HTML.
-* <span style="color: Darkorange">**Statistics**</span>
+* <span style="color: gray">**Statistics**</span>
     * Causal inference, Generalized additive mixed model, Time series, Survival analysis, Spatial econometrics, Discrete choice model.
-* <span style="color: Darkorange">**Deep learning/Machine learning**</span>
+* <span style="color: gray">**Deep learning/Machine learning**</span>
   *  Explainable AI, Spatiotemporal forecasting, Graph neural network, Computer vision, Natural language processing, Traditional ML.
-* <span style="color: Darkorange">**Traffic Simulation**</span>
+* <span style="color: gray">**Traffic Simulation**</span>
   * **Micro** (Vissim, Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
-* <span style="color: Darkorange">**(Spatiotemporal) Network Analysis**</span>
+* <span style="color: gray">**(Spatiotemporal) Network Analysis**</span>
   * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx.
 
 ***
