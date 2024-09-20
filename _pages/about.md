@@ -10,20 +10,20 @@ redirect_from:
 
 ---
 Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at MIT specializing in urban mobility sensing and computing.
-My research lies in leveraging big data and advanced computational methods to contribute to a smart, green, resilient, and equitable future mobility system.
+My work focuses on leveraging big data and new computational methods to advance smart, sustainable, resilient, and equitable mobility systems.
 
-Specifically, my research includes:
+My research specifically involves:
 
 1. Collect, organize, and fuse multi-structured mobility data crowdsouring from <span style="color: green"> _Mobile phones, City cameras, Connected vehicles, and Social media_</span>.
 
 2. Replicate, simulate, and forecast large-scale human movement patterns over long periods under both recurrent and non-recurrent scenarios.
 
-3. Examine the interaction between human mobility and urban environment, civil infrastructure, public health, and community equity. 
+3.  Model the interaction between human mobility and urban environment, civil infrastructure, public health, and social equity. 
 
-My theoretical foundations surrounds <span style="color: orange">_Deep learning, Statistics, Traffic Simulation, Network science_</span>.
-My work has been applied to various sub-categories including: 
-<span style="color: blue"> _Digit-twin mobility system, Travel demand modelling, Transport geography, Mobility as a Service (MaaS), Travel behavioral economics, 
-Disaster response, Transportation decarbonization, and Travel and Infectious Disease_</span>.
+My theoretical foundation surrounds <span style="color: orange">_Deep learning, Statistics, Traffic Simulation, Network science_</span>.
+The practical applications of my work span various areas, such as:
+<span style="color: blue"> _Digit-twin mobility system, Travel demand modelling, Transport geography, Mobility as a Service (MaaS), Transportation Economics, Travel behavioral analysis, 
+Disaster response, Community Resilience, Transport Emission, Human Exposure, and Travel and Infectious Disease_</span>.
 
 ***
 
