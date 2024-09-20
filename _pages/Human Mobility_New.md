@@ -9,13 +9,11 @@ Nowadays, ubiquitous mobile positioning, camera surveillance, and social media h
 revolutionizing the approach to monitoring and modeling large-scale human travel. 
 My work focuses on extracting useful information from these raw big data and applying them to address various mobility challenges.
 
-### <span style="color: green"> Mobile Phone Location </span> 📱📱📱🚶🚶🚶
-The 21st century witnessed the wide spread of mobile phones with positioning sensors.
-Mobile phone location data contain massive spatiotemporal information on individual travel. 
-Compared with traditional surveys and static sensors, mobile phone data have 
-high penetration rate, wide spatiotemporal coverage, and real-time update frequency. 
-My research demonstrates its strong capability in modelling travel demand, disease transmission, 
-accessibility, and social equity:
+### <span style="color: green"> Mobile Device Location </span> 📱📱📱🚶🚶🚶
+Mobile devices (cellphones, connected vehicles) with positioning sensors are ubiquitous.
+These devices generate vast amounts of spatiotemporal data on individual travel. 
+Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, broader spatiotemporal coverage, and real-time updates. 
+My research showcases their powerful capability in modeling travel demand, vehicle emissions, disease transmission, and network resilience.
 
 > <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a> 
 Using location data of over 150 million monthly active mobile devices in the US, 
@@ -23,11 +21,7 @@ we successfully measure how human mobility changed during the COVID-19 pandemic 
 average trips per person, average person-miles traveled, and percentage of residents staying home. Data are updated daily 
 and made publicly available via an [online platform](https://data.covid.umd.edu/).
 
-> <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2020.0344"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF3.png" width="300" hspace="20"></a>
-By analyzing the mobile device location data during the pandemic, we find a spontaneous mobility reduction that occurred 
-regardless of government actions and a ‘floor’ phenomenon, where human mobility reached a lower bound and 
-stopped decreasing soon after each state announced the stay-at-home order.
-We also document that the states' stay-at-home policies have only led to about a 5% reduction in average human mobility.
+
 
 ---
 
@@ -51,14 +45,14 @@ We also develop an entirely automated traffic detector generator based on vanish
 ---
 
 
-### <span style="color: green"> Social Media Text </span>💬💬💬👥👥👥
-Social media comments provide a rich source of text data containing population attitudes, sentiments, and perceptions.
-Harnessing Large Language Model (LLM), my research focuses on extracting human sentiments regarding topics related to urban planning and travel, 
-such as parking issues, accessibility challenges, and fast-growing food delivery services. 
-I also fuse them with mobile phone location data to track how individuals respond to natural disasters.
+### <span style="color: green"> Social Media </span>💬💬💬👥👥👥
+Social media comments provide a rich source of text data containing public sentiments and perceptions.
+By leveraging both traditional text mining techniques and new LLMs, 
+I aim to quantify how people feel about various urban services, 
+including parking, accessibility, the built environment, health care services, and food delivery.
 
-> <a href="https://senseable.mit.edu/"><img style="float: left" src="https://songhuahu-umd.github.io/images/social_media.jpg" width="300" hspace="10"></a>
-The surge in food delivery services is reshaping lifestyles and urban form.
-Through an analysis of customer reviews of food delivery services extracted from nationwide Google Reviews, 
-we examine how people's attitudes to food delivery change over time and identify the key related factors. 
-By fusing with mobile phone location data, we further infer whether the growth of delivery services would decrease in-person visits to restaurants.
+> <a href="https://arxiv.org/pdf/2407.05104"><img style="float: left" src="https://songhuahu-umd.github.io/images/parking.png" width="300" hspace="10"></a>
+By examining 5 million parking-related reviews for 1.1M POIs sourced from Google Maps reviews, 
+we investigate public perceptions of parking across the US at a census block group level. 
+We link them with local socio-spatial factors and find denser urban areas with lower socioeconomic status 
+are more likely to exhibit negative parking sentiment.
