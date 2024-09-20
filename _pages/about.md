@@ -12,18 +12,17 @@ redirect_from:
 Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at MIT specializing in urban mobility sensing and computing.
 My work focuses on leveraging big data and new computational methods to advance smart, sustainable, resilient, and equitable mobility systems.
 
-My research specifically involves:
+My research specifically involves: 1) Collect, organize, and fuse multi-structured mobility data crowdsouring from
+<span style="color: green"> _Mobile phones, City cameras, Connected vehicles, and Social media_</span>. 2) Replicate, 
+simulate, and forecast large-scale human movement patterns over long periods under both <span style="color: orange"> recurrent and non-recurrent 
+scenarios</span>. 3) Model the interaction between human mobility and <span style="color: purple"> urban environment, civil infrastructure, public health, and social equity</span>. 
 
-1. Collect, organize, and fuse multi-structured mobility data crowdsouring from <span style="color: green"> _Mobile phones, City cameras, Connected vehicles, and Social media_</span>.
-
-2. Replicate, simulate, and forecast large-scale human movement patterns over long periods under both recurrent and non-recurrent scenarios.
-
-3.  Model the interaction between human mobility and urban environment, civil infrastructure, public health, and social equity. 
-
-My theoretical foundation surrounds <span style="color: orange">_Deep learning, Statistics, Traffic Simulation, Network science_</span>.
+My theoretical foundation surrounds <span style="color: red">_Sptiotemporal Deep learning, Statistics, Traffic Simulation, Complex Network science_</span>.
 The practical applications of my work span various areas, such as:
-<span style="color: blue"> _Digit-twin mobility system, Travel demand modelling, Transport geography, Mobility as a Service (MaaS), Transportation Economics, Travel behavioral analysis, 
-Disaster response, Community Resilience, Transport Emission, Human Exposure, and Travel and Infectious Disease_</span>.
+<span style="color: blue"> Vehicle Emission Estimation, Electrification, Mobility as a Service (MaaS), Digit-twin,
+Disaster Response, Transport Resilience, Community Vulnerability,
+Computational Epidemiology, Human Exposure, Health Disparity, 
+Public Perception, Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis </span>.
 
 ***
 
