@@ -19,11 +19,9 @@ scenarios</span>. 3) Model the interaction between human mobility and <span styl
 
 My theoretical foundation surrounds <span style="color: red">_Sptiotemporal Deep learning, Statistics, Traffic Simulation, Complex Network science_</span>.
 The practical applications of my work span various areas, such as:
-<span style="color: blue"> Vehicle Emission Estimation, Electrification, Mobility as a Service (MaaS), Digit-twin,
-Disaster Response, Transport Resilience, Community Vulnerability,
-Computational Epidemiology, Human Exposure, Health Disparity,
-Transportation Planning, Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis,
-Public Perception, Accessibility </span>.
+<span style="color: blue"> **Sustainable Mobility** (Vehicle Emission Estimation, Vehicle Electrification, Mobility as a Service (MaaS)),
+**Emergency Response** (Network Resilience, Community Vulnerability), **Transport and Health** (Computational Epidemiology, Human Exposure, Health Disparity),
+**Transportation Planning** (Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis, Public Perception, Accessibility) </span>.
 
 ***
 
@@ -35,8 +33,7 @@ Research Interests
 + [Emergency Response](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Transport and Health](https://songhuahu-umd.github.io/Public%20Health)
 + [Sustainable Mobility](https://songhuahu-umd.github.io/Shared%20Mobility)
-+ [Transportation Economics](https://songhuahu-umd.github.io/Shared%20Mobility)
-+ [Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Transportation Planning](https://songhuahu-umd.github.io/Shared%20Mobility)
 
 ***
 
