@@ -95,17 +95,17 @@ Awards
 Reviews
 ======
 * **Journal Article Reviewer**
-  * <span style="color: orange">**Transportation**</span>: Accident Analysis and Prevention; Computer-Aided Civil and Infrastructure Engineering; 
+  * <span style="color: Darkorange">**Transportation**</span>: Accident Analysis and Prevention; Computer-Aided Civil and Infrastructure Engineering; 
     IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Intelligent Transportation Infrastructure;
     Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
     Transportation; Transportation Research Part A/B/C/D/E; Transport Policy;
     Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
     Transportation Research Interdisciplinary Perspectives; Urban Rail Transit.
-  * <span style="color: orange">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society; Cities; 
+  * <span style="color: Darkorange">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society; Cities; 
     Computational Urban Science; Geo-spatial Information Science; International Journal of Geographical Information Science;
     Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society.
-  * <span style="color: orange">**Public Health**</span>: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
-  * <span style="color: orange">**Multidisciplinary**</span>: Cogent Engineering; IEEE Access; Information Fusion; International Journal of Data Science and Analytics; 
+  * <span style="color: Darkorange">**Public Health**</span>: AIMS Public Health; Biosafety and Health; Health Data Science; The Lancet Regional Health - Western Pacific.
+  * <span style="color: Darkorange">**Multidisciplinary**</span>: Cogent Engineering; IEEE Access; Information Fusion; International Journal of Data Science and Analytics; 
     Nature Cities; Scientific Reports; Technological Forecasting and Social Change; PLOS One.
 
 * **Conference Proceeding Reviewer**
@@ -119,15 +119,15 @@ Reviews
 Skills
 ======
 
-* <span style="color: green">**Programming**</span>
+* <span style="color: Darkorange">**Programming**</span>
     * Python, R, SQL, Cloud Computing (Spark, AWS), Matlab, Git, Bash, Java, HTML.
-* <span style="color: green">**Statistics**</span>
+* <span style="color: Darkorange">**Statistics**</span>
     * Causal inference, Generalized additive mixed model, Time series, Survival analysis, Spatial econometrics, Discrete choice model.
-* <span style="color: green">**Deep learning/Machine learning**</span>
+* <span style="color: Darkorange">**Deep learning/Machine learning**</span>
   *  Explainable AI, Spatiotemporal forecasting, Graph neural network, Computer vision, Natural language processing, Traditional ML.
-* <span style="color: green">**Traffic Simulation**</span>
+* <span style="color: Darkorange">**Traffic Simulation**</span>
   * **Micro** (Vissim, Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
-* <span style="color: green">**(Spatiotemporal) Network Analysis**</span>
+* <span style="color: Darkorange">**(Spatiotemporal) Network Analysis**</span>
   * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx.
 
 ***
