@@ -51,8 +51,14 @@ By leveraging both traditional text mining techniques and new LLMs,
 I aim to quantify how people feel about various urban services, 
 including parking, accessibility, the built environment, health care services, and food delivery.
 
-> <a href="https://arxiv.org/pdf/2407.05104"><img style="float: left" src="https://songhuahu-umd.github.io/images/parking.png" width="500" hspace="10"></a>
+> <a href="https://arxiv.org/pdf/2407.05104"><img style="float: left" src="https://songhuahu-umd.github.io/images/parking.png" width="400" hspace="10"></a>
 By examining 5 million parking-related reviews for 1.1M POIs sourced from Google Maps reviews, 
-we investigate public perceptions of parking across the US at a census block group level. 
+we investigate public sentiment towards parking across the whole US at a census block group level. 
 We link them with local socio-spatial factors and find denser urban areas with lower socioeconomic status 
+are more likely to exhibit negative parking sentiment.
+
+> <a href="https://arxiv.org/pdf/2409.08459"><img style="float: left" src="https://songhuahu-umd.github.io/images/access_framework.png" width="400" hspace="10"></a>
+By examining 5 million parking-related reviews for 1.1M POIs sourced from Google Maps reviews,
+we investigate public perceptions of parking across the US at a census block group level.
+We link them with local socio-spatial factors and find denser urban areas with lower socioeconomic status
 are more likely to exhibit negative parking sentiment.
