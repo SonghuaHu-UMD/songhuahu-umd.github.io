@@ -5,10 +5,9 @@ permalink: /CrowdSensing/
 author_profile: true
 ---
 
-Nowadays, advanced wireless communication, unobtrusive positioning technologies, ubiquitous camera surveillance systems, 
-and large-scale big data infrastructures have generated extensive volumes of transportation data,
-revolutionizing the approach to monitoring, quantifying, and modeling human travel. 
-My research aims to fuse these emerging data sources to make urban transportation systems more senseable, intelligent, and efficient.
+Nowadays, ubiquitous mobile positioning, camera surveillance, and social media have generated vast amounts of human mobility data,
+revolutionizing the approach to monitoring and modeling large-scale human travel. 
+My work focuses on extracting useful information from these raw big data and applying them to address various mobility challenges.
 
 ### <span style="color: green"> Mobile Phone Location </span> 📱📱📱🚶🚶🚶
 The 21st century witnessed the wide spread of mobile phones with positioning sensors.
