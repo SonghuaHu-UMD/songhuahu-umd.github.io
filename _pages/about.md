@@ -21,8 +21,9 @@ My theoretical foundation surrounds <span style="color: red">_Sptiotemporal Deep
 The practical applications of my work span various areas, such as:
 <span style="color: blue"> Vehicle Emission Estimation, Electrification, Mobility as a Service (MaaS), Digit-twin,
 Disaster Response, Transport Resilience, Community Vulnerability,
-Computational Epidemiology, Human Exposure, Health Disparity, 
-Public Perception, Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis </span>.
+Computational Epidemiology, Human Exposure, Health Disparity,
+Transportation Planning, Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis,
+Public Perception, Accessibility </span>.
 
 ***
 
@@ -33,9 +34,9 @@ Research Interests
 + [Spatiotemporal AI](https://songhuahu-umd.github.io/Traffic%20Simulation)
 + [Emergency Response](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Transport and Health](https://songhuahu-umd.github.io/Public%20Health)
-+ [Sustainable Mobility]
++ [Sustainable Mobility](https://songhuahu-umd.github.io/Shared%20Mobility)
 + [Transportation Economics](https://songhuahu-umd.github.io/Shared%20Mobility)
-+ [Mobility as a service (MaaS)]
++ [Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
 
 ***
 
