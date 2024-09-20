@@ -21,7 +21,7 @@ My theoretical foundation surrounds <span style="color: red">_Sptiotemporal Deep
 Applications of my work span areas such as:
 <span style="color: blue"> **Sustainable Mobility** </span> (Vehicle Emission Estimation, Vehicle Electrification, Mobility as a Service (MaaS)),
 <span style="color: blue">**Emergency Response** </span>(Network Resilience, Community Vulnerability), <span style="color: blue">**Transport and Health** </span>(Computational Epidemiology, Human Exposure, Health Disparity),
-<span style="color: blue">**Transportation Planning** </span>(Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis, Public Perception, Accessibility) </span>.
+<span style="color: blue">**Transportation Planning** </span>(Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis, Public Perception, Accessibility)</span>.
 
 ***
 
@@ -33,7 +33,7 @@ Research Interests
 + [Emergency Response](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
 + [Transport and Health](https://songhuahu-umd.github.io/Public%20Health)
 + [Sustainable Mobility](https://songhuahu-umd.github.io/Shared%20Mobility)
-+ [Transportation Planning](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Miscellaneous](https://songhuahu-umd.github.io/Shared%20Mobility)
 
 ***
 
@@ -119,12 +119,11 @@ Skills
 ======
 
 * <span style="color: green">**Programming**</span>
-    * Python, R, SQL, Cloud Computing, Matlab, Git, Bash, Java, HTML.
+    * Python, R, SQL, Cloud Computing (Spark, AWS), Matlab, Git, Bash, Java, HTML.
 * <span style="color: green">**Statistics**</span>
-    * Causal inference, Time series, Survival analysis, Spatial econometrics, Discrete choice model.
+    * Causal inference, Generalized additive mixed model, Time series, Survival analysis, Spatial econometrics, Discrete choice model.
 * <span style="color: green">**Deep learning/Machine learning**</span>
-  *  Time series forecasting, Graph neural network, Computer vision, Natural language processing, 
-  Tree models, Explainable AI.
+  *  Explainable AI, Spatiotemporal forecasting, Graph neural network, Computer vision, Natural language processing, Traditional ML.
 * <span style="color: green">**Traffic Simulation**</span>
   * **Micro** (Vissim, Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
 * <span style="color: green">**(Spatiotemporal) Network Analysis**</span>
