@@ -9,24 +9,27 @@ redirect_from:
 - /about.html
 
 ---
-Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at MIT.
-My research explores the nexus of **urban sensing**, **human mobility**, and **transportation system**. 
-I'm passionate about seeking innovative solutions for complex urban transportation challenges using emerging crowdsensing and modelling techniques. 
+Greetings! I'm Songhua Hu (胡松华), a Postdoctoral Researcher at MIT specializing in urban mobility sensing and computing.
+My research lies in leveraging big data and advanced computational methods to enhance urban transportation systems, 
+minimize environmental impact, and support equitable and efficient transport planning.
 
-I've been working with a diverse set of sensors <span style="color: green"> (_Mobile phones, Mobile apps, Traffic cameras, Floating cars, Social media_)</span> using different modelling approaches <span style="color: orange"> (_Deep learning, Statistics, Simulation, Network science, Cloud computing_)</span>. 
-My work has been applied to various scenarios such as <span style="color: blue"> _Digit-twin mobility system, Travel demand modelling, Transport geography, Mobility as a Service (MaaS), Travel behavioral economics, 
-Disaster response, Transportation decarbonization, and Travel and Infectious Disease_</span>.
+Specifically, my research aims to: 
+1) Collect, organize, and fuse multi-structured mobility data crowdsouring from <span style="color: green"> _Mobile phones, City cameras, Connected vehicles, and Social media_</span>; 
+2) Replicate, simulate, and forecast large-scale human movement patterns over long periods under both recurrent and non-recurrent scenarios.  
+3) Examine the interaction between human mobility and urban environment, civil infrastructure, public health, and community equity.
 
 ***
 
-Research Highlights
+Research Interests
 ======
 
-+ [Urban Mobility Sensing and Computing](https://songhuahu-umd.github.io/Human%20Mobility)
-+ [Digital-twin Cities and Spatiotemporal Data Mining](https://songhuahu-umd.github.io/Traffic%20Simulation)
-+ [Disaster Response and Community Resilience](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
-+ [Computational Epidemiology and Health Geography](https://songhuahu-umd.github.io/Public%20Health)
-+ [Miscellaneous: Transportation Sustainability, Transportation Economics, Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Mobility Crowdsensing](https://songhuahu-umd.github.io/Human%20Mobility)
++ [Spatiotemporal AI](https://songhuahu-umd.github.io/Traffic%20Simulation)
++ [Emergency Response](https://songhuahu-umd.github.io/Infrastructure%20Resilience)
++ [Transport and Health](https://songhuahu-umd.github.io/Public%20Health)
++ [Sustainable Mobility](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Transportation Economics](https://songhuahu-umd.github.io/Shared%20Mobility)
++ [Mobility as a service (MaaS)](https://songhuahu-umd.github.io/Shared%20Mobility)
 
 ***
 
@@ -70,7 +73,7 @@ Publications
 
 Awards
 ======
-* Chinese Overseas Transportation Association (COTA) Best Dissertation Award, 2023.
+* [Chinese Overseas Transportation Association (COTA) Best Dissertation Award](https://cee.umd.edu/news/story/hu-receives-cota-best-dissertation-award), 2023.
 * [UMD CEE Best Doctoral Research Award](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards), University of Maryland, College Park, 2023.
 * Outstanding Reviewer, Transportation Research Part D: Transport and Environment, 2023.
 * [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards), University of Maryland, College Park, 2021.
@@ -90,10 +93,9 @@ Reviews
   * <span style="color: orange">**Transportation**</span>: Accident Analysis and Prevention; Computer-Aided Civil and Infrastructure Engineering; 
     IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and Technology; Intelligent Transportation Infrastructure;
     Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
-    Transportation; Transportation Research Part A: Policy and Practice; Transportation Research Part B: Methodological; Transportation Research Part C: Emerging Technologies; 
-    Transportation Research Part D: Transport and Environment; Transport Policy;
+    Transportation; Transportation Research Part A/B/C/D/E; Transport Policy;
     Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
-    Transportation Research Interdisciplinary Perspectives.
+    Transportation Research Interdisciplinary Perspectives; Urban Rail Transit.
   * <span style="color: orange">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society; Cities; 
     Computational Urban Science; Geo-spatial Information Science; International Journal of Geographical Information Science;
     Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and Society.
@@ -113,15 +115,12 @@ Skills
 ======
 
 * <span style="color: green">**Programming**</span>
-    * **Python** (pandas, ultralytics, opencv, pytorch, sklearn, pymc), **R** (dplyr, car, lavaan, mgcv, spdep), **SQL** (MySQL,
-      pgAdmin, Impala, Oracle), **Cloud Computing** (PySpark, EMR), Matlab, Git, Bash, Java, HTML.
+    * Python, R, SQL, Cloud Computing, Matlab, Git, Bash, Java, HTML.
 * <span style="color: green">**Statistics**</span>
-    * **Causal inference** (DID, 2SLS, SEM (Mediation analysis, Path analysis), BSTS), **Time series** (ARIMA, SARIMA),
-  **Survival analysis** (Cox, Time-varying Cox), **Regression** (Generalized linear models (Poisson, NB, Zero-Inflated), Generalized additive (mixed) models, PLS, Lasso/Ridge/ElasticNet), 
-  **Spatial econometrics** (SER, SLR, SDR, GWR, GTWR), **Discrete choice model** (Multinomial, Mixed, Nested).
+    * Causal inference, Time series, Survival analysis, Spatial econometrics, Discrete choice model.
 * <span style="color: green">**Deep learning/Machine learning**</span>
-  *  **Time series forecasting** (CNN, LSTM, GRU, Transformer), **Graph neural network** (STGCN), **Computer vision** (Vehicle/Pedestrian Detection, Tracking, Segmentation), **Natural language processing** (Text mining, Topic modelling, Sentiment analysis, LLM), 
-  **Tree models** (RF, XGBoost, LightGBM, CatBoost), **Explainable AI** (SHAP, PDP, ALE).
+  *  Time series forecasting, Graph neural network, Computer vision, Natural language processing, 
+  Tree models, Explainable AI.
 * <span style="color: green">**Traffic Simulation**</span>
   * **Micro** (Vissim, Sumo), **Agent** (MATSim, DTALite, AnyLogic), **Macro** (TransCAD, Visum).
 * <span style="color: green">**(Spatiotemporal) Network Analysis**</span>
