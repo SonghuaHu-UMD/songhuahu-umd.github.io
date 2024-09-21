@@ -47,6 +47,39 @@ We also develop an entirely automated traffic detector generator based on vanish
   </div>
 </div>
 
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://www.sciencedirect.com/science/article/pii/S0968090X2300459X">
+        <img src="https://songhuahu-umd.github.io/images/EVBus.jpg" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[TR Part C]</span></b> 
+To address the battery-related shortcomings of battery electric buses (BEBs), dynamic wireless charging (DWC) technology that allows BEBs to charge while in motion has emerged.
+To resolve the DWS planning problem, we propose a (higher-level) strategic planning model that optimizes the deployment of DWC facilities and battery capacity of BEBs, 
+and then establishes a (lower-level) tactical planning model of optimal charging scheduling under the time-of-use (TOU) tariff mechanism considering the interdependence between infrastructure design and charging activities of BEBs. 
+  </div>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://journals.sagepub.com/doi/abs/10.1177/0739456X241256041">
+        <img src="https://songhuahu-umd.github.io/images/Escooter.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[JPER]</span></b> 
+    The correlation between e-scooter sharing (ESS) and docked bikesharing (DBS) remains ambiguous. 
+    This study compared usage patterns between the two modes, aiming to unveil their evolving relationship. 
+    To account for nonlinear effects, generalized additive mixed models were employed. 
+    The findings indicate that both ESS and DBS programs achieved success in densely populated urban areas, 
+    areas with younger and higher-income populations, as well as on university campuses. 
+    However, a one-sided competitive relationship emerged, with ESS surpassing DBS.
+  </div>
+</div>
 ---
 
 
