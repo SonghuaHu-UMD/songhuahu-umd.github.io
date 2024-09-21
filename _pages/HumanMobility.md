@@ -14,7 +14,7 @@ My research focus on combining these big data with traditional travel demand mod
 multi-modal OD matrices, 2) a set of spatiotemporal neural networks for forecasting future travel demand, and 3)
 a set of traffic simulation tools for simulating traffic flow at both individual and aggregated level.
 
-### <span style="color: green"> Unified pipeline for big-data-driven travel demand modeling </span> 📑📑📑🚩🚩🚩
+### <span style="color: green"> Unified pipeline for big-data-driven travel demand modeling </span> 🚦🚦🚦🚗🚗🚗
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
@@ -30,22 +30,20 @@ a set of traffic simulation tools for simulating traffic flow at both individual
   </div>
 </div>
 
-
+---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/OD2T1.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/OD2T3.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[NetMob 2024]</span></b> Large-scale experimental validation is lacking to assess whether 
-    mobile device location OD can reliably generate road traffic flow distributions. 
-    We introduce an end-to-end pipeline to load mobile device OD matrices onto road networks through dynamic traffic assignment. 
-    The pipeline was applied to 35 metropolitan areas across four countries: Mexico, Colombia, Indonesia, and India. 
-    The results show that the assignment outcomes fail to accurately reflect traffic flow, 
-    particularly in regions with low mobile phone penetration rates, 
-    where high percentages of zero-flow links and unrealistically low traffic volumes are observed even after population weighting.
+    <b><span style="color: purple;">[NetMob 2024]</span></b> Large-scale validation is lacking to assess whether mobile device OD data reliably generates road traffic flow distributions. 
+    We developed an end-to-end pipeline to map mobile OD matrices onto road networks using dynamic traffic assignment, 
+    applied across 35 metropolitan areas in Mexico, Colombia, Indonesia, and India. 
+    Results show that the model fails to capture traffic flow accurately in regions with low mobile phone penetration, 
+    where high rates of zero-flow links and unrealistically low traffic volumes persist, even after population weighting.
   </div>
 </div>
 
