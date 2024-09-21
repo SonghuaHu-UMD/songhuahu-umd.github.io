@@ -15,17 +15,68 @@ These devices generate vast amounts of spatiotemporal data on individual travel.
 Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, broader spatiotemporal coverage, and real-time updates. 
 My research showcases their powerful capability in modeling travel demand, vehicle emissions, disease transmission, and network resilience.
 
-<p align="center">
-    <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1" width="30%" hspace="5"/>
-    <img src="https://songhuahu-umd.github.io/images/OD2T1.png" alt="Title for Image 2" width="30%" hspace="5"/>
-    <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 3" width="30%" hspace="5"/>
-</p>
+<style>
+  .image-container {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    margin: 10px;
+    text-align: center;
+  }
 
-<p align="center">
-  <b>Title for Image 1</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Title for Image 2</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Title for Image 3</b>
-</p>
+  .image-container img {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .image-title {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+</style>
+
+<div class="image-container">
+  <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1" width="30%" />
+  <div class="image-title">Title for Image 1</div>
+</div>
+
+<div class="image-container">
+  <img src="https://songhuahu-umd.github.io/images/OD2T1.png" alt="Title for Image 2" width="30%" />
+  <div class="image-title">Title for Image 2</div>
+</div>
+
+<div class="image-container">
+  <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 3" width="30%" />
+  <div class="image-title">Title for Image 3</div>
+</div>
+
+[//]: # (<p align="center">)
+
+[//]: # (    <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1" width="30%" hspace="5"/>)
+
+[//]: # (    <img src="https://songhuahu-umd.github.io/images/OD2T1.png" alt="Title for Image 2" width="30%" hspace="5"/>)
+
+[//]: # (    <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 3" width="30%" hspace="5"/>)
+
+[//]: # (</p>)
+
+[//]: # ()
+[//]: # (<p align="center">)
+
+[//]: # (  <b>Title for Image 1</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
+
+[//]: # (  <b>Title for Image 2</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
+
+[//]: # (  <b>Title for Image 3</b>)
+
+[//]: # (</p>)
 
 [//]: # (<a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>)
 
