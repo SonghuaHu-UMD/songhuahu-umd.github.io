@@ -87,10 +87,10 @@ a set of traffic simulation tools for simulating traffic flow at both individual
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[Ongoing]</span></b> Human mobility is sensitive to different events including weather events, traffic events, and social events. 
-    We collected over 40 different types of events from different social media platforms and intend to forecast human mobility change under these events.
-    We used LLM for this task, with a focus on forecasting both road traffic condition and community travel demand.
-    Results show that a Vanilla GPT4o can already achieve 15.12% of MAPE, which is significantly higher than the state-of-the-art time series forecasting baselines.
+    <b><span style="color: purple;">[Ongoing]</span></b> Human mobility is highly sensitive to different events, including weather conditions, traffic incidents, and social gatherings. 
+    We collected over 40 different types of events from multiple social media platforms and to forecast human mobility change under these events.
+    Leveraging large language models (LLMs), we focused on forecasting changes in both road traffic conditions and community travel demand.
+    Results show that even a Vanilla GPT4o with some in-context learning can achieve 15.12% of MAPE, significantly outperforming traditional time series forecasting baselines.
   </div>
 </div>
 
