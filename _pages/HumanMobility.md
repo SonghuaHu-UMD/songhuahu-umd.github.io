@@ -11,11 +11,11 @@ Compared to traditional surveys and static sensors, mobile device location data 
 broader spatiotemporal coverage, and real-time updates.
 
 My research focus on combining these big data with traditional travel demand model. 
-This includes 1) a unified pipeline for parsing multi-source travel data to derive multi-modal trip rosters, 2) a set of 
+This includes 1) a unified pipeline for parsing multi-source travel data to derive trip rosters, 2) a set of 
 spatiotemporal AI models for forecasting future travel demand, and 3)
 a set of traffic simulation tools for simulating traffic flow at both individual and aggregated level.
 
-### <span style="color: green"> Unified pipeline for big-data-driven travel demand modeling </span> 🚦🚦🚦🚗🚗🚗
+### <span style="color: green"> Unified Pipeline for Data-driven Travel Demand Modeling </span> 🚦🚦🚦🚗🚗🚗
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
