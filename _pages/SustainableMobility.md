@@ -36,7 +36,6 @@ We also develop an entirely automated traffic detector generator based on vanish
     </a>
   </div>
 
-
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[TR Part D]</span></b> 
     Limited battery capacity remains a major obstacle for large-scale adoption of Shared electric vehicles (SEVs), 
@@ -53,7 +52,6 @@ We also develop an entirely automated traffic detector generator based on vanish
         <img src="https://songhuahu-umd.github.io/images/EVBus.jpg" alt="Figure" style="width: 400px;" />
     </a>
   </div>
-
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[TR Part C]</span></b> 
@@ -80,6 +78,25 @@ and then establishes a (lower-level) tactical planning model of optimal charging
     However, a one-sided competitive relationship emerged, with ESS surpassing DBS.
   </div>
 </div>
+
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://ieeexplore.ieee.org/abstract/document/9034087">
+        <img src="https://songhuahu-umd.github.io/images/EVCARD.jpg" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[IEEE ITSM]</span></b> 
+    This study aims to employ data-driven approaches to understand users’ decision-making when selecting electric shared vehicles.
+    Over five million transactions from EVCARD – the biggest EV sharing company in Shanghai is collected and analyzed.
+    We found users are less likely to choose vehicles with greater ages, fewer seats, higher rental prices, and smaller battery ranges. State of charge (SoC) significantly affect users’ preferences on vehicles and users tend to be ‘greedy’ on the SoC.
+    Results also showed the range anxiety varied over users with different features. Users with shorter real
+    trip distances presented less anxiety towards the SoC.
+    
+  </div>
+</div>
+
 ---
 
 
