@@ -7,6 +7,7 @@ author_profile: true
 
 The commitment to decarbonization is driving city decision-makers and service providers to leverage emerging techniques to promote sustainability. 
 Transport emissions, particularly exhaust emissions from road traffic, remain a major source of greenhouse gases and air pollutants.
+
 My research focuses on two aspects. First, how to develop cost-effective data and methods to precisely and efficiently monitor and predict large-scale high-resolution traffic emissions.
 Second, how the vehicle electrification and sharing can contribute to the transport decarbonization, and what are the main barriers to pormote vehicle electrification.
 
