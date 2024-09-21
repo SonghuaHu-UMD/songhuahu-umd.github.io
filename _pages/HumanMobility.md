@@ -20,12 +20,13 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b">
-        <img src="https://songhuahu-umd.github.io/images/ODFLOW.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/OD2T3.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[PhD Dissertation]</span></b> Fully relying on mobile device location data, we build a pipeline to extract individual trip rosters. The process includes 
+    <b><span style="color: purple;">[PhD Dissertation]</span></b> Fully relying on mobile device location data, 
+    we build a pipeline to extract individual trip rosters. The process includes 
     home&work identification, trip identification, mode imputation, population weighting, and result validation. 
     These trip rosters are then aggregated at different spatiotemporal units to construct multi-modal OD matrices.
   </div>
@@ -36,12 +37,13 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/OD2T3.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/ODFLOW.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[NetMob 2024]</span></b> Large-scale validation is lacking to assess whether mobile device OD data reliably generates road traffic flow distributions. 
+    <b><span style="color: purple;">[NetMob 2024]</span></b> Large-scale validation is lacking to assess whether mobile device 
+    OD data reliably generates road traffic flow distributions. 
     We developed an end-to-end pipeline to map mobile OD matrices onto road networks using dynamic traffic assignment, 
     applied across 35 metropolitan areas in Mexico, Colombia, Indonesia, and India. 
     Results show that the model fails to capture traffic flow accurately in regions with low mobile phone penetration, 
@@ -51,7 +53,7 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 5px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
         <img src="https://songhuahu-umd.github.io/images/FF61.gif" alt="Figure" style="width: 200px;" />
     </a>
@@ -67,7 +69,7 @@ a set of traffic simulation tools for simulating traffic flow at both individual
     <b><span style="color: purple;">[Ongoing]</span></b> 
     Mobile device location data provide detailed individual travel information, which is more compatible with dynamic, behavior-oriented, agent-based simulators. 
     My ongoing research focuses on meshing the forecasted trip itinerary with micro (Vissim, SUMO), meso (DTALite), 
-    or agent-based simulators (MATSim) with high computational efficiency to achieve fine-grained citywide simulation. 
+    or agent-based simulators (MATSim) to achieve fine-grained citywide simulation. 
   </div>
 </div>
 
