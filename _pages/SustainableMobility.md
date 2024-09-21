@@ -58,7 +58,7 @@ author_profile: true
   </div>
 </div>
 
-<hr style="border:2px solid black">
+<hr style="border:1px solid gray">
 
 ### <span style="color: green"> Vehicle Electrification </span> 🔋🔋🔋🚃🚃🚃
 

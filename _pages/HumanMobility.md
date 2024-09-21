@@ -75,7 +75,7 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 </div>
 
 
----
+<hr style="border:1px solid gray">
 
 ### <span style="color: green"> AI in Human Mobility Forecasting and Reasoning </span> 📈📈📈📉📉📉
 
