@@ -10,8 +10,9 @@ These devices generate vast amounts of spatiotemporal data on individual travel.
 Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, 
 broader spatiotemporal coverage, and real-time updates.
 
-My research focus on combining these big data with traditional travel demand model. This includes 1) a normative pipeline for parsing multi-source travel data to derive trip rosters and
-multi-modal OD matrices, 2) a set of spatiotemporal neural networks for forecasting future travel demand, and 3)
+My research focus on combining these big data with traditional travel demand model. 
+This includes 1) a unified pipeline for parsing multi-source travel data to derive multi-modal trip rosters, 2) a set of 
+spatiotemporal AI models for forecasting future travel demand, and 3)
 a set of traffic simulation tools for simulating traffic flow at both individual and aggregated level.
 
 ### <span style="color: green"> Unified pipeline for big-data-driven travel demand modeling </span> 🚦🚦🚦🚗🚗🚗
@@ -45,6 +46,28 @@ a set of traffic simulation tools for simulating traffic flow at both individual
     applied across 35 metropolitan areas in Mexico, Colombia, Indonesia, and India. 
     Results show that the model fails to capture traffic flow accurately in regions with low mobile phone penetration, 
     where high rates of zero-flow links and unrealistically low traffic volumes persist, even after population weighting.
+  </div>
+</div>
+
+---
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+        <img src="https://songhuahu-umd.github.io/images/FF61.gif" alt="Figure" style="width: 200px;" />
+    </a>
+  </div>
+
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+        <img src="https://songhuahu-umd.github.io/images/FF62.gif" alt="Figure" style="width: 200px;" />
+    </a>
+  </div>
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[Ongoing]</span></b> 
+    Mobile device location data provide detailed individual travel information, which is more compatible with dynamic, behavior-oriented, agent-based simulators. 
+    My ongoing research focuses on meshing the forecasted trip itinerary with micro (Vissim, SUMO), meso (DTALite), 
+    or agent-based simulators (MATSim) with high computational efficiency to achieve fine-grained citywide simulation. 
   </div>
 </div>
 
@@ -115,15 +138,3 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 </div>
 
 ---
-
-### <span style="color: green"> Multi-scale Traffic Simulation </span>🚦🚦🚦🚗🚗🚗
-
-> <a href="https://songhuahu-umd.github.io/NextTDM/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF62.gif" width="300" hspace="10"></a>
-Integrating forecasted travel demand with traffic simulators completes the last puzzle of a travel demand model.
-At an aggregated level, we feed the predicted OD matrices into a dynamic traffic assignment tool, DTALite, to generate link traffic speed and volume.
-Simulated results are compared with field observations collected from roadside sensors to validate the whole data-driven travel demand model.
-
-> <a href="https://songhuahu-umd.github.io/NextTDM/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF61.gif" width="300" hspace="10"></a>
-Mobile device location data provide detailed individual travel information, which is more compatible with behavior-oriented agent-based simulators. 
-My ongoing research focuses on meshing the forecasted trip itinerary with micro (Vissim, SUMO) 
-or agent-based simulators (MATSim) with high computational efficiency to achieve fine-grained citywide simulation. 
