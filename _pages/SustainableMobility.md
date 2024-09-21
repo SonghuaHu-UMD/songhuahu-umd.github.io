@@ -10,7 +10,7 @@ Compared to traditional surveys and static sensors, mobile device location data 
 My research show their powerful capability in modeling travel demand.
 
 
-### <span style="color: green"> Data-driven Citywide Emission Inventory Estimation </span> 📹📹📹🚘🚘🚘
+### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 📹📹📹🚘🚘🚘
 Traffic cameras play a crucial role in traffic flow monitoring and traffic violation capture. 
 These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
 My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
@@ -27,7 +27,25 @@ covering super-low FPS, low FPS, and high FPS.
 Our approach integrates fundamental diagram, distance-based tracking, and ByteTrack, tailored to the respective FPS. 
 We also develop an entirely automated traffic detector generator based on vanishing points and road segmentation.
 
+### <span style="color: green"> Vehicle Electrification </span> 📹📹📹🚘🚘🚘
 
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://www.sciencedirect.com/science/article/pii/S1361920919311058">
+        <img src="https://songhuahu-umd.github.io/images/SharedEV.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[TR Part D]</span></b> 
+    Limited battery capacity remains a major obstacle for large-scale adoption of Shared electric vehicles (SEVs), 
+    and greatly undermines their popularity. 
+    In this study, we employed a discrete-event simulation approach estimate 
+    how battery capacity affects the performance of a carsharing program. Results show that limited battery capacity lowered user satisfaction and vehicle utilization in the program. 
+    Increased charging speed, maximum range, and vehicle-to-trip ratio help mitigate these negative effects.
+  </div>
+</div>
 
 ---
 
