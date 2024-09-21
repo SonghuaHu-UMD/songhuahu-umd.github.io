@@ -24,6 +24,10 @@ a set of traffic simulation tools for simulating traffic flow at both individual
     </a>
   </div>
 
+  <!-- Vertical border -->
+  <div style="border-left: 2px solid black; height: 150px; margin-left: 10px; margin-right: 10px;"></div>
+
+
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[PhD Dissertation]</span></b> Fully relying on mobile device location data, 
     we build a pipeline to extract individual trip rosters. The process includes 
