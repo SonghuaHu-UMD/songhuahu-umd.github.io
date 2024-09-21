@@ -15,19 +15,19 @@ main:
 #  - title: "Blog Posts"
 #    url: /year-archive/
 
-  - title: "Urban Sensing"
-    url: /CrowdSensing/
+  - title: "Human Mobility"
+    url: /HumanMobility/
 
 #  - title: "ST Network"
 #    url: /Spatiotemporal Network/
 
-  - title: "NextGen TDM"
-    url: /NextTDM/ # /Traffic Simulation/
+  - title: "Sustainable Mobility"
+    url: /SusMobility/ # /Traffic Simulation/
 
-  - title: "Travel Resilience"
+  - title: "Mobility Resilience"
     url: /Resilience/
 
-  - title: "Public Health"
+  - title: "Travel&Health"
     url: /Health/
 
   - title: "Miscellaneous"
