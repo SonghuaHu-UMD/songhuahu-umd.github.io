@@ -14,7 +14,7 @@ My research focus on combining these big data with traditional travel demand mod
 multi-modal OD matrices, 2) a set of spatiotemporal neural networks for forecasting future travel demand, and 3)
 a set of traffic simulation tools for simulating traffic flow at both individual and aggregated level.
 
-### <span style="color: green"> Multi-modal OD Matrix Estimation </span> 📑📑📑🚩🚩🚩
+### <span style="color: green"> Unified pipeline for big-data-driven travel demand modeling </span> 📑📑📑🚩🚩🚩
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
@@ -30,19 +30,22 @@ a set of traffic simulation tools for simulating traffic flow at both individual
   </div>
 </div>
 
----
+
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
-    <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635">
-        <img src="https://songhuahu-umd.github.io/images/FF12.png" alt="Figure" style="width: 400px;" />
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+        <img src="https://songhuahu-umd.github.io/images/OD2T1" alt="Figure" style="width: 400px;" />
     </a>
   </div>
+
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[TR Part A]</span></b> Using nationwide CBG-level trip flow derived from mobile devices as the proxy of travel demand, 
-    We examine its relations with socioeconomics, demographics, and land use. 
-    Over 6*8 machine learning models and interpretation techniques are compared to determine the 
-    best model and justify interpretation robustness. 
-    Pronounced nonlinearities, threshold effects, and interaction effects are observed.
+    <b><span style="color: purple;">[NetMob 2024]</span></b> Large-scale experimental validation is still lacking to assess whether 
+    mobile device location-derived OD data can reliably generate accurate road traffic flow distributions. 
+    This study introduces an end-to-end pipeline to load mobile device OD matrices onto road networks through dynamic traffic assignment (DTA). 
+    The pipeline was applied to 35 metropolitan areas across four countries: Mexico, Colombia, Indonesia, and India. 
+    The results show that the assignment outcomes fail to accurately reflect traffic flow distributions, 
+    particularly in regions with low mobile phone penetration rates, 
+    where high percentages of zero-flow links and unrealistically low traffic volumes are observed even after population weighting.
   </div>
 </div>
 
@@ -65,6 +68,7 @@ a set of traffic simulation tools for simulating traffic flow at both individual
   </div>
 </div>
 
+---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X22003758">
@@ -80,6 +84,23 @@ a set of traffic simulation tools for simulating traffic flow at both individual
   </div>
 </div>
 
+---
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635">
+        <img src="https://songhuahu-umd.github.io/images/FF12.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[TR Part A]</span></b> Using nationwide CBG-level trip flow derived from mobile devices as the proxy of travel demand, 
+    We examine its relations with socioeconomics, demographics, and land use. 
+    Over 48 explainable machine learning models and interpretation techniques are compared to determine the 
+    best model for demand forecasting and justify interpretation robustness. 
+    Pronounced nonlinearities, threshold effects, and interaction effects are observed.
+  </div>
+</div>
+
+---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
