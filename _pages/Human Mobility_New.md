@@ -18,13 +18,14 @@ My research showcases their powerful capability in modeling travel demand, vehic
 <style>
   .image-container {
     display: inline-block;
-    width: 30%;
+    width: 45%;
     margin: 10px;
     text-align: center;
   }
 
   .image-container img {
-    width: 100%;
+    height: 200px; /* Set the height you want for all images */
+    width: auto;   /* Auto width to maintain aspect ratio */
   }
 
   .image-title {
@@ -32,22 +33,45 @@ My research showcases their powerful capability in modeling travel demand, vehic
     font-size: 14px;
     font-weight: bold;
   }
+
+  .row {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 </style>
 
-<div class="image-container">
-  <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1" width="30%" />
-  <div class="image-title"> COVID-19 Human Mobility Change Online Platform</div>
+<div class="row">
+  <div class="image-container">
+    <a href="link_to_page1" target="_blank">
+      <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1"/>
+    </a>
+    <div class="image-title">Title for Image 1</div>
+  </div>
+
+  <div class="image-container">
+    <a href="link_to_page2" target="_blank">
+      <img src="https://songhuahu-umd.github.io/images/OD2T2.png" alt="Title for Image 2"/>
+    </a>
+    <div class="image-title">Title for Image 2</div>
+  </div>
 </div>
 
-<div class="image-container">
-  <img src="https://songhuahu-umd.github.io/images/OD2T2.png" alt="Title for Image 2" width="30%" />
-  <div class="image-title">Title for Image 2</div>
+<div class="row">
+  <div class="image-container">
+    <a href="link_to_page3" target="_blank">
+      <img src="path_to_image3" alt="Title for Image 3"/>
+    </a>
+    <div class="image-title">Title for Image 3</div>
+  </div>
+
+  <div class="image-container">
+    <a href="link_to_page4" target="_blank">
+      <img src="path_to_image4" alt="Title for Image 4"/>
+    </a>
+    <div class="image-title">Title for Image 4</div>
+  </div>
 </div>
 
-<div class="image-container">
-  <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 3" width="30%" />
-  <div class="image-title">Title for Image 3</div>
-</div>
 
 [//]: # (<p align="center">)
 
