@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Sustainable Mobility"
+title: "Transport Emission Reduction"
 permalink: /SusMobility/
 author_profile: true
 ---
@@ -88,7 +88,7 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
 
 <hr style="border:1px solid gray">
 
-### <span style="color: green"> Vehicle Electrification </span> 🔋🔋🔋🚃🚃🚃
+### <span style="color: green"> Vehicle Electrification and Sharing </span> 🔋🔋🔋🚃🚃🚃
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
