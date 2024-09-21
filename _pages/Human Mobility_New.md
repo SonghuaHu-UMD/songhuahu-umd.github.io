@@ -5,6 +5,36 @@ permalink: /CrowdSensing/
 author_profile: true
 ---
 
+<style>
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap; /* Ensure all images stay on the same line */
+    gap: 10px; /* Adds space between the images */
+  }
+
+  .image-container {
+    text-align: center;
+    flex-shrink: 0; /* Prevent shrinking of images, keeping them the same size */
+    width: auto; /* Let the width of the image adjust based on its aspect ratio */
+  }
+
+  .image-container img {
+    height: 180px;  /* Fixed height for all images */
+    width: auto;    /* Flexible width depending on the image's aspect ratio */
+    object-fit: cover; /* Ensure aspect ratio is maintained */
+  }
+
+  .image-title {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: normal; /* Allows title text to wrap automatically */
+    word-wrap: break-word; /* Ensure long words break if needed */
+  }
+</style>
+
 Nowadays, ubiquitous mobile positioning, camera surveillance, and social media have generated vast amounts of human mobility data,
 revolutionizing the approach to monitoring and modeling large-scale human travel. 
 My work focuses on extracting useful information from these raw big data and applying them to address various mobility challenges.
@@ -15,37 +45,13 @@ These devices generate vast amounts of spatiotemporal data on individual travel.
 Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, broader spatiotemporal coverage, and real-time updates. 
 My research showcases their powerful capability in modeling travel demand, vehicle emissions, disease transmission, and network resilience.
 
-<style>
-  .image-container {
-    display: inline-block;
-    width: 45%;
-    margin: 10px;
-    text-align: center;
-  }
 
-  .image-container img {
-    height: 200px; /* Set the height you want for all images */
-    width: auto;   /* Auto width to maintain aspect ratio */
-  }
-
-  .image-title {
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-  .row {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-</style>
-
-<div class="row">
+<div class="gallery">
   <div class="image-container">
-    <a href="link_to_page1" target="_blank">
+    <a href="https://data.covid.umd.edu/" target="_blank">
       <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1"/>
     </a>
-    <div class="image-title">Title for Image 1</div>
+    <div class="image-title">University of Maryland COVID-19 Impact Analysis Platform </div>
   </div>
 
   <div class="image-container">
@@ -56,7 +62,7 @@ My research showcases their powerful capability in modeling travel demand, vehic
   </div>
 </div>
 
-<div class="row">
+<div class="gallery">
   <div class="image-container">
     <a href="link_to_page3" target="_blank">
       <img src="path_to_image3" alt="Title for Image 3"/>
