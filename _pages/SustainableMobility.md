@@ -4,13 +4,44 @@ title: "Sustainable Mobility"
 permalink: /SusMobility/
 author_profile: true
 ---
-Mobile devices (cellphones, connected vehicles) with positioning sensors are ubiquitous.
-These devices generate vast amounts of spatiotemporal data on individual travel.
-Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, broader spatiotemporal coverage, and real-time updates.
-My research show their powerful capability in modeling travel demand.
 
 
 ### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 📹📹📹🚘🚘🚘
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+        <img src="https://songhuahu-umd.github.io/images/Cartype.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[Ongoing]</span></b>
+    MOtor Vehicle Emission Simulator (MOVES), the primary regulatory model for vehicle emission modeling in the US, includes 13 car types (aka source type). 
+    Such a high-detailed and unique car classification scheme makes the preparation of fleet composition inputs quite challenging. 
+    Here we constructed a world-first customized car-type dataset containing a total of 10,000 images that align with the MOVES source types.
+    All images are cropped from the traffic video surveillance collected from ~ 800 traffic cameras in New York, and labeled by human and GPT4o. We tested a total of 10 image classifiers, 
+    with ConvNeXt achieving the best accuracy (92.9%) and efficiency.
+  </div>
+</div>
+
+
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+        <img src="https://songhuahu-umd.github.io/images/Signal.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[Ongoing]</span></b>
+    Traffic signal control, particularly in urban areas, contributes to a large number of stops-and-goes and significantly impacts vehicle emissions.
+    We developed a signal processing algorithm to infer the directional signal timing from the traffic flow time series extracted from camera videos.
+    The signal timing is then applied to the link-level 1-minute-average speed profiles to convert them to second-by-second driving cycles.
+    We found a significant increase in operation modes 1 (Idle) and 12 (acceleration) can be documented after applying the signal control enrichment.
+    In addition, PM shows on average 60% increase if considering the signal timing.
+  </div>
+</div>
+
 Traffic cameras play a crucial role in traffic flow monitoring and traffic violation capture. 
 These cameras contain continuous ground-truth visual information on vehicles, pedestrians, and road infrastructure. 
 My research leverages them for traffic flow monitoring, traffic emission estimation, and environmental justice analysis：
@@ -46,6 +77,7 @@ We also develop an entirely automated traffic detector generator based on vanish
   </div>
 </div>
 
+---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X2300459X">
@@ -55,12 +87,13 @@ We also develop an entirely automated traffic detector generator based on vanish
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[TR Part C]</span></b> 
-To address the battery-related shortcomings of battery electric buses (BEBs), dynamic wireless charging (DWC) technology that allows BEBs to charge while in motion has emerged.
-To resolve the DWS planning problem, we propose a (higher-level) strategic planning model that optimizes the deployment of DWC facilities and battery capacity of BEBs, 
-and then establishes a (lower-level) tactical planning model of optimal charging scheduling under the time-of-use (TOU) tariff mechanism considering the interdependence between infrastructure design and charging activities of BEBs. 
+    To address the battery-related shortcomings of battery electric buses (BEBs), dynamic wireless charging (DWC) technology that allows BEBs to charge while in motion has emerged.
+    To resolve the DWS planning problem, we propose a (higher-level) strategic planning model that optimizes the deployment of DWC facilities and battery capacity of BEBs, 
+    and then establishes a (lower-level) tactical planning model of optimal charging scheduling under the time-of-use (TOU) tariff mechanism considering the interdependence between infrastructure design and charging activities of BEBs. 
   </div>
 </div>
 
+---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://journals.sagepub.com/doi/abs/10.1177/0739456X241256041">
@@ -79,6 +112,7 @@ and then establishes a (lower-level) tactical planning model of optimal charging
   </div>
 </div>
 
+---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://ieeexplore.ieee.org/abstract/document/9034087">
