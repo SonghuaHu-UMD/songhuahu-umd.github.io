@@ -53,7 +53,7 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/ZONE30.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/ZONE301.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
 
