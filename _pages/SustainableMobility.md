@@ -5,6 +5,10 @@ permalink: /SusMobility/
 author_profile: true
 ---
 
+The commitment to decarbonization is driving city decision-makers and service providers to leverage emerging techniques to promote sustainability. 
+Transport emissions, particularly exhaust emissions from road traffic, remain a major source of greenhouse gases and air pollutants.
+My research focuses on two aspects. First, how to develop cost-effective data and methods to precisely and efficiently monitor and predict large-scale high-resolution traffic emissions.
+Second, how the vehicle electrification and sharing can contribute to the transport decarbonization, and what are the main barriers to pormote vehicle electrification.
 
 ### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 🌱🌱🌱🌎🌎🌎
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
@@ -55,6 +59,26 @@ author_profile: true
     We propose a big-data approach to estimate the effects of city-wide Zone 30 on traffic emissions in Milan, Italy, analyzing data collected from over 3.4 million driving trips. 
     Results show that the overall impact of Zone 30 on emissions is modest -- in the most extensive scenario, a 0.61% to 2.73% increase is observed in different emissions. 
     However, these impacts vary significantly across spaces and times, with the most notable increases observed during peak hours and in cross-region travels. 
+  </div>
+</div>
+
+
+---
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+        <img src="https://songhuahu-umd.github.io/images/GEMINI.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[Under Review]</span></b>
+    We introduce the design and demonstration of a Digital Twin (DT) platform 
+    for road traffic emission nowcasting and forecasting. By integrating multi-source data collected from online repositories and IoT sensors, 
+    the platform provides a comprehensive, near-real-time view of road traffic emissions with high spatio-temporal resolution. 
+    A streamlined technology backend that connects various data mining and traffic simulation techniques is designed to 
+    facilitate forecasting future emissions under different policy interventions.
+The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive visualization platform.
   </div>
 </div>
 
@@ -124,11 +148,11 @@ author_profile: true
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[IEEE ITSM]</span></b> 
-    This study aims to employ data-driven approaches to understand users’ decision-making when selecting electric shared vehicles.
-    Over five million transactions from EVCARD – the biggest EV sharing company in Shanghai is collected and analyzed.
-    We found users are less likely to choose vehicles with greater ages, fewer seats, higher rental prices, and smaller battery ranges. State of charge (SoC) significantly affect users’ preferences on vehicles and users tend to be ‘greedy’ on the SoC.
-    Results also showed the range anxiety varied over users with different features. Users with shorter real
-    trip distances presented less anxiety towards the SoC.
+    We aim to understand users’ decision-making when selecting electric shared vehicles by analyzing over 
+    five million transactions from EVCARD – the biggest EV sharing company in Shanghai.
+    We found users are less likely to choose vehicles with greater ages, fewer seats, higher rental prices, and smaller battery ranges. 
+    State of charge (SoC) significantly affect users’ preferences on vehicles and users tend to be ‘greedy’ on the SoC.
+    Results also showed the range anxiety varied over users: users with shorter real trip distances presented less anxiety towards the SoC.
     
   </div>
 </div>
