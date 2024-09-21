@@ -5,12 +5,14 @@ permalink: /SusMobility/
 author_profile: true
 ---
 
-The commitment to decarbonization is driving city decision-makers and service providers to leverage emerging techniques to promote sustainability. 
+The commitment to decarbonization is driving city decision-makers to leverage emerging techniques to promote sustainability. 
 Transport emissions, particularly exhaust emissions from road traffic, remain a major source of greenhouse gases and air pollutants.
+Advancing our understanding and developing the tools needed to reduce these emissions is essential to fostering cleaner, more efficient mobility systems.
 
-My research focuses on two key areas: 1) developing cost-effective data and methods to accurately and efficiently monitor and predict large-scale, 
-high-resolution traffic emissions; and 2) exploring how vehicle electrification can contribute to transport decarbonization, 
-while identifying key strategies for optimizing EV operations and charging facility planning.
+My research focuses on three key areas: 1) developing cost-effective data and methods to accurately and efficiently monitor and predict large-scale, 
+high-resolution traffic emissions; 2) exploring how vehicle electrification can contribute to transport decarbonization, 
+while identifying key strategies for optimizing EV operations and charging facility planning; and 3)
+modeling the impact of various policies—such as CAV sharing, travel demand management, active travel modes, and ZONE 30—on transport decarbonization.
 
 ### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 🌱🌱🌱🌎🌎🌎
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
