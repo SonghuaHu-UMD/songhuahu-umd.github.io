@@ -19,36 +19,28 @@ My research showcases their powerful capability in modeling travel demand, vehic
   .image-container {
     display: inline-block;
     width: 30%;
-    position: relative;
     margin: 10px;
     text-align: center;
   }
 
   .image-container img {
     width: 100%;
-    vertical-align: middle;
   }
 
   .image-title {
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 2px 5px;
+    margin-top: 8px;
     font-size: 14px;
-    border-radius: 3px;
+    font-weight: bold;
   }
 </style>
 
 <div class="image-container">
   <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1" width="30%" />
-  <div class="image-title">Title for Image 1</div>
+  <div class="image-title"> COVID-19 Human Mobility Change Online Platform</div>
 </div>
 
 <div class="image-container">
-  <img src="https://songhuahu-umd.github.io/images/OD2T1.png" alt="Title for Image 2" width="30%" />
+  <img src="https://songhuahu-umd.github.io/images/OD2T2.png" alt="Title for Image 2" width="30%" />
   <div class="image-title">Title for Image 2</div>
 </div>
 
