@@ -51,15 +51,14 @@ author_profile: true
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[Under Review]</span></b>
-    The impact of Zone 30, i.e., decreasing road speed limits to 30 km/h, on traffic emissions remain uncertain. 
-    We propose a big-data approach to estimate the effects of city-wide Zone 30 on traffic emissions in Milan, Italy, 
-    analyzing data collected from over 3.4 million driving trips over four weeks, and simulating nine scenarios considering different combinations of road types and Zone 30 implementation areas. 
-    Results show that the overall impact of Zone 30 on emissions is modest -- in the most extensive scenario, a 0.61\% to 2.73\% increase is observed in different emissions. 
+    The impact of 30 km/h speed limit (ZONE 30) on traffic emissions remain uncertain. 
+    We propose a big-data approach to estimate the effects of city-wide Zone 30 on traffic emissions in Milan, Italy, analyzing data collected from over 3.4 million driving trips. 
+    Results show that the overall impact of Zone 30 on emissions is modest -- in the most extensive scenario, a 0.61% to 2.73% increase is observed in different emissions. 
     However, these impacts vary significantly across spaces and times, with the most notable increases observed during peak hours and in cross-region travels. 
-    Additional analysis on vehicle travel demand changes suggests that a minimum reduction of 5\% in traffic volume could achieve an overall emission breakeven.
   </div>
 </div>
 
+<hr style="border:2px solid black">
 
 ### <span style="color: green"> Vehicle Electrification </span> 🔋🔋🔋🚃🚃🚃
 
