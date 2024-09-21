@@ -1,31 +1,46 @@
 ---
 layout: archive
-title: "Next-Generation Travel Demand Modelling"
-permalink: /NextTDM/
+title: "Human Mobility Modeling in Transportation"
+permalink: /HumanMobility/
 author_profile: true
 ---
 
-Traditional travel demand models heavily rely on travel surveys, which are costly, laborious, and suffer from
-small-sample and infrequent issues.
-My Ph.D. dissertation focuses on building a next-generation travel demand model which is fully big-data-driven.
-This includes 1) a normative pipeline for parsing multi-source travel data to derive trip rosters and 
-multi-modal OD matrices, 2) a set of spatiotemporal neural networks for forecasting future travel demand, and 3) 
-a set of traffic simulation tools for simulating traffic flow at both individual and aggregated level.
+Mobile devices (cellphones, connected vehicles) with positioning sensors are ubiquitous.
+These devices generate vast amounts of spatiotemporal data on individual travel.
+Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, 
+broader spatiotemporal coverage, and real-time updates.
+My research focus on combining these big data with traditional travel demand model.
 
-### <span style="color: green"> Big-data-driven Travel Demand Estimation </span> 📑📑📑🚩🚩🚩
+### <span style="color: green"> Multi-modal OD Matrix Estimation </span> 📑📑📑🚩🚩🚩
 
-> <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b"><img style="float: left" src="https://songhuahu-umd.github.io/images/FFF1.png" width="300" hspace="20"></a> 
-Fully relying on mobile device location data and using travel survey as validation, 
-we build a pipeline to extract individual trip rosters. The process includes 
-home&work identification, trip identification, mode imputation, population weighting, and result validation. 
-These trip rosters are then aggregated at different spatiotemporal units to construct multi-modal OD matrices.
-The whole pipeline is employed on AWS EMR, a cloud-computing server, to timely quantify large-scale human travel patterns.
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div style="flex: 1; text-align: left; margin-right: 5px;">
+    <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b">
+        <img src="https://songhuahu-umd.github.io/images/FFF1.png" alt="Figure" style="width: 300px;" />
+    </a>
+  </div>
+  <div style="flex: 1; text-align: left; margin-right: 5px;">
+    Fully relying on mobile device location data, we build a pipeline to extract individual trip rosters. The process includes 
+    home&work identification, trip identification, mode imputation, population weighting, and result validation. 
+    These trip rosters are then aggregated at different spatiotemporal units to construct multi-modal OD matrices.
+  </div>
+</div>
 
-> <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF12.png" width="300" hspace="20"></a>
-Using nationwide census block group-level trip flow derived from mobile devices as the proxy of travel demand, 
-We examine its relations with socioeconomics, demographics, and land use. 
-Over 6*8 machine learning models and interpretation techniques are compared to determine the 
-best model and justify interpretation robustness. Pronounced nonlinearities, threshold effects, and interaction effects are observed.
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div style="flex: 1; text-align: left; margin-right: 5px;">
+    <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635">
+        <img src="https://songhuahu-umd.github.io/images/FF12.png" alt="Figure" style="width: 300px;" />
+    </a>
+  </div>
+  <div style="flex: 1; text-align: left; margin-right: 5px;">
+    Using nationwide CBG-level trip flow derived from mobile devices as the proxy of travel demand, 
+    We examine its relations with socioeconomics, demographics, and land use. 
+    Over 6*8 machine learning models and interpretation techniques are compared to determine the 
+    best model and justify interpretation robustness. 
+    Pronounced nonlinearities, threshold effects, and interaction effects are observed.
+  </div>
+</div>
+
 
 ---
 

@@ -30,7 +30,7 @@ Applications of my work span areas such as:
 Research Interests
 ======
 
-[Urban Crowdsensing](https://songhuahu-umd.github.io/CrowdSensing) |
+[Urban Crowdsensing](https://songhuahu-umd.github.io/HumanMobility) |
 [Spatiotemporal AI](https://songhuahu-umd.github.io/Traffic%20Simulation) |
 [Emergency Response](https://songhuahu-umd.github.io/Infrastructure%20Resilience) |
 [Transport and Health](https://songhuahu-umd.github.io/Public%20Health) |
@@ -45,8 +45,7 @@ Education
 * Ph.D., Transportation Engineering, University of Maryland, College Park, 2023
     * Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
 * M.S., Transportation Engineering, Tongji University, 2019
-    * Thesis: “Promoting electric vehicle utilization in large-scale carsharing systems: Factors analysis and relocation
-      simulation”
+    * Thesis: “Promoting electric vehicle efficiency in large-scale carsharing systems”
 * B.S., Transportation Engineering, Huazhong University of Science and Technology, 2016
     * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
 

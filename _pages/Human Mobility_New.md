@@ -4,101 +4,23 @@ title: "Urban Mobility Sensing and Computing"
 permalink: /CrowdSensing/
 author_profile: true
 ---
+Mobile devices (cellphones, connected vehicles) with positioning sensors are ubiquitous.
+These devices generate vast amounts of spatiotemporal data on individual travel.
+Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, broader spatiotemporal coverage, and real-time updates.
+My research show their powerful capability in modeling travel demand.
 
-<style>
-  .gallery {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: nowrap; /* Ensure all images stay on the same line */
-    gap: 10px; /* Adds space between the images */
-  }
-
-  .image-container {
-    text-align: center;
-    flex-shrink: 0; /* Prevent shrinking of images, keeping them the same size */
-    width: auto; /* Let the width of the image adjust based on its aspect ratio */
-  }
-
-  .image-container img {
-    height: 180px;  /* Fixed height for all images */
-    width: auto;    /* Flexible width depending on the image's aspect ratio */
-    object-fit: cover; /* Ensure aspect ratio is maintained */
-  }
-
-  .image-title {
-    margin-top: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    white-space: normal; /* Allows title text to wrap automatically */
-    word-wrap: break-word; /* Ensure long words break if needed */
-  }
-</style>
-
-Nowadays, ubiquitous mobile positioning, camera surveillance, and social media have generated vast amounts of human mobility data,
-revolutionizing the approach to monitoring and modeling large-scale human travel. 
-My work focuses on extracting useful information from these raw big data and applying them to address various mobility challenges.
 
 ### <span style="color: green"> Mobile Device Location </span> 📱📱📱🚶🚶🚶
-Mobile devices (cellphones, connected vehicles) with positioning sensors are ubiquitous.
-These devices generate vast amounts of spatiotemporal data on individual travel. 
-Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, broader spatiotemporal coverage, and real-time updates. 
-My research showcases their powerful capability in modeling travel demand, vehicle emissions, disease transmission, and network resilience.
 
 
-<div class="gallery">
-  <div class="image-container">
-    <a href="https://data.covid.umd.edu/" target="_blank">
-      <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1"/>
-    </a>
-    <div class="image-title">University of Maryland COVID-19 Impact Analysis Platform </div>
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div style="flex: 1; text-align: left; margin-right: 5px;">
+    <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Figure" style="width: 300px;" />
   </div>
-
-  <div class="image-container">
-    <a href="link_to_page2" target="_blank">
-      <img src="https://songhuahu-umd.github.io/images/OD2T2.png" alt="Title for Image 2"/>
-    </a>
-    <div class="image-title">Title for Image 2</div>
+  <div style="flex: 1; text-align: left; margin-right: 5px;">
+    This is the text on the right side of the figure. It is centered horizontally.
   </div>
 </div>
-
-<div class="gallery">
-  <div class="image-container">
-    <a href="link_to_page3" target="_blank">
-      <img src="path_to_image3" alt="Title for Image 3"/>
-    </a>
-    <div class="image-title">Title for Image 3</div>
-  </div>
-
-  <div class="image-container">
-    <a href="link_to_page4" target="_blank">
-      <img src="path_to_image4" alt="Title for Image 4"/>
-    </a>
-    <div class="image-title">Title for Image 4</div>
-  </div>
-</div>
-
-
-[//]: # (<p align="center">)
-
-[//]: # (    <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1" width="30%" hspace="5"/>)
-
-[//]: # (    <img src="https://songhuahu-umd.github.io/images/OD2T1.png" alt="Title for Image 2" width="30%" hspace="5"/>)
-
-[//]: # (    <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 3" width="30%" hspace="5"/>)
-
-[//]: # (</p>)
-
-[//]: # ()
-[//]: # (<p align="center">)
-
-[//]: # (  <b>Title for Image 1</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
-
-[//]: # (  <b>Title for Image 2</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)
-
-[//]: # (  <b>Title for Image 3</b>)
-
-[//]: # (</p>)
 
 [//]: # (<a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>)
 
