@@ -8,8 +8,9 @@ author_profile: true
 The commitment to decarbonization is driving city decision-makers and service providers to leverage emerging techniques to promote sustainability. 
 Transport emissions, particularly exhaust emissions from road traffic, remain a major source of greenhouse gases and air pollutants.
 
-My research focuses on two aspects. First, how to develop cost-effective data and methods to precisely and efficiently monitor and predict large-scale high-resolution traffic emissions.
-Second, how the vehicle electrification and sharing can contribute to the transport decarbonization, and what are the main barriers to pormote vehicle electrification.
+My research focuses on two key areas: 1) developing cost-effective data and methods to accurately and efficiently monitor and predict large-scale, 
+high-resolution traffic emissions; and 2) exploring how vehicle electrification can contribute to transport decarbonization, 
+while identifying key strategies for optimizing EV operations and charging facility planning.
 
 ### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 🌱🌱🌱🌎🌎🌎
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
@@ -152,8 +153,8 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
     We aim to understand users’ decision-making when selecting electric shared vehicles by analyzing over 
     five million transactions from EVCARD – the biggest EV sharing company in Shanghai.
     We found users are less likely to choose vehicles with greater ages, fewer seats, higher rental prices, and smaller battery ranges. 
-    State of charge (SoC) significantly affect users’ preferences on vehicles and users tend to be ‘greedy’ on the SoC.
-    Results also showed the range anxiety varied over users: users with shorter real trip distances presented less anxiety towards the SoC.
+    State of charge (SoC) significantly affect users’ preferences on vehicles and users tend to be ‘greedy’ on the SoC, although users 
+    with shorter real trip distances presented less range anxiety.
     
   </div>
 </div>
