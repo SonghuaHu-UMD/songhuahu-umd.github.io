@@ -21,7 +21,7 @@ My research focus on combining these big data with traditional travel demand mod
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    Fully relying on mobile device location data, we build a pipeline to extract individual trip rosters. The process includes 
+    <span style="color: red;">**[PhD Dissertation]**</span> Fully relying on mobile device location data, we build a pipeline to extract individual trip rosters. The process includes 
     home&work identification, trip identification, mode imputation, population weighting, and result validation. 
     These trip rosters are then aggregated at different spatiotemporal units to construct multi-modal OD matrices.
   </div>
