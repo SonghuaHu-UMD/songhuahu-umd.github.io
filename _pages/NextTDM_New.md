@@ -21,7 +21,7 @@ My research focus on combining these big data with traditional travel demand mod
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <span style="color: red;">**[PhD Dissertation]**</span> Fully relying on mobile device location data, we build a pipeline to extract individual trip rosters. The process includes 
+    <b><span style="color: purple;">[PhD Dissertation]</span></b> Fully relying on mobile device location data, we build a pipeline to extract individual trip rosters. The process includes 
     home&work identification, trip identification, mode imputation, population weighting, and result validation. 
     These trip rosters are then aggregated at different spatiotemporal units to construct multi-modal OD matrices.
   </div>
@@ -35,7 +35,7 @@ My research focus on combining these big data with traditional travel demand mod
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    Using nationwide CBG-level trip flow derived from mobile devices as the proxy of travel demand, 
+    <b><span style="color: purple;">[TR Part A]</span></b> Using nationwide CBG-level trip flow derived from mobile devices as the proxy of travel demand, 
     We examine its relations with socioeconomics, demographics, and land use. 
     Over 6*8 machine learning models and interpretation techniques are compared to determine the 
     best model and justify interpretation robustness. 
