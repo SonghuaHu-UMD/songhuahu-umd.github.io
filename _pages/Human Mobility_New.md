@@ -47,18 +47,12 @@ My research showcases their powerful capability in modeling travel demand, vehic
 
 
 <div class="gallery">
-
-[//]: # (  <div class="image-container">)
-
-[//]: # (    <a href="https://data.covid.umd.edu/" target="_blank">)
-
-[//]: # (      <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1"/>)
-
-[//]: # (    </a>)
-
-[//]: # (    <div class="image-title">University of Maryland COVID-19 Impact Analysis Platform </div>)
-
-[//]: # (  </div>)
+  <div class="image-container">
+    <a href="https://data.covid.umd.edu/" target="_blank">
+      <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1"/>
+    </a>
+    <div class="image-title">University of Maryland COVID-19 Impact Analysis Platform </div>
+  </div>
 
   <div class="image-container">
     <a href="link_to_page2" target="_blank">
