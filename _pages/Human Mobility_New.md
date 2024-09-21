@@ -16,9 +16,15 @@ Compared to traditional surveys and static sensors, mobile device location data 
 My research showcases their powerful capability in modeling travel demand, vehicle emissions, disease transmission, and network resilience.
 
 <p align="center">
-    <img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5" title="test"/>
-    <img src="https://songhuahu-umd.github.io/images/OD2T1.png" width="310" hspace="5"/>
-    <img src="https://songhuahu-umd.github.io/images/FF11.png" width="310" hspace="5"/>
+    <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 1" width="30%" hspace="5"/>
+    <img src="https://songhuahu-umd.github.io/images/OD2T1.png" alt="Title for Image 2" width="30%" hspace="5"/>
+    <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Title for Image 3" width="30%" hspace="5"/>
+</p>
+
+<p align="center">
+  <b>Title for Image 1</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Title for Image 2</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Title for Image 3</b>
 </p>
 
 [//]: # (<a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF11.png" width="300" hspace="20"></a>)
