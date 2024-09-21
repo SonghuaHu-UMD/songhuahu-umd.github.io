@@ -13,12 +13,13 @@ My research focus on combining these big data with traditional travel demand mod
 
 ### <span style="color: green"> Multi-modal OD Matrix Estimation </span> 📑📑📑🚩🚩🚩
 
-<div style="display: flex; justify-content: center; align-items: center;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 5px;">
+<div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b">
         <img src="https://songhuahu-umd.github.io/images/FFF1.png" alt="Figure" style="width: 300px;" />
     </a>
   </div>
+
   <div style="flex: 1; text-align: left; margin-right: 5px;">
     Fully relying on mobile device location data, we build a pipeline to extract individual trip rosters. The process includes 
     home&work identification, trip identification, mode imputation, population weighting, and result validation. 
