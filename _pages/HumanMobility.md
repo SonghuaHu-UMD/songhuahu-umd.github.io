@@ -49,7 +49,7 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 
 ---
 
-### <span style="color: green"> AI in Travel Demand Forecasting </span> 📈📈📈📉📉📉
+### <span style="color: green"> AI in Human Mobility Forecasting </span> 📈📈📈📉📉📉
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
@@ -58,7 +58,7 @@ a set of traffic simulation tools for simulating traffic flow at both individual
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[TR Part A]</span></b> OD flow forecasting is challenging due to complex spatiotemporal dependencies and heterogeneous external
+    <b><span style="color: purple;">[PhD Dissertation]</span></b> OD flow forecasting is challenging due to complex spatiotemporal dependencies and heterogeneous external
     effects. We propose a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network (<a href="https://github.com/SonghuaHu-UMD/MultiSTGraph">Multi-ATGCN</a>),
     a general deep learning framework for citywide multi-step OD flow forecasting.
     Experiments on two real-world tasks demonstrate its steady performance improvement over state-of-the-art baselines.
@@ -80,9 +80,23 @@ a set of traffic simulation tools for simulating traffic flow at both individual
   </div>
 </div>
 
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+        <img src="https://songhuahu-umd.github.io/images/LLMEvent.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[Ongoing]</span></b> Human mobility is sensitive to different events including weather events, traffic events, and social events. 
+    We collected over 40 different types of events from different social media platforms and intend to forecast human mobility change under these events.
+    We used LLM for this task, with a focus on forecasting both road traffic condition and community travel demand.
+    Results show that a Vanilla GPT4o can already achieve 15.12% of MAPE, which is significantly higher than the state-of-the-art time series forecasting baselines.
+  </div>
+</div>
+
 ---
 
-### <span style="color: green"> Multi-dimensional Traffic Simulation </span>🚦🚦🚦🚗🚗🚗
+### <span style="color: green"> Multi-scale Traffic Simulation </span>🚦🚦🚦🚗🚗🚗
 
 > <a href="https://songhuahu-umd.github.io/NextTDM/"><img style="float: left" src="https://songhuahu-umd.github.io/images/FF62.gif" width="300" hspace="10"></a>
 Integrating forecasted travel demand with traffic simulators completes the last puzzle of a travel demand model.
