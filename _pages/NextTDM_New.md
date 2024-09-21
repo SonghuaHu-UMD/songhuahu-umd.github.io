@@ -16,7 +16,7 @@ My research focus on combining these big data with traditional travel demand mod
 <div style="display: flex; justify-content: center; align-items: center;">
   <div style="flex: 1; text-align: left; margin-right: 5px;">
     <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b">
-        <img src="https://songhuahu-umd.github.io/images/FFF1.png" alt="Figure" style="width: 500px;" />
+        <img src="https://songhuahu-umd.github.io/images/FFF1.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 5px;">
@@ -29,7 +29,7 @@ My research focus on combining these big data with traditional travel demand mod
 <div style="display: flex; justify-content: center; align-items: center;">
   <div style="flex: 1; text-align: left; margin-right: 5px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635">
-        <img src="https://songhuahu-umd.github.io/images/FF12.png" alt="Figure" style="width: 500px;" />
+        <img src="https://songhuahu-umd.github.io/images/FF12.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 5px;">
