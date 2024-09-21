@@ -10,21 +10,20 @@ author_profile: true
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/Cartype.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/camera0.gif" alt="Figure" style="width: 400px;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[Ongoing]</span></b>
-    MOtor Vehicle Emission Simulator (MOVES), the primary regulatory model for vehicle emission modeling in the US, includes 13 car types (aka source type). 
-    Such a high-detailed and unique car classification scheme makes the preparation of fleet composition inputs quite challenging. 
-    Here we constructed a world-first customized car-type dataset containing a total of 10,000 images that align with the MOVES source types.
-    All images are cropped from the traffic video surveillance collected from ~ 800 traffic cameras in New York, and labeled by human and GPT4o. We tested a total of 10 image classifiers, 
-    with ConvNeXt achieving the best accuracy (92.9%) and efficiency.
+    <b><span style="color: purple;">[Under Review]</span></b>
+    The car classification scheme of MOVES includes 13 car types, making the preparation of fleet composition inputs challenging. 
+    We constructed a world-first customized car-type dataset containing a total of 10,000 images that align with the MOVES source types.
+    All images are cropped from the traffic video surveillance collected from ~ 800 traffic cameras in New York, and labeled by GPT4o and validated by human. 
+    We then trained a total of 10 image classifiers based on the dataset, with ConvNeXt achieving the best accuracy (92.9%) and efficiency.
   </div>
 </div>
 
-
+---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
@@ -33,12 +32,31 @@ author_profile: true
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[Ongoing]</span></b>
+    <b><span style="color: purple;">[Under Review]</span></b>
     Traffic signal control, particularly in urban areas, contributes to a large number of stops-and-goes and significantly impacts vehicle emissions.
     We developed a signal processing algorithm to infer the directional signal timing from the traffic flow time series extracted from camera videos.
-    The signal timing is then applied to the link-level 1-minute-average speed profiles to convert them to second-by-second driving cycles.
-    We found a significant increase in operation modes 1 (Idle) and 12 (acceleration) can be documented after applying the signal control enrichment.
-    In addition, PM shows on average 60% increase if considering the signal timing.
+    The signal timing is then applied to the link-level speed profiles to convert them to second-by-second driving cycles.
+    We found a significant increase in operation modes 1 (Idle) and 12 (acceleration) after applying the signal control enrichment.
+    In addition, PM and NOx shows on average 40-60% increase if considering the signal timing.
+  </div>
+</div>
+
+---
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+        <img src="https://songhuahu-umd.github.io/images/ZONE30.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[Under Review]</span></b>
+    The impact of Zone 30, i.e., decreasing road speed limits to 30 km/h, on traffic emissions remain uncertain. 
+    We propose a big-data approach to estimate the effects of city-wide Zone 30 on traffic emissions in Milan, Italy, 
+    analyzing data collected from over 3.4 million driving trips over four weeks, and simulating nine scenarios considering different combinations of road types and Zone 30 implementation areas. 
+    Results show that the overall impact of Zone 30 on emissions is modest -- in the most extensive scenario, a 0.61\% to 2.73\% increase is observed in different emissions. 
+    However, these impacts vary significantly across spaces and times, with the most notable increases observed during peak hours and in cross-region travels. 
+    Additional analysis on vehicle travel demand changes suggests that a minimum reduction of 5\% in traffic volume could achieve an overall emission breakeven.
   </div>
 </div>
 
