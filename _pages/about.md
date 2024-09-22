@@ -23,9 +23,8 @@ Applications of my work span areas such as:
 <span style="color: royalblue">Sustainable Mobility</span> (Vehicle Emission Estimation, Vehicle Electrification, Mobility as a Service (MaaS)),
 <span style="color: royalblue">Emergency Response</span>(Network Resilience, Community Vulnerability), 
 <span style="color: royalblue">Transport and Health</span>(Computational Epidemiology, Human Exposure, Health Disparity),
-<span style="color: royalblue">Transportation Planning, Management, and Operation</span>(Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis, Public Perception, Accessibility).
-
-![Connecting the dots: Human mobility + X](https://songhuahu-umd.github.io/images/framework.png)
+<span style="color: royalblue">Transportation Planning, Management, and Operation</span>(Travel Demand Modelling, 
+Transportation Economics, Travel Behavioral Analysis, Accessibility).
 
 ***
 
@@ -37,6 +36,9 @@ Research Interests
 [Mobility Resilience](https://songhuahu-umd.github.io/Resilience/) |
 [Transport and Health](https://songhuahu-umd.github.io/Health/) |
 [Miscellaneous (Transportation Economics, Public Perception, MaaS)](https://songhuahu-umd.github.io/Miscell/) ...
+
+![Connecting the dots: Human mobility + X](https://songhuahu-umd.github.io/images/framework.png)
+
 
 ***
 
