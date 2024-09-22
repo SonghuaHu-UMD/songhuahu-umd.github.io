@@ -14,14 +14,14 @@ post-class interaction.
 
 
 <div style="display: flex; justify-content: space-between; gap: 10px;">
-  <img src="https://songhuahu-umd.github.io/images/teaching0.png" style="height: 400px; object-fit: contain;">
-  <img src="https://songhuahu-umd.github.io/images/teaching1.png" style="height: 400px; object-fit: contain;">
+  <img src="https://songhuahu-umd.github.io/images/teaching0.png" alt="Alt text 1" style="height: 500px; object-fit: contain;">
+  <img src="https://songhuahu-umd.github.io/images/teaching1.png" alt="Alt text 2" style="height: 500px; object-fit: contain;">
 </div>
 
 
 <div style="display: flex; justify-content: space-between; gap: 5px;">
-  <img src="https://songhuahu-umd.github.io/images/T1.png" title="" width="45%">
-  <img src="https://songhuahu-umd.github.io/images/T2.png" title="" width="45%">
+  <img src="https://songhuahu-umd.github.io/images/T1.png" alt="Second image" title="" width="45%">
+  <img src="https://songhuahu-umd.github.io/images/T2.png" alt="Second image" title="" width="45%">
 </div>
 
 
