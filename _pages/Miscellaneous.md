@@ -20,12 +20,10 @@ infrastructure design, transportation operations, travel demand management, publ
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[TR Part A]</span></b>
-    I am the technical leader of the first-in-the-nation Mobility as a service (MaaS) APP 
-    <a href="https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33">“incenTrip”</a>, 
-    to provide green travel options and personalized incentives for real-world travelers.
-    As a smartphone incentive-based travel demand management application, 
-    IncenTrip acts as a one-stop trip planner, information provider, and incentive allocator, 
-    accommodating real-time information for various travel modes such as driving, ridesharing, transit, walking, biking, and multimodal options.
+    I am the technical leader of the first-in-the-nation incentive-based travel demand management APP 
+    <a href="https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33">“incenTrip”</a>.
+    Through personalized and dynamic incentives, the app aims to reduce traffic congestion, energy consumption, and emissions by encouraging individuals to adopt sustainable travel options, 
+    such as switching from driving to greener travel modes, participating in carpooling programs, bypassing congested corridors, and avoiding travel during peak periods.
   </div>
 </div>
 
@@ -68,8 +66,10 @@ including parking, accessibility, the built environment, health care services, a
     <b><span style="color: purple;">[Under Review]</span></b>
     By examining 5 million parking-related reviews for 1.1M POIs sourced from Google Maps reviews,
     we investigate public sentiment towards parking across the whole US at a census block group level.
-    We link them with local socio-spatial factors and find denser urban areas with lower socioeconomic status
-    are more likely to exhibit negative parking sentiment.
+    We employ the Bidirectional Encoder Representations from Transformers (BERT) model to classify the 
+    parking sentiment and conduct regression analyses to explore its relationships with socio-spatial factors.
+    We find significant variations in parking sentiment across POI types and CBSAs, with Restaurant POIs showing the most negative. 
+    We also find denser urban areas with lower socioeconomic status are more likely to exhibit negative parking sentiment.
   </div>
 </div>
 
@@ -83,8 +83,7 @@ including parking, accessibility, the built environment, health care services, a
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[Under Review]</span></b>
-    Roughly 30.6 million individuals in the US have physical disabilities that affect their ambulatory activities.
-    Despite comprehensive civil rights legislation for Americans with disabilities, many city streets and local services remain inaccessible.
+    Approximately 30.6 million people in the US have physical disabilities affecting mobility, yet many city streets and services remain inaccessible despite civil rights protections. 
     We use Google Maps reviews across the US and fine-tune Llama 3 model with the Low-Rank Adaptation technique to analyze public sentiment on accessibility.
     We found areas with more elderly, highly-educated residents exhibit more negative sentiment, but no clear link is found between the presence of disabilities and public sentiments.
   </div>
@@ -92,7 +91,7 @@ including parking, accessibility, the built environment, health care services, a
 
 <hr style="border:1px solid gray">
 
-### <span style="color: green"> Shared Mobility </span> 👫👫👫🚇🚇🚇
+### <span style="color: green"> Mobility as a service (MaaS) and Shared Mobility </span> 👫👫👫🚇🚇🚇
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
