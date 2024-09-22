@@ -9,7 +9,7 @@ author_profile: true
 Effective teaching, in my view, relies on thorough pre-class preparation, open in-class environment, and active
 post-class interaction. Moreover, it's equally crucial to recognize the diversity of student backgrounds and encourage
 flexible engagement. I am well-prepared to teach both undergraduate and graduate courses in transportation, GIS, and
-urban planning. I’m also eager to develop new courses that combine my research with foundational transportation and GIS
+urban informatics. I’m also eager to develop new courses that combine my research with foundational transportation and GIS
 theories.
 
 **Student Mentoring:** Since graduate school, I have assisted my advisors in mentoring undergraduate, graduate, and high
