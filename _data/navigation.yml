@@ -30,8 +30,8 @@ main:
   - title: "Miscellaneous"
     url: /Miscell/
 
+  - title: "Teaching"
+    url: /others/
+
   - title: "CV"
     url: /cv/
-
-  - title: "Others"
-    url: /others/

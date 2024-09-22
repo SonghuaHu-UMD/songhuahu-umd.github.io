@@ -5,14 +5,15 @@ permalink: /Health/
 author_profile: true
 ---
 
-During the COVID-19 pandemic, non-pharmaceutical interventions were widely employed to contain 
-the dissemination of the virus by restricting people’s travel and physical contact. 
-I focus on building integrated econometric, epidemiological, and simulation models to examine (causal) relations 
-among human mobility, public policies, vaccination, and virus transmission, controlling for confounding effects from socioeconomic conditions.
-In the future, I intend to extend my research to a broad scope of health scenarios such as SARS-Cov-2 variants, AIDS, and influenza.
+During the COVID-19 pandemic, non-pharmaceutical interventions were widely employed to contain
+the dissemination of the virus by restricting people’s travel and physical contact.
+I focus on building integrated econometric, epidemiological, and simulation models to examine (causal) relations
+among human mobility, public policies, vaccination, and virus transmission, controlling for confounding effects from
+socioeconomic conditions.
+In the future, I intend to extend my research to a broad scope of health scenarios such as SARS-Cov-2 variants, AIDS,
+and influenza.
 
 ### <span style="color: green"> Human Mobility, Infectious Disease, and Health Disparity</span> 😷 😷 😷 🏃🏃🏃
-
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
