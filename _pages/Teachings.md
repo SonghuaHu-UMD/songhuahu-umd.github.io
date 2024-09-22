@@ -1,13 +1,10 @@
 ---
 layout: archive
-title: ""
-permalink: /others/
+title: "Teaching, Mentoring, and Diversity"
+permalink: /Teachings/
 author_profile: true
 ---
 
-
-Teaching, Mentoring, and Diversity
-======
 Through my teaching experiences, I've come to recognize that teaching has become an essential part of my academic life.
 Effective teaching, in my view, relies on thorough pre-class preparation, open in-class environment, and active
 post-class interaction. Moreover, it's equally crucial to recognize the diversity of student backgrounds and encourage

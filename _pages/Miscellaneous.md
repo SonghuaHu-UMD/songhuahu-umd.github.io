@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Miscellaneous Transportation Studies"
+title: "Other Transportation Studies"
 permalink: /Miscell/
 author_profile: true
 ---
