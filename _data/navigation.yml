@@ -18,13 +18,13 @@ main:
   - title: "Human Mobility"
     url: /HumanMobility/
 
-  - title: "Sustainable Mobility"
+  - title: "Sustainability"
     url: /SusMobility/ # /Traffic Simulation/
 
-  - title: "Mobility Resilience"
+  - title: "Resilience"
     url: /Resilience/
 
-  - title: "Transport&Health"
+  - title: "Health"
     url: /Health/
 
   - title: "Miscellaneous"
