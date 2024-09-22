@@ -15,8 +15,8 @@ GIS theories.
 **Student Mentoring:** Since graduate school, I have assisted my advisors in mentoring undergraduate, graduate, and high
 school students.
 We work together on different research projects, some of which have been published in top-tier journals. Now, as a
-postdoc at MIT, I lead multiple teams each year through MIT’s Undergraduate Research Opportunities Program, where I
-guide students from diverse fields like computer science, EECS, AI, CEE, and urban planning to collaborate on various
+postdoc at MIT, I lead multiple teams through MIT’s Undergraduate Research Opportunities Program, where I
+guide students from diverse fields like computer science, EECS, AI, CEE, and urban planning to work on various
 projects.
 
 **Outreach:** I've been serving as an [online technology blogger](https://www.zhihu.com/people/hu-song-hua-39) since
