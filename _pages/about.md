@@ -33,10 +33,13 @@ Disparity),
 <span style="color: royalblue">Transportation Planning, Management, and Operation</span>(Travel Demand Modelling,
 Transportation Economics, Travel Behavioral Analysis, Accessibility).
 
----
-**I am always open to collaboration opportunities for anyone interested in my research. Currently, I’m particularly
-focused on the application of LLMs in human mobility modeling within transportation. Feel free to reach
-out via email(hsonghua@mit.edu)—I’d love to discuss further!**
+[//]: # (---)
+
+[//]: # (**I am always open to collaboration opportunities for anyone interested in my research. Currently, I’m particularly)
+
+[//]: # (focused on the application of LLMs in human mobility modeling within transportation. Feel free to reach)
+
+[//]: # (out via email&#40;hsonghua@mit.edu&#41;—I’d love to discuss further!**)
 
 ***
 
