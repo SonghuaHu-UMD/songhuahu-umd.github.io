@@ -59,8 +59,7 @@ Education
 ======
 
 * Ph.D., Civil & Environmental Engineering (Transportation), University of Maryland, College Park, 2023
-    *
-  Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
+    * Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
 * M.S., Transportation Engineering, Tongji University, 2019
     * Thesis: “Promoting electric vehicle efficiency in large-scale carsharing systems”
 * B.S., Civil & Environmental Engineering (Transportation), Huazhong University of Science and Technology (HUST), 2016
