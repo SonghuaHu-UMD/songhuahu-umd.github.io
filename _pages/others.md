@@ -8,14 +8,14 @@ author_profile: true
 
 Teaching
 ======
+Through my teaching experiences, I've come to recognize that teaching has become an essential part of my academic life.
+Effective teaching, in my view, relies on thorough pre-class preparation, open in-class environment, and active
+post-class interaction.
 
-<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: center; margin-right: 5px;">
-    <img src="https://songhuahu-umd.github.io/images/teaching0.png" alt="Figure" style="width: 60%;" />
-  </div>
-  <div style="flex: 0 0 auto; text-align: center; margin-right: 5px;">
-    <img src="https://songhuahu-umd.github.io/images/teaching1.png" alt="Figure" style="width: 30%;" />
-  </div>
+
+<div style="display: flex; justify-content: space-between; gap: 10px;">
+  <img src="https://songhuahu-umd.github.io/images/teaching0.png" alt="Alt text 1" title="Optional title 1" style="height: 200px; object-fit: contain;">
+  <img src="https://songhuahu-umd.github.io/images/teaching1.png" alt="Alt text 2" title="Optional title 2" style="height: 200px; object-fit: contain;">
 </div>
 
 
