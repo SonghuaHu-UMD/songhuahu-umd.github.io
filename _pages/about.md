@@ -25,6 +25,8 @@ Applications of my work span areas such as:
 <span style="color: royalblue">Transport and Health</span>(Computational Epidemiology, Human Exposure, Health Disparity),
 <span style="color: royalblue">Transportation Planning, Management, and Operation</span>(Travel Demand Modelling, Transportation Economics, Travel Behavioral Analysis, Public Perception, Accessibility).
 
+![Connecting the dots: Human mobility + X](https://songhuahu-umd.github.io/images/framework.png)
+
 ***
 
 Research Interests
