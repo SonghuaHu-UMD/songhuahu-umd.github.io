@@ -65,9 +65,8 @@ including parking, accessibility, the built environment, health care services, a
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[Under Review]</span></b>
     By examining 5 million parking-related reviews for 1.1M POIs sourced from Google Maps reviews,
-    we investigate public sentiment towards parking across the whole US at a census block group level.
-    We employ the Bidirectional Encoder Representations from Transformers (BERT) model to classify the 
-    parking sentiment and conduct regression analyses to explore its relationships with socio-spatial factors.
+    we investigate public sentiment towards parking across the whole US at a CBG level.
+    We employ the BERT model to classify the parking sentiment and conduct regression analyses to explore its relationships with socio-spatial factors.
     We find significant variations in parking sentiment across POI types and CBSAs, with Restaurant POIs showing the most negative. 
     We also find denser urban areas with lower socioeconomic status are more likely to exhibit negative parking sentiment.
   </div>
@@ -83,9 +82,9 @@ including parking, accessibility, the built environment, health care services, a
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[Under Review]</span></b>
-    Approximately 30.6 million people in the US have physical disabilities affecting mobility, yet many city streets and services remain inaccessible despite civil rights protections. 
+    ~ 30.6 million people in the US have physical disabilities affecting mobility, yet many city streets and services remain inaccessible despite civil rights protections. 
     We use Google Maps reviews across the US and fine-tune Llama 3 model with the Low-Rank Adaptation technique to analyze public sentiment on accessibility.
-    We found areas with more elderly, highly-educated residents exhibit more negative sentiment, but no clear link is found between the presence of disabilities and public sentiments.
+    We found areas with more elderly, highly-educated residents exhibit more negative sentiment, but no clear link is found between % disabilities and accessibility sentiments.
   </div>
 </div>
 
