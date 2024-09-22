@@ -30,12 +30,11 @@ Applications of my work span areas such as:
 Research Interests
 ======
 
-[Urban Crowdsensing](https://songhuahu-umd.github.io/HumanMobility) |
-[Spatiotemporal AI](https://songhuahu-umd.github.io/Traffic%20Simulation) |
-[Emergency Response](https://songhuahu-umd.github.io/Infrastructure%20Resilience) |
-[Transport and Health](https://songhuahu-umd.github.io/Public%20Health) |
-[Sustainable Mobility](https://songhuahu-umd.github.io/Shared%20Mobility) |
-[Miscellaneous](https://songhuahu-umd.github.io/Shared%20Mobility) ...
+[Human Mobility](https://songhuahu-umd.github.io/HumanMobility) |
+[Sustainable Mobility](https://songhuahu-umd.github.io/SusMobility/) |
+[Mobility Resilience](https://songhuahu-umd.github.io/Resilience/) |
+[Transport and Health](https://songhuahu-umd.github.io/Health/) |
+[Miscellaneous](https://songhuahu-umd.github.io/Miscell/) ...
 
 ***
 

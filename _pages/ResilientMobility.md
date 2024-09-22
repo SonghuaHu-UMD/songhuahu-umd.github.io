@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Resilient Mobility and Equitable Community"
+title: "Resilient Mobility and Community"
 permalink: /Resilience/
 author_profile: true
 ---
@@ -50,7 +50,7 @@ mobility system.
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0966692321000508">
-        <img src="https://songhuahu-umd.github.io/images/FF31.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/bikeshare.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
 

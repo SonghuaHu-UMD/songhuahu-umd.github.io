@@ -58,9 +58,10 @@ In the future, I intend to extend my research to a broad scope of health scenari
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[PLOS]</span></b>
-    Through a set of structural equation modeling, this study quantified how racial/ethnic differences in 
-    following stay-at-home orders could mediate COVID-19 health outcomes, controlling for state effects, 
-    socioeconomics, demographics, occupation, and partisanship. Mediation analyses revealed that human mobility 
+    We jointly examined county-level racial/ethnic differences in compliance with stay-at-home orders and COVID-19 health outcomes during 2020, 
+    leveraging two-year geo-tracking data of mobile devices across ~4.4 million POIs in the contiguous US.    
+    Through a set of structural equation modeling, we quantified how racial/ethnic differences in 
+    following stay-at-home orders could mediate COVID-19 health outcomes. Mediation analyses revealed that human mobility 
     only statistically influenced infection rate but not case-fatality ratio, and such mediation effects varied substantially among racial/ethnic compositions.
   </div>
 </div>

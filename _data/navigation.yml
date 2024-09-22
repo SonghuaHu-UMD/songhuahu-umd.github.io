@@ -11,15 +11,12 @@ main:
 #
 #  - title: "Research"
 #    url: /portfolio/
-        
+
 #  - title: "Blog Posts"
 #    url: /year-archive/
 
   - title: "Human Mobility"
     url: /HumanMobility/
-
-#  - title: "ST Network"
-#    url: /Spatiotemporal Network/
 
   - title: "Sustainable Mobility"
     url: /SusMobility/ # /Traffic Simulation/
@@ -27,7 +24,7 @@ main:
   - title: "Mobility Resilience"
     url: /Resilience/
 
-  - title: "Travel&Health"
+  - title: "Transport&Health"
     url: /Health/
 
   - title: "Miscellaneous"

@@ -64,10 +64,10 @@ including parking, accessibility, the built environment, health care services, a
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[Under Review]</span></b>
-    By examining 5 million parking-related reviews for 1.1M POIs sourced from Google Maps reviews,
-    we investigate public sentiment towards parking across the whole US at a CBG level.
-    We employ the BERT model to classify the parking sentiment and conduct regression analyses to explore its relationships with socio-spatial factors.
-    We find significant variations in parking sentiment across POI types and CBSAs, with Restaurant POIs showing the most negative. 
+    By examining 5 million parking reviews for 1.1M POIs from Google Maps reviews,
+    we investigate public sentiment towards parking across the whole US.
+    We employ the BERT model to classify the parking sentiment and conduct regression to explore its relationships with socio-spatial factors.
+    We find significant variations in parking sentiment across POI types and CBSAs, with Restaurants showing the most negative. 
     We also find denser urban areas with lower socioeconomic status are more likely to exhibit negative parking sentiment.
   </div>
 </div>
