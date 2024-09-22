@@ -21,7 +21,7 @@ mobility system.
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[TR Part C]</span></b>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><b><span style="color: purple;">[TR Part C]</span></b></a>
     Using location data of over 150 million monthly active mobile devices in the US,
     we successfully measure how human mobility changed during the COVID-19 pandemic using three metrics:
     average trips per person, average person-miles traveled, and percentage of residents staying home. Data are updated daily
@@ -38,7 +38,7 @@ mobility system.
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[TR Part D]</span></b>
+    <a href="https://www.sciencedirect.com/science/article/pii/S1361920920308397"><b><span style="color: purple;">[TR Part D]</span></b></a>
     The COVID-19 pandemic has led to a globally unprecedented decline in transit ridership. 
     We leverage the 20-year daily transit ridership data in Chicago to infer the impact of COVID-19 on ridership using the Bayesian structural time series model, 
     controlling confounding effects of socioeconomic disparities. 
@@ -55,7 +55,7 @@ mobility system.
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[JTG]</span></b>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0966692321000508"><b><span style="color: purple;">[JTG]</span></b></a>
     Leveraging two-year bikesharing trips in Chicago, we examine the spatiotemporal evolution of bikesharing usage 
     across the pandemic and compare it with other travel modes.
     We find that bikesharing is more resilient compared with transit, driving, and walking.
@@ -73,7 +73,7 @@ mobility system.
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[J. R. Soc. Interface]</span></b>
+    <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2020.0344"><b><span style="color: purple;">[J. R. Soc. Interface]</span></b></a>
     By analyzing the mobile device location data during the pandemic, we find a spontaneous mobility reduction that occurred
     regardless of government actions and a ‘floor’ phenomenon, where human mobility reached a lower bound and
     stopped decreasing soon after each state announced the stay-at-home order.
@@ -94,7 +94,7 @@ mobility system.
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[IEEE ITSC]</span></b>
+    <a href="https://ieeexplore.ieee.org/abstract/document/8569639"><b><span style="color: purple;">[IEEE ITSC]</span></b></a>
     Heavy rain can induce road flooding, especially in the urban areas due to poor drainage systems. Effectively identifying
     the flooding road segment can help people plan their travel reasonably and reduce losses. 
     Combining social media posts, precipitation, and traffic flow information, we develop an automatic road flooding detection algorithm 
@@ -112,7 +112,7 @@ mobility system.
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[IJDRR]</span></b>
+    <a href="https://www.sciencedirect.com/science/article/pii/S2212420924005168"><b><span style="color: purple;">[IJDRR]</span></b></a>
     Crowdsourced data offer new opportunities to monitor and investigate changes in road traffic flow during extreme weather. 
     We use two types of crowdsourced data: passively collected location data (PCLD) from mobile devices and 
     actively collected user reports (ACUR) from the WAZE app, to examine the impact of floods, winter storms, and fog on road traffic. 

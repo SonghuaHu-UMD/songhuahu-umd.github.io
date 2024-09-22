@@ -23,7 +23,7 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[Under Review]</span></b>
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
     The car classification scheme of MOVES includes 13 car types, making the preparation of fleet composition inputs challenging. 
     We constructed a world-first customized car-type dataset containing a total of 10,000 images that align with the MOVES source types.
     All images are cropped from the traffic video surveillance collected from ~ 800 traffic cameras in New York, and labeled by GPT4o and validated by human. 
@@ -40,7 +40,7 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[Under Review]</span></b>
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
     Traffic signal control, particularly in urban areas, contributes to a large number of stops-and-goes and significantly impacts vehicle emissions.
     We developed a signal processing algorithm to infer the directional signal timing from the traffic flow time series extracted from camera videos.
     The signal timing is then applied to the link-level speed profiles to convert them to second-by-second driving cycles.
@@ -58,7 +58,7 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[Under Review]</span></b>
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
     The impact of 30 km/h speed limit (ZONE 30) on traffic emissions remain uncertain. 
     We propose a big-data approach to estimate the effects of city-wide Zone 30 on traffic emissions in Milan, Italy, analyzing data collected from over 3.4 million driving trips. 
     Results show that the overall impact of Zone 30 on emissions is modest -- in the most extensive scenario, a 0.61% to 2.73% increase is observed in different emissions. 
@@ -76,7 +76,7 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[Under Review]</span></b>
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
     We introduce the design and demonstration of a Digital Twin (DT) platform 
     for road traffic emission nowcasting and forecasting. By integrating multi-source data collected from online repositories and IoT sensors, 
     the platform provides a comprehensive, near-real-time view of road traffic emissions with high spatio-temporal resolution. 
@@ -98,7 +98,7 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[TR Part D]</span></b> 
+    <a href="https://www.sciencedirect.com/science/article/pii/S1361920919311058"><b><span style="color: purple;">[TR Part D]</span></b></a>
     Limited battery capacity remains a major obstacle for large-scale adoption of Shared electric vehicles (SEVs), 
     and greatly undermines their popularity. 
     In this study, we employed a discrete-event simulation approach estimate 
@@ -116,7 +116,7 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[TR Part C]</span></b> 
+    <a href="https://www.sciencedirect.com/science/article/pii/S0968090X2300459X"><b><span style="color: purple;">[TR Part C]</span></b> </a>
     To address the battery-related shortcomings of battery electric buses (BEBs), dynamic wireless charging (DWC) technology that allows BEBs to charge while in motion has emerged.
     To resolve the DWS planning problem, we propose a (higher-level) strategic planning model that optimizes the deployment of DWC facilities and battery capacity of BEBs, 
     and then establishes a (lower-level) tactical planning model of optimal charging scheduling under the time-of-use (TOU) tariff mechanism considering the interdependence between infrastructure design and charging activities of BEBs. 
@@ -132,7 +132,7 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[JPER]</span></b> 
+    <a href="https://journals.sagepub.com/doi/abs/10.1177/0739456X241256041"><b><span style="color: purple;">[JPER]</span></b> </a>
     The correlation between e-scooter sharing (ESS) and docked bikesharing (DBS) remains ambiguous. 
     This study compared usage patterns between the two modes, aiming to unveil their evolving relationship. 
     To account for nonlinear effects, generalized additive mixed models were employed. 
@@ -151,7 +151,7 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[IEEE ITSM]</span></b> 
+    <a href="https://ieeexplore.ieee.org/abstract/document/9034087"><b><span style="color: purple;">[IEEE ITSM]</span></b></a> 
     We aim to understand users’ decision-making when selecting electric shared vehicles by analyzing over 
     five million transactions from EVCARD – the biggest EV sharing company in Shanghai.
     We found users are less likely to choose vehicles with greater ages, fewer seats, higher rental prices, and smaller battery ranges. 
