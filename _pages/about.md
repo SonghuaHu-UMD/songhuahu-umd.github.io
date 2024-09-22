@@ -34,18 +34,18 @@ Research Interests
 [Sustainable Mobility](https://songhuahu-umd.github.io/SusMobility/) |
 [Mobility Resilience](https://songhuahu-umd.github.io/Resilience/) |
 [Transport and Health](https://songhuahu-umd.github.io/Health/) |
-[Miscellaneous](https://songhuahu-umd.github.io/Miscell/) ...
+[Miscellaneous (Transportation Economics, Public Perception, MaaS)](https://songhuahu-umd.github.io/Miscell/) ...
 
 ***
 
 Education
 ======
 
-* Ph.D., Transportation Engineering, University of Maryland, College Park, 2023
+* Ph.D., Civil & Environmental Engineering (Transportation), University of Maryland, College Park, 2023
     * Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
 * M.S., Transportation Engineering, Tongji University, 2019
     * Thesis: “Promoting electric vehicle efficiency in large-scale carsharing systems”
-* B.S., Transportation Engineering, Huazhong University of Science and Technology, 2016
+* B.S., Civil & Environmental Engineering (Transportation), Huazhong University of Science and Technology (HUST), 2016
     * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
 
 ***
@@ -89,7 +89,7 @@ Awards
 * The Graduate Merit Scholarship, Tongji University, 2018.
 * Runner-up (2/140), [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
 * [Undergraduate Merit Scholarship](http://news.hust.edu.cn/info/1007/2164.htm) (20/7000), Huazhong University of Science and Technology, 2015.
-* National Scholarship (1/64), China, 2013, 2014, 2015.
+* National Scholarship (1/60), China, 2013, 2014, 2015.
 
 ***
 
@@ -115,7 +115,7 @@ Reviews
     IACP International Association of China Planning;
     IEEE Intelligent Transportation Systems Society Conference Management System
 
-<span style="color: Yellowgreen">**See the full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)**</span>
+<span style="color: purple">**See the full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)**</span>
 
 ***
 
