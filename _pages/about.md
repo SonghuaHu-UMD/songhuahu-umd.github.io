@@ -81,13 +81,15 @@ Awards
 * [UMD CEE Best Doctoral Research Award](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards), University of Maryland, College Park, 2023.
 * Outstanding Reviewer, Transportation Research Part D: Transport and Environment, 2023.
 * [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards), University of Maryland, College Park, 2021.
+* Top 10 Most Cited Articles, Journal of Transport Geography, from January 2021 to now.
+* Top 10 Most Cited Articles, Transportation Research Part D: Transport and Environment, from January 2021 to now.
+* Top 10 Most Cited Articles, Transportation Research Part C: Emerging Technologies, from January 2021 to September 2024.
 * CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
 * The Graduate School's Dean’s Fellowship, University of Maryland, College Park, 2019.
-* Graduate Merit Scholarship, Tongji University, 2018.
-* Second Price (2/140), [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
-* [Undergraduate Merit Scholarship](http://news.hust.edu.cn/info/1007/2164.htm) (20/7000), Huazhong University of Science and
-  Technology, 2015.
-* National Scholarship (1/64), Huazhong University of Science and Technology, 2013 - 2015.
+* The Graduate Merit Scholarship, Tongji University, 2018.
+* Runner-up (2/140), [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
+* [Undergraduate Merit Scholarship](http://news.hust.edu.cn/info/1007/2164.htm) (20/7000), Huazhong University of Science and Technology, 2015.
+* National Scholarship (1/64), China, 2013, 2014, 2015.
 
 ***
 
