@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Miscellaneous: Mobility as a service (MaaS), Transportation Economics, Public Perception, and More"
+title: "Mobility as a service (MaaS), Transportation Economics, Public Perception, ..."
 permalink: /Miscell/
 author_profile: true
 ---

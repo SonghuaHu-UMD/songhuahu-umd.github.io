@@ -15,6 +15,23 @@ mobility system.
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524">
+        <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[TR Part C]</span></b>
+    Using location data of over 150 million monthly active mobile devices in the US,
+    we successfully measure how human mobility changed during the COVID-19 pandemic using three metrics:
+    average trips per person, average person-miles traveled, and percentage of residents staying home. Data are updated daily
+    and made publicly available via an <a href="https://data.covid.umd.edu/"> online platform </a>.
+  </div>
+</div>
+
+---
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920920308397">
         <img src="https://songhuahu-umd.github.io/images/FF33.png" alt="Figure" style="width: 400px;" />
     </a>
@@ -47,6 +64,24 @@ mobility system.
   </div>
 </div>
 
+---
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+    <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2020.0344">
+        <img src="https://songhuahu-umd.github.io/images/FF3.png" alt="Figure" style="width: 400px;" />
+    </a>
+  </div>
+
+  <div style="flex: 1; text-align: left; margin-right: 20px;">
+    <b><span style="color: purple;">[J. R. Soc. Interface]</span></b>
+    By analyzing the mobile device location data during the pandemic, we find a spontaneous mobility reduction that occurred
+    regardless of government actions and a ‘floor’ phenomenon, where human mobility reached a lower bound and
+    stopped decreasing soon after each state announced the stay-at-home order.
+    We also document that the states' stay-at-home policies have only led to about a 5% reduction in average human mobility.
+  </div>
+</div>
+
+
 <hr style="border:1px solid gray">
 
 ### <span style="color: green"> Road Network Traffic Resilience </span> ❄️❄️❄️🚧🚧🚧
@@ -72,18 +107,16 @@ mobility system.
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S2212420924005168">
-        <img src="https://songhuahu-umd.github.io/images/Weather.jpg" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/weatherroad.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[IJDRR]</span></b>
     Crowdsourced data offer new opportunities to monitor and investigate changes in road traffic flow during extreme weather. 
-    We utilize two types of crowdsourced data: passively collected location data (PCLD) from mobile devices and 
+    We use two types of crowdsourced data: passively collected location data (PCLD) from mobile devices and 
     actively collected user reports (ACUR) from the WAZE app, to examine the impact of floods, winter storms, and fog on road traffic. 
-    We find overall winter storms have the greatest impact on road traffic, while at a link level, 
-    lower-class roads with lower average speeds and volumes experience milder impact. 
-    We also reveal that ACUR may not accurately reflect the actual impact during extreme weather events, 
+    We find that ACUR may not accurately reflect the actual impact during extreme weather events, 
     as few users are able to travel outside to actively act as “sensors”.
   </div>
 </div>
