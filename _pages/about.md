@@ -35,9 +35,9 @@ Transportation Economics, Travel Behavioral Analysis, Accessibility).
 
 ---
 
-**🔥🔥I am always excited to collaborate with anyone interested in my research! Currently, I’m particularly
-focused on the application of LLMs in human mobility modeling within transportation. Feel free to reach
-out via email (hsonghua@mit.edu)—I’d love to discuss further!**
+**🔥🔥I'm always excited to collaborate with anyone interested in my research! 
+Currently, my main focus is on applying LLMs to human mobility modeling in transportation. Feel free to reach
+out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!**
 
 ***
 
