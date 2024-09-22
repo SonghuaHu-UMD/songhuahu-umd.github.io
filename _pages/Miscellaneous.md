@@ -118,10 +118,9 @@ including parking, accessibility, the built environment, health care services, a
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[TR Part D]</span></b>
-    This study sets station-based shared car booking requests and turnover rates as learning objectives, by which generalized additive mixed models are employed to examine various effects.
-    Findings provide evidence for optimizing the usage and efficiency of carsharing programs: carsharing companies should identify underserved areas to initiate new businesses; 
-    carsharing seems more competitive in a distance to a bus stop between 1.2km and 2.4km, and carsharing is more effectively served in areas with constraints in accessing metro services; 
-    carsharing should be optimally discouraged at transit hubs to avoid the oversupply of shared cars; 
+    By analyzing station-based shared car booking requests and turnover rates, we provide evidence for optimizing the usage and efficiency of carsharing programs: 
+    carsharing companies should identify underserved areas to initiate new businesses; 
+    carsharing seems more competitive in a distance to a bus stop between 1.2km and 2.4km, and carsharing is more effectively served in areas with constraints in accessing metro services;
     local authorities should develop a location-based and geographically differentiated quota in managing carsharing programs.
   </div>
 </div>
