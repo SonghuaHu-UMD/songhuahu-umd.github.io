@@ -20,8 +20,8 @@ infrastructure design, transportation operations, travel demand management, publ
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[TR Part A]</span></b>
-    In the University of Maryland, I am the technical leader of the first-in-the-nation MaaS APP 
-    <a href="https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33">“incenTrip”</a>, funded by USDOE and USDOT, 
+    I am the technical leader of the first-in-the-nation Mobility as a service (MaaS) APP 
+    <a href="https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33">“incenTrip”</a>, 
     to provide green travel options and personalized incentives for real-world travelers.
     As a smartphone incentive-based travel demand management application, 
     IncenTrip acts as a one-stop trip planner, information provider, and incentive allocator, 
@@ -39,14 +39,19 @@ infrastructure design, transportation operations, travel demand management, publ
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[TR Part C]</span></b>
-    A major threat to the growing usage of shared-cars is customer churn. When I was an intern in 
-    the China biggest carsharing program, I examined how personalized economic incentives influence customer churn by longitudinally analyzing over 4 million coupons.
+    A major threat to the growing usage of shared-cars is customer churn. 
+    Despite companies continually providing rewards to attract customers, factors that contribute to customer churn are not well-understood.
+    We examined how personalized economic incentives influence customer churn by longitudinally analyzing over 4 million coupons via an extended Cox proportional hazards model.
+    Results show that the effect of coupons generally increased at first and then decreased after the 130th day.
+    Offering more coupons to new customers can help maximize the profits of service providers. 
+    However, such a strategy is debatable because it invades personal privacy and is unfair for existing loyal customers.
+    
   </div>
 </div>
 
 <hr style="border:1px solid gray">
 
-### <span style="color: green"> Social Media </span>💬💬💬👥👥👥
+### <span style="color: green"> Public Perception from Social Media</span>💬💬💬👥👥👥
 Social media comments provide a rich source of text data containing public sentiments and perceptions.
 By leveraging both traditional text mining techniques and new LLMs,
 I aim to quantify how people feel about various urban services,
@@ -92,16 +97,15 @@ including parking, accessibility, the built environment, health care services, a
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0966692321003240">
-        <img src="https://songhuahu-umd.github.io/images/FF52.jpeg" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/FF52.jpg" alt="Figure" style="width: 400px;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <b><span style="color: purple;">[JTG]</span></b>
-    Dockless bikesharing (DBS) has been considered as a solution to the first and last mile problem of metro connectivity. Leveraging data covering all DBS programs in Shanghai, China, 
-    this study evaluated bike-and-ride (BnR) activities in DBS-metro systems via four metrics: BnR trip count, BnR rate, shared-bike utilization rate, and catchment size.
+    Leveraging data covering all Dockless bikesharing (DBS) programs in Shanghai, China, we evaluated bike-and-ride (BnR) activities in DBS-metro systems via four metrics: BnR trip count, BnR rate, shared-bike utilization rate, and catchment size.
     Results showed that land use mix was significantly positively associated with BnR trip count only when buffer size was larger than 1.5 km. 
-    Large DBS operators outperformed small ones in BnR trip count but not in bike utilization rate
+    Large DBS operators outperformed small ones in BnR trip count but not in bike utilization rate.
   </div>
 </div>
 
@@ -109,12 +113,12 @@ including parking, accessibility, the built environment, health care services, a
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920918306448">
-        <img src="https://songhuahu-umd.github.io/images/evcard.gif" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/evcard.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <b><span style="color: purple;">[JTG]</span></b>
+    <b><span style="color: purple;">[TR Part D]</span></b>
     This study sets station-based shared car booking requests and turnover rates as learning objectives, by which generalized additive mixed models are employed to examine various effects.
     Findings provide evidence for optimizing the usage and efficiency of carsharing programs: carsharing companies should identify underserved areas to initiate new businesses; 
     carsharing seems more competitive in a distance to a bus stop between 1.2km and 2.4km, and carsharing is more effectively served in areas with constraints in accessing metro services; 
