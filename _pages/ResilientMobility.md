@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Equitable and Resilient Mobility System"
+title: "Resilient Mobility and Equitable Community"
 permalink: /Resilience/
 author_profile: true
 ---
@@ -25,7 +25,7 @@ mobility system.
     Using location data of over 150 million monthly active mobile devices in the US,
     we successfully measure how human mobility changed during the COVID-19 pandemic using three metrics:
     average trips per person, average person-miles traveled, and percentage of residents staying home. Data are updated daily
-    and made publicly available via an <a href="https://data.covid.umd.edu/"> online platform </a>.
+    and made publicly available via an <a href="https://data.covid.umd.edu/">online platform</a>.
   </div>
 </div>
 
