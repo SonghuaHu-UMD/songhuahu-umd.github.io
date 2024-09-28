@@ -32,8 +32,8 @@ anyone interested in our field.
 
 
 <div style="display: flex; justify-content: space-between; gap: 5px;">
-  <img src="https://songhuahu-umd.github.io/images/T3.jpg" alt="Second image" title="" width="48%">
-  <img src="https://songhuahu-umd.github.io/images/T2.png" alt="Second image" title="" width="48%">
+  <img src="https://songhuahu-umd.github.io/images/T3.jpg" alt="Second image" title="" style="width: 48%; object-fit: contain;">
+  <img src="https://songhuahu-umd.github.io/images/T2.png" alt="Second image" title="" style="width: 48%; object-fit: contain;">
 </div>
 
 ***
