@@ -20,7 +20,7 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b">
-        <img src="https://songhuahu-umd.github.io/images/OD2T3.png" alt="Figure" style="width: 20%;" />
+        <img src="https://songhuahu-umd.github.io/images/OD2T3.png" alt="Figure" style="width: 60%;" />
     </a>
   </div>
 
@@ -39,7 +39,7 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/ODFLOW.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/ODFLOW.png" alt="Figure" style="width: 80%;" />
     </a>
   </div>
 
