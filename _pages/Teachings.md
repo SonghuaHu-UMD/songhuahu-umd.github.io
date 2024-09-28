@@ -26,8 +26,8 @@ million** visits and **6,400+** dedicated followers, my goal is to make professi
 anyone interested in our field.
 
 <div style="display: flex; justify-content: space-between; gap: 10px; margin-bottom: 20px">
-  <img src="https://songhuahu-umd.github.io/images/teaching0.png" alt="Alt text 1" style="height: 20%; object-fit: contain;">
-  <img src="https://songhuahu-umd.github.io/images/teaching1.png" alt="Alt text 2" style="height: 20%; object-fit: contain;">
+  <img src="https://songhuahu-umd.github.io/images/teaching0.png" alt="Alt text 1" style="height: 10%; object-fit: contain;">
+  <img src="https://songhuahu-umd.github.io/images/teaching1.png" alt="Alt text 2" style="height: 10%; object-fit: contain;">
 </div>
 
 
