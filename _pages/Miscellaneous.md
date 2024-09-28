@@ -12,7 +12,7 @@ infrastructure design, transportation operations, travel demand management, publ
 ### <span style="color: green"> Transportation Economics</span> 💰💰💰⛽⛽⛽
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0965856424001939">
         <img src="https://songhuahu-umd.github.io/images/incentrip.png" alt="Figure" style="width: 400px;" />
     </a>
@@ -29,7 +29,7 @@ infrastructure design, transportation operations, travel demand management, publ
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21002382">
         <img src="https://songhuahu-umd.github.io/images/churn.jpg" alt="Figure" style="width: 400px;" />
     </a>
@@ -56,9 +56,9 @@ I aim to quantify how people feel about various urban services,
 including parking, accessibility, the built environment, health care services, and food delivery.
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://arxiv.org/pdf/2407.05104">
-        <img src="https://songhuahu-umd.github.io/images/parking.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/parking.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -74,9 +74,9 @@ including parking, accessibility, the built environment, health care services, a
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://arxiv.org/pdf/2409.08459">
-        <img src="https://songhuahu-umd.github.io/images/access_framework.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/access_framework.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -93,9 +93,9 @@ including parking, accessibility, the built environment, health care services, a
 ### <span style="color: green"> Mobility as a service (MaaS) and Shared Mobility </span> 👫👫👫🚇🚇🚇
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0966692321003240">
-        <img src="https://songhuahu-umd.github.io/images/FF52.jpg" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/FF52.jpg" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -109,9 +109,9 @@ including parking, accessibility, the built environment, health care services, a
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920918306448">
-        <img src="https://songhuahu-umd.github.io/images/evcard.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/evcard.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 

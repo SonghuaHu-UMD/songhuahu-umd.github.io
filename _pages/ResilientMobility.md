@@ -14,9 +14,9 @@ mobility system.
 ### <span style="color: green"> Multi-modal Travel Demand Resilience </span> 🚌🚌🚌🚲🚲🚲
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524">
-        <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/FF11.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -31,9 +31,9 @@ mobility system.
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920920308397">
-        <img src="https://songhuahu-umd.github.io/images/FF33.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/FF33.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -48,9 +48,9 @@ mobility system.
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0966692321000508">
-        <img src="https://songhuahu-umd.github.io/images/bikeshare.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/bikeshare.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -66,9 +66,9 @@ mobility system.
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2020.0344">
-        <img src="https://songhuahu-umd.github.io/images/FF3.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/FF3.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -87,9 +87,9 @@ mobility system.
 ### <span style="color: green"> Road Network Traffic Resilience </span> ❄️❄️❄️🚧🚧🚧
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://ieeexplore.ieee.org/abstract/document/8569639">
-        <img src="https://songhuahu-umd.github.io/images/Flood.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/Flood.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -105,9 +105,9 @@ mobility system.
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S2212420924005168">
-        <img src="https://songhuahu-umd.github.io/images/weatherroad.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/weatherroad.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
