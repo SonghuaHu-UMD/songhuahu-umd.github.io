@@ -16,9 +16,9 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 
 ### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 🌱🌱🌱🌎🌎🌎
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/camera0.gif" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/camera0.gif" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -33,9 +33,9 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/Signal.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/Signal.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -51,9 +51,9 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/ZONE301.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/ZONE301.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -69,9 +69,9 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/GEMINI.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/GEMINI.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -91,9 +91,9 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
 ### <span style="color: green"> Vehicle Electrification and Sharing </span> 🔋🔋🔋🚃🚃🚃
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920919311058">
-        <img src="https://songhuahu-umd.github.io/images/SharedEV.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/SharedEV.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -109,9 +109,9 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X2300459X">
-        <img src="https://songhuahu-umd.github.io/images/EVBus.jpg" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/EVBus.jpg" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -125,9 +125,9 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://journals.sagepub.com/doi/abs/10.1177/0739456X241256041">
-        <img src="https://songhuahu-umd.github.io/images/Escooter.png" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/Escooter.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
@@ -144,9 +144,9 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-  <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
+  <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://ieeexplore.ieee.org/abstract/document/9034087">
-        <img src="https://songhuahu-umd.github.io/images/EVCARD.jpg" alt="Figure" style="width: 400px;" />
+        <img src="https://songhuahu-umd.github.io/images/EVCARD.jpg" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 

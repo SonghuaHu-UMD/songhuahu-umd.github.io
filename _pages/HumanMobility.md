@@ -58,13 +58,13 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 5px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/FF61.gif" alt="Figure" style="width: 100%;" />
+        <img src="https://songhuahu-umd.github.io/images/FF61.gif" alt="Figure" style="width: 50%;" />
     </a>
   </div>
 
   <div style="flex: 0 0 auto; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/FF62.gif" alt="Figure" style="width: 200px;" />
+        <img src="https://songhuahu-umd.github.io/images/FF62.gif" alt="Figure" style="width: 50%;" />
     </a>
   </div>
 
