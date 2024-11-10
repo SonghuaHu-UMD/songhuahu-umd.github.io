@@ -58,7 +58,7 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[TRB2025]</span></b></a>
     The impact of 30 km/h speed limit (ZONE 30) on traffic emissions remain uncertain. 
     We propose a big-data approach to estimate the effects of city-wide Zone 30 on traffic emissions in Milan, Italy, analyzing data collected from over 3.4 million driving trips. 
     Results show that the overall impact of Zone 30 on emissions is modest -- in the most extensive scenario, a 0.61% to 2.73% increase is observed in different emissions. 
@@ -76,7 +76,7 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[TRB2025]</span></b></a>
     We introduce the design and demonstration of a Digital Twin (DT) platform 
     for road traffic emission nowcasting and forecasting. By integrating multi-source data collected from online repositories and IoT sensors, 
     the platform provides a comprehensive, near-real-time view of road traffic emissions with high spatio-temporal resolution. 
