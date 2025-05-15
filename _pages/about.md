@@ -48,6 +48,7 @@ out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!
 * **[01/2025]** Three of my posters were presented at **_TRB Annual Meeting_** in DC!
 * **[01/2025]** I gave an invited talk at **_U of Alberta CEE_**!
 * **[11/2024]** I gave an [invited talk](https://mp.weixin.qq.com/s/1AJy6fbmp4SLppstbmRknQ) at **_HKUST(GZ) INTR Thrust_**!
+* **[10/2024]** I gave an invited talk at **_Zhejiang University UIUC Institute_**!
 * ...
 
 
