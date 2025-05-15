@@ -37,9 +37,8 @@ Transportation Economics, Travel Behavioral Analysis, Accessibility).
 
 News
 ======
-**🔥🔥I'm always excited to collaborate with those interested in my research!
-Currently, my main focus is on Agentic AI + Human Mobility Modeling. Feel free to reach
-out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!**
+🔥🔥I'm always excited to collaborate with those interested in my research! Feel free to reach
+out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!
 * **[05/2025]** I gave an invited talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[04/2025]** I gave an invited talk at **_HKU UPAD_** on Data-Driven Urban Multi-System Modeling!
 * **[04/2025]** I gave an invited talk at **_CityUHK ACE_**!
@@ -49,6 +48,7 @@ out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!**
 * **[01/2025]** I gave an invited talk at **_University of Alberta CEE_**!
 * **[11/2024]** I gave an [invited talk](https://mp.weixin.qq.com/s/1AJy6fbmp4SLppstbmRknQ) at **_HKUST(GZ) INTR Thrust_**!
 * ...
+
 
 ***
 
