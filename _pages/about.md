@@ -40,8 +40,7 @@ News
 🔥🔥I'm always excited to collaborate with those interested in my research! Feel free to reach
 out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!
 * **[05/2025]** I gave an invited talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
-* **[04/2025]** I gave an invited talk at **_HKU UPAD_** on AI & Urban Multi-System Modeling!
-* **[04/2025]** I gave an invited talk at **_CityUHK ACE_** on Next-Gen Travel Demand Model!
+* **[05/2025]** Two of my students at MIT finished their UROP projects! We worked together on LLM in EV detection from videos & LLM in EV-related social media text mining!
 * **[03/2025]** I gave an invited talk at **_Colorado State University CEE_**!
 * **[02/2025]** I gave an [invited talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University's ACEE_** on Scalable Estimation of Vehicle Emissions Using Ubiquitous Visual and Location Data!
 * **[01/2025]** Three of my posters were presented at **_TRB Annual Meeting_** in DC!
@@ -49,7 +48,9 @@ out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!
 * **[11/2024]** I gave an [invited talk](https://mp.weixin.qq.com/s/1AJy6fbmp4SLppstbmRknQ) at **_HKUST(GZ) INTR Thrust_**!
 * ...
 
+[//]: # (* **[04/2025]** I gave an invited talk at **_HKU UPAD_** on AI & Urban Multi-System Modeling!)
 
+[//]: # (* **[04/2025]** I gave an invited talk at **_CityUHK ACE_** on Next-Gen Travel Demand Model!)
 ***
 
 Research Interests
