@@ -115,7 +115,7 @@ Awards
 ======
 
 * [Chinese Overseas Transportation Association (COTA) Best Dissertation Award](https://cee.umd.edu/news/story/hu-receives-cota-best-dissertation-award), 2023.
-* [UMD CEE Best Doctoral Research Award](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards), University of Maryland, College Park, 2023.
+* [UMD Best Doctoral Research Award](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards), University of Maryland, College Park, 2023.
 * Outstanding Reviewer, Transportation Research Part D: Transport and Environment, 2023.
 * [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards),
   University of Maryland, College Park, 2021.
@@ -136,27 +136,32 @@ Reviews
 
 * **Journal Article Reviewer**
     * <span style="color: Darkorange">**Transportation**</span>: Accident Analysis and Prevention; Computer-Aided Civil
-      and Infrastructure Engineering;
-      IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and
-      Technology; Intelligent Transportation Infrastructure;
+      and Infrastructure Engineering; Frontiers In Future Transportation; IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and
+      Technology; Intelligent Transportation Infrastructure; IET Intelligent Transport Systems; 
       Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
-      Transportation; Transportation Research Part A/B/C/D/E; Transport Policy;
+      Transportation; **Transportation Research Part A/B/C/D/E**; Transport Policy;
       Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
-      Transportation Research Interdisciplinary Perspectives; Urban Rail Transit.
+      Transportation Research Interdisciplinary Perspectives;
+      Transportation Planning and Technology; Urban Rail Transit.
     * <span style="color: Darkorange">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society;
-      Cities;
-      Computational Urban Science; Geo-spatial Information Science; International Journal of Geographical Information
+      Cities; Computational Urban Science; Geo-spatial Information Science; International Journal of Geographical Information
       Science;
-      Journal of Planning Education and Research; Journal of Urban Technology; Regional Studies; Sustainable Cities and
-      Society.
+      **Journal of Planning Education and Research**; Journal of Urban Technology; Regional Studies; Sustainable Cities and
+      Society; Socio-Economic Planning Sciences.
     * <span style="color: Darkorange">**Public Health**</span>: AIMS Public Health; Biosafety and Health; Health Data
-      Science; The Lancet Regional Health - Western Pacific.
-    * <span style="color: Darkorange">**Multidisciplinary**</span>: Cogent Engineering; IEEE Access; Information Fusion;
+      Science; Public Health Reviews; **The Lancet Regional Health**; Infectious Disease Modelling. 
+    * <span style="color: Darkorange">**Multidisciplinary**</span>:
+      Applied Soft Computing; Cogent Engineering; 
+      Frontiers in Communication;
+      Geomatics, Natural Hazards and Risk; Humanities & Social Sciences Communications; IEEE Access; Information Fusion;
       International Journal of Data Science and Analytics;
-      Nature Cities; Scientific Reports; Technological Forecasting and Social Change; PLOS One.
+      International Journal of Disaster Risk Reduction;
+      International Journal of Disaster Risk Science;
+      **Nature Cities**; **Nature Communications**; Scientific Reports; Technological Forecasting and Social Change;
+      Telematics and Informatics; PLOS One.
 
 * **Conference Proceeding Reviewer**
-    * TRB Transportation Research Board Annual Meeting;
+    * TRB Transportation Research Board Annual Meeting; **WWW** International World Wide Web Conference;
       COTA International Conference of Transportation Professionals;
       IACP International Association of China Planning;
       IEEE Intelligent Transportation Systems Society Conference Management System
