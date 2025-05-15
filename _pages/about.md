@@ -35,10 +35,19 @@ Transportation Economics, Travel Behavioral Analysis, Accessibility).
 
 ---
 
-**🔥🔥I'm always excited to collaborate with those interested in my research! 
-Currently, my main focus is on applying LLMs to human mobility modeling in transportation. Feel free to reach
+News
+======
+**🔥🔥I'm always excited to collaborate with those interested in my research!
+Currently, my main focus is on Agentic AI + Human Mobility Modeling. Feel free to reach
 out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!**
-
+* **[05/2025]** I gave an invited talk at **_UCL's Department of Civil, Environmental, and Geomatic Engineering (CEGE)_** on Agentic AI in Human Mobility Simulation!
+* **[04/2025]** I gave an invited talk at **_HKU's Department of Urban Planning and Design_** on Human Mobility & Urban Multi-System Modeling via Big Data and Custom AI!
+* **[04/2025]** I gave an invited talk at **_CityUHK's Department of Architecture and Civil Engineering_** on Towards Next-Generation Urban Mobility Modeling with Human-Centered Big Data Mining!
+* **[03/2025]** I gave an invited talk at **_Colorado State University's Department of Civil & Environmental Engineering_** on Towards Smart and Sustainable Mobility Systems with Human-Centered Big Data Mining!
+* **[02/2025]** I gave an [invited talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University's Andlinger Center for Energy and the Environment_** on Scalable Estimation of On-Road Vehicle Emissions Using Ubiquitous Traffic Data!
+* **[01/2025]** Three of my posters are presented at Transportation Research Board (TRB) Annual Meeting at the Walter E. Washington Convention Center in Washington, D.C.!
+* **[01/2025]** I gave an invited talk at **_University of Alberta's Department of Civil & Environmental Engineering_** on Next-generation Travel Demand Modeling using Mobile Phone Location Data!
+* **[11/2024]** I gave an [invited talk](https://mp.weixin.qq.com/s/1AJy6fbmp4SLppstbmRknQ) at **_HKUST(GZ)'s Intelligent Transportation (INTR) Thrust_** on Towards Smart, Resilient, and Sustainable Mobility Systems with Spatiotemporal Big Data Sensing and Mining!
 ***
 
 Research Interests
