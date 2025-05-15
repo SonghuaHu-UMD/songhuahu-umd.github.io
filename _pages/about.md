@@ -41,7 +41,7 @@ News
 out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!
 * **[05/2025]** I gave an invited talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[05/2025]** Two of my students at MIT finished their UROP projects on LLM & EV!
-* **[05/2025]** I gave a guest lecture at **USF** on Big Data Mining in Urban Computing!
+* **[04/2025]** I gave a guest lecture at **USF** on Big Data Mining in Urban Computing!
 * **[03/2025]** I gave an invited talk at **_Colorado State (CSU) CEE_**!
 * **[02/2025]** I gave an [invited talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_** on Scalable Estimation of Vehicle Emissions Using Ubiquitous Visual and Location Data!
 * **[01/2025]** Three of my posters were presented at **_TRB Annual Meeting_** in DC!
