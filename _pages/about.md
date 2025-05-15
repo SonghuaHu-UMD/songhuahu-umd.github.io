@@ -41,7 +41,7 @@ News
 Currently, my main focus is on Agentic AI + Human Mobility Modeling. Feel free to reach
 out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!**
 * **[05/2025]** I gave an invited talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
-* **[04/2025]** I gave an invited talk at **_HKU DUPAD_** on Big-Data-Driven Urban Multi-System Modeling!
+* **[04/2025]** I gave an invited talk at **_HKU_** on Data-Driven Urban Multi-System Modeling!
 * **[04/2025]** I gave an invited talk at **_CityUHK ACE_**!
 * **[03/2025]** I gave an invited talk at **_Colorado State University CEE_**!
 * **[02/2025]** I gave an [invited talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University's ACEE_** on Scalable Estimation of Vehicle Emissions Using Ubiquitous Data!
@@ -49,6 +49,7 @@ out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!**
 * **[01/2025]** I gave an invited talk at **_University of Alberta CEE_**!
 * **[11/2024]** I gave an [invited talk](https://mp.weixin.qq.com/s/1AJy6fbmp4SLppstbmRknQ) at **_HKUST(GZ) INTR Thrust_**!
 * ...
+
 ***
 
 Research Interests
