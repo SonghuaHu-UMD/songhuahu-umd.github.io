@@ -37,23 +37,21 @@ Transportation Economics, Travel Behavioral Analysis, Accessibility).
 
 News
 ======
-🔥🔥I'm always excited to collaborate with those interested in my research! Feel free to reach
-out via email (hsonghua@mit.edu)—I’d love to connect and discuss further!
+🔥🔥I will be joining the Department of Architecture and Civil Engineering (ACE) at City University of Hong Kong (ranked #54 by U.S. News and #63 by QS) as a tenure-track Assistant Professor in Fall 2025. 
+
+I currently have several fully funded Ph.D. student and research assistant positions available. 
+Students with backgrounds in **data science, computer science, operations research, transportation, geography, or related fields** are welcome to apply.
+Experience with **large language models (LLMs)** is a plus.
+To apply, please send your CV to hsonghua@mit.edu.
+
+我将于2025年秋季加入香港城市大学（世界排名：U.S. News 54, QS 63）ACE学院担任助理教授（tenure-track），目前有数名全奖博士生/研究助理名额。我的研究方向主要为多源众包数据挖掘、交通网络建模及城市复杂系统分析。欢迎数据科学、计算机、运筹学、交通、地理等相关背景的学生申请（有大模型经验加分）。申请方式：请将CV发送至hsonghua@mit.edu
+
+* **[09/2025]** I will be joining the **_City University of Hong Kong_** as an Assistant Professor!
 * **[05/2025]** I gave an invited talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
-* **[05/2025]** Two of my students at MIT completed their UROP projects on LLM & EV!
-* **[04/2025]** I gave a guest lecture at **USF** on Big Data Mining in Urban Computing!
-* **[03/2025]** I gave an invited talk at **_Colorado State (CSU) CEE_**!
+* **[04/2025]** I gave a guest lecture at **_USF_** on Big Data Mining in Urban Computing!
 * **[02/2025]** I gave an [invited talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_** on Scalable Estimation of Vehicle Emissions Using Ubiquitous Visual and Location Data!
-* **[01/2025]** Three of my posters were presented at **_TRB Annual Meeting_** in DC!
-* **[01/2025]** I gave an invited talk at **_U of Alberta CEE_**!
 * **[11/2024]** I gave an [invited talk](https://mp.weixin.qq.com/s/1AJy6fbmp4SLppstbmRknQ) at **_HKUST(GZ) INTR Thrust_**!
-* **[10/2024]** I gave an invited talk at **_Zhejiang University UIUC Institute_**!
 * ...
-
-[//]: # (* **[04/2025]** I gave an invited talk at **_HKU UPAD_** on AI & Urban Multi-System Modeling!)
-
-[//]: # (* **[04/2025]** I gave an invited talk at **_CityUHK ACE_** on Next-Gen Travel Demand Model!)
-
 ***
 
 Research Interests
