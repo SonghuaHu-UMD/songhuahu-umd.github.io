@@ -135,32 +135,22 @@ Awards
 
 ***
 
-Reviews
+Reviews (Selected)
 ======
 
 * **Journal Article Reviewer**
     * <span style="color: Darkorange">**Transportation**</span>: Accident Analysis and Prevention; Computer-Aided Civil
-      and Infrastructure Engineering; Frontiers In Future Transportation; IEEE Transactions on Intelligent Transportation Systems; International Journal of Transportation Science and
-      Technology; Intelligent Transportation Infrastructure; IET Intelligent Transport Systems; 
-      Journal of Transport Geography; Journal of Transport and Land Use; Journal of Advanced Transportation;
+      and Infrastructure Engineering; IEEE Transactions on Intelligent Transportation Systems; Journal of Transport Geography; 
       Transportation; **Transportation Research Part A/B/C/D/E**; Transport Policy;
-      Traffic Injury Prevention; Travel Behavior and Society; Transportation Letters; Transportation Research Record;
-      Transportation Research Interdisciplinary Perspectives;
-      Transportation Planning and Technology; Urban Rail Transit.
+      Travel Behavior and Society; Transportation Letters; Transportation Research Record;
+      Transportation Research Interdisciplinary Perspectives.
     * <span style="color: Darkorange">**Planning and GIS**</span>: Cambridge Journal of Regions, Economy and Society;
-      Cities; Computational Urban Science; Geo-spatial Information Science; International Journal of Geographical Information
-      Science;
+      Cities; Geo-spatial Information Science; International Journal of Geographical Information Science;
       **Journal of Planning Education and Research**; Journal of Urban Technology; Regional Studies; Sustainable Cities and
       Society; Socio-Economic Planning Sciences.
-    * <span style="color: Darkorange">**Public Health**</span>: AIMS Public Health; Biosafety and Health; Health Data
-      Science; Public Health Reviews; **The Lancet Regional Health**; Infectious Disease Modelling. 
     * <span style="color: Darkorange">**Multidisciplinary**</span>:
-      Applied Soft Computing; Cogent Engineering; 
-      Frontiers in Communication;
-      Geomatics, Natural Hazards and Risk; Humanities & Social Sciences Communications; IEEE Access; Information Fusion;
-      International Journal of Data Science and Analytics;
-      International Journal of Disaster Risk Reduction;
-      International Journal of Disaster Risk Science;
+      Humanities & Social Sciences Communications; Information Fusion;
+      **The Lancet Regional Health**;  International Journal of Disaster Risk Reduction;
       **Nature Cities**; **Nature Communications**; Scientific Reports; Technological Forecasting and Social Change;
       Telematics and Informatics; PLOS One.
 
