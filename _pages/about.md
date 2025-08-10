@@ -47,7 +47,7 @@ To apply, please send your CV, Transcript, and Research Statement to hsonghua@mi
 欢迎数据科学、计算机、运筹学、交通、地理等相关背景的学生申请（有大模型经验加分）。
 申请方式：请将CV+成绩单+研究计划（可选）发送至hsonghua@mit.edu.
 
-* **[09/2025]** I will be joining the **_City University of Hong Kong_** as a tenure-track Assistant Professor!
+* **[09/2025]** I will be joining the **_CityUHK_** as a tenure-track Assistant Professor!
 * **[05/2025]** I gave a job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[04/2025]** I gave a guest lecture at **_USF_** on Big Data Mining in Urban Computing!
 * **[02/2025]** I gave a [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_** on Scalable Estimation of Vehicle Emissions Using Ubiquitous Visual and Location Data!
@@ -162,7 +162,7 @@ Reviews (Selected)
 
 <span style="color: purple">**See the full list here: [Web of Science](https://www.webofscience.com/wos/author/record/ABF-2415-2021)**</span>
 
-***
+[//]: # (***)
 
 
 [//]: # (Skills)
