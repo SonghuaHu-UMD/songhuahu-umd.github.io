@@ -38,12 +38,12 @@ Transportation Economics, Travel Behavioral Analysis, Accessibility).
 News
 ======
 🔥🔥I will be joining the Department of Architecture and Civil Engineering (ACE) at City University of Hong Kong as a tenure-track Assistant Professor in Fall 2025.
-I currently have several fully funded Ph.D. student and research assistant positions available. 
+I currently have several fully funded Postdoc, Ph.D. student and research assistant positions available. 
 Students with backgrounds in **data science, computer science, operations research, transportation, geography, or related fields** are welcome to apply.
 Experience with **large language models (LLMs)** is a plus.
 To apply, please send your CV, Transcript, and Research Statement to hsonghua@mit.edu.
 
-我将于2025年秋季加入香港城市大学（世界排名：U.S. News 54, QS 63）ACE学院担任助理教授，目前有数名全奖博士生/研究助理名额。
+我将于2025年秋季加入香港城市大学（世界排名：U.S. News 54, QS 63）ACE学院担任助理教授，目前有数名全奖博士生/博士后/研究助理名额。
 欢迎数据科学、计算机、运筹学、交通、地理等相关背景的学生申请（有大模型经验加分）。
 申请方式：请将CV+成绩单+研究计划（可选）发送至hsonghua@mit.edu.
 
