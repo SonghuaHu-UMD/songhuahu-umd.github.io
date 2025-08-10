@@ -165,23 +165,37 @@ Reviews (Selected)
 ***
 
 
-Skills
-======
+[//]: # (Skills)
 
-* <span style="color: gray">**Programming**</span>
-    * Python, R, SQL, Cloud Computing (Spark, AWS), Matlab, Git, Bash, Java, HTML.
-* <span style="color: gray">**Statistics**</span>
-    * Causal inference, Generalized additive mixed model, Time series, Survival analysis, Spatial econometrics, Discrete
-      choice model.
-* <span style="color: gray">**Deep learning/Machine learning**</span>
-    * Explainable AI, Spatiotemporal forecasting, Graph neural network, Computer vision, Natural language processing,
-      Traditional ML.
-* <span style="color: gray">**Traffic Simulation**</span>
-    * Micro (Vissim, Sumo), Agent (MATSim, DTALite, AnyLogic), Macro (TransCAD, Visum).
-* <span style="color: gray">**(Spatiotemporal) Network Analysis**</span>
-    * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx.
+[//]: # (======)
 
-***
+[//]: # ()
+[//]: # (* <span style="color: gray">**Programming**</span>)
+
+[//]: # (    * Python, R, SQL, Cloud Computing &#40;Spark, AWS&#41;, Matlab, Git, Bash, Java, HTML.)
+
+[//]: # (* <span style="color: gray">**Statistics**</span>)
+
+[//]: # (    * Causal inference, Generalized additive mixed model, Time series, Survival analysis, Spatial econometrics, Discrete)
+
+[//]: # (      choice model.)
+
+[//]: # (* <span style="color: gray">**Deep learning/Machine learning**</span>)
+
+[//]: # (    * Explainable AI, Spatiotemporal forecasting, Graph neural network, Computer vision, Natural language processing,)
+
+[//]: # (      Traditional ML.)
+
+[//]: # (* <span style="color: gray">**Traffic Simulation**</span>)
+
+[//]: # (    * Micro &#40;Vissim, Sumo&#41;, Agent &#40;MATSim, DTALite, AnyLogic&#41;, Macro &#40;TransCAD, Visum&#41;.)
+
+[//]: # (* <span style="color: gray">**&#40;Spatiotemporal&#41; Network Analysis**</span>)
+
+[//]: # (    * ArcGIS, QGIS, Geopandas, NetworkX, igraph, OSMnx.)
+
+[//]: # ()
+[//]: # (***)
 
 ------
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=848383&w=288&t=n&d=zU9DbdqNwD8PS5IHucVNU8GV_lJolPyn6nhjUQYN5FI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
