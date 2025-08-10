@@ -47,10 +47,10 @@ To apply, please send your CV, Transcript, and Research Statement to hsonghua@mi
 欢迎数据科学、计算机、运筹学、交通、地理等相关背景的学生申请（有大模型经验加分）。
 申请方式：请将CV+成绩单+研究计划（可选）发送至hsonghua@mit.edu.
 
-* **[09/2025]** I will be joining the **_City University of Hong Kong_** as an Assistant Professor!
-* **[05/2025]** I gave an invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
+* **[09/2025]** I will be joining the **_City University of Hong Kong_** as a tenure-track Assistant Professor!
+* **[05/2025]** I gave a job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[04/2025]** I gave a guest lecture at **_USF_** on Big Data Mining in Urban Computing!
-* **[02/2025]** I gave an [invited job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_** on Scalable Estimation of Vehicle Emissions Using Ubiquitous Visual and Location Data!
+* **[02/2025]** I gave a [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_** on Scalable Estimation of Vehicle Emissions Using Ubiquitous Visual and Location Data!
 * ...
 
 ---
@@ -88,12 +88,13 @@ Publications
 * _Proceedings of the National Academy of Sciences_ <span style="color: maroon"> (**1** Paper)</span>.
 * _Transportation Research Part A: Policy and Practice_ <span style="color: maroon">(**4** Papers, **2**
   First-Author)</span>.
-* _Transportation Research Part C: Emerging Technologies_ <span style="color: maroon">(**4** Papers, **3**
+* _Transportation Research Part C: Emerging Technologies_ <span style="color: maroon">(**5** Papers, **3**
   First-Author)</span>.
 * _Transportation Research Part D: Transport and Environment_ <span style="color: maroon">(**3** Papers, **3**
   First-Author)</span>.
 * _Journal of Transport Geography_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
 * _Sustainable Cities and Society_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
+* _Computers, Environment and Urban Systems_ <span style="color: maroon">(**1** Paper)</span>.
 * _IEEE Intelligent Transportation Systems Magazine_ <span style="color: maroon">(**1** Paper, **1**
   First-Author)</span>.
 * _International Journal of Disaster Risk Reduction_ <span style="color: maroon">(**1** Paper, **1**
@@ -103,6 +104,7 @@ Publications
 * _Vaccine_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
 * _PLOS One_ <span style="color: maroon">(**2** Papers, **1** First-Author)</span>.
 * _Health & Place_ <span style="color: maroon">(**1** Paper)</span>.
+* _Case Studies on Transport Policy_ <span style="color: maroon">(**1** Paper)</span>.
 * _International Journal of Sustainable Transportation_ <span style="color: maroon">(**1** Paper)</span>.
 * _Transportation Research Record_ <span style="color: maroon">(**2** Papers)</span>.
 * _IEEE International Conference on Intelligent Transportation Systems_ <span style="color: maroon">(**2** Papers, **2**
