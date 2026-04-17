@@ -57,13 +57,13 @@ including parking, accessibility, the built environment, health care services, a
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://arxiv.org/pdf/2407.05104">
+    <a href="https://www.sciencedirect.com/science/article/pii/S0264275125002665">
         <img src="https://songhuahu-umd.github.io/images/parking.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://arxiv.org/pdf/2407.05104"><b><span style="color: purple;">[Under Review]</span></b></a>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0264275125002665"><b><span style="color: purple;">[Cities]</span></b></a>
     By examining 5 million parking reviews for 1.1M POIs from Google Maps reviews,
     we investigate public sentiment towards parking across the whole US.
     We employ the BERT model to classify the parking sentiment and conduct regression to explore its relationships with socio-spatial factors.
@@ -75,13 +75,13 @@ including parking, accessibility, the built environment, health care services, a
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://arxiv.org/pdf/2409.08459">
+    <a href="https://www.sciencedirect.com/science/article/pii/S0198971525000079">
         <img src="https://songhuahu-umd.github.io/images/access_framework.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://arxiv.org/pdf/2409.08459"><b><span style="color: purple;">[Under Review]</span></b></a>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0198971525000079"><b><span style="color: purple;">[CEUS]</span></b></a>
     ~ 30.6 million people in the US have physical disabilities affecting mobility, yet many city streets and services remain inaccessible despite civil rights protections. 
     We use Google Maps reviews across the US and fine-tune Llama 3 model with the Low-Rank Adaptation technique to analyze public sentiment on accessibility.
     We found areas with more elderly, highly-educated residents exhibit more negative sentiment, but no clear link is found between % disabilities and accessibility sentiments.

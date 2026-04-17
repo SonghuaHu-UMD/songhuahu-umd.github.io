@@ -17,13 +17,14 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 ### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 🌱🌱🌱🌎🌎🌎
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+    <a href="https://www.nature.com/articles/s41893-025-01548-4">
         <img src="https://songhuahu-umd.github.io/images/camera0.gif" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
+    <a href="https://www.nature.com/articles/s41893-025-01548-4"><b><span style="color: purple;">[Nature Sustainability]</span></b></a>
+    We present a ubiquitous data-driven framework for traffic emission estimation and policy evaluation, leveraging traffic camera videos and mobile phone location data.
     The car classification scheme of MOVES includes 13 car types, making the preparation of fleet composition inputs challenging. 
     We constructed a world-first customized car-type dataset containing a total of 10,000 images that align with the MOVES source types.
     All images are cropped from the traffic video surveillance collected from ~ 800 traffic cameras in New York, and labeled by GPT4o and validated by human. 
@@ -52,13 +53,13 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+    <a href="https://www.sciencedirect.com/science/article/pii/S0965856425000576">
         <img src="https://songhuahu-umd.github.io/images/ZONE301.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[TRB2025]</span></b></a>
+    <a href="https://www.sciencedirect.com/science/article/pii/S0965856425000576"><b><span style="color: purple;">[TR Part A]</span></b></a>
     The impact of 30 km/h speed limit (ZONE 30) on traffic emissions remain uncertain. 
     We propose a big-data approach to estimate the effects of city-wide Zone 30 on traffic emissions in Milan, Italy, analyzing data collected from over 3.4 million driving trips. 
     Results show that the overall impact of Zone 30 on emissions is modest -- in the most extensive scenario, a 0.61% to 2.73% increase is observed in different emissions. 
@@ -70,13 +71,13 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+    <a href="https://ieeexplore.ieee.org/document/10945961">
         <img src="https://songhuahu-umd.github.io/images/GEMINI.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[TRB2025]</span></b></a>
+    <a href="https://ieeexplore.ieee.org/document/10945961"><b><span style="color: purple;">[J. Intelligent and Connected Vehicles]</span></b></a>
     We introduce the design and demonstration of a Digital Twin (DT) platform 
     for road traffic emission nowcasting and forecasting. By integrating multi-source data collected from online repositories and IoT sensors, 
     the platform provides a comprehensive, near-real-time view of road traffic emissions with high spatio-temporal resolution. 
