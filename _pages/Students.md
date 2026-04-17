@@ -1,9 +1,12 @@
 ---
 layout: archive
-title: "Students"
+title: ""
 permalink: /Students/
 author_profile: true
 ---
+
+Opportunities
+======
 
 I have several fully funded Postdoc, Ph.D. student and research assistant positions available.
 Students with backgrounds in **data science, computer science, operations research, transportation, geography, or related fields** are welcome to apply.
@@ -37,8 +40,3 @@ Previous Mentoring (MIT, 2023~2025)
 * Luke Anger, Undergraduate, Computer Science, 2024
 * Jity F. Woldemichael, Undergraduate, EECS, 2023
 * Victor G. Dominguez, Undergraduate, Urban Planning, 2023
-
-*Project Supervision*
-* Giacomo Orsi, MSc, Computer Science, EPFL, 2024
-* Jonas Jostmann, Ph.D. student, Transportation, KTH Royal Institute of Technology, 2023-2024
-* Javad Eshtiyagh, Ph.D. student, Transportation, Imperial College London, 2024

@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Teaching and Outreach"
+title: ""
 permalink: /Teachings/
 author_profile: true
 ---
