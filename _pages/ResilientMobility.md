@@ -88,13 +88,13 @@ mobility system.
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://www.sciencedirect.com/science/article/pii/S1366554525001577">
-        <img src="https://songhuahu-umd.github.io/images/FF3.png" alt="Figure" style="width: 100%;" />
+    <a href="https://www.sciencedirect.com/science/article/pii/S1366554525006568">
+        <img src="https://songhuahu-umd.github.io/images/PartE.jpg" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://www.sciencedirect.com/science/article/pii/S1366554525001577"><b><span style="color: purple;">[TR Part E]</span></b></a>
+    <a href="https://www.sciencedirect.com/science/article/pii/S1366554525006568"><b><span style="color: purple;">[TR Part E]</span></b></a>
     We provide a comprehensive survey of multi-modal urban transportation network resilience, covering modeling, evaluation, and optimization.
     The survey reviews resilience metrics, network modeling approaches, and optimization strategies across road, transit, and shared mobility networks,
     and identifies key challenges and future directions for building more resilient urban transportation systems.

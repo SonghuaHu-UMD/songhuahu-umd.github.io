@@ -17,13 +17,13 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 ### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 🌱🌱🌱🌎🌎🌎
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://www.nature.com/articles/s41893-025-01548-4">
+    <a href="https://www.nature.com/articles/s41893-026-01797-9">
         <img src="https://songhuahu-umd.github.io/images/camera0.gif" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://www.nature.com/articles/s41893-025-01548-4"><b><span style="color: purple;">[Nature Sustainability]</span></b></a>
+    <a href="https://www.nature.com/articles/s41893-026-01797-9"><b><span style="color: purple;">[Nature Sustainability]</span></b></a>
     We present a ubiquitous data-driven framework for traffic emission estimation and policy evaluation, leveraging traffic camera videos and mobile phone location data.
     The car classification scheme of MOVES includes 13 car types, making the preparation of fleet composition inputs challenging. 
     We constructed a world-first customized car-type dataset containing a total of 10,000 images that align with the MOVES source types.
@@ -71,13 +71,13 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://ieeexplore.ieee.org/document/10945961">
+    <a href="https://www.sciopen.com/article/10.26599/JICV.2026.9210079">
         <img src="https://songhuahu-umd.github.io/images/GEMINI.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://ieeexplore.ieee.org/document/10945961"><b><span style="color: purple;">[J. Intelligent and Connected Vehicles]</span></b></a>
+    <a href="https://www.sciopen.com/article/10.26599/JICV.2026.9210079"><b><span style="color: purple;">[J. Intelligent and Connected Vehicles]</span></b></a>
     We introduce the design and demonstration of a Digital Twin (DT) platform 
     for road traffic emission nowcasting and forecasting. By integrating multi-source data collected from online repositories and IoT sensors, 
     the platform provides a comprehensive, near-real-time view of road traffic emissions with high spatio-temporal resolution. 

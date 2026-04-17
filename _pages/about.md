@@ -26,8 +26,8 @@ and have contributed to research projects funded by <span style="color: #8e44ad;
 News
 ======
 
-* **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-025-01548-4): Ubiquitous data-driven framework for traffic emission estimation and policy evaluation!
-* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/traffic-cameras-cell-phone-data-track-vehicle-emissions-0410)!
+* **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9): Ubiquitous data-driven framework for traffic emission estimation and policy evaluation!
+* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402)!
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at [**_UCL CEGE_**](https://www.ucl.ac.uk/civil-environmental-geomatic-engineering/) on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
