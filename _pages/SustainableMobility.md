@@ -7,7 +7,7 @@ author_profile: true
 
 Transport emissions remain a major source of greenhouse gases and air pollutants, and the global push for decarbonization demands scalable, data-driven solutions.
 
-My research addresses three key areas: 1) developing cost-effective methods to monitor and predict large-scale, high-resolution traffic emissions using ubiquitous data; 2) advancing vehicle electrification strategies, including optimizing EV operations and charging infrastructure planning; and 3) evaluating the emission impacts of urban policies -- such as speed limits (ZONE 30), travel demand management, and active travel promotion.
+My research addresses three key areas: 1) developing cost-effective methods to monitor and predict large-scale, high-resolution traffic emissions using ubiquitous data; 2) advancing vehicle electrification strategies, including optimizing EV operations and charging infrastructure planning; and 3) evaluating the emission impacts of urban policies, such as speed limits (ZONE 30), travel demand management, and active travel promotion.
 
 ### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 🌱🌱🌱🌎🌎🌎
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
@@ -19,7 +19,7 @@ My research addresses three key areas: 1) developing cost-effective methods to m
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
-    The MOVES emission model requires fleet composition across 13 vehicle types -- a notoriously difficult input to prepare at scale. 
+    The MOVES emission model requires fleet composition across 13 vehicle types, a notoriously difficult input to prepare at scale. 
     We constructed the first benchmark dataset of 10,000 vehicle images aligned with MOVES source types, 
     cropped from ~800 traffic cameras in New York and labeled via GPT-4o with human validation. 
     Among 10 image classifiers trained on this dataset, ConvNeXt achieved the best accuracy (92.9%) and efficiency.

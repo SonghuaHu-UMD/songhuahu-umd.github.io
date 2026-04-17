@@ -5,7 +5,7 @@ permalink: /Miscell/
 author_profile: true
 ---
 
-Beyond my core research themes, I maintain active interests across broader transportation topics -- 
+Beyond my core research themes, I maintain active interests across broader transportation topics, 
 including travel demand management, public perception analytics, shared mobility, and multimodal integration.
 
 ### <span style="color: green"> Transportation Economics</span> 💰💰💰⛽⛽⛽
@@ -19,8 +19,8 @@ including travel demand management, public perception analytics, shared mobility
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0965856424001939"><b><span style="color: purple;">[TR Part A]</span></b></a>
-    As technical lead of <a href=”https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33”>”incenTrip”</a> -- the first nationwide incentive-based travel demand management app --
-    I design personalized, dynamic incentives that encourage sustainable travel choices: 
+    As technical lead of <a href=”https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33”>incenTrip</a>, the first nationwide incentive-based travel demand management app,
+    we design personalized, dynamic incentives that encourage sustainable travel choices: 
     mode switching, carpooling, congestion avoidance, and off-peak travel, 
     ultimately reducing congestion, energy use, and emissions.
   </div>
@@ -79,7 +79,7 @@ we quantify perceptions of parking, accessibility, the built environment, and fo
     <a href="https://www.sciencedirect.com/science/article/pii/S0198971525000821"><b><span style="color: purple;">[CEUS]</span></b></a>
     Over 30 million Americans have mobility-affecting disabilities, yet urban accessibility remains uneven. 
     We fine-tune Llama 3 with Low-Rank Adaptation on nationwide Google Maps reviews to measure public accessibility sentiment.
-    Areas with older, more educated populations express more negative sentiment, while -- counterintuitively -- disability prevalence alone shows no clear association.
+    Areas with older, more educated populations express more negative sentiment, while, counterintuitively, disability prevalence alone shows no clear association.
   </div>
 </div>
 

@@ -5,7 +5,7 @@ permalink: /HumanMobility/
 author_profile: true
 ---
 
-Mobile devices -- cellphones, connected vehicles, and wearable sensors -- generate vast amounts of spatiotemporal data on individual travel.
+Mobile devices (cellphones, connected vehicles, and wearable sensors) generate vast amounts of spatiotemporal data on individual travel.
 Compared to traditional surveys and static sensors, these data offer higher penetration rates, broader spatiotemporal coverage, and near-real-time updates.
 
 My research focuses on integrating these emerging data sources with established travel demand modeling frameworks.
@@ -130,7 +130,7 @@ This includes: 1) a unified pipeline for parsing multi-source travel data into t
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Ongoing]</span></b></a> 
-    Human mobility is highly sensitive to contextual events -- weather, traffic incidents, and social gatherings. 
+    Human mobility is highly sensitive to contextual events, including weather, traffic incidents, and social gatherings. 
     We curated over 40 event types from multiple social media platforms to forecast event-driven mobility changes.
     Leveraging LLMs, we predict shifts in both road traffic conditions and community-level travel demand.
     Results show that even a vanilla GPT-4o with in-context learning achieves a MAPE of 15.12%.

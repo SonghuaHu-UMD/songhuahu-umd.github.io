@@ -7,7 +7,7 @@ author_profile: true
 
 The COVID-19 pandemic underscored the tight coupling between human mobility and infectious disease dynamics.
 My research builds integrated econometric, epidemiological, and simulation models to disentangle the (causal) relationships
-among mobility, public policies, vaccination, and virus transmission -- controlling for socioeconomic confounders.
+among mobility, public policies, vaccination, and virus transmission, while controlling for socioeconomic confounders.
 I am extending this work to broader environmental health contexts, including air pollution exposure, health disparity, and climate-sensitive diseases.
 
 ### <span style="color: green"> Human Mobility, Infectious Disease, and Health Disparity</span> 😷 😷 😷 🏃🏃🏃
@@ -39,7 +39,7 @@ I am extending this work to broader environmental health contexts, including air
     <a href="https://www.sciencedirect.com/science/article/pii/S2210670721007721"><b><span style="color: purple;">[SCS]</span></b></a>
     We investigate the socioeconomic roots of COVID-19 health disparities by linking outcomes to demographics, occupation, and partisanship.
     A stark structural inequality emerges: social distancing is a “privilege” of advantaged groups, 
-    while disadvantaged communities bear disproportionate case and death burdens -- even with high vaccination rates.
+    while disadvantaged communities bear disproportionate case and death burdens, even with high vaccination rates.
   </div>
 </div>
 

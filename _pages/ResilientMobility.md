@@ -7,7 +7,7 @@ author_profile: true
 
 Natural disasters, pandemics, and extreme weather profoundly disrupt human mobility. 
 My research quantifies the evolving patterns of travel before, during, and after such disruptions, 
-with particular attention to accessibility inequities and resilience disparities in underserved communities -- 
+with particular attention to accessibility inequities and resilience disparities in underserved communities, 
 providing actionable insights for building more equitable and resilient urban mobility systems.
 
 ### <span style="color: green"> Multi-modal Travel Demand Resilience </span> 🚌🚌🚌🚲🚲🚲
@@ -71,7 +71,7 @@ providing actionable insights for building more equitable and resilient urban mo
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2020.0344"><b><span style="color: purple;">[J. R. Soc. Interface]</span></b></a>
     Analyzing mobile device location data during the pandemic, we uncover a spontaneous mobility reduction that preceded government mandates 
-    and a "floor" effect -- mobility reached a lower bound shortly after stay-at-home orders were issued.
+    and a "floor" effect, where mobility reached a lower bound shortly after stay-at-home orders were issued.
     Strikingly, state-level stay-at-home policies accounted for only ~5% of the total mobility reduction.
   </div>
 </div>
@@ -123,7 +123,7 @@ providing actionable insights for building more equitable and resilient urban mo
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S2212420924005168"><b><span style="color: purple;">[IJDRR]</span></b></a>
     Crowdsourced data open new avenues for monitoring road traffic during extreme weather. 
-    We compare two data types -- passively collected location data (PCLD) from mobile devices and actively collected user reports (ACUR) from Waze -- 
+    We compare two crowdsourced data types, passively collected location data (PCLD) from mobile devices and actively collected user reports (ACUR) from Waze, 
     to assess the impact of floods, winter storms, and fog on road traffic. 
     A key finding: ACUR underestimates actual impacts during severe events, as few users venture out to serve as active “sensors.”
   </div>
