@@ -37,7 +37,9 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 
 * <span style="color: #27ae60;">**自费博士生**</span>
 * <span style="color: #27ae60;">**常规入学博士生**</span>：提供全额博士奖学金（约<span style="color: #e67e22;">**19,600港元/月**</span>）。
-* <span style="color: #27ae60;">**校长奖学金**</span>：要求**985或QS前100本科**（C9优先）；有硕士学位和留学经历优先；一作SCI发表优先。* <span style="color: #27ae60;">**[香港政府博士奖学金 (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>：月薪高达<span style="color: #e67e22;">**27,100港元**</span>，并享受学费免除、会议差旅费补贴等福利。要求：**985或QS前100本科**（C9优先）；有硕士学位和留学经历优先；一作SCI发表优先。* <span style="color: #27ae60;">**联合培养博士**</span>：可同时获得内地高校和香港城市大学双博士学位，学校提供研究生奖学金。C9优先。
+* <span style="color: #27ae60;">**校长奖学金**</span>：要求**985或QS前100本科**（C9优先）；有硕士学位和留学经历优先；一作SCI发表优先。
+* <span style="color: #27ae60;">**[香港政府博士奖学金 (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>：要求**985或QS前100本科**（C9优先）；有硕士学位和留学经历优先；一作SCI发表优先（约<span style="color: #e67e22;">**27,100港元/月**</span>）。
+* <span style="color: #27ae60;">**联合培养博士**</span>：可同时获得内地高校和香港城市大学双博士学位，学校提供研究生奖学金。C9优先。
 
 **课题组长期寻找具有<span style="color: #e67e22;">LLM</span>、<span style="color: #e67e22;">网络科学 (Network Science)</span>、<span style="color: #e67e22;">大规模智能体仿真 (Large-scale ABM)</span>相关背景的同学或合作伙伴。** 我们可提供：
 * 极其丰富的数据资源
