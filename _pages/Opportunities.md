@@ -22,6 +22,12 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 * <span style="color: #27ae60;">**[Hong Kong PhD Fellowship Scheme (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>: Monthly stipend up to <span style="color: #e67e22;">**HK$27,100**</span>, plus tuition waiver and conference travel allowance. Requirements: **C9 or QS Top-100 undergraduate**; master's degree and overseas experience preferred; first-authored SCI publication preferred. I will assist qualified candidates with the application.
 * <span style="color: #27ae60;">**Joint Ph.D. Program**</span>: Earn dual degrees from a mainland university and CityU. Scholarship provided.
 
+**We are particularly looking for students or collaborators with expertise in <span style="color: #e67e22;">LLM</span>, <span style="color: #e67e22;">Network Science</span>, or <span style="color: #e67e22;">Large-scale Agent-based Modeling (ABM)</span>.** We offer:
+* Rich and diverse data resources
+* Ample large-scale computing infrastructure
+* Long-term collaboration channels with top teams (e.g., MIT)
+* Research designs targeting high-impact journals with deep involvement
+
 ---
 
 我是香港城市大学（世界排名：U.S. News 54, QS 63）ACE学院助理教授，目前有数名<span style="color: #e67e22;">**博士生/博士后/研究助理**</span>名额。
@@ -36,5 +42,11 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 * <span style="color: #27ae60;">**校长奖学金**</span>：要求**C9或QS前100本科**；有硕士学位和留学经历优先；一作SCI发表优先。符合条件者可协助申请。
 * <span style="color: #27ae60;">**[香港政府博士奖学金 (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>：月薪高达<span style="color: #e67e22;">**27,100港元**</span>，并享受学费免除、会议差旅费补贴等福利。要求：**C9或QS前100本科**；有硕士学位和留学经历优先；一作SCI发表优先。符合条件者可协助申请。
 * <span style="color: #27ae60;">**联合培养博士**</span>：可同时获得内地高校和香港城市大学双博士学位，学校提供研究生奖学金。
+
+**课题组长期寻找具有<span style="color: #e67e22;">LLM</span>、<span style="color: #e67e22;">网络科学 (Network Science)</span>、<span style="color: #e67e22;">大规模智能体仿真 (Large-scale ABM)</span>相关背景的同学或合作伙伴。** 我们可提供：
+* 极其丰富的数据资源
+* 充足的大规模计算资源
+* 与MIT等顶级团队的长期合作通道
+* 面向子刊的研究设计与深度参与
 
 
