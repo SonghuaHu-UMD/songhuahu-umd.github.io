@@ -18,9 +18,9 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 
 * <span style="color: #27ae60;">**Self-funded Ph.D.**</span>
 * <span style="color: #27ae60;">**Regular Ph.D. Scholarship**</span>: Full doctoral scholarship (~<span style="color: #e67e22;">**HK$19,600/month**</span>).
-* <span style="color: #27ae60;">**Presidential PhD Scholarship**</span>: Requirements: **C9 or QS Top-100 undergraduate**, **GPA >= 85**, and **first-authored SCI publication**. I will assist qualified candidates with the application.
-* <span style="color: #27ae60;">**[Hong Kong PhD Fellowship Scheme (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>: Monthly stipend up to <span style="color: #e67e22;">**HK$27,100**</span>, plus tuition waiver and conference travel allowance. Requirements: **985 or QS Top-100 undergraduate** (C9 preferred), **GPA >= 85**, and **first-authored SCI publication**. I will assist qualified candidates with the application.
-* <span style="color: #27ae60;">**Joint Ph.D. Program**</span>: Earn dual degrees from a mainland university and CityU. Scholarship provided. Apply Oct--Dec each year for September entry.
+* <span style="color: #27ae60;">**Presidential PhD Scholarship**</span>: Requirements: **C9 or QS Top-100 undergraduate**; master's degree and overseas experience preferred; first-authored SCI publication preferred. I will assist qualified candidates with the application.
+* <span style="color: #27ae60;">**[Hong Kong PhD Fellowship Scheme (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>: Monthly stipend up to <span style="color: #e67e22;">**HK$27,100**</span>, plus tuition waiver and conference travel allowance. Requirements: **C9 or QS Top-100 undergraduate**; master's degree and overseas experience preferred; first-authored SCI publication preferred. I will assist qualified candidates with the application.
+* <span style="color: #27ae60;">**Joint Ph.D. Program**</span>: Earn dual degrees from a mainland university and CityU. Scholarship provided.
 
 ---
 
@@ -33,16 +33,8 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 
 * <span style="color: #27ae60;">**自费博士生**</span>
 * <span style="color: #27ae60;">**常规入学博士生**</span>：提供全额博士奖学金（约<span style="color: #e67e22;">**19,600港元/月**</span>）。
-* <span style="color: #27ae60;">**校长奖学金**</span>：要求**C9或QS前100本科**、**GPA >= 85**、**一作SCI发表**。符合条件者可协助申请。
-* <span style="color: #27ae60;">**[香港政府博士奖学金 (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>：月薪高达<span style="color: #e67e22;">**27,100港元**</span>，并享受学费免除、会议差旅费补贴等福利。要求：**985或QS前100本科**（C9优先）、**GPA >= 85**、**一作SCI发表**。符合条件者可协助申请。
-* <span style="color: #27ae60;">**联合培养博士**</span>：可同时获得内地高校和香港城市大学双博士学位，学校提供研究生奖学金。每年10--12月申请，次年9月入学。
+* <span style="color: #27ae60;">**校长奖学金**</span>：要求**C9或QS前100本科**；有硕士学位和留学经历优先；一作SCI发表优先。符合条件者可协助申请。
+* <span style="color: #27ae60;">**[香港政府博士奖学金 (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>：月薪高达<span style="color: #e67e22;">**27,100港元**</span>，并享受学费免除、会议差旅费补贴等福利。要求：**C9或QS前100本科**；有硕士学位和留学经历优先；一作SCI发表优先。符合条件者可协助申请。
+* <span style="color: #27ae60;">**联合培养博士**</span>：可同时获得内地高校和香港城市大学双博士学位，学校提供研究生奖学金。
 
-***
-
-Ph.D. Students (City University of Hong Kong)
-======
-
-* <span style="color: #2c3e50; font-weight: bold;">Junxiang Zhang</span>, 2026~: B.S. in Computer Science, <span style="color: #7f8c8d;">Southern University of Science and Technology</span>
-* <span style="color: #2c3e50; font-weight: bold;">Huazu Zhang</span>, 2026~: M.S. in Geographic Information Science, <span style="color: #7f8c8d;">Wuhan University</span>
-* <span style="color: #2c3e50; font-weight: bold;">Jintong Zhang</span>, 2026~: M.S. in Electronic and Information Engineering, <span style="color: #7f8c8d;">Beihang University</span>
 
