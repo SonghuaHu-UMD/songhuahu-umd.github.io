@@ -6,7 +6,9 @@
       "Bash(sed 's/.*\\\\.//')",
       "Bash(ls -lh talkmap.ipynb markdown_generator/*.ipynb)",
       "Bash(rm:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "WebFetch(domain:scholar.google.com)",
+      "WebFetch(domain:scholar.google.co.jp)"
     ]
   }
 }

@@ -68,7 +68,7 @@ Education
 Publications
 ======
 
-39 journal papers (<span style="color: green">**21** First-Author</span>, <span style="color: orange">**2** Corresponding</span>) including
+39 journal papers (<span style="color: green">**21** First-Author</span>, <span style="color: orange">**4** Corresponding</span>) including
 _Nature Sustainability_ (**1**, <span style="color: green">**1**F</span> <span style="color: orange">**1**C</span>),
 _Proceedings of the National Academy of Sciences_ (**1**),
 _Transportation Research Part A_ (**5**, <span style="color: green">**3**F</span>),
