@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(du -sh */ .git .idea)",
+      "Bash(sort -k5 -h)",
+      "Bash(sed 's/.*\\\\.//')",
+      "Bash(ls -lh talkmap.ipynb markdown_generator/*.ipynb)",
+      "Bash(rm:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}
