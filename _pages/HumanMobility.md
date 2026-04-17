@@ -19,14 +19,8 @@ This includes: 1) a unified pipeline for parsing multi-source travel data into t
         <img src="https://songhuahu-umd.github.io/images/OD2T3.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
-
-
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b"><b><span style="color: purple;">[PhD Dissertation]</span></b></a> 
-    Using mobile device location data as the sole input, 
-    we built an end-to-end pipeline to extract individual trip rosters. The process encompasses 
-    home/work identification, trip detection, mode imputation, population weighting, and validation. 
-    Trip rosters are then aggregated at various spatiotemporal resolutions to construct multi-modal OD matrices.
+    <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b"><b><span style="color: purple;">[PhD Dissertation]</span></b></a> Using mobile device location data as the sole input, we built an end-to-end pipeline to extract individual trip rosters. The process encompasses home/work identification, trip detection, mode imputation, population weighting, and validation. Trip rosters are then aggregated at various spatiotemporal resolutions to construct multi-modal OD matrices.
   </div>
 </div>
 
