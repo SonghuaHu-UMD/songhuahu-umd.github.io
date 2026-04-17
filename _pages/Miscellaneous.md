@@ -5,9 +5,8 @@ permalink: /Miscell/
 author_profile: true
 ---
 
-I have a solid background and persistent interest in general areas of transportation such as
-Mobility as a service (MaaS), transportation economics, transport geography, traffic simulation, 
-infrastructure design, transportation operations, travel demand management, public transit, etc.
+Beyond my core research themes, I maintain active interests across broader transportation topics -- 
+including travel demand management, public perception analytics, shared mobility, and multimodal integration.
 
 ### <span style="color: green"> Transportation Economics</span> 💰💰💰⛽⛽⛽
 
@@ -20,10 +19,10 @@ infrastructure design, transportation operations, travel demand management, publ
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0965856424001939"><b><span style="color: purple;">[TR Part A]</span></b></a>
-    I am the technical leader of the first-in-the-nation incentive-based travel demand management APP 
-    <a href="https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33">“incenTrip”</a>.
-    Through personalized and dynamic incentives, the app aims to reduce traffic congestion, energy consumption, and emissions by encouraging individuals to adopt sustainable travel options, 
-    such as switching from driving to greener travel modes, participating in carpooling programs, bypassing congested corridors, and avoiding travel during peak periods.
+    As technical lead of <a href=”https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33”>”incenTrip”</a> -- the first nationwide incentive-based travel demand management app --
+    I design personalized, dynamic incentives that encourage sustainable travel choices: 
+    mode switching, carpooling, congestion avoidance, and off-peak travel, 
+    ultimately reducing congestion, energy use, and emissions.
   </div>
 </div>
 
@@ -37,12 +36,10 @@ infrastructure design, transportation operations, travel demand management, publ
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21002382"><b><span style="color: purple;">[TR Part C]</span></b></a>
-    A major threat to the growing usage of shared-cars is customer churn. 
-    Despite companies continually providing rewards to attract customers, factors that contribute to customer churn are not well-understood.
-    We examined how personalized economic incentives influence customer churn by longitudinally analyzing over 4 million coupons via an extended Cox proportional hazards model.
-    Results show that the effect of coupons generally increased at first and then decreased after the 130th day.
-    Offering more coupons to new customers can help maximize the profits of service providers. 
-    However, such a strategy is debatable because it invades personal privacy and is unfair for existing loyal customers.
+    Customer churn threatens the viability of shared mobility platforms, yet the factors driving it remain poorly understood. 
+    We analyze over 4 million coupons longitudinally via an extended Cox proportional hazards model to quantify how personalized incentives affect retention.
+    Coupon effectiveness peaks early and declines after ~130 days. 
+    Front-loading incentives for new users maximizes short-term revenue, but raises fairness and privacy concerns.
     
   </div>
 </div>
@@ -50,10 +47,9 @@ infrastructure design, transportation operations, travel demand management, publ
 <hr style="border:1px solid gray">
 
 ### <span style="color: green"> Public Perception from Social Media</span>💬💬💬👥👥👥
-Social media comments provide a rich source of text data containing public sentiments and perceptions.
-By leveraging both traditional text mining techniques and new LLMs,
-I aim to quantify how people feel about various urban services,
-including parking, accessibility, the built environment, health care services, and food delivery.
+Crowdsourced reviews encode rich public sentiment about urban services.
+By combining traditional NLP with large language models,
+we quantify perceptions of parking, accessibility, the built environment, and food delivery at national scale.
 
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
@@ -64,11 +60,10 @@ including parking, accessibility, the built environment, health care services, a
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0264275126000983"><b><span style="color: purple;">[Cities]</span></b></a>
-    By examining 5 million parking reviews for 1.1M POIs from Google Maps reviews,
-    we investigate public sentiment towards parking across the whole US.
-    We employ the BERT model to classify the parking sentiment and conduct regression to explore its relationships with socio-spatial factors.
-    We find significant variations in parking sentiment across POI types and CBSAs, with Restaurants showing the most negative. 
-    We also find denser urban areas with lower socioeconomic status are more likely to exhibit negative parking sentiment.
+    Analyzing 5 million parking-related Google Maps reviews across 1.1M US POIs, 
+    we deploy BERT to classify sentiment and model its socio-spatial determinants.
+    Parking sentiment varies markedly by POI type (restaurants are the most negative) and metro area. 
+    Denser, lower-income urban areas consistently exhibit more negative parking perceptions.
   </div>
 </div>
 
@@ -82,9 +77,9 @@ including parking, accessibility, the built environment, health care services, a
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0198971525000821"><b><span style="color: purple;">[CEUS]</span></b></a>
-    ~ 30.6 million people in the US have physical disabilities affecting mobility, yet many city streets and services remain inaccessible despite civil rights protections. 
-    We use Google Maps reviews across the US and fine-tune Llama 3 model with the Low-Rank Adaptation technique to analyze public sentiment on accessibility.
-    We found areas with more elderly, highly-educated residents exhibit more negative sentiment, but no clear link is found between % disabilities and accessibility sentiments.
+    Over 30 million Americans have mobility-affecting disabilities, yet urban accessibility remains uneven. 
+    We fine-tune Llama 3 with Low-Rank Adaptation on nationwide Google Maps reviews to measure public accessibility sentiment.
+    Areas with older, more educated populations express more negative sentiment, while -- counterintuitively -- disability prevalence alone shows no clear association.
   </div>
 </div>
 
@@ -101,9 +96,9 @@ including parking, accessibility, the built environment, health care services, a
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0966692321003240"><b><span style="color: purple;">[JTG]</span></b></a>
-    Leveraging data covering all Dockless bikesharing (DBS) programs in Shanghai, China, we evaluated bike-and-ride (BnR) activities in DBS-metro systems via four metrics: BnR trip count, BnR rate, shared-bike utilization rate, and catchment size.
-    Results showed that land use mix was significantly positively associated with BnR trip count only when buffer size was larger than 1.5 km. 
-    Large DBS operators outperformed small ones in BnR trip count but not in bike utilization rate.
+    Using comprehensive dockless bikesharing (DBS) data from Shanghai, we evaluate bike-and-ride (BnR) integration with metro via four metrics: trip count, BnR rate, bike utilization, and catchment size.
+    Land-use mix positively correlates with BnR trips only beyond a 1.5 km buffer. 
+    Larger DBS operators generate more BnR trips but do not achieve higher per-bike utilization.
   </div>
 </div>
 
@@ -117,10 +112,9 @@ including parking, accessibility, the built environment, health care services, a
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920918306448"><b><span style="color: purple;">[TR Part D]</span></b></a>
-    By analyzing station-based shared car booking requests and turnover rates, we provide evidence for optimizing the usage and efficiency of carsharing programs: 
-    carsharing companies should identify underserved areas to initiate new businesses; 
-    carsharing seems more competitive in a distance to a bus stop between 1.2km and 2.4km, and carsharing is more effectively served in areas with constraints in accessing metro services;
-    local authorities should develop a location-based and geographically differentiated quota in managing carsharing programs.
+    Analyzing station-level booking requests and turnover rates, we provide evidence-based guidance for carsharing optimization: 
+    operators should target underserved areas; carsharing is most competitive 1.2--2.4 km from bus stops and in areas with limited metro access; 
+    and local authorities should adopt geographically differentiated quotas for fleet management.
   </div>
 </div>
 

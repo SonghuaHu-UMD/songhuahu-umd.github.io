@@ -27,15 +27,13 @@ News
 ======
 
 * **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9): Ubiquitous data-driven framework for traffic emission estimation and policy evaluation!
-* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402)!
+* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**Anthropocene**](https://www.anthropocenemagazine.org/2026/04/tracking-traffic-pollution-in-real-time-could-transform-city-climate-policy/)!
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!
-* **[05/2025]** Invited job talk at [**_UCL CEGE_**](https://www.ucl.ac.uk/civil-environmental-geomatic-engineering/) on Agentic AI in Human Mobility Simulation!
+* **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
 * **[01/2025]** Invited job talk at **_University of Alberta_**, Canada.
-* **[03/2024]** Invited job talk at **_University of Leeds_**, UK.
 * **[10/2023]** Received [**COTA Best Dissertation Award**](https://cee.umd.edu/news/story/hu-receives-cota-best-dissertation-award)!
 * **[05/2023]** Received [**UMD CEE Best Doctoral Research Award**](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards)!
-* **[10/2020]** Paper in [**_PNAS_**](https://www.pnas.org/doi/abs/10.1073/pnas.2010836117): Mobile device data reveal the dynamics in a positive relationship between human mobility and COVID-19 infections.
 
 
 ***

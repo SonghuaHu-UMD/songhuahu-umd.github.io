@@ -5,48 +5,43 @@ permalink: /SusMobility/
 author_profile: true
 ---
 
-The commitment to decarbonization is driving city decision-makers to leverage emerging techniques to promote sustainability. 
-Transport emissions, particularly exhaust emissions from road traffic, remain a major source of greenhouse gases and air pollutants.
-Advancing our understanding and developing the tools needed to reduce these emissions is essential to fostering cleaner, more efficient mobility systems.
+Transport emissions remain a major source of greenhouse gases and air pollutants, and the global push for decarbonization demands scalable, data-driven solutions.
 
-My research focuses on three key areas: 1) developing cost-effective data and methods to accurately and efficiently monitor and predict large-scale, 
-high-resolution traffic emissions; 2) exploring how vehicle electrification can contribute to transport decarbonization, 
-while identifying key strategies for optimizing EV operations and charging facility planning; and 3)
-modeling the impact of various policies—such as CAV sharing, travel demand management, active travel modes, and ZONE 30—on transport decarbonization.
+My research addresses three key areas: 1) developing cost-effective methods to monitor and predict large-scale, high-resolution traffic emissions using ubiquitous data; 2) advancing vehicle electrification strategies, including optimizing EV operations and charging infrastructure planning; and 3) evaluating the emission impacts of urban policies -- such as speed limits (ZONE 30), travel demand management, and active travel promotion.
 
 ### <span style="color: green"> Data-driven Emission Inventory Estimation </span> 🌱🌱🌱🌎🌎🌎
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://www.nature.com/articles/s41893-026-01797-9">
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
         <img src="https://songhuahu-umd.github.io/images/camera0.gif" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://www.nature.com/articles/s41893-026-01797-9"><b><span style="color: purple;">[Nature Sustainability]</span></b></a>
-    We present a ubiquitous data-driven framework for traffic emission estimation and policy evaluation, leveraging traffic camera videos and mobile phone location data.
-    The car classification scheme of MOVES includes 13 car types, making the preparation of fleet composition inputs challenging. 
-    We constructed a world-first customized car-type dataset containing a total of 10,000 images that align with the MOVES source types.
-    All images are cropped from the traffic video surveillance collected from ~ 800 traffic cameras in New York, and labeled by GPT4o and validated by human. 
-    We then trained a total of 10 image classifiers based on the dataset, with ConvNeXt achieving the best accuracy (92.9%) and efficiency.
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
+    The MOVES emission model requires fleet composition across 13 vehicle types -- a notoriously difficult input to prepare at scale. 
+    We constructed the first benchmark dataset of 10,000 vehicle images aligned with MOVES source types, 
+    cropped from ~800 traffic cameras in New York and labeled via GPT-4o with human validation. 
+    Among 10 image classifiers trained on this dataset, ConvNeXt achieved the best accuracy (92.9%) and efficiency.
   </div>
 </div>
 
 ---
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
+    <a href="https://www.nature.com/articles/s41893-026-01797-9">
         <img src="https://songhuahu-umd.github.io/images/Signal.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Under Review]</span></b></a>
-    Traffic signal control, particularly in urban areas, contributes to a large number of stops-and-goes and significantly impacts vehicle emissions.
-    We developed a signal processing algorithm to infer the directional signal timing from the traffic flow time series extracted from camera videos.
-    The signal timing is then applied to the link-level speed profiles to convert them to second-by-second driving cycles.
-    We found a significant increase in operation modes 1 (Idle) and 12 (acceleration) after applying the signal control enrichment.
-    In addition, PM and NOx shows on average 40-60% increase if considering the signal timing.
+    <a href="https://www.nature.com/articles/s41893-026-01797-9"><b><span style="color: purple;">[Nature Sustainability]</span></b></a>
+    We present a ubiquitous data-driven framework for city-scale traffic emission estimation and policy evaluation, leveraging traffic camera videos and mobile phone location data.
+    Urban signal control induces frequent stops-and-goes that significantly affect emissions. 
+    We developed a signal processing algorithm to infer directional signal timing from camera-extracted traffic flow time series, 
+    then applied it to link-level speed profiles to reconstruct second-by-second driving cycles.
+    Accounting for signal timing reveals substantial increases in idle and acceleration modes, 
+    with PM and NOx emissions rising 40--60% on average.
   </div>
 </div>
 
@@ -60,10 +55,10 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0965856425000576"><b><span style="color: purple;">[TR Part A]</span></b></a>
-    The impact of 30 km/h speed limit (ZONE 30) on traffic emissions remain uncertain. 
-    We propose a big-data approach to estimate the effects of city-wide Zone 30 on traffic emissions in Milan, Italy, analyzing data collected from over 3.4 million driving trips. 
-    Results show that the overall impact of Zone 30 on emissions is modest -- in the most extensive scenario, a 0.61% to 2.73% increase is observed in different emissions. 
-    However, these impacts vary significantly across spaces and times, with the most notable increases observed during peak hours and in cross-region travels. 
+    The emission impact of 30 km/h speed limits (ZONE 30) remains contested. 
+    We propose a big-data approach to quantify city-wide Zone 30 effects in Milan, Italy, analyzing 3.4 million driving trips. 
+    Overall emission changes are modest (0.61--2.73% increase in the most extensive scenario), 
+    but impacts vary substantially across space and time, with the largest increases during peak hours and for cross-zone trips. 
   </div>
 </div>
 
@@ -78,12 +73,11 @@ modeling the impact of various policies—such as CAV sharing, travel demand man
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciopen.com/article/10.26599/JICV.2026.9210079"><b><span style="color: purple;">[J. Intelligent and Connected Vehicles]</span></b></a>
-    We introduce the design and demonstration of a Digital Twin (DT) platform 
-    for road traffic emission nowcasting and forecasting. By integrating multi-source data collected from online repositories and IoT sensors, 
-    the platform provides a comprehensive, near-real-time view of road traffic emissions with high spatio-temporal resolution. 
-    A streamlined technology backend that connects various data mining and traffic simulation techniques is designed to 
-    facilitate forecasting future emissions under different policy interventions.
-The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive visualization platform.
+    We design and demonstrate a Digital Twin platform for road traffic emission nowcasting and forecasting. 
+    Integrating multi-source data from online repositories and IoT sensors, the platform delivers near-real-time, 
+    high-resolution emission estimates. A streamlined backend connects data mining and traffic simulation modules 
+    to forecast emissions under alternative policy scenarios. 
+    The platform is demonstrated for Kista, Stockholm, via a 3D interactive visualization interface.
   </div>
 </div>
 
@@ -100,11 +94,10 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920919311058"><b><span style="color: purple;">[TR Part D]</span></b></a>
-    Limited battery capacity remains a major obstacle for large-scale adoption of Shared electric vehicles (SEVs), 
-    and greatly undermines their popularity. 
-    In this study, we employed a discrete-event simulation approach estimate 
-    how battery capacity affects the performance of a carsharing program. Results show that limited battery capacity lowered user satisfaction and vehicle utilization in the program. 
-    Increased charging speed, maximum range, and vehicle-to-trip ratio help mitigate these negative effects.
+    Limited battery capacity remains a key barrier to shared electric vehicle (SEV) adoption. 
+    Using discrete-event simulation, we quantify how battery capacity affects carsharing program performance. 
+    Results show that constrained capacity lowers both user satisfaction and vehicle utilization, 
+    while faster charging, larger battery range, and higher vehicle-to-trip ratios help mitigate these effects.
   </div>
 </div>
 
@@ -118,9 +111,10 @@ The DT platform is demonstrated for Kista, Stockholm, through a 3D interactive v
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X2300459X"><b><span style="color: purple;">[TR Part C]</span></b> </a>
-    To address the battery-related shortcomings of battery electric buses (BEBs), dynamic wireless charging (DWC) technology that allows BEBs to charge while in motion has emerged.
-    To resolve the DWS planning problem, we propose a (higher-level) strategic planning model that optimizes the deployment of DWC facilities and battery capacity of BEBs, 
-    and then establishes a (lower-level) tactical planning model of optimal charging scheduling under the time-of-use (TOU) tariff mechanism considering the interdependence between infrastructure design and charging activities of BEBs. 
+    Dynamic wireless charging (DWC) enables battery electric buses (BEBs) to charge en route, addressing range limitations. 
+    We propose a bi-level optimization framework: a strategic model for DWC facility deployment and battery sizing, 
+    coupled with a tactical model for charging scheduling under time-of-use tariffs, 
+    jointly optimizing infrastructure design and operational charging activities. 
   </div>
 </div>
 

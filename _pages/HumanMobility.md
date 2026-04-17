@@ -5,15 +5,11 @@ permalink: /HumanMobility/
 author_profile: true
 ---
 
-Mobile devices (cellphones, connected vehicles) with positioning sensors are ubiquitous.
-These devices generate vast amounts of spatiotemporal data on individual travel.
-Compared to traditional surveys and static sensors, mobile device location data offer higher penetration rates, 
-broader spatiotemporal coverage, and real-time updates.
+Mobile devices -- cellphones, connected vehicles, and wearable sensors -- generate vast amounts of spatiotemporal data on individual travel.
+Compared to traditional surveys and static sensors, these data offer higher penetration rates, broader spatiotemporal coverage, and near-real-time updates.
 
-My research focus on combining these big data with traditional travel demand model. 
-This includes 1) a unified pipeline for parsing multi-source travel data to derive trip rosters, 2) a set of 
-spatiotemporal AI models for forecasting future travel demand, and 3)
-a set of traffic simulation tools for simulating traffic flow at both individual and aggregated level.
+My research focuses on integrating these emerging data sources with established travel demand modeling frameworks.
+This includes: 1) a unified pipeline for parsing multi-source travel data into trip rosters; 2) a suite of spatiotemporal AI models for forecasting future travel demand; and 3) traffic simulation tools for modeling flow at both individual and aggregated levels.
 
 ### <span style="color: green"> Unified Pipeline for Data-driven Travel Demand Modeling </span> 🚦🚦🚦🚗🚗🚗
 
@@ -27,10 +23,10 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b"><b><span style="color: purple;">[PhD Dissertation]</span></b></a> 
-    Fully relying on mobile device location data, 
-    we build a pipeline to extract individual trip rosters. The process includes 
-    home&work identification, trip identification, mode imputation, population weighting, and result validation. 
-    These trip rosters are then aggregated at different spatiotemporal units to construct multi-modal OD matrices.
+    Using mobile device location data as the sole input, 
+    we built an end-to-end pipeline to extract individual trip rosters. The process encompasses 
+    home/work identification, trip detection, mode imputation, population weighting, and validation. 
+    Trip rosters are then aggregated at various spatiotemporal resolutions to construct multi-modal OD matrices.
   </div>
 </div>
 
@@ -45,12 +41,11 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[NetMob 2024]</span></b></a> 
-    Large-scale validation is lacking to assess whether mobile device 
-    OD data reliably generates road traffic flow distributions. 
-    We developed an end-to-end pipeline to map mobile OD matrices onto road networks using dynamic traffic assignment, 
-    applied across 35 metropolitan areas in Mexico, Colombia, Indonesia, and India. 
-    Results show that the model fails to capture traffic flow accurately in regions with low mobile phone penetration, 
-    where high rates of zero-flow links and unrealistically low traffic volumes persist, even after population weighting.
+    Can mobile-device-derived OD data reliably reproduce road-level traffic flow distributions? 
+    We developed an end-to-end pipeline that maps mobile OD matrices onto road networks via dynamic traffic assignment 
+    and validated it across 35 metropolitan areas in Mexico, Colombia, Indonesia, and India. 
+    Results reveal that the model underperforms in regions with low mobile phone penetration, 
+    where zero-flow links and unrealistically low volumes persist even after population weighting.
   </div>
 </div>
 
@@ -70,9 +65,9 @@ a set of traffic simulation tools for simulating traffic flow at both individual
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Ongoing]</span></b> </a>
-    Mobile device location data provide detailed individual travel information, which is more compatible with dynamic, behavior-oriented, agent-based simulators. 
-    My ongoing research focuses on meshing the forecasted trip itinerary with micro (Vissim, SUMO), meso (DTALite), 
-    or agent-based simulators (MATSim) to achieve fine-grained citywide simulation. 
+    Mobile device location data capture rich individual travel patterns that are well-suited for dynamic, behavior-oriented simulators. 
+    My ongoing work integrates forecasted trip itineraries with micro (Vissim, SUMO), meso (DTALite), 
+    and agent-based simulators (MATSim) to enable fine-grained citywide traffic simulation. 
   </div>
 </div>
 
@@ -89,10 +84,9 @@ a set of traffic simulation tools for simulating traffic flow at both individual
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://github.com/SonghuaHu-UMD/MultiSTGraph"><b><span style="color: purple;">[PhD Dissertation]</span></b></a> 
-    OD flow forecasting is challenging due to complex spatiotemporal dependencies and heterogeneous external
-    effects. We propose a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network (<a href="https://github.com/SonghuaHu-UMD/MultiSTGraph">Multi-ATGCN</a>),
-    a general deep learning framework for citywide multi-step OD flow forecasting.
-    Experiments on two real-world tasks demonstrate its steady performance improvement over state-of-the-art baselines.
+    OD flow forecasting is challenging due to intricate spatiotemporal dependencies and heterogeneous external factors. We propose <a href="https://github.com/SonghuaHu-UMD/MultiSTGraph">Multi-ATGCN</a>,
+    a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network for citywide multi-step OD flow prediction.
+    Experiments on two real-world datasets show consistent improvements over state-of-the-art baselines.
   </div>
 </div>
 
@@ -105,11 +99,9 @@ a set of traffic simulation tools for simulating traffic flow at both individual
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X22003758"><b><span style="color: purple;">[TR Part C]</span></b></a> 
-    Individual mobility forecasting is more challenging because of high randomness of individual travels, 
-    multi-structure forecasting tasks, and imbalanced distributions of places and activities.
-    We propose a hierarchical activity-based framework for simultaneously predicting the activity, time, and location of
-    the next trip for each device. Meanwhile, loss functions in the semantic segmentation domain are introduced to address the imbalanced classification issue.
-    The whole framework is applied on a county-level dataset covering over 18,000 residents and shows acceptable prediction accuracy.
+    Individual mobility prediction poses unique challenges: high behavioral randomness, multi-task output structures, and severely imbalanced activity distributions.
+    We propose a hierarchical activity-based framework that simultaneously predicts the activity, time, and location of each device's next trip, incorporating loss functions from semantic segmentation to handle class imbalance.
+    Applied to a county-level dataset of 18,000+ residents, the framework achieves competitive prediction accuracy.
   </div>
 </div>
 
@@ -122,11 +114,10 @@ a set of traffic simulation tools for simulating traffic flow at both individual
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635"><b><span style="color: purple;">[TR Part A]</span></b></a> 
-    Using nationwide CBG-level trip flow derived from mobile devices as the proxy of travel demand, 
-    We examine its relations with socioeconomics, demographics, and land use. 
-    Over 48 explainable machine learning models and interpretation techniques are compared to determine the 
-    best model for demand forecasting and justify interpretation robustness. 
-    Pronounced nonlinearities, threshold effects, and interaction effects are observed.
+    Using nationwide CBG-level trip flows from mobile devices as a proxy for travel demand, 
+    we examine their relationships with socioeconomic, demographic, and land-use variables. 
+    A systematic comparison of 48 explainable ML models and interpretation techniques identifies the best-performing model and validates interpretation robustness. 
+    Pronounced nonlinearities, threshold effects, and interaction effects are documented.
   </div>
 </div>
 
@@ -139,10 +130,10 @@ a set of traffic simulation tools for simulating traffic flow at both individual
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Ongoing]</span></b></a> 
-    Human mobility is highly sensitive to different events (weather conditions, traffic incidents, and social gatherings). 
-    We collected over 40 different types of events from multiple social media platforms and to forecast human mobility change under these events.
-    Leveraging LLMs, we focused on forecasting changes in both road traffic conditions and community travel demand.
-    Results show that even a Vanilla GPT4o with some in-context learning can achieve 15.12% of MAPE.
+    Human mobility is highly sensitive to contextual events -- weather, traffic incidents, and social gatherings. 
+    We curated over 40 event types from multiple social media platforms to forecast event-driven mobility changes.
+    Leveraging LLMs, we predict shifts in both road traffic conditions and community-level travel demand.
+    Results show that even a vanilla GPT-4o with in-context learning achieves a MAPE of 15.12%.
   </div>
 </div>
 

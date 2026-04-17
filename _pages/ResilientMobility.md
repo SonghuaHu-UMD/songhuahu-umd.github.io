@@ -5,11 +5,10 @@ permalink: /Resilience/
 author_profile: true
 ---
 
-Unexpected events, such as natural disasters, diseases, and extreme weather events, lead to substantial impacts on human travel.
-My work focuses on quantitatively examining the time-varying patterns of human travel before, during, and after these abnormal interventions.
-My particular attention to accessibility inequities, policy barriers, and resilient disparities in underserved
-communities under unusual interventions provides valuable suggestions for building a more sustainable, equitable, and resilient urban
-mobility system.
+Natural disasters, pandemics, and extreme weather profoundly disrupt human mobility. 
+My research quantifies the evolving patterns of travel before, during, and after such disruptions, 
+with particular attention to accessibility inequities and resilience disparities in underserved communities -- 
+providing actionable insights for building more equitable and resilient urban mobility systems.
 
 ### <span style="color: green"> Multi-modal Travel Demand Resilience </span> 🚌🚌🚌🚲🚲🚲
 
@@ -22,10 +21,9 @@ mobility system.
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524"><b><span style="color: purple;">[TR Part C]</span></b></a>
-    Using location data of over 150 million monthly active mobile devices in the US,
-    we successfully measure how human mobility changed during the COVID-19 pandemic using three metrics:
-    average trips per person, average person-miles traveled, and percentage of residents staying home. Data are updated daily
-    and made publicly available via an <a href="https://data.covid.umd.edu/">online platform</a>.
+    Using location data from over 150 million monthly active mobile devices in the US,
+    we track pandemic-era mobility changes via three metrics: average trips per person, person-miles traveled, and share of residents staying home. 
+    Data are updated daily and publicly available through an <a href="https://data.covid.umd.edu/">online platform</a>.
   </div>
 </div>
 
@@ -39,10 +37,10 @@ mobility system.
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920920308397"><b><span style="color: purple;">[TR Part D]</span></b></a>
-    The COVID-19 pandemic has led to a globally unprecedented decline in transit ridership. 
-    We leverage the 20-year daily transit ridership data in Chicago to infer the impact of COVID-19 on ridership using the Bayesian structural time series model, 
-    controlling confounding effects of socioeconomic disparities. 
-    Results show that ridership declined more in regions with more commercial lands and higher percentages of white, educated, and high-income individuals.
+    The COVID-19 pandemic triggered an unprecedented decline in transit ridership worldwide. 
+    Using 20 years of daily ridership data in Chicago, we apply a Bayesian structural time series model to isolate the pandemic's causal impact, 
+    controlling for socioeconomic confounders. 
+    Ridership declined most sharply in commercial areas and neighborhoods with higher shares of white, educated, and high-income residents.
   </div>
 </div>
 
@@ -56,11 +54,9 @@ mobility system.
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0966692321000508"><b><span style="color: purple;">[JTG]</span></b></a>
-    Leveraging two-year bikesharing trips in Chicago, we examine the spatiotemporal evolution of bikesharing usage 
-    across the pandemic and compare it with other travel modes.
-    We find that bikesharing is more resilient compared with transit, driving, and walking.
-    Deep socio-economic inequities also exist: stations located in high-income areas go from 
-    more increase before the pandemic to more decrease during the pandemic.
+    Analyzing two years of bikesharing trips in Chicago, we trace the spatiotemporal evolution of bikesharing usage across the pandemic and benchmark it against transit, driving, and walking.
+    Bikesharing proves more resilient than other modes. 
+    However, stark socioeconomic inequities emerge: stations in high-income areas saw the largest pre-pandemic growth but also the steepest pandemic-era decline.
   </div>
 </div>
 
@@ -74,10 +70,9 @@ mobility system.
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2020.0344"><b><span style="color: purple;">[J. R. Soc. Interface]</span></b></a>
-    By analyzing the mobile device location data during the pandemic, we find a spontaneous mobility reduction that occurred
-    regardless of government actions and a ‘floor’ phenomenon, where human mobility reached a lower bound and
-    stopped decreasing soon after each state announced the stay-at-home order.
-    We also document that the states' stay-at-home policies have only led to about a 5% reduction in average human mobility.
+    Analyzing mobile device location data during the pandemic, we uncover a spontaneous mobility reduction that preceded government mandates 
+    and a "floor" effect -- mobility reached a lower bound shortly after stay-at-home orders were issued.
+    Strikingly, state-level stay-at-home policies accounted for only ~5% of the total mobility reduction.
   </div>
 </div>
 
@@ -95,9 +90,9 @@ mobility system.
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1366554525006568"><b><span style="color: purple;">[TR Part E]</span></b></a>
-    We provide a comprehensive survey of multi-modal urban transportation network resilience, covering modeling, evaluation, and optimization.
-    The survey reviews resilience metrics, network modeling approaches, and optimization strategies across road, transit, and shared mobility networks,
-    and identifies key challenges and future directions for building more resilient urban transportation systems.
+    A comprehensive survey of multi-modal urban transportation network resilience spanning modeling, evaluation, and optimization.
+    We review resilience metrics, network modeling approaches, and optimization strategies across road, transit, and shared mobility systems,
+    identifying open challenges and promising directions for next-generation resilient infrastructure.
   </div>
 </div>
 
@@ -111,11 +106,9 @@ mobility system.
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://ieeexplore.ieee.org/abstract/document/8569639"><b><span style="color: purple;">[IEEE ITSC]</span></b></a>
-    Heavy rain can induce road flooding, especially in the urban areas due to poor drainage systems. Effectively identifying
-    the flooding road segment can help people plan their travel reasonably and reduce losses. 
-    Combining social media posts, precipitation, and traffic flow information, we develop an automatic road flooding detection algorithm 
-    and deploy it to Shenzhen City, China. Result shows that our algorithm performs
-    satisfactorily with a 68%–90% detection rate and a 1.5%–2% false alarm rate.
+    Urban road flooding, exacerbated by poor drainage, demands rapid detection for effective traveler guidance. 
+    By fusing social media posts, precipitation data, and traffic flow information, we develop an automatic flooding detection algorithm 
+    deployed in Shenzhen, China. The system achieves a 68--90% detection rate with only a 1.5--2% false alarm rate.
   </div>
 </div>
 
@@ -129,11 +122,10 @@ mobility system.
 
   <div style="flex: 1; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S2212420924005168"><b><span style="color: purple;">[IJDRR]</span></b></a>
-    Crowdsourced data offer new opportunities to monitor and investigate changes in road traffic flow during extreme weather. 
-    We use two types of crowdsourced data: passively collected location data (PCLD) from mobile devices and 
-    actively collected user reports (ACUR) from the WAZE app, to examine the impact of floods, winter storms, and fog on road traffic. 
-    We find that ACUR may not accurately reflect the actual impact during extreme weather events, 
-    as few users are able to travel outside to actively act as “sensors”.
+    Crowdsourced data open new avenues for monitoring road traffic during extreme weather. 
+    We compare two data types -- passively collected location data (PCLD) from mobile devices and actively collected user reports (ACUR) from Waze -- 
+    to assess the impact of floods, winter storms, and fog on road traffic. 
+    A key finding: ACUR underestimates actual impacts during severe events, as few users venture out to serve as active “sensors.”
   </div>
 </div>
 
