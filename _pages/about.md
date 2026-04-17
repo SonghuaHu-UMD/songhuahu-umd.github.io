@@ -60,25 +60,25 @@ Education
 ======
 
 * Ph.D., Civil & Environmental Engineering (Transportation), University of Maryland, College Park, 2023
-    * Dissertation: [“A big-data-driven framework for spatiotemporal travel demand estimation and prediction”](https://drum.lib.umd.edu/items/4be96816-0aaf-4d4d-a1f0-11593c284d8b)
 * M.S., Transportation Engineering, Tongji University, 2019
-    * Thesis: “Promoting electric vehicle efficiency in large-scale carsharing systems”
 * B.S., Civil & Environmental Engineering (Transportation), Huazhong University of Science and Technology (HUST), 2016
-    * Thesis: “Simulation of pedestrian flow in metro systems: a dynamic floor-field cellular automata approach”
 
 ***
 
 Publications
 ======
 
-39 journal papers including
-_Nature Sustainability_ (**1**),
+39 journal papers (<span style="color: green">**21** First-Author</span>, <span style="color: orange">**2** Corresponding</span>) including
+_Nature Sustainability_ (**1**, <span style="color: green">**1**F</span> <span style="color: orange">**1**C</span>),
 _Proceedings of the National Academy of Sciences_ (**1**),
-_Transportation Research Part A/C/D/E_ (**14**),
-_Computers, Environment and Urban Systems_ (**3**),
-_Journal of Transport Geography_ (**3**),
-_Cities_ (**1**),
-_Sustainable Cities and Society_ (**1**),
+_Transportation Research Part A_ (**5**, <span style="color: green">**3**F</span>),
+_Transportation Research Part C_ (**5**, <span style="color: green">**3**F</span>),
+_Transportation Research Part D_ (**3**, <span style="color: green">**3**F</span>),
+_Transportation Research Part E_ (**1**),
+_Computers, Environment and Urban Systems_ (**3**, <span style="color: green">**1**F</span>),
+_Journal of Transport Geography_ (**3**, <span style="color: green">**2**F</span>),
+_Cities_ (**1**, <span style="color: green">**1**F</span>),
+_Sustainable Cities and Society_ (**1**, <span style="color: green">**1**F</span>),
 _Journal of the Royal Society Interface_ (**1**),
 _Journal of Planning Education and Research_ (**1**),
 among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc.
