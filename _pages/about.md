@@ -32,15 +32,6 @@ mobility systems.
 
 News
 ======
-I am an Assistant Professor at the Department of Architecture and Civil Engineering (ACE), City University of Hong Kong.
-I have several fully funded Postdoc, Ph.D. student and research assistant positions available.
-Students with backgrounds in **data science, computer science, operations research, transportation, geography, or related fields** are welcome to apply.
-Experience with **large language models (LLMs)** is a plus.
-To apply, please send your CV, Transcript, and Research Statement to Songhua.Hu@cityu.edu.hk.
-
-我是香港城市大学（世界排名：U.S. News 54, QS 63）ACE学院助理教授，目前有数名全奖博士生/博士后/研究助理名额。
-欢迎数据科学、计算机、运筹学、交通、地理等相关背景的学生申请（有大模型经验加分）。
-申请方式：请将CV+成绩单+研究计划（可选）发送至Songhua.Hu@cityu.edu.hk.
 
 * **[2026]** New paper in **_Nature Sustainability_**: Ubiquitous data-driven framework for traffic emission estimation and policy evaluation!
 * **[09/2025]** Joined **_CityUHK_** as a tenure-track Assistant Professor!
@@ -77,54 +68,23 @@ Education
 
 ***
 
-Publications (39 Journal Papers)
+Publications
 ======
 
-* _Nature Sustainability_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
-* _Proceedings of the National Academy of Sciences_ <span style="color: maroon">(**1** Paper)</span>.
-* _Transportation Research Part A: Policy and Practice_ <span style="color: maroon">(**6** Papers, **3** First-Author)</span>.
-* _Transportation Research Part C: Emerging Technologies_ <span style="color: maroon">(**6** Papers, **3** First-Author)</span>.
-* _Transportation Research Part D: Transport and Environment_ <span style="color: maroon">(**3** Papers, **3** First-Author)</span>.
-* _Transportation Research Part E: Logistics and Transportation Review_ <span style="color: maroon">(**1** Paper)</span>.
-* _Computers, Environment and Urban Systems_ <span style="color: maroon">(**3** Papers)</span>.
-* _Journal of Transport Geography_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
-* _Cities_ <span style="color: maroon">(**1** Paper)</span>.
-* _Sustainable Cities and Society_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
-* _International Journal of Disaster Risk Reduction_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
-* _Journal of Planning Education and Research_ <span style="color: maroon">(**1** Paper)</span>.
-* _Journal of the Royal Society Interface_ <span style="color: maroon">(**1** Paper)</span>.
-* _IEEE Intelligent Transportation Systems Magazine_ <span style="color: maroon">(**1** Paper, **1** First-Author)</span>.
-* _Vaccine_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
-* _PLOS One_ <span style="color: maroon">(**2** Papers, **1** First-Author)</span>.
-* _Health & Place_ <span style="color: maroon">(**1** Paper)</span>.
-* _Case Studies on Transport Policy_ <span style="color: maroon">(**1** Paper)</span>.
-* _International Journal of Sustainable Transportation_ <span style="color: maroon">(**1** Paper)</span>.
-* _Transportation Research Record_ <span style="color: maroon">(**2** Papers)</span>.
-* _Journal of Intelligent and Connected Vehicles_ <span style="color: maroon">(**1** Paper)</span>.
-* _IEEE International Conference on Intelligent Transportation Systems_ <span style="color: maroon">(**2** Papers, **2** First-Author)</span>.
-* _Transportation Research Board Annual Meeting_ <span style="color: maroon">(**>30** Posters/Presentations)</span>.
+39 journal papers including
+_Nature Sustainability_ (**1**),
+_Proceedings of the National Academy of Sciences_ (**1**),
+_Transportation Research Part A/C/D/E_ (**14**),
+_Computers, Environment and Urban Systems_ (**3**),
+_Journal of Transport Geography_ (**3**),
+_Cities_ (**1**),
+_Sustainable Cities and Society_ (**1**),
+_Journal of the Royal Society Interface_ (**1**),
+_Journal of Planning Education and Research_ (**1**),
+among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc.
 
 <span style="color: purple">**See the full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
 
-***
-
-Awards
-======
-
-* [Chinese Overseas Transportation Association (COTA) Best Dissertation Award](https://cee.umd.edu/news/story/hu-receives-cota-best-dissertation-award), 2023.
-* [UMD CEE Best Doctoral Research Award](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards), University of Maryland, College Park, 2023.
-* Outstanding Reviewer, Transportation Research Part D: Transport and Environment, 2023.
-* Top 10 Most Cited Articles, Journal of Transport Geography, 2021~2024.
-* Top 10 Most Cited Articles, Transportation Research Part D: Transport and Environment, 2021~2024.
-* Top 10 Most Cited Articles, Transportation Research Part C: Emerging Technologies, 2021~2024.
-* [Outstanding Graduate Assistant (Top 2%)](https://gradschool.umd.edu/funding/student-fellowships-awards/outstanding-graduate-assistant-awards), University of Maryland, College Park, 2021.
-* CEE Summer Research Fellowship, University of Maryland, College Park, 2020.
-* The Graduate School’s Dean’s Fellowship, University of Maryland, College Park, 2019.
-* Graduate Merit Scholarship, Tongji University, 2018.
-* Runner-up (2/140), [China Big Data Innovation Competition](http://www.360doc.com/content/21/0222/19/73861477_963398711.shtml), 2017.
-* Outstanding Graduates, Huazhong University of Science & Technology, 2016.
-* [Undergraduate Merit Scholarship](http://news.hust.edu.cn/info/1007/2164.htm) (20/7000), Huazhong University of Science & Technology, 2015.
-* National Scholarship (1/64), China, 2013~2015.
 
 
 ------

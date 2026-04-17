@@ -10,6 +10,10 @@ Students with backgrounds in **data science, computer science, operations resear
 Experience with **large language models (LLMs)** is a plus.
 To apply, please send your CV, Transcript, and Research Statement to Songhua.Hu@cityu.edu.hk.
 
+我是香港城市大学（世界排名：U.S. News 54, QS 63）ACE学院助理教授，目前有数名全奖博士生/博士后/研究助理名额。
+欢迎数据科学、计算机、运筹学、交通、地理等相关背景的学生申请（有大模型经验加分）。
+申请方式：请将CV+成绩单+研究计划（可选）发送至Songhua.Hu@cityu.edu.hk.
+
 ***
 
 Ph.D. Students (City University of Hong Kong)
