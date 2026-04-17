@@ -70,13 +70,8 @@ I am extending this work to broader environmental health contexts, including air
         <img src="https://songhuahu-umd.github.io/images/FF4.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
-
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://www.sciencedirect.com/science/article/pii/S0264410X23006175"><b><span style="color: purple;">[Vaccine]</span></b></a>
-    Using two years of county-level US data, we investigate the interplay among vaccination, human mobility, and COVID-19 outcomes.
-    Vaccine effectiveness against case rates diminished during the Omicron surge, yet its protective effect on case-fatality rates persisted.
-    This line of work has attracted NIH funding for development into an agent-based mobility-epidemiology model 
-    for forecasting spatiotemporal infection dynamics.
+    <a href="https://www.sciencedirect.com/science/article/pii/S0264410X23006175"><b><span style="color: purple;">[Vaccine]</span></b></a> Using two years of county-level US data, we investigate the interplay among vaccination, human mobility, and COVID-19 outcomes. Vaccine effectiveness against case rates diminished during the Omicron surge, yet its protective effect on case-fatality rates persisted. This line of work has attracted NIH funding for development into an agent-based mobility-epidemiology model for forecasting spatiotemporal infection dynamics.
   </div>
 </div>
 

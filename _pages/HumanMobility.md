@@ -32,14 +32,8 @@ This includes: 1) a unified pipeline for parsing multi-source travel data into t
         <img src="https://songhuahu-umd.github.io/images/ODFLOW.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
-
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[NetMob 2024]</span></b></a> 
-    Can mobile-device-derived OD data reliably reproduce road-level traffic flow distributions? 
-    We developed an end-to-end pipeline that maps mobile OD matrices onto road networks via dynamic traffic assignment 
-    and validated it across 35 metropolitan areas in Mexico, Colombia, Indonesia, and India. 
-    Results reveal that the model underperforms in regions with low mobile phone penetration, 
-    where zero-flow links and unrealistically low volumes persist even after population weighting.
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[NetMob 2024]</span></b></a> Can mobile-device-derived OD data reliably reproduce road-level traffic flow distributions? We developed an end-to-end pipeline that maps mobile OD matrices onto road networks via dynamic traffic assignment and validated it across 35 metropolitan areas in Mexico, Colombia, Indonesia, and India. Results reveal that the model underperforms in regions with low mobile phone penetration, where zero-flow links and unrealistically low volumes persist even after population weighting.
   </div>
 </div>
 
@@ -50,18 +44,13 @@ This includes: 1) a unified pipeline for parsing multi-source travel data into t
         <img src="https://songhuahu-umd.github.io/images/FF61.gif" alt="Figure" style="width: 100%;" />
     </a>
   </div>
-
   <div style="flex: 0 0 20%; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
         <img src="https://songhuahu-umd.github.io/images/FF62.gif" alt="Figure" style="width: 100%;" />
     </a>
   </div>
-
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Ongoing]</span></b> </a>
-    Mobile device location data capture rich individual travel patterns that are well-suited for dynamic, behavior-oriented simulators. 
-    My ongoing work integrates forecasted trip itineraries with micro (Vissim, SUMO), meso (DTALite), 
-    and agent-based simulators (MATSim) to enable fine-grained citywide traffic simulation. 
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Ongoing]</span></b> </a> Mobile device location data capture rich individual travel patterns that are well-suited for dynamic, behavior-oriented simulators. My ongoing work integrates forecasted trip itineraries with micro (Vissim, SUMO), meso (DTALite), and agent-based simulators (MATSim) to enable fine-grained citywide traffic simulation.
   </div>
 </div>
 
@@ -77,10 +66,7 @@ This includes: 1) a unified pipeline for parsing multi-source travel data into t
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://github.com/SonghuaHu-UMD/MultiSTGraph"><b><span style="color: purple;">[PhD Dissertation]</span></b></a> 
-    OD flow forecasting is challenging due to intricate spatiotemporal dependencies and heterogeneous external factors. We propose <a href="https://github.com/SonghuaHu-UMD/MultiSTGraph">Multi-ATGCN</a>,
-    a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network for citywide multi-step OD flow prediction.
-    Experiments on two real-world datasets show consistent improvements over state-of-the-art baselines.
+    <a href="https://github.com/SonghuaHu-UMD/MultiSTGraph"><b><span style="color: purple;">[PhD Dissertation]</span></b></a> OD flow forecasting is challenging due to intricate spatiotemporal dependencies and heterogeneous external factors. We propose <a href="https://github.com/SonghuaHu-UMD/MultiSTGraph">Multi-ATGCN</a>, a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network for citywide multi-step OD flow prediction. Experiments on two real-world datasets show consistent improvements over state-of-the-art baselines.
   </div>
 </div>
 
@@ -92,10 +78,7 @@ This includes: 1) a unified pipeline for parsing multi-source travel data into t
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://www.sciencedirect.com/science/article/pii/S0968090X22003758"><b><span style="color: purple;">[TR Part C]</span></b></a> 
-    Individual mobility prediction poses unique challenges: high behavioral randomness, multi-task output structures, and severely imbalanced activity distributions.
-    We propose a hierarchical activity-based framework that simultaneously predicts the activity, time, and location of each device's next trip, incorporating loss functions from semantic segmentation to handle class imbalance.
-    Applied to a county-level dataset of 18,000+ residents, the framework achieves competitive prediction accuracy.
+    <a href="https://www.sciencedirect.com/science/article/pii/S0968090X22003758"><b><span style="color: purple;">[TR Part C]</span></b></a> Individual mobility prediction poses unique challenges: high behavioral randomness, multi-task output structures, and severely imbalanced activity distributions. We propose a hierarchical activity-based framework that simultaneously predicts the activity, time, and location of each device's next trip, incorporating loss functions from semantic segmentation to handle class imbalance. Applied to a county-level dataset of 18,000+ residents, the framework achieves competitive prediction accuracy.
   </div>
 </div>
 
@@ -107,11 +90,7 @@ This includes: 1) a unified pipeline for parsing multi-source travel data into t
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635"><b><span style="color: purple;">[TR Part A]</span></b></a> 
-    Using nationwide CBG-level trip flows from mobile devices as a proxy for travel demand, 
-    we examine their relationships with socioeconomic, demographic, and land-use variables. 
-    A systematic comparison of 48 explainable ML models and interpretation techniques identifies the best-performing model and validates interpretation robustness. 
-    Pronounced nonlinearities, threshold effects, and interaction effects are documented.
+    <a href="https://www.sciencedirect.com/science/article/pii/S0965856423001635"><b><span style="color: purple;">[TR Part A]</span></b></a> Using nationwide CBG-level trip flows from mobile devices as a proxy for travel demand, we examine their relationships with socioeconomic, demographic, and land-use variables. A systematic comparison of 48 explainable ML models and interpretation techniques identifies the best-performing model and validates interpretation robustness. Pronounced nonlinearities, threshold effects, and interaction effects are documented.
   </div>
 </div>
 
@@ -123,11 +102,7 @@ This includes: 1) a unified pipeline for parsing multi-source travel data into t
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Ongoing]</span></b></a> 
-    Human mobility is highly sensitive to contextual events, including weather, traffic incidents, and social gatherings. 
-    We curated over 40 event types from multiple social media platforms to forecast event-driven mobility changes.
-    Leveraging LLMs, we predict shifts in both road traffic conditions and community-level travel demand.
-    Results show that even a vanilla GPT-4o with in-context learning achieves a MAPE of 15.12%.
+    <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en"><b><span style="color: purple;">[Ongoing]</span></b></a> Human mobility is highly sensitive to contextual events, including weather, traffic incidents, and social gatherings. We curated over 40 event types from multiple social media platforms to forecast event-driven mobility changes. Leveraging LLMs, we predict shifts in both road traffic conditions and community-level travel demand. Results show that even a vanilla GPT-4o with in-context learning achieves a MAPE of 15.12%.
   </div>
 </div>
 
