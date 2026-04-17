@@ -33,5 +33,8 @@ main:
   - title: "Teaching"
     url: /Teachings/
 
+  - title: "Students"
+    url: /Students/
+
   - title: "CV"
     url: /cv/
