@@ -11,22 +11,14 @@ redirect_from:
 ---
 
 Greetings! I'm Songhua Hu (胡松华), an Assistant Professor of Transportation Engineering at the
-Department of Architecture and Civil Engineering, City University of Hong Kong.
-Previously, I was a Postdoctoral Research Fellow at MIT Senseable City Lab (PIs: Paolo Santi, Carlo Ratti).
-My work leverages big data and new computational methods to advance smart, sustainable, resilient, and equitable
-mobility systems.
+Department of Architecture and Civil Engineering, [City University of Hong Kong](https://www.cityu.edu.hk/).
+Previously, I was a Postdoctoral Research Fellow at [MIT Senseable City Lab](https://senseable.mit.edu/) (PIs: Paolo Santi, Carlo Ratti).
+I received my Ph.D. (2023) from the University of Maryland, College Park, M.S. (2019) from Tongji University, and B.S. (2016) from Huazhong University of Science and Technology.
 
-**Methods:**
-<span style="color: Darkorange">Crowdsourced Data Mining</span> (Small+Big Data Fusion, Contextual Inference, Sample Bias Correction),
-<span style="color: Darkorange">Spatiotemporal AI</span> (Graph Neural Network, Computer Vision, LLM),
-<span style="color: Darkorange">Network Analysis</span> (Transportation Network Modeling, Network Science, Network Optimization),
-<span style="color: Darkorange">Advanced Statistics</span> (Causal Inference, Nonlinear Regression).
-
-**Applications:**
-<span style="color: royalblue">Transportation Planning</span> (Travel Demand Modeling, Travel Behavior Analysis, Agent-based Simulation),
-<span style="color: royalblue">Policy Evaluation</span> (Transport Decarbonization, Incentive-based Travel Demand Management),
-<span style="color: royalblue">Complex System Resilience</span> (Urban Multi-system Resilience, Transportation Network Resilience),
-<span style="color: royalblue">Environmental Health</span> (Computational Epidemiology, Human Exposure Modeling, Health Disparity).
+My research leverages crowdsourced data mining, spatiotemporal AI, network analysis, and advanced statistics
+to advance smart, sustainable, resilient, and equitable mobility systems. I have published 39 journal papers
+(21 first-authored, 4 corresponding) in venues such as _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, and _Computers, Environment and Urban Systems_, with over 30 conference presentations at TRB, IEEE ITSC, NetMob, and INFORMS.
+I have contributed to research projects funded by USDOT, NIH, NSF, FHWA, and USDOE, totaling over $11M in grants.
 
 ---
 
@@ -56,15 +48,6 @@ Research Interests
 
 ***
 
-Education
-======
-
-* Ph.D., Civil & Environmental Engineering (Transportation), University of Maryland, College Park, 2023
-* M.S., Transportation Engineering, Tongji University, 2019
-* B.S., Civil & Environmental Engineering (Transportation), Huazhong University of Science and Technology (HUST), 2016
-
-***
-
 Publications
 ======
 
@@ -83,7 +66,7 @@ _Journal of the Royal Society Interface_ (**1**),
 _Journal of Planning Education and Research_ (**1**),
 among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc.
 
-<span style="color: purple">**See the full list here: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
+<span style="color: purple">**Full publication list: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
 
 
 
