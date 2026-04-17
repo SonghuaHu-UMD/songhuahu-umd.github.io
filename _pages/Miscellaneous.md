@@ -17,8 +17,8 @@ including travel demand management, public perception analytics, shared mobility
     </a>
   </div>
 
-  <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href="https://www.sciencedirect.com/science/article/pii/S0965856424001939"><b><span style="color: purple;">[TR Part A]</span></b></a>
+  <div style=”flex: 1; text-align: left; margin-right: 20px;” markdown=”0”>
+    <a href=”https://www.sciencedirect.com/science/article/pii/S0965856424001939”><b><span style=”color: purple;”>[TR Part A]</span></b></a>
     As technical lead of <a href=”https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33”>incenTrip</a>, the first nationwide incentive-based travel demand management app,
     we design personalized, dynamic incentives that encourage sustainable travel choices: 
     mode switching, carpooling, congestion avoidance, and off-peak travel, 
