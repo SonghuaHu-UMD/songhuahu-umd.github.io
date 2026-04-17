@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="methodGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e67e22;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d35400;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="appGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2980b9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a5276;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Center node -->
+  <rect x="370" y="235" width="260" height="130" rx="16" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="500" y="280" text-anchor="middle" fill="white" font-size="18" font-weight="bold">Research Interests</text>
+  <text x="500" y="305" text-anchor="middle" fill="#bdc3c7" font-size="13">Songhua Hu</text>
+  <text x="500" y="328" text-anchor="middle" fill="#95a5a6" font-size="11">Smart · Sustainable · Resilient · Equitable</text>
+  <text x="500" y="348" text-anchor="middle" fill="#95a5a6" font-size="11">Mobility Systems</text>
+
+  <!-- Section labels -->
+  <text x="160" y="42" text-anchor="middle" fill="#d35400" font-size="16" font-weight="bold">METHODS</text>
+  <text x="840" y="42" text-anchor="middle" fill="#1a5276" font-size="16" font-weight="bold">APPLICATIONS</text>
+
+  <!-- Connecting lines - Methods -->
+  <line x1="290" y1="105" x2="370" y2="270" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="290" y1="225" x2="370" y2="290" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="290" y1="345" x2="370" y2="310" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="290" y1="465" x2="370" y2="330" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+
+  <!-- Connecting lines - Applications -->
+  <line x1="710" y1="105" x2="630" y2="270" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="710" y1="225" x2="630" y2="290" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="710" y1="345" x2="630" y2="310" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+  <line x1="710" y1="465" x2="630" y2="330" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+
+  <!-- Method 1: Crowdsourced Data Mining -->
+  <rect x="20" y="65" width="270" height="80" rx="10" fill="url(#methodGrad)" filter="url(#shadow)"/>
+  <text x="155" y="92" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Crowdsourced Data Mining</text>
+  <text x="155" y="112" text-anchor="middle" fill="#fdebd0" font-size="10">Small+Big Data Fusion</text>
+  <text x="155" y="127" text-anchor="middle" fill="#fdebd0" font-size="10">Contextual Inference · Sample Bias Correction</text>
+
+  <!-- Method 2: Spatiotemporal AI -->
+  <rect x="20" y="185" width="270" height="80" rx="10" fill="url(#methodGrad)" filter="url(#shadow)"/>
+  <text x="155" y="212" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Spatiotemporal AI</text>
+  <text x="155" y="232" text-anchor="middle" fill="#fdebd0" font-size="10">Graph Neural Network · Computer Vision</text>
+  <text x="155" y="247" text-anchor="middle" fill="#fdebd0" font-size="10">Large Language Model</text>
+
+  <!-- Method 3: Network Analysis -->
+  <rect x="20" y="305" width="270" height="80" rx="10" fill="url(#methodGrad)" filter="url(#shadow)"/>
+  <text x="155" y="332" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Network Analysis</text>
+  <text x="155" y="352" text-anchor="middle" fill="#fdebd0" font-size="10">Transportation Network Modeling</text>
+  <text x="155" y="367" text-anchor="middle" fill="#fdebd0" font-size="10">Network Science · Network Optimization</text>
+
+  <!-- Method 4: Advanced Statistics -->
+  <rect x="20" y="425" width="270" height="80" rx="10" fill="url(#methodGrad)" filter="url(#shadow)"/>
+  <text x="155" y="452" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Advanced Statistics</text>
+  <text x="155" y="472" text-anchor="middle" fill="#fdebd0" font-size="10">Causal Inference</text>
+  <text x="155" y="487" text-anchor="middle" fill="#fdebd0" font-size="10">Nonlinear Regression</text>
+
+  <!-- Application 1: Transportation Planning -->
+  <rect x="710" y="65" width="270" height="80" rx="10" fill="url(#appGrad)" filter="url(#shadow)"/>
+  <text x="845" y="92" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Transportation Planning</text>
+  <text x="845" y="112" text-anchor="middle" fill="#d6eaf8" font-size="10">Travel Demand Modeling</text>
+  <text x="845" y="127" text-anchor="middle" fill="#d6eaf8" font-size="10">Travel Behavior Analysis · Agent-based Simulation</text>
+
+  <!-- Application 2: Policy Evaluation -->
+  <rect x="710" y="185" width="270" height="80" rx="10" fill="url(#appGrad)" filter="url(#shadow)"/>
+  <text x="845" y="212" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Policy Evaluation</text>
+  <text x="845" y="232" text-anchor="middle" fill="#d6eaf8" font-size="10">Transport Decarbonization</text>
+  <text x="845" y="247" text-anchor="middle" fill="#d6eaf8" font-size="10">Incentive-based Travel Demand Management</text>
+
+  <!-- Application 3: Complex System Resilience -->
+  <rect x="710" y="305" width="270" height="80" rx="10" fill="url(#appGrad)" filter="url(#shadow)"/>
+  <text x="845" y="332" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Complex System Resilience</text>
+  <text x="845" y="352" text-anchor="middle" fill="#d6eaf8" font-size="10">Urban Multi-system Resilience</text>
+  <text x="845" y="367" text-anchor="middle" fill="#d6eaf8" font-size="10">Transportation Network Resilience</text>
+
+  <!-- Application 4: Environmental Health -->
+  <rect x="710" y="425" width="270" height="80" rx="10" fill="url(#appGrad)" filter="url(#shadow)"/>
+  <text x="845" y="452" text-anchor="middle" fill="white" font-size="13" font-weight="bold">Environmental Health</text>
+  <text x="845" y="472" text-anchor="middle" fill="#d6eaf8" font-size="10">Computational Epidemiology</text>
+  <text x="845" y="487" text-anchor="middle" fill="#d6eaf8" font-size="10">Human Exposure Modeling · Health Disparity</text>
+
+  <!-- Cross-connecting thin lines (methods ↔ applications) -->
+  <line x1="290" y1="105" x2="710" y2="105" stroke="#7f8c8d" stroke-width="0.5" stroke-dasharray="3,4" opacity="0.2"/>
+  <line x1="290" y1="225" x2="710" y2="225" stroke="#7f8c8d" stroke-width="0.5" stroke-dasharray="3,4" opacity="0.2"/>
+  <line x1="290" y1="345" x2="710" y2="345" stroke="#7f8c8d" stroke-width="0.5" stroke-dasharray="3,4" opacity="0.2"/>
+  <line x1="290" y1="465" x2="710" y2="465" stroke="#7f8c8d" stroke-width="0.5" stroke-dasharray="3,4" opacity="0.2"/>
+
+  <!-- Data sources at bottom -->
+  <rect x="200" y="540" width="600" height="40" rx="8" fill="white" stroke="#bdc3c7" stroke-width="1" filter="url(#shadow)"/>
+  <text x="500" y="565" text-anchor="middle" fill="#7f8c8d" font-size="11">
+    <tspan font-weight="bold" fill="#555">Data Sources:</tspan>
+    Mobile Phones · City Cameras · Connected Vehicles · Social Media · Crowdsourced Reviews
+  </text>
+</svg>

@@ -33,7 +33,7 @@ mobility systems.
 News
 ======
 
-* **[2026]** New paper in **_Nature Sustainability_**: Ubiquitous data-driven framework for traffic emission estimation and policy evaluation!
+* **[04/2026]** New paper in **_Nature Sustainability_**: Ubiquitous data-driven framework for traffic emission estimation and policy evaluation!
 * **[09/2025]** Joined **_CityUHK_** as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
@@ -51,7 +51,7 @@ Research Interests
 [Transport and Health](https://songhuahu-umd.github.io/Health/) |
 [Miscellaneous (Transportation Economics, Public Perception, MaaS)](https://songhuahu-umd.github.io/Miscell/) ...
 
-![Connecting the dots: Human mobility + X](https://songhuahu-umd.github.io/images/framework.png)
+![Research Interests](https://songhuahu-umd.github.io/images/research_interests.svg)
 
 
 ***
