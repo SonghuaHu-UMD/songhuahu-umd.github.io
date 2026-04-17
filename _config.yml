@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Songhua Hu, Ph.D."
 title_separator          : "-"
 name                     : &name "Sam Hu"
-description              : &description "Human mobility, Big-data Computing, Spatiotemporal Network, Traffic Simulation"
+description              : &description "Crowdsourced Data Mining, Spatiotemporal AI, Network Analysis, Transportation Planning"
 url                      : https://songhuahu-umd.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "songhuahu-umd.github.io"
@@ -28,11 +28,11 @@ atom_feed:
 author:
   name             : "Songhua Hu"
   avatar           : "head4.jpg"
-  bio              : "CrowdSensing, Human Mobility, GeoAI, Network Science"
-  location         : "Cambridge, MA, USA"
-#  employer         : "Maryland Transportation Institute"
+  bio              : "Crowdsourced Data Mining, Spatiotemporal AI, Network Science, Transportation Planning"
+  location         : "Hong Kong"
+  employer         : "City University of Hong Kong"
   googlescholar    : "https://scholar.google.co.jp/citations?user=uVIbQyAAAAAJ&hl=en"
-  email            : "hsonghua@mit.edu"
+  email            : "Songhua.Hu@cityu.edu.hk"
   researchgate     : "https://www.researchgate.net/profile/Songhua_Hu2"
   zhihu            : "hu-song-hua-39"
   github           : "songhuahu-umd"
@@ -179,7 +179,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Hong_Kong # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
