@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2980b9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#2980b9" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Chart area: x=70..560, y=30..240 -->
+  <!-- Y axis -->
+  <line x1="70" y1="30" x2="70" y2="240" stroke="#ccc" stroke-width="1"/>
+  <!-- X axis -->
+  <line x1="70" y1="240" x2="560" y2="240" stroke="#ccc" stroke-width="1"/>
+
+  <!-- Y gridlines and labels (0, 100, 200, 300, 400, 500) -->
+  <line x1="70" y1="240" x2="560" y2="240" stroke="#eee" stroke-width="0.5"/>
+  <text x="60" y="244" text-anchor="end" fill="#999" font-size="11">0</text>
+
+  <line x1="70" y1="198" x2="560" y2="198" stroke="#eee" stroke-width="0.5"/>
+  <text x="60" y="202" text-anchor="end" fill="#999" font-size="11">100</text>
+
+  <line x1="70" y1="156" x2="560" y2="156" stroke="#eee" stroke-width="0.5"/>
+  <text x="60" y="160" text-anchor="end" fill="#999" font-size="11">200</text>
+
+  <line x1="70" y1="114" x2="560" y2="114" stroke="#eee" stroke-width="0.5"/>
+  <text x="60" y="118" text-anchor="end" fill="#999" font-size="11">300</text>
+
+  <line x1="70" y1="72" x2="560" y2="72" stroke="#eee" stroke-width="0.5"/>
+  <text x="60" y="76" text-anchor="end" fill="#999" font-size="11">400</text>
+
+  <line x1="70" y1="30" x2="560" y2="30" stroke="#eee" stroke-width="0.5"/>
+  <text x="60" y="34" text-anchor="end" fill="#999" font-size="11">500</text>
+
+  <!-- Data: max=509, scale: y = 240 - (value/509)*210 -->
+  <!-- 2019:10  x=105 y=235.9 -->
+  <!-- 2020:62  x=175 y=214.4 -->
+  <!-- 2021:338 x=245 y=100.6 -->
+  <!-- 2022:381 x=315 y=82.9  -->
+  <!-- 2023:509 x=385 y=30.0  -->
+  <!-- 2024:447 x=455 y=55.6  -->
+  <!-- 2025:478 x=525 y=42.8  -->
+
+  <!-- Area fill -->
+  <polygon points="105,235.9 175,214.4 245,100.6 315,82.9 385,30 455,55.6 525,42.8 525,240 105,240" fill="url(#areaGrad)"/>
+
+  <!-- Line -->
+  <polyline points="105,235.9 175,214.4 245,100.6 315,82.9 385,30 455,55.6 525,42.8" fill="none" stroke="#2980b9" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Data points and value labels -->
+  <circle cx="105" cy="235.9" r="4" fill="#2980b9"/>
+  <text x="105" y="254" text-anchor="middle" fill="#666" font-size="11">2019</text>
+  <text x="105" y="229" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">10</text>
+
+  <circle cx="175" cy="214.4" r="4" fill="#2980b9"/>
+  <text x="175" y="254" text-anchor="middle" fill="#666" font-size="11">2020</text>
+  <text x="175" y="208" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">62</text>
+
+  <circle cx="245" cy="100.6" r="4" fill="#2980b9"/>
+  <text x="245" y="254" text-anchor="middle" fill="#666" font-size="11">2021</text>
+  <text x="245" y="94" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">338</text>
+
+  <circle cx="315" cy="82.9" r="4" fill="#2980b9"/>
+  <text x="315" y="254" text-anchor="middle" fill="#666" font-size="11">2022</text>
+  <text x="315" y="76" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">381</text>
+
+  <circle cx="385" cy="30" r="4" fill="#e67e22"/>
+  <text x="385" y="254" text-anchor="middle" fill="#666" font-size="11">2023</text>
+  <text x="385" y="24" text-anchor="middle" fill="#e67e22" font-size="11" font-weight="700">509</text>
+
+  <circle cx="455" cy="55.6" r="4" fill="#2980b9"/>
+  <text x="455" y="254" text-anchor="middle" fill="#666" font-size="11">2024</text>
+  <text x="455" y="49" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">447</text>
+
+  <circle cx="525" cy="42.8" r="4" fill="#2980b9"/>
+  <text x="525" y="254" text-anchor="middle" fill="#666" font-size="11">2025</text>
+  <text x="525" y="36" text-anchor="middle" fill="#2c3e50" font-size="11" font-weight="600">478</text>
+
+  <!-- Title -->
+  <text x="315" y="285" text-anchor="middle" fill="#7f8c8d" font-size="12">Google Scholar Citations by Year (Total: ~2,400)</text>
+</svg>
