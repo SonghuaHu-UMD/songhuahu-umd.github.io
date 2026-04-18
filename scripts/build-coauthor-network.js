@@ -188,6 +188,16 @@ function buildGraph(works) {
      often haven't been indexed yet). Citations/coauthor still use the strict `filtered` set. */
   const forAbstracts = works.filter(w => w.publication_year && w.publication_year >= MIN_YEAR && !BLOCKLIST.has(w.id));
 
+  /* Group into 2-year periods so each panel has enough papers for meaningful phrases. */
+  const BIN_SIZE = 2;
+  const binStart = (year) => Math.floor((year - MIN_YEAR) / BIN_SIZE) * BIN_SIZE + MIN_YEAR;
+  const maxYear = Math.max(...forAbstracts.map(w => w.publication_year));
+  const binLabel = (s) => {
+    const end = s + BIN_SIZE - 1;
+    if (end > maxYear) return s === maxYear ? String(s) : s + '–' + maxYear;
+    return s + '–' + end;
+  };
+
   /* OpenAlex keywords/concepts are very noisy: parenthetical context disambiguators (Node (physics))
      and broad fields (Computer science, Engineering, Business) drown out real signal. Filter both. */
   const PAREN_CONTEXT = /\((satellite|computing|materials science|linguistics|telecommunications|programming language|botany|geometry|psychology|chemistry|physics|biology|architecture|electronics|software|production processes|electricity|mathematics|unit|time|theology|finance|literature|economics|computer science|engineering)\)/i;
@@ -230,7 +240,7 @@ function buildGraph(works) {
   };
 
   for (const w of forAbstracts) {
-    const yr = w.publication_year;
+    const yr = binStart(w.publication_year);
     const text = textForWork(w);
     if (!text) continue;
     const toks = tokenizeOrdered(text);
@@ -284,15 +294,15 @@ function buildGraph(works) {
       const [a, b] = k.split('||');
       if (keep.has(a) && keep.has(b) && c >= 2) edges.push({ source: a, target: b, weight: c });
     }
-    yearsOut.push({ year: yr, papers: yearPaperCount.get(yr), phrases, edges });
+    yearsOut.push({ year: yr, label: binLabel(yr), papers: yearPaperCount.get(yr), phrases, edges });
   }
 
   fs.writeFileSync(TOPICS_PATH, JSON.stringify({
     generated: new Date().toISOString().slice(0, 10),
     years: yearsOut,
   }, null, 2));
-  console.log('Wrote ' + TOPICS_PATH + ' (' + yearsOut.length + ' years)');
+  console.log('Wrote ' + TOPICS_PATH + ' (' + yearsOut.length + ' periods)');
   for (const y of yearsOut) {
-    console.log('  ' + y.year + ' (' + y.papers + ' papers): ' + y.phrases.slice(0, 5).map(p => p.phrase + '×' + p.count).join(' | '));
+    console.log('  ' + y.label + ' (' + y.papers + ' papers): ' + y.phrases.slice(0, 5).map(p => p.phrase + '×' + p.count).join(' | '));
   }
 })().catch(e => { console.error(e); process.exit(1); });

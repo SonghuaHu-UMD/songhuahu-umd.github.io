@@ -2,7 +2,8 @@
   "generated": "2026-04-18",
   "years": [
     {
-      "year": 2018,
+      "year": 2017,
+      "label": "2017–2018",
       "papers": 5,
       "phrases": [
         {
@@ -123,46 +124,8 @@
     },
     {
       "year": 2019,
-      "papers": 2,
-      "phrases": [
-        {
-          "phrase": "capacity",
-          "count": 2
-        },
-        {
-          "phrase": "exploring",
-          "count": 1
-        },
-        {
-          "phrase": "battery",
-          "count": 1
-        },
-        {
-          "phrase": "electric",
-          "count": 1
-        },
-        {
-          "phrase": "vehicle",
-          "count": 1
-        },
-        {
-          "phrase": "sharing",
-          "count": 1
-        },
-        {
-          "phrase": "programs",
-          "count": 1
-        },
-        {
-          "phrase": "simulation",
-          "count": 1
-        }
-      ],
-      "edges": []
-    },
-    {
-      "year": 2020,
-      "papers": 10,
+      "label": "2019–2020",
+      "papers": 12,
       "phrases": [
         {
           "phrase": "covid",
@@ -342,61 +305,62 @@
     },
     {
       "year": 2021,
-      "papers": 9,
+      "label": "2021–2022",
+      "papers": 16,
       "phrases": [
         {
           "phrase": "covid",
-          "count": 6
-        },
-        {
-          "phrase": "mobility",
-          "count": 6
+          "count": 9
         },
         {
           "phrase": "pandemic",
-          "count": 5
+          "count": 7
+        },
+        {
+          "phrase": "mobility",
+          "count": 7
+        },
+        {
+          "phrase": "coronavirus",
+          "count": 4
+        },
+        {
+          "phrase": "disease",
+          "count": 4
+        },
+        {
+          "phrase": "control",
+          "count": 4
         },
         {
           "phrase": "covid pandemic",
           "count": 4
         },
         {
-          "phrase": "coronavirus",
-          "count": 3
-        },
-        {
-          "phrase": "disease",
-          "count": 3
-        },
-        {
-          "phrase": "control",
-          "count": 3
-        },
-        {
           "phrase": "coronavirus disease",
-          "count": 3
+          "count": 4
         }
       ],
       "edges": [
         {
           "source": "covid",
           "target": "pandemic",
-          "weight": 5
+          "weight": 7
         },
         {
           "source": "coronavirus",
           "target": "covid",
-          "weight": 3
+          "weight": 4
         },
         {
           "source": "covid",
           "target": "disease",
-          "weight": 3
+          "weight": 4
         },
         {
           "source": "control",
           "target": "covid",
-          "weight": 2
+          "weight": 3
         },
         {
           "source": "covid",
@@ -406,22 +370,22 @@
         {
           "source": "coronavirus disease",
           "target": "covid",
-          "weight": 3
+          "weight": 4
         },
         {
           "source": "coronavirus",
           "target": "pandemic",
-          "weight": 3
+          "weight": 4
         },
         {
           "source": "disease",
           "target": "pandemic",
-          "weight": 3
+          "weight": 4
         },
         {
           "source": "control",
           "target": "pandemic",
-          "weight": 2
+          "weight": 3
         },
         {
           "source": "covid pandemic",
@@ -431,12 +395,12 @@
         {
           "source": "coronavirus disease",
           "target": "pandemic",
-          "weight": 3
+          "weight": 4
         },
         {
           "source": "coronavirus",
           "target": "disease",
-          "weight": 3
+          "weight": 4
         },
         {
           "source": "coronavirus",
@@ -446,7 +410,7 @@
         {
           "source": "coronavirus",
           "target": "coronavirus disease",
-          "weight": 3
+          "weight": 4
         },
         {
           "source": "covid pandemic",
@@ -456,7 +420,7 @@
         {
           "source": "coronavirus disease",
           "target": "disease",
-          "weight": 3
+          "weight": 4
         },
         {
           "source": "control",
@@ -471,12 +435,12 @@
         {
           "source": "covid",
           "target": "mobility",
-          "weight": 5
+          "weight": 6
         },
         {
           "source": "mobility",
           "target": "pandemic",
-          "weight": 4
+          "weight": 5
         },
         {
           "source": "coronavirus",
@@ -497,745 +461,292 @@
           "source": "coronavirus disease",
           "target": "mobility",
           "weight": 2
-        }
-      ]
-    },
-    {
-      "year": 2022,
-      "papers": 7,
-      "phrases": [
-        {
-          "phrase": "covid",
-          "count": 3
         },
         {
-          "phrase": "high",
-          "count": 3
-        },
-        {
-          "phrase": "disparities",
-          "count": 2
-        },
-        {
-          "phrase": "united",
-          "count": 2
-        },
-        {
-          "phrase": "status",
-          "count": 2
-        },
-        {
-          "phrase": "environmental",
-          "count": 2
-        },
-        {
-          "phrase": "series",
-          "count": 2
-        },
-        {
-          "phrase": "machine",
-          "count": 2
-        }
-      ],
-      "edges": [
-        {
-          "source": "covid",
-          "target": "disparities",
-          "weight": 2
-        },
-        {
-          "source": "covid",
-          "target": "united",
-          "weight": 2
-        },
-        {
-          "source": "covid",
-          "target": "status",
-          "weight": 2
-        },
-        {
-          "source": "disparities",
-          "target": "united",
-          "weight": 2
-        },
-        {
-          "source": "disparities",
-          "target": "status",
-          "weight": 2
-        },
-        {
-          "source": "status",
-          "target": "united",
-          "weight": 2
-        },
-        {
-          "source": "high",
-          "target": "series",
-          "weight": 2
-        },
-        {
-          "source": "high",
-          "target": "machine",
+          "source": "control",
+          "target": "mobility",
           "weight": 2
         }
       ]
     },
     {
       "year": 2023,
-      "papers": 8,
-      "phrases": [
-        {
-          "phrase": "traffic",
-          "count": 3
-        },
-        {
-          "phrase": "transportation",
-          "count": 3
-        },
-        {
-          "phrase": "road",
-          "count": 3
-        },
-        {
-          "phrase": "quantifying",
-          "count": 3
-        },
-        {
-          "phrase": "efforts",
-          "count": 3
-        },
-        {
-          "phrase": "significant",
-          "count": 3
-        },
-        {
-          "phrase": "mobile",
-          "count": 3
-        },
-        {
-          "phrase": "mobility",
-          "count": 3
-        }
-      ],
-      "edges": [
-        {
-          "source": "traffic",
-          "target": "transportation",
-          "weight": 3
-        },
-        {
-          "source": "road",
-          "target": "traffic",
-          "weight": 3
-        },
-        {
-          "source": "quantifying",
-          "target": "traffic",
-          "weight": 2
-        },
-        {
-          "source": "efforts",
-          "target": "traffic",
-          "weight": 2
-        },
-        {
-          "source": "significant",
-          "target": "traffic",
-          "weight": 2
-        },
-        {
-          "source": "mobile",
-          "target": "traffic",
-          "weight": 3
-        },
-        {
-          "source": "mobility",
-          "target": "traffic",
-          "weight": 2
-        },
-        {
-          "source": "road",
-          "target": "transportation",
-          "weight": 3
-        },
-        {
-          "source": "quantifying",
-          "target": "transportation",
-          "weight": 2
-        },
-        {
-          "source": "efforts",
-          "target": "transportation",
-          "weight": 2
-        },
-        {
-          "source": "significant",
-          "target": "transportation",
-          "weight": 2
-        },
-        {
-          "source": "mobile",
-          "target": "transportation",
-          "weight": 3
-        },
-        {
-          "source": "mobility",
-          "target": "transportation",
-          "weight": 2
-        },
-        {
-          "source": "quantifying",
-          "target": "road",
-          "weight": 2
-        },
-        {
-          "source": "efforts",
-          "target": "road",
-          "weight": 2
-        },
-        {
-          "source": "road",
-          "target": "significant",
-          "weight": 2
-        },
-        {
-          "source": "mobile",
-          "target": "road",
-          "weight": 3
-        },
-        {
-          "source": "mobility",
-          "target": "road",
-          "weight": 2
-        },
-        {
-          "source": "efforts",
-          "target": "quantifying",
-          "weight": 2
-        },
-        {
-          "source": "quantifying",
-          "target": "significant",
-          "weight": 2
-        },
-        {
-          "source": "mobile",
-          "target": "quantifying",
-          "weight": 2
-        },
-        {
-          "source": "mobility",
-          "target": "quantifying",
-          "weight": 2
-        },
-        {
-          "source": "efforts",
-          "target": "significant",
-          "weight": 3
-        },
-        {
-          "source": "efforts",
-          "target": "mobile",
-          "weight": 2
-        },
-        {
-          "source": "efforts",
-          "target": "mobility",
-          "weight": 3
-        },
-        {
-          "source": "mobile",
-          "target": "significant",
-          "weight": 2
-        },
-        {
-          "source": "mobility",
-          "target": "significant",
-          "weight": 3
-        },
-        {
-          "source": "mobile",
-          "target": "mobility",
-          "weight": 2
-        }
-      ]
-    },
-    {
-      "year": 2024,
-      "papers": 14,
+      "label": "2023–2024",
+      "papers": 22,
       "phrases": [
         {
           "phrase": "public",
-          "count": 6
-        },
-        {
-          "phrase": "urban",
-          "count": 6
-        },
-        {
-          "phrase": "reveal",
-          "count": 5
+          "count": 7
         },
         {
           "phrase": "travel",
-          "count": 4
+          "count": 7
         },
         {
-          "phrase": "socio",
-          "count": 4
+          "phrase": "urban",
+          "count": 7
         },
         {
-          "phrase": "insights",
-          "count": 4
+          "phrase": "significant",
+          "count": 6
         },
         {
-          "phrase": "higher",
-          "count": 4
+          "phrase": "behavior",
+          "count": 5
         },
         {
-          "phrase": "perceptions",
-          "count": 4
+          "phrase": "travel behavior",
+          "count": 5
+        },
+        {
+          "phrase": "cost",
+          "count": 5
+        },
+        {
+          "phrase": "framework",
+          "count": 5
         }
       ],
       "edges": [
         {
-          "source": "socio",
+          "source": "behavior",
           "target": "travel",
-          "weight": 2
+          "weight": 5
+        },
+        {
+          "source": "travel",
+          "target": "travel behavior",
+          "weight": 5
+        },
+        {
+          "source": "behavior",
+          "target": "travel behavior",
+          "weight": 5
+        },
+        {
+          "source": "cost",
+          "target": "significant",
+          "weight": 3
+        },
+        {
+          "source": "framework",
+          "target": "significant",
+          "weight": 3
+        },
+        {
+          "source": "cost",
+          "target": "framework",
+          "weight": 4
+        },
+        {
+          "source": "significant",
+          "target": "travel",
+          "weight": 3
         },
         {
           "source": "public",
           "target": "travel",
-          "weight": 2
-        },
-        {
-          "source": "reveal",
-          "target": "travel",
-          "weight": 2
-        },
-        {
-          "source": "insights",
-          "target": "travel",
-          "weight": 2
+          "weight": 3
         },
         {
           "source": "travel",
           "target": "urban",
+          "weight": 3
+        },
+        {
+          "source": "behavior",
+          "target": "public",
+          "weight": 2
+        },
+        {
+          "source": "behavior",
+          "target": "urban",
           "weight": 2
         },
         {
           "source": "public",
-          "target": "socio",
-          "weight": 4
-        },
-        {
-          "source": "reveal",
-          "target": "socio",
-          "weight": 3
-        },
-        {
-          "source": "insights",
-          "target": "socio",
-          "weight": 4
-        },
-        {
-          "source": "socio",
-          "target": "urban",
-          "weight": 4
-        },
-        {
-          "source": "public",
-          "target": "reveal",
-          "weight": 4
-        },
-        {
-          "source": "insights",
-          "target": "public",
-          "weight": 4
-        },
-        {
-          "source": "public",
-          "target": "urban",
-          "weight": 4
-        },
-        {
-          "source": "insights",
-          "target": "reveal",
-          "weight": 3
-        },
-        {
-          "source": "reveal",
-          "target": "urban",
-          "weight": 3
-        },
-        {
-          "source": "insights",
-          "target": "urban",
-          "weight": 4
-        },
-        {
-          "source": "higher",
-          "target": "urban",
-          "weight": 4
-        },
-        {
-          "source": "perceptions",
-          "target": "urban",
-          "weight": 3
-        },
-        {
-          "source": "perceptions",
-          "target": "public",
-          "weight": 4
-        },
-        {
-          "source": "higher",
-          "target": "public",
-          "weight": 3
-        },
-        {
-          "source": "perceptions",
-          "target": "socio",
-          "weight": 3
-        },
-        {
-          "source": "perceptions",
-          "target": "reveal",
-          "weight": 3
-        },
-        {
-          "source": "higher",
-          "target": "perceptions",
-          "weight": 3
-        },
-        {
-          "source": "insights",
-          "target": "perceptions",
-          "weight": 3
-        },
-        {
-          "source": "higher",
-          "target": "socio",
-          "weight": 3
-        },
-        {
-          "source": "higher",
-          "target": "reveal",
+          "target": "significant",
           "weight": 2
         },
         {
-          "source": "higher",
-          "target": "insights",
+          "source": "significant",
+          "target": "urban",
+          "weight": 2
+        },
+        {
+          "source": "public",
+          "target": "urban",
+          "weight": 4
+        },
+        {
+          "source": "public",
+          "target": "travel behavior",
+          "weight": 2
+        },
+        {
+          "source": "travel behavior",
+          "target": "urban",
+          "weight": 2
+        },
+        {
+          "source": "framework",
+          "target": "public",
           "weight": 3
+        },
+        {
+          "source": "framework",
+          "target": "travel",
+          "weight": 3
+        },
+        {
+          "source": "cost",
+          "target": "urban",
+          "weight": 3
+        },
+        {
+          "source": "framework",
+          "target": "urban",
+          "weight": 2
+        },
+        {
+          "source": "cost",
+          "target": "public",
+          "weight": 2
+        },
+        {
+          "source": "cost",
+          "target": "travel",
+          "weight": 2
         }
       ]
     },
     {
       "year": 2025,
-      "papers": 8,
+      "label": "2025–2026",
+      "papers": 11,
       "phrases": [
         {
           "phrase": "traffic",
-          "count": 4
+          "count": 6
         },
         {
           "phrase": "emissions",
-          "count": 4
+          "count": 5
         },
         {
           "phrase": "driven",
-          "count": 4
-        },
-        {
-          "phrase": "evaluating",
-          "count": 3
-        },
-        {
-          "phrase": "zone",
-          "count": 3
-        },
-        {
-          "phrase": "citywide",
-          "count": 3
+          "count": 5
         },
         {
           "phrase": "road",
-          "count": 3
+          "count": 4
         },
         {
-          "phrase": "efficiency",
+          "phrase": "road traffic",
+          "count": 4
+        },
+        {
+          "phrase": "traffic emissions",
+          "count": 4
+        },
+        {
+          "phrase": "framework",
+          "count": 4
+        },
+        {
+          "phrase": "spatial",
           "count": 3
         }
       ],
       "edges": [
         {
-          "source": "evaluating",
-          "target": "zone",
-          "weight": 3
-        },
-        {
-          "source": "citywide",
-          "target": "evaluating",
-          "weight": 3
-        },
-        {
-          "source": "evaluating",
-          "target": "road",
-          "weight": 3
-        },
-        {
-          "source": "evaluating",
-          "target": "traffic",
-          "weight": 3
-        },
-        {
-          "source": "emissions",
-          "target": "evaluating",
-          "weight": 3
-        },
-        {
-          "source": "efficiency",
-          "target": "evaluating",
-          "weight": 3
-        },
-        {
-          "source": "driven",
-          "target": "evaluating",
-          "weight": 3
-        },
-        {
-          "source": "citywide",
-          "target": "zone",
-          "weight": 3
-        },
-        {
           "source": "road",
-          "target": "zone",
-          "weight": 3
-        },
-        {
-          "source": "traffic",
-          "target": "zone",
-          "weight": 3
-        },
-        {
-          "source": "emissions",
-          "target": "zone",
-          "weight": 3
-        },
-        {
-          "source": "efficiency",
-          "target": "zone",
-          "weight": 3
-        },
-        {
-          "source": "driven",
-          "target": "zone",
-          "weight": 3
-        },
-        {
-          "source": "citywide",
-          "target": "road",
-          "weight": 3
-        },
-        {
-          "source": "citywide",
-          "target": "traffic",
-          "weight": 3
-        },
-        {
-          "source": "citywide",
-          "target": "emissions",
-          "weight": 3
-        },
-        {
-          "source": "citywide",
-          "target": "efficiency",
-          "weight": 3
-        },
-        {
-          "source": "citywide",
-          "target": "driven",
-          "weight": 3
-        },
-        {
-          "source": "road",
-          "target": "traffic",
-          "weight": 3
-        },
-        {
-          "source": "emissions",
-          "target": "road",
-          "weight": 3
-        },
-        {
-          "source": "efficiency",
-          "target": "road",
-          "weight": 3
-        },
-        {
-          "source": "driven",
-          "target": "road",
-          "weight": 3
-        },
-        {
-          "source": "emissions",
           "target": "traffic",
           "weight": 4
         },
         {
-          "source": "efficiency",
-          "target": "traffic",
+          "source": "emissions",
+          "target": "road",
+          "weight": 4
+        },
+        {
+          "source": "driven",
+          "target": "road",
           "weight": 3
+        },
+        {
+          "source": "road",
+          "target": "road traffic",
+          "weight": 4
+        },
+        {
+          "source": "road",
+          "target": "traffic emissions",
+          "weight": 4
+        },
+        {
+          "source": "emissions",
+          "target": "traffic",
+          "weight": 5
         },
         {
           "source": "driven",
           "target": "traffic",
-          "weight": 3
+          "weight": 4
         },
         {
-          "source": "efficiency",
-          "target": "emissions",
-          "weight": 3
-        },
-        {
-          "source": "driven",
-          "target": "emissions",
-          "weight": 3
-        },
-        {
-          "source": "driven",
-          "target": "efficiency",
-          "weight": 3
-        }
-      ]
-    },
-    {
-      "year": 2026,
-      "papers": 3,
-      "phrases": [
-        {
-          "phrase": "framework",
-          "count": 3
-        },
-        {
-          "phrase": "urban",
-          "count": 2
-        },
-        {
-          "phrase": "introduces",
-          "count": 2
-        },
-        {
-          "phrase": "traffic",
-          "count": 2
-        },
-        {
-          "phrase": "emission",
-          "count": 2
-        },
-        {
-          "phrase": "estimation",
-          "count": 2
-        },
-        {
-          "phrase": "noise",
-          "count": 2
-        },
-        {
-          "phrase": "traffic emission",
-          "count": 2
-        }
-      ],
-      "edges": [
-        {
-          "source": "introduces",
-          "target": "urban",
-          "weight": 2
-        },
-        {
-          "source": "framework",
-          "target": "urban",
-          "weight": 2
-        },
-        {
-          "source": "framework",
-          "target": "introduces",
-          "weight": 2
-        },
-        {
-          "source": "framework",
+          "source": "road traffic",
           "target": "traffic",
-          "weight": 2
-        },
-        {
-          "source": "emission",
-          "target": "framework",
-          "weight": 2
-        },
-        {
-          "source": "estimation",
-          "target": "framework",
-          "weight": 2
-        },
-        {
-          "source": "framework",
-          "target": "noise",
-          "weight": 2
-        },
-        {
-          "source": "framework",
-          "target": "traffic emission",
-          "weight": 2
-        },
-        {
-          "source": "emission",
-          "target": "traffic",
-          "weight": 2
-        },
-        {
-          "source": "estimation",
-          "target": "traffic",
-          "weight": 2
-        },
-        {
-          "source": "noise",
-          "target": "traffic",
-          "weight": 2
+          "weight": 4
         },
         {
           "source": "traffic",
-          "target": "traffic emission",
+          "target": "traffic emissions",
+          "weight": 4
+        },
+        {
+          "source": "driven",
+          "target": "emissions",
+          "weight": 3
+        },
+        {
+          "source": "emissions",
+          "target": "road traffic",
+          "weight": 4
+        },
+        {
+          "source": "emissions",
+          "target": "traffic emissions",
+          "weight": 4
+        },
+        {
+          "source": "driven",
+          "target": "road traffic",
+          "weight": 3
+        },
+        {
+          "source": "driven",
+          "target": "traffic emissions",
+          "weight": 3
+        },
+        {
+          "source": "road traffic",
+          "target": "traffic emissions",
+          "weight": 4
+        },
+        {
+          "source": "framework",
+          "target": "spatial",
           "weight": 2
         },
         {
-          "source": "emission",
-          "target": "estimation",
+          "source": "driven",
+          "target": "framework",
           "weight": 2
         },
         {
-          "source": "emission",
-          "target": "noise",
-          "weight": 2
-        },
-        {
-          "source": "emission",
-          "target": "traffic emission",
-          "weight": 2
-        },
-        {
-          "source": "estimation",
-          "target": "noise",
-          "weight": 2
-        },
-        {
-          "source": "estimation",
-          "target": "traffic emission",
-          "weight": 2
-        },
-        {
-          "source": "noise",
-          "target": "traffic emission",
+          "source": "framework",
+          "target": "traffic",
           "weight": 2
         }
       ]

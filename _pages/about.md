@@ -136,7 +136,7 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 
       /* Year header */
       svg.append('text').attr('x', cx).attr('y', margin.top + 16).attr('text-anchor', 'middle')
-        .attr('font-size', 14).attr('font-weight', 700).attr('fill', heat).text(yr.year);
+        .attr('font-size', 13).attr('font-weight', 700).attr('fill', heat).text(yr.label || yr.year);
       svg.append('text').attr('x', cx).attr('y', margin.top + 30).attr('text-anchor', 'middle')
         .attr('font-size', 10).attr('fill', '#999').text(yr.papers + (yr.papers === 1 ? ' paper' : ' papers'));
 
