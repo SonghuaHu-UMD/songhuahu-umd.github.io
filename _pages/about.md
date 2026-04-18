@@ -160,7 +160,7 @@ Each panel below summarizes the most distinctive terms in my research for a two-
         svg.append('rect').attr('x', x0 + 4).attr('y', y)
           .attr('width', pillW).attr('height', pillH).attr('rx', 5)
           .attr('fill', heat).attr('opacity', op);
-        var fontPx = Math.min(11, pillH * 0.32);
+        var fontPx = Math.min(14, Math.max(11, pillH * 0.32));
         /* foreignObject lets CSS handle real text wrapping (multi-line for long phrases). */
         var fo = svg.append('foreignObject')
           .attr('x', x0 + 4).attr('y', y)
