@@ -11,6 +11,10 @@
           "count": 4
         },
         {
+          "phrase": "peak peak",
+          "count": 4
+        },
+        {
           "phrase": "management strategies",
           "count": 4
         },
@@ -33,10 +37,6 @@
         {
           "phrase": "attractiveness efficiency",
           "count": 2
-        },
-        {
-          "phrase": "efficiency exploratory",
-          "count": 2
         }
       ],
       "edges": [
@@ -46,8 +46,18 @@
           "weight": 2
         },
         {
+          "source": "peak peak",
+          "target": "urban",
+          "weight": 2
+        },
+        {
           "source": "management strategies",
           "target": "urban",
+          "weight": 2
+        },
+        {
+          "source": "peak peak",
+          "target": "road waterlogging",
           "weight": 2
         }
       ]
@@ -86,29 +96,29 @@
           "count": 6
         },
         {
-          "phrase": "monthly",
+          "phrase": "decision",
           "count": 4
         }
       ],
       "edges": [
         {
-          "source": "human mobility",
-          "target": "monthly",
+          "source": "decision",
+          "target": "human mobility",
           "weight": 2
         },
         {
-          "source": "mobile device",
-          "target": "monthly",
+          "source": "decision",
+          "target": "mobile device",
           "weight": 2
         },
         {
-          "source": "device location",
-          "target": "monthly",
+          "source": "decision",
+          "target": "device location",
           "weight": 2
         },
         {
-          "source": "mobility pandemic",
-          "target": "monthly",
+          "source": "decision",
+          "target": "mobility pandemic",
           "weight": 2
         },
         {
@@ -378,10 +388,6 @@
           "count": 8
         },
         {
-          "phrase": "significant",
-          "count": 8
-        },
-        {
           "phrase": "urban rural",
           "count": 8
         },
@@ -398,18 +404,22 @@
           "count": 8
         },
         {
-          "phrase": "negative sentiments",
-          "count": 8
+          "phrase": "insights",
+          "count": 7
+        },
+        {
+          "phrase": "decision",
+          "count": 6
         }
       ],
       "edges": [
         {
-          "source": "significant",
+          "source": "insights",
           "target": "urban",
-          "weight": 3
+          "weight": 5
         },
         {
-          "source": "significant",
+          "source": "insights",
           "target": "urban rural",
           "weight": 3
         },
@@ -429,6 +439,11 @@
           "weight": 2
         },
         {
+          "source": "decision",
+          "target": "urban",
+          "weight": 3
+        },
+        {
           "source": "public perceptions",
           "target": "urban",
           "weight": 4
@@ -444,8 +459,38 @@
           "weight": 4
         },
         {
-          "source": "negative sentiments",
-          "target": "urban",
+          "source": "decision",
+          "target": "insights",
+          "weight": 4
+        },
+        {
+          "source": "decision",
+          "target": "public perceptions",
+          "weight": 3
+        },
+        {
+          "source": "decision",
+          "target": "google maps",
+          "weight": 3
+        },
+        {
+          "source": "decision",
+          "target": "socio spatial",
+          "weight": 3
+        },
+        {
+          "source": "insights",
+          "target": "public perceptions",
+          "weight": 4
+        },
+        {
+          "source": "google maps",
+          "target": "insights",
+          "weight": 4
+        },
+        {
+          "source": "insights",
+          "target": "socio spatial",
           "weight": 4
         },
         {
@@ -459,43 +504,13 @@
           "weight": 4
         },
         {
-          "source": "negative sentiments",
-          "target": "public perceptions",
-          "weight": 4
-        },
-        {
           "source": "google maps",
           "target": "socio spatial",
           "weight": 4
         },
         {
-          "source": "google maps",
-          "target": "negative sentiments",
-          "weight": 4
-        },
-        {
-          "source": "negative sentiments",
-          "target": "socio spatial",
-          "weight": 4
-        },
-        {
-          "source": "public perceptions",
-          "target": "significant",
-          "weight": 2
-        },
-        {
-          "source": "google maps",
-          "target": "significant",
-          "weight": 2
-        },
-        {
-          "source": "significant",
-          "target": "socio spatial",
-          "weight": 2
-        },
-        {
-          "source": "negative sentiments",
-          "target": "significant",
+          "source": "decision",
+          "target": "urban rural",
           "weight": 2
         },
         {
@@ -510,11 +525,6 @@
         },
         {
           "source": "socio spatial",
-          "target": "urban rural",
-          "weight": 2
-        },
-        {
-          "source": "negative sentiments",
           "target": "urban rural",
           "weight": 2
         }
