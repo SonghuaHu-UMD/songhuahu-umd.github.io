@@ -381,7 +381,6 @@ author_profile: true
     with particular attention to accessibility inequities and resilience disparities in underserved communities.
   </p>
 
-  <div class="r-subhead">Multi-modal Travel Demand Resilience</div>
   <div class="card-grid">
 
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524" aria-label="Read more"></a>
@@ -416,10 +415,21 @@ author_profile: true
       </div>
     </div>
 
-  </div>
+    <div class="card"><a class="card-link" href="https://doi.org/10.1016/j.tra.2024.103980" aria-label="Read more"></a>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/urban_rural_resilience.png" alt="Urban-rural travel behavior resilience"></div>
+      <div class="card-body">
+        <span class="card-venue">TR Part A</span>
+        <p class="card-text">Evaluating travel behavior resilience across urban and rural US areas during the COVID-19 pandemic. Rural communities exhibit faster, fuller recovery in trip frequency, while urban areas show persistent shifts in mode share and trip purpose, exposing differential pandemic resilience.</p>
+      </div>
+    </div>
 
-  <div class="r-subhead">Road Network Traffic Resilience</div>
-  <div class="card-grid">
+    <div class="card"><a class="card-link" href="https://doi.org/10.1177/03611981211043813" aria-label="Read more"></a>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/covid_platform.png" alt="UMD COVID mobility platform"></div>
+      <div class="card-body">
+        <span class="card-venue">TRR</span>
+        <p class="card-text">An interactive web platform that delivers daily county-level COVID-19 mobility metrics and social-distancing indices for the entire US. The system integrates pipelines for mobile-device data ingestion, weighting, and visualization, supporting policy makers and researchers in real time.</p>
+      </div>
+    </div>
 
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S1366554525006568" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/PartE.jpg" alt="Network resilience survey"></div>
