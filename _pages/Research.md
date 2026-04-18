@@ -309,7 +309,7 @@ author_profile: true
   <div class="card-grid">
 
     <div class="card"><a class="card-link" href="https://www.researchsquare.com/article/rs-7256883/v1" aria-label="Read more"></a>
-      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4" aria-label="Camera-based vehicular emission estimation"></video></div>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s9-policy.mp4" aria-label="Camera-based vehicular emission estimation"></video></div>
       <div class="card-body">
         <span class="card-venue">Under Review</span>
         <p class="card-text">Computer vision maps vehicle-level emissions from urban traffic video. A 2.2M-image dataset classifies 4,923 car models, and per-vehicle pollutants are estimated via a modified COPERT factor incorporating velocity and acceleration extracted through vehicle tracking.</p>
