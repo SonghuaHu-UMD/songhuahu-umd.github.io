@@ -232,9 +232,7 @@ author_profile: true
 <section class="r-section" id="mobility" style="--accent: var(--c-mob);">
   <div class="r-eyebrow">01 / Mobility</div>
   <p class="r-lead">
-    Mobile devices generate vast spatiotemporal data on individual travel — far richer than traditional surveys.
-    My work integrates these signals with travel-demand modeling: a unified pipeline for trip rosters,
-    spatiotemporal AI for forecasting, and traffic simulation for fine-grained flow analysis.
+    Mobile phones, connected vehicles, and wearable sensors generate huge amounts of data on how people move. My work uses this data to estimate travel demand, forecast future flows with AI, and run fine-grained citywide traffic simulations.
   </p>
 
   <div class="r-subhead">Data-driven Travel Demand Modeling</div>
@@ -244,7 +242,7 @@ author_profile: true
       <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/FF61.mp4" aria-label="Traffic simulation animation"></video></div>
       <div class="card-body">
         <span class="card-venue">Ongoing · 2026</span>
-        <p class="card-text">An <strong>LLM-driven</strong> agentic framework that turns forecasted trip itineraries into executable scenarios for micro (Vissim, SUMO), meso (DTALite), and agent-based simulators (MATSim). LLMs orchestrate tool selection, parameter calibration, and behavioral plan generation, enabling fine-grained citywide traffic simulation from mobile location data.</p>
+        <p class="card-text">An <strong>LLM</strong> agent takes forecasted trips and runs them in mainstream traffic simulators (Vissim, SUMO, DTALite, MATSim). The LLM picks the right tool, sets the parameters, and writes the behavior plans, so citywide simulations can be built directly from mobile location data.</p>
       </div>
     </div>
 
@@ -252,7 +250,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/ODFLOW.png" alt="OD validation across cities"></div>
       <div class="card-body">
         <span class="card-venue">NetMob 2024</span>
-        <p class="card-text">Can mobile-device OD data reproduce road-level traffic flow? We map mobile OD onto road networks via dynamic traffic assignment across 35 metros in Mexico, Colombia, Indonesia, and India, finding persistent underperformance in low-penetration regions.</p>
+        <p class="card-text">Can phone-based origin-destination (OD) data reproduce real road-level traffic? We test this across 35 cities in Mexico, Colombia, Indonesia, and India. The model works well overall but struggles where smartphone use is low.</p>
       </div>
     </div>
 
@@ -260,7 +258,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/OD2T3.png" alt="End-to-end mobility pipeline"></div>
       <div class="card-body">
         <span class="card-venue">PhD Dissertation · 2023</span>
-        <p class="card-text">An end-to-end pipeline turns mobile device location data into individual trip rosters via home/work identification, trip detection, mode imputation, population weighting, and validation. Rosters aggregate into multi-modal OD matrices at flexible spatiotemporal resolutions.</p>
+        <p class="card-text">A full pipeline that turns raw phone location data into trip records for each user. It identifies home and work, detects trips, infers travel mode, and reweights to the population. The trips then aggregate into multi-modal OD matrices.</p>
       </div>
     </div>
 
@@ -273,7 +271,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF2.png" alt="Multi-ATGCN architecture"></div>
       <div class="card-body">
         <span class="card-venue">PhD Dissertation · 2023</span>
-        <p class="card-text"><strong>Multi-ATGCN</strong>, a Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network for citywide multi-step OD flow prediction, achieves consistent accuracy gains over state-of-the-art baselines on two real-world datasets.</p>
+        <p class="card-text"><strong>Multi-ATGCN</strong> is a graph neural network that forecasts citywide OD flows several steps into the future. It outperforms strong baselines on two real-world datasets.</p>
       </div>
     </div>
 
@@ -281,7 +279,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF12.png" alt="Explainable ML comparison"></div>
       <div class="card-body">
         <span class="card-venue">TR Part A · 2023</span>
-        <p class="card-text">Treating nationwide CBG-level mobile-device trip flows as a travel-demand proxy, we benchmark 48 explainable ML models and interpretation techniques, documenting strong nonlinearities, threshold effects, and feature interactions.</p>
+        <p class="card-text">Using nationwide phone-derived trip flows as a travel-demand proxy, we benchmark 48 explainable ML models against multiple interpretation techniques. Results reveal strong nonlinear relationships and threshold effects between travel demand and its drivers.</p>
       </div>
     </div>
 
@@ -289,7 +287,7 @@ author_profile: true
       <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/FF16.mp4" aria-label="Hierarchical activity prediction"></video></div>
       <div class="card-body">
         <span class="card-venue">TR Part C · 2022</span>
-        <p class="card-text">A hierarchical activity-based framework jointly predicts the activity, time, and location of each device's next trip. Loss functions borrowed from semantic segmentation handle severe class imbalance across 18,000+ residents at county scale.</p>
+        <p class="card-text">A deep learning framework jointly predicts the activity, time, and location of each user's next trip. We borrow loss functions from image segmentation to handle the highly imbalanced activity distribution across more than 18,000 residents.</p>
       </div>
     </div>
 
@@ -300,9 +298,7 @@ author_profile: true
 <section class="r-section" id="sustainability" style="--accent: var(--c-sus);">
   <div class="r-eyebrow">02 / Sustainability</div>
   <p class="r-lead">
-    Transport emissions remain a major source of greenhouse gases and air pollutants.
-    My work develops cost-effective methods to monitor and predict large-scale emissions,
-    advances vehicle electrification, and evaluates urban policies — speed limits, demand management, active travel.
+    Transport remains a major source of greenhouse gases and air pollution. My work develops low-cost methods to monitor and predict emissions at scale, advances vehicle electrification, and evaluates urban policies such as speed limits and demand management.
   </p>
 
   <div class="r-subhead">Data-driven Emission Inventory</div>
@@ -312,7 +308,7 @@ author_profile: true
       <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4" aria-label="Camera-based vehicular emission estimation"></video></div>
       <div class="card-body">
         <span class="card-venue">Under Review · 2026</span>
-        <p class="card-text">Computer vision maps vehicle-level emissions from urban traffic video. A 2.2M-image dataset classifies 4,923 car models, and per-vehicle pollutants are estimated via a modified COPERT factor incorporating velocity and acceleration extracted through vehicle tracking.</p>
+        <p class="card-text">We use computer vision to estimate emissions for each vehicle in traffic camera video. A 2.2-million-image dataset classifies 4,923 car models, and an enhanced COPERT formula adds vehicle speed and acceleration recovered by tracking.</p>
       </div>
     </div>
 
@@ -320,7 +316,7 @@ author_profile: true
       <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s9-policy.mp4" aria-label="Signal-aware emission framework"></video></div>
       <div class="card-body">
         <span class="card-venue">Nature Sustainability · 2026</span>
-        <p class="card-text">A ubiquitous data-driven framework for city-scale traffic emission estimation that fuses camera videos with mobile phone data. Inferring directional signal timing shows PM and NOx emissions rise 40 to 60 percent on average when stop-and-go cycles are properly modeled.</p>
+        <p class="card-text">A city-scale traffic emission framework that fuses camera videos with phone location data. By inferring the timing of every traffic signal, we show that real stop-and-go cycles raise PM and NOx emissions 40 to 60 percent above standard methods.</p>
       </div>
     </div>
 
@@ -328,7 +324,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/GEMINI.png" alt="Digital Twin emission platform"></div>
       <div class="card-body">
         <span class="card-venue">J. Intelligent &amp; Connected Vehicles · 2026</span>
-        <p class="card-text">A Digital Twin platform for road traffic emission nowcasting and forecasting. Integrating online repositories with IoT sensors enables alternative-policy scenario evaluation, demonstrated for Kista, Stockholm via 3D interactive visualization.</p>
+        <p class="card-text">A Digital Twin platform that estimates and forecasts road traffic emissions in near real time. By combining open repositories with IoT sensors, it lets users test alternative policy scenarios. Demonstrated for Kista, Stockholm with a 3D interactive interface.</p>
       </div>
     </div>
 
@@ -336,7 +332,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/ZONE301.png" alt="ZONE 30 emission analysis"></div>
       <div class="card-body">
         <span class="card-venue">TR Part A · 2025</span>
-        <p class="card-text">Quantifying city-wide effects of 30 km/h speed limits in Milan via 3.4 million driving trips. Aggregate emission changes are modest (0.6 to 2.7 percent) but vary substantially across space and time, peaking during cross-zone trips at rush hour.</p>
+        <p class="card-text">Using 3.4 million driving trips, we measure how Milan's 30 km/h speed limit (Zone 30) changes emissions. Citywide changes are small (0.6 to 2.7 percent) but uneven across space and time, with the largest jumps on cross-zone trips at rush hour.</p>
       </div>
     </div>
 
@@ -349,7 +345,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/EVBus.jpg" alt="Dynamic wireless charging buses"></div>
       <div class="card-body">
         <span class="card-venue">TR Part C · 2023</span>
-        <p class="card-text">A bi-level optimization framework for dynamic wireless charging of battery electric buses, jointly handling strategic facility deployment and battery sizing alongside tactical charging scheduling under time-of-use electricity tariffs.</p>
+        <p class="card-text">A two-level optimization for electric buses with dynamic wireless charging. The upper level decides where to put charging facilities and how big batteries should be; the lower level schedules daily charging under time-of-use electricity prices.</p>
       </div>
     </div>
 
@@ -357,7 +353,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/EVCARD.jpg" alt="EVCARD vehicle selection"></div>
       <div class="card-body">
         <span class="card-venue">IEEE ITSM · 2020</span>
-        <p class="card-text">Five million transactions from EVCARD reveal that users avoid older, smaller, and pricier vehicles. State of charge dominates the choice; users tend to be "greedy," consistently selecting max-SoC vehicles even when their actual trips are short.</p>
+        <p class="card-text">Five million EVCARD trips show that users avoid older, smaller, and pricier shared electric vehicles. State of charge matters most. Users are "greedy": they pick the most-charged car even when their actual trip is short.</p>
       </div>
     </div>
 
@@ -365,7 +361,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/SharedEV.png" alt="Shared EV simulation"></div>
       <div class="card-body">
         <span class="card-venue">TR Part D · 2019</span>
-        <p class="card-text">Discrete-event simulation quantifies how battery capacity affects shared electric vehicle adoption. Constrained capacity hurts both user satisfaction and vehicle utilization, while faster charging, larger range, and higher vehicle-to-trip ratios mitigate the impact.</p>
+        <p class="card-text">A simulation shows how limited battery capacity hurts both user satisfaction and fleet utilization in shared electric vehicles. Faster charging, longer range, and a larger fleet-to-trip ratio all help reduce the problem.</p>
       </div>
     </div>
 
@@ -376,9 +372,7 @@ author_profile: true
 <section class="r-section" id="resilience" style="--accent: var(--c-res);">
   <div class="r-eyebrow">03 / Resilience</div>
   <p class="r-lead">
-    Natural disasters, pandemics, and extreme weather profoundly disrupt human mobility.
-    My work quantifies travel patterns before, during, and after such disruptions —
-    with particular attention to accessibility inequities and resilience disparities in underserved communities.
+    Disasters, pandemics, and extreme weather profoundly disrupt how people travel. My work measures travel patterns before, during, and after such events, with a particular focus on which underserved communities recover the slowest.
   </p>
 
   <div class="card-grid">
@@ -387,7 +381,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/hurricane_laura.png" alt="Hurricane Laura mobility and COVID spread"></div>
       <div class="card-body">
         <span class="card-venue">JTG · 2025</span>
-        <p class="card-text">A case study of Hurricane Laura quantifies how compound disruptions reshape human mobility and amplify COVID-19 spread. Evacuation flows redistribute infection risk across counties, with disadvantaged communities bearing both heightened exposure and slower recovery.</p>
+        <p class="card-text">A Hurricane Laura case study: when disasters and pandemics overlap, evacuation flows reshape mobility and spread COVID-19 across counties. Disadvantaged communities face both higher exposure and slower recovery.</p>
       </div>
     </div>
 
@@ -395,7 +389,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/wildfire_sir.png" alt="Wildfire socio-spatial response analysis"></div>
       <div class="card-body">
         <span class="card-venue">CEUS · 2025</span>
-        <p class="card-text">A socio-spatial study of public response to US wildfires combining SIR-style diffusion models with NLP on social-media discourse. The framework captures how concern propagates across regions and which socioeconomic factors shape community reactions to wildfire disasters.</p>
+        <p class="card-text">We combine SIR-style diffusion models with NLP on social media to study how the US public responds to wildfires. The model captures how concern spreads across regions and which socioeconomic factors shape community reactions.</p>
       </div>
     </div>
 
@@ -403,7 +397,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/PartE.jpg" alt="Network resilience survey"></div>
       <div class="card-body">
         <span class="card-venue">TR Part E · 2025</span>
-        <p class="card-text">A comprehensive survey of multi-modal urban transport network resilience covering modeling, evaluation, and optimization across road, transit, and shared mobility systems, with an outlook on next-generation infrastructure.</p>
+        <p class="card-text">A comprehensive review of how to model, measure, and optimize the resilience of multi-modal urban transport networks (road, transit, shared mobility), with a look ahead at next-generation infrastructure.</p>
       </div>
     </div>
 
@@ -411,7 +405,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/weatherroad.png" alt="Weather impact on traffic"></div>
       <div class="card-body">
         <span class="card-venue">IJDRR · 2024</span>
-        <p class="card-text">Comparing passively collected mobile location data with actively reported Waze incidents for monitoring extreme weather impact on traffic. Active reports underestimate severity, since fewer users venture out as conditions worsen and become silent sensors.</p>
+        <p class="card-text">We compare passive phone data with active Waze reports for tracking how extreme weather affects road traffic. Active reports underestimate severity because fewer users go outside as conditions worsen, and they stop reporting.</p>
       </div>
     </div>
 
@@ -419,7 +413,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF33.png" alt="Transit ridership decline"></div>
       <div class="card-body">
         <span class="card-venue">TR Part D · 2021</span>
-        <p class="card-text">Twenty years of Chicago transit ridership analyzed via Bayesian structural time series to isolate the pandemic's causal impact while controlling for socioeconomic confounders. Sharpest declines hit commercial areas and white, educated, high-income neighborhoods.</p>
+        <p class="card-text">Twenty years of Chicago transit ridership analyzed with Bayesian time series. After controlling for socioeconomic factors, the pandemic-driven decline was sharpest in commercial areas and in white, educated, high-income neighborhoods.</p>
       </div>
     </div>
 
@@ -427,7 +421,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/bikeshare.png" alt="Chicago bikesharing patterns"></div>
       <div class="card-body">
         <span class="card-venue">JTG · 2021</span>
-        <p class="card-text">Chicago bikesharing across the pandemic, benchmarked against transit, driving, and walking. Bikesharing proved the most resilient mode, yet stark socioeconomic inequities surfaced as high-income station catchments saw both the steepest gains and declines.</p>
+        <p class="card-text">We track Chicago bikesharing across the pandemic and compare it with transit, driving, and walking. Bikesharing is the most resilient mode, but high-income station areas saw the largest swings, both up and down.</p>
       </div>
     </div>
 
@@ -435,7 +429,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF11.png" alt="Pandemic mobility tracker"></div>
       <div class="card-body">
         <span class="card-venue">TR Part C · 2020</span>
-        <p class="card-text">Tracking US pandemic-era mobility via 150 million monthly active mobile devices, capturing trips per person, person-miles traveled, and share of residents staying home. Updated daily on a public <a href="https://data.covid.umd.edu/">platform</a>.</p>
+        <p class="card-text">We track pandemic-era US mobility from 150 million phones, summarizing trips per person, person-miles traveled, and share staying home. Daily numbers are public on this <a href="https://data.covid.umd.edu/">platform</a>.</p>
       </div>
     </div>
 
@@ -443,7 +437,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF3.png" alt="Stay-at-home mobility floor"></div>
       <div class="card-body">
         <span class="card-venue">J. R. Soc. Interface · 2020</span>
-        <p class="card-text">Mobile-device data reveal a spontaneous mobility reduction that preceded government mandates, plus a "floor" effect once stay-at-home orders took hold. State-level policies accounted for only roughly five percent of the total mobility decline.</p>
+        <p class="card-text">Phone data show that Americans cut travel before any stay-at-home orders, then hit a "floor" once orders began. State-level policies explain only about five percent of the total mobility decline.</p>
       </div>
     </div>
 
@@ -451,7 +445,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/Flood.png" alt="Urban flood detection"></div>
       <div class="card-body">
         <span class="card-venue">IEEE ITSC · 2018</span>
-        <p class="card-text">Fusing social media posts, precipitation records, and traffic flow data to automatically detect urban road flooding in Shenzhen. The system achieves a 68 to 90 percent detection rate with only 1.5 to 2 percent false alarms.</p>
+        <p class="card-text">We combine social media posts, rainfall, and traffic flow data to automatically detect flooded urban roads in Shenzhen. The system catches 68 to 90 percent of floods with only 1.5 to 2 percent false alarms.</p>
       </div>
     </div>
 
@@ -462,9 +456,7 @@ author_profile: true
 <section class="r-section" id="health" style="--accent: var(--c-hea);">
   <div class="r-eyebrow">04 / Health</div>
   <p class="r-lead">
-    The COVID-19 pandemic underscored the tight coupling between human mobility and infectious disease dynamics.
-    My work integrates econometric, epidemiological, and simulation models to disentangle causal relationships
-    among mobility, public policies, vaccination, and virus transmission.
+    The COVID-19 pandemic showed how tightly human mobility is coupled to disease dynamics. My work combines econometric, epidemiological, and simulation models to disentangle the causal links among mobility, vaccination, public policy, and infection outcomes.
   </p>
 
   <div class="card-grid">
@@ -473,7 +465,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF4.png" alt="Vaccination Omicron analysis"></div>
       <div class="card-body">
         <span class="card-venue">Vaccine · 2023</span>
-        <p class="card-text">Two years of US county data on vaccination, mobility, and outcomes show that vaccine effectiveness against case rates diminished during the Omicron surge, while protection against case-fatality persisted. An NIH-funded agent-based extension is underway.</p>
+        <p class="card-text">Two years of US county data on vaccines, mobility, and outcomes. During the Omicron wave, vaccines became less effective at preventing cases but kept reducing deaths. An NIH-funded agent-based extension is underway.</p>
       </div>
     </div>
 
@@ -481,7 +473,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/racial.jpg" alt="Health disparity analysis"></div>
       <div class="card-body">
         <span class="card-venue">SCS · 2022</span>
-        <p class="card-text">Linking COVID-19 outcomes to demographics, occupation, and partisanship reveals a structural inequality: social distancing operates as a "privilege" of advantaged groups, while disadvantaged communities bear disproportionate case and death burdens.</p>
+        <p class="card-text">Linking COVID-19 outcomes to demographics, occupation, and politics, we find a structural inequality. Social distancing was a "privilege" of advantaged groups; disadvantaged communities bore the heaviest case and death burdens.</p>
       </div>
     </div>
 
@@ -489,7 +481,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF41.png" alt="Vaccine hesitancy study"></div>
       <div class="card-body">
         <span class="card-venue">Vaccine · 2022</span>
-        <p class="card-text">Mediation analysis demonstrates that stated vaccine hesitancy alone cannot fully explain US vaccination disparities, challenging the dominant narrative and pointing to structural access barriers as a complementary driver of inequity.</p>
+        <p class="card-text">Mediation analysis shows that self-reported vaccine hesitancy does not fully explain US vaccination gaps. Structural access barriers (e.g., distance, time, distrust of institutions) play an equally important role.</p>
       </div>
     </div>
 
@@ -497,7 +489,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/raceplos.png" alt="Mediation analysis"></div>
       <div class="card-body">
         <span class="card-venue">PLOS ONE · 2021</span>
-        <p class="card-text">Structural equation modeling on 4.4 million POI geo-tracking records shows that mobility mediates COVID-19 infection rates but not case-fatality ratios, with substantial variation across county-level racial and ethnic compositions.</p>
+        <p class="card-text">Structural equation modeling on 4.4 million POI tracking records shows that mobility drives COVID-19 case rates but not death rates. The mediation effect varies sharply across racial and ethnic compositions of US counties.</p>
       </div>
     </div>
 
@@ -505,7 +497,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF43.png" alt="PNAS mobility-infection study"></div>
       <div class="card-body">
         <span class="card-venue">PNAS · 2020</span>
-        <p class="card-text">Quantifying nationwide changes in mobility inflow at the pandemic's onset and modeling its time-varying relationship with infection rates, with the dynamic positive association substantially stronger in partially reopened regions.</p>
+        <p class="card-text">We measure nationwide mobility inflow at the start of the pandemic and model its changing link with infection rates. The relationship is positive and grows much stronger in regions that have partially reopened.</p>
       </div>
     </div>
 
@@ -516,8 +508,7 @@ author_profile: true
 <section class="r-section" id="beyond" style="--accent: var(--c-mis);">
   <div class="r-eyebrow">05 / Beyond</div>
   <p class="r-lead">
-    Beyond my core themes, I work across travel demand management, public perception analytics,
-    shared mobility, and multimodal integration.
+    Beyond the core themes, I work across travel demand incentives, public sentiment analytics, shared mobility, and multimodal integration.
   </p>
 
   <div class="r-subhead">Transportation Economics</div>
@@ -527,7 +518,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/partc_2026.jpg" alt="Food delivery choice analysis"></div>
       <div class="card-body">
         <span class="card-venue">TR Part C · 2025</span>
-        <p class="card-text">Analyzing 2.7 million food delivery orders in Dubai to explain why customers choose distant restaurants over closer alternatives. Explainable ML reveals that delivery fees, cuisine type, restaurant ratings, and neighborhood socioeconomics shape whether orders stay local.</p>
+        <p class="card-text">We analyze 2.7 million food delivery orders in Dubai to explain why customers pick distant restaurants over nearby ones. Explainable ML shows that delivery fees, cuisine, ratings, and neighborhood socioeconomics shape whether orders stay local.</p>
       </div>
     </div>
 
@@ -535,7 +526,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/incentrip.png" alt="incenTrip platform"></div>
       <div class="card-body">
         <span class="card-venue">TR Part A · 2024</span>
-        <p class="card-text">As technical lead of <a href="https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33">incenTrip</a>, the first nationwide incentive-based travel demand management app, we design personalized dynamic incentives for mode switching, carpooling, congestion avoidance, and off-peak travel.</p>
+        <p class="card-text">As technical lead of <a href="https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33">incenTrip</a>, the first nationwide incentive-based travel app, we design personalized rewards that nudge users toward mode switching, carpooling, off-peak travel, and congestion avoidance.</p>
       </div>
     </div>
 
@@ -543,7 +534,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/churn.jpg" alt="Customer churn analysis"></div>
       <div class="card-body">
         <span class="card-venue">TR Part C · 2021</span>
-        <p class="card-text">Four million coupons analyzed via extended Cox proportional hazards models. Coupon effectiveness peaks early and declines after roughly 130 days, so front-loading new-user incentives maximizes short-term revenue but raises fairness and privacy concerns.</p>
+        <p class="card-text">We analyze four million coupons with a Cox survival model. Their effect on user retention peaks early and fades after about 130 days. Front-loading rewards for new users maximizes short-term revenue but raises fairness and privacy concerns.</p>
       </div>
     </div>
 
@@ -556,7 +547,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/parking.png" alt="Parking sentiment analysis"></div>
       <div class="card-body">
         <span class="card-venue">Cities · 2026</span>
-        <p class="card-text">Five million parking-related Google Maps reviews across 1.1 million US POIs are classified with BERT to model socio-spatial sentiment. Restaurants register the most negative scores, while denser and lower-income urban areas show consistently negative perceptions.</p>
+        <p class="card-text">Five million parking-related Google Maps reviews across 1.1 million US POIs are classified with BERT. Restaurants get the most negative reviews, and denser, lower-income urban areas consistently have worse parking perceptions.</p>
       </div>
     </div>
 
@@ -564,7 +555,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/access_framework.png" alt="Accessibility sentiment"></div>
       <div class="card-body">
         <span class="card-venue">CEUS · 2025</span>
-        <p class="card-text">A Llama 3 model with Low-Rank Adaptation fine-tuning measures public accessibility sentiment from nationwide Google Maps reviews. Older and more educated areas express more negativity, while disability prevalence alone shows no clear association with sentiment.</p>
+        <p class="card-text">We fine-tune Llama 3 with LoRA to measure public sentiment about accessibility from nationwide Google Maps reviews. Older, more educated areas express more negativity, while local disability rates alone show no clear link to sentiment.</p>
       </div>
     </div>
 
@@ -577,7 +568,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/Escooter.png" alt="E-scooter vs bikesharing"></div>
       <div class="card-body">
         <span class="card-venue">JPER · 2024</span>
-        <p class="card-text">Comparing e-scooter sharing with docked bikesharing usage via generalized additive mixed models. Both modes succeed in dense, young, higher-income areas, yet a one-sided competitive relationship has emerged with e-scooters surpassing bikes in adoption.</p>
+        <p class="card-text">We compare e-scooter sharing with docked bikesharing using generalized additive mixed models. Both thrive in dense, young, higher-income areas, but a one-sided competition has emerged: e-scooters are overtaking bikes.</p>
       </div>
     </div>
 
@@ -585,7 +576,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF52.jpg" alt="Bike-and-ride integration"></div>
       <div class="card-body">
         <span class="card-venue">JTG · 2022</span>
-        <p class="card-text">Shanghai dockless bikesharing evaluated for bike-and-ride (BnR) integration with metro across four metrics. Land-use mix correlates with BnR trips only beyond a 1.5 km buffer, and larger operators generate more BnR trips but no higher per-bike utilization.</p>
+        <p class="card-text">Shanghai dockless bikes are evaluated for bike-and-ride (BnR) integration with metro stations on four metrics. Land-use mix only matters past a 1.5 km buffer, and larger operators get more BnR trips but no higher per-bike utilization.</p>
       </div>
     </div>
 
@@ -593,7 +584,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/evcard.png" alt="Carsharing optimization"></div>
       <div class="card-body">
         <span class="card-venue">TR Part D · 2019</span>
-        <p class="card-text">Station-level booking and turnover analysis for carsharing optimization shows that operators should target underserved areas. Carsharing competes best 1.2 to 2.4 km from bus stops, and geographically differentiated quotas help local authorities manage fleets.</p>
+        <p class="card-text">Station-level booking and turnover analysis for carsharing optimization shows that operators should target underserved areas. Carsharing is most competitive 1.2 to 2.4 km from bus stops, and geographically differentiated quotas help cities manage fleets.</p>
       </div>
     </div>
 
