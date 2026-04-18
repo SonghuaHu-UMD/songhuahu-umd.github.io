@@ -48,7 +48,7 @@
     {
       "year": 2019,
       "label": "2019–2020",
-      "papers": 12,
+      "papers": 11,
       "institution": "UMD",
       "phrases": [
         {
@@ -72,24 +72,24 @@
           "count": 6
         },
         {
-          "phrase": "virus",
+          "phrase": "decision",
           "count": 4
         }
       ],
       "edges": [
         {
-          "source": "human mobility",
-          "target": "virus",
+          "source": "decision",
+          "target": "human mobility",
           "weight": 2
         },
         {
-          "source": "mobile device",
-          "target": "virus",
+          "source": "decision",
+          "target": "mobile device",
           "weight": 2
         },
         {
-          "source": "device location",
-          "target": "virus",
+          "source": "decision",
+          "target": "device location",
           "weight": 2
         },
         {
@@ -106,11 +106,6 @@
           "source": "device location",
           "target": "mobile device",
           "weight": 4
-        },
-        {
-          "source": "covid pandemic",
-          "target": "virus",
-          "weight": 2
         },
         {
           "source": "home orders",
@@ -152,12 +147,16 @@
     {
       "year": 2021,
       "label": "2021–2022",
-      "papers": 16,
+      "papers": 14,
       "institution": "UMD",
       "phrases": [
         {
+          "phrase": "covid",
+          "count": 9
+        },
+        {
           "phrase": "covid pandemic",
-          "count": 10
+          "count": 8
         },
         {
           "phrase": "coronavirus disease",
@@ -174,13 +173,24 @@
         {
           "phrase": "human mobility",
           "count": 6
-        },
-        {
-          "phrase": "contiguous united",
-          "count": 6
         }
       ],
       "edges": [
+        {
+          "source": "covid",
+          "target": "covid pandemic",
+          "weight": 4
+        },
+        {
+          "source": "coronavirus disease",
+          "target": "covid",
+          "weight": 4
+        },
+        {
+          "source": "covid",
+          "target": "disease covid",
+          "weight": 4
+        },
         {
           "source": "coronavirus disease",
           "target": "covid pandemic",
@@ -195,6 +205,11 @@
           "source": "coronavirus disease",
           "target": "disease covid",
           "weight": 4
+        },
+        {
+          "source": "covid",
+          "target": "mobility",
+          "weight": 6
         },
         {
           "source": "human mobility",
@@ -217,6 +232,11 @@
           "weight": 2
         },
         {
+          "source": "covid",
+          "target": "human mobility",
+          "weight": 3
+        },
+        {
           "source": "covid pandemic",
           "target": "human mobility",
           "weight": 2
@@ -230,38 +250,15 @@
           "source": "disease covid",
           "target": "human mobility",
           "weight": 2
-        },
-        {
-          "source": "contiguous united",
-          "target": "mobility",
-          "weight": 2
-        },
-        {
-          "source": "contiguous united",
-          "target": "human mobility",
-          "weight": 2
-        },
-        {
-          "source": "contiguous united",
-          "target": "covid pandemic",
-          "weight": 2
         }
       ]
     },
     {
       "year": 2023,
       "label": "2023–2024",
-      "papers": 22,
+      "papers": 19,
       "institution": "MIT",
       "phrases": [
-        {
-          "phrase": "travel behavior",
-          "count": 10
-        },
-        {
-          "phrase": "urban",
-          "count": 8
-        },
         {
           "phrase": "public perceptions",
           "count": 8
@@ -277,6 +274,14 @@
         {
           "phrase": "insights",
           "count": 7
+        },
+        {
+          "phrase": "urban",
+          "count": 7
+        },
+        {
+          "phrase": "decision",
+          "count": 6
         }
       ],
       "edges": [
@@ -286,9 +291,9 @@
           "weight": 5
         },
         {
-          "source": "travel behavior",
+          "source": "decision",
           "target": "urban",
-          "weight": 2
+          "weight": 3
         },
         {
           "source": "public perceptions",
@@ -304,6 +309,26 @@
           "source": "socio spatial",
           "target": "urban",
           "weight": 4
+        },
+        {
+          "source": "decision",
+          "target": "insights",
+          "weight": 4
+        },
+        {
+          "source": "decision",
+          "target": "public perceptions",
+          "weight": 3
+        },
+        {
+          "source": "decision",
+          "target": "google maps",
+          "weight": 3
+        },
+        {
+          "source": "decision",
+          "target": "socio spatial",
+          "weight": 3
         },
         {
           "source": "insights",

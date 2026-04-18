@@ -23,6 +23,16 @@ const BLOCKLIST = new Set([              /* explicit OpenAlex IDs known not to b
   'https://openalex.org/W4383197404',    /* "Review of Contentious Biometric Voters Registration..." (politics) */
 ]);
 
+/* Any authorship listing "Shenzhen Polytechnic" as Songhua Hu's institution belongs to a
+   different person who shares this ORCID in OpenAlex — auto-drop those works. */
+const ORCID_URL = 'https://orcid.org/' + ORCID;
+const WRONG_AFFIL_RE = /shenzhen polytechnic/i;
+const isWrongAffiliation = (w) => {
+  const me = (w.authorships || []).find(a => a.author && a.author.orcid === ORCID_URL);
+  if (!me) return false;
+  return (me.institutions || []).some(i => WRONG_AFFIL_RE.test(i.display_name || ''));
+};
+
 async function fetchAuthor() {
   const url = `https://api.openalex.org/authors/orcid:${ORCID}`;
   const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
@@ -136,14 +146,15 @@ function buildGraph(works) {
   const works = await fetchAllWorks();
   console.log('  ' + works.length + ' works');
 
-  const dropped = { preprint: 0, oldYear: 0, blocked: 0 };
+  const dropped = { preprint: 0, oldYear: 0, blocked: 0, wrongAffil: 0 };
   const filtered = works.filter(w => {
     if (BLOCKLIST.has(w.id)) { dropped.blocked++; return false; }
+    if (isWrongAffiliation(w)) { dropped.wrongAffil++; return false; }
     if (!w.publication_year || w.publication_year < MIN_YEAR) { dropped.oldYear++; return false; }
     if (w.type === 'preprint') { dropped.preprint++; return false; }
     return true;
   });
-  console.log('  dropped: ' + dropped.preprint + ' preprints, ' + dropped.oldYear + ' pre-' + MIN_YEAR + ', ' + dropped.blocked + ' blocklisted');
+  console.log('  dropped: ' + dropped.preprint + ' preprints, ' + dropped.oldYear + ' pre-' + MIN_YEAR + ', ' + dropped.blocked + ' blocklisted, ' + dropped.wrongAffil + ' wrong-affiliation');
   console.log('  kept: ' + filtered.length);
 
   const graph = buildGraph(filtered);
@@ -297,7 +308,9 @@ function buildGraph(works) {
 
   /* For abstracts only: include preprints to capture more recent papers (their journal versions
      often haven't been indexed yet). Citations/coauthor still use the strict `filtered` set. */
-  const forAbstracts = works.filter(w => w.publication_year && w.publication_year >= MIN_YEAR && !BLOCKLIST.has(w.id));
+  const forAbstracts = works.filter(w =>
+    w.publication_year && w.publication_year >= MIN_YEAR &&
+    !BLOCKLIST.has(w.id) && !isWrongAffiliation(w));
 
   /* Group into 2-year periods so each panel has enough papers for meaningful phrases. */
   const BIN_SIZE = 2;
@@ -386,7 +399,6 @@ function buildGraph(works) {
 
   /* Track primary affiliation per period: for each work, find the user's authorship and pick
      its first listed institution; then per period choose the most-common one. */
-  const ORCID_URL = 'https://orcid.org/' + ORCID;
   const ABBREV = {
     'University of Maryland, College Park': 'UMD',
     'University of Maryland': 'UMD',
