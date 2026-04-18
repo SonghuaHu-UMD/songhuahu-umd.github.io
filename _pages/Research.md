@@ -81,7 +81,7 @@ author_profile: true
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -152,6 +152,9 @@ author_profile: true
   margin: 0;
 }
 
+@media (max-width: 900px) {
+  .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 600px) {
   .r-section h2 { font-size: 1.4em; }
   .card-grid { grid-template-columns: 1fr; }
