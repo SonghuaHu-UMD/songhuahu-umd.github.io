@@ -16,15 +16,15 @@
           "count": 2
         },
         {
-          "phrase": "abstract carsharing",
+          "phrase": "promoting carsharing",
           "count": 1
         },
         {
-          "phrase": "shared cars",
+          "phrase": "marketing public",
           "count": 1
         },
         {
-          "phrase": "booking requests",
+          "phrase": "transport demography",
           "count": 1
         }
       ],
@@ -33,27 +33,27 @@
     {
       "year": 2019,
       "label": "2019–2020",
-      "papers": 11,
+      "papers": 8,
       "institution": "UMD",
       "phrases": [
         {
           "phrase": "human mobility",
-          "count": 4
+          "count": 3
         },
         {
           "phrase": "mobile device",
-          "count": 4
+          "count": 3
         },
         {
           "phrase": "covid pandemic",
-          "count": 4
-        },
-        {
-          "phrase": "home orders",
           "count": 3
         },
         {
           "phrase": "coronavirus disease",
+          "count": 2
+        },
+        {
+          "phrase": "home orders",
           "count": 2
         }
       ],
@@ -71,12 +71,12 @@
         {
           "source": "home orders",
           "target": "human mobility",
-          "weight": 3
+          "weight": 2
         },
         {
           "source": "covid pandemic",
           "target": "human mobility",
-          "weight": 3
+          "weight": 2
         },
         {
           "source": "home orders",
@@ -91,7 +91,7 @@
         {
           "source": "covid pandemic",
           "target": "home orders",
-          "weight": 3
+          "weight": 2
         }
       ]
     },
@@ -103,7 +103,7 @@
       "phrases": [
         {
           "phrase": "covid pandemic",
-          "count": 5
+          "count": 4
         },
         {
           "phrase": "coronavirus disease",
@@ -148,97 +148,66 @@
     {
       "year": 2023,
       "label": "2023–2024",
-      "papers": 19,
+      "papers": 11,
       "institution": "MIT",
       "phrases": [
         {
-          "phrase": "public perceptions",
-          "count": 4
+          "phrase": "travel behavior",
+          "count": 3
         },
         {
-          "phrase": "google maps",
-          "count": 4
-        },
-        {
-          "phrase": "socio spatial",
-          "count": 4
+          "phrase": "empirical comparison",
+          "count": 2
         },
         {
           "phrase": "mobile device",
-          "count": 3
+          "count": 2
         },
         {
-          "phrase": "travel behavior",
-          "count": 3
+          "phrase": "health disparity",
+          "count": 2
+        },
+        {
+          "phrase": "covid pandemic",
+          "count": 2
         }
       ],
       "edges": [
         {
-          "source": "google maps",
-          "target": "public perceptions",
-          "weight": 4
-        },
-        {
-          "source": "public perceptions",
-          "target": "socio spatial",
-          "weight": 4
-        },
-        {
-          "source": "google maps",
-          "target": "socio spatial",
-          "weight": 4
+          "source": "covid pandemic",
+          "target": "travel behavior",
+          "weight": 2
         }
       ]
     },
     {
       "year": 2025,
       "label": "2025–2026",
-      "papers": 11,
+      "papers": 7,
       "institution": "MIT",
       "phrases": [
         {
-          "phrase": "traffic emissions",
-          "count": 5
-        },
-        {
-          "phrase": "citywide road",
-          "count": 3
+          "phrase": "road traffic",
+          "count": 2
         },
         {
           "phrase": "online reviews",
           "count": 2
         },
         {
-          "phrase": "environmental economics",
-          "count": 2
+          "phrase": "modeling shared",
+          "count": 1
         },
         {
-          "phrase": "spatio temporal",
-          "count": 2
+          "phrase": "label propagation",
+          "count": 1
+        },
+        {
+          "phrase": "detecting overlapping",
+          "count": 1
         }
       ],
-      "edges": [
-        {
-          "source": "citywide road",
-          "target": "traffic emissions",
-          "weight": 3
-        },
-        {
-          "source": "citywide road",
-          "target": "environmental economics",
-          "weight": 2
-        },
-        {
-          "source": "environmental economics",
-          "target": "traffic emissions",
-          "weight": 2
-        },
-        {
-          "source": "spatio temporal",
-          "target": "traffic emissions",
-          "weight": 2
-        }
-      ]
+      "edges": []
     }
   ]
 }

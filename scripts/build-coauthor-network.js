@@ -317,7 +317,8 @@ function buildGraph(works) {
      often haven't been indexed yet). Citations/coauthor still use the strict `filtered` set. */
   const forAbstracts = works.filter(w =>
     w.publication_year && w.publication_year >= MIN_YEAR &&
-    !BLOCKLIST.has(w.id) && !isWrongAffiliation(w));
+    !BLOCKLIST.has(w.id) && !isWrongAffiliation(w) &&
+    w.type !== 'preprint');
 
   /* Group into 2-year periods so each panel has enough papers for meaningful phrases. */
   const BIN_SIZE = 2;
