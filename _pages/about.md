@@ -18,7 +18,7 @@ My research leverages <span style="color: #e67e22;">crowdsourced data mining</sp
 to advance <span style="color: #27ae60;">smart, sustainable, resilient, and equitable mobility systems</span>.
 I have published **over 40** journal papers (**21** first-authored) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.,
 and have contributed to research projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, and USDOE</span>.
-I serve as a reviewer for **over 60** journals including _Nature Cities_, _Nature Communications_, _Transportation Research Part A/B/C/D/E_, among others.
+I serve as a reviewer for **over 60** journals including _Nature Cities_, _Nature Communications_, _Transportation Research Part A-E_, among others.
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
 

@@ -28,7 +28,17 @@
       "WebFetch(domain:www.sciencedirect.com)",
       "WebFetch(domain:www.researchsquare.com)",
       "WebFetch(domain:doi.org)",
-      "Bash(node scripts/polish-cards.js)"
+      "Bash(node scripts/polish-cards.js)",
+      "Bash(curl -fsSL \"https://songhuahu-umd.github.io/\")",
+      "Bash(curl -sI \"https://songhuahu-umd.github.io/\")",
+      "Bash(npm view *)",
+      "Bash(node -e \"console.log\\(require\\('ffmpeg-static'\\)\\)\")",
+      "WebFetch(domain:api.openalex.org)",
+      "Bash(node -e \"console.log\\(require\\('d3-force'\\).forceSimulation ? 'd3-force loaded' : 'fail'\\)\")",
+      "Bash(node scripts/build-coauthor-network.js)",
+      "Bash(curl -fsS -o /dev/null -w \"%{http_code} %{size_download}\\\\n\" \"https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css\")",
+      "Bash(curl -fsS -o /dev/null -w \"%{http_code} %{size_download}\\\\n\" \"https://cdn.jsdelivr.net/npm/academicons@1.9.3/css/academicons.min.css\")",
+      "Bash(curl -fsS \"https://data.jsdelivr.com/v1/package/npm/academicons\")"
     ]
   }
 }
