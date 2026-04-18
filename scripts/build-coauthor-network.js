@@ -16,6 +16,7 @@ const OUT_PATH = path.resolve(__dirname, '..', 'assets', 'coauthor_network.json'
 const CITATIONS_PATH = path.resolve(__dirname, '..', 'assets', 'citations_by_year.json');
 const TOPICS_PATH = path.resolve(__dirname, '..', 'assets', 'topic_evolution.json');
 const MANUAL_ABSTRACTS_PATH = path.resolve(__dirname, '..', 'assets', 'manual_abstracts.json');
+const CURATED_PHRASES_PATH = path.resolve(__dirname, '..', 'assets', 'curated_phrases.json');
 const TOP_N_TOPICS = 6;
 
 /* Disambiguation filters — OpenAlex sometimes attributes works to the wrong person. */
@@ -274,6 +275,31 @@ function buildGraph(works) {
       console.log('      ' + sid + '  [' + w.publication_year + '] ' + (w.title || '').slice(0, 80));
       if (w.doi) console.log('          ' + w.doi);
     }
+  }
+
+  /* If a curated phrase file is present and use=true, write it as topic_evolution.json directly
+     and skip the algorithmic extraction below. */
+  let curated = null;
+  try { curated = JSON.parse(fs.readFileSync(CURATED_PHRASES_PATH, 'utf8')); } catch (e) {}
+  if (curated && curated.use && Array.isArray(curated.periods)) {
+    const yearsOut = curated.periods.map(p => ({
+      year: p.year,
+      label: p.label,
+      papers: p.papers,
+      institution: p.institution,
+      phrases: p.phrases.map((phrase, i) => ({ phrase, count: p.phrases.length - i })),
+      edges: [],
+    }));
+    fs.writeFileSync(TOPICS_PATH, JSON.stringify({
+      generated: new Date().toISOString().slice(0, 10),
+      source: 'curated',
+      years: yearsOut,
+    }, null, 2));
+    console.log('Wrote ' + TOPICS_PATH + ' (' + yearsOut.length + ' periods, curated source)');
+    for (const y of yearsOut) {
+      console.log('  ' + y.label + ' @ ' + y.institution + ' (' + y.papers + ' papers): ' + y.phrases.map(p => p.phrase).join(' | '));
+    }
+    return;
   }
 
   console.log('Building per-year phrase networks (unigrams + bigrams x2)...');

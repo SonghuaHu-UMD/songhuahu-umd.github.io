@@ -1,0 +1,71 @@
+{
+  "_comment": "Manually curated top phrases per 2-year period, drawn from the abstracts + titles of papers in each window. When this file is present, the script uses it directly and skips algorithmic frequency extraction.",
+  "use": true,
+  "periods": [
+    {
+      "label": "2017–2018",
+      "year": 2017,
+      "papers": 4,
+      "institution": "Tongji",
+      "phrases": [
+        "Carsharing Optimization",
+        "Vehicle Selection",
+        "Urban Waterlogging",
+        "Floating Car Data",
+        "Weather Impact"
+      ]
+    },
+    {
+      "label": "2019–2020",
+      "year": 2019,
+      "papers": 8,
+      "institution": "UMD",
+      "phrases": [
+        "COVID-19 Mobility",
+        "Mobile Device Data",
+        "Transit Ridership",
+        "Shared Vehicle Behavior",
+        "EV Sharing Simulation"
+      ]
+    },
+    {
+      "label": "2021–2022",
+      "year": 2021,
+      "papers": 11,
+      "institution": "UMD",
+      "phrases": [
+        "Mobility Disparities",
+        "Vaccine Hesitancy",
+        "Inflow Forecasting",
+        "Bikesharing Resilience",
+        "Personalized Incentives"
+      ]
+    },
+    {
+      "label": "2023–2024",
+      "year": 2023,
+      "papers": 10,
+      "institution": "UMD",
+      "phrases": [
+        "Explainable ML",
+        "Equitable Transit Access",
+        "Travel Behavior Resilience",
+        "Wireless EV Charging",
+        "E-scooter vs Bikesharing"
+      ]
+    },
+    {
+      "label": "2025–2026",
+      "year": 2025,
+      "papers": 7,
+      "institution": "MIT",
+      "phrases": [
+        "Traffic Emission Inventory",
+        "Crowdsourced Sentiment",
+        "Digital Twin Cities",
+        "LLM-based Sensing",
+        "Urban Policy Evaluation"
+      ]
+    }
+  ]
+}

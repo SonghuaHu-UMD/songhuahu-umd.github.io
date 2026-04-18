@@ -1,5 +1,6 @@
 {
   "generated": "2026-04-18",
+  "source": "curated",
   "years": [
     {
       "year": 2017,
@@ -8,23 +9,23 @@
       "institution": "Tongji",
       "phrases": [
         {
-          "phrase": "road waterlogging",
+          "phrase": "Carsharing Optimization",
+          "count": 5
+        },
+        {
+          "phrase": "Vehicle Selection",
+          "count": 4
+        },
+        {
+          "phrase": "Urban Waterlogging",
+          "count": 3
+        },
+        {
+          "phrase": "Floating Car Data",
           "count": 2
         },
         {
-          "phrase": "management strategies",
-          "count": 2
-        },
-        {
-          "phrase": "promoting carsharing",
-          "count": 1
-        },
-        {
-          "phrase": "shared cars",
-          "count": 1
-        },
-        {
-          "phrase": "booking requests",
+          "phrase": "Weather Impact",
           "count": 1
         }
       ],
@@ -37,58 +38,27 @@
       "institution": "UMD",
       "phrases": [
         {
-          "phrase": "mobile device",
+          "phrase": "COVID-19 Mobility",
+          "count": 5
+        },
+        {
+          "phrase": "Mobile Device Data",
+          "count": 4
+        },
+        {
+          "phrase": "Transit Ridership",
           "count": 3
         },
         {
-          "phrase": "human mobility",
-          "count": 3
-        },
-        {
-          "phrase": "covid pandemic",
-          "count": 3
-        },
-        {
-          "phrase": "virus transmission",
+          "phrase": "Shared Vehicle Behavior",
           "count": 2
         },
         {
-          "phrase": "home orders",
-          "count": 2
+          "phrase": "EV Sharing Simulation",
+          "count": 1
         }
       ],
-      "edges": [
-        {
-          "source": "human mobility",
-          "target": "mobile device",
-          "weight": 3
-        },
-        {
-          "source": "home orders",
-          "target": "mobile device",
-          "weight": 2
-        },
-        {
-          "source": "covid pandemic",
-          "target": "mobile device",
-          "weight": 2
-        },
-        {
-          "source": "home orders",
-          "target": "human mobility",
-          "weight": 2
-        },
-        {
-          "source": "covid pandemic",
-          "target": "human mobility",
-          "weight": 2
-        },
-        {
-          "source": "covid pandemic",
-          "target": "home orders",
-          "weight": 2
-        }
-      ]
+      "edges": []
     },
     {
       "year": 2021,
@@ -97,58 +67,27 @@
       "institution": "UMD",
       "phrases": [
         {
-          "phrase": "covid pandemic",
+          "phrase": "Mobility Disparities",
           "count": 5
         },
         {
-          "phrase": "generalized additive",
-          "count": 5
-        },
-        {
-          "phrase": "human mobility",
+          "phrase": "Vaccine Hesitancy",
           "count": 4
         },
         {
-          "phrase": "social distancing",
-          "count": 4
-        },
-        {
-          "phrase": "mobile device",
+          "phrase": "Inflow Forecasting",
           "count": 3
+        },
+        {
+          "phrase": "Bikesharing Resilience",
+          "count": 2
+        },
+        {
+          "phrase": "Personalized Incentives",
+          "count": 1
         }
       ],
-      "edges": [
-        {
-          "source": "covid pandemic",
-          "target": "human mobility",
-          "weight": 3
-        },
-        {
-          "source": "covid pandemic",
-          "target": "generalized additive",
-          "weight": 3
-        },
-        {
-          "source": "generalized additive",
-          "target": "human mobility",
-          "weight": 3
-        },
-        {
-          "source": "human mobility",
-          "target": "social distancing",
-          "weight": 2
-        },
-        {
-          "source": "mobile device",
-          "target": "social distancing",
-          "weight": 2
-        },
-        {
-          "source": "generalized additive",
-          "target": "social distancing",
-          "weight": 2
-        }
-      ]
+      "edges": []
     },
     {
       "year": 2023,
@@ -157,24 +96,24 @@
       "institution": "UMD",
       "phrases": [
         {
-          "phrase": "mobile device",
+          "phrase": "Explainable ML",
+          "count": 5
+        },
+        {
+          "phrase": "Equitable Transit Access",
+          "count": 4
+        },
+        {
+          "phrase": "Travel Behavior Resilience",
           "count": 3
         },
         {
-          "phrase": "travel demand",
-          "count": 3
-        },
-        {
-          "phrase": "empirical comparison",
+          "phrase": "Wireless EV Charging",
           "count": 2
         },
         {
-          "phrase": "socioeconomics demographics",
-          "count": 2
-        },
-        {
-          "phrase": "health disparity",
-          "count": 2
+          "phrase": "E-scooter vs Bikesharing",
+          "count": 1
         }
       ],
       "edges": []
@@ -186,58 +125,27 @@
       "institution": "MIT",
       "phrases": [
         {
-          "phrase": "traffic emissions",
+          "phrase": "Traffic Emission Inventory",
+          "count": 5
+        },
+        {
+          "phrase": "Crowdsourced Sentiment",
+          "count": 4
+        },
+        {
+          "phrase": "Digital Twin Cities",
+          "count": 3
+        },
+        {
+          "phrase": "LLM-based Sensing",
           "count": 2
         },
         {
-          "phrase": "online reviews",
-          "count": 2
-        },
-        {
-          "phrase": "public perceptions",
-          "count": 2
-        },
-        {
-          "phrase": "google maps",
-          "count": 2
-        },
-        {
-          "phrase": "socio spatial",
-          "count": 2
+          "phrase": "Urban Policy Evaluation",
+          "count": 1
         }
       ],
-      "edges": [
-        {
-          "source": "online reviews",
-          "target": "public perceptions",
-          "weight": 2
-        },
-        {
-          "source": "google maps",
-          "target": "online reviews",
-          "weight": 2
-        },
-        {
-          "source": "online reviews",
-          "target": "socio spatial",
-          "weight": 2
-        },
-        {
-          "source": "google maps",
-          "target": "public perceptions",
-          "weight": 2
-        },
-        {
-          "source": "public perceptions",
-          "target": "socio spatial",
-          "weight": 2
-        },
-        {
-          "source": "google maps",
-          "target": "socio spatial",
-          "weight": 2
-        }
-      ]
+      "edges": []
     }
   ]
 }
