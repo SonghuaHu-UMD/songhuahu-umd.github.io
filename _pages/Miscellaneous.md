@@ -13,7 +13,7 @@ including travel demand management, public perception analytics, shared mobility
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0965856424001939">
-        <img src="https://songhuahu-umd.github.io/images/incentrip.png" alt="Figure" style="width: 400px;" />
+        <img loading="lazy" decoding="async" src="/images/incentrip.png" alt="Figure" style="width: 400px;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -25,7 +25,7 @@ including travel demand management, public perception analytics, shared mobility
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X21002382">
-        <img src="https://songhuahu-umd.github.io/images/churn.jpg" alt="Figure" style="width: 400px;" />
+        <img loading="lazy" decoding="async" src="/images/churn.jpg" alt="Figure" style="width: 400px;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -43,7 +43,7 @@ we quantify perceptions of parking, accessibility, the built environment, and fo
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0264275126000983">
-        <img src="https://songhuahu-umd.github.io/images/parking.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/parking.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -55,7 +55,7 @@ we quantify perceptions of parking, accessibility, the built environment, and fo
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0198971525000821">
-        <img src="https://songhuahu-umd.github.io/images/access_framework.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/access_framework.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -70,7 +70,7 @@ we quantify perceptions of parking, accessibility, the built environment, and fo
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0966692321003240">
-        <img src="https://songhuahu-umd.github.io/images/FF52.jpg" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/FF52.jpg" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -82,7 +82,7 @@ we quantify perceptions of parking, accessibility, the built environment, and fo
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920918306448">
-        <img src="https://songhuahu-umd.github.io/images/evcard.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/evcard.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">

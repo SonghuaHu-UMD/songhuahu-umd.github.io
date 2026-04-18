@@ -15,7 +15,7 @@ I am extending this work to broader environmental health contexts, including air
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2010836117">
-        <img src="https://songhuahu-umd.github.io/images/FF43.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/FF43.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -27,7 +27,7 @@ I am extending this work to broader environmental health contexts, including air
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S2210670721007721">
-        <img src="https://songhuahu-umd.github.io/images/racial.jpg" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/racial.jpg" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -39,7 +39,7 @@ I am extending this work to broader environmental health contexts, including air
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0259803">
-        <img src="https://songhuahu-umd.github.io/images/raceplos.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/raceplos.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -54,7 +54,7 @@ I am extending this work to broader environmental health contexts, including air
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0264410X22009471">
-        <img src="https://songhuahu-umd.github.io/images/FF41.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/FF41.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -66,7 +66,7 @@ I am extending this work to broader environmental health contexts, including air
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0264410X23006175">
-        <img src="https://songhuahu-umd.github.io/images/FF4.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/FF4.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">

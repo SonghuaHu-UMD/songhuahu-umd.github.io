@@ -20,7 +20,7 @@ I have published **over 40** journal papers (**21** first-authored, **4** corres
 and have contributed to research projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, and USDOE</span>.
 I serve as a reviewer for **over 60** journals including _Nature Cities_, _Nature Communications_, _Transportation Research Part A/B/C/D/E_, among others.
 
-![Research Interests](https://songhuahu-umd.github.io/images/research_interests.svg)
+![Research Interests](/images/research_interests.svg)
 
 ---
 
@@ -57,7 +57,7 @@ _Journal of the Royal Society Interface_ (**1**),
 _Journal of Planning Education and Research_ (**1**),
 among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc.
 
-![Google Scholar Citations](https://songhuahu-umd.github.io/images/citations.svg)
+![Google Scholar Citations](/images/citations.svg)
 
 <span style="color: purple">**Full publication list: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
 

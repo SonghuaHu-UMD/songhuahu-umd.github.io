@@ -1,2 +1,15 @@
 _site/
 .idea/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+node_modules/
+package-lock.json
+*.log
+.DS_Store
+Thumbs.db
+
+# Image optimizer backups (kept locally for visual review; delete after verifying quality)
+images/*.bak.*
+images/*.original.*
+

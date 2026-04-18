@@ -12,7 +12,7 @@ how to allocate incentives to prevent user turnover, and how to encourage multi-
 After joining University of Maryland, I am the technical leader of the first-in-the-nation MaaS APP "incenTrip" project,
 funded by USDOE and USDOT, to provide green travel options and personalized incentives for real-world travelers.
 
-<iframe src="https://songhuahu-umd.github.io/images/Bikeshare_Heatmap.html" height="500" width="950"></iframe>
+<iframe src="/images/Bikeshare_Heatmap.html" height="500" width="950" loading="lazy" title="Bikeshare heatmap"></iframe>
 
 ## Related Publications
 
@@ -44,10 +44,10 @@ funded by USDOE and USDOT, to provide green travel options and personalized ince
      in urban carsharing program, The 21st IEEE International Conference on Intelligent Transportation Systems (2018).
 
 <p align="center">
-<img src="https://songhuahu-umd.github.io/images/FF51.jpeg" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF52.jpeg" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF53.png" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF54.png" width="310" hspace="5"/> 
-<img src="https://songhuahu-umd.github.io/images/FF55.png" width="310" hspace="5"/>
-<img src="https://songhuahu-umd.github.io/images/FF56.png" width="310" hspace="5"/> 
+<img loading="lazy" decoding="async" src="/images/FF51.jpeg" width="310" hspace="5"/> 
+<img loading="lazy" decoding="async" src="/images/FF52.jpeg" width="310" hspace="5"/>
+<img loading="lazy" decoding="async" src="/images/FF53.png" width="310" hspace="5"/> 
+<img loading="lazy" decoding="async" src="/images/FF54.png" width="310" hspace="5"/> 
+<img loading="lazy" decoding="async" src="/images/FF55.png" width="310" hspace="5"/>
+<img loading="lazy" decoding="async" src="/images/FF56.png" width="310" hspace="5"/> 
 </p>

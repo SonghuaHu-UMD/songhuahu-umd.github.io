@@ -13,7 +13,7 @@ My research addresses three key areas: 1) developing cost-effective methods to m
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en">
-        <img src="https://songhuahu-umd.github.io/images/camera0.gif" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/camera0.gif" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -25,7 +25,7 @@ My research addresses three key areas: 1) developing cost-effective methods to m
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.nature.com/articles/s41893-026-01797-9">
-        <img src="https://songhuahu-umd.github.io/images/Signal.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/Signal.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -37,7 +37,7 @@ My research addresses three key areas: 1) developing cost-effective methods to m
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0965856425000576">
-        <img src="https://songhuahu-umd.github.io/images/ZONE301.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/ZONE301.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -50,7 +50,7 @@ My research addresses three key areas: 1) developing cost-effective methods to m
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciopen.com/article/10.26599/JICV.2026.9210079">
-        <img src="https://songhuahu-umd.github.io/images/GEMINI.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/GEMINI.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -65,7 +65,7 @@ My research addresses three key areas: 1) developing cost-effective methods to m
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S1361920919311058">
-        <img src="https://songhuahu-umd.github.io/images/SharedEV.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/SharedEV.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -77,7 +77,7 @@ My research addresses three key areas: 1) developing cost-effective methods to m
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://www.sciencedirect.com/science/article/pii/S0968090X2300459X">
-        <img src="https://songhuahu-umd.github.io/images/EVBus.jpg" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/EVBus.jpg" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -89,7 +89,7 @@ My research addresses three key areas: 1) developing cost-effective methods to m
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://journals.sagepub.com/doi/abs/10.1177/0739456X241256041">
-        <img src="https://songhuahu-umd.github.io/images/Escooter.png" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/Escooter.png" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
@@ -101,7 +101,7 @@ My research addresses three key areas: 1) developing cost-effective methods to m
 <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
   <div style="flex: 0 0 40%; text-align: left; margin-right: 20px;">
     <a href="https://ieeexplore.ieee.org/abstract/document/9034087">
-        <img src="https://songhuahu-umd.github.io/images/EVCARD.jpg" alt="Figure" style="width: 100%;" />
+        <img loading="lazy" decoding="async" src="/images/EVCARD.jpg" alt="Figure" style="width: 100%;" />
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">

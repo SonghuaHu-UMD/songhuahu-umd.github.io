@@ -8,7 +8,23 @@
       "Bash(rm:*)",
       "Bash(grep:*)",
       "WebFetch(domain:scholar.google.com)",
-      "WebFetch(domain:scholar.google.co.jp)"
+      "WebFetch(domain:scholar.google.co.jp)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(curl -fsSL -o jquery-3.7.1.min.js \"https://code.jquery.com/jquery-3.7.1.min.js\")",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(ffmpeg -version)",
+      "Bash(magick -version)",
+      "Bash(node -e ' *)",
+      "Bash(mkdir -p scripts)",
+      "Bash(node scripts/optimize-images.js)",
+      "Bash(node scripts/optimize-images.js --apply)",
+      "Bash(awk '{s+=$1} END {printf \"%.1f MB\\\\n\", s/1024/1024}')",
+      "Bash([ ! -f \"/c/Users/Administrator/IdeaProjects/songhuahu-umd.github.io/images/$f\" ])",
+      "Bash(bundle --version)",
+      "Bash(ruby --version)",
+      "Bash(where.exe ruby *)"
     ]
   }
 }
