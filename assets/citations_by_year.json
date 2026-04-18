@@ -6,84 +6,49 @@
   "i10_index": 36,
   "by_year": [
     {
-      "year": 2000,
-      "annual": 0,
-      "cumulative": 0
-    },
-    {
-      "year": 2006,
-      "annual": 0,
-      "cumulative": 0
-    },
-    {
-      "year": 2009,
-      "annual": 0,
-      "cumulative": 0
-    },
-    {
-      "year": 2010,
-      "annual": 0,
-      "cumulative": 0
-    },
-    {
-      "year": 2011,
-      "annual": 1,
-      "cumulative": 1
-    },
-    {
-      "year": 2014,
-      "annual": 15,
-      "cumulative": 16
-    },
-    {
-      "year": 2015,
-      "annual": 0,
-      "cumulative": 16
-    },
-    {
       "year": 2018,
       "annual": 146,
-      "cumulative": 162
+      "cumulative": 146
     },
     {
       "year": 2019,
       "annual": 51,
-      "cumulative": 213
+      "cumulative": 197
     },
     {
       "year": 2020,
       "annual": 872,
-      "cumulative": 1085
+      "cumulative": 1069
     },
     {
       "year": 2021,
       "annual": 645,
-      "cumulative": 1730
+      "cumulative": 1714
     },
     {
       "year": 2022,
       "annual": 68,
-      "cumulative": 1798
+      "cumulative": 1782
     },
     {
       "year": 2023,
       "annual": 112,
-      "cumulative": 1910
+      "cumulative": 1894
     },
     {
       "year": 2024,
       "annual": 157,
-      "cumulative": 2067
+      "cumulative": 2051
     },
     {
       "year": 2025,
       "annual": 4,
-      "cumulative": 2071
+      "cumulative": 2055
     },
     {
       "year": 2026,
       "annual": 0,
-      "cumulative": 2071
+      "cumulative": 2055
     }
   ]
 }
