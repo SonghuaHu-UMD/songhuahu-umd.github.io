@@ -295,7 +295,8 @@ function buildGraph(works) {
     + /* Generic descriptors that surface as filler — too vague to characterize a research period. */
       'urban rural driven driving combined integrated extensive context insights characteristics characterize characterized findings outcomes implications future ongoing existing emerging widely broadly globally locally regionally nationally internationally cross within between beyond toward forward backward upward downward central peripheral primary secondary tertiary inner outer left right side front behind around new old young '
     + 'contiguous united states country countries nation nations american america region regional county counties state states city cities place places location locations decision decisions census block blocks group groups austin texas chicago shanghai beijing kista stockholm milan dubai amsterdam shenzhen washington maryland '
-    + 'effectively effective ineffective ineffectively efficiently inefficient sufficiently sufficient insufficiently insufficient adequate inadequately satisfactorily satisfactory unsatisfactorily readily easily seamlessly smoothly directly indirectly carefully precisely accurately reliably robustly accordingly subsequently'
+    + 'effectively effective ineffective ineffectively efficiently inefficient sufficiently sufficient insufficiently insufficient adequate inadequately satisfactorily satisfactory unsatisfactorily readily easily seamlessly smoothly directly indirectly carefully precisely accurately reliably robustly accordingly subsequently '
+    + 'real world worlds case study cases studies large scale wide range key role hand side same time long term short term most least'
   ).split(/\s+/));
 
   const isMeaningful = (raw) => {
