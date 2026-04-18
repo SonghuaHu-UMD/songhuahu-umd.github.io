@@ -73,7 +73,7 @@ Research Topics
 ======
 
 <p style="color: #555; line-height: 1.7; margin: 0.6em 0 1.2em;">
-Each panel below summarizes the most distinctive terms in my research. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a>. The arc starts with <em>carsharing operations</em> and <em>urban flood detection</em> at Tongji (2017–18), opens up to <em>COVID-era human mobility from mobile devices</em> at UMD (2019–20), deepens into <em>mobility equity, vaccination, and inflow forecasting</em> (2021–22), expands to <em>explainable ML and resilient mobility under disruptions</em> (2023–24), and lands at MIT on <em>traffic-emission inventories</em> and <em>LLM-based crowdsourced sensing</em> (2025–26).
+Each panel below summarizes the most distinctive terms in my research. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a>. A single thread runs through every period: turning ubiquitous urban data into actionable insights for <em>sustainable, equitable, and resilient mobility</em>. The unit of analysis scales up over time, from <em>operator-scale shared mobility</em> at Tongji, to <em>nationwide pandemic-era mobility</em> at UMD, to <em>citywide emission inventories</em> and <em>crowdsourced public sensing</em> at MIT.
 </p>
 
 <div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 320px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
