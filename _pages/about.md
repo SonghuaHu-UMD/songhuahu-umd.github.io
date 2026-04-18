@@ -61,7 +61,7 @@ _Journal of Planning Education and Research_ (**1**),
 among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc.
 
 <div style="margin: 1.2em 0;">
-  <div id="coauthor-network" style="width: 100%; max-width: 1100px; height: 460px; margin: 0 auto; position: relative; overflow: hidden;">
+  <div id="coauthor-network" style="width: 100%; max-width: 1100px; height: 360px; margin: 0 auto; position: relative; overflow: hidden;">
     <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading network…</div>
   </div>
   <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network (OpenAlex)</div>
@@ -293,7 +293,7 @@ Each panel below summarizes the most distinctive terms in my research for a two-
   fetch('/assets/coauthor_network.json').then(function (r) { return r.json(); }).then(function (data) {
     container.innerHTML = '';
     var w = container.clientWidth || 900;
-    var h = container.clientHeight || 460;
+    var h = container.clientHeight || 360;
     var maxW = Math.max.apply(null, data.links.map(function (l) { return l.weight; }));
     var radius = function (d) {
       if (d.isSelf) return 12;
