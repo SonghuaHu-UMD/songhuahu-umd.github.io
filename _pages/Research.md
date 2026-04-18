@@ -261,11 +261,11 @@ author_profile: true
   <div class="r-subhead">Data-driven Emission Inventory</div>
   <div class="card-grid">
 
-    <div class="card"><a class="card-link" href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/camera0.gif" alt="Vehicle classification dataset"></div>
+    <div class="card"><a class="card-link" href="https://www.researchsquare.com/article/rs-7256883/v1" aria-label="Read more"></a>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/camera0.gif" alt="Camera-based vehicular emission estimation"></div>
       <div class="card-body">
         <span class="card-venue">Under Review</span>
-        <p class="card-text">First benchmark of 10,000 vehicle images aligned with MOVES source types, cropped from ~800 NYC traffic cameras and labeled via GPT-4o + human validation. ConvNeXt achieves 92.9% accuracy among 10 classifiers.</p>
+        <p class="card-text">A deep learning pipeline that estimates vehicular emissions directly from traffic camera video — turning ubiquitous roadside footage into scalable, fine-grained emission inventories without dedicated sensing infrastructure.</p>
       </div>
     </div>
 
