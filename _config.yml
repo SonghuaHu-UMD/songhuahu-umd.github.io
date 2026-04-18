@@ -26,11 +26,11 @@ atom_feed:
 
 # Site Author
 author:
-  name             : '<span class="lang-en">Songhua Hu</span><span class="lang-zh">胡松华</span>'
+  name             : "Songhua Hu"
   avatar           : "head4.jpg"
-  bio              : '<span class="lang-en">Crowdsourced Data Mining, Spatiotemporal AI, Network Science, Transportation Planning</span><span class="lang-zh">众包数据挖掘 · 时空人工智能 · 网络科学 · 交通规划</span>'
-  location         : '<span class="lang-en">Hong Kong</span><span class="lang-zh">香港</span>'
-  employer         : '<span class="lang-en">City University of Hong Kong</span><span class="lang-zh">香港城市大学</span>'
+  bio              : "Crowdsourced Data Mining, Spatiotemporal AI, Network Science, Transportation Planning"
+  location         : "Hong Kong"
+  employer         : "City University of Hong Kong"
   googlescholar    : "https://scholar.google.co.jp/citations?user=uVIbQyAAAAAJ&hl=en"
   email            : "Songhua.Hu@cityu.edu.hk"
   researchgate     : "https://www.researchgate.net/profile/Songhua_Hu2"
