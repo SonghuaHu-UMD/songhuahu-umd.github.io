@@ -22,10 +22,10 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
 
-<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 420px; margin: 0.5em auto 0.4em; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
-  <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading word network…</div>
+<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 360px; margin: 0.5em auto 0.4em; position: relative; overflow: hidden;">
+  <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year phrase columns…</div>
 </div>
-<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1.5em;">Abstract word co-occurrence network — horizontal axis is the average publication year of each term; size = paper frequency; color = recency (blue→red as years progress)</div>
+<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1.5em;">Top abstract bigrams per year (OpenAlex; preprints included to surface recent work)</div>
 
 ---
 
@@ -64,13 +64,13 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 
 <div style="display: flex; gap: 1em; flex-wrap: wrap; align-items: stretch; margin: 1.2em 0;">
   <div style="flex: 1 1 320px;">
-    <div id="citations-chart" style="width: 100%; height: 360px; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
+    <div id="citations-chart" style="width: 100%; height: 360px; position: relative; overflow: hidden;">
       <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading citations…</div>
     </div>
     <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Citations per year (OpenAlex)</div>
   </div>
   <div style="flex: 1 1 320px;">
-    <div id="coauthor-network" style="width: 100%; height: 360px; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
+    <div id="coauthor-network" style="width: 100%; height: 360px; position: relative; overflow: hidden;">
       <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading network…</div>
     </div>
     <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network (OpenAlex)</div>
@@ -107,81 +107,73 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 
   fetch('/assets/topic_evolution.json').then(function (r) { return r.json(); }).then(function (data) {
     container.innerHTML = '';
-    var w = container.clientWidth;
-    var h = container.clientHeight;
-    var margin = { top: 14, right: 18, bottom: 30, left: 18 };
-    var iw = w - margin.left - margin.right;
-    var ih = h - margin.top - margin.bottom;
+    var W = container.clientWidth;
+    var H = container.clientHeight;
+    var margin = { top: 8, right: 6, bottom: 4, left: 6 };
+    var iw = W - margin.left - margin.right;
+    var ih = H - margin.top - margin.bottom;
 
     var svg = d3.select(container).append('svg')
-      .attr('viewBox', '0 0 ' + w + ' ' + h)
+      .attr('viewBox', '0 0 ' + W + ' ' + H)
       .attr('width', '100%').attr('height', '100%')
       .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif");
 
-    var yrMin = data.yearRange[0], yrMax = data.yearRange[1];
-    var xScale = d3.scaleLinear().domain([yrMin - 0.5, yrMax + 0.5]).range([0, iw]);
-    var color = d3.scaleSequential(d3.interpolateRdYlBu).domain([yrMax, yrMin]);
-    var radius = function (d) { return 3 + Math.sqrt(d.count) * 2.6; };
+    var years = data.years;
+    var N = years.length;
+    var colW = iw / N;
+    var headerH = 40;
+    var pillsTop = margin.top + headerH;
+    var pillsArea = ih - headerH - 4;
 
-    /* X-axis at the bottom */
-    var axisG = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + (h - margin.bottom + 4) + ')');
-    axisG.call(d3.axisBottom(xScale).tickFormat(d3.format('d')).ticks(yrMax - yrMin + 1).tickSize(0).tickPadding(8))
-      .call(function (s) { s.select('.domain').attr('stroke', '#ddd'); })
-      .selectAll('text').attr('font-size', 11).attr('fill', '#666').attr('font-weight', '500');
+    var yrExtent = d3.extent(years, function (y) { return y.year; });
+    var color = d3.scaleSequential(d3.interpolateRdYlBu).domain([yrExtent[1], yrExtent[0]]);
 
-    var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+    years.forEach(function (yr, i) {
+      var x0 = margin.left + i * colW;
+      var cx = x0 + colW / 2;
+      var heat = color(yr.year);
 
-    /* Force simulation: x pinned by avgYear; y settles by collision; weak link attraction. */
-    var sim = d3.forceSimulation(data.nodes)
-      .force('x', d3.forceX(function (d) { return xScale(d.avgYear); }).strength(0.85))
-      .force('y', d3.forceY(ih / 2).strength(0.03))
-      .force('charge', d3.forceManyBody().strength(-22))
-      .force('collide', d3.forceCollide(function (d) { return radius(d) + 11; }))
-      .force('link', d3.forceLink(data.edges).id(function (d) { return d.id; }).strength(0.05).distance(48))
-      .stop();
-    for (var i = 0; i < 400; i++) sim.tick();
-    /* Clamp y to stay inside */
-    data.nodes.forEach(function (n) {
-      n.y = Math.max(radius(n) + 8, Math.min(ih - radius(n) - 8, n.y));
+      /* Year header */
+      svg.append('text').attr('x', cx).attr('y', margin.top + 16).attr('text-anchor', 'middle')
+        .attr('font-size', 14).attr('font-weight', 700).attr('fill', heat).text(yr.year);
+      svg.append('text').attr('x', cx).attr('y', margin.top + 30).attr('text-anchor', 'middle')
+        .attr('font-size', 10).attr('fill', '#999').text(yr.papers + (yr.papers === 1 ? ' paper' : ' papers'));
+
+      /* Phrase pills, stacked vertically */
+      var n = yr.phrases.length;
+      if (!n) return;
+      var maxCount = yr.phrases[0].count;
+      var pillH = Math.min(34, (pillsArea - (n - 1) * 4) / n);
+      var pillW = colW - 8;
+
+      yr.phrases.forEach(function (p, idx) {
+        var y = pillsTop + idx * (pillH + 4);
+        var op = 0.32 + 0.55 * (p.count / maxCount);
+        svg.append('rect').attr('x', x0 + 4).attr('y', y)
+          .attr('width', pillW).attr('height', pillH).attr('rx', 5)
+          .attr('fill', heat).attr('opacity', op);
+        svg.append('text').attr('x', cx).attr('y', y + pillH / 2 + 4)
+          .attr('text-anchor', 'middle')
+          .attr('font-size', Math.min(11, pillH * 0.42))
+          .attr('font-weight', 500)
+          .attr('fill', 'white')
+          .text(p.phrase);
+        if (p.count > 1) {
+          svg.append('text').attr('x', x0 + 4 + pillW - 6).attr('y', y + 11)
+            .attr('text-anchor', 'end').attr('font-size', 8.5).attr('fill', 'rgba(255,255,255,0.85)')
+            .text('×' + p.count);
+        }
+      });
+
+      /* Light vertical separator */
+      if (i > 0) {
+        svg.append('line').attr('x1', x0).attr('x2', x0)
+          .attr('y1', margin.top + 4).attr('y2', H - margin.bottom)
+          .attr('stroke', '#eee').attr('stroke-width', 1);
+      }
     });
-
-    var link = g.append('g').attr('stroke', '#cbd5dc').attr('stroke-opacity', 0.18).attr('fill', 'none')
-      .selectAll('line').data(data.edges).join('line')
-      .attr('x1', function (d) { return d.source.x; }).attr('y1', function (d) { return d.source.y; })
-      .attr('x2', function (d) { return d.target.x; }).attr('y2', function (d) { return d.target.y; })
-      .attr('stroke-width', function (d) { return 0.4 + Math.min(d.weight, 4) * 0.25; });
-
-    var node = g.append('g').selectAll('circle').data(data.nodes).join('circle')
-      .attr('cx', function (d) { return d.x; }).attr('cy', function (d) { return d.y; })
-      .attr('r', radius)
-      .attr('fill', function (d) { return color(d.avgYear); })
-      .attr('opacity', 0.88)
-      .attr('stroke', 'white').attr('stroke-width', 1.3)
-      .style('cursor', 'pointer');
-
-    var label = g.append('g').selectAll('text').data(data.nodes).join('text')
-      .attr('x', function (d) { return d.x; })
-      .attr('y', function (d) { return d.y + radius(d) + 10; })
-      .attr('text-anchor', 'middle')
-      .attr('font-size', function (d) { return Math.min(13, 8.5 + Math.sqrt(d.count) * 0.8); })
-      .attr('font-weight', function (d) { return d.count >= 5 ? 600 : 400; })
-      .attr('fill', '#2c3e50')
-      .style('pointer-events', 'none')
-      .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif")
-      .text(function (d) { return d.id; });
-
-    /* Tooltip on hover (reuse the cn-tooltip class from the coauthor chart) */
-    var tooltip = d3.select('body').selectAll('div.cn-tooltip').size()
-      ? d3.select('body').select('div.cn-tooltip')
-      : d3.select('body').append('div').attr('class', 'cn-tooltip');
-
-    node.on('mouseover', function (e, d) {
-      tooltip.style('opacity', 1).html('<strong>' + d.id + '</strong> &middot; ' + d.count + ' papers &middot; avg ' + d.avgYear.toFixed(1));
-    }).on('mousemove', function (e) {
-      tooltip.style('left', (e.pageX + 12) + 'px').style('top', (e.pageY + 12) + 'px');
-    }).on('mouseout', function () { tooltip.style('opacity', 0); });
   }).catch(function (err) {
-    container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Word network failed to load: ' + err.message + '</div>';
+    container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Per-year phrases failed to load: ' + err.message + '</div>';
   });
 })();
 </script>

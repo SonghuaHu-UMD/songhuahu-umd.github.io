@@ -1,5281 +1,629 @@
 {
   "generated": "2026-04-18",
-  "yearRange": [
-    2019,
-    2024
-  ],
-  "nodes": [
-    {
-      "id": "mobility",
-      "count": 8,
-      "avgYear": 2021.375
-    },
-    {
-      "id": "covid",
-      "count": 8,
-      "avgYear": 2021.625
-    },
-    {
-      "id": "travel",
-      "count": 7,
-      "avgYear": 2021
-    },
-    {
-      "id": "pandemic",
-      "count": 7,
-      "avgYear": 2021.5714285714287
-    },
-    {
-      "id": "state",
-      "count": 7,
-      "avgYear": 2020.142857142857
-    },
-    {
-      "id": "million",
-      "count": 6,
-      "avgYear": 2021.1666666666667
-    },
-    {
-      "id": "county",
-      "count": 6,
-      "avgYear": 2021.6666666666667
-    },
-    {
-      "id": "number",
-      "count": 6,
-      "avgYear": 2020
-    },
-    {
-      "id": "case",
-      "count": 6,
-      "avgYear": 2021.5
-    },
-    {
-      "id": "disparities",
-      "count": 6,
-      "avgYear": 2023.1666666666667
-    },
-    {
-      "id": "human",
-      "count": 5,
-      "avgYear": 2021.2
-    },
-    {
-      "id": "mobile",
-      "count": 5,
-      "avgYear": 2021.8
-    },
-    {
-      "id": "location",
-      "count": 5,
-      "avgYear": 2021.2
-    },
-    {
-      "id": "positive",
-      "count": 5,
-      "avgYear": 2022.6
-    },
-    {
-      "id": "public",
-      "count": 5,
-      "avgYear": 2022.2
-    },
-    {
-      "id": "health",
-      "count": 5,
-      "avgYear": 2022.2
-    },
-    {
-      "id": "population",
-      "count": 5,
-      "avgYear": 2021
-    },
-    {
-      "id": "daily",
-      "count": 5,
-      "avgYear": 2021
-    },
-    {
-      "id": "variables",
-      "count": 5,
-      "avgYear": 2020.4
-    },
-    {
-      "id": "help",
-      "count": 5,
-      "avgYear": 2021.4
-    },
-    {
-      "id": "strategies",
-      "count": 5,
-      "avgYear": 2020.6
-    },
-    {
-      "id": "road",
-      "count": 5,
-      "avgYear": 2020.8
-    },
-    {
-      "id": "urban",
-      "count": 5,
-      "avgYear": 2022.4
-    },
-    {
-      "id": "areas",
-      "count": 5,
-      "avgYear": 2022.6
-    },
-    {
-      "id": "control",
-      "count": 4,
-      "avgYear": 2021.5
-    },
-    {
-      "id": "device",
-      "count": 4,
-      "avgYear": 2022
-    },
-    {
-      "id": "monthly",
-      "count": 4,
-      "avgYear": 2020.5
-    },
-    {
-      "id": "partial",
-      "count": 4,
-      "avgYear": 2021
-    },
-    {
-      "id": "decision",
-      "count": 4,
-      "avgYear": 2021.75
-    },
-    {
-      "id": "integrated",
-      "count": 4,
-      "avgYear": 2021.25
-    },
-    {
-      "id": "census",
-      "count": 4,
-      "avgYear": 2021
-    },
-    {
-      "id": "users",
-      "count": 4,
-      "avgYear": 2019.75
-    },
-    {
-      "id": "spread",
-      "count": 4,
-      "avgYear": 2021.25
-    },
-    {
-      "id": "trips",
-      "count": 4,
-      "avgYear": 2019.75
-    },
-    {
-      "id": "percentage",
-      "count": 4,
-      "avgYear": 2021
-    },
-    {
-      "id": "home",
-      "count": 4,
-      "avgYear": 2021
-    },
-    {
-      "id": "trip",
-      "count": 4,
-      "avgYear": 2021
-    },
-    {
-      "id": "average",
-      "count": 4,
-      "avgYear": 2021.25
-    },
-    {
-      "id": "insights",
-      "count": 4,
-      "avgYear": 2022.5
-    },
-    {
-      "id": "related",
-      "count": 4,
-      "avgYear": 2023.75
-    },
-    {
-      "id": "regression",
-      "count": 4,
-      "avgYear": 2022
-    },
-    {
-      "id": "employed",
-      "count": 4,
-      "avgYear": 2021.5
-    },
-    {
-      "id": "traffic",
-      "count": 4,
-      "avgYear": 2021.5
-    },
-    {
-      "id": "transportation",
-      "count": 4,
-      "avgYear": 2021
-    },
-    {
-      "id": "management",
-      "count": 4,
-      "avgYear": 2020.5
-    },
-    {
-      "id": "cost",
-      "count": 4,
-      "avgYear": 2023
-    },
-    {
-      "id": "usage",
-      "count": 4,
-      "avgYear": 2020.75
-    },
-    {
-      "id": "performance",
-      "count": 4,
-      "avgYear": 2020.75
-    },
-    {
-      "id": "income",
-      "count": 4,
-      "avgYear": 2023.25
-    },
-    {
-      "id": "effective",
-      "count": 4,
-      "avgYear": 2023.75
-    },
-    {
-      "id": "accurately",
-      "count": 3,
-      "avgYear": 2021.3333333333333
-    },
-    {
-      "id": "virus",
-      "count": 3,
-      "avgYear": 2021.3333333333333
-    },
-    {
-      "id": "critical",
-      "count": 3,
-      "avgYear": 2021.6666666666667
-    },
-    {
-      "id": "quantify",
-      "count": 3,
-      "avgYear": 2021.3333333333333
-    },
-    {
-      "id": "varying",
-      "count": 3,
-      "avgYear": 2021
-    },
-    {
-      "id": "counties",
-      "count": 3,
-      "avgYear": 2021
-    },
-    {
-      "id": "makers",
-      "count": 3,
-      "avgYear": 2022.3333333333333
-    },
-    {
-      "id": "understand",
-      "count": 3,
-      "avgYear": 2020.3333333333333
-    },
-    {
-      "id": "outcomes",
-      "count": 3,
-      "avgYear": 2021.3333333333333
-    },
-    {
-      "id": "platform",
-      "count": 3,
-      "avgYear": 2022.6666666666667
-    },
-    {
-      "id": "orders",
-      "count": 3,
-      "avgYear": 2020.6666666666667
-    },
-    {
-      "id": "social",
-      "count": 3,
-      "avgYear": 2021.3333333333333
-    },
-    {
-      "id": "interactive",
-      "count": 3,
-      "avgYear": 2022.6666666666667
-    },
-    {
-      "id": "staying",
-      "count": 3,
-      "avgYear": 2020.6666666666667
-    },
-    {
-      "id": "locations",
-      "count": 3,
-      "avgYear": 2021.3333333333333
-    },
-    {
-      "id": "distance",
-      "count": 3,
-      "avgYear": 2020
-    },
-    {
-      "id": "making",
-      "count": 3,
-      "avgYear": 2019.6666666666667
-    },
-    {
-      "id": "decisions",
-      "count": 3,
-      "avgYear": 2021.6666666666667
-    },
-    {
-      "id": "metrics",
-      "count": 3,
-      "avgYear": 2021
-    },
-    {
-      "id": "policies",
-      "count": 3,
-      "avgYear": 2023.3333333333333
-    },
-    {
-      "id": "remains",
-      "count": 3,
-      "avgYear": 2023.3333333333333
-    },
-    {
-      "id": "challenge",
-      "count": 3,
-      "avgYear": 2021.6666666666667
-    },
-    {
-      "id": "dataset",
-      "count": 3,
-      "avgYear": 2021
-    },
-    {
-      "id": "information",
-      "count": 3,
-      "avgYear": 2019
-    },
-    {
-      "id": "stay",
-      "count": 3,
-      "avgYear": 2021
-    },
-    {
-      "id": "miles",
-      "count": 3,
-      "avgYear": 2021.6666666666667
-    },
-    {
-      "id": "states",
-      "count": 3,
-      "avgYear": 2021
-    },
-    {
-      "id": "outbreak",
-      "count": 3,
-      "avgYear": 2021.3333333333333
-    },
-    {
-      "id": "future",
-      "count": 3,
-      "avgYear": 2022
-    },
-    {
-      "id": "carsharing",
-      "count": 3,
-      "avgYear": 2019.3333333333333
-    },
-    {
-      "id": "system",
-      "count": 3,
-      "avgYear": 2021.3333333333333
-    },
-    {
-      "id": "gradient",
-      "count": 3,
-      "avgYear": 2020.3333333333333
-    },
-    {
-      "id": "statistical",
-      "count": 3,
-      "avgYear": 2021.3333333333333
-    },
-    {
-      "id": "enhance",
-      "count": 3,
-      "avgYear": 2020.3333333333333
-    },
-    {
-      "id": "socioeconomic",
-      "count": 3,
-      "avgYear": 2023
-    },
-    {
-      "id": "best",
-      "count": 3,
-      "avgYear": 2020.6666666666667
-    },
-    {
-      "id": "systems",
-      "count": 3,
-      "avgYear": 2020.6666666666667
-    },
-    {
-      "id": "indicate",
-      "count": 3,
-      "avgYear": 2022.6666666666667
-    },
-    {
-      "id": "greater",
-      "count": 3,
-      "avgYear": 2019.6666666666667
-    },
-    {
-      "id": "period",
-      "count": 3,
-      "avgYear": 2020
-    }
-  ],
-  "edges": [
-    {
-      "source": "accurately",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "covid",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "device",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "county",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "partial",
-      "weight": 3
-    },
-    {
-      "source": "accurately",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "health",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "mobility",
-      "weight": 4
-    },
-    {
-      "source": "human",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "human",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "human",
-      "weight": 4
-    },
-    {
-      "source": "human",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "location",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "human",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "human",
-      "weight": 3
-    },
-    {
-      "source": "human",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "human",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "pandemic",
-      "weight": 4
-    },
-    {
-      "source": "human",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "health",
-      "target": "human",
-      "weight": 3
-    },
-    {
-      "source": "human",
-      "target": "outcomes",
-      "weight": 3
-    },
-    {
-      "source": "mobility",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "critical",
-      "target": "mobility",
-      "weight": 3
-    },
-    {
-      "source": "control",
-      "target": "mobility",
-      "weight": 4
-    },
-    {
-      "source": "covid",
-      "target": "mobility",
-      "weight": 6
-    },
-    {
-      "source": "mobile",
-      "target": "mobility",
-      "weight": 4
-    },
-    {
-      "source": "device",
-      "target": "mobility",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "mobility",
-      "weight": 5
-    },
-    {
-      "source": "million",
-      "target": "mobility",
-      "weight": 4
-    },
-    {
-      "source": "mobility",
-      "target": "monthly",
-      "weight": 3
-    },
-    {
-      "source": "mobility",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "mobility",
-      "weight": 5
-    },
-    {
-      "source": "mobility",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "mobility",
-      "weight": 3
-    },
-    {
-      "source": "mobility",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "number",
-      "weight": 3
-    },
-    {
-      "source": "decision",
-      "target": "mobility",
-      "weight": 2
-    },
-    {
-      "source": "makers",
-      "target": "mobility",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "pandemic",
-      "weight": 6
-    },
-    {
-      "source": "integrated",
-      "target": "mobility",
-      "weight": 3
-    },
-    {
-      "source": "mobility",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "health",
-      "target": "mobility",
-      "weight": 3
-    },
-    {
-      "source": "mobility",
-      "target": "outcomes",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "virus",
-      "weight": 3
-    },
-    {
-      "source": "mobile",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "million",
-      "target": "virus",
-      "weight": 3
-    },
-    {
-      "source": "monthly",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "travel",
-      "target": "virus",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "partial",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "positive",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "virus",
-      "weight": 3
-    },
-    {
-      "source": "integrated",
-      "target": "virus",
-      "weight": 3
-    },
-    {
-      "source": "public",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "health",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "critical",
-      "weight": 3
-    },
-    {
-      "source": "critical",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "critical",
-      "target": "device",
-      "weight": 2
-    },
-    {
-      "source": "critical",
-      "target": "location",
-      "weight": 3
-    },
-    {
-      "source": "critical",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "critical",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "critical",
-      "weight": 2
-    },
-    {
-      "source": "critical",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "critical",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "covid",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "mobile",
-      "weight": 3
-    },
-    {
-      "source": "control",
-      "target": "device",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "location",
-      "weight": 3
-    },
-    {
-      "source": "control",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "control",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "county",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "counties",
-      "weight": 3
-    },
-    {
-      "source": "control",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "control",
-      "target": "health",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "outcomes",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "mobile",
-      "weight": 4
-    },
-    {
-      "source": "covid",
-      "target": "device",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "location",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "million",
-      "weight": 4
-    },
-    {
-      "source": "covid",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "travel",
-      "weight": 4
-    },
-    {
-      "source": "county",
-      "target": "covid",
-      "weight": 6
-    },
-    {
-      "source": "covid",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "covid",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "decision",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "makers",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "pandemic",
-      "weight": 6
-    },
-    {
-      "source": "covid",
-      "target": "integrated",
-      "weight": 4
-    },
-    {
-      "source": "covid",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "health",
-      "weight": 5
-    },
-    {
-      "source": "covid",
-      "target": "outcomes",
-      "weight": 3
-    },
-    {
-      "source": "device",
-      "target": "mobile",
-      "weight": 4
-    },
-    {
-      "source": "location",
-      "target": "mobile",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "mobile",
-      "weight": 3
-    },
-    {
-      "source": "mobile",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "mobile",
-      "weight": 4
-    },
-    {
-      "source": "counties",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "makers",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "integrated",
-      "target": "mobile",
-      "weight": 3
-    },
-    {
-      "source": "mobile",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "health",
-      "target": "mobile",
-      "weight": 3
-    },
-    {
-      "source": "mobile",
-      "target": "outcomes",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "location",
-      "weight": 3
-    },
-    {
-      "source": "device",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "device",
-      "weight": 3
-    },
-    {
-      "source": "device",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "device",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "makers",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "integrated",
-      "weight": 3
-    },
-    {
-      "source": "device",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "device",
-      "target": "health",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "monthly",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "location",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "location",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "number",
-      "weight": 3
-    },
-    {
-      "source": "decision",
-      "target": "location",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "makers",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "integrated",
-      "target": "location",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "million",
-      "target": "monthly",
-      "weight": 4
-    },
-    {
-      "source": "million",
-      "target": "travel",
-      "weight": 4
-    },
-    {
-      "source": "county",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "counties",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "partial",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "number",
-      "weight": 3
-    },
-    {
-      "source": "decision",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "million",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "million",
-      "target": "pandemic",
-      "weight": 5
-    },
-    {
-      "source": "integrated",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "health",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "outcomes",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "number",
-      "weight": 3
-    },
-    {
-      "source": "decision",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "integrated",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "quantify",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "counties",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "partial",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "positive",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "number",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "makers",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "travel",
-      "weight": 4
-    },
-    {
-      "source": "integrated",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "public",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "health",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "outcomes",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "county",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "decision",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "makers",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "pandemic",
-      "weight": 5
-    },
-    {
-      "source": "county",
-      "target": "integrated",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "health",
-      "weight": 4
-    },
-    {
-      "source": "county",
-      "target": "outcomes",
-      "weight": 3
-    },
-    {
-      "source": "positive",
-      "target": "quantify",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "quantify",
-      "weight": 2
-    },
-    {
-      "source": "makers",
-      "target": "quantify",
-      "weight": 2
-    },
-    {
-      "source": "public",
-      "target": "quantify",
-      "weight": 2
-    },
-    {
-      "source": "partial",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "positive",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "health",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "outcomes",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "counties",
-      "target": "health",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "outcomes",
-      "weight": 2
-    },
-    {
-      "source": "partial",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "number",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "partial",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "partial",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "health",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "makers",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "positive",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "integrated",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "positive",
-      "target": "public",
-      "weight": 4
-    },
-    {
-      "source": "health",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "outcomes",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "makers",
-      "weight": 3
-    },
-    {
-      "source": "decision",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "public",
-      "weight": 4
-    },
-    {
-      "source": "integrated",
-      "target": "makers",
-      "weight": 2
-    },
-    {
-      "source": "makers",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "pandemic",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "public",
-      "target": "understand",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "pandemic",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "health",
-      "target": "pandemic",
-      "weight": 4
-    },
-    {
-      "source": "outcomes",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "integrated",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "health",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "health",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "health",
-      "target": "outcomes",
-      "weight": 3
-    },
-    {
-      "source": "case",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "orders",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "locations",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "device",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "device",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "locations",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "location",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "location",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "population",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "orders",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "location",
-      "weight": 4
-    },
-    {
-      "source": "location",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "percentage",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "location",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "locations",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "trip",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "help",
-      "target": "location",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "metrics",
-      "weight": 3
-    },
-    {
-      "source": "case",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "orders",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "integrated",
-      "target": "metrics",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "covid",
-      "weight": 4
-    },
-    {
-      "source": "census",
-      "target": "covid",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "platform",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "spread",
-      "weight": 4
-    },
-    {
-      "source": "covid",
-      "target": "orders",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "daily",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "interactive",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "variables",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "percentage",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "staying",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "home",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "metrics",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "census",
-      "weight": 3
-    },
-    {
-      "source": "case",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "platform",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "orders",
-      "weight": 3
-    },
-    {
-      "source": "case",
-      "target": "mobility",
-      "weight": 4
-    },
-    {
-      "source": "case",
-      "target": "daily",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "interactive",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "percentage",
-      "weight": 3
-    },
-    {
-      "source": "case",
-      "target": "staying",
-      "weight": 3
-    },
-    {
-      "source": "case",
-      "target": "home",
-      "weight": 3
-    },
-    {
-      "source": "case",
-      "target": "county",
-      "weight": 3
-    },
-    {
-      "source": "case",
-      "target": "state",
-      "weight": 4
-    },
-    {
-      "source": "case",
-      "target": "help",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "metrics",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "orders",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "mobility",
-      "weight": 4
-    },
-    {
-      "source": "census",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "daily",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "percentage",
-      "weight": 4
-    },
-    {
-      "source": "census",
-      "target": "staying",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "home",
-      "weight": 4
-    },
-    {
-      "source": "census",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "county",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "help",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "metrics",
-      "weight": 3
-    },
-    {
-      "source": "population",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "orders",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "population",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "population",
-      "weight": 4
-    },
-    {
-      "source": "population",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "population",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "population",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "locations",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "population",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "distance",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "population",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "metrics",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "platform",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "platform",
-      "weight": 2
-    },
-    {
-      "source": "platform",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "interactive",
-      "target": "platform",
-      "weight": 3
-    },
-    {
-      "source": "platform",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "platform",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "trips",
-      "target": "users",
-      "weight": 3
-    },
-    {
-      "source": "users",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "locations",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "trip",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "distance",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "state",
-      "target": "users",
-      "weight": 3
-    },
-    {
-      "source": "making",
-      "target": "users",
-      "weight": 3
-    },
-    {
-      "source": "public",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "orders",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "spread",
-      "weight": 3
-    },
-    {
-      "source": "social",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "interactive",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "spread",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "spread",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "spread",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "spread",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "orders",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "orders",
-      "weight": 2
-    },
-    {
-      "source": "orders",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "orders",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "orders",
-      "target": "percentage",
-      "weight": 3
-    },
-    {
-      "source": "orders",
-      "target": "staying",
-      "weight": 3
-    },
-    {
-      "source": "home",
-      "target": "orders",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "orders",
-      "weight": 2
-    },
-    {
-      "source": "orders",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "metrics",
-      "target": "orders",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "social",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "mobility",
-      "weight": 4
-    },
-    {
-      "source": "interactive",
-      "target": "mobility",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "variables",
-      "weight": 3
-    },
-    {
-      "source": "mobility",
-      "target": "percentage",
-      "weight": 4
-    },
-    {
-      "source": "mobility",
-      "target": "staying",
-      "weight": 3
-    },
-    {
-      "source": "home",
-      "target": "mobility",
-      "weight": 4
-    },
-    {
-      "source": "locations",
-      "target": "mobility",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "trip",
-      "weight": 3
-    },
-    {
-      "source": "mobility",
-      "target": "state",
-      "weight": 4
-    },
-    {
-      "source": "help",
-      "target": "mobility",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "mobility",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "interactive",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "social",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "social",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "percentage",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "home",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "locations",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "trip",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "distance",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "help",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "metrics",
-      "weight": 3
-    },
-    {
-      "source": "decision",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "distance",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "making",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "help",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "decisions",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "makers",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "makers",
-      "weight": 2
-    },
-    {
-      "source": "interactive",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "interactive",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "staying",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "trip",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "distance",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "state",
-      "target": "trips",
-      "weight": 4
-    },
-    {
-      "source": "making",
-      "target": "trips",
-      "weight": 3
-    },
-    {
-      "source": "public",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "staying",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "locations",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "distance",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "variables",
-      "weight": 3
-    },
-    {
-      "source": "state",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "staying",
-      "weight": 3
-    },
-    {
-      "source": "home",
-      "target": "percentage",
-      "weight": 4
-    },
-    {
-      "source": "percentage",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "help",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "percentage",
-      "weight": 3
-    },
-    {
-      "source": "home",
-      "target": "staying",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "state",
-      "target": "staying",
-      "weight": 3
-    },
-    {
-      "source": "metrics",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "home",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "help",
-      "target": "home",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "metrics",
-      "weight": 3
-    },
-    {
-      "source": "locations",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "locations",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "locations",
-      "weight": 2
-    },
-    {
-      "source": "state",
-      "target": "trip",
-      "weight": 3
-    },
-    {
-      "source": "making",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "distance",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "distance",
-      "target": "making",
-      "weight": 2
-    },
-    {
-      "source": "distance",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "making",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "public",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "making",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "making",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "help",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "metrics",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "outbreak",
-      "target": "spread",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "dataset",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "covid",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "insights",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "outbreak",
-      "weight": 3
-    },
-    {
-      "source": "covid",
-      "target": "future",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "human",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "human",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "human",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "orders",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "human",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "human",
-      "target": "outbreak",
-      "weight": 2
-    },
-    {
-      "source": "remains",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "challenge",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "information",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "stay",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "state",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "orders",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "staying",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "states",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "future",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "policies",
-      "target": "remains",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "policies",
-      "weight": 2
-    },
-    {
-      "source": "mobility",
-      "target": "stay",
-      "weight": 3
-    },
-    {
-      "source": "average",
-      "target": "mobility",
-      "weight": 3
-    },
-    {
-      "source": "miles",
-      "target": "mobility",
-      "weight": 3
-    },
-    {
-      "source": "mobility",
-      "target": "states",
-      "weight": 3
-    },
-    {
-      "source": "mobility",
-      "target": "outbreak",
-      "weight": 3
-    },
-    {
-      "source": "future",
-      "target": "mobility",
-      "weight": 2
-    },
-    {
-      "source": "challenge",
-      "target": "remains",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "remains",
-      "weight": 2
-    },
-    {
-      "source": "challenge",
-      "target": "dataset",
-      "weight": 2
-    },
-    {
-      "source": "challenge",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "challenge",
-      "target": "information",
-      "weight": 2
-    },
-    {
-      "source": "challenge",
-      "target": "daily",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "challenge",
-      "weight": 2
-    },
-    {
-      "source": "challenge",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "challenge",
-      "target": "insights",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "information",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "dataset",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "dataset",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "insights",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "dataset",
-      "target": "future",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "pandemic",
-      "target": "stay",
-      "weight": 3
-    },
-    {
-      "source": "home",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "pandemic",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "orders",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "miles",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "percentage",
-      "weight": 3
-    },
-    {
-      "source": "pandemic",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "states",
-      "weight": 3
-    },
-    {
-      "source": "insights",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "outbreak",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "future",
-      "target": "pandemic",
-      "weight": 3
-    },
-    {
-      "source": "insights",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "future",
-      "target": "integrated",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "location",
-      "weight": 2
-    },
-    {
-      "source": "location",
-      "target": "miles",
-      "weight": 3
-    },
-    {
-      "source": "location",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "future",
-      "target": "location",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "stay",
-      "weight": 3
-    },
-    {
-      "source": "home",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "state",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "orders",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "million",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "miles",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "million",
-      "target": "percentage",
-      "weight": 3
-    },
-    {
-      "source": "million",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "million",
-      "target": "states",
-      "weight": 3
-    },
-    {
-      "source": "insights",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "future",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "miles",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "future",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "case",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "outbreak",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "stay",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "miles",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "states",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "future",
-      "weight": 2
-    },
-    {
-      "source": "information",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "population",
-      "weight": 3
-    },
-    {
-      "source": "number",
-      "target": "population",
-      "weight": 3
-    },
-    {
-      "source": "miles",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "information",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "information",
-      "weight": 2
-    },
-    {
-      "source": "information",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "stay",
-      "weight": 3
-    },
-    {
-      "source": "state",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "orders",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "miles",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "stay",
-      "weight": 3
-    },
-    {
-      "source": "stay",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "states",
-      "target": "stay",
-      "weight": 3
-    },
-    {
-      "source": "future",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "miles",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "states",
-      "weight": 3
-    },
-    {
-      "source": "future",
-      "target": "home",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "state",
-      "weight": 4
-    },
-    {
-      "source": "miles",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "state",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "orders",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "miles",
-      "weight": 2
-    },
-    {
-      "source": "metrics",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "future",
-      "target": "metrics",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "daily",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "number",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "miles",
-      "weight": 3
-    },
-    {
-      "source": "daily",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "future",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "number",
-      "weight": 3
-    },
-    {
-      "source": "average",
-      "target": "miles",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "outbreak",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "trips",
-      "weight": 3
-    },
-    {
-      "source": "miles",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "miles",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "miles",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "future",
-      "target": "miles",
-      "weight": 2
-    },
-    {
-      "source": "percentage",
-      "target": "states",
-      "weight": 3
-    },
-    {
-      "source": "future",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "states",
-      "target": "staying",
-      "weight": 2
-    },
-    {
-      "source": "future",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "future",
-      "target": "insights",
-      "weight": 2
-    },
-    {
-      "source": "future",
-      "target": "virus",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "users",
-      "weight": 3
-    },
-    {
-      "source": "carsharing",
-      "target": "strategies",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "gradient",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "enhance",
-      "weight": 2
-    },
-    {
-      "source": "best",
-      "target": "carsharing",
-      "weight": 2
-    },
-    {
-      "source": "strategies",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "gradient",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "regression",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "partial",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "enhance",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "best",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "related",
-      "target": "system",
-      "weight": 2
-    },
-    {
-      "source": "strategies",
-      "target": "system",
-      "weight": 2
-    },
-    {
-      "source": "statistical",
-      "target": "system",
-      "weight": 2
-    },
-    {
-      "source": "related",
-      "target": "strategies",
-      "weight": 2
-    },
-    {
-      "source": "regression",
-      "target": "related",
-      "weight": 2
-    },
-    {
-      "source": "employed",
-      "target": "related",
-      "weight": 2
-    },
-    {
-      "source": "related",
-      "target": "statistical",
-      "weight": 2
-    },
-    {
-      "source": "related",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "enhance",
-      "target": "related",
-      "weight": 2
-    },
-    {
-      "source": "related",
-      "target": "socioeconomic",
-      "weight": 3
-    },
-    {
-      "source": "help",
-      "target": "related",
-      "weight": 2
-    },
-    {
-      "source": "regression",
-      "target": "strategies",
-      "weight": 3
-    },
-    {
-      "source": "statistical",
-      "target": "strategies",
-      "weight": 3
-    },
-    {
-      "source": "strategies",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "enhance",
-      "target": "strategies",
-      "weight": 2
-    },
-    {
-      "source": "socioeconomic",
-      "target": "strategies",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "strategies",
-      "weight": 2
-    },
-    {
-      "source": "gradient",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "gradient",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "best",
-      "target": "gradient",
-      "weight": 2
-    },
-    {
-      "source": "partial",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "regression",
-      "target": "statistical",
-      "weight": 2
-    },
-    {
-      "source": "enhance",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "regression",
-      "target": "socioeconomic",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "accurately",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "employed",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "employed",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "employed",
-      "target": "enhance",
-      "weight": 2
-    },
-    {
-      "source": "employed",
-      "target": "socioeconomic",
-      "weight": 2
-    },
-    {
-      "source": "best",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "socioeconomic",
-      "target": "statistical",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "statistical",
-      "weight": 2
-    },
-    {
-      "source": "enhance",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "socioeconomic",
-      "target": "varying",
-      "weight": 2
-    },
-    {
-      "source": "enhance",
-      "target": "socioeconomic",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "socioeconomic",
-      "weight": 2
-    },
-    {
-      "source": "best",
-      "target": "help",
-      "weight": 2
-    },
-    {
-      "source": "road",
-      "target": "traffic",
-      "weight": 4
-    },
-    {
-      "source": "traffic",
-      "target": "transportation",
-      "weight": 3
-    },
-    {
-      "source": "traffic",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "system",
-      "target": "traffic",
-      "weight": 2
-    },
-    {
-      "source": "information",
-      "target": "traffic",
-      "weight": 2
-    },
-    {
-      "source": "road",
-      "target": "transportation",
-      "weight": 3
-    },
-    {
-      "source": "road",
-      "target": "urban",
-      "weight": 3
-    },
-    {
-      "source": "road",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "period",
-      "target": "road",
-      "weight": 2
-    },
-    {
-      "source": "road",
-      "target": "system",
-      "weight": 2
-    },
-    {
-      "source": "information",
-      "target": "road",
-      "weight": 2
-    },
-    {
-      "source": "systems",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "systems",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "greater",
-      "target": "systems",
-      "weight": 2
-    },
-    {
-      "source": "period",
-      "target": "systems",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "systems",
-      "weight": 2
-    },
-    {
-      "source": "transportation",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "period",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "information",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "quantify",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "statistical",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "indicate",
-      "target": "urban",
-      "weight": 3
-    },
-    {
-      "source": "travel",
-      "target": "urban",
-      "weight": 3
-    },
-    {
-      "source": "period",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "system",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "strategies",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "quantify",
-      "target": "statistical",
-      "weight": 2
-    },
-    {
-      "source": "indicate",
-      "target": "quantify",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "quantify",
-      "weight": 2
-    },
-    {
-      "source": "quantify",
-      "target": "strategies",
-      "weight": 2
-    },
-    {
-      "source": "indicate",
-      "target": "statistical",
-      "weight": 2
-    },
-    {
-      "source": "statistical",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "statistical",
-      "weight": 2
-    },
-    {
-      "source": "indicate",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "indicate",
-      "target": "management",
-      "weight": 2
-    },
-    {
-      "source": "indicate",
-      "target": "strategies",
-      "weight": 2
-    },
-    {
-      "source": "greater",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "period",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "management",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "strategies",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "greater",
-      "target": "management",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "strategies",
-      "weight": 3
-    },
-    {
-      "source": "critical",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "critical",
-      "target": "miles",
-      "weight": 2
-    },
-    {
-      "source": "critical",
-      "target": "daily",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "traffic",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "traffic",
-      "weight": 2
-    },
-    {
-      "source": "population",
-      "target": "traffic",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "traffic",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "traffic",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "miles",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "daily",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "mobile",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "device",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "population",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "road",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "road",
-      "weight": 2
-    },
-    {
-      "source": "population",
-      "target": "road",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "road",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "road",
-      "weight": 2
-    },
-    {
-      "source": "road",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "population",
-      "weight": 2
-    },
-    {
-      "source": "average",
-      "target": "cost",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "daily",
-      "weight": 2
-    },
-    {
-      "source": "miles",
-      "target": "trip",
-      "weight": 2
-    },
-    {
-      "source": "county",
-      "target": "disparities",
-      "weight": 3
-    },
-    {
-      "source": "county",
-      "target": "outbreak",
-      "weight": 2
-    },
-    {
-      "source": "covid",
-      "target": "disparities",
-      "weight": 4
-    },
-    {
-      "source": "disparities",
-      "target": "human",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "mobility",
-      "weight": 3
-    },
-    {
-      "source": "case",
-      "target": "health",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "health",
-      "weight": 4
-    },
-    {
-      "source": "case",
-      "target": "outcomes",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "outcomes",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "disparities",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "related",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "socioeconomic",
-      "weight": 2
-    },
-    {
-      "source": "positive",
-      "target": "socioeconomic",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "pandemic",
-      "weight": 4
-    },
-    {
-      "source": "disparities",
-      "target": "related",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "average",
-      "target": "employed",
-      "weight": 2
-    },
-    {
-      "source": "positive",
-      "target": "related",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "regression",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "travel",
-      "weight": 3
-    },
-    {
-      "source": "areas",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "systems",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "areas",
-      "target": "dataset",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "areas",
-      "target": "disparities",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "insights",
-      "weight": 3
-    },
-    {
-      "source": "dataset",
-      "target": "transportation",
-      "weight": 2
-    },
-    {
-      "source": "public",
-      "target": "systems",
-      "weight": 2
-    },
-    {
-      "source": "million",
-      "target": "systems",
-      "weight": 2
-    },
-    {
-      "source": "partial",
-      "target": "systems",
-      "weight": 2
-    },
-    {
-      "source": "positive",
-      "target": "systems",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "systems",
-      "weight": 2
-    },
-    {
-      "source": "public",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "public",
-      "weight": 3
-    },
-    {
-      "source": "disparities",
-      "target": "future",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "million",
-      "weight": 3
-    },
-    {
-      "source": "disparities",
-      "target": "mobile",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "partial",
-      "weight": 2
-    },
-    {
-      "source": "positive",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "positive",
-      "weight": 3
-    },
-    {
-      "source": "disparities",
-      "target": "insights",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "making",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "usage",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "management",
-      "weight": 2
-    },
-    {
-      "source": "carsharing",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "understand",
-      "target": "usage",
-      "weight": 2
-    },
-    {
-      "source": "usage",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "users",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "decision",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "insights",
-      "weight": 2
-    },
-    {
-      "source": "decision",
-      "target": "management",
-      "weight": 2
-    },
-    {
-      "source": "making",
-      "target": "usage",
-      "weight": 2
-    },
-    {
-      "source": "making",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "making",
-      "target": "management",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "usage",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "usage",
-      "weight": 2
-    },
-    {
-      "source": "state",
-      "target": "usage",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "usage",
-      "weight": 2
-    },
-    {
-      "source": "trips",
-      "target": "usage",
-      "weight": 2
-    },
-    {
-      "source": "best",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "million",
-      "target": "performance",
-      "weight": 2
-    },
-    {
-      "source": "gradient",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "greater",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "best",
-      "target": "performance",
-      "weight": 2
-    },
-    {
-      "source": "best",
-      "target": "monthly",
-      "weight": 2
-    },
-    {
-      "source": "number",
-      "target": "performance",
-      "weight": 2
-    },
-    {
-      "source": "monthly",
-      "target": "performance",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "performance",
-      "weight": 2
-    },
-    {
-      "source": "distance",
-      "target": "performance",
-      "weight": 2
-    },
-    {
-      "source": "gradient",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "gradient",
-      "target": "greater",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "positive",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "distance",
-      "target": "number",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "management",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "distance",
-      "weight": 2
-    },
-    {
-      "source": "greater",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "state",
-      "weight": 2
-    },
-    {
-      "source": "insights",
-      "target": "management",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "public",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "trips",
-      "weight": 2
-    },
-    {
-      "source": "strategies",
-      "target": "usage",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "management",
-      "target": "regression",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "management",
-      "weight": 2
-    },
-    {
-      "source": "decisions",
-      "target": "strategies",
-      "weight": 2
-    },
-    {
-      "source": "daily",
-      "target": "performance",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "challenge",
-      "weight": 2
-    },
-    {
-      "source": "challenge",
-      "target": "cost",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "employed",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "employed",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "cost",
-      "weight": 3
-    },
-    {
-      "source": "disparities",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "home",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "disparities",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "disparities",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "income",
-      "weight": 3
-    },
-    {
-      "source": "census",
-      "target": "disparities",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "variables",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "mobility",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "stay",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "home",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "home",
-      "weight": 2
-    },
-    {
-      "source": "home",
-      "target": "income",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "million",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "states",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "counties",
-      "target": "income",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "counties",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "percentage",
-      "weight": 2
-    },
-    {
-      "source": "control",
-      "target": "income",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "control",
-      "weight": 2
-    },
-    {
-      "source": "census",
-      "target": "income",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "pandemic",
-      "weight": 2
-    },
-    {
-      "source": "pandemic",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "strategies",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "mobility",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "platform",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "social",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "interactive",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "case",
-      "target": "road",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "travel",
-      "weight": 2
-    },
-    {
-      "source": "indicate",
-      "target": "remains",
-      "weight": 2
-    },
-    {
-      "source": "remains",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "remains",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "remains",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "remains",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "indicate",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "indicate",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "indicate",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "income",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "policies",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "areas",
-      "target": "income",
-      "weight": 2
-    },
-    {
-      "source": "cost",
-      "target": "income",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "help",
-      "weight": 2
-    },
-    {
-      "source": "help",
-      "target": "income",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "help",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "income",
-      "weight": 2
-    },
-    {
-      "source": "disparities",
-      "target": "effective",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "related",
-      "target": "urban",
-      "weight": 2
-    },
-    {
-      "source": "effective",
-      "target": "related",
-      "weight": 2
+  "years": [
+    {
+      "year": 2018,
+      "papers": 3,
+      "phrases": [
+        {
+          "phrase": "road waterlogging",
+          "count": 2
+        },
+        {
+          "phrase": "management strategies",
+          "count": 2
+        },
+        {
+          "phrase": "rain causes",
+          "count": 1
+        },
+        {
+          "phrase": "causes significant",
+          "count": 1
+        },
+        {
+          "phrase": "significant drops",
+          "count": 1
+        },
+        {
+          "phrase": "drops traffic",
+          "count": 1
+        },
+        {
+          "phrase": "traffic speed",
+          "count": 1
+        },
+        {
+          "phrase": "speed volume",
+          "count": 1
+        }
+      ],
+      "edges": []
+    },
+    {
+      "year": 2019,
+      "papers": 1,
+      "phrases": [
+        {
+          "phrase": "annual average",
+          "count": 1
+        },
+        {
+          "phrase": "average traffic",
+          "count": 1
+        },
+        {
+          "phrase": "traffic aadt",
+          "count": 1
+        },
+        {
+          "phrase": "aadt measurement",
+          "count": 1
+        },
+        {
+          "phrase": "measurement traffic",
+          "count": 1
+        },
+        {
+          "phrase": "traffic engineering",
+          "count": 1
+        },
+        {
+          "phrase": "engineering local",
+          "count": 1
+        },
+        {
+          "phrase": "local streets",
+          "count": 1
+        }
+      ],
+      "edges": []
+    },
+    {
+      "year": 2020,
+      "papers": 7,
+      "phrases": [
+        {
+          "phrase": "human mobility",
+          "count": 3
+        },
+        {
+          "phrase": "mobility pandemic",
+          "count": 3
+        },
+        {
+          "phrase": "mobile device",
+          "count": 2
+        },
+        {
+          "phrase": "device location",
+          "count": 2
+        },
+        {
+          "phrase": "location monthly",
+          "count": 2
+        },
+        {
+          "phrase": "monthly active",
+          "count": 2
+        },
+        {
+          "phrase": "decision makers",
+          "count": 2
+        },
+        {
+          "phrase": "spread coronavirus",
+          "count": 2
+        }
+      ],
+      "edges": [
+        {
+          "source": "human mobility",
+          "target": "location monthly",
+          "weight": 2
+        },
+        {
+          "source": "human mobility",
+          "target": "monthly active",
+          "weight": 2
+        },
+        {
+          "source": "human mobility",
+          "target": "mobility pandemic",
+          "weight": 3
+        },
+        {
+          "source": "device location",
+          "target": "mobile device",
+          "weight": 2
+        },
+        {
+          "source": "decision makers",
+          "target": "mobile device",
+          "weight": 2
+        },
+        {
+          "source": "decision makers",
+          "target": "device location",
+          "weight": 2
+        },
+        {
+          "source": "location monthly",
+          "target": "monthly active",
+          "weight": 2
+        },
+        {
+          "source": "location monthly",
+          "target": "mobility pandemic",
+          "weight": 2
+        },
+        {
+          "source": "mobility pandemic",
+          "target": "monthly active",
+          "weight": 2
+        },
+        {
+          "source": "human mobility",
+          "target": "spread coronavirus",
+          "weight": 2
+        },
+        {
+          "source": "mobility pandemic",
+          "target": "spread coronavirus",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "papers": 3,
+      "phrases": [
+        {
+          "phrase": "covid platform",
+          "count": 2
+        },
+        {
+          "phrase": "staying home",
+          "count": 2
+        },
+        {
+          "phrase": "covid pandemic",
+          "count": 2
+        },
+        {
+          "phrase": "team utilized",
+          "count": 1
+        },
+        {
+          "phrase": "utilized privacy",
+          "count": 1
+        },
+        {
+          "phrase": "privacy protected",
+          "count": 1
+        },
+        {
+          "phrase": "protected mobile",
+          "count": 1
+        },
+        {
+          "phrase": "mobile device",
+          "count": 1
+        }
+      ],
+      "edges": []
+    },
+    {
+      "year": 2022,
+      "papers": 3,
+      "phrases": [
+        {
+          "phrase": "mobility interventions",
+          "count": 1
+        },
+        {
+          "phrase": "interventions communities",
+          "count": 1
+        },
+        {
+          "phrase": "communities play",
+          "count": 1
+        },
+        {
+          "phrase": "play critical",
+          "count": 1
+        },
+        {
+          "phrase": "critical containing",
+          "count": 1
+        },
+        {
+          "phrase": "containing pandemic",
+          "count": 1
+        },
+        {
+          "phrase": "pandemic early",
+          "count": 1
+        },
+        {
+          "phrase": "early stage",
+          "count": 1
+        }
+      ],
+      "edges": []
+    },
+    {
+      "year": 2023,
+      "papers": 5,
+      "phrases": [
+        {
+          "phrase": "vehicle volume",
+          "count": 2
+        },
+        {
+          "phrase": "volume serves",
+          "count": 2
+        },
+        {
+          "phrase": "serves critical",
+          "count": 2
+        },
+        {
+          "phrase": "critical metric",
+          "count": 2
+        },
+        {
+          "phrase": "metric fundamental",
+          "count": 2
+        },
+        {
+          "phrase": "fundamental basis",
+          "count": 2
+        },
+        {
+          "phrase": "basis traffic",
+          "count": 2
+        },
+        {
+          "phrase": "traffic signal",
+          "count": 2
+        }
+      ],
+      "edges": [
+        {
+          "source": "vehicle volume",
+          "target": "volume serves",
+          "weight": 2
+        },
+        {
+          "source": "serves critical",
+          "target": "vehicle volume",
+          "weight": 2
+        },
+        {
+          "source": "critical metric",
+          "target": "vehicle volume",
+          "weight": 2
+        },
+        {
+          "source": "metric fundamental",
+          "target": "vehicle volume",
+          "weight": 2
+        },
+        {
+          "source": "fundamental basis",
+          "target": "vehicle volume",
+          "weight": 2
+        },
+        {
+          "source": "basis traffic",
+          "target": "vehicle volume",
+          "weight": 2
+        },
+        {
+          "source": "traffic signal",
+          "target": "vehicle volume",
+          "weight": 2
+        },
+        {
+          "source": "serves critical",
+          "target": "volume serves",
+          "weight": 2
+        },
+        {
+          "source": "critical metric",
+          "target": "volume serves",
+          "weight": 2
+        },
+        {
+          "source": "metric fundamental",
+          "target": "volume serves",
+          "weight": 2
+        },
+        {
+          "source": "fundamental basis",
+          "target": "volume serves",
+          "weight": 2
+        },
+        {
+          "source": "basis traffic",
+          "target": "volume serves",
+          "weight": 2
+        },
+        {
+          "source": "traffic signal",
+          "target": "volume serves",
+          "weight": 2
+        },
+        {
+          "source": "critical metric",
+          "target": "serves critical",
+          "weight": 2
+        },
+        {
+          "source": "metric fundamental",
+          "target": "serves critical",
+          "weight": 2
+        },
+        {
+          "source": "fundamental basis",
+          "target": "serves critical",
+          "weight": 2
+        },
+        {
+          "source": "basis traffic",
+          "target": "serves critical",
+          "weight": 2
+        },
+        {
+          "source": "serves critical",
+          "target": "traffic signal",
+          "weight": 2
+        },
+        {
+          "source": "critical metric",
+          "target": "metric fundamental",
+          "weight": 2
+        },
+        {
+          "source": "critical metric",
+          "target": "fundamental basis",
+          "weight": 2
+        },
+        {
+          "source": "basis traffic",
+          "target": "critical metric",
+          "weight": 2
+        },
+        {
+          "source": "critical metric",
+          "target": "traffic signal",
+          "weight": 2
+        },
+        {
+          "source": "fundamental basis",
+          "target": "metric fundamental",
+          "weight": 2
+        },
+        {
+          "source": "basis traffic",
+          "target": "metric fundamental",
+          "weight": 2
+        },
+        {
+          "source": "metric fundamental",
+          "target": "traffic signal",
+          "weight": 2
+        },
+        {
+          "source": "basis traffic",
+          "target": "fundamental basis",
+          "weight": 2
+        },
+        {
+          "source": "fundamental basis",
+          "target": "traffic signal",
+          "weight": 2
+        },
+        {
+          "source": "basis traffic",
+          "target": "traffic signal",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "papers": 6,
+      "phrases": [
+        {
+          "phrase": "public perceptions",
+          "count": 3
+        },
+        {
+          "phrase": "google maps",
+          "count": 3
+        },
+        {
+          "phrase": "socio spatial",
+          "count": 3
+        },
+        {
+          "phrase": "negative sentiments",
+          "count": 3
+        },
+        {
+          "phrase": "partial squares",
+          "count": 2
+        },
+        {
+          "phrase": "squares regression",
+          "count": 2
+        },
+        {
+          "phrase": "crowdsourcing online",
+          "count": 2
+        },
+        {
+          "phrase": "decision makers",
+          "count": 2
+        }
+      ],
+      "edges": [
+        {
+          "source": "partial squares",
+          "target": "squares regression",
+          "weight": 2
+        },
+        {
+          "source": "crowdsourcing online",
+          "target": "public perceptions",
+          "weight": 2
+        },
+        {
+          "source": "decision makers",
+          "target": "public perceptions",
+          "weight": 2
+        },
+        {
+          "source": "google maps",
+          "target": "public perceptions",
+          "weight": 3
+        },
+        {
+          "source": "public perceptions",
+          "target": "socio spatial",
+          "weight": 3
+        },
+        {
+          "source": "negative sentiments",
+          "target": "public perceptions",
+          "weight": 3
+        },
+        {
+          "source": "crowdsourcing online",
+          "target": "google maps",
+          "weight": 2
+        },
+        {
+          "source": "crowdsourcing online",
+          "target": "socio spatial",
+          "weight": 2
+        },
+        {
+          "source": "crowdsourcing online",
+          "target": "negative sentiments",
+          "weight": 2
+        },
+        {
+          "source": "decision makers",
+          "target": "google maps",
+          "weight": 2
+        },
+        {
+          "source": "decision makers",
+          "target": "socio spatial",
+          "weight": 2
+        },
+        {
+          "source": "decision makers",
+          "target": "negative sentiments",
+          "weight": 2
+        },
+        {
+          "source": "google maps",
+          "target": "socio spatial",
+          "weight": 3
+        },
+        {
+          "source": "google maps",
+          "target": "negative sentiments",
+          "weight": 3
+        },
+        {
+          "source": "negative sentiments",
+          "target": "socio spatial",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "papers": 1,
+      "phrases": [
+        {
+          "phrase": "rapid evolution",
+          "count": 1
+        },
+        {
+          "phrase": "evolution transportation",
+          "count": 1
+        },
+        {
+          "phrase": "transportation cybersecurity",
+          "count": 1
+        },
+        {
+          "phrase": "cybersecurity ecosystem",
+          "count": 1
+        },
+        {
+          "phrase": "ecosystem encompassing",
+          "count": 1
+        },
+        {
+          "phrase": "encompassing cybersecurity",
+          "count": 1
+        },
+        {
+          "phrase": "cybersecurity automotive",
+          "count": 1
+        },
+        {
+          "phrase": "automotive transportation",
+          "count": 1
+        }
+      ],
+      "edges": []
+    },
+    {
+      "year": 2026,
+      "papers": 2,
+      "phrases": [
+        {
+          "phrase": "reliance private",
+          "count": 1
+        },
+        {
+          "phrase": "private vehicles",
+          "count": 1
+        },
+        {
+          "phrase": "vehicles growing",
+          "count": 1
+        },
+        {
+          "phrase": "growing travel",
+          "count": 1
+        },
+        {
+          "phrase": "travel demand",
+          "count": 1
+        },
+        {
+          "phrase": "demand parking",
+          "count": 1
+        },
+        {
+          "phrase": "parking remains",
+          "count": 1
+        },
+        {
+          "phrase": "remains longstanding",
+          "count": 1
+        }
+      ],
+      "edges": []
     }
   ]
 }
