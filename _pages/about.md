@@ -292,8 +292,9 @@ Each panel below summarizes the most distinctive terms in my research for a two-
 
   fetch('/assets/coauthor_network.json').then(function (r) { return r.json(); }).then(function (data) {
     container.innerHTML = '';
-    var w = container.clientWidth;
-    var h = container.clientHeight;
+    /* Use fixed viewBox dimensions so the simulation always has full width to spread; SVG scales via CSS. */
+    var w = 1200;
+    var h = 460;
     var maxW = Math.max.apply(null, data.links.map(function (l) { return l.weight; }));
     var radius = function (d) {
       if (d.isSelf) return 12;
@@ -302,7 +303,6 @@ Each panel below summarizes the most distinctive terms in my research for a two-
     var INST_COLORS = {
       'UMD':       '#4e79a7',
       'MIT':       '#f28e2c',
-      'BJTU':      '#59a14f',
       'USF':       '#edc949',
       'Tongji':    '#af7aa1',
       'Villanova': '#76b7b2',
@@ -369,7 +369,7 @@ Each panel below summarizes the most distinctive terms in my research for a two-
     svg.call(d3.zoom().scaleExtent([0.4, 4]).on('zoom', function (e) { g.attr('transform', e.transform); }));
 
     /* Legend for institution colors (top-right corner, fixed position inside SVG, ignored by zoom). */
-    var legendItems = ['UMD', 'MIT', 'BJTU', 'USF', 'Tongji', 'Villanova', 'Other'];
+    var legendItems = ['UMD', 'MIT', 'USF', 'Tongji', 'Villanova', 'Other'];
     var legend = svg.append('g').attr('transform', 'translate(' + (w - 78) + ',6)');
     legendItems.forEach(function (key, i) {
       var row = legend.append('g').attr('transform', 'translate(0,' + (i * 13) + ')');
