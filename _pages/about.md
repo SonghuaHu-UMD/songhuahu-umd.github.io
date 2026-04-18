@@ -76,7 +76,7 @@ Research Topics
 Each panel below summarizes the most distinctive terms in my research for a two-year period. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a>. The arc moves from <em>shared mobility</em> and <em>urban flood resilience</em> (2017–18), through <em>pandemic mobility</em> (2019–22), into <em>public perception sensing</em> with LLMs (2023–24), and most recently <em>data-driven traffic emissions</em> and <em>policy evaluation</em> (2025–26).
 </p>
 
-<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 310px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
+<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 270px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
   <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year terms…</div>
 </div>
 <div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">Top abstract terms per two-year period</div>

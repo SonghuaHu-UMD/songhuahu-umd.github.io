@@ -16,10 +16,6 @@
           "count": 4
         },
         {
-          "phrase": "urban",
-          "count": 3
-        },
-        {
           "phrase": "carsharing",
           "count": 2
         },
@@ -32,18 +28,7 @@
           "count": 2
         }
       ],
-      "edges": [
-        {
-          "source": "road waterlogging",
-          "target": "urban",
-          "weight": 2
-        },
-        {
-          "source": "management strategies",
-          "target": "urban",
-          "weight": 2
-        }
-      ]
+      "edges": []
     },
     {
       "year": 2019,
@@ -70,28 +55,9 @@
         {
           "phrase": "home orders",
           "count": 6
-        },
-        {
-          "phrase": "decision",
-          "count": 4
         }
       ],
       "edges": [
-        {
-          "source": "decision",
-          "target": "human mobility",
-          "weight": 2
-        },
-        {
-          "source": "decision",
-          "target": "mobile device",
-          "weight": 2
-        },
-        {
-          "source": "decision",
-          "target": "device location",
-          "weight": 2
-        },
         {
           "source": "human mobility",
           "target": "mobile device",
@@ -151,12 +117,8 @@
       "institution": "UMD",
       "phrases": [
         {
-          "phrase": "covid",
-          "count": 9
-        },
-        {
           "phrase": "covid pandemic",
-          "count": 8
+          "count": 10
         },
         {
           "phrase": "coronavirus disease",
@@ -177,21 +139,6 @@
       ],
       "edges": [
         {
-          "source": "covid",
-          "target": "covid pandemic",
-          "weight": 4
-        },
-        {
-          "source": "coronavirus disease",
-          "target": "covid",
-          "weight": 4
-        },
-        {
-          "source": "covid",
-          "target": "disease covid",
-          "weight": 4
-        },
-        {
           "source": "coronavirus disease",
           "target": "covid pandemic",
           "weight": 2
@@ -205,11 +152,6 @@
           "source": "coronavirus disease",
           "target": "disease covid",
           "weight": 4
-        },
-        {
-          "source": "covid",
-          "target": "mobility",
-          "weight": 6
         },
         {
           "source": "human mobility",
@@ -230,11 +172,6 @@
           "source": "disease covid",
           "target": "mobility",
           "weight": 2
-        },
-        {
-          "source": "covid",
-          "target": "human mobility",
-          "weight": 3
         },
         {
           "source": "covid pandemic",
@@ -272,48 +209,19 @@
           "count": 8
         },
         {
-          "phrase": "insights",
-          "count": 7
-        },
-        {
-          "phrase": "urban",
-          "count": 7
-        },
-        {
           "phrase": "decision",
+          "count": 6
+        },
+        {
+          "phrase": "cost",
           "count": 6
         }
       ],
       "edges": [
         {
-          "source": "insights",
-          "target": "urban",
-          "weight": 5
-        },
-        {
-          "source": "decision",
-          "target": "urban",
+          "source": "cost",
+          "target": "decision",
           "weight": 3
-        },
-        {
-          "source": "public perceptions",
-          "target": "urban",
-          "weight": 4
-        },
-        {
-          "source": "google maps",
-          "target": "urban",
-          "weight": 4
-        },
-        {
-          "source": "socio spatial",
-          "target": "urban",
-          "weight": 4
-        },
-        {
-          "source": "decision",
-          "target": "insights",
-          "weight": 4
         },
         {
           "source": "decision",
@@ -331,19 +239,19 @@
           "weight": 3
         },
         {
-          "source": "insights",
+          "source": "cost",
           "target": "public perceptions",
-          "weight": 4
+          "weight": 3
         },
         {
-          "source": "google maps",
-          "target": "insights",
-          "weight": 4
+          "source": "cost",
+          "target": "google maps",
+          "weight": 3
         },
         {
-          "source": "insights",
+          "source": "cost",
           "target": "socio spatial",
-          "weight": 4
+          "weight": 3
         },
         {
           "source": "google maps",
@@ -381,34 +289,15 @@
           "count": 6
         },
         {
-          "phrase": "driven",
-          "count": 5
-        },
-        {
-          "phrase": "urban",
+          "phrase": "online reviews",
           "count": 4
         },
         {
-          "phrase": "online reviews",
+          "phrase": "environmental economics",
           "count": 4
         }
       ],
       "edges": [
-        {
-          "source": "citywide road",
-          "target": "driven",
-          "weight": 3
-        },
-        {
-          "source": "driven",
-          "target": "road traffic",
-          "weight": 3
-        },
-        {
-          "source": "driven",
-          "target": "traffic emissions",
-          "weight": 3
-        },
         {
           "source": "citywide road",
           "target": "road traffic",
@@ -425,13 +314,18 @@
           "weight": 4
         },
         {
-          "source": "online reviews",
-          "target": "urban",
+          "source": "citywide road",
+          "target": "environmental economics",
           "weight": 2
         },
         {
-          "source": "traffic emissions",
-          "target": "urban",
+          "source": "environmental economics",
+          "target": "road traffic",
+          "weight": 2
+        },
+        {
+          "source": "environmental economics",
+          "target": "traffic emissions",
           "weight": 2
         }
       ]
