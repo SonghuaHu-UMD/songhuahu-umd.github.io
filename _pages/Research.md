@@ -280,7 +280,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X22003758" aria-label="Read more"></a>
       <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/FF16.mp4" aria-label="Hierarchical activity prediction"></video></div>
       <div class="card-body">
-        <span class="card-venue">TR Part C</span>
+        <span class="card-venue">TR Part C · 2022</span>
         <p class="card-text">A hierarchical activity-based framework jointly predicts the activity, time, and location of each device's next trip. Loss functions borrowed from semantic segmentation handle severe class imbalance across 18,000+ residents at county scale.</p>
       </div>
     </div>
@@ -288,7 +288,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0965856423001635" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF12.png" alt="Explainable ML comparison"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part A</span>
+        <span class="card-venue">TR Part A · 2023</span>
         <p class="card-text">Treating nationwide CBG-level mobile-device trip flows as a travel-demand proxy, we benchmark 48 explainable ML models and interpretation techniques, documenting strong nonlinearities, threshold effects, and feature interactions.</p>
       </div>
     </div>
@@ -319,7 +319,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.nature.com/articles/s41893-026-01797-9" aria-label="Read more"></a>
       <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s9-policy.mp4" aria-label="Signal-aware emission framework"></video></div>
       <div class="card-body">
-        <span class="card-venue">Nature Sustainability</span>
+        <span class="card-venue">Nature Sustainability · 2026</span>
         <p class="card-text">A ubiquitous data-driven framework for city-scale traffic emission estimation that fuses camera videos with mobile phone data. Inferring directional signal timing shows PM and NOx emissions rise 40 to 60 percent on average when stop-and-go cycles are properly modeled.</p>
       </div>
     </div>
@@ -327,7 +327,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0965856425000576" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/ZONE301.png" alt="ZONE 30 emission analysis"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part A</span>
+        <span class="card-venue">TR Part A · 2025</span>
         <p class="card-text">Quantifying city-wide effects of 30 km/h speed limits in Milan via 3.4 million driving trips. Aggregate emission changes are modest (0.6 to 2.7 percent) but vary substantially across space and time, peaking during cross-zone trips at rush hour.</p>
       </div>
     </div>
@@ -335,7 +335,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciopen.com/article/10.26599/JICV.2026.9210079" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/GEMINI.png" alt="Digital Twin emission platform"></div>
       <div class="card-body">
-        <span class="card-venue">J. Intelligent &amp; Connected Vehicles</span>
+        <span class="card-venue">J. Intelligent &amp; Connected Vehicles · 2026</span>
         <p class="card-text">A Digital Twin platform for road traffic emission nowcasting and forecasting. Integrating online repositories with IoT sensors enables alternative-policy scenario evaluation, demonstrated for Kista, Stockholm via 3D interactive visualization.</p>
       </div>
     </div>
@@ -348,7 +348,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S1361920919311058" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/SharedEV.png" alt="Shared EV simulation"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part D</span>
+        <span class="card-venue">TR Part D · 2019</span>
         <p class="card-text">Discrete-event simulation quantifies how battery capacity affects shared electric vehicle adoption. Constrained capacity hurts both user satisfaction and vehicle utilization, while faster charging, larger range, and higher vehicle-to-trip ratios mitigate the impact.</p>
       </div>
     </div>
@@ -356,7 +356,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X2300459X" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/EVBus.jpg" alt="Dynamic wireless charging buses"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part C</span>
+        <span class="card-venue">TR Part C · 2023</span>
         <p class="card-text">A bi-level optimization framework for dynamic wireless charging of battery electric buses, jointly handling strategic facility deployment and battery sizing alongside tactical charging scheduling under time-of-use electricity tariffs.</p>
       </div>
     </div>
@@ -364,7 +364,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://ieeexplore.ieee.org/abstract/document/9034087" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/EVCARD.jpg" alt="EVCARD vehicle selection"></div>
       <div class="card-body">
-        <span class="card-venue">IEEE ITSM</span>
+        <span class="card-venue">IEEE ITSM · 2020</span>
         <p class="card-text">Five million transactions from EVCARD reveal that users avoid older, smaller, and pricier vehicles. State of charge dominates the choice; users tend to be "greedy," consistently selecting max-SoC vehicles even when their actual trips are short.</p>
       </div>
     </div>
@@ -386,7 +386,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X20308524" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF11.png" alt="Pandemic mobility tracker"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part C</span>
+        <span class="card-venue">TR Part C · 2020</span>
         <p class="card-text">Tracking US pandemic-era mobility via 150 million monthly active mobile devices, capturing trips per person, person-miles traveled, and share of residents staying home. Updated daily on a public <a href="https://data.covid.umd.edu/">platform</a>.</p>
       </div>
     </div>
@@ -394,7 +394,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S1361920920308397" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF33.png" alt="Transit ridership decline"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part D</span>
+        <span class="card-venue">TR Part D · 2021</span>
         <p class="card-text">Twenty years of Chicago transit ridership analyzed via Bayesian structural time series to isolate the pandemic's causal impact while controlling for socioeconomic confounders. Sharpest declines hit commercial areas and white, educated, high-income neighborhoods.</p>
       </div>
     </div>
@@ -402,7 +402,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0966692321000508" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/bikeshare.png" alt="Chicago bikesharing patterns"></div>
       <div class="card-body">
-        <span class="card-venue">JTG</span>
+        <span class="card-venue">JTG · 2021</span>
         <p class="card-text">Chicago bikesharing across the pandemic, benchmarked against transit, driving, and walking. Bikesharing proved the most resilient mode, yet stark socioeconomic inequities surfaced as high-income station catchments saw both the steepest gains and declines.</p>
       </div>
     </div>
@@ -410,7 +410,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2020.0344" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF3.png" alt="Stay-at-home mobility floor"></div>
       <div class="card-body">
-        <span class="card-venue">J. R. Soc. Interface</span>
+        <span class="card-venue">J. R. Soc. Interface · 2020</span>
         <p class="card-text">Mobile-device data reveal a spontaneous mobility reduction that preceded government mandates, plus a "floor" effect once stay-at-home orders took hold. State-level policies accounted for only roughly five percent of the total mobility decline.</p>
       </div>
     </div>
@@ -418,7 +418,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://doi.org/10.1016/j.jtrangeo.2025.104423" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/hurricane_laura.png" alt="Hurricane Laura mobility and COVID spread"></div>
       <div class="card-body">
-        <span class="card-venue">JTG</span>
+        <span class="card-venue">JTG · 2025</span>
         <p class="card-text">A case study of Hurricane Laura quantifies how compound disruptions reshape human mobility and amplify COVID-19 spread. Evacuation flows redistribute infection risk across counties, with disadvantaged communities bearing both heightened exposure and slower recovery.</p>
       </div>
     </div>
@@ -426,7 +426,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://doi.org/10.1016/j.compenvurbsys.2025.102333" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/wildfire_sir.png" alt="Wildfire socio-spatial response analysis"></div>
       <div class="card-body">
-        <span class="card-venue">CEUS</span>
+        <span class="card-venue">CEUS · 2025</span>
         <p class="card-text">A socio-spatial study of public response to US wildfires combining SIR-style diffusion models with NLP on social-media discourse. The framework captures how concern propagates across regions and which socioeconomic factors shape community reactions to wildfire disasters.</p>
       </div>
     </div>
@@ -434,7 +434,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S1366554525006568" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/PartE.jpg" alt="Network resilience survey"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part E</span>
+        <span class="card-venue">TR Part E · 2025</span>
         <p class="card-text">A comprehensive survey of multi-modal urban transport network resilience covering modeling, evaluation, and optimization across road, transit, and shared mobility systems, with an outlook on next-generation infrastructure.</p>
       </div>
     </div>
@@ -442,7 +442,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://ieeexplore.ieee.org/abstract/document/8569639" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/Flood.png" alt="Urban flood detection"></div>
       <div class="card-body">
-        <span class="card-venue">IEEE ITSC</span>
+        <span class="card-venue">IEEE ITSC · 2018</span>
         <p class="card-text">Fusing social media posts, precipitation records, and traffic flow data to automatically detect urban road flooding in Shenzhen. The system achieves a 68 to 90 percent detection rate with only 1.5 to 2 percent false alarms.</p>
       </div>
     </div>
@@ -450,7 +450,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S2212420924005168" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/weatherroad.png" alt="Weather impact on traffic"></div>
       <div class="card-body">
-        <span class="card-venue">IJDRR</span>
+        <span class="card-venue">IJDRR · 2024</span>
         <p class="card-text">Comparing passively collected mobile location data with actively reported Waze incidents for monitoring extreme weather impact on traffic. Active reports underestimate severity, since fewer users venture out as conditions worsen and become silent sensors.</p>
       </div>
     </div>
@@ -472,7 +472,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.pnas.org/doi/abs/10.1073/pnas.2010836117" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF43.png" alt="PNAS mobility-infection study"></div>
       <div class="card-body">
-        <span class="card-venue">PNAS</span>
+        <span class="card-venue">PNAS · 2020</span>
         <p class="card-text">Quantifying nationwide changes in mobility inflow at the pandemic's onset and modeling its time-varying relationship with infection rates, with the dynamic positive association substantially stronger in partially reopened regions.</p>
       </div>
     </div>
@@ -480,7 +480,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S2210670721007721" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/racial.jpg" alt="Health disparity analysis"></div>
       <div class="card-body">
-        <span class="card-venue">SCS</span>
+        <span class="card-venue">SCS · 2022</span>
         <p class="card-text">Linking COVID-19 outcomes to demographics, occupation, and partisanship reveals a structural inequality: social distancing operates as a "privilege" of advantaged groups, while disadvantaged communities bear disproportionate case and death burdens.</p>
       </div>
     </div>
@@ -488,7 +488,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0259803" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/raceplos.png" alt="Mediation analysis"></div>
       <div class="card-body">
-        <span class="card-venue">PLOS ONE</span>
+        <span class="card-venue">PLOS ONE · 2021</span>
         <p class="card-text">Structural equation modeling on 4.4 million POI geo-tracking records shows that mobility mediates COVID-19 infection rates but not case-fatality ratios, with substantial variation across county-level racial and ethnic compositions.</p>
       </div>
     </div>
@@ -496,7 +496,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0264410X22009471" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF41.png" alt="Vaccine hesitancy study"></div>
       <div class="card-body">
-        <span class="card-venue">Vaccine</span>
+        <span class="card-venue">Vaccine · 2022</span>
         <p class="card-text">Mediation analysis demonstrates that stated vaccine hesitancy alone cannot fully explain US vaccination disparities, challenging the dominant narrative and pointing to structural access barriers as a complementary driver of inequity.</p>
       </div>
     </div>
@@ -504,7 +504,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0264410X23006175" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF4.png" alt="Vaccination Omicron analysis"></div>
       <div class="card-body">
-        <span class="card-venue">Vaccine</span>
+        <span class="card-venue">Vaccine · 2023</span>
         <p class="card-text">Two years of US county data on vaccination, mobility, and outcomes show that vaccine effectiveness against case rates diminished during the Omicron surge, while protection against case-fatality persisted. An NIH-funded agent-based extension is underway.</p>
       </div>
     </div>
@@ -526,7 +526,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0965856424001939" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/incentrip.png" alt="incenTrip platform"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part A</span>
+        <span class="card-venue">TR Part A · 2024</span>
         <p class="card-text">As technical lead of <a href="https://www.mdot.maryland.gov/tso/pages/Index.aspx?PageId=33">incenTrip</a>, the first nationwide incentive-based travel demand management app, we design personalized dynamic incentives for mode switching, carpooling, congestion avoidance, and off-peak travel.</p>
       </div>
     </div>
@@ -534,7 +534,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X21002382" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/churn.jpg" alt="Customer churn analysis"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part C</span>
+        <span class="card-venue">TR Part C · 2021</span>
         <p class="card-text">Four million coupons analyzed via extended Cox proportional hazards models. Coupon effectiveness peaks early and declines after roughly 130 days, so front-loading new-user incentives maximizes short-term revenue but raises fairness and privacy concerns.</p>
       </div>
     </div>
@@ -542,7 +542,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X25001895" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/partc_2026.jpg" alt="Food delivery choice analysis"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part C</span>
+        <span class="card-venue">TR Part C · 2025</span>
         <p class="card-text">Analyzing 2.7 million food delivery orders in Dubai to explain why customers choose distant restaurants over closer alternatives. Explainable ML reveals that delivery fees, cuisine type, restaurant ratings, and neighborhood socioeconomics shape whether orders stay local.</p>
       </div>
     </div>
@@ -555,7 +555,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0264275126000983" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/parking.png" alt="Parking sentiment analysis"></div>
       <div class="card-body">
-        <span class="card-venue">Cities</span>
+        <span class="card-venue">Cities · 2026</span>
         <p class="card-text">Five million parking-related Google Maps reviews across 1.1 million US POIs are classified with BERT to model socio-spatial sentiment. Restaurants register the most negative scores, while denser and lower-income urban areas show consistently negative perceptions.</p>
       </div>
     </div>
@@ -563,7 +563,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0198971525000821" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/access_framework.png" alt="Accessibility sentiment"></div>
       <div class="card-body">
-        <span class="card-venue">CEUS</span>
+        <span class="card-venue">CEUS · 2025</span>
         <p class="card-text">A Llama 3 model with Low-Rank Adaptation fine-tuning measures public accessibility sentiment from nationwide Google Maps reviews. Older and more educated areas express more negativity, while disability prevalence alone shows no clear association with sentiment.</p>
       </div>
     </div>
@@ -576,7 +576,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0966692321003240" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF52.jpg" alt="Bike-and-ride integration"></div>
       <div class="card-body">
-        <span class="card-venue">JTG</span>
+        <span class="card-venue">JTG · 2022</span>
         <p class="card-text">Shanghai dockless bikesharing evaluated for bike-and-ride (BnR) integration with metro across four metrics. Land-use mix correlates with BnR trips only beyond a 1.5 km buffer, and larger operators generate more BnR trips but no higher per-bike utilization.</p>
       </div>
     </div>
@@ -584,7 +584,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S1361920918306448" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/evcard.png" alt="Carsharing optimization"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part D</span>
+        <span class="card-venue">TR Part D · 2019</span>
         <p class="card-text">Station-level booking and turnover analysis for carsharing optimization shows that operators should target underserved areas. Carsharing competes best 1.2 to 2.4 km from bus stops, and geographically differentiated quotas help local authorities manage fleets.</p>
       </div>
     </div>
@@ -592,7 +592,7 @@ author_profile: true
     <div class="card"><a class="card-link" href="https://journals.sagepub.com/doi/abs/10.1177/0739456X241256041" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/Escooter.png" alt="E-scooter vs bikesharing"></div>
       <div class="card-body">
-        <span class="card-venue">JPER</span>
+        <span class="card-venue">JPER · 2024</span>
         <p class="card-text">Comparing e-scooter sharing with docked bikesharing usage via generalized additive mixed models. Both modes succeed in dense, young, higher-income areas, yet a one-sided competitive relationship has emerged with e-scooters surpassing bikes in adoption.</p>
       </div>
     </div>
