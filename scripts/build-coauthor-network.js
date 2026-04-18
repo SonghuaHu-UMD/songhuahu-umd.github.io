@@ -15,6 +15,7 @@ const SELF_NAME = 'Songhua Hu';
 const OUT_PATH = path.resolve(__dirname, '..', 'assets', 'coauthor_network.json');
 const CITATIONS_PATH = path.resolve(__dirname, '..', 'assets', 'citations_by_year.json');
 const TOPICS_PATH = path.resolve(__dirname, '..', 'assets', 'topic_evolution.json');
+const MANUAL_ABSTRACTS_PATH = path.resolve(__dirname, '..', 'assets', 'manual_abstracts.json');
 const TOP_N_TOPICS = 6;
 
 /* Disambiguation filters — OpenAlex sometimes attributes works to the wrong person. */
@@ -211,6 +212,12 @@ function buildGraph(works) {
   }, null, 2));
   console.log('Wrote ' + CITATIONS_PATH + ' (total ' + totalCitations + ' citations on ' + filtered.length + ' works, h=' + h + ', i10=' + i10 + ')');
 
+  /* Load manual abstract overrides keyed by OpenAlex work ID short form (W...). */
+  let manualAbstracts = {};
+  try {
+    manualAbstracts = JSON.parse(fs.readFileSync(MANUAL_ABSTRACTS_PATH, 'utf8'));
+  } catch (e) { /* file optional */ }
+
   console.log('Filling missing abstracts from Semantic Scholar then Crossref via DOI...');
   /* When OpenAlex lacks an abstract, try Semantic Scholar; if that also fails, try Crossref. */
   const cleanDoi = (doi) => doi ? doi.replace(/^https?:\/\/doi\.org\//, '') : null;
@@ -245,13 +252,21 @@ function buildGraph(works) {
   };
 
   const filledByWorkId = new Map();
-  let filledSS = 0, filledCR = 0, attempted = 0;
+  let filledManual = 0, filledSS = 0, filledCR = 0, attempted = 0;
   for (const w of works) {
     if (w.abstract_inverted_index) continue;
-    if (!w.doi) continue;
     if (w.publication_year < MIN_YEAR) continue;
     if (BLOCKLIST.has(w.id)) continue;
     attempted++;
+    /* Manual override takes priority */
+    const shortId = w.id.replace('https://openalex.org/', '');
+    const manual = manualAbstracts[shortId];
+    if (manual && typeof manual === 'string' && manual.trim().length >= 30) {
+      filledByWorkId.set(w.id, manual.trim());
+      filledManual++;
+      continue;
+    }
+    if (!w.doi) continue;
     let a = await fetchSSAbstract(w.doi);
     if (a) { filledByWorkId.set(w.id, a); filledSS++; }
     else {
@@ -260,7 +275,7 @@ function buildGraph(works) {
     }
     await new Promise(res => setTimeout(res, 350));   /* rate-limit politeness */
   }
-  console.log('  filled ' + (filledSS + filledCR) + ' / ' + attempted + ' (SS=' + filledSS + ', Crossref=' + filledCR + ')');
+  console.log('  filled ' + (filledManual + filledSS + filledCR) + ' / ' + attempted + ' (Manual=' + filledManual + ', SS=' + filledSS + ', Crossref=' + filledCR + ')');
 
   console.log('Building per-year phrase networks (unigrams + bigrams x2)...');
   const reconstruct = (inv) => {
