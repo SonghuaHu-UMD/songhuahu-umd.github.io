@@ -8,6 +8,13 @@
 <link rel="mask-icon" href="{{ base_path }}/images/safari-pinned-tab.svg" color="#000000">
 <meta name="theme-color" content="#ffffff">
 
+<style>
+  /* Hide visitor-tracker map on mobile (sidebar stacks above content there). */
+  @media (max-width: 925px) {
+    .author__map { display: none !important; }
+  }
+</style>
+
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css"/>
 
