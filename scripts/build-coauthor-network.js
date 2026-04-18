@@ -37,6 +37,15 @@ const isWrongAffiliation = (w) => {
   return (me.institutions || []).some(i => WRONG_AFFIL_RE.test(i.display_name || ''));
 };
 
+/* SSRN is a preprint server; OpenAlex sometimes labels its entries as 'article' rather than
+   'preprint', so they slip past the type filter. Drop them explicitly. */
+const isSSRN = (w) => {
+  const src = w.primary_location && w.primary_location.source;
+  if (src && /SSRN/i.test(src.display_name || '')) return true;
+  if (w.doi && /^https?:\/\/doi\.org\/10\.2139\//i.test(w.doi)) return true;
+  return false;
+};
+
 async function fetchAuthor() {
   const url = `https://api.openalex.org/authors/orcid:${ORCID}`;
   const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
@@ -150,15 +159,16 @@ function buildGraph(works) {
   const works = await fetchAllWorks();
   console.log('  ' + works.length + ' works');
 
-  const dropped = { preprint: 0, oldYear: 0, blocked: 0, wrongAffil: 0 };
+  const dropped = { preprint: 0, oldYear: 0, blocked: 0, wrongAffil: 0, ssrn: 0 };
   const filtered = works.filter(w => {
     if (BLOCKLIST.has(w.id)) { dropped.blocked++; return false; }
     if (isWrongAffiliation(w)) { dropped.wrongAffil++; return false; }
     if (!w.publication_year || w.publication_year < MIN_YEAR) { dropped.oldYear++; return false; }
     if (w.type === 'preprint') { dropped.preprint++; return false; }
+    if (isSSRN(w)) { dropped.ssrn++; return false; }
     return true;
   });
-  console.log('  dropped: ' + dropped.preprint + ' preprints, ' + dropped.oldYear + ' pre-' + MIN_YEAR + ', ' + dropped.blocked + ' blocklisted, ' + dropped.wrongAffil + ' wrong-affiliation');
+  console.log('  dropped: ' + dropped.preprint + ' preprints, ' + dropped.oldYear + ' pre-' + MIN_YEAR + ', ' + dropped.blocked + ' blocklisted, ' + dropped.wrongAffil + ' wrong-affiliation, ' + dropped.ssrn + ' SSRN');
   console.log('  kept: ' + filtered.length);
 
   const graph = buildGraph(filtered);
@@ -333,7 +343,7 @@ function buildGraph(works) {
   const forAbstracts = works.filter(w =>
     w.publication_year && w.publication_year >= MIN_YEAR &&
     !BLOCKLIST.has(w.id) && !isWrongAffiliation(w) &&
-    w.type !== 'preprint');
+    w.type !== 'preprint' && !isSSRN(w));
 
   /* Group into 2-year periods so each panel has enough papers for meaningful phrases. */
   const BIN_SIZE = 2;
