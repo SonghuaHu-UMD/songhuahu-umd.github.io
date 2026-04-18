@@ -76,7 +76,7 @@ Research Topics
 Each panel below summarizes the most distinctive terms in my research for a two-year period. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a>. The arc moves from <em>shared mobility</em> and <em>urban flood resilience</em> (2017–18), through <em>pandemic mobility</em> (2019–22), into <em>public perception sensing</em> with LLMs (2023–24), and most recently <em>data-driven traffic emissions</em> and <em>policy evaluation</em> (2025–26).
 </p>
 
-<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 270px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
+<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 320px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
   <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year terms…</div>
 </div>
 <div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">Top abstract terms per two-year period</div>
@@ -151,15 +151,8 @@ Each panel below summarizes the most distinctive terms in my research for a two-
       var n = yr.phrases.length;
       if (!n) return;
       var maxCount = yr.phrases[0].count;
-      var pillH = Math.min(34, (pillsArea - (n - 1) * 4) / n);
+      var pillH = Math.min(46, (pillsArea - (n - 1) * 4) / n);
       var pillW = colW - 8;
-
-      var fitText = function (text, maxPx, fontPx) {
-        /* approximate; ~0.55 em-width */
-        var maxChars = Math.floor(maxPx / (fontPx * 0.55));
-        if (text.length <= maxChars) return text;
-        return text.slice(0, Math.max(1, maxChars - 1)).trimEnd() + '…';
-      };
 
       yr.phrases.forEach(function (p, idx) {
         var y = pillsTop + idx * (pillH + 4);
@@ -167,15 +160,24 @@ Each panel below summarizes the most distinctive terms in my research for a two-
         svg.append('rect').attr('x', x0 + 4).attr('y', y)
           .attr('width', pillW).attr('height', pillH).attr('rx', 5)
           .attr('fill', heat).attr('opacity', op);
-        var fontPx = Math.min(11, pillH * 0.42);
-        var label = fitText(p.phrase, pillW - 18, fontPx);
-        svg.append('text').attr('x', cx).attr('y', y + pillH / 2 + 4)
-          .attr('text-anchor', 'middle')
-          .attr('font-size', fontPx)
-          .attr('font-weight', 600)
-          .attr('fill', '#2c3e50')
-          .text(label)
-          .append('title').text(p.phrase + ' (×' + p.count + ')');
+        var fontPx = Math.min(11, pillH * 0.32);
+        /* foreignObject lets CSS handle real text wrapping (multi-line for long phrases). */
+        var fo = svg.append('foreignObject')
+          .attr('x', x0 + 4).attr('y', y)
+          .attr('width', pillW).attr('height', pillH);
+        fo.append('xhtml:div')
+          .attr('xmlns', 'http://www.w3.org/1999/xhtml')
+          .style('width', '100%').style('height', '100%')
+          .style('display', 'flex').style('align-items', 'center').style('justify-content', 'center')
+          .style('text-align', 'center')
+          .style('padding', '2px 6px').style('box-sizing', 'border-box')
+          .style('font-size', fontPx + 'px')
+          .style('font-weight', 600)
+          .style('line-height', '1.15')
+          .style('color', '#2c3e50')
+          .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif")
+          .style('overflow-wrap', 'break-word').style('word-break', 'normal')
+          .text(p.phrase);
         if (p.count > 1) {
           svg.append('text').attr('x', x0 + 4 + pillW - 4).attr('y', y + 10)
             .attr('text-anchor', 'end').attr('font-size', 8.5)
