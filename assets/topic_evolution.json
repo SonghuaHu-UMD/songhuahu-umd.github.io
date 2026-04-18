@@ -165,25 +165,19 @@
           "count": 3
         },
         {
-          "phrase": "census block",
-          "count": 2
-        },
-        {
           "phrase": "socioeconomics demographics",
           "count": 2
         },
         {
           "phrase": "empirical comparison",
           "count": 2
+        },
+        {
+          "phrase": "austin texas",
+          "count": 2
         }
       ],
-      "edges": [
-        {
-          "source": "census block",
-          "target": "travel demand",
-          "weight": 2
-        }
-      ]
+      "edges": []
     },
     {
       "year": 2025,
