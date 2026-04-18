@@ -102,7 +102,10 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
     var w = container.clientWidth;
     var h = container.clientHeight;
     var maxW = Math.max.apply(null, data.links.map(function (l) { return l.weight; }));
-    var radius = function (d) { return 3 + Math.sqrt(d.count) * 3.2; };
+    var radius = function (d) {
+      if (d.isSelf) return 12;
+      return 3 + Math.sqrt(d.count) * 3.2;
+    };
     var color = function (d) {
       if (d.isSelf) return '#c0392b';
       if (d.count >= 5) return '#2980b9';

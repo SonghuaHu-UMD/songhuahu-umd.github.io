@@ -18,7 +18,7 @@ async function fetchAllWorks() {
   const works = [];
   let cursor = '*';
   while (cursor) {
-    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,publication_year,authorships`;
+    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships`;
     const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
     if (!r.ok) throw new Error('OpenAlex fetch failed: ' + r.status);
     const j = await r.json();
@@ -76,7 +76,10 @@ function buildGraph(works) {
   const works = await fetchAllWorks();
   console.log('  ' + works.length + ' works');
 
-  const graph = buildGraph(works);
+  const filtered = works.filter(w => w.type && w.type !== 'preprint');
+  console.log('  filtered out ' + (works.length - filtered.length) + ' preprints; kept ' + filtered.length);
+
+  const graph = buildGraph(filtered);
   console.log('  ' + graph.nodes.length + ' authors, ' + graph.links.length + ' edges');
 
   const top = [...graph.nodes].sort((a, b) => b.count - a.count).slice(0, 12);
@@ -86,7 +89,7 @@ function buildGraph(works) {
   fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });
   fs.writeFileSync(OUT_PATH, JSON.stringify({
     generated: new Date().toISOString().slice(0, 10),
-    works: works.length,
+    works: filtered.length,
     nodes: graph.nodes,
     links: graph.links,
   }));
