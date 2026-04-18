@@ -44,10 +44,25 @@ async function fetchAllWorks() {
   return works;
 }
 
+const INST_ABBREV = {
+  'University of Maryland, College Park': 'UMD',
+  'University of Maryland': 'UMD',
+  'Massachusetts Institute of Technology': 'MIT',
+  'Beijing Jiaotong University': 'BJTU',
+  'University of South Florida': 'USF',
+  'Tongji University': 'Tongji',
+  'Villanova University': 'Villanova',
+  'Hefei University of Technology': 'Hefei UT',
+  'City University of Hong Kong': 'CityUHK',
+  'Huazhong University of Science and Technology': 'HUST',
+};
+const TOP_INST_GROUPS = ['UMD', 'MIT', 'BJTU', 'USF', 'Tongji', 'Villanova'];
+
 function buildGraph(works) {
   const norm = s => s.trim().toLowerCase().replace(/\s+/g, ' ');
   const nodeMap = new Map();
   const edgeMap = new Map();
+  const authorInst = new Map();   /* normName -> Map(inst -> count) */
 
   for (const w of works) {
     const seen = new Set();
@@ -65,6 +80,18 @@ function buildGraph(works) {
       if (!nodeMap.has(a.id)) nodeMap.set(a.id, { id: a.id, name: a.name, count: 0 });
       nodeMap.get(a.id).count++;
     }
+    /* Track each author's institution(s) across all their joint papers. */
+    for (const a of (w.authorships || [])) {
+      const name = a.author && a.author.display_name;
+      if (!name) continue;
+      const id = norm(name);
+      for (const inst of (a.institutions || [])) {
+        if (!inst.display_name) continue;
+        if (!authorInst.has(id)) authorInst.set(id, new Map());
+        const m = authorInst.get(id);
+        m.set(inst.display_name, (m.get(inst.display_name) || 0) + 1);
+      }
+    }
     for (let i = 0; i < authors.length; i++) {
       for (let j = i + 1; j < authors.length; j++) {
         const [a, b] = [authors[i].id, authors[j].id].sort();
@@ -74,12 +101,29 @@ function buildGraph(works) {
     }
   }
 
-  const nodes = [...nodeMap.values()].map(n => ({
-    id: n.id,
-    name: n.name,
-    count: n.count,
-    isSelf: norm(n.name) === norm(SELF_NAME),
-  }));
+  const topInst = (authorId) => {
+    const m = authorInst.get(authorId);
+    if (!m || !m.size) return null;
+    return [...m.entries()].sort((a, b) => b[1] - a[1])[0][0];
+  };
+  const groupFor = (instName) => {
+    if (!instName) return 'Other';
+    const ab = INST_ABBREV[instName];
+    if (ab && TOP_INST_GROUPS.includes(ab)) return ab;
+    return 'Other';
+  };
+
+  const nodes = [...nodeMap.values()].map(n => {
+    const inst = topInst(n.id);
+    return {
+      id: n.id,
+      name: n.name,
+      count: n.count,
+      isSelf: norm(n.name) === norm(SELF_NAME),
+      institution: inst,
+      instGroup: groupFor(inst),
+    };
+  });
   const links = [...edgeMap.entries()].map(([k, w]) => {
     const [source, target] = k.split('|');
     return { source, target, weight: w };

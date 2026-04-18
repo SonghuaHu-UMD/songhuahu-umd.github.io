@@ -307,10 +307,18 @@ Each panel below summarizes the most distinctive terms in my research for a two-
       if (d.isSelf) return 12;
       return 3 + Math.sqrt(d.count) * 3.2;
     };
+    var INST_COLORS = {
+      'UMD':       '#4e79a7',
+      'MIT':       '#f28e2c',
+      'BJTU':      '#59a14f',
+      'USF':       '#edc949',
+      'Tongji':    '#af7aa1',
+      'Villanova': '#76b7b2',
+      'Other':     '#bbbbbb',
+    };
     var color = function (d) {
       if (d.isSelf) return '#c0392b';
-      if (d.count >= 5) return '#2980b9';
-      return '#7a8e9e';
+      return INST_COLORS[d.instGroup] || '#bbbbbb';
     };
 
     var tooltip = d3.select('body').append('div').attr('class', 'cn-tooltip');
@@ -367,6 +375,15 @@ Each panel below summarizes the most distinctive terms in my research for a two-
     });
 
     svg.call(d3.zoom().scaleExtent([0.4, 4]).on('zoom', function (e) { g.attr('transform', e.transform); }));
+
+    /* Legend for institution colors (top-right corner, fixed position inside SVG, ignored by zoom). */
+    var legendItems = ['UMD', 'MIT', 'BJTU', 'USF', 'Tongji', 'Villanova', 'Other'];
+    var legend = svg.append('g').attr('transform', 'translate(' + (w - 78) + ',6)');
+    legendItems.forEach(function (key, i) {
+      var row = legend.append('g').attr('transform', 'translate(0,' + (i * 13) + ')');
+      row.append('circle').attr('cx', 5).attr('cy', 5).attr('r', 4).attr('fill', INST_COLORS[key]);
+      row.append('text').attr('x', 13).attr('y', 8).attr('font-size', 9.5).attr('fill', '#444').text(key);
+    });
   }).catch(function (err) {
     container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Network failed to load: ' + err.message + '</div>';
   });
