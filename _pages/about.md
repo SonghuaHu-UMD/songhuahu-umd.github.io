@@ -238,7 +238,7 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
         .on('drag', function (e) { e.subject.fx = e.x; e.subject.fy = e.y; })
         .on('end', function (e) { if (!e.active) sim.alphaTarget(0); e.subject.fx = null; e.subject.fy = null; }));
 
-    var labelData = data.nodes.filter(function (d) { return d.isSelf || d.count > 3; });
+    var labelData = data.nodes.filter(function (d) { return d.isSelf || d.count >= 3; });
     var label = g.append('g').selectAll('text').data(labelData).join('text')
       .text(function (d) { return d.name; })
       .attr('text-anchor', 'middle')
