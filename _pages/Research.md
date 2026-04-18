@@ -237,14 +237,6 @@ author_profile: true
       </div>
     </div>
 
-    <div class="card"><a class="card-link" href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/LLMEvent.png" alt="LLM event-aware prediction"></div>
-      <div class="card-body">
-        <span class="card-venue">Ongoing</span>
-        <p class="card-text">Curating 40+ event types from social media to forecast event-driven mobility shifts. With LLMs (vanilla GPT-4o + in-context learning), we predict road traffic and community travel demand changes at MAPE 15.12%.</p>
-      </div>
-    </div>
-
   </div>
 </section>
 
