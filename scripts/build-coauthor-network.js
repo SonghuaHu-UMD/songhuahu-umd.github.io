@@ -388,9 +388,8 @@ function buildGraph(works) {
     if (!yearPhraseFreq.has(yr)) { yearPhraseFreq.set(yr, new Map()); yearPhraseEdges.set(yr, new Map()); }
     const fm = yearPhraseFreq.get(yr);
     const em = yearPhraseEdges.get(yr);
-    /* Bigrams get weight x2 by default to compete with naturally more frequent unigrams. */
-    for (const p of unigrams) fm.set(p, (fm.get(p) || 0) + 1);
-    for (const p of bigrams) fm.set(p, (fm.get(p) || 0) + 2);
+    /* Bigrams only — unigrams are too generic without context. */
+    for (const p of bigrams) fm.set(p, (fm.get(p) || 0) + 1);
     const allPh = [...unigrams, ...bigrams];
     for (let i = 0; i < allPh.length; i++) {
       for (let j = i + 1; j < allPh.length; j++) {
