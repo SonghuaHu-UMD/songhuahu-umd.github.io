@@ -78,10 +78,18 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 Research Topics
 ======
 
+<p style="color: #555; line-height: 1.7; margin: 0.6em 0 1.2em;">
+Each panel below summarizes the most distinctive terms in my abstracts for a two-year period. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a> and, when missing, back-filled via <a href="https://www.semanticscholar.org/">Semantic Scholar</a> or <a href="https://www.crossref.org/">Crossref</a> by DOI. Text is tokenized into single words and adjacent two-word phrases (bigrams weighted twice as much), with a curated stop-word list removing function words, generic academic filler, and common adjectives/adverbs. The top six phrases per two-year window are shown; color indicates recency (blue = older, red = newer).
+</p>
+
 <div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 290px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
   <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year terms…</div>
 </div>
-<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1.5em;">Top abstract terms per year</div>
+<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">Top abstract terms per two-year period</div>
+
+<p style="color: #555; line-height: 1.7; margin: 1em 0 0.5em;">
+The trajectory traces a clear arc: from <em>shared mobility</em> and <em>urban flood resilience</em> in early Tongji-era work (<strong>2017–2018</strong>: <code>carsharing</code>, <code>road waterlogging</code>, <code>management strategies</code>), to a deep <em>pandemic mobility</em> phase using nationwide mobile-device data (<strong>2019–2022</strong>: <code>human mobility</code>, <code>mobile device</code>, <code>covid pandemic</code>, <code>coronavirus disease</code>), into <em>public perception and accessibility</em> sensing with NLP and large language models (<strong>2023–2024</strong>: <code>travel behavior</code>, <code>public perceptions</code>, <code>google maps</code>, <code>socio spatial</code>), and most recently into <em>data-driven traffic emissions</em> and <em>urban policy evaluation</em> (<strong>2025–2026</strong>: <code>traffic emissions</code>, <code>road traffic</code>, <code>citywide road</code>).
+</p>
 
 <style>
 .cn-tooltip {
