@@ -73,7 +73,7 @@ Research Topics
 ======
 
 <p style="color: #555; line-height: 1.7; margin: 0.6em 0 1.2em;">
-Each panel below summarizes the most distinctive terms in my research. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a>. A single thread runs through every period: turning ubiquitous urban data into actionable insights for <em>sustainable, equitable, and resilient mobility</em>. The unit of analysis scales up over time, from <em>operator-scale shared mobility</em> at Tongji, to <em>nationwide pandemic-era mobility</em> at UMD, to <em>citywide emission inventories</em> and <em>crowdsourced public sensing</em> at MIT.
+Each panel below highlights a dominant theme plus supporting sub-themes for a two-year period. Themes are AI-synthesized by reading the titles and abstracts (<a href="https://openalex.org/">OpenAlex</a>) of every paper in the window. A single thread runs through all periods: turning ubiquitous urban data into actionable insights for <em>sustainable, equitable, and resilient mobility</em>. The unit of analysis scales up over time, from <em>operator-scale shared mobility</em> at Tongji, to <em>nationwide pandemic-era mobility</em> at UMD, to <em>citywide emission inventories</em> and <em>crowdsourced public sensing</em> at MIT.
 </p>
 
 <div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 320px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
