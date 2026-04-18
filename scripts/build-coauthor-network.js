@@ -222,15 +222,28 @@ function buildGraph(works) {
     + 'greater lesser higher lower smaller larger bigger longer shorter faster slower deeper shallower narrower wider broader stronger weaker harder softer easier better worse best worst fewer multiple double triple simple complex complicated basic advanced overall partial complete entire whole exact precise approximate roughly virtually essentially comprehensive extensive intensive recent current previous prior future present past traditional common frequent rare unusual normal typical unique distinct distinctive similar comparable equal unequal parallel consistent inconsistent gradual sudden abrupt smooth rough even uneven accurate inaccurate precise novel modern contemporary fresh massive huge tiny minor major various varied diverse general specific universal individual collective overall total significant insignificant relevant irrelevant useful useless effective ineffective efficient inefficient successful unsuccessful positive negative high low medium intermediate'
   ).split(/\s+/));
 
-  const tokenizeOrdered = (text) => {
-    const out = [];
+  const isMeaningful = (raw) => {
+    if (raw.length < 4 || raw.length > 22) return false;
+    if (/^\d+$/.test(raw)) return false;
+    if (STOP.has(raw)) return false;
+    return true;
+  };
+  /* Returns { unigrams, bigrams }. Bigrams come from strictly-adjacent original-position
+     pairs (no jumping over stopwords) and skip identical-word repeats like "peak peak". */
+  const extractTerms = (text) => {
+    const allTokens = [];
     for (const raw of text.toLowerCase().split(/[^a-z\u00C0-\u017F]+/)) {
-      if (raw.length < 4 || raw.length > 22) continue;
-      if (/^\d+$/.test(raw)) continue;
-      if (STOP.has(raw)) continue;
-      out.push(raw);
+      if (raw) allTokens.push(raw);
     }
-    return out;
+    const unigrams = allTokens.filter(isMeaningful);
+    const bigrams = [];
+    for (let i = 0; i < allTokens.length - 1; i++) {
+      const a = allTokens[i], b = allTokens[i + 1];
+      if (a === b) continue;
+      if (!isMeaningful(a) || !isMeaningful(b)) continue;
+      bigrams.push(a + ' ' + b);
+    }
+    return { unigrams, bigrams };
   };
 
   /* Per year, count bigram frequencies and within-paper co-occurrence between bigrams. */
@@ -306,15 +319,10 @@ function buildGraph(works) {
     const yr = binStart(w.publication_year);
     const text = textForWork(w);
     if (!text) continue;
-    const toks = tokenizeOrdered(text);
-    if (!toks.length) continue;
-    const unigrams = new Set();
-    const bigrams = new Set();
-    for (const t of toks) unigrams.add(t);
-    for (let i = 0; i < toks.length - 1; i++) {
-      bigrams.add(toks[i] + ' ' + toks[i + 1]);
-    }
-    if (!unigrams.size && !bigrams.size) continue;
+    const { unigrams: ug, bigrams: bg } = extractTerms(text);
+    if (!ug.length && !bg.length) continue;
+    const unigrams = new Set(ug);
+    const bigrams = new Set(bg);
     yearPaperCount.set(yr, (yearPaperCount.get(yr) || 0) + 1);
     if (!yearPhraseFreq.has(yr)) { yearPhraseFreq.set(yr, new Map()); yearPhraseEdges.set(yr, new Map()); }
     const fm = yearPhraseFreq.get(yr);
