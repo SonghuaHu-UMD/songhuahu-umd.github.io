@@ -59,11 +59,13 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 
 <div style="display: flex; gap: 1em; flex-wrap: wrap; align-items: stretch; margin: 1.2em 0;">
   <div style="flex: 1 1 320px;">
-    <img src="/images/citations.svg" alt="Google Scholar cumulative citations" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block;" />
+    <div style="width: 100%; height: 360px; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; display: flex; align-items: center; justify-content: center; padding: 0.8em; box-sizing: border-box;">
+      <img src="/images/citations.svg" alt="Google Scholar cumulative citations" loading="lazy" decoding="async" style="max-width: 100%; max-height: 100%; width: auto; height: auto; display: block;" />
+    </div>
     <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Cumulative citations (Google Scholar)</div>
   </div>
   <div style="flex: 1 1 320px;">
-    <div id="coauthor-network" style="width: 100%; height: 380px; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
+    <div id="coauthor-network" style="width: 100%; height: 360px; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
       <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading network…</div>
     </div>
     <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network (OpenAlex)</div>
