@@ -29,14 +29,6 @@
         {
           "phrase": "promoting carsharing",
           "count": 2
-        },
-        {
-          "phrase": "carsharing attractiveness",
-          "count": 2
-        },
-        {
-          "phrase": "attractiveness efficiency",
-          "count": 2
         }
       ],
       "edges": [
@@ -90,37 +82,9 @@
         {
           "phrase": "stay home",
           "count": 6
-        },
-        {
-          "phrase": "home orders",
-          "count": 6
-        },
-        {
-          "phrase": "decision",
-          "count": 4
         }
       ],
       "edges": [
-        {
-          "source": "decision",
-          "target": "human mobility",
-          "weight": 2
-        },
-        {
-          "source": "decision",
-          "target": "mobile device",
-          "weight": 2
-        },
-        {
-          "source": "decision",
-          "target": "device location",
-          "weight": 2
-        },
-        {
-          "source": "decision",
-          "target": "mobility pandemic",
-          "weight": 2
-        },
         {
           "source": "human mobility",
           "target": "mobile device",
@@ -157,11 +121,6 @@
           "weight": 3
         },
         {
-          "source": "home orders",
-          "target": "human mobility",
-          "weight": 3
-        },
-        {
           "source": "covid pandemic",
           "target": "human mobility",
           "weight": 3
@@ -172,19 +131,9 @@
           "weight": 2
         },
         {
-          "source": "home orders",
-          "target": "mobility pandemic",
-          "weight": 2
-        },
-        {
           "source": "covid pandemic",
           "target": "mobility pandemic",
           "weight": 2
-        },
-        {
-          "source": "home orders",
-          "target": "stay home",
-          "weight": 3
         },
         {
           "source": "mobile device",
@@ -199,21 +148,6 @@
         {
           "source": "covid pandemic",
           "target": "stay home",
-          "weight": 3
-        },
-        {
-          "source": "home orders",
-          "target": "mobile device",
-          "weight": 2
-        },
-        {
-          "source": "device location",
-          "target": "home orders",
-          "weight": 2
-        },
-        {
-          "source": "covid pandemic",
-          "target": "home orders",
           "weight": 3
         },
         {
@@ -256,22 +190,9 @@
         {
           "phrase": "human mobility",
           "count": 6
-        },
-        {
-          "phrase": "contiguous united",
-          "count": 6
-        },
-        {
-          "phrase": "control",
-          "count": 4
         }
       ],
       "edges": [
-        {
-          "source": "control",
-          "target": "covid",
-          "weight": 3
-        },
         {
           "source": "covid",
           "target": "covid pandemic",
@@ -286,11 +207,6 @@
           "source": "covid",
           "target": "disease covid",
           "weight": 4
-        },
-        {
-          "source": "control",
-          "target": "covid pandemic",
-          "weight": 2
         },
         {
           "source": "coronavirus disease",
@@ -351,26 +267,6 @@
           "source": "disease covid",
           "target": "human mobility",
           "weight": 2
-        },
-        {
-          "source": "contiguous united",
-          "target": "mobility",
-          "weight": 2
-        },
-        {
-          "source": "contiguous united",
-          "target": "covid",
-          "weight": 3
-        },
-        {
-          "source": "contiguous united",
-          "target": "human mobility",
-          "weight": 2
-        },
-        {
-          "source": "control",
-          "target": "mobility",
-          "weight": 2
         }
       ]
     },
@@ -402,27 +298,9 @@
         {
           "phrase": "socio spatial",
           "count": 8
-        },
-        {
-          "phrase": "insights",
-          "count": 7
-        },
-        {
-          "phrase": "decision",
-          "count": 6
         }
       ],
       "edges": [
-        {
-          "source": "insights",
-          "target": "urban",
-          "weight": 5
-        },
-        {
-          "source": "insights",
-          "target": "urban rural",
-          "weight": 3
-        },
         {
           "source": "travel behavior",
           "target": "urban",
@@ -437,11 +315,6 @@
           "source": "travel behavior",
           "target": "urban rural",
           "weight": 2
-        },
-        {
-          "source": "decision",
-          "target": "urban",
-          "weight": 3
         },
         {
           "source": "public perceptions",
@@ -459,41 +332,6 @@
           "weight": 4
         },
         {
-          "source": "decision",
-          "target": "insights",
-          "weight": 4
-        },
-        {
-          "source": "decision",
-          "target": "public perceptions",
-          "weight": 3
-        },
-        {
-          "source": "decision",
-          "target": "google maps",
-          "weight": 3
-        },
-        {
-          "source": "decision",
-          "target": "socio spatial",
-          "weight": 3
-        },
-        {
-          "source": "insights",
-          "target": "public perceptions",
-          "weight": 4
-        },
-        {
-          "source": "google maps",
-          "target": "insights",
-          "weight": 4
-        },
-        {
-          "source": "insights",
-          "target": "socio spatial",
-          "weight": 4
-        },
-        {
           "source": "google maps",
           "target": "public perceptions",
           "weight": 4
@@ -507,11 +345,6 @@
           "source": "google maps",
           "target": "socio spatial",
           "weight": 4
-        },
-        {
-          "source": "decision",
-          "target": "urban rural",
-          "weight": 2
         },
         {
           "source": "public perceptions",
@@ -558,14 +391,6 @@
         {
           "phrase": "emissions efficiency",
           "count": 6
-        },
-        {
-          "phrase": "efficiency driven",
-          "count": 6
-        },
-        {
-          "phrase": "driven evaluating",
-          "count": 6
         }
       ],
       "edges": [
@@ -595,16 +420,6 @@
           "weight": 3
         },
         {
-          "source": "efficiency driven",
-          "target": "evaluating zone",
-          "weight": 3
-        },
-        {
-          "source": "driven evaluating",
-          "target": "evaluating zone",
-          "weight": 3
-        },
-        {
           "source": "citywide road",
           "target": "zone citywide",
           "weight": 3
@@ -625,16 +440,6 @@
           "weight": 3
         },
         {
-          "source": "efficiency driven",
-          "target": "zone citywide",
-          "weight": 3
-        },
-        {
-          "source": "driven evaluating",
-          "target": "zone citywide",
-          "weight": 3
-        },
-        {
           "source": "citywide road",
           "target": "road traffic",
           "weight": 3
@@ -647,16 +452,6 @@
         {
           "source": "citywide road",
           "target": "emissions efficiency",
-          "weight": 3
-        },
-        {
-          "source": "citywide road",
-          "target": "efficiency driven",
-          "weight": 3
-        },
-        {
-          "source": "citywide road",
-          "target": "driven evaluating",
           "weight": 3
         },
         {
@@ -670,43 +465,8 @@
           "weight": 3
         },
         {
-          "source": "efficiency driven",
-          "target": "road traffic",
-          "weight": 3
-        },
-        {
-          "source": "driven evaluating",
-          "target": "road traffic",
-          "weight": 3
-        },
-        {
           "source": "emissions efficiency",
           "target": "traffic emissions",
-          "weight": 3
-        },
-        {
-          "source": "efficiency driven",
-          "target": "traffic emissions",
-          "weight": 3
-        },
-        {
-          "source": "driven evaluating",
-          "target": "traffic emissions",
-          "weight": 3
-        },
-        {
-          "source": "efficiency driven",
-          "target": "emissions efficiency",
-          "weight": 3
-        },
-        {
-          "source": "driven evaluating",
-          "target": "emissions efficiency",
-          "weight": 3
-        },
-        {
-          "source": "driven evaluating",
-          "target": "efficiency driven",
           "weight": 3
         }
       ]

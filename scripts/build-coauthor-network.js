@@ -333,7 +333,7 @@ function buildGraph(works) {
   }
 
   /* Pick top phrases per year, dedupe unigram if it's covered by a higher-ranked bigram. */
-  const TOP_PER_YEAR = 8;
+  const TOP_PER_YEAR = 6;
   const yearsOut = [];
   for (const yr of [...yearPhraseFreq.keys()].sort((a, b) => a - b)) {
     const fm = yearPhraseFreq.get(yr);
