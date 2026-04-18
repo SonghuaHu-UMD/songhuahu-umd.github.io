@@ -271,7 +271,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF2.png" alt="Multi-ATGCN architecture"></div>
       <div class="card-body">
         <span class="card-venue">PhD Dissertation · 2023</span>
-        <p class="card-text"><strong>Multi-ATGCN</strong> is a graph neural network that forecasts citywide OD flows several steps into the future. It outperforms strong baselines on two real-world datasets.</p>
+        <p class="card-text"><strong>Multi-ATGCN</strong> (<em>Multi-graph Multi-head Adaptive Temporal Graph Convolutional Network</em>) forecasts citywide origin-destination flows several steps into the future. It learns the spatial structure from multiple graphs, weighs them with attention, and adapts to real-time conditions, outperforming strong baselines on two real-world datasets.</p>
       </div>
     </div>
 
