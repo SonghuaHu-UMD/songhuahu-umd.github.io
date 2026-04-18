@@ -45,11 +45,11 @@ author_profile: true
 }
 
 .r-section {
-  padding: 4em 0 2em;
+  padding: 2em 0 1.2em;
   scroll-margin-top: 80px;
   border-top: 1px solid #eee;
 }
-.r-section:first-of-type { border-top: none; padding-top: 1em; }
+.r-section:first-of-type { border-top: none; padding-top: 0.5em; }
 .r-section .r-eyebrow {
   font-size: 1.25em;
   text-transform: uppercase;
@@ -70,8 +70,8 @@ author_profile: true
 .r-section .r-lead {
   color: #666;
   font-size: 1em;
-  line-height: 1.65;
-  margin-bottom: 2.5em;
+  line-height: 1.6;
+  margin-bottom: 1.4em;
 }
 .r-subhead {
   font-size: 0.78em;
@@ -79,7 +79,7 @@ author_profile: true
   letter-spacing: 0.14em;
   font-weight: 700;
   color: var(--accent);
-  margin: 2.5em 0 1.2em;
+  margin: 1.6em 0 0.9em;
   padding-left: 0.8em;
   border-left: 3px solid var(--accent);
 }
@@ -87,8 +87,8 @@ author_profile: true
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5em;
-  margin-bottom: 1.5em;
+  gap: 1.2em;
+  margin-bottom: 0.6em;
 }
 .card {
   position: relative;
