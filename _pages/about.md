@@ -94,7 +94,7 @@ redirect_from:
   <h1>Songhua Hu <span class="zh">胡松华</span></h1>
   <p class="role"><b>Assistant Professor of Transportation Engineering</b><br>
     Department of Architecture and Civil Engineering, <a href="https://www.cityu.edu.hk/">City University of Hong Kong</a></p>
-  <p class="prev">Previously: Postdoctoral Research Fellow, <a href="https://senseable.mit.edu/">MIT Senseable City Lab</a> (PIs: Paolo Santi, Carlo Ratti)</p>
+  <p class="prev">Previously: Postdoctoral Research Fellow, <a href="https://senseable.mit.edu/">MIT Senseable City Lab</a></p>
 
   <div class="stats">
     <span class="stat green"><b>40+</b> Journal Papers</span>
