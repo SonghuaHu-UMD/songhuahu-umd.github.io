@@ -1,5 +1,5 @@
 {
-  "_comment": "Manually curated top phrases per 2-year period, drawn from the abstracts + titles of papers in each window. When this file is present, the script uses it directly and skips algorithmic frequency extraction.",
+  "_comment": "AI-synthesized top phrases per 2-year period. Structure: one dominant theme (first) + 1-2 supporting sub-themes (rest). Ordered by prominence within each period.",
   "use": true,
   "periods": [
     {
@@ -8,11 +8,11 @@
       "papers": 4,
       "institution": "Tongji",
       "phrases": [
+        "Shared Mobility",
         "Carsharing Optimization",
-        "Vehicle Selection",
-        "Urban Waterlogging",
-        "Floating Car Data",
-        "Weather Impact"
+        "Vehicle Choice Modeling",
+        "Urban Waterlogging Detection",
+        "Floating Car Data"
       ]
     },
     {
@@ -21,9 +21,9 @@
       "papers": 8,
       "institution": "UMD",
       "phrases": [
-        "COVID-19 Mobility",
+        "Pandemic Mobility Analytics",
         "Mobile Device Data",
-        "Transit Ridership",
+        "Transit Ridership Decline",
         "Shared Vehicle Behavior",
         "EV Sharing Simulation"
       ]
@@ -34,10 +34,10 @@
       "papers": 11,
       "institution": "UMD",
       "phrases": [
-        "Mobility Disparities",
-        "Vaccine Hesitancy",
+        "COVID Mobility Disparities",
+        "Vaccination and Mobility",
+        "Social Distancing",
         "Inflow Forecasting",
-        "Bikesharing Resilience",
         "Personalized Incentives"
       ]
     },
@@ -47,11 +47,11 @@
       "papers": 10,
       "institution": "UMD",
       "phrases": [
-        "Explainable ML",
+        "Travel Behavior Modeling",
         "Equitable Transit Access",
-        "Travel Behavior Resilience",
+        "Mobility Resilience",
         "Wireless EV Charging",
-        "E-scooter vs Bikesharing"
+        "Shared Mobility Comparison"
       ]
     },
     {
@@ -61,10 +61,10 @@
       "institution": "MIT",
       "phrases": [
         "Traffic Emission Inventory",
-        "Crowdsourced Sentiment",
         "Digital Twin Cities",
-        "LLM-based Sensing",
-        "Urban Policy Evaluation"
+        "Urban Policy Evaluation",
+        "Crowdsourced Urban Sensing",
+        "LLM-based Analysis"
       ]
     }
   ]

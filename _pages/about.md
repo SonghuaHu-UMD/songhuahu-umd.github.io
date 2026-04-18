@@ -79,7 +79,7 @@ Each panel below summarizes the most distinctive terms in my research. Abstracts
 <div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 320px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
   <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year terms…</div>
 </div>
-<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">Top abstract terms per two-year period</div>
+<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">AI-synthesized research themes per two-year period</div>
 
 <style>
 .cn-tooltip {

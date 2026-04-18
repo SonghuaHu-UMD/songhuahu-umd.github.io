@@ -9,23 +9,23 @@
       "institution": "Tongji",
       "phrases": [
         {
-          "phrase": "Carsharing Optimization",
+          "phrase": "Shared Mobility",
           "count": 5
         },
         {
-          "phrase": "Vehicle Selection",
+          "phrase": "Carsharing Optimization",
           "count": 4
         },
         {
-          "phrase": "Urban Waterlogging",
+          "phrase": "Vehicle Choice Modeling",
           "count": 3
         },
         {
-          "phrase": "Floating Car Data",
+          "phrase": "Urban Waterlogging Detection",
           "count": 2
         },
         {
-          "phrase": "Weather Impact",
+          "phrase": "Floating Car Data",
           "count": 1
         }
       ],
@@ -38,7 +38,7 @@
       "institution": "UMD",
       "phrases": [
         {
-          "phrase": "COVID-19 Mobility",
+          "phrase": "Pandemic Mobility Analytics",
           "count": 5
         },
         {
@@ -46,7 +46,7 @@
           "count": 4
         },
         {
-          "phrase": "Transit Ridership",
+          "phrase": "Transit Ridership Decline",
           "count": 3
         },
         {
@@ -67,19 +67,19 @@
       "institution": "UMD",
       "phrases": [
         {
-          "phrase": "Mobility Disparities",
+          "phrase": "COVID Mobility Disparities",
           "count": 5
         },
         {
-          "phrase": "Vaccine Hesitancy",
+          "phrase": "Vaccination and Mobility",
           "count": 4
         },
         {
-          "phrase": "Inflow Forecasting",
+          "phrase": "Social Distancing",
           "count": 3
         },
         {
-          "phrase": "Bikesharing Resilience",
+          "phrase": "Inflow Forecasting",
           "count": 2
         },
         {
@@ -96,7 +96,7 @@
       "institution": "UMD",
       "phrases": [
         {
-          "phrase": "Explainable ML",
+          "phrase": "Travel Behavior Modeling",
           "count": 5
         },
         {
@@ -104,7 +104,7 @@
           "count": 4
         },
         {
-          "phrase": "Travel Behavior Resilience",
+          "phrase": "Mobility Resilience",
           "count": 3
         },
         {
@@ -112,7 +112,7 @@
           "count": 2
         },
         {
-          "phrase": "E-scooter vs Bikesharing",
+          "phrase": "Shared Mobility Comparison",
           "count": 1
         }
       ],
@@ -129,19 +129,19 @@
           "count": 5
         },
         {
-          "phrase": "Crowdsourced Sentiment",
+          "phrase": "Digital Twin Cities",
           "count": 4
         },
         {
-          "phrase": "Digital Twin Cities",
+          "phrase": "Urban Policy Evaluation",
           "count": 3
         },
         {
-          "phrase": "LLM-based Sensing",
+          "phrase": "Crowdsourced Urban Sensing",
           "count": 2
         },
         {
-          "phrase": "Urban Policy Evaluation",
+          "phrase": "LLM-based Analysis",
           "count": 1
         }
       ],
