@@ -427,7 +427,9 @@ function buildGraph(works) {
     return ABBREV[top] || top;
   };
 
-  /* Pick top phrases per year, dedupe unigram if it's covered by a higher-ranked bigram. */
+  /* Pick top phrases per year. Strict dedup: skip any phrase that shares ANY token with an
+     already-chosen phrase, so the final set is conceptually distinct
+     (no "mobility" + "human mobility", no "covid pandemic" + "disease covid"). */
   const TOP_PER_YEAR = 5;
   const yearsOut = [];
   for (const yr of [...yearPhraseFreq.keys()].sort((a, b) => a - b)) {
@@ -439,8 +441,7 @@ function buildGraph(works) {
     for (const [phrase, count] of ranked) {
       if (chosen.length >= TOP_PER_YEAR) break;
       const tokens = phrase.split(' ');
-      /* skip a unigram already covered by an earlier bigram */
-      if (tokens.length === 1 && usedTokens.has(phrase)) continue;
+      if (tokens.some(t => usedTokens.has(t))) continue;
       chosen.push([phrase, count]);
       for (const t of tokens) usedTokens.add(t);
     }
