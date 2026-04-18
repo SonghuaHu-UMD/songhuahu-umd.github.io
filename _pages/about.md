@@ -16,7 +16,7 @@ Previously, I was a Postdoctoral Research Fellow at [MIT Senseable City Lab](htt
 I received my <span style="color: #2980b9;">Ph.D.</span> (2023) from the University of Maryland, College Park, <span style="color: #2980b9;">M.S.</span> (2019) from Tongji University (同济大学), and <span style="color: #2980b9;">B.S.</span> (2016) from Huazhong University of Science and Technology (华中科技大学), all in <span style="color: #2980b9;">Transportation Engineering</span>.
 My research leverages <span style="color: #e67e22;">crowdsourced data mining</span>, <span style="color: #e67e22;">spatiotemporal AI</span>, <span style="color: #e67e22;">network analysis</span>, and <span style="color: #e67e22;">advanced statistics</span>
 to advance <span style="color: #27ae60;">smart, sustainable, resilient, and equitable mobility systems</span>.
-I have published **over 40** journal papers (**21** first-authored, **4** corresponding) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.,
+I have published **over 40** journal papers (**21** first-authored) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.,
 and have contributed to research projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, and USDOE</span>.
 I serve as a reviewer for **over 60** journals including _Nature Cities_, _Nature Communications_, _Transportation Research Part A/B/C/D/E_, among others.
 
