@@ -231,7 +231,6 @@ author_profile: true
 <!-- ========================================== MOBILITY ========================================== -->
 <section class="r-section" id="mobility" style="--accent: var(--c-mob);">
   <div class="r-eyebrow">01 / Mobility</div>
-  <h2>Human Mobility Modeling</h2>
   <p class="r-lead">
     Mobile devices generate vast spatiotemporal data on individual travel — far richer than traditional surveys.
     My work integrates these signals with travel-demand modeling: a unified pipeline for trip rosters,
@@ -300,7 +299,6 @@ author_profile: true
 <!-- ========================================== SUSTAINABILITY ========================================== -->
 <section class="r-section" id="sustainability" style="--accent: var(--c-sus);">
   <div class="r-eyebrow">02 / Sustainability</div>
-  <h2>Transport Emission Reduction</h2>
   <p class="r-lead">
     Transport emissions remain a major source of greenhouse gases and air pollutants.
     My work develops cost-effective methods to monitor and predict large-scale emissions,
@@ -377,7 +375,6 @@ author_profile: true
 <!-- ========================================== RESILIENCE ========================================== -->
 <section class="r-section" id="resilience" style="--accent: var(--c-res);">
   <div class="r-eyebrow">03 / Resilience</div>
-  <h2>Resilient Mobility &amp; Community</h2>
   <p class="r-lead">
     Natural disasters, pandemics, and extreme weather profoundly disrupt human mobility.
     My work quantifies travel patterns before, during, and after such disruptions —
@@ -454,7 +451,6 @@ author_profile: true
 <!-- ========================================== HEALTH ========================================== -->
 <section class="r-section" id="health" style="--accent: var(--c-hea);">
   <div class="r-eyebrow">04 / Health</div>
-  <h2>Mobility, Epidemiology &amp; Health Disparity</h2>
   <p class="r-lead">
     The COVID-19 pandemic underscored the tight coupling between human mobility and infectious disease dynamics.
     My work integrates econometric, epidemiological, and simulation models to disentangle causal relationships
@@ -509,7 +505,6 @@ author_profile: true
 <!-- ========================================== BEYOND ========================================== -->
 <section class="r-section" id="beyond" style="--accent: var(--c-mis);">
   <div class="r-eyebrow">05 / Beyond</div>
-  <h2>Other Transportation Studies</h2>
   <p class="r-lead">
     Beyond my core themes, I work across travel demand management, public perception analytics,
     shared mobility, and multimodal integration.
