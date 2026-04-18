@@ -260,7 +260,7 @@ author_profile: true
       <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/FF61.mp4" aria-label="Traffic simulation animation"></video></div>
       <div class="card-body">
         <span class="card-venue">Ongoing</span>
-        <p class="card-text">Forecasted trip itineraries integrate with micro (Vissim, SUMO), meso (DTALite), and agent-based simulators (MATSim), enabling fine-grained citywide traffic simulation driven entirely by mobile location data and behavioral patterns.</p>
+        <p class="card-text">An <strong>LLM-driven</strong> agentic framework that turns forecasted trip itineraries into executable scenarios for micro (Vissim, SUMO), meso (DTALite), and agent-based simulators (MATSim). LLMs orchestrate tool selection, parameter calibration, and behavioral plan generation, enabling fine-grained citywide traffic simulation from mobile location data.</p>
       </div>
     </div>
 
