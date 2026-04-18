@@ -54,20 +54,19 @@ author_profile: true
   margin-bottom: 0.5em;
 }
 .r-section h2 {
-  font-size: 2.2em;
-  font-weight: 300;
-  letter-spacing: -0.02em;
-  margin: 0 0 0.4em;
+  font-size: 1.6em;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5em;
   color: #2c3e50;
   border: none;
   padding: 0;
 }
 .r-section .r-lead {
   color: #666;
-  font-size: 1.05em;
+  font-size: 1em;
   line-height: 1.65;
   margin-bottom: 2.5em;
-  max-width: 780px;
 }
 .r-subhead {
   font-size: 0.78em;
@@ -142,7 +141,7 @@ author_profile: true
 }
 
 @media (max-width: 600px) {
-  .r-section h2 { font-size: 1.7em; }
+  .r-section h2 { font-size: 1.4em; }
   .card-grid { grid-template-columns: 1fr; }
 }
 </style>
