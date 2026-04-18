@@ -492,7 +492,7 @@ author_profile: true
     </div>
 
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X25001895" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/fooddelivery.png" alt="Food delivery choice analysis"></div>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/partc_2026.jpg" alt="Food delivery choice analysis"></div>
       <div class="card-body">
         <span class="card-venue">TR Part C</span>
         <p class="card-text">Analyzing 2.7M food delivery orders in Dubai to understand why customers order from distant restaurants when closer alternatives exist. Explainable ML reveals delivery fees, cuisine type, restaurant ratings, and neighborhood socioeconomics drive whether orders stay local — with implications for emissions.</p>
