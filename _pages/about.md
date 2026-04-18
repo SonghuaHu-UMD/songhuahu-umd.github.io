@@ -12,8 +12,9 @@ redirect_from:
 
 Greetings! I'm <span style="color: #2c3e50; font-weight: bold;">Songhua Hu</span> (胡松华), an <span style="color: #e67e22;">Assistant Professor of Transportation Engineering</span> at the
 Department of Architecture and Civil Engineering, [City University of Hong Kong](https://www.cityu.edu.hk/).
-Previously, I was a Postdoctoral Research Fellow at [MIT Senseable City Lab](https://senseable.mit.edu/).
+Previously, I was a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
 I received my <span style="color: #2980b9;">Ph.D.</span> (2023) from the University of Maryland, College Park, <span style="color: #2980b9;">M.S.</span> (2019) from Tongji University (同济大学), and <span style="color: #2980b9;">B.S.</span> (2016) from Huazhong University of Science and Technology (华中科技大学), all in <span style="color: #2980b9;">Transportation Engineering</span>.
+
 My research leverages <span style="color: #e67e22;">crowdsourced data mining</span>, <span style="color: #e67e22;">spatiotemporal AI</span>, <span style="color: #e67e22;">network analysis</span>, and <span style="color: #e67e22;">advanced statistics</span>
 to advance <span style="color: #27ae60;">smart, sustainable, resilient, and equitable mobility systems</span>.
 I have published **over 40** journal papers (**21** first-authored) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.,
@@ -27,9 +28,8 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 News
 ======
-
+* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402), [**Anthropocene**](https://www.anthropocenemagazine.org/2026/04/tracking-traffic-pollution-in-real-time-could-transform-city-climate-policy/), and [**MIT SCL**](https://senseable.mit.edu/fleeting-emissions/)!
 * **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9): Ubiquitous data-driven framework for traffic emission estimation and policy evaluation!
-* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**Anthropocene**](https://www.anthropocenemagazine.org/2026/04/tracking-traffic-pollution-in-real-time-could-transform-city-climate-policy/)!
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
@@ -79,7 +79,7 @@ Research Topics
 ======
 
 <p style="color: #555; line-height: 1.7; margin: 0.6em 0 1.2em;">
-Each panel below summarizes the most distinctive terms in my abstracts for a two-year period. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a> and, when missing, back-filled via <a href="https://www.semanticscholar.org/">Semantic Scholar</a> or <a href="https://www.crossref.org/">Crossref</a> by DOI. The arc moves from <em>shared mobility</em> and <em>urban flood resilience</em> (2017–18), through <em>pandemic mobility</em> (2019–22), into <em>public perception sensing</em> with LLMs (2023–24), and most recently <em>data-driven traffic emissions</em> and <em>policy evaluation</em> (2025–26).
+Each panel below summarizes the most distinctive terms in my research for a two-year period. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a>. The arc moves from <em>shared mobility</em> and <em>urban flood resilience</em> (2017–18), through <em>pandemic mobility</em> (2019–22), into <em>public perception sensing</em> with LLMs (2023–24), and most recently <em>data-driven traffic emissions</em> and <em>policy evaluation</em> (2025–26).
 </p>
 
 <div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 310px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">

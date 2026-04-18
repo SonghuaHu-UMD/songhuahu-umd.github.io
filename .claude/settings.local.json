@@ -38,7 +38,8 @@
       "Bash(node scripts/build-coauthor-network.js)",
       "Bash(curl -fsS -o /dev/null -w \"%{http_code} %{size_download}\\\\n\" \"https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css\")",
       "Bash(curl -fsS -o /dev/null -w \"%{http_code} %{size_download}\\\\n\" \"https://cdn.jsdelivr.net/npm/academicons@1.9.3/css/academicons.min.css\")",
-      "Bash(curl -fsS \"https://data.jsdelivr.com/v1/package/npm/academicons\")"
+      "Bash(curl -fsS \"https://data.jsdelivr.com/v1/package/npm/academicons\")",
+      "Bash(node -e \"console.log\\(JSON.parse\\(require\\('fs'\\).readFileSync\\('assets/topic_evolution.json','utf8'\\)\\).topics\\)\")"
     ]
   }
 }
