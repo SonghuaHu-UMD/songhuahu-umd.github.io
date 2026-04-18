@@ -59,7 +59,7 @@
 
   <rect x="665" y="160" width="285" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
   <text x="808" y="197" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Policy Evaluation</text>
-  <text x="808" y="230" text-anchor="middle" fill="#7a8e9e" font-size="17">Decarbonization · Demand Management</text>
+  <text x="808" y="230" text-anchor="middle" fill="#7a8e9e" font-size="17">Decarbonization · Demand Mgmt</text>
 
   <rect x="665" y="265" width="285" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
   <text x="808" y="302" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Complex System Resilience</text>
