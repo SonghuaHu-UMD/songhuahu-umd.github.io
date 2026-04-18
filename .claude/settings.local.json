@@ -27,7 +27,8 @@
       "Bash(where.exe ruby *)",
       "WebFetch(domain:www.sciencedirect.com)",
       "WebFetch(domain:www.researchsquare.com)",
-      "WebFetch(domain:doi.org)"
+      "WebFetch(domain:doi.org)",
+      "Bash(node scripts/polish-cards.js)"
     ]
   }
 }
