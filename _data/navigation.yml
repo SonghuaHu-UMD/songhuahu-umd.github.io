@@ -1,19 +1,7 @@
 # main links
 main:
-  - title: "Mobility"
-    url: /research/#mobility
-
-  - title: "Sustainability"
-    url: /research/#sustainability
-
-  - title: "Resilience"
-    url: /research/#resilience
-
-  - title: "Health"
-    url: /research/#health
-
-  - title: "Miscellaneous"
-    url: /research/#miscellaneous
+  - title: "Research"
+    url: /research/
 
   - title: "Teaching"
     url: /Teachings/
