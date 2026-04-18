@@ -34,7 +34,7 @@ async function fetchAllWorks() {
   const works = [];
   let cursor = '*';
   while (cursor) {
-    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year,primary_topic,concepts,keywords,abstract_inverted_index`;
+    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year,primary_topic,concepts,keywords,abstract_inverted_index,doi`;
     const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
     if (!r.ok) throw new Error('OpenAlex fetch failed: ' + r.status);
     const j = await r.json();
@@ -153,7 +153,36 @@ function buildGraph(works) {
   }, null, 2));
   console.log('Wrote ' + CITATIONS_PATH + ' (total ' + totalCitations + ' citations on ' + filtered.length + ' works, h=' + h + ', i10=' + i10 + ')');
 
-  console.log('Building per-year phrase networks (bigrams)...');
+  console.log('Filling missing abstracts from Semantic Scholar via DOI...');
+  /* For works missing abstracts in OpenAlex, query Semantic Scholar by DOI (free, ~100 req/5min). */
+  const cleanDoi = (doi) => doi ? doi.replace(/^https?:\/\/doi\.org\//, '') : null;
+  const fetchSSAbstract = async (doi) => {
+    const d = cleanDoi(doi);
+    if (!d) return null;
+    try {
+      const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${encodeURIComponent(d)}?fields=abstract`;
+      const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
+      if (!r.ok) return null;
+      const j = await r.json();
+      return j.abstract || null;
+    } catch (e) { return null; }
+  };
+
+  const ssAbstractByWorkId = new Map();
+  let filled = 0, attempted = 0;
+  for (const w of works) {
+    if (w.abstract_inverted_index) continue;
+    if (!w.doi) continue;
+    if (w.publication_year < MIN_YEAR) continue;
+    if (BLOCKLIST.has(w.id)) continue;
+    attempted++;
+    const a = await fetchSSAbstract(w.doi);
+    if (a) { ssAbstractByWorkId.set(w.id, a); filled++; }
+    await new Promise(res => setTimeout(res, 350));   /* rate-limit politeness */
+  }
+  console.log('  filled ' + filled + ' / ' + attempted + ' missing abstracts via Semantic Scholar');
+
+  console.log('Building per-year phrase networks (unigrams + bigrams x2)...');
   const reconstruct = (inv) => {
     if (!inv) return '';
     const arr = [];
@@ -220,21 +249,30 @@ function buildGraph(works) {
     return name;
   };
 
-  /* Build text per work. Prefer abstract; if missing, fall back to title + filtered keywords. */
+  /* Build text per work. Priority:
+     1) OpenAlex abstract,
+     2) Semantic Scholar abstract (fetched above by DOI),
+     3) title (heavily weighted) + filtered keywords.   */
   const textForWork = (w) => {
     const parts = [];
     const ab = reconstruct(w.abstract_inverted_index);
     if (ab) {
       parts.push(ab);
       if (w.title) parts.push(w.title);
-    } else {
-      if (w.title) {
-        parts.push(w.title); parts.push(w.title); parts.push(w.title);
-      }
-      for (const k of (w.keywords || [])) {
-        const v = cleanKw(k.display_name);
-        if (v) parts.push(v);
-      }
+      return parts.join(' ');
+    }
+    const ss = ssAbstractByWorkId.get(w.id);
+    if (ss) {
+      parts.push(ss);
+      if (w.title) parts.push(w.title);
+      return parts.join(' ');
+    }
+    if (w.title) {
+      parts.push(w.title); parts.push(w.title); parts.push(w.title);
+    }
+    for (const k of (w.keywords || [])) {
+      const v = cleanKw(k.display_name);
+      if (v) parts.push(v);
     }
     return parts.join(' ');
   };
@@ -245,23 +283,24 @@ function buildGraph(works) {
     if (!text) continue;
     const toks = tokenizeOrdered(text);
     if (!toks.length) continue;
-    const phrases = new Set();
-    /* unigrams */
-    for (const t of toks) phrases.add(t);
-    /* bigrams */
+    const unigrams = new Set();
+    const bigrams = new Set();
+    for (const t of toks) unigrams.add(t);
     for (let i = 0; i < toks.length - 1; i++) {
-      phrases.add(toks[i] + ' ' + toks[i + 1]);
+      bigrams.add(toks[i] + ' ' + toks[i + 1]);
     }
-    if (!phrases.size) continue;
+    if (!unigrams.size && !bigrams.size) continue;
     yearPaperCount.set(yr, (yearPaperCount.get(yr) || 0) + 1);
     if (!yearPhraseFreq.has(yr)) { yearPhraseFreq.set(yr, new Map()); yearPhraseEdges.set(yr, new Map()); }
     const fm = yearPhraseFreq.get(yr);
     const em = yearPhraseEdges.get(yr);
-    const ph = [...phrases];
-    for (const p of ph) fm.set(p, (fm.get(p) || 0) + 1);
-    for (let i = 0; i < ph.length; i++) {
-      for (let j = i + 1; j < ph.length; j++) {
-        const [a, b] = [ph[i], ph[j]].sort();
+    /* Bigrams get weight x2 by default to compete with naturally more frequent unigrams. */
+    for (const p of unigrams) fm.set(p, (fm.get(p) || 0) + 1);
+    for (const p of bigrams) fm.set(p, (fm.get(p) || 0) + 2);
+    const allPh = [...unigrams, ...bigrams];
+    for (let i = 0; i < allPh.length; i++) {
+      for (let j = i + 1; j < allPh.length; j++) {
+        const [a, b] = [allPh[i], allPh[j]].sort();
         const key = a + '||' + b;
         em.set(key, (em.get(key) || 0) + 1);
       }
