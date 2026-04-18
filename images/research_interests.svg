@@ -5,67 +5,67 @@
     </filter>
   </defs>
 
-  <!-- ========== COLUMN 1: DATA SOURCES ========== -->
-  <text x="155" y="30" text-anchor="middle" fill="#5a7a6a" font-size="22" font-weight="700" letter-spacing="3">DATA SOURCES</text>
-  <line x1="30" y1="42" x2="280" y2="42" stroke="#c8d5cd" stroke-width="1"/>
+  <!-- ========== COLUMN 1: DATA SOURCES (narrower, w=200) ========== -->
+  <text x="130" y="30" text-anchor="middle" fill="#5a7a6a" font-size="22" font-weight="700" letter-spacing="3">DATA SOURCES</text>
+  <line x1="30" y1="42" x2="230" y2="42" stroke="#c8d5cd" stroke-width="1"/>
 
-  <rect x="30" y="55" width="250" height="95" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
-  <text x="155" y="108" text-anchor="middle" fill="#4a6a5a" font-size="19" font-weight="600">Mobile Phones</text>
+  <rect x="30" y="55" width="200" height="95" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
+  <text x="130" y="108" text-anchor="middle" fill="#4a6a5a" font-size="19" font-weight="600">Mobile Phones</text>
 
-  <rect x="30" y="160" width="250" height="95" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
-  <text x="155" y="213" text-anchor="middle" fill="#4a6a5a" font-size="19" font-weight="600">City Cameras</text>
+  <rect x="30" y="160" width="200" height="95" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
+  <text x="130" y="213" text-anchor="middle" fill="#4a6a5a" font-size="19" font-weight="600">City Cameras</text>
 
-  <rect x="30" y="265" width="250" height="95" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
-  <text x="155" y="318" text-anchor="middle" fill="#4a6a5a" font-size="19" font-weight="600">Connected Vehicles</text>
+  <rect x="30" y="265" width="200" height="95" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
+  <text x="130" y="318" text-anchor="middle" fill="#4a6a5a" font-size="19" font-weight="600">Connected Vehicles</text>
 
-  <rect x="30" y="370" width="250" height="95" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
-  <text x="155" y="423" text-anchor="middle" fill="#4a6a5a" font-size="19" font-weight="600">Social Media</text>
+  <rect x="30" y="370" width="200" height="95" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
+  <text x="130" y="423" text-anchor="middle" fill="#4a6a5a" font-size="19" font-weight="600">Social Media</text>
 
   <!-- Arrow DATA → METHODS -->
-  <line x1="290" y1="260" x2="335" y2="260" stroke="#b0bfb8" stroke-width="2"/>
-  <polygon points="332,253 345,260 332,267" fill="#b0bfb8"/>
+  <line x1="240" y1="260" x2="290" y2="260" stroke="#b0bfb8" stroke-width="2"/>
+  <polygon points="287,253 300,260 287,267" fill="#b0bfb8"/>
 
-  <!-- ========== COLUMN 2: METHODS ========== -->
-  <text x="475" y="30" text-anchor="middle" fill="#8a6d4a" font-size="22" font-weight="700" letter-spacing="3">METHODS</text>
-  <line x1="350" y1="42" x2="600" y2="42" stroke="#ddd0c2" stroke-width="1"/>
+  <!-- ========== COLUMN 2: METHODS (wider, w=285) ========== -->
+  <text x="448" y="30" text-anchor="middle" fill="#8a6d4a" font-size="22" font-weight="700" letter-spacing="3">METHODS</text>
+  <line x1="305" y1="42" x2="590" y2="42" stroke="#ddd0c2" stroke-width="1"/>
 
-  <rect x="350" y="55" width="250" height="95" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="475" y="92" text-anchor="middle" fill="#7a5e3e" font-size="19" font-weight="700">Crowdsourced Data Mining</text>
-  <text x="475" y="125" text-anchor="middle" fill="#9a8a7a" font-size="17">Data Fusion · Bias Correction</text>
+  <rect x="305" y="55" width="285" height="95" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
+  <text x="448" y="92" text-anchor="middle" fill="#7a5e3e" font-size="19" font-weight="700">Crowdsourced Data Mining</text>
+  <text x="448" y="125" text-anchor="middle" fill="#9a8a7a" font-size="17">Data Fusion · Bias Correction</text>
 
-  <rect x="350" y="160" width="250" height="95" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="475" y="197" text-anchor="middle" fill="#7a5e3e" font-size="19" font-weight="700">Spatiotemporal AI</text>
-  <text x="475" y="230" text-anchor="middle" fill="#9a8a7a" font-size="17">GNN · Computer Vision · LLM</text>
+  <rect x="305" y="160" width="285" height="95" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
+  <text x="448" y="197" text-anchor="middle" fill="#7a5e3e" font-size="19" font-weight="700">Spatiotemporal AI</text>
+  <text x="448" y="230" text-anchor="middle" fill="#9a8a7a" font-size="17">GNN · Computer Vision · LLM</text>
 
-  <rect x="350" y="265" width="250" height="95" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="475" y="302" text-anchor="middle" fill="#7a5e3e" font-size="19" font-weight="700">Network Analysis</text>
-  <text x="475" y="335" text-anchor="middle" fill="#9a8a7a" font-size="17">Modeling · Optimization</text>
+  <rect x="305" y="265" width="285" height="95" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
+  <text x="448" y="302" text-anchor="middle" fill="#7a5e3e" font-size="19" font-weight="700">Network Analysis</text>
+  <text x="448" y="335" text-anchor="middle" fill="#9a8a7a" font-size="17">Modeling · Optimization</text>
 
-  <rect x="350" y="370" width="250" height="95" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="475" y="407" text-anchor="middle" fill="#7a5e3e" font-size="19" font-weight="700">Advanced Statistics</text>
-  <text x="475" y="440" text-anchor="middle" fill="#9a8a7a" font-size="17">Causal Inference · Regression</text>
+  <rect x="305" y="370" width="285" height="95" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
+  <text x="448" y="407" text-anchor="middle" fill="#7a5e3e" font-size="19" font-weight="700">Advanced Statistics</text>
+  <text x="448" y="440" text-anchor="middle" fill="#9a8a7a" font-size="17">Causal Inference · Regression</text>
 
   <!-- Arrow METHODS → APPLICATIONS -->
-  <line x1="610" y1="260" x2="655" y2="260" stroke="#c2b8a8" stroke-width="2"/>
-  <polygon points="652,253 665,260 652,267" fill="#c2b8a8"/>
+  <line x1="600" y1="260" x2="650" y2="260" stroke="#c2b8a8" stroke-width="2"/>
+  <polygon points="647,253 660,260 647,267" fill="#c2b8a8"/>
 
-  <!-- ========== COLUMN 3: APPLICATIONS ========== -->
-  <text x="795" y="30" text-anchor="middle" fill="#506880" font-size="22" font-weight="700" letter-spacing="3">APPLICATIONS</text>
-  <line x1="670" y1="42" x2="920" y2="42" stroke="#c2ced8" stroke-width="1"/>
+  <!-- ========== COLUMN 3: APPLICATIONS (wider, w=285) ========== -->
+  <text x="808" y="30" text-anchor="middle" fill="#506880" font-size="22" font-weight="700" letter-spacing="3">APPLICATIONS</text>
+  <line x1="665" y1="42" x2="950" y2="42" stroke="#c2ced8" stroke-width="1"/>
 
-  <rect x="670" y="55" width="250" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
-  <text x="795" y="92" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Transportation Planning</text>
-  <text x="795" y="125" text-anchor="middle" fill="#7a8e9e" font-size="17">Demand · Behavior · Simulation</text>
+  <rect x="665" y="55" width="285" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
+  <text x="808" y="92" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Transportation Planning</text>
+  <text x="808" y="125" text-anchor="middle" fill="#7a8e9e" font-size="17">Demand · Behavior · Simulation</text>
 
-  <rect x="670" y="160" width="250" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
-  <text x="795" y="197" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Policy Evaluation</text>
-  <text x="795" y="230" text-anchor="middle" fill="#7a8e9e" font-size="17">Decarbonization · Demand Mgmt</text>
+  <rect x="665" y="160" width="285" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
+  <text x="808" y="197" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Policy Evaluation</text>
+  <text x="808" y="230" text-anchor="middle" fill="#7a8e9e" font-size="17">Decarbonization · Demand Management</text>
 
-  <rect x="670" y="265" width="250" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
-  <text x="795" y="302" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Complex System Resilience</text>
-  <text x="795" y="335" text-anchor="middle" fill="#7a8e9e" font-size="17">Urban Multi-system Networks</text>
+  <rect x="665" y="265" width="285" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
+  <text x="808" y="302" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Complex System Resilience</text>
+  <text x="808" y="335" text-anchor="middle" fill="#7a8e9e" font-size="17">Urban Multi-system Networks</text>
 
-  <rect x="670" y="370" width="250" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
-  <text x="795" y="407" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Environmental Health</text>
-  <text x="795" y="440" text-anchor="middle" fill="#7a8e9e" font-size="17">Epidemiology · Exposure</text>
+  <rect x="665" y="370" width="285" height="95" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
+  <text x="808" y="407" text-anchor="middle" fill="#3e5e7a" font-size="19" font-weight="700">Environmental Health</text>
+  <text x="808" y="440" text-anchor="middle" fill="#7a8e9e" font-size="17">Epidemiology · Exposure</text>
 </svg>
