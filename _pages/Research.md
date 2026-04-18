@@ -415,19 +415,19 @@ author_profile: true
       </div>
     </div>
 
-    <div class="card"><a class="card-link" href="https://doi.org/10.1016/j.tra.2024.103980" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/urban_rural_resilience.png" alt="Urban-rural travel behavior resilience"></div>
+    <div class="card"><a class="card-link" href="https://doi.org/10.1016/j.jtrangeo.2025.104423" aria-label="Read more"></a>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/hurricane_laura.png" alt="Hurricane Laura mobility and COVID spread"></div>
       <div class="card-body">
-        <span class="card-venue">TR Part A</span>
-        <p class="card-text">Evaluating travel behavior resilience across urban and rural US areas during the COVID-19 pandemic. Rural communities exhibit faster, fuller recovery in trip frequency, while urban areas show persistent shifts in mode share and trip purpose, exposing differential pandemic resilience.</p>
+        <span class="card-venue">JTG</span>
+        <p class="card-text">A case study of Hurricane Laura quantifies how compound disruptions reshape human mobility and amplify COVID-19 spread. Evacuation flows redistribute infection risk across counties, with disadvantaged communities bearing both heightened exposure and slower recovery.</p>
       </div>
     </div>
 
-    <div class="card"><a class="card-link" href="https://doi.org/10.1177/03611981211043813" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/covid_platform.png" alt="UMD COVID mobility platform"></div>
+    <div class="card"><a class="card-link" href="https://doi.org/10.1016/j.compenvurbsys.2025.102333" aria-label="Read more"></a>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/wildfire_sir.png" alt="Wildfire socio-spatial response analysis"></div>
       <div class="card-body">
-        <span class="card-venue">TRR</span>
-        <p class="card-text">An interactive web platform that delivers daily county-level COVID-19 mobility metrics and social-distancing indices for the entire US. The system integrates pipelines for mobile-device data ingestion, weighting, and visualization, supporting policy makers and researchers in real time.</p>
+        <span class="card-venue">CEUS</span>
+        <p class="card-text">A socio-spatial study of public response to US wildfires combining SIR-style diffusion models with NLP on social-media discourse. The framework captures how concern propagates across regions and which socioeconomic factors shape community reactions to wildfire disasters.</p>
       </div>
     </div>
 
