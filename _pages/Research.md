@@ -265,7 +265,7 @@ author_profile: true
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/camera0.gif" alt="Camera-based vehicular emission estimation"></div>
       <div class="card-body">
         <span class="card-venue">Under Review</span>
-        <p class="card-text">A deep learning pipeline that estimates vehicular emissions directly from traffic camera video — turning ubiquitous roadside footage into scalable, fine-grained emission inventories without dedicated sensing infrastructure.</p>
+        <p class="card-text">Vehicle-level emission mapping from urban traffic video. We classify 4,923 car models from a 2.2M-image dataset, then estimate per-vehicle pollutants via a modified COPERT factor that accounts for both velocity and acceleration extracted through vehicle tracking. Demonstrated in Amsterdam for real-time traffic-flow and emission estimation.</p>
       </div>
     </div>
 
