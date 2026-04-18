@@ -59,10 +59,10 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 
 <div style="display: flex; gap: 1em; flex-wrap: wrap; align-items: stretch; margin: 1.2em 0;">
   <div style="flex: 1 1 320px;">
-    <div style="width: 100%; height: 360px; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; display: flex; align-items: center; justify-content: center; padding: 0.8em; box-sizing: border-box;">
-      <img src="/images/citations.svg" alt="Google Scholar cumulative citations" loading="lazy" decoding="async" style="max-width: 100%; max-height: 100%; width: auto; height: auto; display: block;" />
+    <div id="citations-chart" style="width: 100%; height: 360px; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
+      <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading citations…</div>
     </div>
-    <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Cumulative citations (Google Scholar)</div>
+    <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Citations per year (OpenAlex)</div>
   </div>
   <div style="flex: 1 1 320px;">
     <div id="coauthor-network" style="width: 100%; height: 360px; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
@@ -94,6 +94,95 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+<script>
+(function () {
+  var container = document.getElementById('citations-chart');
+  if (!container || !window.d3) return;
+
+  fetch('/assets/citations_by_year.json').then(function (r) { return r.json(); }).then(function (data) {
+    container.innerHTML = '';
+    var years = data.by_year.filter(function (d) { return d.annual > 0; });
+    if (!years.length) return;
+    var w = container.clientWidth;
+    var h = container.clientHeight;
+    var margin = { top: 36, right: 44, bottom: 30, left: 40 };
+    var iw = w - margin.left - margin.right;
+    var ih = h - margin.top - margin.bottom;
+
+    var svg = d3.select(container).append('svg')
+      .attr('viewBox', '0 0 ' + w + ' ' + h)
+      .attr('width', '100%').attr('height', '100%')
+      .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif");
+
+    /* summary header inside the chart */
+    svg.append('text').attr('x', margin.left).attr('y', 18)
+      .attr('font-size', 12).attr('fill', '#2c3e50').attr('font-weight', '700')
+      .text(data.total_citations.toLocaleString() + ' citations');
+    svg.append('text').attr('x', margin.left).attr('y', 32)
+      .attr('font-size', 11).attr('fill', '#7a8e9e')
+      .text('h-index ' + data.h_index + ' · i10 ' + data.i10_index + ' · ' + data.total_works + ' works');
+
+    var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+    var x = d3.scaleBand().domain(years.map(function (d) { return d.year; })).range([0, iw]).padding(0.25);
+    var yLeft = d3.scaleLinear().domain([0, d3.max(years, function (d) { return d.annual; }) * 1.15]).range([ih, 0]);
+    var yRight = d3.scaleLinear().domain([0, d3.max(years, function (d) { return d.cumulative; }) * 1.05]).range([ih, 0]);
+
+    /* annual bars */
+    g.selectAll('rect').data(years).join('rect')
+      .attr('x', function (d) { return x(d.year); })
+      .attr('y', function (d) { return yLeft(d.annual); })
+      .attr('width', x.bandwidth())
+      .attr('height', function (d) { return ih - yLeft(d.annual); })
+      .attr('fill', '#a8c5dd').attr('rx', 2);
+
+    /* cumulative line */
+    var line = d3.line()
+      .x(function (d) { return x(d.year) + x.bandwidth() / 2; })
+      .y(function (d) { return yRight(d.cumulative); })
+      .curve(d3.curveMonotoneX);
+
+    g.append('path').datum(years)
+      .attr('fill', 'none').attr('stroke', '#c0392b').attr('stroke-width', 2)
+      .attr('d', line);
+
+    g.selectAll('circle').data(years).join('circle')
+      .attr('cx', function (d) { return x(d.year) + x.bandwidth() / 2; })
+      .attr('cy', function (d) { return yRight(d.cumulative); })
+      .attr('r', 3).attr('fill', '#c0392b');
+
+    /* X axis */
+    g.append('g').attr('transform', 'translate(0,' + ih + ')')
+      .call(d3.axisBottom(x).tickSize(0).tickPadding(6))
+      .call(function (s) { s.select('.domain').attr('stroke', '#ccc'); })
+      .selectAll('text').attr('font-size', 10).attr('fill', '#666');
+
+    /* Y axes */
+    g.append('g').call(d3.axisLeft(yLeft).ticks(4).tickSize(-iw).tickPadding(6))
+      .call(function (s) {
+        s.select('.domain').remove();
+        s.selectAll('.tick line').attr('stroke', '#eee');
+        s.selectAll('text').attr('font-size', 10).attr('fill', '#a8c5dd');
+      });
+    g.append('g').attr('transform', 'translate(' + iw + ',0)')
+      .call(d3.axisRight(yRight).ticks(4).tickSize(0).tickPadding(6))
+      .call(function (s) {
+        s.select('.domain').remove();
+        s.selectAll('text').attr('font-size', 10).attr('fill', '#c0392b');
+      });
+
+    /* axis labels */
+    svg.append('text').attr('x', margin.left + 4).attr('y', h - 6)
+      .attr('font-size', 9).attr('fill', '#a8c5dd').text('annual');
+    svg.append('text').attr('x', w - 32).attr('y', h - 6)
+      .attr('font-size', 9).attr('fill', '#c0392b').text('cumulative');
+  }).catch(function (err) {
+    container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Citations failed to load: ' + err.message + '</div>';
+  });
+})();
+</script>
+
 <script>
 (function () {
   var container = document.getElementById('coauthor-network');

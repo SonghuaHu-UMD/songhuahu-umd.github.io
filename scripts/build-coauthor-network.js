@@ -13,6 +13,14 @@ const path = require('path');
 const ORCID = '0000-0002-0731-3080';
 const SELF_NAME = 'Songhua Hu';
 const OUT_PATH = path.resolve(__dirname, '..', 'assets', 'coauthor_network.json');
+const CITATIONS_PATH = path.resolve(__dirname, '..', 'assets', 'citations_by_year.json');
+
+async function fetchAuthor() {
+  const url = `https://api.openalex.org/authors/orcid:${ORCID}`;
+  const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
+  if (!r.ok) throw new Error('OpenAlex author fetch failed: ' + r.status);
+  return await r.json();
+}
 
 async function fetchAllWorks() {
   const works = [];
@@ -94,4 +102,23 @@ function buildGraph(works) {
     links: graph.links,
   }));
   console.log('Wrote ' + OUT_PATH + ' (' + (fs.statSync(OUT_PATH).size / 1024).toFixed(1) + ' KB)');
+
+  console.log('Fetching author profile for citations...');
+  const author = await fetchAuthor();
+  const counts = (author.counts_by_year || []).slice().sort((a, b) => a.year - b.year);
+  let cumulative = 0;
+  const byYear = counts.map(c => ({
+    year: c.year,
+    annual: c.cited_by_count || 0,
+    cumulative: (cumulative += (c.cited_by_count || 0)),
+  }));
+  fs.writeFileSync(CITATIONS_PATH, JSON.stringify({
+    generated: new Date().toISOString().slice(0, 10),
+    total_citations: author.cited_by_count,
+    total_works: author.works_count,
+    h_index: author.summary_stats && author.summary_stats.h_index,
+    i10_index: author.summary_stats && author.summary_stats.i10_index,
+    by_year: byYear,
+  }, null, 2));
+  console.log('Wrote ' + CITATIONS_PATH + ' (total ' + author.cited_by_count + ' citations, h=' + (author.summary_stats && author.summary_stats.h_index) + ')');
 })().catch(e => { console.error(e); process.exit(1); });
