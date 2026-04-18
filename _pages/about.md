@@ -292,9 +292,8 @@ Each panel below summarizes the most distinctive terms in my research for a two-
 
   fetch('/assets/coauthor_network.json').then(function (r) { return r.json(); }).then(function (data) {
     container.innerHTML = '';
-    /* Use fixed viewBox dimensions so the simulation always has full width to spread; SVG scales via CSS. */
-    var w = 1200;
-    var h = 460;
+    var w = container.clientWidth || 900;
+    var h = container.clientHeight || 460;
     var maxW = Math.max.apply(null, data.links.map(function (l) { return l.weight; }));
     var radius = function (d) {
       if (d.isSelf) return 12;
