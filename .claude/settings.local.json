@@ -39,7 +39,13 @@
       "Bash(curl -fsS -o /dev/null -w \"%{http_code} %{size_download}\\\\n\" \"https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css\")",
       "Bash(curl -fsS -o /dev/null -w \"%{http_code} %{size_download}\\\\n\" \"https://cdn.jsdelivr.net/npm/academicons@1.9.3/css/academicons.min.css\")",
       "Bash(curl -fsS \"https://data.jsdelivr.com/v1/package/npm/academicons\")",
-      "Bash(node -e \"console.log\\(JSON.parse\\(require\\('fs'\\).readFileSync\\('assets/topic_evolution.json','utf8'\\)\\).topics\\)\")"
+      "Bash(node -e \"console.log\\(JSON.parse\\(require\\('fs'\\).readFileSync\\('assets/topic_evolution.json','utf8'\\)\\).topics\\)\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(node *)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:api.crossref.org)"
     ]
   }
 }
