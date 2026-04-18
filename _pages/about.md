@@ -57,7 +57,16 @@ _Journal of the Royal Society Interface_ (**1**),
 _Journal of Planning Education and Research_ (**1**),
 among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc.
 
-![Google Scholar Citations](/images/citations.svg)
+<div style="display: flex; gap: 1em; flex-wrap: wrap; align-items: stretch; margin: 1.2em 0;">
+  <div style="flex: 1 1 320px;">
+    <img src="/images/citations.svg" alt="Google Scholar cumulative citations" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block;" />
+    <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Cumulative citations (Google Scholar)</div>
+  </div>
+  <div style="flex: 1 1 320px;">
+    <img src="/images/coauthor_network.svg" alt="Co-authorship network derived from OpenAlex" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block;" />
+    <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network — 150+ collaborators across 77 papers (OpenAlex)</div>
+  </div>
+</div>
 
 <span style="color: purple">**Full publication list: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
 
