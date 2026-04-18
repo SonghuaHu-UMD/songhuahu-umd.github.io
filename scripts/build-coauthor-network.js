@@ -367,27 +367,17 @@ function buildGraph(works) {
     return name;
   };
 
-  /* Build text per work. Priority:
-     1) OpenAlex abstract,
-     2) Semantic Scholar abstract (fetched above by DOI),
-     3) title (heavily weighted) + filtered keywords.   */
+  /* Build text per work. Title is the most curated signal, so we always weight it heavily (×3).
+     Then add abstract (OpenAlex or manual), or fall back to filtered keywords. */
   const textForWork = (w) => {
     const parts = [];
-    const ab = reconstruct(w.abstract_inverted_index);
-    if (ab) {
-      parts.push(ab);
-      if (w.title) parts.push(w.title);
-      return parts.join(' ');
-    }
-    const ext = filledByWorkId.get(w.id);
-    if (ext) {
-      parts.push(ext);
-      if (w.title) parts.push(w.title);
-      return parts.join(' ');
-    }
     if (w.title) {
       parts.push(w.title); parts.push(w.title); parts.push(w.title);
     }
+    const ab = reconstruct(w.abstract_inverted_index);
+    if (ab) { parts.push(ab); return parts.join(' '); }
+    const ext = filledByWorkId.get(w.id);
+    if (ext) { parts.push(ext); return parts.join(' '); }
     for (const k of (w.keywords || [])) {
       const v = cleanKw(k.display_name);
       if (v) parts.push(v);

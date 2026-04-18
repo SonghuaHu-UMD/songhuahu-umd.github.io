@@ -16,11 +16,11 @@
           "count": 2
         },
         {
-          "phrase": "shared cars",
+          "phrase": "promoting carsharing",
           "count": 1
         },
         {
-          "phrase": "carsharing programs",
+          "phrase": "shared cars",
           "count": 1
         },
         {
@@ -37,11 +37,11 @@
       "institution": "UMD",
       "phrases": [
         {
-          "phrase": "human mobility",
+          "phrase": "mobile device",
           "count": 3
         },
         {
-          "phrase": "mobile device",
+          "phrase": "human mobility",
           "count": 3
         },
         {
@@ -53,7 +53,7 @@
           "count": 2
         },
         {
-          "phrase": "imposing travel",
+          "phrase": "home orders",
           "count": 2
         }
       ],
@@ -64,18 +64,18 @@
           "weight": 3
         },
         {
-          "source": "human mobility",
-          "target": "imposing travel",
-          "weight": 2
-        },
-        {
-          "source": "imposing travel",
+          "source": "home orders",
           "target": "mobile device",
           "weight": 2
         },
         {
           "source": "covid pandemic",
-          "target": "imposing travel",
+          "target": "mobile device",
+          "weight": 2
+        },
+        {
+          "source": "home orders",
+          "target": "human mobility",
           "weight": 2
         },
         {
@@ -85,7 +85,7 @@
         },
         {
           "source": "covid pandemic",
-          "target": "mobile device",
+          "target": "home orders",
           "weight": 2
         }
       ]
@@ -165,11 +165,11 @@
           "count": 3
         },
         {
-          "phrase": "socioeconomics demographics",
+          "phrase": "empirical comparison",
           "count": 2
         },
         {
-          "phrase": "empirical comparison",
+          "phrase": "socioeconomics demographics",
           "count": 2
         },
         {
@@ -190,11 +190,11 @@
           "count": 2
         },
         {
-          "phrase": "public perceptions",
+          "phrase": "online reviews",
           "count": 2
         },
         {
-          "phrase": "online reviews",
+          "phrase": "public perceptions",
           "count": 2
         },
         {
@@ -214,21 +214,21 @@
         },
         {
           "source": "google maps",
-          "target": "public perceptions",
-          "weight": 2
-        },
-        {
-          "source": "public perceptions",
-          "target": "socio spatial",
-          "weight": 2
-        },
-        {
-          "source": "google maps",
           "target": "online reviews",
           "weight": 2
         },
         {
           "source": "online reviews",
+          "target": "socio spatial",
+          "weight": 2
+        },
+        {
+          "source": "google maps",
+          "target": "public perceptions",
+          "weight": 2
+        },
+        {
+          "source": "public perceptions",
           "target": "socio spatial",
           "weight": 2
         },
