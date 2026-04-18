@@ -14,6 +14,8 @@ const ORCID = '0000-0002-0731-3080';
 const SELF_NAME = 'Songhua Hu';
 const OUT_PATH = path.resolve(__dirname, '..', 'assets', 'coauthor_network.json');
 const CITATIONS_PATH = path.resolve(__dirname, '..', 'assets', 'citations_by_year.json');
+const TOPICS_PATH = path.resolve(__dirname, '..', 'assets', 'topic_evolution.json');
+const TOP_N_TOPICS = 6;
 
 /* Disambiguation filters — OpenAlex sometimes attributes works to the wrong person. */
 const MIN_YEAR = 2017;                   /* user's first transportation paper era */
@@ -32,7 +34,7 @@ async function fetchAllWorks() {
   const works = [];
   let cursor = '*';
   while (cursor) {
-    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year`;
+    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year,primary_topic`;
     const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
     if (!r.ok) throw new Error('OpenAlex fetch failed: ' + r.status);
     const j = await r.json();
@@ -150,4 +152,43 @@ function buildGraph(works) {
     by_year: byYear,
   }, null, 2));
   console.log('Wrote ' + CITATIONS_PATH + ' (total ' + totalCitations + ' citations on ' + filtered.length + ' works, h=' + h + ', i10=' + i10 + ')');
+
+  console.log('Building topic evolution...');
+  /* Bucket each work into its primary subfield (more specific than field, less noisy than topic). */
+  const topicCount = new Map();
+  for (const w of filtered) {
+    const sf = w.primary_topic && w.primary_topic.subfield && w.primary_topic.subfield.display_name;
+    if (!sf) continue;
+    topicCount.set(sf, (topicCount.get(sf) || 0) + 1);
+  }
+  const topTopics = [...topicCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, TOP_N_TOPICS).map(e => e[0]);
+  const topicSet = new Set(topTopics);
+
+  /* year -> { topic -> count } */
+  const yearTopicMap = new Map();
+  for (const w of filtered) {
+    const year = w.publication_year;
+    if (!year) continue;
+    const sf = w.primary_topic && w.primary_topic.subfield && w.primary_topic.subfield.display_name;
+    const bucket = (sf && topicSet.has(sf)) ? sf : 'Other';
+    if (!yearTopicMap.has(year)) yearTopicMap.set(year, new Map());
+    const yt = yearTopicMap.get(year);
+    yt.set(bucket, (yt.get(bucket) || 0) + 1);
+  }
+
+  const allBuckets = [...topTopics, 'Other'];
+  const sortedYrs = [...yearTopicMap.keys()].sort((a, b) => a - b);
+  const series = sortedYrs.map(year => {
+    const row = { year };
+    for (const b of allBuckets) row[b] = (yearTopicMap.get(year).get(b) || 0);
+    return row;
+  });
+
+  fs.writeFileSync(TOPICS_PATH, JSON.stringify({
+    generated: new Date().toISOString().slice(0, 10),
+    topics: allBuckets,
+    series,
+  }, null, 2));
+  console.log('Wrote ' + TOPICS_PATH + ' (' + allBuckets.length + ' buckets, ' + series.length + ' years)');
+  console.log('  top topics: ' + topTopics.join(' | '));
 })().catch(e => { console.error(e); process.exit(1); });

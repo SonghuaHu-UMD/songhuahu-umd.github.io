@@ -22,6 +22,11 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
 
+<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 320px; margin: 0.5em auto 0.4em; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
+  <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading topic evolution…</div>
+</div>
+<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1.5em;">Topic evolution by publication year (OpenAlex subfields)</div>
+
 ---
 
 News
@@ -94,6 +99,73 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 </style>
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
+<script>
+(function () {
+  var container = document.getElementById('topic-evolution');
+  if (!container || !window.d3) return;
+
+  fetch('/assets/topic_evolution.json').then(function (r) { return r.json(); }).then(function (data) {
+    container.innerHTML = '';
+    var w = container.clientWidth;
+    var h = container.clientHeight;
+    var margin = { top: 18, right: 150, bottom: 30, left: 38 };
+    var iw = w - margin.left - margin.right;
+    var ih = h - margin.top - margin.bottom;
+
+    var svg = d3.select(container).append('svg')
+      .attr('viewBox', '0 0 ' + w + ' ' + h)
+      .attr('width', '100%').attr('height', '100%')
+      .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif");
+
+    var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+    var stack = d3.stack().keys(data.topics).order(d3.stackOrderInsideOut).offset(d3.stackOffsetNone);
+    var layers = stack(data.series);
+
+    var x = d3.scaleLinear().domain(d3.extent(data.series, function (d) { return d.year; })).range([0, iw]);
+    var maxY = d3.max(layers, function (l) { return d3.max(l, function (d) { return d[1]; }); });
+    var y = d3.scaleLinear().domain([0, maxY]).range([ih, 0]);
+
+    var palette = ['#2980b9', '#27ae60', '#e67e22', '#8e44ad', '#16a085', '#c0392b', '#95a5a6'];
+    var color = d3.scaleOrdinal().domain(data.topics).range(palette);
+
+    var area = d3.area()
+      .x(function (d) { return x(d.data.year); })
+      .y0(function (d) { return y(d[0]); })
+      .y1(function (d) { return y(d[1]); })
+      .curve(d3.curveMonotoneX);
+
+    g.selectAll('path.layer').data(layers).join('path')
+      .attr('class', 'layer')
+      .attr('fill', function (d) { return color(d.key); })
+      .attr('opacity', 0.88)
+      .attr('d', area)
+      .append('title').text(function (d) { return d.key; });
+
+    g.append('g').attr('transform', 'translate(0,' + ih + ')')
+      .call(d3.axisBottom(x).tickFormat(d3.format('d')).ticks(Math.min(data.series.length, 10)))
+      .call(function (s) { s.select('.domain').attr('stroke', '#ccc'); s.selectAll('.tick line').attr('stroke', '#ccc'); })
+      .selectAll('text').attr('font-size', 10).attr('fill', '#666');
+
+    g.append('g').call(d3.axisLeft(y).ticks(5).tickSize(-iw))
+      .call(function (s) {
+        s.select('.domain').remove();
+        s.selectAll('.tick line').attr('stroke', '#eee');
+        s.selectAll('text').attr('font-size', 10).attr('fill', '#666');
+      });
+
+    var legend = svg.append('g').attr('transform', 'translate(' + (margin.left + iw + 14) + ',' + (margin.top + 4) + ')');
+    data.topics.forEach(function (t, i) {
+      var row = legend.append('g').attr('transform', 'translate(0,' + (i * 20) + ')');
+      row.append('rect').attr('width', 12).attr('height', 12).attr('rx', 2).attr('fill', color(t)).attr('opacity', 0.88);
+      row.append('text').attr('x', 18).attr('y', 10).attr('font-size', 11).attr('fill', '#444').text(t);
+    });
+  }).catch(function (err) {
+    container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Topic evolution failed to load: ' + err.message + '</div>';
+  });
+})();
+</script>
 
 <script>
 (function () {

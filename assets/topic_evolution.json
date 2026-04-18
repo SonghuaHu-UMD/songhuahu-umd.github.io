@@ -1,0 +1,104 @@
+{
+  "generated": "2026-04-18",
+  "topics": [
+    "Transportation",
+    "Automotive Engineering",
+    "Modeling and Simulation",
+    "Building and Construction",
+    "Marketing",
+    "Health",
+    "Other"
+  ],
+  "series": [
+    {
+      "year": 2018,
+      "Transportation": 0,
+      "Automotive Engineering": 1,
+      "Modeling and Simulation": 0,
+      "Building and Construction": 1,
+      "Marketing": 1,
+      "Health": 0,
+      "Other": 2
+    },
+    {
+      "year": 2019,
+      "Transportation": 0,
+      "Automotive Engineering": 1,
+      "Modeling and Simulation": 0,
+      "Building and Construction": 1,
+      "Marketing": 0,
+      "Health": 0,
+      "Other": 0
+    },
+    {
+      "year": 2020,
+      "Transportation": 3,
+      "Automotive Engineering": 2,
+      "Modeling and Simulation": 1,
+      "Building and Construction": 0,
+      "Marketing": 0,
+      "Health": 0,
+      "Other": 1
+    },
+    {
+      "year": 2021,
+      "Transportation": 4,
+      "Automotive Engineering": 1,
+      "Modeling and Simulation": 3,
+      "Building and Construction": 0,
+      "Marketing": 1,
+      "Health": 0,
+      "Other": 0
+    },
+    {
+      "year": 2022,
+      "Transportation": 2,
+      "Automotive Engineering": 1,
+      "Modeling and Simulation": 0,
+      "Building and Construction": 1,
+      "Marketing": 0,
+      "Health": 1,
+      "Other": 2
+    },
+    {
+      "year": 2023,
+      "Transportation": 3,
+      "Automotive Engineering": 0,
+      "Modeling and Simulation": 2,
+      "Building and Construction": 0,
+      "Marketing": 0,
+      "Health": 0,
+      "Other": 1
+    },
+    {
+      "year": 2024,
+      "Transportation": 3,
+      "Automotive Engineering": 0,
+      "Modeling and Simulation": 1,
+      "Building and Construction": 3,
+      "Marketing": 0,
+      "Health": 0,
+      "Other": 1
+    },
+    {
+      "year": 2025,
+      "Transportation": 3,
+      "Automotive Engineering": 0,
+      "Modeling and Simulation": 0,
+      "Building and Construction": 0,
+      "Marketing": 1,
+      "Health": 0,
+      "Other": 0
+    },
+    {
+      "year": 2026,
+      "Transportation": 0,
+      "Automotive Engineering": 2,
+      "Modeling and Simulation": 0,
+      "Building and Construction": 1,
+      "Marketing": 0,
+      "Health": 0,
+      "Other": 0
+    }
+  ]
+}
