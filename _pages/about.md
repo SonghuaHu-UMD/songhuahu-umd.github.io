@@ -22,10 +22,6 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
 
-<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 360px; margin: 0.5em auto 0.4em; position: relative; overflow: hidden;">
-  <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year phrase columns…</div>
-</div>
-<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1.5em;">Top abstract bigrams per year (OpenAlex; preprints included to surface recent work)</div>
 
 ---
 
@@ -76,6 +72,11 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
     <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network (OpenAlex)</div>
   </div>
 </div>
+
+<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 380px; margin: 1.6em auto 0.4em; position: relative; overflow: hidden;">
+  <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year terms…</div>
+</div>
+<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1.5em;">Top abstract terms per year — unigrams + bigrams from abstracts (or title + keywords when abstract is unavailable)</div>
 
 <style>
 .cn-tooltip {
@@ -146,21 +147,32 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
       var pillH = Math.min(34, (pillsArea - (n - 1) * 4) / n);
       var pillW = colW - 8;
 
+      var fitText = function (text, maxPx, fontPx) {
+        /* approximate; ~0.55 em-width */
+        var maxChars = Math.floor(maxPx / (fontPx * 0.55));
+        if (text.length <= maxChars) return text;
+        return text.slice(0, Math.max(1, maxChars - 1)).trimEnd() + '…';
+      };
+
       yr.phrases.forEach(function (p, idx) {
         var y = pillsTop + idx * (pillH + 4);
-        var op = 0.32 + 0.55 * (p.count / maxCount);
+        var op = 0.18 + 0.32 * (p.count / maxCount);
         svg.append('rect').attr('x', x0 + 4).attr('y', y)
           .attr('width', pillW).attr('height', pillH).attr('rx', 5)
           .attr('fill', heat).attr('opacity', op);
+        var fontPx = Math.min(11, pillH * 0.42);
+        var label = fitText(p.phrase, pillW - 18, fontPx);
         svg.append('text').attr('x', cx).attr('y', y + pillH / 2 + 4)
           .attr('text-anchor', 'middle')
-          .attr('font-size', Math.min(11, pillH * 0.42))
-          .attr('font-weight', 500)
-          .attr('fill', 'white')
-          .text(p.phrase);
+          .attr('font-size', fontPx)
+          .attr('font-weight', 600)
+          .attr('fill', '#2c3e50')
+          .text(label)
+          .append('title').text(p.phrase + ' (×' + p.count + ')');
         if (p.count > 1) {
-          svg.append('text').attr('x', x0 + 4 + pillW - 6).attr('y', y + 11)
-            .attr('text-anchor', 'end').attr('font-size', 8.5).attr('fill', 'rgba(255,255,255,0.85)')
+          svg.append('text').attr('x', x0 + 4 + pillW - 4).attr('y', y + 10)
+            .attr('text-anchor', 'end').attr('font-size', 8.5)
+            .attr('fill', '#7a8e9e').attr('font-weight', 600)
             .text('×' + p.count);
         }
       });

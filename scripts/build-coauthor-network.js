@@ -34,7 +34,7 @@ async function fetchAllWorks() {
   const works = [];
   let cursor = '*';
   while (cursor) {
-    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year,primary_topic,concepts,abstract_inverted_index`;
+    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year,primary_topic,concepts,keywords,abstract_inverted_index`;
     const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
     if (!r.ok) throw new Error('OpenAlex fetch failed: ' + r.status);
     const j = await r.json();
@@ -188,12 +188,57 @@ function buildGraph(works) {
      often haven't been indexed yet). Citations/coauthor still use the strict `filtered` set. */
   const forAbstracts = works.filter(w => w.publication_year && w.publication_year >= MIN_YEAR && !BLOCKLIST.has(w.id));
 
+  /* OpenAlex keywords/concepts are very noisy: parenthetical context disambiguators (Node (physics))
+     and broad fields (Computer science, Engineering, Business) drown out real signal. Filter both. */
+  const PAREN_CONTEXT = /\((satellite|computing|materials science|linguistics|telecommunications|programming language|botany|geometry|psychology|chemistry|physics|biology|architecture|electronics|software|production processes|electricity|mathematics|unit|time|theology|finance|literature|economics|computer science|engineering)\)/i;
+  const BROAD_TERMS = new Set([
+    'computer science', 'engineering', 'business', 'mathematics', 'physics', 'chemistry',
+    'geography', 'biology', 'medicine', 'statistics', 'economics', 'environmental science',
+    'theoretical computer science', 'artificial intelligence', 'algorithm', 'simulation',
+    'electrical engineering', 'structural engineering', 'automotive engineering',
+    'mechanical engineering', 'civil engineering', 'industrial engineering',
+    'telecommunications', 'operations management', 'environmental resource management',
+    'transport engineering', 'transportation', 'climate change', 'meteorology',
+    'graph', 'transformer', 'wireless', 'tariff', 'storm', 'flow', 'physics',
+    'natural science', 'health', 'social science', 'science',
+  ].map(s => s.toLowerCase()));
+
+  const cleanKw = (name) => {
+    if (!name) return null;
+    if (PAREN_CONTEXT.test(name)) return null;
+    if (BROAD_TERMS.has(name.toLowerCase())) return null;
+    return name;
+  };
+
+  /* Build text per work. Prefer abstract; if missing, fall back to title + filtered keywords. */
+  const textForWork = (w) => {
+    const parts = [];
+    const ab = reconstruct(w.abstract_inverted_index);
+    if (ab) {
+      parts.push(ab);
+      if (w.title) parts.push(w.title);
+    } else {
+      if (w.title) {
+        parts.push(w.title); parts.push(w.title); parts.push(w.title);
+      }
+      for (const k of (w.keywords || [])) {
+        const v = cleanKw(k.display_name);
+        if (v) parts.push(v);
+      }
+    }
+    return parts.join(' ');
+  };
+
   for (const w of forAbstracts) {
     const yr = w.publication_year;
-    const text = reconstruct(w.abstract_inverted_index);
+    const text = textForWork(w);
     if (!text) continue;
     const toks = tokenizeOrdered(text);
+    if (!toks.length) continue;
     const phrases = new Set();
+    /* unigrams */
+    for (const t of toks) phrases.add(t);
+    /* bigrams */
     for (let i = 0; i < toks.length - 1; i++) {
       phrases.add(toks[i] + ' ' + toks[i + 1]);
     }
@@ -213,13 +258,24 @@ function buildGraph(works) {
     }
   }
 
-  /* Pick top phrases per year. */
+  /* Pick top phrases per year, dedupe unigram if it's covered by a higher-ranked bigram. */
   const TOP_PER_YEAR = 8;
   const yearsOut = [];
   for (const yr of [...yearPhraseFreq.keys()].sort((a, b) => a - b)) {
     const fm = yearPhraseFreq.get(yr);
     const em = yearPhraseEdges.get(yr);
-    const top = [...fm.entries()].sort((a, b) => b[1] - a[1]).slice(0, TOP_PER_YEAR);
+    const ranked = [...fm.entries()].sort((a, b) => b[1] - a[1]);
+    const chosen = [];
+    const usedTokens = new Set();
+    for (const [phrase, count] of ranked) {
+      if (chosen.length >= TOP_PER_YEAR) break;
+      const tokens = phrase.split(' ');
+      /* skip a unigram already covered by an earlier bigram */
+      if (tokens.length === 1 && usedTokens.has(phrase)) continue;
+      chosen.push([phrase, count]);
+      for (const t of tokens) usedTokens.add(t);
+    }
+    const top = chosen;
     if (!top.length) continue;
     const keep = new Set(top.map(([p]) => p));
     const phrases = top.map(([phrase, count]) => ({ phrase, count }));
