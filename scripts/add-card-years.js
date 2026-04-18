@@ -42,8 +42,12 @@ const OVERRIDES = {
   '0259803': 2021,
 };
 
-/* Venues that intentionally skip a year (Ongoing / In review / dissertation are timeless markers). */
-const SKIP_VENUES = new Set(['Ongoing', 'Under Review', 'PhD Dissertation']);
+/* Venues whose year is fixed by hand (no DOI to look up). */
+const VENUE_YEARS = {
+  'Ongoing': 2026,
+  'Under Review': 2026,
+  'PhD Dissertation': 2023,
+};
 
 /* Extract a normalized identifier (DOI or PII) from various publisher URLs. */
 function extractIdent(href) {
@@ -135,10 +139,8 @@ async function fetchYearByUrl(url) {
 
   for (const r of replacements) {
     const venueClean = r.venue.trim();
-    if (SKIP_VENUES.has(venueClean) || /\b\d{4}\b/.test(venueClean)) {
-      r.year = null;
-      continue;
-    }
+    if (/\b\d{4}\b/.test(venueClean)) { r.year = null; continue; }   /* venue text already has a year */
+    if (VENUE_YEARS[venueClean]) { r.year = VENUE_YEARS[venueClean]; continue; }
     /* Manual override by URL substring match. */
     let year = null;
     for (const [key, yr] of Object.entries(OVERRIDES)) {
@@ -166,6 +168,23 @@ async function fetchYearByUrl(url) {
       missed++;
     }
   }
+  /* Now sort cards within each card-grid block by extracted year, newest first. */
+  const cardBlockRE = /^    <div class="card">[\s\S]*?^    <\/div>$/gm;
+  const yearOf = (cardText) => {
+    /* prefer the `· YYYY` suffix; otherwise any 4-digit year in the venue */
+    const m1 = cardText.match(/<span class="card-venue">[^<]*·\s*(\d{4})<\/span>/);
+    if (m1) return parseInt(m1[1], 10);
+    const m2 = cardText.match(/<span class="card-venue">[^<]*\b(\d{4})\b[^<]*<\/span>/);
+    return m2 ? parseInt(m2[1], 10) : 0;
+  };
+  src = src.replace(/(<div class="card-grid">\n\n)([\s\S]*?)(\n\n  <\/div>)/g, (full, open, body, close) => {
+    const cards = body.match(cardBlockRE);
+    if (!cards || cards.length < 2) return full;
+    const sorted = cards.slice().sort((a, b) => yearOf(b) - yearOf(a));
+    return open + sorted.join('\n\n') + close;
+  });
+
   fs.writeFileSync(FILE, src);
   console.log('Updated ' + updated + ' venues; missed ' + missed);
+  console.log('Cards within each grid sorted by year (newest first)');
 })().catch(e => { console.error(e); process.exit(1); });
