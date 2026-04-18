@@ -95,10 +95,8 @@ providing actionable insights for building more equitable and resilient urban mo
     </a>
   </div>
   <div style="flex: 1; text-align: left; margin-right: 20px;">
-    <a href=”https://www.sciencedirect.com/science/article/pii/S2212420924005168”><b><span style="color: purple;">[IJDRR]</span></b></a> Crowdsourced data open new avenues for monitoring road traffic during extreme weather. We compare two crowdsourced data types, passively collected location data (PCLD) from mobile devices and actively collected user reports (ACUR) from Waze, to assess the impact of floods, winter storms, and fog on road traffic. A key finding: ACUR underestimates actual impacts during severe events, as few users venture out to serve as active “sensors.”
+    <a href="https://www.sciencedirect.com/science/article/pii/S2212420924005168"><b><span style="color: purple;">[IJDRR]</span></b></a> Crowdsourced data open new avenues for monitoring road traffic during extreme weather. We compare two crowdsourced data types, passively collected location data (PCLD) from mobile devices and actively collected user reports (ACUR) from Waze, to assess the impact of floods, winter storms, and fog on road traffic. A key finding: ACUR underestimates actual impacts during severe events, as few users venture out to serve as active “sensors.”
   </div>
 </div>
-
-
 
 ---
