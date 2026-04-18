@@ -95,16 +95,10 @@ redirect_from:
   <p class="role"><b>Assistant Professor of Transportation Engineering</b><br>
     Department of Architecture and Civil Engineering, <a href="https://www.cityu.edu.hk/">City University of Hong Kong</a></p>
   <p class="prev">Previously: Postdoctoral Research Fellow, <a href="https://senseable.mit.edu/">MIT Senseable City Lab</a></p>
-
-  <div class="stats">
-    <span class="stat green"><b>40+</b> Journal Papers</span>
-    <span class="stat blue"><b>21</b> First-Author</span>
-    <span class="stat orange"><b>60+</b> Journals Reviewed</span>
-  </div>
 </section>
 
 <p class="home-bio">
-My research leverages <span style="color: #e67e22;">crowdsourced data mining</span>, <span style="color: #e67e22;">spatiotemporal AI</span>, <span style="color: #e67e22;">network analysis</span>, and <span style="color: #e67e22;">advanced statistics</span> to advance smart, sustainable, resilient, and equitable mobility systems. I received my <span style="color: #2980b9;">Ph.D.</span> (2023) from the University of Maryland, College Park, <span style="color: #2980b9;">M.S.</span> (2019) from Tongji University (同济大学), and <span style="color: #2980b9;">B.S.</span> (2016) from Huazhong University of Science and Technology (华中科技大学), all in Transportation Engineering. Selected publication venues: <em>Nature Sustainability</em>, <em>PNAS</em>, <em>Transportation Research Part A/C/D/E</em>, <em>Cities</em>, <em>Sustainable Cities and Society</em>. Reviewer for <em>Nature Cities</em>, <em>Nature Communications</em>, and many transportation journals.
+I have published <strong>40+</strong> journal papers (<strong>21</strong> first-author) in <em>Nature Sustainability</em>, <em>PNAS</em>, <em>Transportation Research Part A/C/D/E</em>, <em>Cities</em>, <em>Sustainable Cities and Society</em>, etc., and serve as a reviewer for <strong>60+</strong> journals including <em>Nature Cities</em> and <em>Nature Communications</em>. My research leverages <span style="color: #e67e22;">crowdsourced data mining</span>, <span style="color: #e67e22;">spatiotemporal AI</span>, <span style="color: #e67e22;">network analysis</span>, and <span style="color: #e67e22;">advanced statistics</span> to advance smart, sustainable, resilient, and equitable mobility systems. I received my <span style="color: #2980b9;">Ph.D.</span> (2023) from the University of Maryland, College Park, <span style="color: #2980b9;">M.S.</span> (2019) from Tongji University (同济大学), and <span style="color: #2980b9;">B.S.</span> (2016) from Huazhong University of Science and Technology (华中科技大学), all in Transportation Engineering.
 </p>
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
