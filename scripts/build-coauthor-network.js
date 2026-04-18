@@ -432,6 +432,8 @@ function buildGraph(works) {
      already-chosen phrase, so the final set is conceptually distinct
      (no "mobility" + "human mobility", no "covid pandemic" + "disease covid"). */
   const TOP_PER_YEAR = 5;
+  /* Words too generic to stand alone — still allowed inside multi-word phrases. */
+  const WEAK_UNIGRAMS = new Set(['public', 'cost', 'usage', 'station', 'mobile', 'travel', 'data', 'population']);
   const yearsOut = [];
   for (const yr of [...yearPhraseFreq.keys()].sort((a, b) => a - b)) {
     const fm = yearPhraseFreq.get(yr);
@@ -442,6 +444,7 @@ function buildGraph(works) {
     for (const [phrase, count] of ranked) {
       if (chosen.length >= TOP_PER_YEAR) break;
       const tokens = phrase.split(' ');
+      if (tokens.length === 1 && WEAK_UNIGRAMS.has(tokens[0])) continue;
       if (tokens.some(t => usedTokens.has(t))) continue;
       chosen.push([phrase, count]);
       for (const t of tokens) usedTokens.add(t);
