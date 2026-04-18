@@ -20,11 +20,11 @@
           "count": 2
         },
         {
-          "phrase": "effectively",
+          "phrase": "marketing public",
           "count": 2
         },
         {
-          "phrase": "shared cars",
+          "phrase": "transport demography",
           "count": 2
         }
       ],
@@ -53,35 +53,30 @@
           "count": 6
         },
         {
-          "phrase": "coronavirus",
+          "phrase": "virus",
           "count": 4
         }
       ],
       "edges": [
         {
           "source": "human mobility",
-          "target": "mobile device",
-          "weight": 3
-        },
-        {
-          "source": "coronavirus",
-          "target": "covid pandemic",
-          "weight": 4
-        },
-        {
-          "source": "coronavirus",
-          "target": "human mobility",
-          "weight": 3
-        },
-        {
-          "source": "coronavirus",
-          "target": "mobile device",
+          "target": "virus",
           "weight": 2
         },
         {
-          "source": "coronavirus",
-          "target": "home orders",
+          "source": "mobile device",
+          "target": "virus",
+          "weight": 2
+        },
+        {
+          "source": "human mobility",
+          "target": "mobile device",
           "weight": 3
+        },
+        {
+          "source": "covid pandemic",
+          "target": "virus",
+          "weight": 2
         },
         {
           "source": "home orders",
