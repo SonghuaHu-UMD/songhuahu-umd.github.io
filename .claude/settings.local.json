@@ -24,7 +24,10 @@
       "Bash([ ! -f \"/c/Users/Administrator/IdeaProjects/songhuahu-umd.github.io/images/$f\" ])",
       "Bash(bundle --version)",
       "Bash(ruby --version)",
-      "Bash(where.exe ruby *)"
+      "Bash(where.exe ruby *)",
+      "WebFetch(domain:www.sciencedirect.com)",
+      "WebFetch(domain:www.researchsquare.com)",
+      "WebFetch(domain:doi.org)"
     ]
   }
 }
