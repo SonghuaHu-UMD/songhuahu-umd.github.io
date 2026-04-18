@@ -30,8 +30,8 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 News
 ======
-* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402), [**Anthropocene**](https://www.anthropocenemagazine.org/2026/04/tracking-traffic-pollution-in-real-time-could-transform-city-climate-policy/), and [**MIT SCL**](https://senseable.mit.edu/fleeting-emissions/)!
-* **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9): Ubiquitous data-driven framework for traffic emission estimation and policy evaluation!
+* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**Anthropocene**](https://www.anthropocenemagazine.org/2026/04/tracking-traffic-pollution-in-real-time-could-transform-city-climate-policy/)!
+* **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**here](https://senseable.mit.edu/fleeting-emissions/). 
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
