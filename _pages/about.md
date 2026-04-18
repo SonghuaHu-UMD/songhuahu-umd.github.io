@@ -325,11 +325,10 @@ Each panel below summarizes the most distinctive terms in my research for a two-
     var sim = d3.forceSimulation(data.nodes)
       .force('link', d3.forceLink(data.links).id(function (d) { return d.id; })
         .distance(function (l) { return 60 / Math.sqrt(l.weight); }).strength(0.35))
-      .force('charge', d3.forceManyBody().strength(-160))
-      /* Slightly stronger centering pulls nodes inward for a more compact layout. */
-      .force('x', d3.forceX(w / 2).strength(0.10))
-      .force('y', d3.forceY(h / 2).strength(0.18))
-      .force('collide', d3.forceCollide().radius(function (d) { return radius(d) + 3; }));
+      .force('charge', d3.forceManyBody().strength(-210))
+      .force('x', d3.forceX(w / 2).strength(0.07))
+      .force('y', d3.forceY(h / 2).strength(0.13))
+      .force('collide', d3.forceCollide().radius(function (d) { return radius(d) + 4; }));
 
     var link = g.append('g').attr('stroke', '#cbd5dc').attr('fill', 'none')
       .selectAll('line').data(data.links).join('line')
