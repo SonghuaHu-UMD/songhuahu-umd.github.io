@@ -321,7 +321,7 @@ author_profile: true
     </div>
 
     <div class="card"><a class="card-link" href="https://www.sciopen.com/article/10.26599/JICV.2026.9210079" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/GEMINI.png" alt="Digital Twin emission platform"></div>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s1-hero.mp4" aria-label="Digital Twin emission platform"></video></div>
       <div class="card-body">
         <span class="card-venue">J. Intelligent &amp; Connected Vehicles · 2026</span>
         <p class="card-text">A Digital Twin platform that estimates and forecasts road traffic emissions in near real time. By combining open repositories with IoT sensors, it lets users test alternative policy scenarios. Demonstrated for Kista, Stockholm with a 3D interactive interface.</p>
