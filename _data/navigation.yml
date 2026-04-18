@@ -1,13 +1,13 @@
 # main links
 main:
-  - title: "Research"
+  - title: '<span class="lang-en">Research</span><span class="lang-zh">研究</span>'
     url: /research/
 
-  - title: "Teaching"
+  - title: '<span class="lang-en">Teaching</span><span class="lang-zh">教学</span>'
     url: /Teachings/
 
-  - title: "Opportunities"
+  - title: '<span class="lang-en">Opportunities</span><span class="lang-zh">招生</span>'
     url: /Opportunities/
 
-  - title: "CV"
+  - title: '<span class="lang-en">CV</span><span class="lang-zh">简历</span>'
     url: /cv/
