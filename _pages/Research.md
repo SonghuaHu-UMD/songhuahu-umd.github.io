@@ -329,10 +329,10 @@ author_profile: true
     </div>
 
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0965856425000576" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/ZONE301.png" alt="ZONE 30 emission analysis"></div>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/zone_30.mp4" aria-label="Zone 30 emission analysis"></video></div>
       <div class="card-body">
         <span class="card-venue">TR Part A · 2025</span>
-        <p class="card-text">Using 3.4 million driving trips, we measure how Milan's 30 km/h speed limit (Zone 30) changes emissions. Citywide changes are small (0.6 to 2.7 percent) but uneven across space and time, with the largest jumps on cross-zone trips at rush hour.</p>
+        <p class="card-text">Using 3.4 million driving trips, we measure how Milan's Zone 30 changes emissions. Citywide changes are small (0.6 to 2.7 percent) but uneven across space and time, with the largest jumps on cross-zone trips at rush hour.</p>
       </div>
     </div>
 
