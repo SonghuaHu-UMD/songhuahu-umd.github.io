@@ -412,7 +412,6 @@ author_profile: true
     among mobility, public policies, vaccination, and virus transmission.
   </p>
 
-  <div class="r-subhead">Mobility, Disease & Disparity</div>
   <div class="card-grid">
 
     <div class="card"><a class="card-link" href="https://www.pnas.org/doi/abs/10.1073/pnas.2010836117" aria-label="Read more"></a>
@@ -438,11 +437,6 @@ author_profile: true
         <p class="card-text">SEM on 4.4M POI geo-tracking data: mobility mediates infection rates but not case-fatality, with substantial variation across racial/ethnic compositions.</p>
       </div>
     </div>
-
-  </div>
-
-  <div class="r-subhead">Mobility & Vaccination</div>
-  <div class="card-grid">
 
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0264410X22009471" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF41.png" alt="Vaccine hesitancy study"></div>
