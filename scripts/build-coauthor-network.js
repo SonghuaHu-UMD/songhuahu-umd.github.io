@@ -453,6 +453,8 @@ function buildGraph(works) {
   const TOP_PER_YEAR = 5;
   /* Words too generic to stand alone — still allowed inside multi-word phrases. */
   const WEAK_UNIGRAMS = new Set(['public', 'cost', 'usage', 'station', 'mobile', 'travel', 'data', 'population']);
+  /* Bigrams that look meaningful but are redundant ("road" implies "traffic", etc.) — drop entirely. */
+  const WEAK_BIGRAMS = new Set(['road traffic', 'traffic road', 'mobile data', 'data mobile', 'data travel', 'travel data']);
   const yearsOut = [];
   for (const yr of [...yearPhraseFreq.keys()].sort((a, b) => a - b)) {
     const fm = yearPhraseFreq.get(yr);
@@ -464,6 +466,7 @@ function buildGraph(works) {
       if (chosen.length >= TOP_PER_YEAR) break;
       const tokens = phrase.split(' ');
       if (tokens.length === 1 && WEAK_UNIGRAMS.has(tokens[0])) continue;
+      if (WEAK_BIGRAMS.has(phrase)) continue;
       if (tokens.some(t => usedTokens.has(t))) continue;
       chosen.push([phrase, count]);
       for (const t of tokens) usedTokens.add(t);
