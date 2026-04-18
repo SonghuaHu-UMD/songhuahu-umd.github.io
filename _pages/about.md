@@ -63,10 +63,111 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
     <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Cumulative citations (Google Scholar)</div>
   </div>
   <div style="flex: 1 1 320px;">
-    <img src="/images/coauthor_network.svg" alt="Co-authorship network derived from OpenAlex" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block;" />
-    <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network — 150+ collaborators across 77 papers (OpenAlex)</div>
+    <div id="coauthor-network" style="width: 100%; height: 380px; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
+      <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading network…</div>
+    </div>
+    <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network (OpenAlex)</div>
   </div>
 </div>
+
+<style>
+.cn-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(44, 62, 80, 0.95);
+  color: white;
+  padding: 0.4em 0.7em;
+  border-radius: 4px;
+  font-size: 0.78em;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.12s;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+#coauthor-network svg { display: block; cursor: grab; }
+#coauthor-network svg:active { cursor: grabbing; }
+#coauthor-network text { user-select: none; }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script>
+(function () {
+  var container = document.getElementById('coauthor-network');
+  if (!container || !window.d3) return;
+
+  fetch('/assets/coauthor_network.json').then(function (r) { return r.json(); }).then(function (data) {
+    container.innerHTML = '';
+    var w = container.clientWidth;
+    var h = container.clientHeight;
+    var maxW = Math.max.apply(null, data.links.map(function (l) { return l.weight; }));
+    var radius = function (d) { return 3 + Math.sqrt(d.count) * 3.2; };
+    var color = function (d) {
+      if (d.isSelf) return '#c0392b';
+      if (d.count >= 5) return '#2980b9';
+      return '#7a8e9e';
+    };
+
+    var tooltip = d3.select('body').append('div').attr('class', 'cn-tooltip');
+
+    var svg = d3.select(container).append('svg')
+      .attr('viewBox', '0 0 ' + w + ' ' + h)
+      .attr('width', '100%').attr('height', '100%');
+
+    var g = svg.append('g');
+
+    var sim = d3.forceSimulation(data.nodes)
+      .force('link', d3.forceLink(data.links).id(function (d) { return d.id; })
+        .distance(function (l) { return 50 / Math.sqrt(l.weight); }).strength(0.4))
+      .force('charge', d3.forceManyBody().strength(-90))
+      .force('center', d3.forceCenter(w / 2, h / 2))
+      .force('collide', d3.forceCollide().radius(function (d) { return radius(d) + 3; }));
+
+    var link = g.append('g').attr('stroke', '#cbd5dc').attr('fill', 'none')
+      .selectAll('line').data(data.links).join('line')
+      .attr('stroke-width', function (d) { return 0.4 + (d.weight / maxW) * 1.6; })
+      .attr('stroke-opacity', function (d) { return 0.25 + (d.weight / maxW) * 0.5; });
+
+    var node = g.append('g').selectAll('circle').data(data.nodes).join('circle')
+      .attr('r', radius).attr('fill', color).attr('stroke', 'white').attr('stroke-width', 1.2)
+      .style('cursor', 'pointer')
+      .on('mouseover', function (e, d) {
+        tooltip.style('opacity', 1).html('<strong>' + d.name + '</strong> &middot; ' + d.count + ' paper' + (d.count > 1 ? 's' : ''));
+      })
+      .on('mousemove', function (e) {
+        tooltip.style('left', (e.pageX + 12) + 'px').style('top', (e.pageY + 12) + 'px');
+      })
+      .on('mouseout', function () { tooltip.style('opacity', 0); })
+      .call(d3.drag()
+        .on('start', function (e) { if (!e.active) sim.alphaTarget(0.3).restart(); e.subject.fx = e.subject.x; e.subject.fy = e.subject.y; })
+        .on('drag', function (e) { e.subject.fx = e.x; e.subject.fy = e.y; })
+        .on('end', function (e) { if (!e.active) sim.alphaTarget(0); e.subject.fx = null; e.subject.fy = null; }));
+
+    var labelData = data.nodes.filter(function (d) { return d.isSelf || d.count > 3; });
+    var label = g.append('g').selectAll('text').data(labelData).join('text')
+      .text(function (d) { return d.name; })
+      .attr('text-anchor', 'middle')
+      .attr('font-size', function (d) { return d.isSelf ? 12 : 9.5; })
+      .attr('font-weight', function (d) { return d.isSelf ? 700 : 500; })
+      .attr('fill', '#2c3e50')
+      .style('pointer-events', 'none')
+      .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif");
+
+    sim.on('tick', function () {
+      link.attr('x1', function (d) { return d.source.x; }).attr('y1', function (d) { return d.source.y; })
+          .attr('x2', function (d) { return d.target.x; }).attr('y2', function (d) { return d.target.y; });
+      node.attr('cx', function (d) { return d.x; }).attr('cy', function (d) { return d.y; });
+      label.attr('x', function (d) { return d.x; })
+           .attr('y', function (d) { return d.y + radius(d) + (d.isSelf ? 14 : 11); });
+    });
+
+    svg.call(d3.zoom().scaleExtent([0.4, 4]).on('zoom', function (e) { g.attr('transform', e.transform); }));
+  }).catch(function (err) {
+    container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Network failed to load: ' + err.message + '</div>';
+  });
+})();
+</script>
 
 <span style="color: purple">**Full publication list: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
 
