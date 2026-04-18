@@ -32,7 +32,7 @@ News
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
-* **[01/2025]** Invited job talk at **_University of Alberta_**, Canada.
+* **[01/2025]** Invited job talk at **_University of Alberta CEE_**!
 * **[10/2023]** Received [**COTA Best Dissertation Award**](https://cee.umd.edu/news/story/hu-receives-cota-best-dissertation-award)!
 * **[05/2023]** Received [**UMD CEE Best Doctoral Research Award**](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards)!
 
