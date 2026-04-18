@@ -118,14 +118,16 @@ author_profile: true
   overflow: hidden;
   background: #f5f5f5;
 }
-.card-img img {
+.card-img img,
+.card-img video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
 }
-.card:hover .card-img img { transform: scale(1.04); }
+.card:hover .card-img img,
+.card:hover .card-img video { transform: scale(1.04); }
 .card-body {
   padding: 1em 1.2em 1.3em;
   display: flex;
@@ -201,7 +203,7 @@ author_profile: true
     </div>
 
     <div class="card"><a class="card-link" href="https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF61.gif" alt="Traffic simulation animation"></div>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/FF61.mp4" aria-label="Traffic simulation animation"></video></div>
       <div class="card-body">
         <span class="card-venue">Ongoing</span>
         <p class="card-text">Forecasted trip itineraries integrate with micro (Vissim, SUMO), meso (DTALite), and agent-based simulators (MATSim), enabling fine-grained citywide traffic simulation driven entirely by mobile location data and behavioral patterns.</p>
@@ -222,7 +224,7 @@ author_profile: true
     </div>
 
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X22003758" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF16.gif" alt="Hierarchical activity prediction"></div>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/FF16.mp4" aria-label="Hierarchical activity prediction"></video></div>
       <div class="card-body">
         <span class="card-venue">TR Part C</span>
         <p class="card-text">A hierarchical activity-based framework jointly predicts the activity, time, and location of each device's next trip. Loss functions borrowed from semantic segmentation handle severe class imbalance across 18,000+ residents at county scale.</p>
@@ -254,7 +256,7 @@ author_profile: true
   <div class="card-grid">
 
     <div class="card"><a class="card-link" href="https://www.researchsquare.com/article/rs-7256883/v1" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/camera0.gif" alt="Camera-based vehicular emission estimation"></div>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4" aria-label="Camera-based vehicular emission estimation"></video></div>
       <div class="card-body">
         <span class="card-venue">Under Review</span>
         <p class="card-text">Computer vision maps vehicle-level emissions from urban traffic video. A 2.2M-image dataset classifies 4,923 car models, and per-vehicle pollutants are estimated via a modified COPERT factor incorporating velocity and acceleration extracted through vehicle tracking.</p>
