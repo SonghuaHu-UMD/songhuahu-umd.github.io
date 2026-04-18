@@ -73,7 +73,7 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
   </div>
 </div>
 
-<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 380px; margin: 1.6em auto 0.4em; position: relative; overflow: hidden;">
+<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 290px; margin: 1.6em auto 0.4em; position: relative; overflow: hidden;">
   <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year terms…</div>
 </div>
 <div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1.5em;">Top abstract terms per year</div>
