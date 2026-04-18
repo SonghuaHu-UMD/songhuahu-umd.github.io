@@ -51,12 +51,12 @@ author_profile: true
 }
 .r-section:first-of-type { border-top: none; padding-top: 1em; }
 .r-section .r-eyebrow {
-  font-size: 0.8em;
+  font-size: 1.25em;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-weight: 600;
+  letter-spacing: 0.16em;
+  font-weight: 800;
   color: var(--accent);
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
 }
 .r-section h2 {
   font-size: 1.6em;
