@@ -314,14 +314,6 @@ author_profile: true
       </div>
     </div>
 
-    <div class="card"><a class="card-link" href="https://journals.sagepub.com/doi/abs/10.1177/0739456X241256041" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/Escooter.png" alt="E-scooter vs bikesharing"></div>
-      <div class="card-body">
-        <span class="card-venue">JPER</span>
-        <p class="card-text">Comparing e-scooter sharing vs. docked bikesharing usage with generalized additive mixed models. Both succeed in dense, young, higher-income areas — but a one-sided competitive relationship has emerged, with e-scooters surpassing bikes.</p>
-      </div>
-    </div>
-
     <div class="card"><a class="card-link" href="https://ieeexplore.ieee.org/abstract/document/9034087" aria-label="Read more"></a>
       <div class="card-img"><img loading="lazy" decoding="async" src="/images/EVCARD.jpg" alt="EVCARD vehicle selection"></div>
       <div class="card-body">
@@ -538,6 +530,14 @@ author_profile: true
       <div class="card-body">
         <span class="card-venue">TR Part D</span>
         <p class="card-text">Station-level booking and turnover analysis for carsharing optimization. Operators should target underserved areas; carsharing competes best 1.2–2.4 km from bus stops; geographically differentiated quotas help fleet management.</p>
+      </div>
+    </div>
+
+    <div class="card"><a class="card-link" href="https://journals.sagepub.com/doi/abs/10.1177/0739456X241256041" aria-label="Read more"></a>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/Escooter.png" alt="E-scooter vs bikesharing"></div>
+      <div class="card-body">
+        <span class="card-venue">JPER</span>
+        <p class="card-text">Comparing e-scooter sharing vs. docked bikesharing usage with generalized additive mixed models. Both succeed in dense, young, higher-income areas — but a one-sided competitive relationship has emerged, with e-scooters surpassing bikes.</p>
       </div>
     </div>
 
