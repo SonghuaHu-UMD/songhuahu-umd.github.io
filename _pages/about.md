@@ -70,7 +70,3 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 
 <span style="color: purple">**Full publication list: [Google Scholar](https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en)**</span>
 
-
-
-------
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=848383&w=288&t=n&d=zU9DbdqNwD8PS5IHucVNU8GV_lJolPyn6nhjUQYN5FI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
