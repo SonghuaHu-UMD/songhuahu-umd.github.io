@@ -22,10 +22,10 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
 
-<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 320px; margin: 0.5em auto 0.4em; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
-  <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading topic evolution…</div>
+<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 420px; margin: 0.5em auto 0.4em; border: 1px solid #eee; border-radius: 8px; background: #fafbfc; position: relative; overflow: hidden;">
+  <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading word network…</div>
 </div>
-<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1.5em;">Topic evolution by publication year (OpenAlex subfields)</div>
+<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1.5em;">Abstract word co-occurrence network — horizontal axis is the average publication year of each term; size = paper frequency; color = recency (blue→red as years progress)</div>
 
 ---
 
@@ -109,7 +109,7 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
     container.innerHTML = '';
     var w = container.clientWidth;
     var h = container.clientHeight;
-    var margin = { top: 18, right: 150, bottom: 30, left: 38 };
+    var margin = { top: 14, right: 18, bottom: 30, left: 18 };
     var iw = w - margin.left - margin.right;
     var ih = h - margin.top - margin.bottom;
 
@@ -118,51 +118,70 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
       .attr('width', '100%').attr('height', '100%')
       .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif");
 
+    var yrMin = data.yearRange[0], yrMax = data.yearRange[1];
+    var xScale = d3.scaleLinear().domain([yrMin - 0.5, yrMax + 0.5]).range([0, iw]);
+    var color = d3.scaleSequential(d3.interpolateRdYlBu).domain([yrMax, yrMin]);
+    var radius = function (d) { return 3 + Math.sqrt(d.count) * 2.6; };
+
+    /* X-axis at the bottom */
+    var axisG = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + (h - margin.bottom + 4) + ')');
+    axisG.call(d3.axisBottom(xScale).tickFormat(d3.format('d')).ticks(yrMax - yrMin + 1).tickSize(0).tickPadding(8))
+      .call(function (s) { s.select('.domain').attr('stroke', '#ddd'); })
+      .selectAll('text').attr('font-size', 11).attr('fill', '#666').attr('font-weight', '500');
+
     var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-    var stack = d3.stack().keys(data.topics).order(d3.stackOrderInsideOut).offset(d3.stackOffsetNone);
-    var layers = stack(data.series);
-
-    var x = d3.scaleLinear().domain(d3.extent(data.series, function (d) { return d.year; })).range([0, iw]);
-    var maxY = d3.max(layers, function (l) { return d3.max(l, function (d) { return d[1]; }); });
-    var y = d3.scaleLinear().domain([0, maxY]).range([ih, 0]);
-
-    var palette = ['#2980b9', '#27ae60', '#e67e22', '#8e44ad', '#16a085', '#c0392b', '#95a5a6'];
-    var color = d3.scaleOrdinal().domain(data.topics).range(palette);
-
-    var area = d3.area()
-      .x(function (d) { return x(d.data.year); })
-      .y0(function (d) { return y(d[0]); })
-      .y1(function (d) { return y(d[1]); })
-      .curve(d3.curveMonotoneX);
-
-    g.selectAll('path.layer').data(layers).join('path')
-      .attr('class', 'layer')
-      .attr('fill', function (d) { return color(d.key); })
-      .attr('opacity', 0.88)
-      .attr('d', area)
-      .append('title').text(function (d) { return d.key; });
-
-    g.append('g').attr('transform', 'translate(0,' + ih + ')')
-      .call(d3.axisBottom(x).tickFormat(d3.format('d')).ticks(Math.min(data.series.length, 10)))
-      .call(function (s) { s.select('.domain').attr('stroke', '#ccc'); s.selectAll('.tick line').attr('stroke', '#ccc'); })
-      .selectAll('text').attr('font-size', 10).attr('fill', '#666');
-
-    g.append('g').call(d3.axisLeft(y).ticks(5).tickSize(-iw))
-      .call(function (s) {
-        s.select('.domain').remove();
-        s.selectAll('.tick line').attr('stroke', '#eee');
-        s.selectAll('text').attr('font-size', 10).attr('fill', '#666');
-      });
-
-    var legend = svg.append('g').attr('transform', 'translate(' + (margin.left + iw + 14) + ',' + (margin.top + 4) + ')');
-    data.topics.forEach(function (t, i) {
-      var row = legend.append('g').attr('transform', 'translate(0,' + (i * 20) + ')');
-      row.append('rect').attr('width', 12).attr('height', 12).attr('rx', 2).attr('fill', color(t)).attr('opacity', 0.88);
-      row.append('text').attr('x', 18).attr('y', 10).attr('font-size', 11).attr('fill', '#444').text(t);
+    /* Force simulation: x pinned by avgYear; y settles by collision; weak link attraction. */
+    var sim = d3.forceSimulation(data.nodes)
+      .force('x', d3.forceX(function (d) { return xScale(d.avgYear); }).strength(0.85))
+      .force('y', d3.forceY(ih / 2).strength(0.03))
+      .force('charge', d3.forceManyBody().strength(-22))
+      .force('collide', d3.forceCollide(function (d) { return radius(d) + 11; }))
+      .force('link', d3.forceLink(data.edges).id(function (d) { return d.id; }).strength(0.05).distance(48))
+      .stop();
+    for (var i = 0; i < 400; i++) sim.tick();
+    /* Clamp y to stay inside */
+    data.nodes.forEach(function (n) {
+      n.y = Math.max(radius(n) + 8, Math.min(ih - radius(n) - 8, n.y));
     });
+
+    var link = g.append('g').attr('stroke', '#cbd5dc').attr('stroke-opacity', 0.18).attr('fill', 'none')
+      .selectAll('line').data(data.edges).join('line')
+      .attr('x1', function (d) { return d.source.x; }).attr('y1', function (d) { return d.source.y; })
+      .attr('x2', function (d) { return d.target.x; }).attr('y2', function (d) { return d.target.y; })
+      .attr('stroke-width', function (d) { return 0.4 + Math.min(d.weight, 4) * 0.25; });
+
+    var node = g.append('g').selectAll('circle').data(data.nodes).join('circle')
+      .attr('cx', function (d) { return d.x; }).attr('cy', function (d) { return d.y; })
+      .attr('r', radius)
+      .attr('fill', function (d) { return color(d.avgYear); })
+      .attr('opacity', 0.88)
+      .attr('stroke', 'white').attr('stroke-width', 1.3)
+      .style('cursor', 'pointer');
+
+    var label = g.append('g').selectAll('text').data(data.nodes).join('text')
+      .attr('x', function (d) { return d.x; })
+      .attr('y', function (d) { return d.y + radius(d) + 10; })
+      .attr('text-anchor', 'middle')
+      .attr('font-size', function (d) { return Math.min(13, 8.5 + Math.sqrt(d.count) * 0.8); })
+      .attr('font-weight', function (d) { return d.count >= 5 ? 600 : 400; })
+      .attr('fill', '#2c3e50')
+      .style('pointer-events', 'none')
+      .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif")
+      .text(function (d) { return d.id; });
+
+    /* Tooltip on hover (reuse the cn-tooltip class from the coauthor chart) */
+    var tooltip = d3.select('body').selectAll('div.cn-tooltip').size()
+      ? d3.select('body').select('div.cn-tooltip')
+      : d3.select('body').append('div').attr('class', 'cn-tooltip');
+
+    node.on('mouseover', function (e, d) {
+      tooltip.style('opacity', 1).html('<strong>' + d.id + '</strong> &middot; ' + d.count + ' papers &middot; avg ' + d.avgYear.toFixed(1));
+    }).on('mousemove', function (e) {
+      tooltip.style('left', (e.pageX + 12) + 'px').style('top', (e.pageY + 12) + 'px');
+    }).on('mouseout', function () { tooltip.style('opacity', 0); });
   }).catch(function (err) {
-    container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Topic evolution failed to load: ' + err.message + '</div>';
+    container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Word network failed to load: ' + err.message + '</div>';
   });
 })();
 </script>

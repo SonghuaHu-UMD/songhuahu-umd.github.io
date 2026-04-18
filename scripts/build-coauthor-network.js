@@ -34,7 +34,7 @@ async function fetchAllWorks() {
   const works = [];
   let cursor = '*';
   while (cursor) {
-    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year,primary_topic,concepts`;
+    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year,primary_topic,concepts,abstract_inverted_index`;
     const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
     if (!r.ok) throw new Error('OpenAlex fetch failed: ' + r.status);
     const j = await r.json();
@@ -153,56 +153,83 @@ function buildGraph(works) {
   }, null, 2));
   console.log('Wrote ' + CITATIONS_PATH + ' (total ' + totalCitations + ' citations on ' + filtered.length + ' works, h=' + h + ', i10=' + i10 + ')');
 
-  console.log('Building concept evolution...');
-  /* Pick each paper's best concept. OpenAlex concepts are noisy: same word can match unrelated fields
-     (e.g. "TRIPS architecture" for processor design matches "trips"; "Resilience (materials science)"
-     matches general resilience). Drop disambiguated concepts that suffix a parenthetical context. */
-  const looksWrongContext = name => /\((satellite|computing|materials science|linguistics|telecommunications|programming language|botany|geometry|psychology|chemistry|physics|biology|architecture|electronics|software)\)/i.test(name);
-  const pickConcept = (w) => {
-    const cs = (w.concepts || [])
-      .filter(c => c.level >= 1 && c.level <= 2)
-      .filter(c => c.score >= 0.4)
-      .filter(c => !looksWrongContext(c.display_name))
-      .sort((a, b) => {
-        /* prefer level 1 (broader, more reliable) when score is close */
-        if (Math.abs(a.score - b.score) < 0.1) return a.level - b.level;
-        return b.score - a.score;
-      });
-    return cs.length ? cs[0].display_name : null;
+  console.log('Building abstract word network...');
+  /* Reconstruct abstract from OpenAlex inverted index. */
+  const reconstruct = (inv) => {
+    if (!inv) return '';
+    const arr = [];
+    for (const w in inv) for (const i of inv[w]) arr[i] = w;
+    return arr.filter(Boolean).join(' ');
   };
 
-  const conceptCount = new Map();
-  for (const w of filtered) {
-    const c = pickConcept(w);
-    if (c) conceptCount.set(c, (conceptCount.get(c) || 0) + 1);
-  }
-  const topConcepts = [...conceptCount.entries()].sort((a, b) => b[1] - a[1]).slice(0, TOP_N_TOPICS).map(e => e[0]);
-  const conceptSet = new Set(topConcepts);
+  const STOP = new Set(('a about above after again against all also am an and any are as at be because been before being below between both but by could did do does doing down during each few for from further had has have having he her here hers herself him himself his how i if in into is it its itself just like me might more most must my myself no nor not now of off on once only or other our ours ourselves out over own same she should so some such than that the their theirs them themselves then there these they this those through to too under until up upon very via was way we were what when where whether which while who whom why will with would you your yours yourself yourselves '
+    + 'study studies paper papers research works work model models method methods methodology approach approaches result results finding findings show shown showed reveal reveals revealed find found finds present presents presented propose proposed proposes use uses used using based data analysis analyses develop developed developing demonstrates demonstrate demonstrated apply applied applies application applications include including includes effect effects impact impacts identify identified observe observed observes observation across within among however thus therefore hence whereas although first second third specifically particularly overall additionally previous previously recent recently large small high low higher lower largest smallest highest lowest increase increased increases decrease decreased decreases novel new level levels rate rates one two three four five six seven eight nine ten various different difference differences associated relationship relationships factor factors significantly significant non significantly characteristic characteristics evaluate evaluated evaluation evaluations potential strong strongly important importantly key main major minor furthermore moreover example examples examined examining specific specifically generally analyzed analyzing analyse provide provides provided provided role roles considered considering consider given suggest suggests suggested support supports supported well year years time times provide make made makes due')
+    .split(/\s+/));
 
-  const yearMap2 = new Map();
+  const wordPapers = new Map();   /* word -> Set(workId) */
+  const wordYears = new Map();    /* word -> [years] */
+  const pairWeight = new Map();   /* "a||b" -> count */
+
+  const tokenize = (text) => {
+    const set = new Set();
+    for (const raw of text.toLowerCase().split(/[^a-z\u00C0-\u017F]+/)) {
+      if (raw.length < 4 || raw.length > 22) continue;
+      if (/^\d+$/.test(raw)) continue;
+      if (STOP.has(raw)) continue;
+      set.add(raw);
+    }
+    return [...set];
+  };
+
   for (const w of filtered) {
-    const year = w.publication_year;
-    if (!year) continue;
-    const c = pickConcept(w);
-    const bucket = (c && conceptSet.has(c)) ? c : 'Other';
-    if (!yearMap2.has(year)) yearMap2.set(year, new Map());
-    const yt = yearMap2.get(year);
-    yt.set(bucket, (yt.get(bucket) || 0) + 1);
+    const text = reconstruct(w.abstract_inverted_index);
+    if (!text) continue;
+    const toks = tokenize(text);
+    for (const t of toks) {
+      if (!wordPapers.has(t)) { wordPapers.set(t, new Set()); wordYears.set(t, []); }
+      wordPapers.get(t).add(w.id);
+      wordYears.get(t).push(w.publication_year);
+    }
+    for (let i = 0; i < toks.length; i++) {
+      for (let j = i + 1; j < toks.length; j++) {
+        const [a, b] = [toks[i], toks[j]].sort();
+        const k = a + '||' + b;
+        pairWeight.set(k, (pairWeight.get(k) || 0) + 1);
+      }
+    }
   }
 
-  const allBuckets = [...topConcepts, 'Other'];
-  const sortedYrs = [...yearMap2.keys()].sort((a, b) => a - b);
-  const series = sortedYrs.map(year => {
-    const row = { year };
-    for (const b of allBuckets) row[b] = (yearMap2.get(year).get(b) || 0);
-    return row;
-  });
+  /* Keep top-N words by paper frequency. */
+  const TOP_WORDS = 90;
+  const ranked = [...wordPapers.entries()]
+    .map(([w, set]) => ({ word: w, count: set.size, years: wordYears.get(w) }))
+    .filter(n => n.count >= 3)                       /* in >=3 papers */
+    .sort((a, b) => b.count - a.count)
+    .slice(0, TOP_WORDS);
+  const keep = new Set(ranked.map(n => n.word));
+
+  const nodes = ranked.map(n => ({
+    id: n.word,
+    count: n.count,
+    avgYear: n.years.reduce((s, y) => s + y, 0) / n.years.length,
+  }));
+
+  const edges = [];
+  for (const [k, w] of pairWeight.entries()) {
+    if (w < 2) continue;
+    const [a, b] = k.split('||');
+    if (keep.has(a) && keep.has(b)) edges.push({ source: a, target: b, weight: w });
+  }
 
   fs.writeFileSync(TOPICS_PATH, JSON.stringify({
     generated: new Date().toISOString().slice(0, 10),
-    topics: allBuckets,
-    series,
+    yearRange: [Math.min(...nodes.map(n => Math.floor(n.avgYear))), Math.max(...nodes.map(n => Math.ceil(n.avgYear)))],
+    nodes,
+    edges,
   }, null, 2));
-  console.log('Wrote ' + TOPICS_PATH + ' (' + allBuckets.length + ' buckets, ' + series.length + ' years)');
-  console.log('  top concepts: ' + topConcepts.join(' | '));
+  console.log('Wrote ' + TOPICS_PATH + ' (' + nodes.length + ' words, ' + edges.length + ' co-occurrence edges)');
+  console.log('  top words:');
+  for (const n of nodes.slice(0, 12)) {
+    console.log('    ' + n.count + '  ' + n.id + '  (avg yr ' + n.avgYear.toFixed(1) + ')');
+  }
 })().catch(e => { console.error(e); process.exit(1); });
