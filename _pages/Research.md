@@ -17,10 +17,15 @@ author_profile: true
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
-  margin: 0 0 3em;
-  padding: 1em 0;
-  border-top: 1px solid #eee;
+  margin: 0 -1em 3em;
+  padding: 0.8em 1em;
   border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
 }
 .research-nav a {
   display: inline-block;
@@ -161,7 +166,57 @@ author_profile: true
   .r-section h2 { font-size: 1.4em; }
   .card-grid { grid-template-columns: 1fr; }
 }
+
+#back-to-top {
+  position: fixed;
+  bottom: 1.2em;
+  right: 1.2em;
+  z-index: 100;
+  width: 2.6em;
+  height: 2.6em;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: white;
+  color: #444;
+  font-size: 1.1em;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.15s ease;
+}
+#back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+#back-to-top:hover { background: #f5f5f5; }
 </style>
+
+<script>
+  (function () {
+    function init() {
+      var btn = document.createElement('button');
+      btn.id = 'back-to-top';
+      btn.type = 'button';
+      btn.setAttribute('aria-label', 'Back to top');
+      btn.innerHTML = '&#8593;';
+      btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      document.body.appendChild(btn);
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 400) btn.classList.add('visible');
+        else btn.classList.remove('visible');
+      }, { passive: true });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else { init(); }
+  })();
+</script>
 
 <div class="research-page">
 
