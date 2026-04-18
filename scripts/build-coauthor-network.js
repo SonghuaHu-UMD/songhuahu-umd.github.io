@@ -25,6 +25,8 @@ const BLOCKLIST = new Set([              /* explicit OpenAlex IDs known not to b
   'https://openalex.org/W2795257846',    /* "Power control algorithm based on non-cooperative game theory..." (telecom, Hefei UT — different person) */
   'https://openalex.org/W3015065386',    /* "First-principles study on the electronic and optical properties of 2D chalcogenides" (physics, Shenzhen Polytechnic) */
   'https://openalex.org/W3195056770',    /* "Research on a real-time control strategy of battery energy storage system" (Shenzhen Polytechnic) */
+  'https://openalex.org/W4225694807',    /* "Structural Design and Analysis of a Booster Arm Made of a Carbon Fiber Reinforced Epoxy Composite" (materials engineering) */
+  'https://openalex.org/W4321384946',    /* "Optimization of Driving Energy Consumption for Wearable Industrial Lower Limb Exoskeleton" (robotics) */
 ]);
 
 /* Any authorship listing "Shenzhen Polytechnic" as Songhua Hu's institution belongs to a
