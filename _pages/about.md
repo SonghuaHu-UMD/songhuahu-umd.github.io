@@ -100,7 +100,6 @@ redirect_from:
     <span class="stat green"><b>40+</b> Journal Papers</span>
     <span class="stat blue"><b>21</b> First-Author</span>
     <span class="stat orange"><b>60+</b> Journals Reviewed</span>
-    <span class="stat purple"><b>USDOT · NIH · NSF · FHWA · USDOE</b> Funded</span>
   </div>
 </section>
 
