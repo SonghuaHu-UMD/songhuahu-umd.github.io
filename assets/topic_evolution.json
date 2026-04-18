@@ -72,24 +72,24 @@
           "count": 6
         },
         {
-          "phrase": "decision",
+          "phrase": "virus",
           "count": 4
         }
       ],
       "edges": [
         {
-          "source": "decision",
-          "target": "human mobility",
+          "source": "human mobility",
+          "target": "virus",
           "weight": 2
         },
         {
-          "source": "decision",
-          "target": "mobile device",
+          "source": "mobile device",
+          "target": "virus",
           "weight": 2
         },
         {
-          "source": "decision",
-          "target": "device location",
+          "source": "device location",
+          "target": "virus",
           "weight": 2
         },
         {
@@ -106,6 +106,11 @@
           "source": "device location",
           "target": "mobile device",
           "weight": 4
+        },
+        {
+          "source": "covid pandemic",
+          "target": "virus",
+          "weight": 2
         },
         {
           "source": "home orders",
@@ -171,7 +176,7 @@
           "count": 6
         },
         {
-          "phrase": "social distancing",
+          "phrase": "contiguous united",
           "count": 6
         }
       ],
@@ -192,29 +197,29 @@
           "weight": 4
         },
         {
-          "source": "coronavirus disease",
-          "target": "mobility",
-          "weight": 2
-        },
-        {
-          "source": "disease covid",
-          "target": "mobility",
-          "weight": 2
-        },
-        {
           "source": "human mobility",
           "target": "mobility",
           "weight": 3
         },
         {
-          "source": "mobility",
-          "target": "social distancing",
-          "weight": 3
-        },
-        {
           "source": "covid pandemic",
           "target": "mobility",
           "weight": 3
+        },
+        {
+          "source": "coronavirus disease",
+          "target": "mobility",
+          "weight": 2
+        },
+        {
+          "source": "disease covid",
+          "target": "mobility",
+          "weight": 2
+        },
+        {
+          "source": "covid pandemic",
+          "target": "human mobility",
+          "weight": 2
         },
         {
           "source": "coronavirus disease",
@@ -227,8 +232,18 @@
           "weight": 2
         },
         {
-          "source": "covid pandemic",
+          "source": "contiguous united",
+          "target": "mobility",
+          "weight": 2
+        },
+        {
+          "source": "contiguous united",
           "target": "human mobility",
+          "weight": 2
+        },
+        {
+          "source": "contiguous united",
+          "target": "covid pandemic",
           "weight": 2
         }
       ]

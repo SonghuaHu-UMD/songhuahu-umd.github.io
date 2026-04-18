@@ -42,13 +42,13 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 Collaboration
 ======
 
-We are particularly looking for collaborators with expertise in <span style="color: #e67e22;">**LLM**</span>, <span style="color: #e67e22;">**Network Science**</span>, or <span style="color: #e67e22;">**Large-scale Agent-based Modeling (ABM)**</span>. We offer:
+We are particularly looking for collaborators with expertise in <span style="color: #e67e22;">**LLM**</span>, <span style="color: #e67e22;">**Network Science**</span>, or <span style="color: #e67e22;">**Large-scale ABM**</span>. We offer:
 * Rich and diverse mobility data resources
 * Ample large-scale computing infrastructure
 * Long-term collaboration channels with top teams like MIT
 * Research designs targeting high-impact journals with deep involvement
 
-课题组长期寻找具有<span style="color: #e67e22;">**LLM**</span>、<span style="color: #e67e22;">**网络科学**</span>、<span style="color: #e67e22;">**大规模智能体仿真**</span>相关背景的同学或合作伙伴。我们可提供：
+课题组长期寻找具有<span style="color: #e67e22;">**LLM**</span>、<span style="color: #e67e22;">**网络科学**</span>、<span style="color: #e67e22;">**大规模智能体仿真**</span>相关背景的合作伙伴。我们可提供：
 * 极其丰富的出行相关数据资源
 * 充足的大规模计算资源
 * 与MIT等顶级团队的长期合作通道
