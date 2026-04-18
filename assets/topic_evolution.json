@@ -69,19 +69,14 @@
           "count": 6
         },
         {
-          "phrase": "decision",
+          "phrase": "public",
           "count": 4
         }
       ],
       "edges": [
         {
-          "source": "decision",
-          "target": "human mobility",
-          "weight": 2
-        },
-        {
-          "source": "decision",
-          "target": "mobile device",
+          "source": "mobile device",
+          "target": "public",
           "weight": 2
         },
         {
@@ -127,7 +122,7 @@
           "count": 9
         },
         {
-          "phrase": "coronavirus disease",
+          "phrase": "mobility",
           "count": 8
         },
         {
@@ -135,8 +130,8 @@
           "count": 7
         },
         {
-          "phrase": "mobility",
-          "count": 7
+          "phrase": "generalized additive",
+          "count": 6
         },
         {
           "phrase": "social distancing",
@@ -150,34 +145,34 @@
           "weight": 7
         },
         {
-          "source": "coronavirus disease",
-          "target": "covid",
-          "weight": 4
-        },
-        {
-          "source": "coronavirus disease",
-          "target": "pandemic",
-          "weight": 4
-        },
-        {
           "source": "covid",
           "target": "mobility",
-          "weight": 6
+          "weight": 7
         },
         {
           "source": "covid",
-          "target": "social distancing",
+          "target": "generalized additive",
           "weight": 3
         },
         {
           "source": "mobility",
           "target": "pandemic",
-          "weight": 5
+          "weight": 6
         },
         {
-          "source": "coronavirus disease",
+          "source": "generalized additive",
+          "target": "pandemic",
+          "weight": 3
+        },
+        {
+          "source": "generalized additive",
           "target": "mobility",
-          "weight": 2
+          "weight": 3
+        },
+        {
+          "source": "covid",
+          "target": "social distancing",
+          "weight": 3
         },
         {
           "source": "mobility",
@@ -210,34 +205,19 @@
           "count": 8
         },
         {
-          "phrase": "decision",
+          "phrase": "cost",
           "count": 6
         },
         {
-          "phrase": "cost",
+          "phrase": "mobile device",
           "count": 6
         }
       ],
       "edges": [
         {
           "source": "cost",
-          "target": "decision",
-          "weight": 3
-        },
-        {
-          "source": "decision",
-          "target": "public perceptions",
-          "weight": 3
-        },
-        {
-          "source": "decision",
-          "target": "google maps",
-          "weight": 3
-        },
-        {
-          "source": "decision",
-          "target": "socio spatial",
-          "weight": 3
+          "target": "mobile device",
+          "weight": 2
         },
         {
           "source": "cost",
