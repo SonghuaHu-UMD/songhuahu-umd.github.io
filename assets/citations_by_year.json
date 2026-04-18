@@ -1,49 +1,49 @@
 {
   "generated": "2026-04-18",
-  "total_citations": 1859,
-  "total_works": 45,
+  "total_citations": 1850,
+  "total_works": 44,
   "h_index": 19,
   "i10_index": 27,
   "by_year": [
     {
       "year": 2019,
-      "annual": 7,
-      "cumulative": 7
+      "annual": 6,
+      "cumulative": 6
     },
     {
       "year": 2020,
-      "annual": 41,
-      "cumulative": 48
+      "annual": 38,
+      "cumulative": 44
     },
     {
       "year": 2021,
-      "annual": 319,
-      "cumulative": 367
+      "annual": 318,
+      "cumulative": 362
     },
     {
       "year": 2022,
-      "annual": 356,
-      "cumulative": 723
+      "annual": 353,
+      "cumulative": 715
     },
     {
       "year": 2023,
-      "annual": 372,
-      "cumulative": 1095
+      "annual": 371,
+      "cumulative": 1086
     },
     {
       "year": 2024,
       "annual": 345,
-      "cumulative": 1440
+      "cumulative": 1431
     },
     {
       "year": 2025,
       "annual": 354,
-      "cumulative": 1794
+      "cumulative": 1785
     },
     {
       "year": 2026,
       "annual": 65,
-      "cumulative": 1859
+      "cumulative": 1850
     }
   ]
 }
