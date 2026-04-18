@@ -32,7 +32,7 @@ async function fetchAllWorks() {
   const works = [];
   let cursor = '*';
   while (cursor) {
-    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships`;
+    const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year`;
     const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
     if (!r.ok) throw new Error('OpenAlex fetch failed: ' + r.status);
     const j = await r.json();
@@ -116,24 +116,38 @@ function buildGraph(works) {
   }));
   console.log('Wrote ' + OUT_PATH + ' (' + (fs.statSync(OUT_PATH).size / 1024).toFixed(1) + ' KB)');
 
-  console.log('Fetching author profile for citations...');
-  const author = await fetchAuthor();
-  const counts = (author.counts_by_year || [])
-    .filter(c => c.year >= MIN_YEAR)
-    .slice().sort((a, b) => a.year - b.year);
+  console.log('Computing citations from filtered works only...');
+  /* Sum per-year citation counts across the kept works (so disambiguation flows through). */
+  const yearMap = new Map();
+  let totalCitations = 0;
+  for (const w of filtered) {
+    totalCitations += (w.cited_by_count || 0);
+    for (const c of (w.counts_by_year || [])) {
+      if (c.year < MIN_YEAR) continue;
+      yearMap.set(c.year, (yearMap.get(c.year) || 0) + (c.cited_by_count || 0));
+    }
+  }
+  /* Compute h-index from the filtered set: largest h such that h papers have >= h citations each. */
+  const sortedCites = filtered.map(w => w.cited_by_count || 0).sort((a, b) => b - a);
+  let h = 0;
+  for (let i = 0; i < sortedCites.length; i++) if (sortedCites[i] >= i + 1) h = i + 1;
+  const i10 = sortedCites.filter(c => c >= 10).length;
+
+  const sortedYears = [...yearMap.keys()].sort((a, b) => a - b);
   let cumulative = 0;
-  const byYear = counts.map(c => ({
-    year: c.year,
-    annual: c.cited_by_count || 0,
-    cumulative: (cumulative += (c.cited_by_count || 0)),
-  }));
+  const byYear = sortedYears.map(year => {
+    const annual = yearMap.get(year);
+    cumulative += annual;
+    return { year, annual, cumulative };
+  });
+
   fs.writeFileSync(CITATIONS_PATH, JSON.stringify({
     generated: new Date().toISOString().slice(0, 10),
-    total_citations: author.cited_by_count,
-    total_works: author.works_count,
-    h_index: author.summary_stats && author.summary_stats.h_index,
-    i10_index: author.summary_stats && author.summary_stats.i10_index,
+    total_citations: totalCitations,
+    total_works: filtered.length,
+    h_index: h,
+    i10_index: i10,
     by_year: byYear,
   }, null, 2));
-  console.log('Wrote ' + CITATIONS_PATH + ' (total ' + author.cited_by_count + ' citations, h=' + (author.summary_stats && author.summary_stats.h_index) + ')');
+  console.log('Wrote ' + CITATIONS_PATH + ' (total ' + totalCitations + ' citations on ' + filtered.length + ' works, h=' + h + ', i10=' + i10 + ')');
 })().catch(e => { console.error(e); process.exit(1); });
