@@ -340,6 +340,35 @@ function buildGraph(works) {
     }
   }
 
+  /* Track primary affiliation per period: for each work, find the user's authorship and pick
+     its first listed institution; then per period choose the most-common one. */
+  const ORCID_URL = 'https://orcid.org/' + ORCID;
+  const ABBREV = {
+    'University of Maryland, College Park': 'UMD',
+    'University of Maryland': 'UMD',
+    'Tongji University': 'Tongji',
+    'Massachusetts Institute of Technology': 'MIT',
+    'City University of Hong Kong': 'CityUHK',
+    'Huazhong University of Science and Technology': 'HUST',
+  };
+  const yearInst = new Map();
+  for (const w of forAbstracts) {
+    const yr = binStart(w.publication_year);
+    const me = (w.authorships || []).find(a => a.author && a.author.orcid === ORCID_URL);
+    if (!me || !me.institutions || !me.institutions.length) continue;
+    const inst = me.institutions[0].display_name;
+    if (!inst) continue;
+    if (!yearInst.has(yr)) yearInst.set(yr, new Map());
+    const m = yearInst.get(yr);
+    m.set(inst, (m.get(inst) || 0) + 1);
+  }
+  const topInstitution = (yr) => {
+    const m = yearInst.get(yr);
+    if (!m || !m.size) return null;
+    const top = [...m.entries()].sort((a, b) => b[1] - a[1])[0][0];
+    return ABBREV[top] || top;
+  };
+
   /* Pick top phrases per year, dedupe unigram if it's covered by a higher-ranked bigram. */
   const TOP_PER_YEAR = 6;
   const yearsOut = [];
@@ -366,7 +395,7 @@ function buildGraph(works) {
       const [a, b] = k.split('||');
       if (keep.has(a) && keep.has(b) && c >= 2) edges.push({ source: a, target: b, weight: c });
     }
-    yearsOut.push({ year: yr, label: binLabel(yr), papers: yearPaperCount.get(yr), phrases, edges });
+    yearsOut.push({ year: yr, label: binLabel(yr), papers: yearPaperCount.get(yr), institution: topInstitution(yr), phrases, edges });
   }
 
   fs.writeFileSync(TOPICS_PATH, JSON.stringify({
@@ -375,6 +404,6 @@ function buildGraph(works) {
   }, null, 2));
   console.log('Wrote ' + TOPICS_PATH + ' (' + yearsOut.length + ' periods)');
   for (const y of yearsOut) {
-    console.log('  ' + y.label + ' (' + y.papers + ' papers): ' + y.phrases.slice(0, 5).map(p => p.phrase + '×' + p.count).join(' | '));
+    console.log('  ' + y.label + ' @ ' + (y.institution || '?') + ' (' + y.papers + ' papers): ' + y.phrases.slice(0, 5).map(p => p.phrase + '×' + p.count).join(' | '));
   }
 })().catch(e => { console.error(e); process.exit(1); });

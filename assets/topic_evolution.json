@@ -5,6 +5,7 @@
       "year": 2017,
       "label": "2017–2018",
       "papers": 5,
+      "institution": "Tongji",
       "phrases": [
         {
           "phrase": "road waterlogging",
@@ -23,30 +24,15 @@
           "count": 2
         },
         {
-          "phrase": "usage",
+          "phrase": "promoting carsharing",
           "count": 2
         },
         {
-          "phrase": "station",
+          "phrase": "carsharing attractiveness",
           "count": 2
         }
       ],
       "edges": [
-        {
-          "source": "carsharing",
-          "target": "usage",
-          "weight": 2
-        },
-        {
-          "source": "carsharing",
-          "target": "station",
-          "weight": 2
-        },
-        {
-          "source": "station",
-          "target": "usage",
-          "weight": 2
-        },
         {
           "source": "road waterlogging",
           "target": "urban",
@@ -63,6 +49,7 @@
       "year": 2019,
       "label": "2019–2020",
       "papers": 12,
+      "institution": "UMD",
       "phrases": [
         {
           "phrase": "human mobility",
@@ -161,97 +148,88 @@
       "year": 2021,
       "label": "2021–2022",
       "papers": 16,
+      "institution": "UMD",
       "phrases": [
         {
-          "phrase": "covid",
-          "count": 9
-        },
-        {
-          "phrase": "mobility",
-          "count": 8
-        },
-        {
           "phrase": "covid pandemic",
-          "count": 8
-        },
-        {
-          "phrase": "human mobility",
-          "count": 8
+          "count": 10
         },
         {
           "phrase": "coronavirus disease",
-          "count": 6
+          "count": 8
         },
         {
           "phrase": "disease covid",
+          "count": 8
+        },
+        {
+          "phrase": "mobility",
+          "count": 7
+        },
+        {
+          "phrase": "human mobility",
+          "count": 6
+        },
+        {
+          "phrase": "social distancing",
           "count": 6
         }
       ],
       "edges": [
         {
-          "source": "covid",
-          "target": "mobility",
-          "weight": 7
-        },
-        {
-          "source": "covid",
+          "source": "coronavirus disease",
           "target": "covid pandemic",
-          "weight": 4
-        },
-        {
-          "source": "covid",
-          "target": "human mobility",
-          "weight": 4
+          "weight": 2
         },
         {
           "source": "covid pandemic",
-          "target": "mobility",
+          "target": "disease covid",
+          "weight": 2
+        },
+        {
+          "source": "coronavirus disease",
+          "target": "disease covid",
           "weight": 4
+        },
+        {
+          "source": "coronavirus disease",
+          "target": "mobility",
+          "weight": 2
+        },
+        {
+          "source": "disease covid",
+          "target": "mobility",
+          "weight": 2
         },
         {
           "source": "human mobility",
           "target": "mobility",
-          "weight": 4
+          "weight": 3
+        },
+        {
+          "source": "mobility",
+          "target": "social distancing",
+          "weight": 3
+        },
+        {
+          "source": "covid pandemic",
+          "target": "mobility",
+          "weight": 3
+        },
+        {
+          "source": "coronavirus disease",
+          "target": "human mobility",
+          "weight": 2
+        },
+        {
+          "source": "disease covid",
+          "target": "human mobility",
+          "weight": 2
         },
         {
           "source": "covid pandemic",
           "target": "human mobility",
-          "weight": 3
-        },
-        {
-          "source": "coronavirus disease",
-          "target": "mobility",
           "weight": 2
-        },
-        {
-          "source": "disease covid",
-          "target": "mobility",
-          "weight": 2
-        },
-        {
-          "source": "coronavirus disease",
-          "target": "covid",
-          "weight": 3
-        },
-        {
-          "source": "covid",
-          "target": "disease covid",
-          "weight": 3
-        },
-        {
-          "source": "coronavirus disease",
-          "target": "human mobility",
-          "weight": 2
-        },
-        {
-          "source": "disease covid",
-          "target": "human mobility",
-          "weight": 2
-        },
-        {
-          "source": "coronavirus disease",
-          "target": "disease covid",
-          "weight": 3
         }
       ]
     },
@@ -259,6 +237,7 @@
       "year": 2023,
       "label": "2023–2024",
       "papers": 22,
+      "institution": "MIT",
       "phrases": [
         {
           "phrase": "travel behavior",
@@ -347,6 +326,7 @@
       "year": 2025,
       "label": "2025–2026",
       "papers": 11,
+      "institution": "MIT",
       "phrases": [
         {
           "phrase": "traffic emissions",
