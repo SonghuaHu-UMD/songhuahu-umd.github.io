@@ -224,70 +224,57 @@ function buildGraph(works) {
   }, null, 2));
   console.log('Wrote ' + CITATIONS_PATH + ' (total ' + totalCitations + ' citations on ' + filtered.length + ' works, h=' + h + ', i10=' + i10 + ')');
 
-  /* Load manual abstract overrides keyed by OpenAlex work ID short form (W...). */
+  /* Resolve missing abstracts: OpenAlex first, then manual_abstracts.json. Anything still
+     missing gets a stub entry written back to the JSON for the user to fill in. */
   let manualAbstracts = {};
   try {
     manualAbstracts = JSON.parse(fs.readFileSync(MANUAL_ABSTRACTS_PATH, 'utf8'));
   } catch (e) { /* file optional */ }
 
-  console.log('Filling missing abstracts from Semantic Scholar then Crossref via DOI...');
-  /* When OpenAlex lacks an abstract, try Semantic Scholar; if that also fails, try Crossref. */
-  const cleanDoi = (doi) => doi ? doi.replace(/^https?:\/\/doi\.org\//, '') : null;
-  const stripJats = (s) => s
-    .replace(/<jats:[^>]+>/g, '').replace(/<\/jats:[^>]+>/g, '')
-    .replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
-
-  const fetchSSAbstract = async (doi) => {
-    const d = cleanDoi(doi);
-    if (!d) return null;
-    try {
-      const url = `https://api.semanticscholar.org/graph/v1/paper/DOI:${encodeURIComponent(d)}?fields=abstract`;
-      const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
-      if (!r.ok) return null;
-      const j = await r.json();
-      return j.abstract || null;
-    } catch (e) { return null; }
-  };
-  const fetchCrossrefAbstract = async (doi) => {
-    const d = cleanDoi(doi);
-    if (!d) return null;
-    try {
-      const url = `https://api.crossref.org/works/${encodeURIComponent(d)}`;
-      const r = await fetch(url, { headers: { 'User-Agent': 'songhuahu-umd.github.io (mailto:Songhua.Hu@cityu.edu.hk)' } });
-      if (!r.ok) return null;
-      const j = await r.json();
-      const raw = j.message && j.message.abstract;
-      if (!raw) return null;
-      const cleaned = stripJats(raw);
-      return cleaned.length > 30 ? cleaned : null;
-    } catch (e) { return null; }
-  };
-
+  console.log('Resolving abstracts...');
+  const abstractCandidates = works.filter(w =>
+    w.publication_year && w.publication_year >= MIN_YEAR &&
+    !BLOCKLIST.has(w.id) && !isWrongAffiliation(w) &&
+    w.type !== 'preprint' && !isSSRN(w));
   const filledByWorkId = new Map();
-  let filledManual = 0, filledSS = 0, filledCR = 0, attempted = 0;
-  for (const w of works) {
-    if (w.abstract_inverted_index) continue;
-    if (w.publication_year < MIN_YEAR) continue;
-    if (BLOCKLIST.has(w.id)) continue;
-    attempted++;
-    /* Manual override takes priority */
+  const newlyAdded = [];
+  let filledManual = 0, stillEmpty = 0;
+  for (const w of abstractCandidates) {
+    if (w.abstract_inverted_index) continue;             /* already in OpenAlex */
     const shortId = w.id.replace('https://openalex.org/', '');
-    const manual = manualAbstracts[shortId];
-    if (manual && typeof manual === 'string' && manual.trim().length >= 30) {
-      filledByWorkId.set(w.id, manual.trim());
+    const m = manualAbstracts[shortId];
+    if (m && typeof m === 'string' && m.trim().length >= 30) {
+      filledByWorkId.set(w.id, m.trim());
       filledManual++;
       continue;
     }
-    if (!w.doi) continue;
-    let a = await fetchSSAbstract(w.doi);
-    if (a) { filledByWorkId.set(w.id, a); filledSS++; }
-    else {
-      a = await fetchCrossrefAbstract(w.doi);
-      if (a) { filledByWorkId.set(w.id, a); filledCR++; }
+    /* Not in manual JSON yet — add stub */
+    if (!(shortId in manualAbstracts)) {
+      manualAbstracts[shortId] = '';
+      newlyAdded.push({ id: shortId, year: w.publication_year, title: w.title, doi: w.doi });
     }
-    await new Promise(res => setTimeout(res, 350));   /* rate-limit politeness */
+    stillEmpty++;
   }
-  console.log('  filled ' + (filledManual + filledSS + filledCR) + ' / ' + attempted + ' (Manual=' + filledManual + ', SS=' + filledSS + ', Crossref=' + filledCR + ')');
+  if (newlyAdded.length) {
+    fs.writeFileSync(MANUAL_ABSTRACTS_PATH, JSON.stringify(manualAbstracts, null, 2));
+    console.log('  added ' + newlyAdded.length + ' new stub entries to ' + MANUAL_ABSTRACTS_PATH);
+  }
+  console.log('  manual=' + filledManual + ', still-empty=' + stillEmpty);
+  if (stillEmpty) {
+    console.log('  >>> Please paste abstracts into manual_abstracts.json for these IDs:');
+    const empties = abstractCandidates
+      .filter(w => !w.abstract_inverted_index)
+      .filter(w => {
+        const m = manualAbstracts[w.id.replace('https://openalex.org/', '')];
+        return !(m && typeof m === 'string' && m.trim().length >= 30);
+      })
+      .sort((a, b) => b.publication_year - a.publication_year);
+    for (const w of empties) {
+      const sid = w.id.replace('https://openalex.org/', '');
+      console.log('      ' + sid + '  [' + w.publication_year + '] ' + (w.title || '').slice(0, 80));
+      if (w.doi) console.log('          ' + w.doi);
+    }
+  }
 
   console.log('Building per-year phrase networks (unigrams + bigrams x2)...');
   const reconstruct = (inv) => {
