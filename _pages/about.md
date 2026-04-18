@@ -10,15 +10,103 @@ redirect_from:
 
 ---
 
-Greetings! I'm <span style="color: #2c3e50; font-weight: bold;">Songhua Hu</span> (胡松华), an <span style="color: #e67e22;">Assistant Professor of Transportation Engineering</span> at the
-Department of Architecture and Civil Engineering, [City University of Hong Kong](https://www.cityu.edu.hk/).
-Previously, I was a Postdoctoral Research Fellow at [MIT Senseable City Lab](https://senseable.mit.edu/) (PIs: Paolo Santi, Carlo Ratti).
-I received my <span style="color: #2980b9;">Ph.D.</span> (2023) from the University of Maryland, College Park, <span style="color: #2980b9;">M.S.</span> (2019) from Tongji University (同济大学), and <span style="color: #2980b9;">B.S.</span> (2016) from Huazhong University of Science and Technology (华中科技大学), all in <span style="color: #2980b9;">Transportation Engineering</span>.
-My research leverages <span style="color: #e67e22;">crowdsourced data mining</span>, <span style="color: #e67e22;">spatiotemporal AI</span>, <span style="color: #e67e22;">network analysis</span>, and <span style="color: #e67e22;">advanced statistics</span>
-to advance <span style="color: #27ae60;">smart, sustainable, resilient, and equitable mobility systems</span>.
-I have published **over 40** journal papers (**21** first-authored) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.,
-and have contributed to research projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, and USDOE</span>.
-I serve as a reviewer for **over 60** journals including _Nature Cities_, _Nature Communications_, _Transportation Research Part A/B/C/D/E_, among others.
+<style>
+.home-hero {
+  margin: 0 0 2.5em;
+  padding: 1.8em 0 0.5em;
+}
+.home-hero .eyebrow {
+  font-size: 0.78em;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: #27ae60;
+  margin-bottom: 0.7em;
+}
+.home-hero h1 {
+  font-size: 2.4em;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.35em;
+  color: #1a1a1a;
+}
+.home-hero h1 .zh {
+  font-size: 0.6em;
+  font-weight: 400;
+  color: #888;
+  margin-left: 0.4em;
+  vertical-align: middle;
+}
+.home-hero .role {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.55;
+  margin: 0 0 0.4em;
+}
+.home-hero .role b { color: #e67e22; font-weight: 600; }
+.home-hero .prev {
+  font-size: 0.95em;
+  color: #777;
+  margin: 0 0 1.6em;
+}
+.home-hero .stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55em;
+  margin-top: 1.2em;
+}
+.home-hero .stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3em;
+  padding: 0.45em 0.95em;
+  border-radius: 999px;
+  border: 1px solid #e5e5e5;
+  background: #fafafa;
+  font-size: 0.85em;
+  color: #444;
+}
+.home-hero .stat b {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #2c3e50;
+}
+.home-hero .stat.green b { color: #27ae60; }
+.home-hero .stat.blue  b { color: #2980b9; }
+.home-hero .stat.orange b { color: #e67e22; }
+.home-hero .stat.purple b { color: #8e44ad; }
+@media (max-width: 600px) {
+  .home-hero h1 { font-size: 1.8em; }
+  .home-hero .role { font-size: 1em; }
+}
+
+.home-bio {
+  color: #555;
+  line-height: 1.75;
+  font-size: 0.98em;
+  margin-bottom: 2em;
+}
+</style>
+
+<section class="home-hero">
+  <div class="eyebrow">Smart · Sustainable · Resilient · Equitable Mobility</div>
+  <h1>Songhua Hu <span class="zh">胡松华</span></h1>
+  <p class="role"><b>Assistant Professor of Transportation Engineering</b><br>
+    Department of Architecture and Civil Engineering, <a href="https://www.cityu.edu.hk/">City University of Hong Kong</a></p>
+  <p class="prev">Previously: Postdoctoral Research Fellow, <a href="https://senseable.mit.edu/">MIT Senseable City Lab</a> (PIs: Paolo Santi, Carlo Ratti)</p>
+
+  <div class="stats">
+    <span class="stat green"><b>40+</b> Journal Papers</span>
+    <span class="stat blue"><b>21</b> First-Author</span>
+    <span class="stat orange"><b>60+</b> Journals Reviewed</span>
+    <span class="stat purple"><b>USDOT · NIH · NSF · FHWA · USDOE</b> Funded</span>
+  </div>
+</section>
+
+<p class="home-bio">
+My research leverages <span style="color: #e67e22;">crowdsourced data mining</span>, <span style="color: #e67e22;">spatiotemporal AI</span>, <span style="color: #e67e22;">network analysis</span>, and <span style="color: #e67e22;">advanced statistics</span> to advance smart, sustainable, resilient, and equitable mobility systems. I received my <span style="color: #2980b9;">Ph.D.</span> (2023) from the University of Maryland, College Park, <span style="color: #2980b9;">M.S.</span> (2019) from Tongji University (同济大学), and <span style="color: #2980b9;">B.S.</span> (2016) from Huazhong University of Science and Technology (华中科技大学), all in Transportation Engineering. Selected publication venues: <em>Nature Sustainability</em>, <em>PNAS</em>, <em>Transportation Research Part A/C/D/E</em>, <em>Cities</em>, <em>Sustainable Cities and Society</em>. Reviewer for <em>Nature Cities</em>, <em>Nature Communications</em>, and many transportation journals.
+</p>
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
 
