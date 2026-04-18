@@ -60,19 +60,11 @@ _Journal of the Royal Society Interface_ (**1**),
 _Journal of Planning Education and Research_ (**1**),
 among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc.
 
-<div style="display: flex; gap: 1em; flex-wrap: wrap; align-items: stretch; margin: 1.2em 0;">
-  <div style="flex: 1 1 320px;">
-    <div id="citations-chart" style="width: 100%; height: 360px; position: relative; overflow: hidden;">
-      <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading citations…</div>
-    </div>
-    <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Citations per year (OpenAlex)</div>
+<div style="margin: 1.2em 0;">
+  <div id="coauthor-network" style="width: 100%; max-width: 1100px; height: 460px; margin: 0 auto; position: relative; overflow: hidden;">
+    <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading network…</div>
   </div>
-  <div style="flex: 1 1 320px;">
-    <div id="coauthor-network" style="width: 100%; height: 360px; position: relative; overflow: hidden;">
-      <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading network…</div>
-    </div>
-    <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network (OpenAlex)</div>
-  </div>
+  <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network (OpenAlex)</div>
 </div>
 
 ***
