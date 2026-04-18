@@ -20,15 +20,31 @@
           "count": 2
         },
         {
-          "phrase": "marketing public",
+          "phrase": "usage",
           "count": 2
         },
         {
-          "phrase": "transport demography",
+          "phrase": "station",
           "count": 2
         }
       ],
-      "edges": []
+      "edges": [
+        {
+          "source": "carsharing",
+          "target": "usage",
+          "weight": 2
+        },
+        {
+          "source": "carsharing",
+          "target": "station",
+          "weight": 2
+        },
+        {
+          "source": "station",
+          "target": "usage",
+          "weight": 2
+        }
+      ]
     },
     {
       "year": 2019,
@@ -49,38 +65,28 @@
           "count": 8
         },
         {
-          "phrase": "location",
+          "phrase": "home orders",
           "count": 6
         },
         {
-          "phrase": "home orders",
-          "count": 6
+          "phrase": "decision",
+          "count": 4
         }
       ],
       "edges": [
         {
-          "source": "human mobility",
-          "target": "location",
-          "weight": 4
+          "source": "decision",
+          "target": "human mobility",
+          "weight": 2
         },
         {
-          "source": "location",
+          "source": "decision",
           "target": "mobile device",
-          "weight": 4
+          "weight": 2
         },
         {
           "source": "human mobility",
           "target": "mobile device",
-          "weight": 3
-        },
-        {
-          "source": "home orders",
-          "target": "location",
-          "weight": 3
-        },
-        {
-          "source": "covid pandemic",
-          "target": "location",
           "weight": 3
         },
         {
@@ -133,7 +139,7 @@
           "count": 7
         },
         {
-          "phrase": "contiguous united",
+          "phrase": "social distancing",
           "count": 6
         }
       ],
@@ -159,6 +165,11 @@
           "weight": 6
         },
         {
+          "source": "covid",
+          "target": "social distancing",
+          "weight": 3
+        },
+        {
           "source": "mobility",
           "target": "pandemic",
           "weight": 5
@@ -169,18 +180,13 @@
           "weight": 2
         },
         {
-          "source": "contiguous united",
-          "target": "mobility",
-          "weight": 2
-        },
-        {
-          "source": "contiguous united",
-          "target": "covid",
+          "source": "mobility",
+          "target": "social distancing",
           "weight": 3
         },
         {
-          "source": "contiguous united",
-          "target": "pandemic",
+          "source": "pandemic",
+          "target": "social distancing",
           "weight": 2
         }
       ]
