@@ -328,7 +328,7 @@ author_profile: true
       </div>
     </div>
 
-    <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0965856425000576" aria-label="Read more"></a>
+    <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0965856425003386" aria-label="Read more"></a>
       <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/zone_30.mp4" aria-label="Zone 30 emission analysis"></video></div>
       <div class="card-body">
         <span class="card-venue">TR Part A · 2025</span>
