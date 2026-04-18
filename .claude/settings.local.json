@@ -45,7 +45,9 @@
       "Bash(git push *)",
       "Bash(node *)",
       "WebFetch(domain:www.google.com)",
-      "WebFetch(domain:api.crossref.org)"
+      "WebFetch(domain:api.crossref.org)",
+      "Bash(mv images/s1-hero.mp4 images/s1-hero.original.mp4.bak)",
+      "Bash(mv images/s1-hero-opt.mp4 images/s1-hero.mp4)"
     ]
   }
 }
