@@ -351,7 +351,11 @@ Each panel below summarizes the most distinctive terms in my research for a two-
         .on('drag', function (e) { e.subject.fx = e.x; e.subject.fy = e.y; })
         .on('end', function (e) { if (!e.active) sim.alphaTarget(0); e.subject.fx = null; e.subject.fy = null; }));
 
-    var labelData = data.nodes.filter(function (d) { return d.isSelf || d.count >= 3; });
+    var HIDE_LABELS = new Set(['yingrui zhao']);
+    var labelData = data.nodes.filter(function (d) {
+      if (HIDE_LABELS.has(d.name.toLowerCase())) return false;
+      return d.isSelf || d.count >= 3;
+    });
     var label = g.append('g').selectAll('text').data(labelData).join('text')
       .text(function (d) { return d.name; })
       .attr('text-anchor', 'middle')
