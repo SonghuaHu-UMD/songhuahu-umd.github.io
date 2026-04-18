@@ -77,7 +77,7 @@ Each panel below highlights a set of <span style="color: #e67e22; font-weight: 6
 A single thread runs through all periods: turning <span style="color: #e67e22; font-weight: 600;">ubiquitous urban data</span> into actionable insights for <span style="color: #27ae60; font-weight: 600;">smart, sustainable, resilient, and equitable mobility</span>. The unit of analysis scales up over time, from <em>operator-scale shared mobility</em> at <span style="color: #2c3e50; font-weight: 700;">Tongji</span>, to <em>nationwide pandemic-era mobility</em> at <span style="color: #2c3e50; font-weight: 700;">UMD</span>, to <em>citywide emission inventories</em> and <em>crowdsourced public sensing</em> at <span style="color: #2c3e50; font-weight: 700;">MIT</span>.
 </p>
 
-<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 320px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
+<div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 320px; margin: 1em auto 0.4em; position: relative; overflow-x: auto; overflow-y: hidden;">
   <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year terms…</div>
 </div>
 <div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">AI-synthesized research themes per two-year period</div>
@@ -112,7 +112,10 @@ A single thread runs through all periods: turning <span style="color: #e67e22; f
 
   fetch('/assets/topic_evolution.json').then(function (r) { return r.json(); }).then(function (data) {
     container.innerHTML = '';
-    var W = container.clientWidth;
+    /* Force a minimum drawing width so columns stay readable on narrow screens;
+       the container has overflow-x:auto, so mobile viewers swipe horizontally. */
+    var MIN_W = 900;
+    var W = Math.max(container.clientWidth, MIN_W);
     var H = container.clientHeight;
     var margin = { top: 8, right: 6, bottom: 4, left: 6 };
     var iw = W - margin.left - margin.right;
@@ -120,7 +123,8 @@ A single thread runs through all periods: turning <span style="color: #e67e22; f
 
     var svg = d3.select(container).append('svg')
       .attr('viewBox', '0 0 ' + W + ' ' + H)
-      .attr('width', '100%').attr('height', '100%')
+      .attr('width', W).attr('height', H)
+      .style('display', 'block')
       .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif");
 
     var years = data.years;
