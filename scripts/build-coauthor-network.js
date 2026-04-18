@@ -153,9 +153,13 @@ function buildGraph(works) {
   }, null, 2));
   console.log('Wrote ' + CITATIONS_PATH + ' (total ' + totalCitations + ' citations on ' + filtered.length + ' works, h=' + h + ', i10=' + i10 + ')');
 
-  console.log('Filling missing abstracts from Semantic Scholar via DOI...');
-  /* For works missing abstracts in OpenAlex, query Semantic Scholar by DOI (free, ~100 req/5min). */
+  console.log('Filling missing abstracts from Semantic Scholar then Crossref via DOI...');
+  /* When OpenAlex lacks an abstract, try Semantic Scholar; if that also fails, try Crossref. */
   const cleanDoi = (doi) => doi ? doi.replace(/^https?:\/\/doi\.org\//, '') : null;
+  const stripJats = (s) => s
+    .replace(/<jats:[^>]+>/g, '').replace(/<\/jats:[^>]+>/g, '')
+    .replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+
   const fetchSSAbstract = async (doi) => {
     const d = cleanDoi(doi);
     if (!d) return null;
@@ -167,20 +171,38 @@ function buildGraph(works) {
       return j.abstract || null;
     } catch (e) { return null; }
   };
+  const fetchCrossrefAbstract = async (doi) => {
+    const d = cleanDoi(doi);
+    if (!d) return null;
+    try {
+      const url = `https://api.crossref.org/works/${encodeURIComponent(d)}`;
+      const r = await fetch(url, { headers: { 'User-Agent': 'songhuahu-umd.github.io (mailto:Songhua.Hu@cityu.edu.hk)' } });
+      if (!r.ok) return null;
+      const j = await r.json();
+      const raw = j.message && j.message.abstract;
+      if (!raw) return null;
+      const cleaned = stripJats(raw);
+      return cleaned.length > 30 ? cleaned : null;
+    } catch (e) { return null; }
+  };
 
-  const ssAbstractByWorkId = new Map();
-  let filled = 0, attempted = 0;
+  const filledByWorkId = new Map();
+  let filledSS = 0, filledCR = 0, attempted = 0;
   for (const w of works) {
     if (w.abstract_inverted_index) continue;
     if (!w.doi) continue;
     if (w.publication_year < MIN_YEAR) continue;
     if (BLOCKLIST.has(w.id)) continue;
     attempted++;
-    const a = await fetchSSAbstract(w.doi);
-    if (a) { ssAbstractByWorkId.set(w.id, a); filled++; }
+    let a = await fetchSSAbstract(w.doi);
+    if (a) { filledByWorkId.set(w.id, a); filledSS++; }
+    else {
+      a = await fetchCrossrefAbstract(w.doi);
+      if (a) { filledByWorkId.set(w.id, a); filledCR++; }
+    }
     await new Promise(res => setTimeout(res, 350));   /* rate-limit politeness */
   }
-  console.log('  filled ' + filled + ' / ' + attempted + ' missing abstracts via Semantic Scholar');
+  console.log('  filled ' + (filledSS + filledCR) + ' / ' + attempted + ' (SS=' + filledSS + ', Crossref=' + filledCR + ')');
 
   console.log('Building per-year phrase networks (unigrams + bigrams x2)...');
   const reconstruct = (inv) => {
@@ -261,9 +283,9 @@ function buildGraph(works) {
       if (w.title) parts.push(w.title);
       return parts.join(' ');
     }
-    const ss = ssAbstractByWorkId.get(w.id);
-    if (ss) {
-      parts.push(ss);
+    const ext = filledByWorkId.get(w.id);
+    if (ext) {
+      parts.push(ext);
       if (w.title) parts.push(w.title);
       return parts.join(' ');
     }
