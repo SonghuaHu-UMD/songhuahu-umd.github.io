@@ -79,17 +79,13 @@ Research Topics
 ======
 
 <p style="color: #555; line-height: 1.7; margin: 0.6em 0 1.2em;">
-Each panel below summarizes the most distinctive terms in my abstracts for a two-year period. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a> and, when missing, back-filled via <a href="https://www.semanticscholar.org/">Semantic Scholar</a> or <a href="https://www.crossref.org/">Crossref</a> by DOI.
+Each panel below summarizes the most distinctive terms in my abstracts for a two-year period. Abstracts are pulled from <a href="https://openalex.org/">OpenAlex</a> and, when missing, back-filled via <a href="https://www.semanticscholar.org/">Semantic Scholar</a> or <a href="https://www.crossref.org/">Crossref</a> by DOI. The arc moves from <em>shared mobility</em> and <em>urban flood resilience</em> (2017–18), through <em>pandemic mobility</em> (2019–22), into <em>public perception sensing</em> with LLMs (2023–24), and most recently <em>data-driven traffic emissions</em> and <em>policy evaluation</em> (2025–26).
 </p>
 
 <div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 290px; margin: 1em auto 0.4em; position: relative; overflow: hidden;">
   <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year terms…</div>
 </div>
 <div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">Top abstract terms per two-year period</div>
-
-<p style="color: #555; line-height: 1.7; margin: 1em 0 0.5em;">
-The arc moves from <em>shared mobility</em> and <em>urban flood resilience</em> (2017–18), through <em>pandemic mobility</em> (2019–22), into <em>public perception sensing</em> with LLMs (2023–24), and most recently <em>data-driven traffic emissions</em> and <em>policy evaluation</em> (2025–26).
-</p>
 
 <style>
 .cn-tooltip {
