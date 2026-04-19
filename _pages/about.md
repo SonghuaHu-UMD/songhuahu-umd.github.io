@@ -355,7 +355,7 @@ A single thread runs through all periods: turning <span style="color: #e67e22; f
         .on('drag', function (e) { e.subject.fx = e.x; e.subject.fy = e.y; })
         .on('end', function (e) { if (!e.active) sim.alphaTarget(0); e.subject.fx = null; e.subject.fy = null; }));
 
-    var HIDE_LABELS = new Set(['yingrui zhao']);
+    var HIDE_LABELS = new Set(['yingrui zhao', 'yuan jiang']);
     var labelData = data.nodes.filter(function (d) {
       if (HIDE_LABELS.has(d.name.toLowerCase())) return false;
       return d.isSelf || d.count >= 3;
