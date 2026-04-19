@@ -31,7 +31,7 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 News
 ======
-* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**Anthropocene**](https://www.anthropocenemagazine.org/2026/04/tracking-traffic-pollution-in-real-time-could-transform-city-climate-policy/)!
+* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402), [**CityUHK ACE NEWS**](https://www.cityu.edu.hk/ace/news-events/what-is-new/prof-songhu-hu-publishes-in-nature-sustainability), and [**Anthropocene**](https://www.anthropocenemagazine.org/2026/04/tracking-traffic-pollution-in-real-time-could-transform-city-climate-policy/)!
 * **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/). 
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
