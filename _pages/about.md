@@ -42,6 +42,100 @@ News
 
 ***
 
+Selected Papers
+======
+
+<style>
+.marquee {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0.6em auto 1.2em;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, black 4%, black 96%, transparent 100%);
+          mask-image: linear-gradient(90deg, transparent 0, black 4%, black 96%, transparent 100%);
+}
+.marquee__track {
+  display: flex;
+  gap: 1em;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+.marquee:hover .marquee__track { animation-play-state: paused; }
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.mq-card {
+  position: relative;
+  flex: 0 0 320px;
+  display: flex; flex-direction: column;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.mq-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.08); border-color: #2980b9; }
+.mq-card .mq-img { aspect-ratio: 16 / 9; overflow: hidden; background: #f5f5f5; }
+.mq-card .mq-img img,
+.mq-card .mq-img video { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mq-card .mq-body { padding: 0.75em 0.95em 0.95em; }
+.mq-card .mq-venue {
+  display: inline-block;
+  font-size: 0.7em; text-transform: uppercase; letter-spacing: 0.1em;
+  font-weight: 700; color: #c0392b;
+  background: rgba(192, 57, 43, 0.08);
+  padding: 0.25em 0.6em; border-radius: 4px;
+  margin-bottom: 0.55em;
+}
+.mq-card .mq-title { font-size: 0.92em; line-height: 1.4; color: #2c3e50; margin: 0; }
+</style>
+
+<div class="marquee" aria-label="Selected papers, auto-scrolling">
+  <div class="marquee__track">
+
+    <a class="mq-card" href="https://www.nature.com/articles/s41893-026-01797-9" target="_blank" rel="noopener">
+      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s9-policy.mp4"></video></div>
+      <div class="mq-body">
+        <span class="mq-venue">Nature Sustainability · 2026</span>
+        <p class="mq-title">Ubiquitous data-driven framework for traffic emission estimation and policy evaluation</p>
+      </div>
+    </a>
+
+    <a class="mq-card" href="https://www.pnas.org/doi/abs/10.1073/pnas.2010836117" target="_blank" rel="noopener">
+      <div class="mq-img"><img loading="lazy" decoding="async" src="/images/FF43.png" alt=""></div>
+      <div class="mq-body">
+        <span class="mq-venue">PNAS · 2020</span>
+        <p class="mq-title">Mobile device data reveal the dynamics in a positive relationship between human mobility and COVID-19 infections</p>
+      </div>
+    </a>
+
+    <!-- Duplicated set for seamless loop -->
+
+    <a class="mq-card" href="https://www.nature.com/articles/s41893-026-01797-9" target="_blank" rel="noopener" aria-hidden="true">
+      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s9-policy.mp4"></video></div>
+      <div class="mq-body">
+        <span class="mq-venue">Nature Sustainability · 2026</span>
+        <p class="mq-title">Ubiquitous data-driven framework for traffic emission estimation and policy evaluation</p>
+      </div>
+    </a>
+
+    <a class="mq-card" href="https://www.pnas.org/doi/abs/10.1073/pnas.2010836117" target="_blank" rel="noopener" aria-hidden="true">
+      <div class="mq-img"><img loading="lazy" decoding="async" src="/images/FF43.png" alt=""></div>
+      <div class="mq-body">
+        <span class="mq-venue">PNAS · 2020</span>
+        <p class="mq-title">Mobile device data reveal the dynamics in a positive relationship between human mobility and COVID-19 infections</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+***
+
 Publications
 ======
 
