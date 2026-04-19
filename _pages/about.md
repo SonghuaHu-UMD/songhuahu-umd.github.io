@@ -95,8 +95,8 @@ Selected Papers
   max-width: 1100px;
   margin: 0.6em auto 1em;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, black 4%, black 96%, transparent 100%);
-          mask-image: linear-gradient(90deg, transparent 0, black 4%, black 96%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, black 1.5%, black 98.5%, rgba(0,0,0,0.55) 100%);
+          mask-image: linear-gradient(90deg, rgba(0,0,0,0.55) 0%, black 1.5%, black 98.5%, rgba(0,0,0,0.55) 100%);
 }
 .marquee__track {
   display: flex;
@@ -152,6 +152,14 @@ Selected Papers
       </div>
     </a>
 
+    <a class="mq-card" href="https://www.researchsquare.com/article/rs-7256883/v1" target="_blank" rel="noopener">
+      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4"></video></div>
+      <div class="mq-body">
+        <span class="mq-venue">Under Review · 2026</span>
+        <p class="mq-title">Vehicle-level traffic emission estimation from city camera videos via computer vision</p>
+      </div>
+    </a>
+
     <a class="mq-card" href="https://www.pnas.org/doi/abs/10.1073/pnas.2010836117" target="_blank" rel="noopener">
       <div class="mq-img"><img loading="lazy" decoding="async" src="/images/FF43.png" alt=""></div>
       <div class="mq-body">
@@ -169,7 +177,7 @@ Selected Papers
     </a>
 
     <a class="mq-card" href="https://doi.org/10.1016/j.trc.2022.103962" target="_blank" rel="noopener">
-      <div class="mq-img"><img loading="lazy" decoding="async" src="/images/FF12.png" alt=""></div>
+      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/FF16.mp4"></video></div>
       <div class="mq-body">
         <span class="mq-venue">TR Part C · 2022</span>
         <p class="mq-title">High-dimensional population inflow time series forecasting via an interpretable hierarchical transformer</p>
@@ -194,6 +202,14 @@ Selected Papers
       </div>
     </a>
 
+    <a class="mq-card" href="https://www.researchsquare.com/article/rs-7256883/v1" target="_blank" rel="noopener" aria-hidden="true">
+      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4"></video></div>
+      <div class="mq-body">
+        <span class="mq-venue">Under Review · 2026</span>
+        <p class="mq-title">Vehicle-level traffic emission estimation from city camera videos via computer vision</p>
+      </div>
+    </a>
+
     <a class="mq-card" href="https://www.pnas.org/doi/abs/10.1073/pnas.2010836117" target="_blank" rel="noopener" aria-hidden="true">
       <div class="mq-img"><img loading="lazy" decoding="async" src="/images/FF43.png" alt=""></div>
       <div class="mq-body">
@@ -211,7 +227,7 @@ Selected Papers
     </a>
 
     <a class="mq-card" href="https://doi.org/10.1016/j.trc.2022.103962" target="_blank" rel="noopener" aria-hidden="true">
-      <div class="mq-img"><img loading="lazy" decoding="async" src="/images/FF12.png" alt=""></div>
+      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/FF16.mp4"></video></div>
       <div class="mq-body">
         <span class="mq-venue">TR Part C · 2022</span>
         <p class="mq-title">High-dimensional population inflow time series forecasting via an interpretable hierarchical transformer</p>
