@@ -49,10 +49,10 @@ Publications
 Over 40 journal papers (<span style="color: green">**21** First-Author</span>, <span style="color: orange">**4** Corresponding</span>) including
 _Nature Sustainability_ (**1**, <span style="color: green">**1**F</span> <span style="color: orange">**1**C</span>),
 _Proceedings of the National Academy of Sciences_ (**1**),
-_Transportation Research Part A_ (**5**, <span style="color: green">**3**F</span>),
-_Transportation Research Part C_ (**5**, <span style="color: green">**3**F</span>),
-_Transportation Research Part D_ (**3**, <span style="color: green">**3**F</span>),
-_Transportation Research Part E_ (**1**),
+_TR Part A_ (**5**, <span style="color: green">**3**F</span>),
+_TR Part C_ (**5**, <span style="color: green">**3**F</span>),
+_TR Part D_ (**3**, <span style="color: green">**3**F</span>),
+_TR Part E_ (**1**),
 _Computers, Environment and Urban Systems_ (**3**, <span style="color: green">**1**F</span>),
 _Journal of Transport Geography_ (**3**, <span style="color: green">**2**F</span>),
 _Cities_ (**1**, <span style="color: green">**1**F</span>),
@@ -139,24 +139,20 @@ Selected Papers
   display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
   overflow: hidden;
 }
+@media (max-width: 600px) {
+  .marquee__track { animation-duration: 110s; }
+  .mq-card { flex: 0 0 210px; }
+}
 </style>
 
 <div class="marquee" aria-label="Selected papers, auto-scrolling">
   <div class="marquee__track">
 
     <a class="mq-card" href="https://www.nature.com/articles/s41893-026-01797-9" target="_blank" rel="noopener">
-      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s9-policy.mp4"></video></div>
+      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4"></video></div>
       <div class="mq-body">
         <span class="mq-venue">Nature Sustainability · 2026</span>
         <p class="mq-title">Ubiquitous data-driven framework for traffic emission estimation and policy evaluation</p>
-      </div>
-    </a>
-
-    <a class="mq-card" href="https://www.researchsquare.com/article/rs-7256883/v1" target="_blank" rel="noopener">
-      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4"></video></div>
-      <div class="mq-body">
-        <span class="mq-venue">Under Review · 2026</span>
-        <p class="mq-title">Vehicle-level traffic emission estimation from city camera videos via computer vision</p>
       </div>
     </a>
 
@@ -195,18 +191,10 @@ Selected Papers
     <!-- Duplicated set for seamless loop -->
 
     <a class="mq-card" href="https://www.nature.com/articles/s41893-026-01797-9" target="_blank" rel="noopener" aria-hidden="true">
-      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s9-policy.mp4"></video></div>
+      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4"></video></div>
       <div class="mq-body">
         <span class="mq-venue">Nature Sustainability · 2026</span>
         <p class="mq-title">Ubiquitous data-driven framework for traffic emission estimation and policy evaluation</p>
-      </div>
-    </a>
-
-    <a class="mq-card" href="https://www.researchsquare.com/article/rs-7256883/v1" target="_blank" rel="noopener" aria-hidden="true">
-      <div class="mq-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4"></video></div>
-      <div class="mq-body">
-        <span class="mq-venue">Under Review · 2026</span>
-        <p class="mq-title">Vehicle-level traffic emission estimation from city camera videos via computer vision</p>
       </div>
     </a>
 
