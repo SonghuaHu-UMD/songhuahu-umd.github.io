@@ -11,9 +11,12 @@ Team
 <span style="color: #2c3e50; font-weight: bold;">City University of Hong Kong, Hong Kong</span>
 
 *Ph.D. Students*
-* <span style="color: #e67e22;">**Junxiang Zhang**</span> (2026~) — B.S. in Computer Science, Southern University of Science and Technology
-* <span style="color: #e67e22;">**Huazu Zhang**</span> (2026~) — M.S. in Geographic Information Science, Wuhan University
-* <span style="color: #e67e22;">**Jintong Zhang**</span> (2026~) — M.S. in Electronic and Information Engineering, Beihang University
+* <span style="color: #e67e22;">**Junxiang Zhang**</span> (2026~) — B.S. in Computer Science, Southern University of Science and Technology.
+  <br><span style="color: #7f8c8d;">*Research interests:* spatiotemporal data mining, vehicle electrification, charging–grid coordination.</span>
+* <span style="color: #e67e22;">**Huazu Zhang**</span> (2026~) — M.S. in Geographic Information Science, Wuhan University.
+  <br><span style="color: #7f8c8d;">*Research interests:* spatiotemporal data mining, human mobility, complex networks.</span>
+* <span style="color: #e67e22;">**Jintong Zhang**</span> (2026~) — M.S. in Electronic and Information Engineering, Beihang University.
+  <br><span style="color: #7f8c8d;">*Research interests:* UAV optimization, path planning, digital twins.</span>
 
 ***
 
