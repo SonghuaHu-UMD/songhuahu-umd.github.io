@@ -47,7 +47,10 @@
       "WebFetch(domain:www.google.com)",
       "WebFetch(domain:api.crossref.org)",
       "Bash(mv images/s1-hero.mp4 images/s1-hero.original.mp4.bak)",
-      "Bash(mv images/s1-hero-opt.mp4 images/s1-hero.mp4)"
+      "Bash(mv images/s1-hero-opt.mp4 images/s1-hero.mp4)",
+      "Read(//c/ProgramData/chocolatey/**)",
+      "Read(//c/Program Files/**)",
+      "Bash(./node_modules/ffmpeg-static/ffmpeg.exe -y -i images/image39.gif -movflags +faststart -pix_fmt yuv420p -vf \"scale=trunc\\(iw/2\\)*2:trunc\\(ih/2\\)*2\" -c:v libx264 -preset slow -crf 28 -an images/image39.mp4)"
     ]
   }
 }

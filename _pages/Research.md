@@ -276,7 +276,7 @@ author_profile: true
     </div>
 
     <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0965856423001635" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/FF12.png" alt="Explainable ML comparison"></div>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/image39.mp4" aria-label="Explainable ML comparison"></video></div>
       <div class="card-body">
         <span class="card-venue">TR Part A · 2023</span>
         <p class="card-text">Using nationwide phone-derived trip flows as a travel-demand proxy, we benchmark 48 explainable ML models against multiple interpretation techniques. Results reveal strong nonlinear relationships and threshold effects between travel demand and its drivers.</p>
