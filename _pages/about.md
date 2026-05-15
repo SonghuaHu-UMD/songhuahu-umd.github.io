@@ -73,16 +73,11 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
 Research Topics
 ======
 
-<p style="color: #555; line-height: 1.7; margin: 0.6em 0 1.2em;">
-Each panel below highlights a set of <span style="color: #e67e22; font-weight: 600;">dominant themes</span> varying by year. Themes are <span style="color: #8e44ad; font-weight: 600;">AI-synthesized</span> by reading my papers from (<a href="https://openalex.org/" style="color: #2980b9;">OpenAlex</a>).
-A single thread runs through all periods: turning <span style="color: #e67e22; font-weight: 600;">ubiquitous urban data</span> into actionable insights for <span style="color: #27ae60; font-weight: 600;">smart, sustainable, and resilient mobility</span>. 
-The main topics change over time, from <em>operator-scale shared mobility</em> at <span style="color: #2c3e50; font-weight: 700;">Tongji</span>, to <em>nationwide pandemic-era mobility</em> at <span style="color: #2c3e50; font-weight: 700;">UMD</span>, to <em>citywide emission inventories</em> and <em>crowdsourced public sensing</em> at <span style="color: #2c3e50; font-weight: 700;">MIT</span>.
-</p>
-
 <div id="topic-evolution" style="width: 100%; max-width: 1100px; height: 320px; margin: 1em auto 0.4em; position: relative; overflow-x: auto; overflow-y: hidden;">
   <div style="padding: 1em; color: #999; font-size: 0.9em;">Loading per-year terms…</div>
 </div>
-<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">AI-synthesized research themes per two-year period</div>
+<div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">Each panel below highlights a set of <span style="color: #e67e22; font-weight: 600;">dominant themes</span> varying by year. Themes are <span style="color: #8e44ad; font-weight: 600;">AI-synthesized</span> by reading my papers from (<a href="https://openalex.org/" style="color: #2980b9;">OpenAlex</a>).
+</div>
 
 ***
 
