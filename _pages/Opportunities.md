@@ -10,12 +10,11 @@ Recruitment
 
 **Current openings:**
 * <span style="color: #c0392b;">**1–2 fully-funded Ph.D. slots**</span> for **Summer/Fall 2027** admission.
-* <span style="color: #c0392b;">**1 Postdoc position**</span> focused on **resilience, human mobility, and network science**.
+* <span style="color: #c0392b;">**1 Postdoc position**</span> focused on **multi-system resilience, human mobility, and network science**.
 * <span style="color: #c0392b;">**Research Assistants**</span> focused on **large language models and data-driven traffic simulation**.
 
 Students with backgrounds in **data science, computer science, operations research, transportation, geography, or related fields** are welcome to apply.
-Applicants with <span style="color: #2980b9;">**C9 or QS Top-100 undergraduate degrees**</span> and <span style="color: #2980b9;">**GPA above 85/100**</span> are preferred.
-A qualifying English test score is required (e.g., <span style="color: #2980b9;">**TOEFL >= 79**</span> or <span style="color: #2980b9;">**IELTS >= 6.5**</span>).
+For Ph.D. students, a qualifying English test score is required (e.g., <span style="color: #2980b9;">**TOEFL >= 79**</span> or <span style="color: #2980b9;">**IELTS >= 6.5**</span>).
 To apply, please send your CV, Transcript, and Research Statement to <span style="color: #8e44ad;">**Songhua.Hu@cityu.edu.hk**</span>.
 
 **Ph.D. Funding Options:**
@@ -26,15 +25,16 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 * <span style="color: #27ae60;">**[Hong Kong PhD Fellowship Scheme (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>: Monthly stipend up to <span style="color: #e67e22;">**HK$27,100**</span>, plus tuition waiver and conference travel allowance. Requirements: **985 or QS Top-100 undergraduate** (C9 preferred); master's degree and overseas experience preferred; first-authored SCI publication preferred.
 * <span style="color: #27ae60;">**Joint Ph.D. Program**</span>: Earn dual degrees from a mainland university and CityU. Scholarship provided. C9 preferred.
 
+<!--
 ---
 
 **当前重点招聘：**
 * <span style="color: #c0392b;">**1-2 名 2027 年 Summer/Fall 入学的全奖博士生**</span>
-* <span style="color: #c0392b;">**1 名博士后**</span>，研究方向为 **resilience、human mobility 与 network science**
+* <span style="color: #c0392b;">**1 名博士后**</span>，研究方向为 **multi-system resilience、human mobility 与 network science**
 * <span style="color: #c0392b;">**研究助理（RA）**</span>，研究方向为 **大语言模型与数据驱动的交通仿真**
 
-欢迎数据科学、计算机、运筹学、交通、地理等相关背景的学生申请（<span style="color: #2980b9;">**985或QS前100本科、GPA 85+**</span>优先）。
-需具有符合条件的英语成绩（如<span style="color: #2980b9;">**托福 >= 79**</span>或<span style="color: #2980b9;">**雅思 >= 6.5**</span>）。
+欢迎数据科学、计算机、运筹学、交通、地理等相关背景的学生申请。
+博士申请者需具有符合条件的英语成绩（如<span style="color: #2980b9;">**托福 >= 79**</span>或<span style="color: #2980b9;">**雅思 >= 6.5**</span>）。
 申请方式：请将CV+成绩单+研究计划（可选）发送至<span style="color: #8e44ad;">**Songhua.Hu@cityu.edu.hk**</span>.
 
 **博士奖学金类型：**
@@ -44,6 +44,7 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 * <span style="color: #27ae60;">**校长奖学金**</span>：要求**985或QS前100本科**（C9优先）；有硕士学位和留学经历优先；一作SCI发表优先。
 * <span style="color: #27ae60;">**[香港政府博士奖学金 (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>：要求**985或QS前100本科**（C9优先）；有硕士学位和留学经历优先；一作SCI发表优先（约<span style="color: #e67e22;">**27,100港元/月**</span>）。
 * <span style="color: #27ae60;">**联合培养博士**</span>：可同时获得内地高校和香港城市大学双博士学位，学校提供研究生奖学金（C9优先）。
+-->
 
 ***
 
@@ -56,8 +57,10 @@ We are particularly looking for collaborators with expertise in <span style="col
 * Long-term collaboration channels with top teams like MIT
 * Research designs targeting high-impact journals with deep involvement
 
+<!--
 课题组长期寻找具有<span style="color: #e67e22;">**LLM**</span>、<span style="color: #e67e22;">**网络科学**</span>、<span style="color: #e67e22;">**大规模智能体仿真**</span>相关背景的合作伙伴。我们可提供：
 * 极其丰富的出行相关数据资源
 * 充足的大规模计算资源
 * 与MIT等顶级团队的长期合作通道
 * 面向子刊的研究设计与深度参与
+-->
