@@ -35,7 +35,7 @@ News
 * **[06/2026]** Our project _<span style="color: #2980b9;">"From Sparse Traces to Complete Tours: AI-Enhanced Human Mobility Reconstruction Using Big Mobility Data"</span>_ is funded by the **Hong Kong RGC Early Career Scheme (ECS)**!
 * **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**NS Research Briefing**](https://www.nature.com/articles/s41893-026-01798-8)!
 * **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/). 
-* **[09/2025]** Received the **City University of Hong Kong Startup Grant** for the project _<span style="color: #2980b9;">"Agentic AI-Driven Activity-Based Modeling using Big Mobility Data"</span>_!
+* **[09/2025]** Our project _<span style="color: #2980b9;">"Agentic AI-Driven Activity-Based Modeling using Big Mobility Data"</span>_ is funded by the **City University of Hong Kong Startup Grant**!
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
