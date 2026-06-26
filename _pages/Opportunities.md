@@ -23,7 +23,7 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 * <span style="color: #27ae60;">**Regular Ph.D. Scholarship**</span>: Full doctoral scholarship (~<span style="color: #e67e22;">**HK$19,600/month**</span>).
 * <span style="color: #27ae60;">**Presidential PhD Scholarship**</span>: Requirements: **985 or QS Top-100 undergraduate** (C9 preferred); master's degree and overseas experience preferred; first-authored SCI publication preferred.
 * <span style="color: #27ae60;">**[Hong Kong PhD Fellowship Scheme (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>: Monthly stipend up to <span style="color: #e67e22;">**HK$27,100**</span>, plus tuition waiver and conference travel allowance. Requirements: **985 or QS Top-100 undergraduate** (C9 preferred); master's degree and overseas experience preferred; first-authored SCI publication preferred.
-* <span style="color: #27ae60;">**Joint Ph.D. Program**</span>: Earn dual degrees from a mainland university and CityU. Scholarship provided. C9 preferred.
+* <span style="color: #27ae60;">**Joint Ph.D. Program**</span>: Earn dual degrees from a mainland university and CityU. Full doctoral scholarship during the CityU HK period. C9 preferred.
 
 <!--
 ---
