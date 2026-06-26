@@ -8,7 +8,11 @@ author_profile: true
 Recruitment
 ======
 
-I have several <span style="color: #e67e22;">**Postdoc**</span>, <span style="color: #e67e22;">**Ph.D. student**</span> and <span style="color: #e67e22;">**research assistant**</span> positions available.
+**Current openings:**
+* <span style="color: #c0392b;">**1–2 fully-funded Ph.D. slots**</span> for **Summer/Fall 2027** admission.
+* <span style="color: #c0392b;">**1 Postdoc position**</span> focused on **resilience, human mobility, and network science**.
+* <span style="color: #c0392b;">**Research Assistants**</span> focused on **large language models and data-driven traffic simulation**.
+
 Students with backgrounds in **data science, computer science, operations research, transportation, geography, or related fields** are welcome to apply.
 Applicants with <span style="color: #2980b9;">**C9 or QS Top-100 undergraduate degrees**</span> and <span style="color: #2980b9;">**GPA above 85/100**</span> are preferred.
 A qualifying English test score is required (e.g., <span style="color: #2980b9;">**TOEFL >= 79**</span> or <span style="color: #2980b9;">**IELTS >= 6.5**</span>).
@@ -24,7 +28,11 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 
 ---
 
-我是香港城市大学（世界排名：U.S. News 54, QS 63）ACE学院助理教授，目前有数名<span style="color: #e67e22;">**博士生/博士后/研究助理**</span>名额。
+**当前重点招聘：**
+* <span style="color: #c0392b;">**1-2 名 2027 年 Summer/Fall 入学的全奖博士生**</span>
+* <span style="color: #c0392b;">**1 名博士后**</span>，研究方向为 **resilience、human mobility 与 network science**
+* <span style="color: #c0392b;">**研究助理（RA）**</span>，研究方向为 **大语言模型与数据驱动的交通仿真**
+
 欢迎数据科学、计算机、运筹学、交通、地理等相关背景的学生申请（<span style="color: #2980b9;">**985或QS前100本科、GPA 85+**</span>优先）。
 需具有符合条件的英语成绩（如<span style="color: #2980b9;">**托福 >= 79**</span>或<span style="color: #2980b9;">**雅思 >= 6.5**</span>）。
 申请方式：请将CV+成绩单+研究计划（可选）发送至<span style="color: #8e44ad;">**Songhua.Hu@cityu.edu.hk**</span>.
