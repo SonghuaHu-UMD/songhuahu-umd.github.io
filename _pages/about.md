@@ -31,6 +31,8 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 News
 ======
+* **[06/2026]** Welcoming **four new Ph.D. students** joining our group in Summer/Fall 2026!
+* **[06/2026]** Our project _"From Sparse Traces to Complete Tours: AI-Enhanced Human Mobility Reconstruction Using Big Mobility Data"_ is funded by the **Hong Kong RGC Early Career Scheme (ECS)**!
 * **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**NS Research Briefing**](https://www.nature.com/articles/s41893-026-01798-8)!
 * **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/). 
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!

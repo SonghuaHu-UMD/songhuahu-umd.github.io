@@ -17,6 +17,8 @@ Team
   <br><span style="color: #7f8c8d;">*Research interests:* spatiotemporal data mining, human mobility, complex networks.</span>
 * <span style="color: #e67e22;">**Jintong Zhang**</span> (2026~) — M.S. in Electronic and Information Engineering, Beihang University.
   <br><span style="color: #7f8c8d;">*Research interests:* UAV optimization, route planning, digital twins.</span>
+* <span style="color: #e67e22;">**Qishen Guo**</span> (2026~) — M.S. in Architecture, Harbin Institute of Technology.
+  <br><span style="color: #7f8c8d;">*Research interests:* computer vision, urban regeneration, multi-source data fusion.</span>
 
 ***
 
