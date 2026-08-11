@@ -83,9 +83,12 @@
 
 {% comment %}Both tests are needed: a missing key is nil (not != ""), and in Liquid "" is truthy.{% endcomment %}
 {% if site.goatcounter and site.goatcounter != "" %}
-<!-- Visitor counting for the sidebar map. Absolute https:// on purpose: the old
-     ClustrMaps embed used a protocol-relative src, which silently became an
-     unreachable https:// request once that host went away. -->
+{% comment %}
+  Visitor counting for the sidebar map. Absolute https:// on purpose: the old
+  ClustrMaps embed used a protocol-relative src, which silently became an
+  unreachable https:// request once that host went away.
+  Liquid comment, not <!-- -->, so this maintainer note is not shipped to readers.
+{% endcomment %}
 <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
         async src="https://gc.zgo.at/count.js"></script>
 {% endif %}
