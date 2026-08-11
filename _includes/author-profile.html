@@ -124,4 +124,154 @@
     </ul>
   </div>
 
+  {% comment %}
+    Self-hosted visitor map. Replaces the ClustrMaps widget, whose CDN host no longer
+    resolves and whose domain is now parked -- see scripts/build-visitor-map.js.
+    Stays hidden until assets/visitor_map.json actually has data.
+  {% endcomment %}
+  <div class="author__map" hidden>
+    <canvas class="author__map-canvas" role="img" aria-label="Map of visitor locations"></canvas>
+    <p class="author__map-caption"></p>
+  </div>
+  <script>
+  (function () {
+    var holder = document.querySelector('.author__map');
+    if (!holder || !window.fetch) return;
+
+    var LAND_URL = '{{ base_path }}/assets/world_land.json';
+    var VISITORS_URL = '{{ base_path }}/assets/visitor_map.json';
+
+    /* Equirectangular, clipped to inhabited latitudes: dropping Antarctica turns a
+       2:1 box into 2.5:1 and stops the sidebar wasting height on empty ice. */
+    var LAT_MAX = 84, LAT_MIN = -60;
+    var ASPECT = 360 / (LAT_MAX - LAT_MIN);
+
+    var started = false;
+    function start() {
+      if (started) return;
+      started = true;
+      Promise.all([
+        fetch(LAND_URL).then(function (r) { return r.json(); }),
+        fetch(VISITORS_URL).then(function (r) { return r.json(); })
+      ]).then(render).catch(function () { /* leave the widget hidden */ });
+    }
+
+    function render(res) {
+      var land = res[0].land, data = res[1];
+      var points = (data && data.points) || [];
+      if (!points.length) return;
+
+      var canvas = holder.querySelector('.author__map-canvas');
+      var ctx = canvas.getContext('2d');
+      var tip = null;
+      var maxCount = points[0].count;
+      for (var i = 1; i < points.length; i++) {
+        if (points[i].count > maxCount) maxCount = points[i].count;
+      }
+
+      var w = 0, h = 0;
+      function project(lon, lat) {
+        return [(lon + 180) / 360 * w, (LAT_MAX - lat) / (LAT_MAX - LAT_MIN) * h];
+      }
+      /* Dots share one alpha so overlapping regions read as density; area (not radius)
+         tracks the visit count, which is what a reader actually compares. */
+      function radius(count) {
+        return 1.6 + Math.sqrt(count / maxCount) * 3.6;
+      }
+
+      function draw() {
+        w = holder.clientWidth;
+        if (!w) return;
+        h = Math.round(w / ASPECT);
+        var dpr = window.devicePixelRatio || 1;
+        canvas.width = Math.round(w * dpr);
+        canvas.height = Math.round(h * dpr);
+        canvas.style.width = w + 'px';
+        canvas.style.height = h + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.clearRect(0, 0, w, h);
+
+        ctx.beginPath();
+        for (var r = 0; r < land.length; r++) {
+          var ring = land[r];
+          for (var p = 0; p < ring.length; p++) {
+            var xy = project(ring[p][0], ring[p][1]);
+            if (p === 0) ctx.moveTo(xy[0], xy[1]); else ctx.lineTo(xy[0], xy[1]);
+          }
+          ctx.closePath();
+        }
+        ctx.fillStyle = '#e4e9ed';
+        ctx.fill();
+
+        ctx.fillStyle = 'rgba(230, 126, 34, 0.72)';
+        for (var i = 0; i < points.length; i++) {
+          var c = project(points[i].lon, points[i].lat);
+          ctx.beginPath();
+          ctx.arc(c[0], c[1], radius(points[i].count), 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      /* Reveal first: a hidden holder has no layout box, so clientWidth would be 0. */
+      holder.hidden = false;
+      draw();
+
+      var caption = holder.querySelector('.author__map-caption');
+      var total = (data.total || 0).toLocaleString();
+      caption.textContent = total + ' visits · ' + points.length +
+        (points.length === 1 ? ' country' : ' countries');
+      if (data.generated) caption.title = 'Updated ' + data.generated;
+
+      /* Nearest-dot hover readout. Cheap enough at this point count to just scan. */
+      canvas.addEventListener('mousemove', function (e) {
+        var box = canvas.getBoundingClientRect();
+        var mx = e.clientX - box.left, my = e.clientY - box.top;
+        var hit = null, best = Infinity;
+        for (var i = 0; i < points.length; i++) {
+          var c = project(points[i].lon, points[i].lat);
+          var d = Math.hypot(c[0] - mx, c[1] - my);
+          if (d < Math.max(radius(points[i].count), 5) && d < best) { best = d; hit = points[i]; }
+        }
+        if (!hit) { if (tip) tip.style.opacity = 0; canvas.style.cursor = ''; return; }
+        if (!tip) {
+          tip = document.createElement('div');
+          tip.className = 'author__map-tip';
+          document.body.appendChild(tip);
+        }
+        canvas.style.cursor = 'pointer';
+        tip.textContent = hit.label + ' · ' + hit.count;
+        tip.style.opacity = 1;
+        tip.style.left = (e.pageX + 12) + 'px';
+        tip.style.top = (e.pageY + 12) + 'px';
+      });
+      canvas.addEventListener('mouseleave', function () { if (tip) tip.style.opacity = 0; });
+
+      if (window.ResizeObserver) {
+        var raf = null;
+        new ResizeObserver(function () {
+          if (raf) cancelAnimationFrame(raf);
+          raf = requestAnimationFrame(draw);
+        }).observe(holder);
+      }
+    }
+
+    /* Deferred on purpose: the old widget could not be deferred at all because it relied on
+       document.write. Nothing here does, so the map costs the initial render nothing.
+       IntersectionObserver is deliberately not used -- the holder starts hidden, and a
+       display:none element never reports as intersecting. Waiting for load + idle gets the
+       same "after first paint" guarantee without that trap. */
+    function maybeStart() {
+      /* CSS hides the map on narrow screens; skip the fetch entirely there. Testing
+         `display` would be useless -- the holder starts with [hidden] -- so the
+         stylesheet exposes --map-enabled, which still computes on hidden elements
+         and keeps the breakpoint defined in exactly one place. */
+      if (getComputedStyle(holder).getPropertyValue('--map-enabled').trim() === '0') return;
+      if (window.requestIdleCallback) requestIdleCallback(start, { timeout: 3000 });
+      else setTimeout(start, 400);
+    }
+    if (document.readyState === 'complete') maybeStart();
+    else window.addEventListener('load', maybeStart);
+  })();
+  </script>
+
 </div>

@@ -40,6 +40,12 @@ author:
   orcid            : "https://orcid.org/0000-0002-0731-3080"
 
 
+# Visitor analytics — feeds the sidebar visitor map (see scripts/build-visitor-map.js).
+# Set this to the site code from https://www.goatcounter.com (the <code> in
+# https://<code>.goatcounter.com). Left blank, no tracking script is emitted at all.
+goatcounter              : "songhuahu"
+
+
 # Reading Files
 include:
   - .htaccess

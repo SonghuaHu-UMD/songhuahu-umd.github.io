@@ -8,6 +8,36 @@
 <link rel="mask-icon" href="{{ base_path }}/images/safari-pinned-tab.svg" color="#000000">
 <meta name="theme-color" content="#ffffff">
 
+<style>
+  /* Self-hosted visitor map (see _includes/author-profile.html). */
+  .author__map { --map-enabled: 1; margin-top: 1em; max-width: 200px; }
+  .author__map-canvas { display: block; width: 100%; }
+  .author__map-caption {
+    margin: 0.35em 0 0;
+    font-size: 0.7em;
+    color: #7a8e9e;
+    line-height: 1.3;
+  }
+  .author__map-tip {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(44, 62, 80, 0.95);
+    color: #fff;
+    padding: 0.3em 0.55em;
+    border-radius: 4px;
+    font-size: 0.72em;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.12s;
+    z-index: 1000;
+  }
+  /* Hide the map on mobile (the sidebar stacks above the content there).
+     --map-enabled tells the script to skip its fetch entirely at this width. */
+  @media (max-width: 925px) {
+    .author__map { --map-enabled: 0; display: none !important; }
+  }
+</style>
+
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" onload="this.onload=null;this.rel='stylesheet'"/>
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css"/></noscript>
@@ -49,6 +79,15 @@
   ]
 }
 </script>
+{% endif %}
+
+{% comment %}Both tests are needed: a missing key is nil (not != ""), and in Liquid "" is truthy.{% endcomment %}
+{% if site.goatcounter and site.goatcounter != "" %}
+<!-- Visitor counting for the sidebar map. Absolute https:// on purpose: the old
+     ClustrMaps embed used a protocol-relative src, which silently became an
+     unreachable https:// request once that host went away. -->
+<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
 {% endif %}
 
 <!-- end custom head snippets -->
