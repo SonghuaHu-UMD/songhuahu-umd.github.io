@@ -32,10 +32,10 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 News
 ======
 * **[06/2026]** Welcoming **four new Ph.D. students** joining our group in Summer/Fall 2026!
-* **[06/2026]** Our project on _<span style="color: #2980b9;">AI-enhanced human mobility reconstruction</span>_ is funded by the **Hong Kong RGC Early Career Scheme (ECS)**!
+* **[06/2026]** Our project on _<span style="color: #2980b9;">AI-enhanced human mobility modeling</span>_ is funded by the **HK RGC Early Career Scheme (ECS)**!
 * **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**NS Research Briefing**](https://www.nature.com/articles/s41893-026-01798-8)!
 * **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/). 
-* **[09/2025]** Our project on _<span style="color: #2980b9;">agentic AI activity-based modeling</span>_ is funded by the **City University of Hong Kong Startup Grant**!
+* **[09/2025]** Our project on _<span style="color: #2980b9;">agentic AI activity-based modeling</span>_ is funded by the **CityUHK Startup Grant**!
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
@@ -200,94 +200,6 @@ Research Topics
     });
   }).catch(function (err) {
     container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Per-year phrases failed to load: ' + err.message + '</div>';
-  });
-})();
-</script>
-
-<script>
-(function () {
-  var container = document.getElementById('citations-chart');
-  if (!container || !window.d3) return;
-
-  fetch('/assets/citations_by_year.json').then(function (r) { return r.json(); }).then(function (data) {
-    container.innerHTML = '';
-    var years = data.by_year.filter(function (d) { return d.annual > 0; });
-    if (!years.length) return;
-    var w = container.clientWidth;
-    var h = container.clientHeight;
-    var margin = { top: 36, right: 44, bottom: 30, left: 40 };
-    var iw = w - margin.left - margin.right;
-    var ih = h - margin.top - margin.bottom;
-
-    var svg = d3.select(container).append('svg')
-      .attr('viewBox', '0 0 ' + w + ' ' + h)
-      .attr('width', '100%').attr('height', '100%')
-      .style('font-family', "'Segoe UI', 'Helvetica Neue', Arial, sans-serif");
-
-    /* summary header inside the chart */
-    svg.append('text').attr('x', margin.left).attr('y', 18)
-      .attr('font-size', 12).attr('fill', '#2c3e50').attr('font-weight', '700')
-      .text(data.total_citations.toLocaleString() + ' citations');
-    svg.append('text').attr('x', margin.left).attr('y', 32)
-      .attr('font-size', 11).attr('fill', '#7a8e9e')
-      .text('h-index ' + data.h_index + ' · i10 ' + data.i10_index + ' · ' + data.total_works + ' works');
-
-    var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
-
-    var x = d3.scaleBand().domain(years.map(function (d) { return d.year; })).range([0, iw]).padding(0.25);
-    var yLeft = d3.scaleLinear().domain([0, d3.max(years, function (d) { return d.annual; }) * 1.15]).range([ih, 0]);
-    var yRight = d3.scaleLinear().domain([0, d3.max(years, function (d) { return d.cumulative; }) * 1.05]).range([ih, 0]);
-
-    /* annual bars */
-    g.selectAll('rect').data(years).join('rect')
-      .attr('x', function (d) { return x(d.year); })
-      .attr('y', function (d) { return yLeft(d.annual); })
-      .attr('width', x.bandwidth())
-      .attr('height', function (d) { return ih - yLeft(d.annual); })
-      .attr('fill', '#a8c5dd').attr('rx', 2);
-
-    /* cumulative line */
-    var line = d3.line()
-      .x(function (d) { return x(d.year) + x.bandwidth() / 2; })
-      .y(function (d) { return yRight(d.cumulative); })
-      .curve(d3.curveMonotoneX);
-
-    g.append('path').datum(years)
-      .attr('fill', 'none').attr('stroke', '#c0392b').attr('stroke-width', 2)
-      .attr('d', line);
-
-    g.selectAll('circle').data(years).join('circle')
-      .attr('cx', function (d) { return x(d.year) + x.bandwidth() / 2; })
-      .attr('cy', function (d) { return yRight(d.cumulative); })
-      .attr('r', 3).attr('fill', '#c0392b');
-
-    /* X axis */
-    g.append('g').attr('transform', 'translate(0,' + ih + ')')
-      .call(d3.axisBottom(x).tickSize(0).tickPadding(6))
-      .call(function (s) { s.select('.domain').attr('stroke', '#ccc'); })
-      .selectAll('text').attr('font-size', 10).attr('fill', '#666');
-
-    /* Y axes */
-    g.append('g').call(d3.axisLeft(yLeft).ticks(4).tickSize(-iw).tickPadding(6))
-      .call(function (s) {
-        s.select('.domain').remove();
-        s.selectAll('.tick line').attr('stroke', '#eee');
-        s.selectAll('text').attr('font-size', 10).attr('fill', '#a8c5dd');
-      });
-    g.append('g').attr('transform', 'translate(' + iw + ',0)')
-      .call(d3.axisRight(yRight).ticks(4).tickSize(0).tickPadding(6))
-      .call(function (s) {
-        s.select('.domain').remove();
-        s.selectAll('text').attr('font-size', 10).attr('fill', '#c0392b');
-      });
-
-    /* axis labels */
-    svg.append('text').attr('x', margin.left + 4).attr('y', h - 6)
-      .attr('font-size', 9).attr('fill', '#a8c5dd').text('annual');
-    svg.append('text').attr('x', w - 32).attr('y', h - 6)
-      .attr('font-size', 9).attr('fill', '#c0392b').text('cumulative');
-  }).catch(function (err) {
-    container.innerHTML = '<div style="padding: 1em; color: #c0392b;">Citations failed to load: ' + err.message + '</div>';
   });
 })();
 </script>
