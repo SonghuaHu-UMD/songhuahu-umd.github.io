@@ -13,3 +13,6 @@ Thumbs.db
 images/*.bak.*
 images/*.original.*
 
+# Machine-local MCP server config (points at a local JetBrains IDE port)
+.mcp.json
+
