@@ -1,0 +1,79 @@
+name: Refresh visitor map
+
+# Pulls the latest per-country visitor counts from GoatCounter and commits
+# assets/visitor_map.json when they have actually changed.
+#
+# Requires one repository secret:
+#   GOATCOUNTER_TOKEN — an API token with permission to read statistics
+#   (Settings → Secrets and variables → Actions → New repository secret).
+# The site code is not secret: it is already visible in the deployed HTML.
+
+on:
+  schedule:
+    # 20:17 UTC = 04:17 Asia/Hong_Kong. Deliberately off the hour: scheduled jobs
+    # queue behind everyone else's :00 crons and can be delayed by many minutes.
+    - cron: '17 20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+# A slow run must never race the next day's run into the same file.
+concurrency:
+  group: refresh-visitor-map
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # No npm install on purpose: build-visitor-map.js uses only Node builtins and
+      # global fetch, so installing devDependencies (sharp, terser) would be dead weight.
+      - name: Check the API token is configured
+        env:
+          TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::GOATCOUNTER_TOKEN secret is not set, so the refresh would silently do nothing."
+            exit 1
+          fi
+
+      - name: Rebuild visitor_map.json
+        env:
+          GOATCOUNTER_SITE: songhuahu
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+        run: node scripts/build-visitor-map.js
+
+      - name: Commit if the counts changed
+        id: commit
+        run: |
+          if git diff --quiet -- assets/visitor_map.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No change in visitor counts; nothing to commit."
+            exit 0
+          fi
+          total=$(node -p "require('./assets/visitor_map.json').total")
+          countries=$(node -p "require('./assets/visitor_map.json').points.length")
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/visitor_map.json
+          git commit -m "chore: refresh visitor map (${total} visits, ${countries} countries)"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN do not reliably kick off the Pages build, so ask
+      # for one explicitly. Best-effort: if the push already triggered a build, this is
+      # a harmless duplicate request and must not fail the run.
+      - name: Request a Pages build
+        if: steps.commit.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"

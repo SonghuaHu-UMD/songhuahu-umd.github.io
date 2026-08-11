@@ -261,6 +261,21 @@ async function buildVisitors() {
   }
   points.sort((a, b) => b.count - a.count);
 
+  const rel = path.relative(process.cwd(), VISITORS_PATH);
+
+  /* Rewriting `generated` on every run would make the scheduled refresh produce a
+     commit a day even when nobody visited. Compare only the payload that matters. */
+  const payload = JSON.stringify({ total, points });
+  if (fs.existsSync(VISITORS_PATH)) {
+    try {
+      const prev = JSON.parse(fs.readFileSync(VISITORS_PATH, 'utf8'));
+      if (JSON.stringify({ total: prev.total, points: prev.points }) === payload) {
+        console.log(`visitors: ${rel} already up to date (${points.length} countries, ${total} visits) - not rewriting.`);
+        return;
+      }
+    } catch { /* unreadable or malformed: fall through and overwrite */ }
+  }
+
   const out = {
     generated: new Date().toISOString().slice(0, 10),
     source: 'goatcounter',
@@ -268,7 +283,7 @@ async function buildVisitors() {
     points,
   };
   fs.writeFileSync(VISITORS_PATH, JSON.stringify(out));
-  console.log(`visitors: wrote ${path.relative(process.cwd(), VISITORS_PATH)} (${points.length} countries, ${total} visits)`);
+  console.log(`visitors: wrote ${rel} (${points.length} countries, ${total} visits)`);
   if (unmatched.length) {
     console.warn(`visitors: no centroid for ${unmatched.length} location(s): ${unmatched.join(', ')}`);
     console.warn('visitors: add them to EXTRA_CENTROIDS or NAME_ALIASES in this script.');
