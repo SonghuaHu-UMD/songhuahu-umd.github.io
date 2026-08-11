@@ -204,15 +204,21 @@ async function fetchGoatCounter(site, token) {
   const base = `https://${site}.goatcounter.com/api/v0`;
   const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
 
-  /* GoatCounter caps the window per request; ask for everything since the site
-     started and let it clamp. */
-  const params = new URLSearchParams({ start: '1970-01-01', limit: '250' });
+  /* "locations" is a {page} value of GET /api/v0/stats/{page} (alongside browsers,
+     systems, languages, sizes, campaigns, toprefs). start must be RFC 3339 and the
+     API asks for it rounded to the hour; omitting `end` defaults to now. The date
+     just needs to predate the site, so the map shows cumulative totals the way the
+     old ClustrMaps widget did rather than a trailing window. */
+  const params = new URLSearchParams({ start: '2020-01-01T00:00:00Z', limit: '250' });
   const res = await fetch(`${base}/stats/locations?${params}`, { headers });
   if (!res.ok) {
     const body = await res.text().catch(() => '');
     throw new Error(`GoatCounter API HTTP ${res.status}${body ? ` - ${body.slice(0, 200)}` : ''}`);
   }
   const data = await res.json();
+  /* 250 rows comfortably exceeds the number of countries, but say so rather than
+     silently truncating if that ever stops being true. */
+  if (data.more) console.warn('visitors: API reported more rows than the limit returned; raise limit.');
   return (data.stats || []).map((s) => ({ name: s.name, count: s.count }));
 }
 
@@ -275,6 +281,8 @@ async function buildVisitors() {
     await buildVisitors();
   } catch (err) {
     console.error('build-visitor-map failed:', err.message);
-    process.exit(1);
+    /* exitCode rather than exit(): calling exit() while fetch's handles are still
+       closing trips a libuv assertion on Windows and reports 127 instead of 1. */
+    process.exitCode = 1;
   }
 })();
