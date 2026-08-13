@@ -49,11 +49,65 @@ const isSSRN = (w) => {
   return false;
 };
 
+/* OpenAlex is a free public API and will occasionally answer with 429 or a 5xx under
+   load. Run by hand that is a shrug and a re-run; run on a schedule it silently skips a
+   whole week, which is exactly how the visitor-map refresh lost a day. Hence the backoff.
+   404 is deliberately absent: unlike GoatCounter's, an OpenAlex 404 is a real answer --
+   no record for this ORCID -- and waiting 60s will not change it. */
+const RETRY_STATUS = new Set([408, 425, 429, 500, 502, 503, 504]);
+const RETRY_DELAYS_MS = [2000, 5000, 15000, 40000];
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/* OpenAlex asks callers to identify themselves, and doing so also moves us into its
+   faster, more reliable "polite pool". */
+const HEADERS = { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' };
+
+async function fetchJSON(url, label) {
+  for (let attempt = 0; ; attempt++) {
+    let failure, retryable;
+    try {
+      const r = await fetch(url, { headers: HEADERS });
+      if (r.ok) return await r.json();
+      failure = new Error(`${label} failed: HTTP ${r.status}`);
+      retryable = RETRY_STATUS.has(r.status);
+    } catch (err) {
+      /* DNS, TLS and socket trouble land here, as does a truncated JSON body. None of
+         those say anything about the request itself, so all are worth another go. */
+      failure = err;
+      retryable = true;
+    }
+    if (!retryable || attempt >= RETRY_DELAYS_MS.length) throw failure;
+    const wait = RETRY_DELAYS_MS[attempt];
+    console.warn(`  ${failure.message} - retrying in ${wait / 1000}s (attempt ${attempt + 2} of ${RETRY_DELAYS_MS.length + 1})`);
+    await sleep(wait);
+  }
+}
+
+/* Every output carries a `generated` date, so a byte comparison reports a change on
+   every single run and a weekly job would commit noise forever. topic_evolution.json is
+   the clearest case: with curated_phrases.use = true it is copied from a hand-written
+   file and is otherwise identical week after week. So compare everything except that
+   date, and when only the date would move, leave the file (and its old date) alone --
+   the date then honestly reads as "when this content was last actually different". */
+function writeIfChanged(file, data, indent) {
+  const body = JSON.stringify(data, null, indent);
+  const withoutDate = (text) => {
+    try {
+      const { generated, ...rest } = JSON.parse(text);
+      return JSON.stringify(rest);
+    } catch (e) { return null; }   /* missing or malformed: fall through and overwrite */
+  };
+  if (fs.existsSync(file) && withoutDate(fs.readFileSync(file, 'utf8')) === withoutDate(body)) {
+    return false;   /* caller reports it; this helper stays quiet */
+  }
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, body);
+  return true;
+}
+
+/* Unused today, but kept alongside fetchAllWorks so both speak to OpenAlex the same way. */
 async function fetchAuthor() {
-  const url = `https://api.openalex.org/authors/orcid:${ORCID}`;
-  const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
-  if (!r.ok) throw new Error('OpenAlex author fetch failed: ' + r.status);
-  return await r.json();
+  return fetchJSON(`https://api.openalex.org/authors/orcid:${ORCID}`, 'OpenAlex author fetch');
 }
 
 async function fetchAllWorks() {
@@ -61,9 +115,7 @@ async function fetchAllWorks() {
   let cursor = '*';
   while (cursor) {
     const url = `https://api.openalex.org/works?filter=author.orcid:${ORCID}&per-page=200&cursor=${encodeURIComponent(cursor)}&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year,primary_topic,concepts,keywords,abstract_inverted_index,doi`;
-    const r = await fetch(url, { headers: { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' } });
-    if (!r.ok) throw new Error('OpenAlex fetch failed: ' + r.status);
-    const j = await r.json();
+    const j = await fetchJSON(url, 'OpenAlex works fetch');
     works.push(...j.results);
     cursor = j.meta.next_cursor;
   }
@@ -181,14 +233,14 @@ function buildGraph(works) {
   console.log('  top collaborators:');
   for (const n of top) console.log('    ' + n.count + '  ' + n.name);
 
-  fs.mkdirSync(path.dirname(OUT_PATH), { recursive: true });
-  fs.writeFileSync(OUT_PATH, JSON.stringify({
+  const graphWritten = writeIfChanged(OUT_PATH, {
     generated: new Date().toISOString().slice(0, 10),
     works: filtered.length,
     nodes: graph.nodes,
     links: graph.links,
-  }));
-  console.log('Wrote ' + OUT_PATH + ' (' + (fs.statSync(OUT_PATH).size / 1024).toFixed(1) + ' KB)');
+  });
+  console.log((graphWritten ? 'Wrote ' : 'Unchanged ') + OUT_PATH +
+    ' (' + (fs.statSync(OUT_PATH).size / 1024).toFixed(1) + ' KB)');
 
   console.log('Computing citations from filtered works only...');
   /* Sum per-year citation counts across the kept works (so disambiguation flows through). */
@@ -215,15 +267,15 @@ function buildGraph(works) {
     return { year, annual, cumulative };
   });
 
-  fs.writeFileSync(CITATIONS_PATH, JSON.stringify({
+  const citesWritten = writeIfChanged(CITATIONS_PATH, {
     generated: new Date().toISOString().slice(0, 10),
     total_citations: totalCitations,
     total_works: filtered.length,
     h_index: h,
     i10_index: i10,
     by_year: byYear,
-  }, null, 2));
-  console.log('Wrote ' + CITATIONS_PATH + ' (total ' + totalCitations + ' citations on ' + filtered.length + ' works, h=' + h + ', i10=' + i10 + ')');
+  }, 2);
+  console.log((citesWritten ? 'Wrote ' : 'Unchanged ') + CITATIONS_PATH + ' (total ' + totalCitations + ' citations on ' + filtered.length + ' works, h=' + h + ', i10=' + i10 + ')');
 
   /* Resolve missing abstracts: OpenAlex first, then manual_abstracts.json. Anything still
      missing gets a stub entry written back to the JSON for the user to fill in. */
@@ -290,12 +342,12 @@ function buildGraph(works) {
       phrases: p.phrases.map((phrase, i) => ({ phrase, count: p.phrases.length - i })),
       edges: [],
     }));
-    fs.writeFileSync(TOPICS_PATH, JSON.stringify({
+    const written = writeIfChanged(TOPICS_PATH, {
       generated: new Date().toISOString().slice(0, 10),
       source: 'curated',
       years: yearsOut,
-    }, null, 2));
-    console.log('Wrote ' + TOPICS_PATH + ' (' + yearsOut.length + ' periods, curated source)');
+    }, 2);
+    console.log((written ? 'Wrote ' : 'Unchanged ') + TOPICS_PATH + ' (' + yearsOut.length + ' periods, curated source)');
     for (const y of yearsOut) {
       console.log('  ' + y.label + ' @ ' + y.institution + ' (' + y.papers + ' papers): ' + y.phrases.map(p => p.phrase).join(' | '));
     }
@@ -499,11 +551,11 @@ function buildGraph(works) {
     yearsOut.push({ year: yr, label: binLabel(yr), papers: yearPaperCount.get(yr), institution: topInstitution(yr), phrases, edges });
   }
 
-  fs.writeFileSync(TOPICS_PATH, JSON.stringify({
+  const topicsWritten = writeIfChanged(TOPICS_PATH, {
     generated: new Date().toISOString().slice(0, 10),
     years: yearsOut,
-  }, null, 2));
-  console.log('Wrote ' + TOPICS_PATH + ' (' + yearsOut.length + ' periods)');
+  }, 2);
+  console.log((topicsWritten ? 'Wrote ' : 'Unchanged ') + TOPICS_PATH + ' (' + yearsOut.length + ' periods)');
   for (const y of yearsOut) {
     console.log('  ' + y.label + ' @ ' + (y.institution || '?') + ' (' + y.papers + ' papers): ' + y.phrases.slice(0, 5).map(p => p.phrase + '×' + p.count).join(' | '));
   }

@@ -1,0 +1,103 @@
+name: Refresh publication data
+
+# Rebuilds the co-authorship graph, citation history and topic timeline from OpenAlex
+# and commits the results when they have actually changed.
+#
+# No secrets: OpenAlex is a free, unauthenticated API. The script identifies itself by
+# mailto in the User-Agent, which is all OpenAlex asks for (and puts it in the faster
+# "polite pool").
+#
+# Weekly rather than daily: OpenAlex re-ingests citation counts on roughly that cadence,
+# so a daily run would mostly commit churn. Anything genuinely new -- a paper appearing,
+# a citation milestone -- is at most seven days from showing up on the site, and the
+# workflow can always be run on demand from the Actions tab.
+
+on:
+  schedule:
+    # 06:12 UTC Monday = 14:12 Asia/Hong_Kong. Off the hour because scheduled jobs queue
+    # behind everyone else's :00 crons, and well clear of the 20:17 visitor-map run so
+    # the two never race each other pushing to master.
+    - cron: '12 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: refresh-publications
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      # No npm install on purpose: build-coauthor-network.js uses only Node builtins and
+      # global fetch, so installing devDependencies (sharp, terser) would be dead weight.
+      # `shell: bash` is load-bearing, not decoration: the implicit shell is `bash -e`
+      # without pipefail, so a failing node would be masked by tee's exit 0 and the run
+      # would go green on no data. Naming the shell gets `-eo pipefail`.
+      - name: Rebuild publication data from OpenAlex
+        shell: bash
+        run: node scripts/build-coauthor-network.js | tee /tmp/build.log
+
+      # The script writes a "" stub into manual_abstracts.json for any paper whose
+      # abstract OpenAlex does not carry. That is additive -- it never overwrites an
+      # abstract already filled in -- so committing it is safe, and it is how a new paper
+      # announces that it needs one. Surfaced in the run summary rather than buried.
+      - name: Report papers still missing an abstract
+        shell: bash
+        run: |
+          # The list runs from the ">>>" marker to the next "Wrote"/"Unchanged" line;
+          # anchoring on the end of the file instead would sweep in the topic timeline.
+          missing=$(awk '/>>> Please paste abstracts/ {f=1; next} /^(Wrote|Unchanged)/ {f=0} f' /tmp/build.log)
+          if [ -n "$missing" ]; then
+            {
+              echo "### Papers still needing a manual abstract"
+              echo ""
+              echo 'Paste the text into `assets/manual_abstracts.json` against the OpenAlex ID.'
+              echo ""
+              echo '```'
+              echo "$missing"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit if the data changed
+        id: commit
+        run: |
+          files='assets/coauthor_network.json assets/citations_by_year.json assets/topic_evolution.json assets/manual_abstracts.json'
+          if git diff --quiet -- $files; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No change in publication data; nothing to commit."
+            exit 0
+          fi
+          works=$(node -p "require('./assets/citations_by_year.json').total_works")
+          cites=$(node -p "require('./assets/citations_by_year.json').total_citations")
+          h=$(node -p "require('./assets/citations_by_year.json').h_index")
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add $files
+          git commit -m "chore: refresh publication data (${works} works, ${cites} citations, h=${h})"
+          # A human push landing between checkout and here would make this a non-fast-forward.
+          # Rebasing onto it is safe: this job only ever touches generated files, so there is
+          # nothing of its own to lose if the rebase drops its commit.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN do not reliably kick off the Pages build, so ask
+      # for one explicitly. Best-effort: if the push already triggered a build, this is
+      # a harmless duplicate request and must not fail the run.
+      - name: Request a Pages build
+        if: steps.commit.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
