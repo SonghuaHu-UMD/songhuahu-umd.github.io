@@ -200,6 +200,18 @@ const EXTRA_CENTROIDS = {
   'Luxembourg': [6.1, 49.8],
 };
 
+/* GoatCounter's hosted instance intermittently answers a perfectly valid request
+   with 404 {"error":"not found"} for a few seconds at a time -- seen twice, and both
+   times the identical URL and token returned 200 minutes later. So 404 is retryable
+   here even though it normally would not be; the cost of being wrong (a bad site code
+   takes ~60s to report instead of ~1s) is far smaller than the cost of the status quo,
+   where one upstream blip silently skips a whole day of a once-a-day refresh.
+   401/403 are deliberately absent: a rejected token will still be rejected in 40s. */
+const RETRY_STATUS = new Set([404, 408, 425, 429, 500, 502, 503, 504]);
+const RETRY_DELAYS_MS = [2000, 5000, 15000, 40000];
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 async function fetchGoatCounter(site, token) {
   const base = `https://${site}.goatcounter.com/api/v0`;
   const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
@@ -210,16 +222,35 @@ async function fetchGoatCounter(site, token) {
      just needs to predate the site, so the map shows cumulative totals the way the
      old ClustrMaps widget did rather than a trailing window. */
   const params = new URLSearchParams({ start: '2020-01-01T00:00:00Z', limit: '250' });
-  const res = await fetch(`${base}/stats/locations?${params}`, { headers });
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`GoatCounter API HTTP ${res.status}${body ? ` - ${body.slice(0, 200)}` : ''}`);
+  const url = `${base}/stats/locations?${params}`;
+
+  for (let attempt = 0; ; attempt++) {
+    let failure, retryable;
+    try {
+      const res = await fetch(url, { headers });
+      if (res.ok) {
+        const data = await res.json();
+        /* 250 rows comfortably exceeds the number of countries, but say so rather than
+           silently truncating if that ever stops being true. */
+        if (data.more) console.warn('visitors: API reported more rows than the limit returned; raise limit.');
+        return (data.stats || []).map((s) => ({ name: s.name, count: s.count }));
+      }
+      const body = await res.text().catch(() => '');
+      failure = new Error(`GoatCounter API HTTP ${res.status}${body ? ` - ${body.slice(0, 200)}` : ''}`);
+      retryable = RETRY_STATUS.has(res.status);
+    } catch (err) {
+      /* DNS, TLS and socket failures land here, as does a malformed JSON body.
+         None of those say anything about the request itself, so all are worth retrying. */
+      failure = err;
+      retryable = true;
+    }
+
+    if (!retryable || attempt >= RETRY_DELAYS_MS.length) throw failure;
+    const wait = RETRY_DELAYS_MS[attempt];
+    console.warn(`visitors: ${failure.message}`);
+    console.warn(`visitors: retrying in ${wait / 1000}s (attempt ${attempt + 2} of ${RETRY_DELAYS_MS.length + 1}).`);
+    await sleep(wait);
   }
-  const data = await res.json();
-  /* 250 rows comfortably exceeds the number of countries, but say so rather than
-     silently truncating if that ever stops being true. */
-  if (data.more) console.warn('visitors: API reported more rows than the limit returned; raise limit.');
-  return (data.stats || []).map((s) => ({ name: s.name, count: s.count }));
 }
 
 async function buildVisitors() {
