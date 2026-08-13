@@ -284,7 +284,7 @@ async function fetchGoatCounter(site, token) {
   }
 
   const withRegions = countries.filter((c) => c.regions).length;
-  console.log(`visitors: ${countries.length} countries, ${withRegions} with a region breakdown.`);
+  console.log(`visitors: ${countries.length} locations, ${withRegions} with a region breakdown.`);
   return countries;
 }
 
@@ -338,7 +338,7 @@ async function buildVisitors() {
     try {
       const prev = JSON.parse(fs.readFileSync(VISITORS_PATH, 'utf8'));
       if (JSON.stringify({ total: prev.total, points: prev.points }) === payload) {
-        console.log(`visitors: ${rel} already up to date (${points.length} countries, ${total} visits) - not rewriting.`);
+        console.log(`visitors: ${rel} already up to date (${points.length} locations, ${total} visits) - not rewriting.`);
         return;
       }
     } catch { /* unreadable or malformed: fall through and overwrite */ }
@@ -351,7 +351,7 @@ async function buildVisitors() {
     points,
   };
   fs.writeFileSync(VISITORS_PATH, JSON.stringify(out));
-  console.log(`visitors: wrote ${rel} (${points.length} countries, ${total} visits)`);
+  console.log(`visitors: wrote ${rel} (${points.length} locations, ${total} visits)`);
   if (unmatched.length) {
     console.warn(`visitors: no centroid for ${unmatched.length} location(s): ${unmatched.join(', ')}`);
     console.warn('visitors: add them to EXTRA_CENTROIDS or NAME_ALIASES in this script.');

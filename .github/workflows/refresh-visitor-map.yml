@@ -60,11 +60,11 @@ jobs:
             exit 0
           fi
           total=$(node -p "require('./assets/visitor_map.json').total")
-          countries=$(node -p "require('./assets/visitor_map.json').points.length")
+          locations=$(node -p "require('./assets/visitor_map.json').points.length")
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add assets/visitor_map.json
-          git commit -m "chore: refresh visitor map (${total} visits, ${countries} countries)"
+          git commit -m "chore: refresh visitor map (${total} visits, ${locations} locations)"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 

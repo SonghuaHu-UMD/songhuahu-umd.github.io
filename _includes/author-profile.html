@@ -218,8 +218,13 @@
 
       var caption = holder.querySelector('.author__map-caption');
       var total = (data.total || 0).toLocaleString();
+      /* "locations", not "countries": the analytics API keys on ISO 3166-1, which lists
+         Hong Kong, Macao and Taiwan as their own entries. Counting those rows as countries
+         would put a political claim in the sidebar that the data never made -- a row here
+         only says where someone was reading from. "regions" is already the tooltip's
+         second line, so it would name two different scales with one word. */
       caption.textContent = total + ' visits · ' + points.length +
-        (points.length === 1 ? ' country' : ' countries');
+        (points.length === 1 ? ' location' : ' locations');
       if (data.generated) caption.title = 'Updated ' + data.generated;
 
       /* Nearest-dot hover readout. Cheap enough at this point count to just scan. */
