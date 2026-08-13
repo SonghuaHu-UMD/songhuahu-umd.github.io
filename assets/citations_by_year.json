@@ -1,7 +1,7 @@
 {
-  "generated": "2026-04-18",
-  "total_citations": 1845,
-  "total_works": 40,
+  "generated": "2026-08-13",
+  "total_citations": 1907,
+  "total_works": 41,
   "h_index": 19,
   "i10_index": 27,
   "by_year": [
@@ -12,12 +12,12 @@
     },
     {
       "year": 2020,
-      "annual": 38,
-      "cumulative": 44
+      "annual": 39,
+      "cumulative": 45
     },
     {
       "year": 2021,
-      "annual": 318,
+      "annual": 317,
       "cumulative": 362
     },
     {
@@ -42,8 +42,8 @@
     },
     {
       "year": 2026,
-      "annual": 65,
-      "cumulative": 1845
+      "annual": 127,
+      "cumulative": 1907
     }
   ]
 }
