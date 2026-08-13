@@ -212,29 +212,20 @@ const RETRY_DELAYS_MS = [2000, 5000, 15000, 40000];
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function fetchGoatCounter(site, token) {
-  const base = `https://${site}.goatcounter.com/api/v0`;
-  const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
+/* start must be RFC 3339 and the API asks for it rounded to the hour; omitting `end`
+   defaults to now. The date just needs to predate the site, so the map shows cumulative
+   totals the way the old ClustrMaps widget did rather than a trailing window. */
+const STATS_START = '2020-01-01T00:00:00Z';
 
-  /* "locations" is a {page} value of GET /api/v0/stats/{page} (alongside browsers,
-     systems, languages, sizes, campaigns, toprefs). start must be RFC 3339 and the
-     API asks for it rounded to the hour; omitting `end` defaults to now. The date
-     just needs to predate the site, so the map shows cumulative totals the way the
-     old ClustrMaps widget did rather than a trailing window. */
-  const params = new URLSearchParams({ start: '2020-01-01T00:00:00Z', limit: '250' });
-  const url = `${base}/stats/locations?${params}`;
+/* One retrying GET, shared by the country list and the per-country region drill-down. */
+async function apiGet(base, headers, endpoint, params) {
+  const url = `${base}/${endpoint}?${new URLSearchParams(params)}`;
 
   for (let attempt = 0; ; attempt++) {
     let failure, retryable;
     try {
       const res = await fetch(url, { headers });
-      if (res.ok) {
-        const data = await res.json();
-        /* 250 rows comfortably exceeds the number of countries, but say so rather than
-           silently truncating if that ever stops being true. */
-        if (data.more) console.warn('visitors: API reported more rows than the limit returned; raise limit.');
-        return (data.stats || []).map((s) => ({ name: s.name, count: s.count }));
-      }
+      if (res.ok) return await res.json();
       const body = await res.text().catch(() => '');
       failure = new Error(`GoatCounter API HTTP ${res.status}${body ? ` - ${body.slice(0, 200)}` : ''}`);
       retryable = RETRY_STATUS.has(res.status);
@@ -251,6 +242,50 @@ async function fetchGoatCounter(site, token) {
     console.warn(`visitors: retrying in ${wait / 1000}s (attempt ${attempt + 2} of ${RETRY_DELAYS_MS.length + 1}).`);
     await sleep(wait);
   }
+}
+
+/* A country dot says "someone in France read this". A region line under it says which
+   province -- harmless at 29 US hits spread over 7 states, but on a country with a
+   single visit it pins one person to one province on a public page. Hence the floors:
+   only break down countries with real traffic, and never surface a lone visitor. */
+const REGION_MIN_COUNTRY_HITS = 5;
+const REGION_MIN_HITS = 2;
+const REGION_MAX = 4;
+
+async function fetchGoatCounter(site, token) {
+  const base = `https://${site}.goatcounter.com/api/v0`;
+  const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
+
+  /* "locations" is a {page} value of GET /api/v0/stats/{page} (alongside browsers,
+     systems, languages, sizes, campaigns, toprefs). There is no city-level page:
+     GoatCounter does not collect one at all. */
+  const data = await apiGet(base, headers, 'stats/locations', { start: STATS_START, limit: '250' });
+  /* 250 rows comfortably exceeds the number of countries, but say so rather than
+     silently truncating if that ever stops being true. */
+  if (data.more) console.warn('visitors: API reported more rows than the limit returned; raise limit.');
+  const countries = (data.stats || []).map((s) => ({ id: s.id, name: s.name, count: s.count }));
+
+  /* GET /stats/locations/{country} drills down to region. GoatCounter only records a
+     region for countries listed in the site's collect_regions setting (default
+     "US,RU,CN"); everywhere else every hit comes back under an empty name. So most
+     countries yielding nothing here is expected, not a failure. */
+  for (const country of countries) {
+    if (country.count < REGION_MIN_COUNTRY_HITS) continue;
+    const detail = await apiGet(base, headers, `stats/locations/${encodeURIComponent(country.id)}`, {
+      start: STATS_START,
+      limit: '100',
+    });
+    const regions = (detail.stats || [])
+      .filter((r) => r.name && r.count >= REGION_MIN_HITS)
+      .sort((a, b) => b.count - a.count)
+      .slice(0, REGION_MAX)
+      .map((r) => ({ name: r.name, count: r.count }));
+    if (regions.length) country.regions = regions;
+  }
+
+  const withRegions = countries.filter((c) => c.regions).length;
+  console.log(`visitors: ${countries.length} countries, ${withRegions} with a region breakdown.`);
+  return countries;
 }
 
 async function buildVisitors() {
@@ -280,7 +315,7 @@ async function buildVisitors() {
   const points = [];
   const unmatched = [];
   let total = 0;
-  for (const { name, count } of stats) {
+  for (const { name, count, regions } of stats) {
     total += count;
     const key = lookup[name] ? name : NAME_ALIASES[name];
     const at = key ? lookup[key] : undefined;
@@ -288,7 +323,9 @@ async function buildVisitors() {
       if (name) unmatched.push(name);
       continue;
     }
-    points.push({ lon: at[0], lat: at[1], count, label: name });
+    const point = { lon: at[0], lat: at[1], count, label: name };
+    if (regions) point.regions = regions;
+    points.push(point);
   }
   points.sort((a, b) => b.count - a.count);
 

@@ -239,7 +239,20 @@
           document.body.appendChild(tip);
         }
         canvas.style.cursor = 'pointer';
-        tip.textContent = hit.label + ' · ' + hit.count;
+        /* Built from text nodes, never innerHTML: the labels come from the analytics
+           API, and a country/region name is not something to trust into markup. */
+        tip.textContent = '';
+        var head = document.createElement('div');
+        head.textContent = hit.label + ' · ' + hit.count;
+        tip.appendChild(head);
+        if (hit.regions && hit.regions.length) {
+          var sub = document.createElement('div');
+          sub.className = 'author__map-tip-sub';
+          sub.textContent = hit.regions.map(function (r) {
+            return r.name + ' ' + r.count;
+          }).join(' · ');
+          tip.appendChild(sub);
+        }
         tip.style.opacity = 1;
         tip.style.left = (e.pageX + 12) + 'px';
         tip.style.top = (e.pageY + 12) + 'px';

@@ -31,6 +31,12 @@
     transition: opacity 0.12s;
     z-index: 1000;
   }
+  /* Second line of the tooltip: the region breakdown, subordinate to the country total. */
+  .author__map-tip-sub {
+    margin-top: 0.15em;
+    font-size: 0.92em;
+    opacity: 0.75;
+  }
   /* Hide the map on mobile (the sidebar stacks above the content there).
      --map-enabled tells the script to skip its fetch entirely at this width. */
   @media (max-width: 925px) {
