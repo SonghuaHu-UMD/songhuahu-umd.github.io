@@ -55,21 +55,32 @@ const isSSRN = (w) => {
    404 is deliberately absent: unlike GoatCounter's, an OpenAlex 404 is a real answer --
    no record for this ORCID -- and waiting 60s will not change it. */
 const RETRY_STATUS = new Set([408, 425, 429, 500, 502, 503, 504]);
-const RETRY_DELAYS_MS = [2000, 5000, 15000, 40000];
+const RETRY_DELAYS_MS = [2000, 5000, 15000, 40000, 90000];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-/* OpenAlex asks callers to identify themselves, and doing so also moves us into its
-   faster, more reliable "polite pool". */
-const HEADERS = { 'User-Agent': 'mailto:Songhua.Hu@cityu.edu.hk' };
+/* Getting into OpenAlex's "polite pool" -- faster, and far less likely to answer 429 --
+   means identifying yourself. Two things do that, and this script previously did neither
+   properly: the documented `mailto` query parameter, and a User-Agent that actually looks
+   like one. The old header was the bare string "mailto:..." with no product token, which
+   is not a valid User-Agent, so requests fell into the shared anonymous pool. From a
+   laptop that goes unnoticed; from a GitHub runner, whose egress IPs are shared with
+   every other Actions user hammering the same API, it earns a 429. */
+const CONTACT = 'Songhua.Hu@cityu.edu.hk';
+const HEADERS = { 'User-Agent': `songhuahu-umd.github.io (mailto:${CONTACT})` };
+const polite = (url) => url + (url.includes('?') ? '&' : '?') + 'mailto=' + encodeURIComponent(CONTACT);
 
 async function fetchJSON(url, label) {
   for (let attempt = 0; ; attempt++) {
-    let failure, retryable;
+    let failure, retryable, waitOverrideMs;
     try {
-      const r = await fetch(url, { headers: HEADERS });
+      const r = await fetch(polite(url), { headers: HEADERS });
       if (r.ok) return await r.json();
       failure = new Error(`${label} failed: HTTP ${r.status}`);
       retryable = RETRY_STATUS.has(r.status);
+      /* A 429 usually carries Retry-After telling us exactly how long to sit out.
+         Obeying it beats guessing, but cap it so a wild value cannot hang the job. */
+      const after = Number(r.headers.get('retry-after'));
+      if (Number.isFinite(after) && after > 0) waitOverrideMs = Math.min(after * 1000, 120000);
     } catch (err) {
       /* DNS, TLS and socket trouble land here, as does a truncated JSON body. None of
          those say anything about the request itself, so all are worth another go. */
@@ -77,7 +88,7 @@ async function fetchJSON(url, label) {
       retryable = true;
     }
     if (!retryable || attempt >= RETRY_DELAYS_MS.length) throw failure;
-    const wait = RETRY_DELAYS_MS[attempt];
+    const wait = waitOverrideMs || RETRY_DELAYS_MS[attempt];
     console.warn(`  ${failure.message} - retrying in ${wait / 1000}s (attempt ${attempt + 2} of ${RETRY_DELAYS_MS.length + 1})`);
     await sleep(wait);
   }
