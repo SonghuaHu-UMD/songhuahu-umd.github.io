@@ -12,7 +12,7 @@ redirect_from:
 ---
 
 Greetings! I'm <span style="color: #2c3e50; font-weight: bold;">Songhua Hu</span> (胡松华), an <span style="color: #e67e22;">Assistant Professor of Transportation Engineering</span> at the
-Department of Architecture and Civil Engineering, [City University of Hong Kong](https://www.cityu.edu.hk/).
+Department of Architecture and Civil Engineering, [City University of Hong Kong](https://scholars.cityu.edu.hk/en/persons/songhuhu/).
 Previously, I was a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
 I received my <span style="color: #2980b9;">Ph.D.</span> (2023) from the University of Maryland, College Park, 
 <span style="color: #2980b9;">M.S.</span> (2019) from Tongji University (同济大学), 
@@ -36,7 +36,7 @@ News
 * **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**NS Research Briefing**](https://www.nature.com/articles/s41893-026-01798-8)!
 * **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/). 
 * **[09/2025]** Our project on _<span style="color: #2980b9;">agentic AI activity-based modeling</span>_ is funded by the **CityUHK Startup Grant**!
-* **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhua-hu) as a tenure-track Assistant Professor!
+* **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhuhu/) as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
 * **[01/2025]** Invited job talk at **_University of Alberta CEE_**!
