@@ -5,15 +5,21 @@ permalink: /Opportunities/
 author_profile: true
 ---
 
-Recruitment
+About CityUHK
 ======
 
-**About CityUHK:** [City University of Hong Kong](https://www.cityu.edu.hk/) is a young, research-intensive university and one of the few institutions worldwide placed in the <span style="color: #c0392b;">**global top 100 across all four major ranking systems**</span>:
+[City University of Hong Kong](https://www.cityu.edu.hk/) is a young, research-intensive university and one of the few institutions worldwide placed in the <span style="color: #c0392b;">**global top 100 across all four major ranking systems**</span>: <span style="color: #e67e22;">**52nd**</span> in QS 2027, <span style="color: #e67e22;">**47th**</span> in U.S. News 2026–2027, <span style="color: #e67e22;">**73rd**</span> in THE 2026, and <span style="color: #e67e22;">**95th**</span> in ARWU 2026.
 
-* <span style="color: #2980b9;">**QS World University Rankings 2027**</span>: <span style="color: #e67e22;">**52nd**</span> worldwide, and <span style="color: #e67e22;">**2nd**</span> globally for _Citations per Faculty_ (second only to Harvard).
-* <span style="color: #2980b9;">**THE World University Rankings 2026**</span>: <span style="color: #e67e22;">**73rd**</span> worldwide; named the world's **most international university** for three consecutive years.
-* <span style="color: #2980b9;">**U.S. News Best Global Universities 2026–2027**</span>: <span style="color: #e67e22;">**47th**</span> worldwide, 3rd in Hong Kong.
-* <span style="color: #2980b9;">**ARWU (Shanghai Ranking) 2026**</span>: <span style="color: #e67e22;">**95th**</span> worldwide, 2nd in Hong Kong.
+<!--
+---
+
+[香港城市大学](https://www.cityu.edu.hk/)是一所年轻的研究型大学，也是全球少数<span style="color: #c0392b;">**四大权威排名均进入世界百强**</span>的高校：QS 2027 第 <span style="color: #e67e22;">**52**</span> 位、U.S. News 2026–2027 第 <span style="color: #e67e22;">**47**</span> 位、THE 2026 第 <span style="color: #e67e22;">**73**</span> 位、软科 ARWU 2026 第 <span style="color: #e67e22;">**95**</span> 位。
+-->
+
+***
+
+Recruitment
+======
 
 **Current openings:**
 * <span style="color: #c0392b;">**1–2 fully-funded Ph.D. slots**</span> for **Summer/Fall 2027** admission.
@@ -34,13 +40,6 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 
 <!--
 ---
-
-**关于香港城市大学：**[香港城市大学](https://www.cityu.edu.hk/)是一所年轻的研究型大学，也是全球少数<span style="color: #c0392b;">**四大权威排名均进入世界百强**</span>的高校：
-
-* <span style="color: #2980b9;">**QS 世界大学排名 2027**</span>：全球第 <span style="color: #e67e22;">**52**</span> 位；_篇均引用_ 指标全球第 <span style="color: #e67e22;">**2**</span>（仅次于哈佛）。
-* <span style="color: #2980b9;">**THE 泰晤士高等教育世界大学排名 2026**</span>：全球第 <span style="color: #e67e22;">**73**</span> 位；连续三年获评**全球最国际化大学**。
-* <span style="color: #2980b9;">**U.S. News 世界大学排名 2026–2027**</span>：全球第 <span style="color: #e67e22;">**47**</span> 位，全港第 3。
-* <span style="color: #2980b9;">**软科世界大学学术排名 (ARWU) 2026**</span>：全球第 <span style="color: #e67e22;">**95**</span> 位，全港第 2。
 
 **当前重点招聘：**
 * <span style="color: #c0392b;">**1-2 名 2027 年 Summer/Fall 入学的全奖博士生**</span>
