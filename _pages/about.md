@@ -71,6 +71,37 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
   <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network (OpenAlex)</div>
 </div>
 
+<!-- Citation metrics. The figures live in _data/scholar_metrics.json, refreshed weekly by
+     .github/workflows/refresh-scholar-metrics.yml, and are rendered here by Liquid rather
+     than fetched in the browser: no empty strip while JS runs, and the numbers survive JS
+     being off. The guard keeps the page building if that data file is ever missing. -->
+{% assign gs = site.data.scholar_metrics %}
+{% if gs and gs.citations %}
+<style>
+/* One caption-weight line rather than a bordered panel: it sits under the network caption,
+   so matching that weight keeps the section from carrying two competing headline blocks.
+   Only the figures themselves are emphasised. */
+.gs-stats { max-width: 1100px; margin: 0 auto 1em; text-align: center; font-size: 0.8em; color: #666; }
+.gs-stats strong { color: #2c3e50; font-weight: 700; }
+.gs-stats a { color: #2980b9; }
+</style>
+
+<div class="gs-stats"><strong>{{ gs.citations_display | default: gs.citations }}</strong> citations · <strong>{{ gs.h_index }}</strong> h-index · <strong>{{ gs.i10_index }}</strong> i10-index · <a href="{{ gs.profile_url }}">Google Scholar</a>, updated {{ gs.generated }}</div>
+{% endif %}
+
+{% comment %}
+  Research Topics panel, hidden for now.
+
+  To bring it back, delete this comment tag and its matching end tag, and do the same for the
+  second pair further down that wraps the topic-evolution script. Both halves are needed --
+  the markup alone renders a permanent "Loading per-year terms…".
+
+  A Liquid comment rather than an HTML one on purpose: this is removed at build time, so the
+  hidden markup and its ~8KB of drawing code are not shipped to every visitor as dead bytes.
+
+  Nothing needs rebuilding first. build-coauthor-network.js still refreshes
+  assets/topic_evolution.json every week, so the data stays current while the panel is hidden.
+
 ***
 
 Research Topics
@@ -81,24 +112,7 @@ Research Topics
 </div>
 <div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">Each panel below highlights a set of <span style="color: #e67e22; font-weight: 600;">dominant themes</span> varying by year. Themes are <span style="color: #8e44ad; font-weight: 600;">AI-synthesized</span> by reading my papers from (<a href="https://openalex.org/" style="color: #2980b9;">OpenAlex</a>).
 </div>
-
-<!-- Citation metrics. The figures live in _data/scholar_metrics.json, refreshed weekly by
-     .github/workflows/refresh-scholar-metrics.yml, and are rendered here by Liquid rather
-     than fetched in the browser: no empty strip while JS runs, and the numbers survive JS
-     being off. The guard keeps the page building if that data file is ever missing. -->
-{% assign gs = site.data.scholar_metrics %}
-{% if gs and gs.citations %}
-<style>
-/* One caption-weight line rather than a bordered panel: it sits directly under the topic
-   caption above, so matching that weight keeps the section from carrying two competing
-   headline blocks. Only the figures themselves are emphasised. */
-.gs-stats { max-width: 1100px; margin: 0 auto 1em; text-align: center; font-size: 0.8em; color: #666; }
-.gs-stats strong { color: #2c3e50; font-weight: 700; }
-.gs-stats a { color: #2980b9; }
-</style>
-
-<div class="gs-stats"><strong>{{ gs.citations_display | default: gs.citations }}</strong> citations · <strong>{{ gs.h_index }}</strong> h-index · <strong>{{ gs.i10_index }}</strong> i10-index · <a href="{{ gs.profile_url }}">Google Scholar</a>, updated {{ gs.generated }}</div>
-{% endif %}
+{% endcomment %}
 
 <style>
 .cn-tooltip {
@@ -123,6 +137,8 @@ Research Topics
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 
+{% comment %} Second half of the hidden Research Topics panel -- see the note above. {% endcomment %}
+{% comment %}
 <script>
 (function () {
   var container = document.getElementById('topic-evolution');
@@ -221,6 +237,7 @@ Research Topics
   });
 })();
 </script>
+{% endcomment %}
 
 <script>
 (function () {
