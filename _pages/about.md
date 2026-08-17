@@ -89,20 +89,15 @@ Research Topics
 {% assign gs = site.data.scholar_metrics %}
 {% if gs and gs.citations %}
 <style>
-.gs-stats { display: flex; max-width: 1100px; margin: 0.6em auto 0.3em; border: 1px solid #e8e8e8; border-radius: 6px; overflow: hidden; }
-.gs-stats > div { flex: 1 1 0; padding: 0.5em 0.4em; text-align: center; }
-.gs-stats > div + div { border-left: 1px solid #e8e8e8; }
-.gs-stat-value { display: block; font-size: 1.15em; font-weight: 700; color: #2c3e50; line-height: 1.2; }
-.gs-stat-label { display: block; font-size: 0.68em; letter-spacing: 0.04em; text-transform: uppercase; color: #888; margin-top: 0.1em; }
-.gs-stats-note { max-width: 1100px; margin: 0 auto 1em; text-align: center; font-size: 0.78em; color: #666; }
+/* One caption-weight line rather than a bordered panel: it sits directly under the topic
+   caption above, so matching that weight keeps the section from carrying two competing
+   headline blocks. Only the figures themselves are emphasised. */
+.gs-stats { max-width: 1100px; margin: 0 auto 1em; text-align: center; font-size: 0.8em; color: #666; }
+.gs-stats strong { color: #2c3e50; font-weight: 700; }
+.gs-stats a { color: #2980b9; }
 </style>
 
-<div class="gs-stats">
-  <div><span class="gs-stat-value">{{ gs.citations_display | default: gs.citations }}</span><span class="gs-stat-label">Citations</span></div>
-  <div><span class="gs-stat-value">{{ gs.h_index }}</span><span class="gs-stat-label">h-index</span></div>
-  <div><span class="gs-stat-value">{{ gs.i10_index }}</span><span class="gs-stat-label">i10-index</span></div>
-</div>
-<div class="gs-stats-note">Source: <a href="{{ gs.profile_url }}" style="color: #2980b9;">Google Scholar</a> · updated {{ gs.generated }}</div>
+<div class="gs-stats"><strong>{{ gs.citations_display | default: gs.citations }}</strong> citations · <strong>{{ gs.h_index }}</strong> h-index · <strong>{{ gs.i10_index }}</strong> i10-index · <a href="{{ gs.profile_url }}">Google Scholar</a>, updated {{ gs.generated }}</div>
 {% endif %}
 
 <style>
