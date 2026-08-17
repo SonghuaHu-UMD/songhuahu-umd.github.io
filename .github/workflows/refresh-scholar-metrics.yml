@@ -1,0 +1,108 @@
+name: Refresh Google Scholar metrics
+
+# Reads citations, h-index and i10-index off the Google Scholar profile and commits them
+# when they have actually changed.
+#
+# No secrets: the profile is public and the page needs no login.
+#
+# Weekly, on the same day as the publication refresh: Scholar recomputes these numbers
+# slowly, so a daily run would mostly commit churn -- and every extra request is another
+# chance to be shown a bot check for no benefit.
+#
+# Expect this job to fail sometimes. Scholar has no API, and it treats datacenter egress --
+# which every GitHub runner has -- far more suspiciously than a laptop. The script retries
+# with backoff and refuses to write anything when it is served a bot check, so a failed run
+# means "this week's numbers are still last week's", never corrupted data. If it fails
+# repeatedly, run `npm run build:scholar` locally and commit the result; a residential IP is
+# served the page normally.
+
+on:
+  schedule:
+    # 07:42 UTC Monday = 15:42 Asia/Hong_Kong. Off the hour because scheduled jobs queue
+    # behind everyone else's :00 crons, and 90 minutes after the 06:12 publication refresh
+    # so the two never race each other pushing to master (the 20:17 visitor map is clear
+    # of both).
+    - cron: '42 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: refresh-scholar-metrics
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+
+      # No npm install on purpose: fetch-scholar-metrics.js uses only Node builtins and
+      # global fetch, so installing devDependencies (sharp, terser) would be dead weight.
+      # `shell: bash` is load-bearing, not decoration: the implicit shell is `bash -e`
+      # without pipefail, so a failing node would be masked by tee's exit 0 and the run
+      # would go green on no data. Naming the shell gets `-eo pipefail`.
+      - name: Fetch metrics from Google Scholar
+        id: fetch
+        shell: bash
+        run: node scripts/fetch-scholar-metrics.js | tee /tmp/scholar.log
+
+      # Turn the bare red X into something actionable, since a bot check is the expected
+      # failure and says nothing is wrong with the code.
+      - name: Explain a failed fetch
+        if: failure() && steps.fetch.outcome == 'failure'
+        shell: bash
+        run: |
+          {
+            echo "### Google Scholar fetch did not succeed"
+            echo ""
+            echo 'The committed numbers in `_data/scholar_metrics.json` were left untouched, so the site still shows the last good values.'
+            echo ""
+            echo "Most likely Scholar served this runner a bot check instead of the profile — datacenter IPs draw those readily. Options, in order:"
+            echo ""
+            echo "1. Do nothing; the next weekly run often succeeds."
+            echo '2. Re-run this workflow by hand from the Actions tab.'
+            echo '3. Run `npm run build:scholar` locally and commit — a residential IP is served the page normally.'
+            echo ""
+            echo "If the log says the metrics table did not match rather than that a bot check was served, Google changed its markup and the selectors in \`scripts/fetch-scholar-metrics.js\` need updating."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit if the data changed
+        id: commit
+        shell: bash
+        run: |
+          file='_data/scholar_metrics.json'
+          if git diff --quiet -- $file; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No change in Scholar metrics; nothing to commit."
+            exit 0
+          fi
+          cites=$(node -p "require('./_data/scholar_metrics.json').citations")
+          h=$(node -p "require('./_data/scholar_metrics.json').h_index")
+          i10=$(node -p "require('./_data/scholar_metrics.json').i10_index")
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add $file
+          git commit -m "chore: refresh Scholar metrics (${cites} citations, h=${h}, i10=${i10})"
+          # A human push landing between checkout and here would make this a non-fast-forward.
+          # Rebasing onto it is safe: this job only ever touches one generated file, so there
+          # is nothing of its own to lose if the rebase drops its commit.
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN do not reliably kick off the Pages build, so ask for
+      # one explicitly. Best-effort: if the push already triggered a build, this is a
+      # harmless duplicate request and must not fail the run.
+      - name: Request a Pages build
+        if: steps.commit.outputs.changed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
