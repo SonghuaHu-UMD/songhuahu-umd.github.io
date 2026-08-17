@@ -20,8 +20,8 @@ and <span style="color: #2980b9;">B.S.</span> (2016) from Huazhong University of
 
 My research leverages <span style="color: #e67e22;">crowdsourced data mining</span>, <span style="color: #e67e22;">spatiotemporal AI</span>, <span style="color: #e67e22;">network analysis</span>, and <span style="color: #e67e22;">advanced statistics</span>
 to advance <span style="color: #27ae60;">smart, sustainable, resilient, and equitable mobility systems</span>.
-I have published **over 40** journal papers (**21** first-authored) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.,
-and have contributed to research projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, and USDOE</span>.
+I have published **over 40** journal papers (**21** first-authored) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.
+I have secured funding from <span style="color: #8e44ad;">HK RGC ECS (PI)</span> and <span style="color: #8e44ad;">RGC TRS (Co-PI)</span>, and contributed to projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, USDOE, the City of Stockholm, and Toyota Woven City</span>.
 I serve as a reviewer for **over 60** journals including _Nature Cities_, _Nature Communications_, _Transportation Research Part A-E_, among others.
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
