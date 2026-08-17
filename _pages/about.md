@@ -24,29 +24,6 @@ I have published **over 40** journal papers (**21** first-authored) in _Nature S
 I have secured funding from <span style="color: #8e44ad;">**HK RGC ECS (PI)**</span> and <span style="color: #8e44ad;">**TRS (Co-PI)**</span>, and contributed to projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, USDOE, the City of Stockholm, and Toyota Woven City</span>.
 I serve as a reviewer for **over 60** journals including _Nature Cities_, _Nature Communications_, _Transportation Research Part A-E_, among others.
 
-<!-- Citation metrics. The figures live in _data/scholar_metrics.json, refreshed weekly by
-     .github/workflows/refresh-scholar-metrics.yml, and are rendered here by Liquid rather
-     than fetched in the browser: no empty strip while JS runs, and the numbers survive JS
-     being off. The guard keeps the page building if that data file is ever missing. -->
-{% assign gs = site.data.scholar_metrics %}
-{% if gs and gs.citations %}
-<style>
-.gs-stats { display: flex; max-width: 1100px; margin: 1.5em auto 0.4em; border: 1px solid #e8e8e8; border-radius: 6px; overflow: hidden; }
-.gs-stats > div { flex: 1 1 0; padding: 0.8em 0.4em; text-align: center; }
-.gs-stats > div + div { border-left: 1px solid #e8e8e8; }
-.gs-stat-value { display: block; font-size: 1.6em; font-weight: 700; color: #2c3e50; line-height: 1.15; }
-.gs-stat-label { display: block; font-size: 0.75em; letter-spacing: 0.05em; text-transform: uppercase; color: #666; margin-top: 0.2em; }
-.gs-stats-note { max-width: 1100px; margin: 0 auto; text-align: center; font-size: 0.8em; color: #666; }
-</style>
-
-<div class="gs-stats">
-  <div><span class="gs-stat-value">{{ gs.citations_display | default: gs.citations }}</span><span class="gs-stat-label">Citations</span></div>
-  <div><span class="gs-stat-value">{{ gs.h_index }}</span><span class="gs-stat-label">h-index</span></div>
-  <div><span class="gs-stat-value">{{ gs.i10_index }}</span><span class="gs-stat-label">i10-index</span></div>
-</div>
-<div class="gs-stats-note">Source: <a href="{{ gs.profile_url }}" style="color: #2980b9;">Google Scholar</a> · updated {{ gs.generated }}</div>
-{% endif %}
-
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
 
 
@@ -104,6 +81,29 @@ Research Topics
 </div>
 <div style="font-size: 0.85em; color: #666; text-align: center; max-width: 1100px; margin: 0 auto 1em;">Each panel below highlights a set of <span style="color: #e67e22; font-weight: 600;">dominant themes</span> varying by year. Themes are <span style="color: #8e44ad; font-weight: 600;">AI-synthesized</span> by reading my papers from (<a href="https://openalex.org/" style="color: #2980b9;">OpenAlex</a>).
 </div>
+
+<!-- Citation metrics. The figures live in _data/scholar_metrics.json, refreshed weekly by
+     .github/workflows/refresh-scholar-metrics.yml, and are rendered here by Liquid rather
+     than fetched in the browser: no empty strip while JS runs, and the numbers survive JS
+     being off. The guard keeps the page building if that data file is ever missing. -->
+{% assign gs = site.data.scholar_metrics %}
+{% if gs and gs.citations %}
+<style>
+.gs-stats { display: flex; max-width: 1100px; margin: 0.6em auto 0.3em; border: 1px solid #e8e8e8; border-radius: 6px; overflow: hidden; }
+.gs-stats > div { flex: 1 1 0; padding: 0.5em 0.4em; text-align: center; }
+.gs-stats > div + div { border-left: 1px solid #e8e8e8; }
+.gs-stat-value { display: block; font-size: 1.15em; font-weight: 700; color: #2c3e50; line-height: 1.2; }
+.gs-stat-label { display: block; font-size: 0.68em; letter-spacing: 0.04em; text-transform: uppercase; color: #888; margin-top: 0.1em; }
+.gs-stats-note { max-width: 1100px; margin: 0 auto 1em; text-align: center; font-size: 0.78em; color: #666; }
+</style>
+
+<div class="gs-stats">
+  <div><span class="gs-stat-value">{{ gs.citations_display | default: gs.citations }}</span><span class="gs-stat-label">Citations</span></div>
+  <div><span class="gs-stat-value">{{ gs.h_index }}</span><span class="gs-stat-label">h-index</span></div>
+  <div><span class="gs-stat-value">{{ gs.i10_index }}</span><span class="gs-stat-label">i10-index</span></div>
+</div>
+<div class="gs-stats-note">Source: <a href="{{ gs.profile_url }}" style="color: #2980b9;">Google Scholar</a> · updated {{ gs.generated }}</div>
+{% endif %}
 
 <style>
 .cn-tooltip {

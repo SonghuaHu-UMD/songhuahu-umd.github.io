@@ -10,10 +10,24 @@
  * JS runs, and they survive JS being off. The refresh workflow asks for a Pages build
  * whenever it commits, which is what makes the rendered page follow the data.
  *
- * Google Scholar has no API, so this reads the profile page's own metrics table. That path
- * is explicitly permitted by scholar.google.com/robots.txt (`Allow: /citations?user=`); the
- * publication-list pagination robots.txt does disallow (`/citations?*cstart=`) is never
- * requested, because all three numbers live in the summary table on the first page.
+ * Two ways in, picked by whether SERPAPI_KEY is set:
+ *
+ *   with the key     SerpAPI's google_scholar_author engine. This is what CI uses. Google
+ *                    Scholar answers a GitHub runner with a flat HTTP 403 -- measured, not
+ *                    assumed: five spaced attempts from a runner were refused every time
+ *                    while the identical code from a residential IP got HTTP 200. Scholar
+ *                    has no API of its own, so reaching it from the cloud means paying
+ *                    someone whose egress it does not block.
+ *   without the key  the profile page directly, which works from a residential IP and keeps
+ *                    `npm run build:scholar` usable locally with nothing to configure.
+ *
+ * Direct reads are permitted by scholar.google.com/robots.txt (`Allow: /citations?user=`);
+ * the publication-list pagination it disallows (`/citations?*cstart=`) is never requested,
+ * because all three numbers live in the summary table on the first page.
+ *
+ * Both paths write byte-identical JSON on purpose -- no "via" field. Recording which route
+ * produced the numbers would flip that field every time a local run followed a CI run and
+ * commit a diff that means nothing to the site.
  *
  * Why scrape at all when build-coauthor-network.js already derives citations, h-index and
  * i10-index from OpenAlex: the two disagree by a wide margin (OpenAlex saw 1910/19/27 where
@@ -42,22 +56,30 @@ const HEADERS = {
   'Accept-Language': 'en-US,en;q=0.9',
 };
 
-/* 429 is how Scholar says "you look like a robot", and datacenter egress -- every GitHub
-   runner -- draws it far more readily than a laptop does. Retrying inside one run will not
-   launder a blocked IP, but the block is often per-request rather than sticky, so a few
-   spaced attempts convert a good share of misses into hits. 403 joins the retry set for the
-   same reason; a genuine permanent 403 simply exhausts the attempts and fails loudly. */
+/* 403 and 429 are how Scholar says "you look like a robot". Retrying does not launder a
+   blocked IP -- a runner was refused all five times while the same code from a residential
+   IP succeeded -- so these are in the set for the sake of the genuinely transient case, and
+   a standing block simply exhausts the attempts and fails loudly. Which is the point: the
+   script must never quietly write nothing. */
 const RETRY_STATUS = new Set([403, 408, 429, 500, 502, 503, 504]);
 const RETRY_DELAYS_MS = [3000, 10000, 30000, 60000];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-async function fetchHTML(url, label) {
+async function fetchText(url, label, headers) {
   for (let attempt = 0; ; attempt++) {
     let failure, retryable, waitOverrideMs;
     try {
-      const r = await fetch(url, { headers: HEADERS, redirect: 'follow' });
+      const r = await fetch(url, { headers: headers || HEADERS, redirect: 'follow' });
       if (r.ok) return await r.text();
-      failure = new Error(`${label} failed: HTTP ${r.status}`);
+      /* SerpAPI states the actual reason -- bad key, exhausted quota -- in a JSON body next
+         to the status code, and a bare "HTTP 401" would send a reader hunting for it.
+         Scholar's error bodies are HTML and yield nothing here, which costs nothing. */
+      let detail = '';
+      try {
+        const errBody = JSON.parse(await r.text());
+        if (errBody && errBody.error) detail = ` - ${errBody.error}`;
+      } catch (e) { /* not JSON: the status code is all there is to report */ }
+      failure = new Error(`${label} failed: HTTP ${r.status}${detail}`);
       retryable = RETRY_STATUS.has(r.status);
       const after = Number(r.headers.get('retry-after'));
       if (Number.isFinite(after) && after > 0) waitOverrideMs = Math.min(after * 1000, 120000);
@@ -128,34 +150,76 @@ function previous() {
   try { return JSON.parse(fs.readFileSync(OUT_PATH, 'utf8')); } catch (e) { return null; }
 }
 
-async function main() {
-  const html = await fetchHTML(PROFILE_URL, 'Google Scholar profile fetch');
+/* Read the profile page and scrape the table. Works from a residential IP; refused from a
+   datacenter one, which is why CI does not take this route. */
+async function fromProfilePage() {
+  const html = await fetchText(PROFILE_URL, 'Google Scholar profile fetch');
   const metrics = parseMetrics(html);
-
   const missing = REQUIRED.filter(k => !Number.isFinite(metrics[k]));
   if (missing.length) {
-    /* Distinguish the two ways this happens, because the fixes are entirely different:
-       a CAPTCHA/consent interstitial means try again later or from another IP, while a
-       real profile page that no longer parses means Google changed its markup and the
-       selectors above need updating. */
+    /* Separate the two causes, because the fixes are entirely different: a bot check means
+       try again or come from another IP, while a real profile page that no longer parses
+       means Google changed its markup and the selectors above need updating. */
     const blocked = /captcha|unusual traffic|not a robot/i.test(html);
-    console.error(`Google Scholar metrics missing: ${missing.join(', ')}`);
-    console.error(blocked
-      ? '  The response looks like a bot check rather than the profile page.'
-      : `  The page parsed but the metrics table did not match (${html.length} bytes) - Scholar may have changed its markup.`);
-    console.error(`  ${OUT_PATH} left untouched.`);
-    process.exit(1);
+    throw new Error(`Google Scholar metrics missing: ${missing.join(', ')}\n  ` + (blocked
+      ? 'The response looks like a bot check rather than the profile page.'
+      : `The page parsed but the metrics table did not match (${html.length} bytes) - Scholar may have changed its markup.`));
   }
+  return metrics;
+}
+
+/* SerpAPI's google_scholar_author engine returns the same summary table as JSON:
+     cited_by.table: [ {citations: {all, since_YYYY}}, {h_index: {...}}, {i10_index: {...}} ]
+   Rows are searched for the three keys rather than read by index, for the same reason the
+   HTML parser matches on labels: position is not a contract. */
+async function fromSerpApi(key) {
+  const url = 'https://serpapi.com/search.json?engine=google_scholar_author'
+    + `&author_id=${PROFILE_ID}&hl=en&api_key=${encodeURIComponent(key)}`;
+  const body = await fetchText(url, 'SerpAPI fetch', { 'User-Agent': 'songhuahu-umd.github.io' });
+  let json;
+  try { json = JSON.parse(body); } catch (e) { throw new Error('SerpAPI returned a non-JSON body'); }
+  /* SerpAPI reports a bad key or an exhausted quota in the body with a 200, so this has to
+     be checked explicitly -- it is not a transport error and retrying will not fix it. */
+  if (json.error) throw new Error(`SerpAPI error: ${json.error}`);
+
+  const metrics = {};
+  for (const row of (json.cited_by && json.cited_by.table) || []) {
+    for (const k of REQUIRED) {
+      if (row[k] && Number.isFinite(row[k].all) && metrics[k] === undefined) metrics[k] = row[k].all;
+    }
+  }
+  const missing = REQUIRED.filter(k => !Number.isFinite(metrics[k]));
+  if (missing.length) {
+    throw new Error(`SerpAPI response lacked ${missing.join(', ')}`
+      + ' - the cited_by.table shape may have changed; inspect the raw JSON.');
+  }
+  return metrics;
+}
+
+/* Set the code and let the event loop drain rather than calling process.exit(). Exiting hard
+   while fetch still holds a socket trips a libuv assertion on Windows -- observed: the
+   process died with 127 and a UV_HANDLE_CLOSING abort instead of the intended 1, which in CI
+   would read as a crashed script rather than a refused write. */
+function fail() {
+  process.exitCode = 1;
+}
+
+async function main() {
+  /* The key decides the route. Absent locally by design, so a laptop run needs no setup. */
+  const key = process.env.SERPAPI_KEY;
+  console.log(key ? 'Source: SerpAPI (SERPAPI_KEY set)' : 'Source: scholar.google.com directly (no SERPAPI_KEY)');
+  const metrics = key ? await fromSerpApi(key) : await fromProfilePage();
+
   if (metrics.citations < metrics.h_index) {
     console.error(`Implausible metrics (citations ${metrics.citations} < h-index ${metrics.h_index}); ${OUT_PATH} left untouched.`);
-    process.exit(1);
+    return fail();
   }
 
   const prev = previous();
   if (prev && Number.isFinite(prev.citations) && metrics.citations < prev.citations * DROP_TOLERANCE) {
     console.error(`Citations dropped from ${prev.citations} to ${metrics.citations}, more than the ${Math.round((1 - DROP_TOLERANCE) * 100)}% tolerance allows.`);
     console.error(`  Treating this as a bad read; ${OUT_PATH} left untouched.`);
-    process.exit(1);
+    return fail();
   }
 
   const written = writeIfChanged(OUT_PATH, {
@@ -177,5 +241,5 @@ async function main() {
 main().catch((err) => {
   console.error(err.message);
   console.error(`  ${OUT_PATH} left untouched.`);
-  process.exit(1);
+  fail();
 });

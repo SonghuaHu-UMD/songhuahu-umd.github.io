@@ -3,18 +3,23 @@ name: Refresh Google Scholar metrics
 # Reads citations, h-index and i10-index off the Google Scholar profile and commits them
 # when they have actually changed.
 #
-# No secrets: the profile is public and the page needs no login.
+# Requires one repository secret:
+#   SERPAPI_KEY — a SerpAPI key (Settings → Secrets and variables → Actions → New repository
+#   secret). Weekly means ~4-5 searches a month, well inside the free tier.
+#
+# Why a paid proxy for a public page: Google Scholar has no API and answers a GitHub runner
+# with a flat HTTP 403. That is measured, not assumed -- five spaced attempts from a runner
+# were refused every time while the identical code from a residential IP got HTTP 200. So
+# reaching Scholar from the cloud means going through egress it does not block. The script
+# still reads the page directly when SERPAPI_KEY is absent, which is what makes
+# `npm run build:scholar` work on a laptop with nothing configured.
 #
 # Weekly, on the same day as the publication refresh: Scholar recomputes these numbers
-# slowly, so a daily run would mostly commit churn -- and every extra request is another
-# chance to be shown a bot check for no benefit.
+# slowly, so a daily run would mostly commit churn for no benefit.
 #
-# Expect this job to fail sometimes. Scholar has no API, and it treats datacenter egress --
-# which every GitHub runner has -- far more suspiciously than a laptop. The script retries
-# with backoff and refuses to write anything when it is served a bot check, so a failed run
-# means "this week's numbers are still last week's", never corrupted data. If it fails
-# repeatedly, run `npm run build:scholar` locally and commit the result; a residential IP is
-# served the page normally.
+# A failed run never corrupts anything. The script refuses to write unless all three numbers
+# parse and pass a sanity check, so the worst case is "this week's numbers are still last
+# week's" -- the site keeps serving the last good values.
 
 on:
   schedule:
@@ -51,10 +56,15 @@ jobs:
       - name: Fetch metrics from Google Scholar
         id: fetch
         shell: bash
+        # Absent or empty, the script falls back to reading Scholar directly and will be
+        # refused by this runner -- so a missing secret shows up as a failed run with the
+        # reason in the log, rather than as silently stale numbers.
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: node scripts/fetch-scholar-metrics.js | tee /tmp/scholar.log
 
-      # Turn the bare red X into something actionable, since a bot check is the expected
-      # failure and says nothing is wrong with the code.
+      # Turn the bare red X into something actionable: the likely causes are all operational
+      # (key, quota) rather than anything wrong with the code.
       - name: Explain a failed fetch
         if: failure() && steps.fetch.outcome == 'failure'
         shell: bash
@@ -64,13 +74,14 @@ jobs:
             echo ""
             echo 'The committed numbers in `_data/scholar_metrics.json` were left untouched, so the site still shows the last good values.'
             echo ""
-            echo "Most likely Scholar served this runner a bot check instead of the profile — datacenter IPs draw those readily. Options, in order:"
+            echo "Read the log line above this step; it names the cause:"
             echo ""
-            echo "1. Do nothing; the next weekly run often succeeds."
-            echo '2. Re-run this workflow by hand from the Actions tab.'
-            echo '3. Run `npm run build:scholar` locally and commit — a residential IP is served the page normally.'
+            echo '- **`HTTP 401 - Invalid API key`** — the `SERPAPI_KEY` secret is missing, mistyped or revoked.'
+            echo '- **`Invalid API key` / quota wording** — the free tier ran out this month; it resets monthly.'
+            echo '- **`Source: scholar.google.com directly`** — the secret was not visible to the run, so it fell back to the direct read and Scholar refused this runner (expected: datacenter IPs get HTTP 403).'
+            echo '- **`SerpAPI response lacked ...`** — SerpAPI changed its `cited_by.table` shape; the parser in `scripts/fetch-scholar-metrics.js` needs updating.'
             echo ""
-            echo "If the log says the metrics table did not match rather than that a bot check was served, Google changed its markup and the selectors in \`scripts/fetch-scholar-metrics.js\` need updating."
+            echo 'Stopgap that always works: run `npm run build:scholar` locally (no key needed) and commit `_data/scholar_metrics.json`.'
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Commit if the data changed
