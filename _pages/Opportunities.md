@@ -22,7 +22,7 @@ Recruitment
 ======
 
 **Current openings:**
-* <span style="color: #c0392b;">**1–2 fully-funded Ph.D. slots**</span> for **Summer/Fall 2027** admission.
+* <span style="color: #c0392b;">**2 fully-funded Ph.D. slots**</span> for **Summer/Fall 2027** admission.
 * <span style="color: #c0392b;">**1 Postdoc position**</span> focused on **multi-system resilience, human mobility, and network science**.
 * <span style="color: #c0392b;">**Research Assistants**</span> focused on **large language models and data-driven traffic simulation**.
 
@@ -42,7 +42,7 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 ---
 
 **当前重点招聘：**
-* <span style="color: #c0392b;">**1-2 名 2027 年 Summer/Fall 入学的全奖博士生**</span>
+* <span style="color: #c0392b;">**2 名 2027 年 Summer/Fall 入学的全奖博士生**</span>
 * <span style="color: #c0392b;">**1 名博士后**</span>，研究方向为 **multi-system resilience、human mobility 与 network science**
 * <span style="color: #c0392b;">**研究助理（RA）**</span>，研究方向为 **大语言模型与数据驱动的交通仿真**
 
