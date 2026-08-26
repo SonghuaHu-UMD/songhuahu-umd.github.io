@@ -29,6 +29,14 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 ---
 
+<style>
+/* News runs long and is far denser in bold than the surrounding prose, so at body size it
+   reads heavier than everything around it. Dropping the list a notch buys back that weight
+   without touching the markup. Scoped to the list that immediately follows the News heading,
+   so the other sections keep body size. */
+#news + ul { font-size: 0.9em; }
+</style>
+
 News
 ======
 * **[08/2026]** Our project on _<span style="color: #2980b9;">Data-Driven Human Exposure Modeling</span>_ is funded by the **NSFC Young Scientists Fund C** <span style="color: #8e44ad;">**(PI)**</span>!
