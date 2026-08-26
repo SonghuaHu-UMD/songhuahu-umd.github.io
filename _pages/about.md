@@ -31,10 +31,10 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 News
 ======
-* **[08/2026]** Our project on _<span style="color: #2980b9;">Big-Data-Driven Pollution Exposure Modeling</span>_ is funded by the **NSFC Young Scientists Fund C** <span style="color: #8e44ad;">**(PI)**</span>!
+* **[08/2026]** Our project on _<span style="color: #2980b9;">Data-Driven Human Exposure Modeling</span>_ is funded by the **NSFC Young Scientists Fund C** <span style="color: #8e44ad;">**(PI)**</span>!
 * **[08/2026]** Our project on _<span style="color: #2980b9;">AI-Driven Urban Emergency Response and Rescue</span>_ is funded by the **HK RGC Theme-based Research Scheme** <span style="color: #8e44ad;">**(Co-PI)**</span>!
 * **[06/2026]** Welcoming **four new Ph.D. students** joining our group in Summer/Fall 2026!
-* **[06/2026]** Our project on _<span style="color: #2980b9;">AI-Driven Mobility Chain Reconstruction</span>_ is funded by the **HK RGC Early Career Scheme** <span style="color: #8e44ad;">**(PI)**</span>!
+* **[06/2026]** Our project on _<span style="color: #2980b9;">AI-Driven Mobility Chain Inference</span>_ is funded by the **HK RGC Early Career Scheme** <span style="color: #8e44ad;">**(PI)**</span>!
 * **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**NS Research Briefing**](https://www.nature.com/articles/s41893-026-01798-8)!
 * **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/). 
 * **[09/2025]** Our project on _<span style="color: #2980b9;">Agentic AI Activity-Based Modeling</span>_ is funded by the **CityUHK Startup Grant** <span style="color: #8e44ad;">**(PI)**</span>!
