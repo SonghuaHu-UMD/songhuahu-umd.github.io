@@ -11,8 +11,8 @@ redirect_from:
 
 ---
 
-Greetings! I'm <span style="color: #2c3e50; font-weight: bold;">Songhua Hu</span> (胡松华), an <span style="color: #e67e22;">Assistant Professor of Transportation Engineering</span> at the
-Department of Architecture and Civil Engineering, [City University of Hong Kong](https://scholars.cityu.edu.hk/en/persons/songhuhu/).
+Greetings! I'm <span style="color: #2c3e50; font-weight: bold;">Songhua Hu</span> (胡松华), an [<span style="color: #e67e22;">Assistant Professor of Transportation Engineering</span>](https://scholars.cityu.edu.hk/en/persons/songhuhu/) at the
+Department of Architecture and Civil Engineering, City University of Hong Kong.
 Previously, I was a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
 I received my <span style="color: #2980b9;">Ph.D.</span> (2023) from the University of Maryland, College Park, 
 <span style="color: #2980b9;">M.S.</span> (2019) from Tongji University (同济大学), 
