@@ -21,7 +21,7 @@ and <span style="color: #2980b9;">B.S.</span> (2016) from Huazhong University of
 My research leverages <span style="color: #e67e22;">crowdsourced data mining</span>, <span style="color: #e67e22;">spatiotemporal AI</span>, <span style="color: #e67e22;">network analysis</span>, and <span style="color: #e67e22;">advanced statistics</span>
 to advance <span style="color: #27ae60;">smart, sustainable, resilient, and equitable mobility systems</span>.
 I have published **over 40** journal papers (**21** first-authored) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.
-I have secured funding from <span style="color: #8e44ad;">**HK RGC ECS (PI)**</span> and <span style="color: #8e44ad;">**TRS (Co-PI)**</span>, and contributed to projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, USDOE, the City of Stockholm, and Toyota Woven City</span>.
+I have secured funding from <span style="color: #8e44ad;">**HK RGC ECS (PI)**</span>, <span style="color: #8e44ad;">**TRS (Co-PI)**</span>, and <span style="color: #8e44ad;">**NSFC (PI)**</span>, and contributed to projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, USDOE, the City of Stockholm, and Toyota Woven City</span>.
 I serve as a reviewer for **over 60** journals including _Nature Cities_, _Nature Communications_, _Transportation Research Part A-E_, among others.
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
@@ -31,13 +31,13 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 News
 ======
-* **[08/2026]** Our project on _<span style="color: #2980b9;">AI-Powered Pedestrian Pollution Exposure Modeling</span>_ is funded by the **NSFC Young Scientists Fund C** (PI)!
-* **[08/2026]** Our project on _<span style="color: #2980b9;">AI-Driven Urban Emergency Response and Rescue</span>_ is funded by the **HK RGC Theme-based Research Scheme** (Co-PI)!
+* **[08/2026]** Our project on _<span style="color: #2980b9;">Big-Data-Driven Pollution Exposure Modeling</span>_ is funded by the **NSFC Young Scientists Fund C** <span style="color: #8e44ad;">**(PI)**</span>!
+* **[08/2026]** Our project on _<span style="color: #2980b9;">AI-Driven Urban Emergency Response and Rescue</span>_ is funded by the **HK RGC Theme-based Research Scheme** <span style="color: #8e44ad;">**(Co-PI)**</span>!
 * **[06/2026]** Welcoming **four new Ph.D. students** joining our group in Summer/Fall 2026!
-* **[06/2026]** Our project on _<span style="color: #2980b9;">AI-Enhanced Human Mobility Modeling</span>_ is funded by the **HK RGC Early Career Scheme** (PI)!
+* **[06/2026]** Our project on _<span style="color: #2980b9;">AI-Driven Mobility Chain Reconstruction</span>_ is funded by the **HK RGC Early Career Scheme** <span style="color: #8e44ad;">**(PI)**</span>!
 * **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**NS Research Briefing**](https://www.nature.com/articles/s41893-026-01798-8)!
 * **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/). 
-* **[09/2025]** Our project on _<span style="color: #2980b9;">Agentic AI Activity-Based Modeling</span>_ is funded by the **CityUHK Startup Grant** (PI)!
+* **[09/2025]** Our project on _<span style="color: #2980b9;">Agentic AI Activity-Based Modeling</span>_ is funded by the **CityUHK Startup Grant** <span style="color: #8e44ad;">**(PI)**</span>!
 * **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhuhu/) as a tenure-track Assistant Professor!
 * **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
 * **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
