@@ -31,27 +31,20 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 
 News
 ======
-**2026**
+* **[08/2026]** Our project on _<span style="color: #2980b9;">Data-Driven Human Exposure Modeling</span>_ is funded by the **NSFC Young Scientists Fund C** <span style="color: #8e44ad;">**(PI)**</span>!
+* **[08/2026]** Our project on _<span style="color: #2980b9;">AI-Driven Urban Emergency Response and Rescue</span>_ is funded by the **HK RGC Theme-based Research Scheme** <span style="color: #8e44ad;">**(Co-PI)**</span>!
+* **[06/2026]** Welcoming **four new Ph.D. students** joining our group in Summer/Fall 2026!
+* **[06/2026]** Our project on _<span style="color: #2980b9;">AI-Driven Mobility Chain Inference</span>_ is funded by the **HK RGC Early Career Scheme** <span style="color: #8e44ad;">**(PI)**</span>!
+* **[04/2026]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**NS Research Briefing**](https://www.nature.com/articles/s41893-026-01798-8)!
+* **[04/2026]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/). 
+* **[09/2025]** Our project on _<span style="color: #2980b9;">Agentic AI Activity-Based Modeling</span>_ is funded by the **CityUHK Startup Grant** <span style="color: #8e44ad;">**(PI)**</span>!
+* **[09/2025]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhuhu/) as a tenure-track Assistant Professor!
+* **[05/2025]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
+* **[02/2025]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
+* **[01/2025]** Invited job talk at **_University of Alberta CEE_**!
+* **[10/2023]** Received [**COTA Best Dissertation Award**](https://cee.umd.edu/news/story/hu-receives-cota-best-dissertation-award)!
+* **[05/2023]** Received [**UMD CEE Best Doctoral Research Award**](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards)!
 
-* **[Aug]** Our project on _<span style="color: #2980b9;">Data-Driven Human Exposure Modeling</span>_ is funded by the **NSFC Young Scientists Fund C** <span style="color: #8e44ad;">**(PI)**</span>!
-* **[Aug]** Our project on _<span style="color: #2980b9;">AI-Driven Urban Emergency Response and Rescue</span>_ is funded by the **HK RGC Theme-based Research Scheme** <span style="color: #8e44ad;">**(Co-PI)**</span>!
-* **[Jun]** Welcoming **four new Ph.D. students** joining our group in Summer/Fall 2026!
-* **[Jun]** Our project on _<span style="color: #2980b9;">AI-Driven Mobility Chain Inference</span>_ is funded by the **HK RGC Early Career Scheme** <span style="color: #8e44ad;">**(PI)**</span>!
-* **[Apr]** Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**NS Research Briefing**](https://www.nature.com/articles/s41893-026-01798-8)!
-* **[Apr]** New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/).
-
-**2025**
-
-* **[Sep]** Our project on _<span style="color: #2980b9;">Agentic AI Activity-Based Modeling</span>_ is funded by the **CityUHK Startup Grant** <span style="color: #8e44ad;">**(PI)**</span>!
-* **[Sep]** Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhuhu/) as a tenure-track Assistant Professor!
-* **[May]** Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!
-* **[Feb]** Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!
-* **[Jan]** Invited job talk at **_University of Alberta CEE_**!
-
-**2023**
-
-* **[Oct]** Received [**COTA Best Dissertation Award**](https://cee.umd.edu/news/story/hu-receives-cota-best-dissertation-award)!
-* **[May]** Received [**UMD CEE Best Doctoral Research Award**](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards)!
 
 ***
 
