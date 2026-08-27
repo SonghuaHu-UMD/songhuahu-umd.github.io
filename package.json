@@ -33,6 +33,7 @@
     "build:map-geometry": "node scripts/build-visitor-map.js --geometry",
     "build:visitors": "node scripts/build-visitor-map.js",
     "build:publications": "node scripts/build-coauthor-network.js",
-    "build:scholar": "node scripts/fetch-scholar-metrics.js"
+    "build:scholar": "node scripts/fetch-scholar-metrics.js",
+    "build:scholar-pubs": "node scripts/fetch-scholar-publications.js"
   }
 }

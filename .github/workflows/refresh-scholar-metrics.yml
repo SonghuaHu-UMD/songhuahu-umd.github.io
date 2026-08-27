@@ -1,33 +1,49 @@
-name: Refresh Google Scholar metrics
+name: Refresh Google Scholar data
 
-# Reads citations, h-index and i10-index off the Google Scholar profile and commits them
-# when they have actually changed.
+# Reads the Google Scholar profile and commits what it says when that has actually changed:
+#
+#   _data/scholar_metrics.json       citations, h-index, i10-index -> the figures strip
+#   _data/scholar_publications.json  journal-paper, first-author and per-venue counts
+#                                    -> the Publications paragraph
+#
+# Both read nothing but the profile. The first-author and corresponding-author credits come
+# from the † and * markers typed onto the profile's own author lines, so nothing here depends
+# on a second API agreeing with them. Where the profile list truncates a long author line
+# before his name, the recount opens that paper's own record, which carries the line whole.
 #
 # Requires one repository secret:
 #   SERPAPI_KEY — a SerpAPI key (Settings → Secrets and variables → Actions → New repository
-#   secret). Weekly means ~4-5 searches a month, well inside the free tier.
+#   secret). Two searches a month for the two reads, plus one for each paper whose author line
+#   Scholar truncated before his name (two of them today, capped at twelve). Call it four a
+#   month against a free tier of 100.
 #
 # Why a paid proxy for a public page: Google Scholar has no API and answers a GitHub runner
 # with a flat HTTP 403. That is measured, not assumed -- five spaced attempts from a runner
 # were refused every time while the identical code from a residential IP got HTTP 200. So
-# reaching Scholar from the cloud means going through egress it does not block. The script
-# still reads the page directly when SERPAPI_KEY is absent, which is what makes
-# `npm run build:scholar` work on a laptop with nothing configured.
+# reaching Scholar from the cloud means going through egress it does not block. Both scripts
+# still read the page directly when SERPAPI_KEY is absent, which is what makes
+# `npm run build:scholar` and `npm run build:scholar-pubs` work on a laptop with nothing
+# configured.
 #
-# Weekly, on the same day as the publication refresh: Scholar recomputes these numbers
-# slowly, so a daily run would mostly commit churn for no benefit.
+# One job rather than two workflows: both scripts read the same profile with the same key on
+# the same cadence, and putting them in one job means one checkout, one commit and no chance
+# of two crons racing each other to push. They are independent steps, though -- see below.
 #
-# A failed run never corrupts anything. The script refuses to write unless all three numbers
-# parse and pass a sanity check, so the worst case is "this week's numbers are still last
-# week's" -- the site keeps serving the last good values.
+# Monthly: Scholar recomputes citation totals slowly and a publication list moves slower
+# still, so anything more frequent mostly commits churn. Run it on demand from the Actions
+# tab when a paper appears and the page should say so today.
+#
+# A failed run never corrupts anything. Each script refuses to write unless what it parsed
+# passes a sanity check, so the worst case is "this month's numbers are still last month's" --
+# the site keeps serving the last good values.
 
 on:
   schedule:
-    # 07:42 UTC Monday = 15:42 Asia/Hong_Kong. Off the hour because scheduled jobs queue
-    # behind everyone else's :00 crons, and 90 minutes after the 06:12 publication refresh
-    # so the two never race each other pushing to master (the 20:17 visitor map is clear
-    # of both).
-    - cron: '42 7 * * 1'
+    # 07:42 UTC on the 1st = 15:42 Asia/Hong_Kong. Off the hour because scheduled jobs queue
+    # behind everyone else's :00 crons, and 90 minutes after the 06:12 publication refresh so
+    # the two never race each other pushing to master on a 1st that falls on a Monday (the
+    # 20:17 daily visitor map is clear of both).
+    - cron: '42 7 1 * *'
   workflow_dispatch:
 
 permissions:
@@ -48,8 +64,8 @@ jobs:
         with:
           node-version: '22'
 
-      # No npm install on purpose: fetch-scholar-metrics.js uses only Node builtins and
-      # global fetch, so installing devDependencies (sharp, terser) would be dead weight.
+      # No npm install on purpose: both scripts use only Node builtins and global fetch, so
+      # installing devDependencies (sharp, terser) would be dead weight.
       # `shell: bash` is load-bearing, not decoration: the implicit shell is `bash -e`
       # without pipefail, so a failing node would be masked by tee's exit 0 and the run
       # would go green on no data. Naming the shell gets `-eo pipefail`.
@@ -63,47 +79,136 @@ jobs:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: node scripts/fetch-scholar-metrics.js | tee /tmp/scholar.log
 
+      # `if: always()` because the two reads answer different questions and fail for
+      # different reasons: a metrics parse broken by a Scholar markup change should not also
+      # cost the month's publication counts. The job still fails if either step did.
+      - name: Recount publications from Google Scholar
+        id: fetch_pubs
+        if: always()
+        shell: bash
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: node scripts/fetch-scholar-publications.js | tee /tmp/scholar-pubs.log
+
+      # A venue that has quietly grown to three or four papers belongs in the named list in
+      # the Publications paragraph, but it is invisible inside "among others" -- so the
+      # script prints what it did not name and the run surfaces it here. Advisory only.
+      - name: Report what the recount could not settle
+        if: always() && steps.fetch_pubs.outcome == 'success'
+        shell: bash
+        run: |
+          # Each block runs from its "  -- " header to the next one, or to the closing
+          # Wrote/Unchanged line, or to the first "  ! " warning.
+          block () { awk -v pat="$1" '$0 ~ pat {f=1; next} /^(Wrote|Unchanged|  --|  !)/ {f=0} f' /tmp/scholar-pubs.log; }
+
+          others=$(block 'not named in the paragraph')
+          if [ -n "$others" ]; then
+            {
+              echo "### Journal venues counted but not named"
+              echo ""
+              echo 'These fall under "among others". To name one, add it to `featuredVenues` in `scripts/publication-rules.js`.'
+              echo ""
+              echo '```'
+              echo "$others"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+          # Rare, and not the same thing as a truncated line: those are reopened automatically
+          # via the per-article record. This is what is left when even that did not yield a
+          # readable name, so the paper counts as neither first-author nor corresponding.
+          untagged=$(block 'author line unreadable')
+          if [ -n "$untagged" ]; then
+            {
+              echo "### Papers whose author credits could not be read"
+              echo ""
+              echo 'The † and * markers could not be read for these even from the per-article record — most likely a spelling of his name that `selfPrefixes` does not cover. Fix that first; failing it, name them in `coFirst` / `corresponding` in `scripts/publication-rules.js`.'
+              echo ""
+              echo '```'
+              echo "$untagged"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+          warnings=$(grep '^  !' /tmp/scholar-pubs.log || true)
+          if [ -n "$warnings" ]; then
+            {
+              echo "### Rules that matched nothing"
+              echo ""
+              echo 'A title fragment or venue prefix in `scripts/publication-rules.js` no longer matches anything on the profile -- most often because Scholar re-cased or re-punctuated the record.'
+              echo ""
+              echo '```'
+              echo "$warnings"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       # Turn the bare red X into something actionable: the likely causes are all operational
       # (key, quota) rather than anything wrong with the code.
       - name: Explain a failed fetch
-        if: failure() && steps.fetch.outcome == 'failure'
+        if: always() && (steps.fetch.outcome == 'failure' || steps.fetch_pubs.outcome == 'failure')
         shell: bash
         run: |
           {
             echo "### Google Scholar fetch did not succeed"
             echo ""
-            echo 'The committed numbers in `_data/scholar_metrics.json` were left untouched, so the site still shows the last good values.'
+            echo "| step | outcome |"
+            echo "| --- | --- |"
+            echo "| metrics | ${{ steps.fetch.outcome }} |"
+            echo "| publications | ${{ steps.fetch_pubs.outcome }} |"
             echo ""
-            echo "Read the log line above this step; it names the cause:"
+            echo 'The committed numbers in `_data/scholar_metrics.json` and `_data/scholar_publications.json` were left untouched, so the site still shows the last good values.'
+            echo ""
+            echo "Read the log line above the failing step; it names the cause:"
             echo ""
             echo '- **`HTTP 401 - Invalid API key`** — the `SERPAPI_KEY` secret is missing, mistyped or revoked.'
             echo '- **`Invalid API key` / quota wording** — the free tier ran out this month; it resets monthly.'
             echo '- **`Source: scholar.google.com directly`** — the secret was not visible to the run, so it fell back to the direct read and Scholar refused this runner (expected: datacenter IPs get HTTP 403).'
-            echo '- **`SerpAPI response lacked ...`** — SerpAPI changed its `cited_by.table` shape; the parser in `scripts/fetch-scholar-metrics.js` needs updating.'
+            echo '- **`SerpAPI response lacked ...`** / **`SerpAPI returned no articles`** — SerpAPI changed its response shape; the parser in the named script needs updating.'
+            echo '- **`no gsc_a_tr rows matched`** — Scholar changed its profile markup; the selectors in `scripts/fetch-scholar-publications.js` need updating.'
+            echo '- **`more than 100 records`** — the profile outgrew what one robots-permitted page returns. Only affects the keyless direct read; CI paginates through SerpAPI.'
             echo ""
-            echo 'Stopgap that always works: run `npm run build:scholar` locally (no key needed) and commit `_data/scholar_metrics.json`.'
+            echo 'Stopgap that always works: run `npm run build:scholar` and `npm run build:scholar-pubs` locally (no key needed) and commit the two data files.'
           } >> "$GITHUB_STEP_SUMMARY"
 
+      # `if: always()` so that whichever read succeeded still gets committed. With both
+      # failed there is nothing to stage and this exits clean.
       - name: Commit if the data changed
         id: commit
+        if: always()
         shell: bash
         run: |
-          file='_data/scholar_metrics.json'
-          if git diff --quiet -- $file; then
+          files='_data/scholar_metrics.json _data/scholar_publications.json'
+          if git diff --quiet -- $files; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No change in Scholar metrics; nothing to commit."
+            echo "No change in Scholar data; nothing to commit."
             exit 0
           fi
-          cites=$(node -p "require('./_data/scholar_metrics.json').citations")
-          h=$(node -p "require('./_data/scholar_metrics.json').h_index")
-          i10=$(node -p "require('./_data/scholar_metrics.json').i10_index")
+          # One commit, but a subject naming only what actually moved -- a message claiming
+          # refreshed publication counts on a run where only the citation total changed would
+          # make the log useless for working out when a count last changed.
+          parts=()
+          if ! git diff --quiet -- _data/scholar_metrics.json; then
+            cites=$(node -p "require('./_data/scholar_metrics.json').citations")
+            h=$(node -p "require('./_data/scholar_metrics.json').h_index")
+            i10=$(node -p "require('./_data/scholar_metrics.json').i10_index")
+            parts+=("${cites} citations, h=${h}, i10=${i10}")
+          fi
+          if ! git diff --quiet -- _data/scholar_publications.json; then
+            papers=$(node -p "require('./_data/scholar_publications.json').journal_papers")
+            first=$(node -p "require('./_data/scholar_publications.json').first_author")
+            parts+=("${papers} journal papers, ${first} first-author")
+          fi
+          # printf rather than "${parts[*]}" with a two-character IFS: that form joins on the
+          # first IFS character only, so it would read "...i10=33;41 journal papers".
+          summary=$(printf '%s; ' "${parts[@]}"); summary=${summary%'; '}
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add $file
-          git commit -m "chore: refresh Scholar metrics (${cites} citations, h=${h}, i10=${i10})"
+          git add $files
+          git commit -m "chore: refresh Scholar data (${summary})"
           # A human push landing between checkout and here would make this a non-fast-forward.
-          # Rebasing onto it is safe: this job only ever touches one generated file, so there
-          # is nothing of its own to lose if the rebase drops its commit.
+          # Rebasing onto it is safe: this job only ever touches generated files, so there is
+          # nothing of its own to lose if the rebase drops its commit.
           git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -112,7 +217,7 @@ jobs:
       # one explicitly. Best-effort: if the push already triggered a build, this is a
       # harmless duplicate request and must not fail the run.
       - name: Request a Pages build
-        if: steps.commit.outputs.changed == 'true'
+        if: always() && steps.commit.outputs.changed == 'true'
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}

@@ -11,6 +11,14 @@ redirect_from:
 
 ---
 
+{% comment %}
+  Publication counts, recounted monthly from the Google Scholar profile by
+  .github/workflows/refresh-scholar-metrics.yml. Assigned once up here because two places
+  render from it: the intro sentence just below, and the Publications section further down.
+  Keeping one assign is the point -- those two used to be typed separately and had drifted
+  apart before this existed.
+{% endcomment %}
+{% assign pubs = site.data.scholar_publications %}
 Greetings! I'm <span style="color: #2c3e50; font-weight: bold;">Songhua Hu</span> (胡松华), an [<span style="color: #e67e22;">Assistant Professor of Transportation Engineering</span>](https://scholars.cityu.edu.hk/en/persons/songhuhu/) at the
 Department of Architecture and Civil Engineering, City University of Hong Kong.
 Previously, I was a Postdoctoral Researcher at [MIT Senseable City Lab](https://senseable.mit.edu/).
@@ -20,7 +28,7 @@ and <span style="color: #2980b9;">B.S.</span> (2016) from Huazhong University of
 
 My research leverages <span style="color: #e67e22;">crowdsourced data mining</span>, <span style="color: #e67e22;">spatiotemporal AI</span>, <span style="color: #e67e22;">network analysis</span>, and <span style="color: #e67e22;">advanced statistics</span>
 to advance <span style="color: #27ae60;">smart, sustainable, resilient, and equitable mobility systems</span>.
-I have published **over 40** journal papers (**21** first-authored) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.
+I have published **over {{ pubs.journal_papers_rounded | default: 40 }}** journal papers (**{{ pubs.first_author | default: 21 }}** first-authored) in _Nature Sustainability_, _PNAS_, _Transportation Research Part A/C/D/E_, etc.
 I have secured funding from <span style="color: #8e44ad;">**HK RGC ECS (PI)**</span>, <span style="color: #8e44ad;">**TRS (Co-PI)**</span>, and <span style="color: #8e44ad;">**NSFC (PI)**</span>, and contributed to projects funded by <span style="color: #8e44ad;">USDOT, NIH, NSF, FHWA, USDOE, the City of Stockholm, and Toyota Woven City</span>.
 I serve as a reviewer for **over 60** journals including _Nature Cities_, _Nature Communications_, _Transportation Research Part A-E_, among others.
 
@@ -51,20 +59,21 @@ News
 Publications
 ======
 
-Over 40 journal papers (<span style="color: green">**21** First-Author</span>, <span style="color: orange">**4** Corresponding</span>) including
-_Nature Sustainability_ (**1**, <span style="color: green">**1**F</span> <span style="color: orange">**1**C</span>),
-_Proceedings of the National Academy of Sciences_ (**1**),
-_TR Part A_ (**5**, <span style="color: green">**3**F</span>),
-_TR Part C_ (**5**, <span style="color: green">**3**F</span>),
-_TR Part D_ (**3**, <span style="color: green">**3**F</span>),
-_TR Part E_ (**1**),
-_Computers, Environment and Urban Systems_ (**3**, <span style="color: green">**1**F</span>),
-_Journal of Transport Geography_ (**3**, <span style="color: green">**2**F</span>),
-_Cities_ (**1**, <span style="color: green">**1**F</span>),
-_Sustainable Cities and Society_ (**1**, <span style="color: green">**1**F</span>),
-_Journal of the Royal Society Interface_ (**1**),
-_Journal of Planning Education and Research_ (**1**),
-among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc.
+<!-- Every count here comes from `pubs`, assigned at the top of this file: recounted each
+     month from the Google Scholar profile and landing in _data/scholar_publications.json.
+     Nothing in this paragraph is typed by hand any more. The F and C figures come from the
+     † and * markers on the profile's own author lines, so correcting one means editing the
+     profile, not this file. What the profile cannot say -- which records count as journal
+     papers, what each venue is called in one line of prose, and the presentation count --
+     lives in scripts/publication-rules.js. Rendered by Liquid rather than fetched in the
+     browser, for the same reasons as the metrics line below. The guard keeps the page
+     building if the data file is ever missing; the intro sentence up top uses `default:`
+     filters for the same reason, since it cannot be skipped without breaking a sentence. -->
+{% if pubs and pubs.journal_papers %}
+Over {{ pubs.journal_papers_rounded }} journal papers (<span style="color: green">**{{ pubs.first_author }}** First-Author</span>{% if pubs.corresponding > 0 %}, <span style="color: orange">**{{ pubs.corresponding }}** Corresponding</span>{% endif %}) including
+{% for v in pubs.featured %}_{{ v.display }}_ (**{{ v.count }}**{% if v.first > 0 %}, <span style="color: green">**{{ v.first }}**F</span>{% endif %}{% if v.corresponding > 0 %} <span style="color: orange">**{{ v.corresponding }}**C</span>{% endif %}),
+{% endfor %}among others. **>{{ pubs.presentations }}** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc.
+{% endif %}
 
 <div style="margin: 1.2em 0;">
   <div id="coauthor-network" style="width: 100%; max-width: 1100px; height: 360px; margin: 0 auto; position: relative; overflow: hidden;">
@@ -73,7 +82,7 @@ among others. **>30** presentations at TRB, IEEE ITSC, NetMob, INFORMS, AGU, etc
   <div style="font-size: 0.85em; color: #666; text-align: center; margin-top: 0.4em;">Co-authorship network (OpenAlex)</div>
 </div>
 
-<!-- Citation metrics. The figures live in _data/scholar_metrics.json, refreshed weekly by
+<!-- Citation metrics. The figures live in _data/scholar_metrics.json, refreshed monthly by
      .github/workflows/refresh-scholar-metrics.yml, and are rendered here by Liquid rather
      than fetched in the browser: no empty strip while JS runs, and the numbers survive JS
      being off. The guard keeps the page building if that data file is ever missing. -->
