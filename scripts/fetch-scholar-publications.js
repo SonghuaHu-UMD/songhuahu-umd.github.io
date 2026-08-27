@@ -291,6 +291,11 @@ function classify(articles, warnings) {
 function readCredits(paper, authorLine) {
   const c = selfCredits(authorLine);
   paper.untagged = !c.found;
+  /* coFirst is kept in its own field as well as folded into `first`. Being listed first
+     needs no marker, so a dagger that stopped parsing would leave `first` merely smaller --
+     not obviously wrong -- while this count would go straight to zero, which is what the
+     guard before writing looks for. */
+  paper.coFirst = Boolean(c.coFirst);
   paper.first = Boolean(c.listedFirst || c.coFirst);
   paper.corresponding = Boolean(c.corresponding);
   return c.found;
@@ -366,7 +371,7 @@ function applyOverrides(journals, warnings) {
   const forceCorr = matchFragments(RULES.corresponding, journals, 'corresponding', warnings);
   const forceNotCorr = matchFragments(RULES.notCorresponding, journals, 'notCorresponding', warnings);
   for (const j of journals) {
-    if (forceFirst.has(j)) j.first = true;
+    if (forceFirst.has(j)) { j.first = true; j.coFirst = true; }
     if (forceCorr.has(j)) j.corresponding = true;
     if (forceNotCorr.has(j)) j.corresponding = false;
   }
@@ -471,6 +476,7 @@ async function main() {
   const r = summarise(journals, warnings);
   const firstAuthor = journals.filter((j) => j.first).length;
   const corresponding = journals.filter((j) => j.corresponding).length;
+  const coFirst = journals.filter((j) => j.coFirst).length;
 
   console.log(`Read ${articles.length} profile records -> ${journals.length} journal papers`
     + ` (${firstAuthor} first-author, ${corresponding} corresponding).`);
@@ -526,11 +532,20 @@ async function main() {
      on the way through. Every one of them going missing at once is not a plausible month's
      news, so it is treated as a bad read rather than committed as a real collapse to zero.
      Losing them one at a time is a real edit and passes, as it should. */
-  if (prev && prev.corresponding > 0 && corresponding === 0) {
-    console.error(`Every corresponding-author marker disappeared (was ${prev.corresponding}).`);
-    console.error('  Either the profile no longer carries them, or this route stripped them.');
-    console.error(`  Treating this as a bad read; ${OUT_PATH} left untouched.`);
-    return fail();
+  /* Checked per marker, not on a single total: the two are different characters, and one of
+     them is not ASCII. A route that mangles encodings takes the dagger and leaves the star,
+     which a combined check would sail straight past. */
+  const markers = [
+    { label: 'corresponding-author (*)', now: corresponding, was: prev && prev.corresponding },
+    { label: 'shared-first (†)', now: coFirst, was: prev && prev.co_first },
+  ];
+  for (const { label, now, was } of markers) {
+    if (was > 0 && now === 0) {
+      console.error(`Every ${label} marker disappeared (was ${was}).`);
+      console.error('  Either the profile no longer carries them, or this route stripped them.');
+      console.error(`  Treating this as a bad read; ${OUT_PATH} left untouched.`);
+      return fail();
+    }
   }
 
   const written = writeIfChanged(OUT_PATH, {
@@ -540,6 +555,9 @@ async function main() {
     journal_papers: journals.length,
     journal_papers_rounded: roundDown(journals.length),
     first_author: firstAuthor,
+    /* Folded into first_author for display, and carried separately so the guard above has
+       something that drops to zero if the dagger ever stops parsing. */
+    co_first: coFirst,
     corresponding: corresponding,
     presentations: RULES.presentations,
     featured: r.featured,
