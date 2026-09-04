@@ -5,7 +5,7 @@ permalink: /Team/
 author_profile: true
 ---
 
-Team
+Team (Mobility Sensing and Computing Lab, MSCL)
 ======
 
 <span style="color: #2c3e50; font-weight: bold;">City University of Hong Kong, Hong Kong</span>
