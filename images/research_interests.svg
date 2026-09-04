@@ -11,8 +11,11 @@
        one long line, and since the page renders it at a fixed 1100, every widening was paid
        for in rendered type size. Wrapping spends height instead, which the page has.
 
-       So the cards are sized for a title plus two detail lines, and each card centres
-       whatever it actually carries. Every column spans exactly 55..409: the five card
+       So the cards are sized for a title plus two detail lines, and METHODS and
+       APPLICATIONS use both of them on every card: two short lines scan faster than one
+       long one, and the room means no term has to be abbreviated to fit. DATA SOURCES
+       keeps one line, its labels being short enough that a second would be padding, and
+       each card centres whatever it actually carries. Every column spans exactly 55..409: the five card
        columns run 66 high on a 72 pitch, the four card column 84 on a 90 pitch. Card titles
        follow that size (15 and 16); every detail line in the figure is 13, so the second
        line of a card reads the same everywhere however tall the card around it is.
@@ -77,21 +80,24 @@
   <text x="433" y="111" text-anchor="middle" fill="#9a8a7a" font-size="13">Semantic Imputation</text>
 
   <rect x="281" y="127" width="304" height="66" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="433" y="158" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Network Science</text>
-  <text x="433" y="175" text-anchor="middle" fill="#9a8a7a" font-size="13">Higher-order · Resilience · Optimization</text>
+  <text x="433" y="149" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Network Science</text>
+  <text x="433" y="166" text-anchor="middle" fill="#9a8a7a" font-size="13">Dynamic Higher-order Networks</text>
+  <text x="433" y="183" text-anchor="middle" fill="#9a8a7a" font-size="13">Resilience · Network Optimization</text>
 
   <rect x="281" y="199" width="304" height="66" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="433" y="230" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Artificial Intelligence</text>
-  <text x="433" y="247" text-anchor="middle" fill="#9a8a7a" font-size="13">GNN · Generative Models · LLM · Agentic AI</text>
+  <text x="433" y="221" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Artificial Intelligence</text>
+  <text x="433" y="238" text-anchor="middle" fill="#9a8a7a" font-size="13">GNN · Generative Models</text>
+  <text x="433" y="255" text-anchor="middle" fill="#9a8a7a" font-size="13">LLM · Agentic AI</text>
 
   <rect x="281" y="271" width="304" height="66" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
   <text x="433" y="293" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Transportation Modeling</text>
-  <text x="433" y="310" text-anchor="middle" fill="#9a8a7a" font-size="13">Network Modeling</text>
-  <text x="433" y="327" text-anchor="middle" fill="#9a8a7a" font-size="13">Multimodal Simulation · ABM</text>
+  <text x="433" y="310" text-anchor="middle" fill="#9a8a7a" font-size="13">Multimodal Transport Network Modeling</text>
+  <text x="433" y="327" text-anchor="middle" fill="#9a8a7a" font-size="13">Multi-scale Traffic Simulation · ABM</text>
 
   <rect x="281" y="343" width="304" height="66" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="433" y="374" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Advanced Statistics</text>
-  <text x="433" y="391" text-anchor="middle" fill="#9a8a7a" font-size="13">Causal Inference · Nonlinear Effects</text>
+  <text x="433" y="365" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Advanced Statistics</text>
+  <text x="433" y="382" text-anchor="middle" fill="#9a8a7a" font-size="13">Causal Inference · Nonlinear Effects</text>
+  <text x="433" y="399" text-anchor="middle" fill="#9a8a7a" font-size="13">Spatial Econometrics</text>
 
   <!-- Arrow METHODS to APPLICATIONS -->
   <line x1="593" y1="232" x2="631" y2="232" stroke="#c2b8a8" stroke-width="2"/>
@@ -103,7 +109,7 @@
 
   <rect x="631" y="55" width="304" height="84" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
   <text x="783" y="86" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Smart Mobility</text>
-  <text x="783" y="104" text-anchor="middle" fill="#7a8e9e" font-size="13">Supply &amp; Demand · Digital Twin</text>
+  <text x="783" y="104" text-anchor="middle" fill="#7a8e9e" font-size="13">Travel Supply &amp; Demand · Digital Twin</text>
   <text x="783" y="122" text-anchor="middle" fill="#7a8e9e" font-size="13">Low-altitude Economy · Aging Mobility</text>
 
   <rect x="631" y="145" width="304" height="84" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
@@ -113,10 +119,11 @@
 
   <rect x="631" y="235" width="304" height="84" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
   <text x="783" y="266" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Urban Resilience</text>
-  <text x="783" y="284" text-anchor="middle" fill="#7a8e9e" font-size="13">Disaster Response</text>
-  <text x="783" y="302" text-anchor="middle" fill="#7a8e9e" font-size="13">Cascading Failure · Evacuation</text>
+  <text x="783" y="284" text-anchor="middle" fill="#7a8e9e" font-size="13">Disaster Response · Evacuation</text>
+  <text x="783" y="302" text-anchor="middle" fill="#7a8e9e" font-size="13">Cascading Failure · Network Restoration</text>
 
   <rect x="631" y="325" width="304" height="84" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
-  <text x="783" y="365" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Public Health</text>
-  <text x="783" y="384" text-anchor="middle" fill="#7a8e9e" font-size="13">Human Exposure · Epidemics · Active Travel</text>
+  <text x="783" y="356" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Public Health</text>
+  <text x="783" y="374" text-anchor="middle" fill="#7a8e9e" font-size="13">Human Exposure · Healthcare Access</text>
+  <text x="783" y="392" text-anchor="middle" fill="#7a8e9e" font-size="13">Epidemics · Active Travel · Health Equity</text>
 </svg>
