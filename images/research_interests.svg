@@ -1,71 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 338" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 428" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
   <defs>
     <filter id="s" x="-2%" y="-2%" width="104%" height="108%">
       <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
     </filter>
   </defs>
 
-  <!-- ========== COLUMN 1: DATA SOURCES (w=200) ========== -->
+  <!-- ===== HOW THIS FIGURE IS BUILT =====
+       A long detail line wraps onto a second line instead of pushing the canvas wider. That
+       is the rule that keeps this readable: the canvas had crept from 960 to 1060 chasing
+       one long line, and since the page renders it at a fixed 1100, every widening was paid
+       for in rendered type size. Wrapping spends height instead, which the page has.
+
+       So the cards are sized for a title plus two detail lines, and each card centres
+       whatever it actually carries. Every column spans exactly 55..409: the five card
+       columns run 66 high on a 72 pitch, the four card column 84 on a 90 pitch. Card titles
+       follow that size (15 and 16); every detail line in the figure is 13, so the second
+       line of a card reads the same everywhere however tall the card around it is.
+
+       Column widths are set by the longest unbreakable phrase, not by symmetry: 210 for
+       DATA SOURCES, whose lines are short, and 304 for the other two.
+
+       In DATA SOURCES the card names where the data comes from and the line under it names
+       the data itself, kept to the shortest form that still reads as a data type. Where a
+       platform is not a data type it was replaced by what it yields: X, LinkedIn and Google
+       Maps became posts, reviews and profiles. Cameras is the deliberate exception, named
+       by device.
+
+       The five METHODS cards are mirrored, in the same order, by the sentence that opens
+       _pages/about.md. Change one and change the other.
+
+       APPLICATIONS carries the four themes of _pages/Research.md (Mobility, Sustainability,
+       Resilience, Health), and every line under them names what is studied, never how, in
+       words specific to transport. Both halves of that rule are load bearing: the earlier
+       wording repeated the METHODS column back at the reader, and what first replaced it
+       would have been true of any field rather than this one.
+
+       Note for future edits: no double hyphen anywhere in these comments. It is illegal
+       inside an XML comment, and the page loads this file through <img>, which parses it as
+       XML and would drop the whole image. -->
+
+  <!-- ===== COLUMN 1: DATA SOURCES (x=25, w=210) ===== -->
   <text x="130" y="30" text-anchor="middle" fill="#5a7a6a" font-size="18" font-weight="700" letter-spacing="3">DATA SOURCES</text>
-  <line x1="30" y1="42" x2="230" y2="42" stroke="#c8d5cd" stroke-width="1"/>
+  <line x1="25" y1="42" x2="235" y2="42" stroke="#c8d5cd" stroke-width="1"/>
 
-  <rect x="30" y="55" width="200" height="60" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
-  <text x="130" y="90" text-anchor="middle" fill="#4a6a5a" font-size="16" font-weight="600">Mobile Phones</text>
+  <rect x="25" y="55" width="210" height="66" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
+  <text x="130" y="86" text-anchor="middle" fill="#4a6a5a" font-size="15" font-weight="700">Mobile Phones</text>
+  <text x="130" y="103" text-anchor="middle" fill="#6f8a7e" font-size="13">GPS · LBS · Wi-Fi</text>
 
-  <rect x="30" y="123" width="200" height="60" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
-  <text x="130" y="158" text-anchor="middle" fill="#4a6a5a" font-size="16" font-weight="600">City Cameras</text>
+  <rect x="25" y="127" width="210" height="66" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
+  <text x="130" y="158" text-anchor="middle" fill="#4a6a5a" font-size="15" font-weight="700">Vehicles</text>
+  <text x="130" y="175" text-anchor="middle" fill="#6f8a7e" font-size="13">Trajectory · Charging · GTFS</text>
 
-  <rect x="30" y="191" width="200" height="60" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
-  <text x="130" y="226" text-anchor="middle" fill="#4a6a5a" font-size="16" font-weight="600">Connected Vehicles</text>
+  <rect x="25" y="199" width="210" height="66" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
+  <text x="130" y="230" text-anchor="middle" fill="#4a6a5a" font-size="15" font-weight="700">Cameras</text>
+  <text x="130" y="247" text-anchor="middle" fill="#6f8a7e" font-size="13">CCTV · Dashcam · Drone</text>
 
-  <rect x="30" y="259" width="200" height="60" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
-  <text x="130" y="294" text-anchor="middle" fill="#4a6a5a" font-size="16" font-weight="600">Social Media</text>
+  <rect x="25" y="271" width="210" height="66" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
+  <text x="130" y="302" text-anchor="middle" fill="#4a6a5a" font-size="15" font-weight="700">Remote Sensing</text>
+  <text x="130" y="319" text-anchor="middle" fill="#6f8a7e" font-size="13">Satellite · LiDAR · Land Use</text>
 
-  <!-- Arrow DATA → METHODS (centered vertically in full column) -->
-  <line x1="240" y1="187" x2="290" y2="187" stroke="#b0bfb8" stroke-width="2"/>
-  <polygon points="287,180 300,187 287,194" fill="#b0bfb8"/>
+  <rect x="25" y="343" width="210" height="66" rx="10" fill="#eef3f0" stroke="#c8d5cd" stroke-width="1" filter="url(#s)"/>
+  <text x="130" y="374" text-anchor="middle" fill="#4a6a5a" font-size="15" font-weight="700">Social Media</text>
+  <text x="130" y="391" text-anchor="middle" fill="#6f8a7e" font-size="13">Posts · Reviews · Profiles</text>
 
-  <!-- ========== COLUMN 2: METHODS (w=285) ========== -->
-  <text x="448" y="30" text-anchor="middle" fill="#8a6d4a" font-size="18" font-weight="700" letter-spacing="3">METHODS</text>
-  <line x1="305" y1="42" x2="590" y2="42" stroke="#ddd0c2" stroke-width="1"/>
+  <!-- Arrow DATA to METHODS (y=232, the middle of the 55..409 band) -->
+  <line x1="243" y1="232" x2="281" y2="232" stroke="#b0bfb8" stroke-width="2"/>
+  <polygon points="268,225 281,232 268,239" fill="#b0bfb8"/>
 
-  <rect x="305" y="55" width="285" height="60" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="448" y="77" text-anchor="middle" fill="#7a5e3e" font-size="16" font-weight="700">Crowdsourced Data Mining</text>
-  <text x="448" y="100" text-anchor="middle" fill="#9a8a7a" font-size="14">Data Fusion · Bias Correction</text>
+  <!-- ===== COLUMN 2: METHODS (x=281, w=304) ===== -->
+  <text x="433" y="30" text-anchor="middle" fill="#8a6d4a" font-size="18" font-weight="700" letter-spacing="3">METHODS</text>
+  <line x1="281" y1="42" x2="585" y2="42" stroke="#ddd0c2" stroke-width="1"/>
 
-  <rect x="305" y="123" width="285" height="60" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="448" y="145" text-anchor="middle" fill="#7a5e3e" font-size="16" font-weight="700">Spatiotemporal AI</text>
-  <text x="448" y="168" text-anchor="middle" fill="#9a8a7a" font-size="14">GNN · Computer Vision · LLM</text>
+  <rect x="281" y="55" width="304" height="66" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
+  <text x="433" y="77" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Spatiotemporal Data Mining</text>
+  <text x="433" y="94" text-anchor="middle" fill="#9a8a7a" font-size="13">Forecasting · Bias Correction</text>
+  <text x="433" y="111" text-anchor="middle" fill="#9a8a7a" font-size="13">Semantic Imputation</text>
 
-  <rect x="305" y="191" width="285" height="60" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="448" y="213" text-anchor="middle" fill="#7a5e3e" font-size="16" font-weight="700">Network Analysis</text>
-  <text x="448" y="236" text-anchor="middle" fill="#9a8a7a" font-size="14">Modeling · Optimization</text>
+  <rect x="281" y="127" width="304" height="66" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
+  <text x="433" y="158" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Network Science</text>
+  <text x="433" y="175" text-anchor="middle" fill="#9a8a7a" font-size="13">Higher-order · Resilience · Optimization</text>
 
-  <rect x="305" y="259" width="285" height="60" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
-  <text x="448" y="281" text-anchor="middle" fill="#7a5e3e" font-size="16" font-weight="700">Advanced Statistics</text>
-  <text x="448" y="304" text-anchor="middle" fill="#9a8a7a" font-size="14">Causal Inference · Regression</text>
+  <rect x="281" y="199" width="304" height="66" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
+  <text x="433" y="230" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Artificial Intelligence</text>
+  <text x="433" y="247" text-anchor="middle" fill="#9a8a7a" font-size="13">GNN · Generative Models · LLM · Agentic AI</text>
 
-  <!-- Arrow METHODS → APPLICATIONS -->
-  <line x1="600" y1="187" x2="650" y2="187" stroke="#c2b8a8" stroke-width="2"/>
-  <polygon points="647,180 660,187 647,194" fill="#c2b8a8"/>
+  <rect x="281" y="271" width="304" height="66" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
+  <text x="433" y="293" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Transportation Modeling</text>
+  <text x="433" y="310" text-anchor="middle" fill="#9a8a7a" font-size="13">Network Modeling</text>
+  <text x="433" y="327" text-anchor="middle" fill="#9a8a7a" font-size="13">Multimodal Simulation · ABM</text>
 
-  <!-- ========== COLUMN 3: APPLICATIONS (w=285) ========== -->
-  <text x="808" y="30" text-anchor="middle" fill="#506880" font-size="18" font-weight="700" letter-spacing="3">APPLICATIONS</text>
-  <line x1="665" y1="42" x2="950" y2="42" stroke="#c2ced8" stroke-width="1"/>
+  <rect x="281" y="343" width="304" height="66" rx="10" fill="#faf6f1" stroke="#ddd0c2" stroke-width="1" filter="url(#s)"/>
+  <text x="433" y="374" text-anchor="middle" fill="#7a5e3e" font-size="15" font-weight="700">Advanced Statistics</text>
+  <text x="433" y="391" text-anchor="middle" fill="#9a8a7a" font-size="13">Causal Inference · Nonlinear Effects</text>
 
-  <rect x="665" y="55" width="285" height="60" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
-  <text x="808" y="77" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Transportation Planning</text>
-  <text x="808" y="100" text-anchor="middle" fill="#7a8e9e" font-size="14">Demand · Behavior · Simulation</text>
+  <!-- Arrow METHODS to APPLICATIONS -->
+  <line x1="593" y1="232" x2="631" y2="232" stroke="#c2b8a8" stroke-width="2"/>
+  <polygon points="618,225 631,232 618,239" fill="#c2b8a8"/>
 
-  <rect x="665" y="123" width="285" height="60" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
-  <text x="808" y="145" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Policy Evaluation</text>
-  <text x="808" y="168" text-anchor="middle" fill="#7a8e9e" font-size="14">Decarbonization · Demand Mgmt</text>
+  <!-- ===== COLUMN 3: APPLICATIONS (x=631, w=304) ===== -->
+  <text x="783" y="30" text-anchor="middle" fill="#506880" font-size="18" font-weight="700" letter-spacing="3">APPLICATIONS</text>
+  <line x1="631" y1="42" x2="935" y2="42" stroke="#c2ced8" stroke-width="1"/>
 
-  <rect x="665" y="191" width="285" height="60" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
-  <text x="808" y="213" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Complex System Resilience</text>
-  <text x="808" y="236" text-anchor="middle" fill="#7a8e9e" font-size="14">Urban Multi-system Networks</text>
+  <rect x="631" y="55" width="304" height="84" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
+  <text x="783" y="86" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Smart Mobility</text>
+  <text x="783" y="104" text-anchor="middle" fill="#7a8e9e" font-size="13">Supply &amp; Demand · Digital Twin</text>
+  <text x="783" y="122" text-anchor="middle" fill="#7a8e9e" font-size="13">Low-altitude Economy · Aging Mobility</text>
 
-  <rect x="665" y="259" width="285" height="60" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
-  <text x="808" y="281" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Environmental Health</text>
-  <text x="808" y="304" text-anchor="middle" fill="#7a8e9e" font-size="14">Epidemiology · Exposure</text>
+  <rect x="631" y="145" width="304" height="84" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
+  <text x="783" y="176" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Sustainable Transport</text>
+  <text x="783" y="194" text-anchor="middle" fill="#7a8e9e" font-size="13">Emissions · Electrification</text>
+  <text x="783" y="212" text-anchor="middle" fill="#7a8e9e" font-size="13">Demand Management</text>
+
+  <rect x="631" y="235" width="304" height="84" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
+  <text x="783" y="266" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Urban Resilience</text>
+  <text x="783" y="284" text-anchor="middle" fill="#7a8e9e" font-size="13">Disaster Response</text>
+  <text x="783" y="302" text-anchor="middle" fill="#7a8e9e" font-size="13">Cascading Failure · Evacuation</text>
+
+  <rect x="631" y="325" width="304" height="84" rx="10" fill="#f2f5f8" stroke="#c2ced8" stroke-width="1" filter="url(#s)"/>
+  <text x="783" y="365" text-anchor="middle" fill="#3e5e7a" font-size="16" font-weight="700">Public Health</text>
+  <text x="783" y="384" text-anchor="middle" fill="#7a8e9e" font-size="13">Human Exposure · Epidemics · Active Travel</text>
 </svg>
