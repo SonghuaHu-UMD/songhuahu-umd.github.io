@@ -222,8 +222,8 @@ author_profile: true
 
 <nav class="research-nav">
   <a href="#mobility"        style="--hover: var(--c-mob);">Mobility</a>
-  <a href="#sustainability"  style="--hover: var(--c-sus);">Sustainability</a>
   <a href="#resilience"      style="--hover: var(--c-res);">Resilience</a>
+  <a href="#sustainability"  style="--hover: var(--c-sus);">Sustainability</a>
   <a href="#health"          style="--hover: var(--c-hea);">Health</a>
   <a href="#beyond"          style="--hover: var(--c-mis);">Beyond</a>
 </nav>
@@ -294,83 +294,9 @@ author_profile: true
   </div>
 </section>
 
-<!-- ========================================== SUSTAINABILITY ========================================== -->
-<section class="r-section" id="sustainability" style="--accent: var(--c-sus);">
-  <div class="r-eyebrow">02 / Sustainability</div>
-  <p class="r-lead">
-    Transport remains a major source of greenhouse gases and air pollution. My work develops low-cost methods to monitor and predict emissions at scale, advances vehicle electrification, and evaluates urban policies such as speed limits and demand management.
-  </p>
-
-  <div class="r-subhead">Data-driven Emission Inventory</div>
-  <div class="card-grid">
-
-    <div class="card"><a class="card-link" href="https://www.researchsquare.com/article/rs-7256883/v1" aria-label="Read more"></a>
-      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4" aria-label="Camera-based vehicular emission estimation"></video></div>
-      <div class="card-body">
-        <span class="card-venue">Under Review · 2026</span>
-        <p class="card-text">We use computer vision to estimate emissions for each vehicle in traffic camera video. A 2.2-million-image dataset classifies 4,923 car models, and an enhanced COPERT formula adds vehicle speed and acceleration recovered by tracking.</p>
-      </div>
-    </div>
-
-    <div class="card"><a class="card-link" href="https://www.nature.com/articles/s41893-026-01797-9" aria-label="Read more"></a>
-      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s9-policy.mp4" aria-label="Signal-aware emission framework"></video></div>
-      <div class="card-body">
-        <span class="card-venue">Nature Sustainability · 2026</span>
-        <p class="card-text">A city-scale traffic emission framework that fuses camera videos with phone location data. By inferring the timing of every traffic signal, we show that real stop-and-go cycles raise PM and NOx emissions 40 to 60 percent above standard methods.</p>
-      </div>
-    </div>
-
-    <div class="card"><a class="card-link" href="https://www.sciopen.com/article/10.26599/JICV.2026.9210079" aria-label="Read more"></a>
-      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s1-hero.mp4" aria-label="Digital Twin emission platform"></video></div>
-      <div class="card-body">
-        <span class="card-venue">J. Intelligent &amp; Connected Vehicles · 2026</span>
-        <p class="card-text">A Digital Twin platform that estimates and forecasts road traffic emissions in near real time. By combining open repositories with IoT sensors, it lets users test alternative policy scenarios. Demonstrated for Kista, Stockholm with a 3D interactive interface.</p>
-      </div>
-    </div>
-
-    <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0965856425003386" aria-label="Read more"></a>
-      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/zone_30.mp4" aria-label="Zone 30 emission analysis"></video></div>
-      <div class="card-body">
-        <span class="card-venue">TR Part A · 2025</span>
-        <p class="card-text">Using 3.4 million driving trips, we measure how Milan's Zone 30 changes emissions. Citywide changes are small (0.6 to 2.7 percent) but uneven across space and time, with the largest jumps on cross-zone trips at rush hour.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="r-subhead">Vehicle Electrification & Sharing</div>
-  <div class="card-grid">
-
-    <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X2300459X" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/EVBus.jpg" alt="Dynamic wireless charging buses"></div>
-      <div class="card-body">
-        <span class="card-venue">TR Part C · 2023</span>
-        <p class="card-text">A two-level optimization for electric buses with dynamic wireless charging. The upper level decides where to put charging facilities and how big batteries should be; the lower level schedules daily charging under time-of-use electricity prices.</p>
-      </div>
-    </div>
-
-    <div class="card"><a class="card-link" href="https://ieeexplore.ieee.org/abstract/document/9034087" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/EVCARD.jpg" alt="EVCARD vehicle selection"></div>
-      <div class="card-body">
-        <span class="card-venue">IEEE ITSM · 2020</span>
-        <p class="card-text">Five million EVCARD trips show that users avoid older, smaller, and pricier shared electric vehicles. State of charge matters most. Users are "greedy": they pick the most-charged car even when their actual trip is short.</p>
-      </div>
-    </div>
-
-    <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S1361920919311058" aria-label="Read more"></a>
-      <div class="card-img"><img loading="lazy" decoding="async" src="/images/SharedEV.png" alt="Shared EV simulation"></div>
-      <div class="card-body">
-        <span class="card-venue">TR Part D · 2019</span>
-        <p class="card-text">A simulation shows how limited battery capacity hurts both user satisfaction and fleet utilization in shared electric vehicles. Faster charging, longer range, and a larger fleet-to-trip ratio all help reduce the problem.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
 <!-- ========================================== RESILIENCE ========================================== -->
 <section class="r-section" id="resilience" style="--accent: var(--c-res);">
-  <div class="r-eyebrow">03 / Resilience</div>
+  <div class="r-eyebrow">02 / Resilience</div>
   <p class="r-lead">
     Disasters, pandemics, and extreme weather profoundly disrupt how people travel. My work measures travel patterns before, during, and after such events, with a particular focus on which underserved communities recover the slowest.
   </p>
@@ -446,6 +372,80 @@ author_profile: true
       <div class="card-body">
         <span class="card-venue">IEEE ITSC · 2018</span>
         <p class="card-text">We combine social media posts, rainfall, and traffic flow data to automatically detect flooded urban roads in Shenzhen. The system catches 68 to 90 percent of floods with only 1.5 to 2 percent false alarms.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========================================== SUSTAINABILITY ========================================== -->
+<section class="r-section" id="sustainability" style="--accent: var(--c-sus);">
+  <div class="r-eyebrow">03 / Sustainability</div>
+  <p class="r-lead">
+    Transport remains a major source of greenhouse gases and air pollution. My work develops low-cost methods to monitor and predict emissions at scale, advances vehicle electrification, and evaluates urban policies such as speed limits and demand management.
+  </p>
+
+  <div class="r-subhead">Data-driven Emission Inventory</div>
+  <div class="card-grid">
+
+    <div class="card"><a class="card-link" href="https://www.researchsquare.com/article/rs-7256883/v1" aria-label="Read more"></a>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/camera0.mp4" aria-label="Camera-based vehicular emission estimation"></video></div>
+      <div class="card-body">
+        <span class="card-venue">Under Review · 2026</span>
+        <p class="card-text">We use computer vision to estimate emissions for each vehicle in traffic camera video. A 2.2-million-image dataset classifies 4,923 car models, and an enhanced COPERT formula adds vehicle speed and acceleration recovered by tracking.</p>
+      </div>
+    </div>
+
+    <div class="card"><a class="card-link" href="https://www.nature.com/articles/s41893-026-01797-9" aria-label="Read more"></a>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s9-policy.mp4" aria-label="Signal-aware emission framework"></video></div>
+      <div class="card-body">
+        <span class="card-venue">Nature Sustainability · 2026</span>
+        <p class="card-text">A city-scale traffic emission framework that fuses camera videos with phone location data. By inferring the timing of every traffic signal, we show that real stop-and-go cycles raise PM and NOx emissions 40 to 60 percent above standard methods.</p>
+      </div>
+    </div>
+
+    <div class="card"><a class="card-link" href="https://www.sciopen.com/article/10.26599/JICV.2026.9210079" aria-label="Read more"></a>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/s1-hero.mp4" aria-label="Digital Twin emission platform"></video></div>
+      <div class="card-body">
+        <span class="card-venue">J. Intelligent &amp; Connected Vehicles · 2026</span>
+        <p class="card-text">A Digital Twin platform that estimates and forecasts road traffic emissions in near real time. By combining open repositories with IoT sensors, it lets users test alternative policy scenarios. Demonstrated for Kista, Stockholm with a 3D interactive interface.</p>
+      </div>
+    </div>
+
+    <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0965856425003386" aria-label="Read more"></a>
+      <div class="card-img"><video autoplay loop muted playsinline preload="metadata" src="/images/zone_30.mp4" aria-label="Zone 30 emission analysis"></video></div>
+      <div class="card-body">
+        <span class="card-venue">TR Part A · 2025</span>
+        <p class="card-text">Using 3.4 million driving trips, we measure how Milan's Zone 30 changes emissions. Citywide changes are small (0.6 to 2.7 percent) but uneven across space and time, with the largest jumps on cross-zone trips at rush hour.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="r-subhead">Vehicle Electrification & Sharing</div>
+  <div class="card-grid">
+
+    <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S0968090X2300459X" aria-label="Read more"></a>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/EVBus.jpg" alt="Dynamic wireless charging buses"></div>
+      <div class="card-body">
+        <span class="card-venue">TR Part C · 2023</span>
+        <p class="card-text">A two-level optimization for electric buses with dynamic wireless charging. The upper level decides where to put charging facilities and how big batteries should be; the lower level schedules daily charging under time-of-use electricity prices.</p>
+      </div>
+    </div>
+
+    <div class="card"><a class="card-link" href="https://ieeexplore.ieee.org/abstract/document/9034087" aria-label="Read more"></a>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/EVCARD.jpg" alt="EVCARD vehicle selection"></div>
+      <div class="card-body">
+        <span class="card-venue">IEEE ITSM · 2020</span>
+        <p class="card-text">Five million EVCARD trips show that users avoid older, smaller, and pricier shared electric vehicles. State of charge matters most. Users are "greedy": they pick the most-charged car even when their actual trip is short.</p>
+      </div>
+    </div>
+
+    <div class="card"><a class="card-link" href="https://www.sciencedirect.com/science/article/pii/S1361920919311058" aria-label="Read more"></a>
+      <div class="card-img"><img loading="lazy" decoding="async" src="/images/SharedEV.png" alt="Shared EV simulation"></div>
+      <div class="card-body">
+        <span class="card-venue">TR Part D · 2019</span>
+        <p class="card-text">A simulation shows how limited battery capacity hurts both user satisfaction and fleet utilization in shared electric vehicles. Faster charging, longer range, and a larger fleet-to-trip ratio all help reduce the problem.</p>
       </div>
     </div>
 
