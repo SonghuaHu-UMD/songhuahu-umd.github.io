@@ -90,13 +90,28 @@
 {% comment %}Both tests are needed: a missing key is nil (not != ""), and in Liquid "" is truthy.{% endcomment %}
 {% if site.goatcounter and site.goatcounter != "" %}
 {% comment %}
-  Visitor counting for the sidebar map. Absolute https:// on purpose: the old
-  ClustrMaps embed used a protocol-relative src, which silently became an
-  unreachable https:// request once that host went away.
+  Visitor counting for the sidebar map.
+
+  count.js is vendored rather than loaded from GoatCounter's own gc.zgo.at,
+  because that domain is DNS-poisoned in mainland China: all five mainland
+  resolvers tested answer with 157.240.17.35, a Facebook address. The script
+  never loads there, and because it is async it fails silently -- those readers
+  see the page perfectly well and are simply never counted. This site and the
+  /count endpoint below both resolve correctly from the mainland, so moving just
+  this one file onto our own origin closes the gap.
+
+  To update it:  curl -o assets/js/count.js https://gc.zgo.at/count.js
+  It is ISC licensed, and takes its endpoint from data-goatcounter rather than
+  from wherever it happens to be hosted, so a straight copy is all it needs.
+
+  That endpoint stays an absolute https:// URL on purpose: the old ClustrMaps
+  embed used a protocol-relative src, which silently became an unreachable
+  https:// request once that host went away.
+
   Liquid comment, not <!-- -->, so this maintainer note is not shipped to readers.
 {% endcomment %}
 <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
-        async src="https://gc.zgo.at/count.js"></script>
+        async src="{{ site.baseurl }}/assets/js/count.js"></script>
 {% endif %}
 
 <!-- end custom head snippets -->
