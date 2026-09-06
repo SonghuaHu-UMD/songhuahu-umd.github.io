@@ -74,6 +74,8 @@ exclude:
   - log
   - node_modules
   - package.json
+  # Build-time only: the visitor map is generated here, not fetched from here.
+  - scripts
   - tmp
   - vendor
 keep_files:

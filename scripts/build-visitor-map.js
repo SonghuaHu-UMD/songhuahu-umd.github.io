@@ -5,11 +5,13 @@
  * Usage:
  *   node scripts/build-visitor-map.js --geometry     # (re)build the vendored world outline
  *   node scripts/build-visitor-map.js                # refresh visitor counts from analytics
+ *   node scripts/build-visitor-map.js --relocate     # re-place regions, no API call
  *   node scripts/build-visitor-map.js --geometry --force
  *
  * Outputs:
- *   assets/world_land.json    vendored land outline + country centroids (committed, rarely changes)
- *   assets/visitor_map.json   per-country visitor counts (refreshed periodically)
+ *   assets/world_land.json      vendored land outline + country centroids (committed, rarely changes)
+ *   scripts/admin1_points.json  vendored state/province label points (committed, rarely changes)
+ *   assets/visitor_map.json     per-country visitor counts (refreshed periodically)
  *
  * Why vendored: ClustrMaps died because the site depended on a third-party host at runtime
  * (cdn.clustrmaps.com is now NXDOMAIN and clustrmaps.com is a parked domain with no HTTPS).
@@ -28,9 +30,17 @@ const path = require('path');
 const ASSETS = path.resolve(__dirname, '..', 'assets');
 const LAND_PATH = path.join(ASSETS, 'world_land.json');
 const VISITORS_PATH = path.join(ASSETS, 'visitor_map.json');
+/* Deliberately not under assets/: the browser never fetches this one. It is build-time
+   input, and _config.yml keeps scripts/ out of the published site. */
+const ADMIN1_PATH = path.join(__dirname, 'admin1_points.json');
 
 const LAND_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/land-110m.json';
 const COUNTRIES_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
+/* Natural Earth's admin-1 layer: every state and province on earth, each with a label
+   point. 12 MB, so it is distilled once at --geometry time and the daily refresh reads
+   the distilled copy rather than the network. world-atlas has no admin-1 layer at all,
+   and Natural Earth's own 50m cut of it covers only nine countries. */
+const ADMIN1_URL = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson';
 
 /* The sidebar map renders ~200px wide, so one pixel spans ~1.8deg of longitude.
    Rounding coordinates to 1 decimal (~11km) is far below what that can resolve
@@ -39,6 +49,7 @@ const COORD_PRECISION = 1;
 
 const argv = process.argv.slice(2);
 const wantGeometry = argv.includes('--geometry');
+const wantRelocate = argv.includes('--relocate');
 const force = argv.includes('--force');
 
 /* ---------------------------------------------------------------- TopoJSON --
@@ -147,6 +158,152 @@ async function buildGeometry() {
   console.log(`geometry: wrote ${path.relative(process.cwd(), LAND_PATH)} (${land.length} rings, ${Object.keys(centroids).length} centroids, ${kb} KB)`);
 }
 
+/* ----------------------------------------------------------------- admin-1 --
+ * Natural Earth ships one label point per state and province, placed where a
+ * cartographer would set the name rather than at the polygon centroid -- which is also
+ * where a dot belongs. Florida's centroid falls in the Gulf; its label point does not.
+ */
+function normName(s) {
+  return String(s || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')  /* Hyōgo -> hyogo */
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+async function buildAdmin1() {
+  if (fs.existsSync(ADMIN1_PATH) && !force) {
+    console.log(`admin1: ${path.relative(process.cwd(), ADMIN1_PATH)} exists, skipping (--force to rebuild)`);
+    return;
+  }
+
+  console.log('admin1: fetching Natural Earth admin-1 (~12 MB)...');
+  const fc = await getJSON(ADMIN1_URL);
+
+  /* Three indexes. The analytics API identifies a region by ISO 3166-2 code, but rows
+     recorded before that was kept carry only the spelled-out region name -- and, for
+     --relocate, only the spelled-out country name too. */
+  const at = {};
+  const names = {};
+  const countries = {};
+  /* Filled in after the main pass, so that a real unit always wins a name it shares with
+     a parent region or with some other unit's alternate spelling. */
+  const alts = {};
+  const parents = {};
+
+  for (const feature of fc.features) {
+    const p = feature.properties || {};
+    if (!p.iso_a2 || p.latitude == null || p.longitude == null) continue;
+    if (p.admin) countries[normName(p.admin)] = p.iso_a2;
+    /* A handful of units -- disputed areas, some dependencies -- carry no ISO code.
+       Give them a synthetic one so the name index still has somewhere to point. */
+    const code = /^[A-Z]{2}-/.test(p.iso_3166_2 || '')
+      ? p.iso_3166_2
+      : `${p.iso_a2}-#${normName(p.name).replace(/ /g, '')}`;
+    if (!at[code]) at[code] = [round(p.longitude), round(p.latitude)];
+    /* Natural Earth spells the same place up to four ways across these fields, and we do
+       not get to know which one the analytics provider picked. Index them all. */
+    for (const alias of new Set([p.name, p.name_en, p.gn_name, p.woe_name].map(normName))) {
+      if (!alias) continue;
+      const key = `${p.iso_a2}|${alias}`;
+      if (!(key in names)) names[key] = code;
+    }
+    for (const alias of String(p.name_alt || '').split('|').map(normName)) {
+      if (!alias) continue;
+      const key = `${p.iso_a2}|${alias}`;
+      if (!(key in alts)) alts[key] = code;
+    }
+    /* Natural Earth splits some countries finer than the analytics does: Italy comes back
+       as 110 provinces here but as 20 regions there. Each unit names its parent, so roll
+       the members up and index that level too. */
+    if (p.region) {
+      const up = /^[A-Z]{2}-/.test(p.region_cod || '')
+        ? p.region_cod
+        : `${p.iso_a2}-#r${normName(p.region).replace(/ /g, '')}`;
+      const acc = parents[up] || (parents[up] = { iso: p.iso_a2, name: p.region, lon: 0, lat: 0, n: 0 });
+      acc.lon += p.longitude;
+      acc.lat += p.latitude;
+      acc.n += 1;
+    }
+  }
+
+  /* Mean of the member label points. Unweighted, so it drifts toward whichever half of a
+     region is cut into more provinces -- immaterial on a map 200px wide. */
+  for (const [code, acc] of Object.entries(parents)) {
+    if (!at[code]) at[code] = [round(acc.lon / acc.n), round(acc.lat / acc.n)];
+    const key = `${acc.iso}|${normName(acc.name)}`;
+    if (!(key in names)) names[key] = code;
+  }
+  for (const [key, code] of Object.entries(alts)) {
+    if (!(key in names)) names[key] = code;
+  }
+
+  fs.writeFileSync(ADMIN1_PATH, JSON.stringify({ at, names, countries }));
+  const kb = (fs.statSync(ADMIN1_PATH).size / 1024).toFixed(0);
+  console.log(`admin1: wrote ${path.relative(process.cwd(), ADMIN1_PATH)} (${Object.keys(at).length} units, ${Object.keys(names).length} names, ${kb} KB)`);
+}
+
+/* Natural Earth has no unit for these, because they sit above admin-1: GoatCounter
+   reports the UK by constituent country and Ireland by province. Without them those two
+   would be the only European rows that never resolve to a dot. */
+const EXTRA_REGION_POINTS = {
+  'GB-ENG': [-1.5, 52.6],
+  'GB-SCT': [-4.2, 56.8],
+  'GB-WLS': [-3.8, 52.3],
+  'GB-NIR': [-6.7, 54.6],
+  'IE-L': [-7.0, 53.2],
+  'IE-M': [-8.8, 52.2],
+  'IE-C': [-8.9, 53.7],
+  'IE-U': [-7.6, 54.5],
+};
+const EXTRA_REGION_NAMES = {
+  'GB|england': 'GB-ENG',
+  'GB|scotland': 'GB-SCT',
+  'GB|wales': 'GB-WLS',
+  'GB|northern ireland': 'GB-NIR',
+  'IE|leinster': 'IE-L',
+  'IE|munster': 'IE-M',
+  'IE|connacht': 'IE-C',
+  'IE|connaught': 'IE-C',
+  'IE|ulster': 'IE-U',
+};
+
+/* Two lookups over the vendored table: locate() places a region, countryCode() recovers
+   an ISO 3166-1 alpha-2 code from a country's display name for rows that predate ids. */
+function loadAdmin1() {
+  if (!fs.existsSync(ADMIN1_PATH)) {
+    throw new Error(`${path.relative(process.cwd(), ADMIN1_PATH)} is missing - run with --geometry first.`);
+  }
+  const { at, names, countries } = JSON.parse(fs.readFileSync(ADMIN1_PATH, 'utf8'));
+  const points = { ...at, ...EXTRA_REGION_POINTS };
+  const index = { ...names, ...EXTRA_REGION_NAMES };
+
+  return {
+    locate(countryId, region) {
+      /* A region id arrives either as a bare subdivision code or as a full ISO 3166-2
+         one; normalise to the latter, then fall back to the spelled-out name. */
+      const raw = String(region.id || '');
+      const code = raw.includes('-') ? raw : (raw && countryId ? `${countryId}-${raw}` : '');
+      return points[code] || points[index[`${countryId}|${normName(region.name)}`]] || null;
+    },
+    /* Natural Earth's own spelling first, then the alias table that already maps the
+       analytics provider's names onto it. */
+    countryCode(label) {
+      return countries[normName(label)] || countries[normName(NAME_ALIASES[label])] || '';
+    },
+  };
+}
+
+/* A region that cannot be placed keeps its name and count: it still belongs in the hover
+   readout and in the country's total, it just gets no dot of its own. */
+function placeRegions(locate, countryId, regions) {
+  return regions.map((r) => {
+    const at = locate(countryId, r);
+    return at ? { name: r.name, count: r.count, lon: at[0], lat: at[1] } : { name: r.name, count: r.count };
+  });
+}
+
 /* ---------------------------------------------------------------- visitors --
  * GoatCounter names a few countries differently from Natural Earth. Only the
  * mismatches that actually occur need an entry.
@@ -244,13 +401,15 @@ async function apiGet(base, headers, endpoint, params) {
   }
 }
 
-/* A country dot says "someone in France read this". A region line under it says which
-   province -- harmless at 29 US hits spread over 7 states, but on a country with a
-   single visit it pins one person to one province on a public page. Hence the floors:
-   only break down countries with real traffic, and never surface a lone visitor. */
+/* A country dot says "someone in France read this". A region dot says which province --
+   harmless at 29 US hits spread over 7 states, but on a country with a single visit it
+   pins one person to one province on a public page. Hence the floors: only break down
+   countries with real traffic, and never surface a lone visitor. The cap is generous
+   because each placed region becomes a dot and whatever it excludes is lumped back onto
+   the country dot; the hover readout does its own, tighter trimming. */
 const REGION_MIN_COUNTRY_HITS = 5;
 const REGION_MIN_HITS = 2;
-const REGION_MAX = 4;
+const REGION_MAX = 12;
 
 async function fetchGoatCounter(site, token) {
   const base = `https://${site}.goatcounter.com/api/v0`;
@@ -279,7 +438,7 @@ async function fetchGoatCounter(site, token) {
       .filter((r) => r.name && r.count >= REGION_MIN_HITS)
       .sort((a, b) => b.count - a.count)
       .slice(0, REGION_MAX)
-      .map((r) => ({ name: r.name, count: r.count }));
+      .map((r) => ({ id: r.id, name: r.name, count: r.count }));
     if (regions.length) country.regions = regions;
   }
 
@@ -308,6 +467,7 @@ async function buildVisitors() {
   }
   const { centroids } = JSON.parse(fs.readFileSync(LAND_PATH, 'utf8'));
   const lookup = { ...centroids, ...EXTRA_CENTROIDS };
+  const { locate } = loadAdmin1();
 
   console.log(`visitors: querying GoatCounter site "${site}"...`);
   const stats = await fetchGoatCounter(site, token);
@@ -315,7 +475,7 @@ async function buildVisitors() {
   const points = [];
   const unmatched = [];
   let total = 0;
-  for (const { name, count, regions } of stats) {
+  for (const { id, name, count, regions } of stats) {
     total += count;
     const key = lookup[name] ? name : NAME_ALIASES[name];
     const at = key ? lookup[key] : undefined;
@@ -323,8 +483,10 @@ async function buildVisitors() {
       if (name) unmatched.push(name);
       continue;
     }
-    const point = { lon: at[0], lat: at[1], count, label: name };
-    if (regions) point.regions = regions;
+    /* id is the country's ISO 3166-1 alpha-2 code. Kept in the output so --relocate can
+       re-run the region lookup later without another API round trip. */
+    const point = { id, lon: at[0], lat: at[1], count, label: name };
+    if (regions) point.regions = placeRegions(locate, id, regions);
     points.push(point);
   }
   points.sort((a, b) => b.count - a.count);
@@ -358,9 +520,41 @@ async function buildVisitors() {
   }
 }
 
+/* Re-place every region in the existing visitor_map.json against the current admin-1
+   table, touching no count and calling no API. Backfills coordinates into a file written
+   before region dots existed, and re-seats everything if the table is ever rebuilt. */
+function relocateRegions() {
+  const rel = path.relative(process.cwd(), VISITORS_PATH);
+  if (!fs.existsSync(VISITORS_PATH)) throw new Error(`${rel} does not exist yet.`);
+  const { locate, countryCode } = loadAdmin1();
+  const data = JSON.parse(fs.readFileSync(VISITORS_PATH, 'utf8'));
+
+  let placed = 0;
+  const stranded = [];
+  for (const point of data.points || []) {
+    if (!point.regions) continue;
+    if (!point.id) point.id = countryCode(point.label);
+    point.regions = placeRegions(locate, point.id, point.regions);
+    for (const r of point.regions) {
+      if (r.lon != null) placed++; else stranded.push(`${point.label}/${r.name}`);
+    }
+  }
+
+  fs.writeFileSync(VISITORS_PATH, JSON.stringify(data));
+  console.log(`relocate: placed ${placed} region(s) in ${rel}.`);
+  if (stranded.length) {
+    console.warn(`relocate: no point for ${stranded.length}: ${stranded.join(', ')}`);
+    console.warn('relocate: add them to EXTRA_REGION_POINTS / EXTRA_REGION_NAMES in this script.');
+  }
+}
+
 (async () => {
   try {
-    if (wantGeometry) await buildGeometry();
+    if (wantGeometry) {
+      await buildGeometry();
+      await buildAdmin1();
+    }
+    if (wantRelocate) return relocateRegions();
     await buildVisitors();
   } catch (err) {
     console.error('build-visitor-map failed:', err.message);

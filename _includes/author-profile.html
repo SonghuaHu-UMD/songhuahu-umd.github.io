@@ -138,8 +138,12 @@
     var holder = document.querySelector('.author__map');
     if (!holder || !window.fetch) return;
 
-    var LAND_URL = '{{ base_path }}/assets/world_land.json';
-    var VISITORS_URL = '{{ base_path }}/assets/visitor_map.json';
+    /* site.baseurl, not base_path: base_path is absolute (site.url), which would send a
+       local preview to fetch the deployed site's data instead of the build in front of
+       you. These two live on the same origin as the page, so a root-relative path is both
+       correct in production and honest locally. */
+    var LAND_URL = '{{ site.baseurl }}/assets/world_land.json';
+    var VISITORS_URL = '{{ site.baseurl }}/assets/visitor_map.json';
 
     /* Equirectangular, clipped to inhabited latitudes: dropping Antarctica turns a
        2:1 box into 2.5:1 and stops the sidebar wasting height on empty ice. */
@@ -161,13 +165,38 @@
       var points = (data && data.points) || [];
       if (!points.length) return;
 
+      /* A dot per state or province the analytics could narrow a visit down to, so a
+         country as wide as the US reads as a coast-to-coast spread instead of one blob
+         over Kansas. What it could not place -- regions under the privacy floor, hits
+         that carry no region at all -- stays on the country dot, so the dots covering a
+         country still sum to its total and no visit is drawn twice. */
+      var dots = [];
+      for (var i = 0; i < points.length; i++) {
+        var p = points[i], regions = p.regions || [], rest = p.count;
+        for (var j = 0; j < regions.length; j++) {
+          var r = regions[j];
+          /* No coordinates: too small or too new for the vendored table. It keeps its
+             line in the readout below, it just does not get a dot. */
+          if (r.lon == null) continue;
+          dots.push({ lon: r.lon, lat: r.lat, count: r.count, head: r.name + ' · ' + r.count, sub: p.label });
+          rest -= r.count;
+        }
+        if (rest <= 0) continue;
+        var dot = { lon: p.lon, lat: p.lat, count: rest, head: p.label + ' · ' + p.count };
+        if (rest < p.count) dot.sub = rest + ' elsewhere in the country';
+        /* Nothing placed at all: name the largest few in text, the way this used to. */
+        else if (regions.length) dot.sub = regions.slice(0, 4).map(function (x) { return x.name + ' ' + x.count; }).join(' · ');
+        dots.push(dot);
+      }
+      if (!dots.length) return;
+      /* Largest first: drawn in this order, a small dot sitting inside a big one ends up
+         on top of it rather than under it. */
+      dots.sort(function (a, b) { return b.count - a.count; });
+
       var canvas = holder.querySelector('.author__map-canvas');
       var ctx = canvas.getContext('2d');
       var tip = null;
-      var maxCount = points[0].count;
-      for (var i = 1; i < points.length; i++) {
-        if (points[i].count > maxCount) maxCount = points[i].count;
-      }
+      var maxCount = dots[0].count;
 
       var w = 0, h = 0;
       function project(lon, lat) {
@@ -204,10 +233,10 @@
         ctx.fill();
 
         ctx.fillStyle = 'rgba(230, 126, 34, 0.72)';
-        for (var i = 0; i < points.length; i++) {
-          var c = project(points[i].lon, points[i].lat);
+        for (var i = 0; i < dots.length; i++) {
+          var c = project(dots[i].lon, dots[i].lat);
           ctx.beginPath();
-          ctx.arc(c[0], c[1], radius(points[i].count), 0, Math.PI * 2);
+          ctx.arc(c[0], c[1], radius(dots[i].count), 0, Math.PI * 2);
           ctx.fill();
         }
       }
@@ -226,15 +255,15 @@
         (points.length === 1 ? ' location' : ' locations');
       if (data.generated) caption.title = 'Updated ' + data.generated;
 
-      /* Nearest-dot hover readout. Cheap enough at this point count to just scan. */
+      /* Nearest-dot hover readout. Cheap enough at this dot count to just scan. */
       canvas.addEventListener('mousemove', function (e) {
         var box = canvas.getBoundingClientRect();
         var mx = e.clientX - box.left, my = e.clientY - box.top;
         var hit = null, best = Infinity;
-        for (var i = 0; i < points.length; i++) {
-          var c = project(points[i].lon, points[i].lat);
+        for (var i = 0; i < dots.length; i++) {
+          var c = project(dots[i].lon, dots[i].lat);
           var d = Math.hypot(c[0] - mx, c[1] - my);
-          if (d < Math.max(radius(points[i].count), 5) && d < best) { best = d; hit = points[i]; }
+          if (d < Math.max(radius(dots[i].count), 5) && d < best) { best = d; hit = dots[i]; }
         }
         if (!hit) { if (tip) tip.style.opacity = 0; canvas.style.cursor = ''; return; }
         if (!tip) {
@@ -247,14 +276,12 @@
            API, and a place name is not something to trust into markup. */
         tip.textContent = '';
         var head = document.createElement('div');
-        head.textContent = hit.label + ' · ' + hit.count;
+        head.textContent = hit.head;
         tip.appendChild(head);
-        if (hit.regions && hit.regions.length) {
+        if (hit.sub) {
           var sub = document.createElement('div');
           sub.className = 'author__map-tip-sub';
-          sub.textContent = hit.regions.map(function (r) {
-            return r.name + ' ' + r.count;
-          }).join(' · ');
+          sub.textContent = hit.sub;
           tip.appendChild(sub);
         }
         tip.style.opacity = 1;
