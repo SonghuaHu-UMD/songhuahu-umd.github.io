@@ -22,9 +22,11 @@ name: Refresh count.js
 
 on:
   schedule:
-    # Weekly, Monday 21:23 UTC = 05:23 Asia/Hong_Kong. Off the hour for the same reason
-    # as the visitor map refresh: jobs scheduled at :00 queue behind everyone else's.
-    - cron: '23 21 * * 1'
+    # Monthly, the 9th at 21:23 UTC = 05:23 Asia/Hong_Kong. Upstream moves about once a
+    # year, so weekly would be 51 wasted runs to catch a change a few weeks sooner.
+    # Off the hour, and off the 1st, for the same reason the visitor map refresh is off
+    # the hour: jobs scheduled at the obvious times queue behind everyone else's.
+    - cron: '23 21 9 * *'
   workflow_dispatch:
 
 permissions:
