@@ -1,0 +1,129 @@
+name: Refresh count.js
+
+# Keeps the vendored copy of GoatCounter's tracking script in step with upstream.
+#
+# assets/js/count.js is a byte-for-byte copy of https://gc.zgo.at/count.js. It is
+# vendored because that host is DNS-poisoned in mainland China, so loading it from
+# there means mainland readers are never counted -- the full reasoning is in
+# _includes/head/custom.html. Vendoring froze the file; this job unfreezes it.
+#
+# It opens a pull request instead of committing, which is the one place it deliberately
+# differs from refresh-visitor-map.yml. That job commits inert JSON that only our own
+# code reads. This one would be committing executable JavaScript served to every reader
+# of the site, so a compromised or hijacked upstream would reach readers with nobody
+# having looked at it. Upstream changes roughly once a year, so the cost of merging by
+# hand is a click, and the diff is worth the glance.
+#
+# One repository setting is required, and it is off by default:
+#   Settings -> Actions -> General -> Workflow permissions
+#   -> "Allow GitHub Actions to create and approve pull requests"
+# Without it every step here succeeds until `gh pr create`, which fails with
+# "GitHub Actions is not permitted to create or approve pull requests".
+
+on:
+  schedule:
+    # Weekly, Monday 21:23 UTC = 05:23 Asia/Hong_Kong. Off the hour for the same reason
+    # as the visitor map refresh: jobs scheduled at :00 queue behind everyone else's.
+    - cron: '23 21 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-count-js
+  cancel-in-progress: false
+
+env:
+  UPSTREAM: https://gc.zgo.at/count.js
+  VENDORED: assets/js/count.js
+  BRANCH: chore/update-count-js
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Fetch upstream count.js
+        run: |
+          curl -fsSL --retry 3 --retry-delay 5 -o /tmp/count.js "$UPSTREAM"
+          # An error page or a truncated response would otherwise be vendored as if it
+          # were the script, and the site would quietly stop counting anything at all.
+          if [ ! -s /tmp/count.js ] || ! grep -q 'window.goatcounter' /tmp/count.js; then
+            echo "::error::$UPSTREAM did not return something that looks like count.js."
+            exit 1
+          fi
+
+      - name: Compare with the vendored copy
+        id: check
+        run: |
+          if [ -f "$VENDORED" ] && cmp -s /tmp/count.js "$VENDORED"; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Vendored count.js is already current ($(wc -c < "$VENDORED") bytes)."
+            exit 0
+          fi
+
+          # Absent only if someone deleted it, but reporting an empty sha256 in the pull
+          # request would read as "upstream shipped an empty file", which is worse.
+          if [ -f "$VENDORED" ]; then
+            old_sha=$(sha256sum "$VENDORED" | cut -d' ' -f1)
+            old_size=$(wc -c < "$VENDORED")
+          else
+            old_sha='(none, file absent)'
+            old_size=0
+          fi
+
+          {
+            echo "changed=true"
+            echo "old_sha=$old_sha"
+            echo "old_size=$old_size"
+            echo "new_sha=$(sha256sum /tmp/count.js | cut -d' ' -f1)"
+            echo "new_size=$(wc -c < /tmp/count.js)"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Open a pull request
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OLD_SHA: ${{ steps.check.outputs.old_sha }}
+          NEW_SHA: ${{ steps.check.outputs.new_sha }}
+          OLD_SIZE: ${{ steps.check.outputs.old_size }}
+          NEW_SIZE: ${{ steps.check.outputs.new_size }}
+        run: |
+          cp /tmp/count.js "$VENDORED"
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git checkout -B "$BRANCH"
+          git add "$VENDORED"
+          git commit -m 'chore: update the vendored count.js'
+          # Force: this branch is scratch space holding whatever upstream currently is,
+          # not a history worth preserving. If a PR from an earlier run is still open,
+          # this updates it in place.
+          git push --force origin "$BRANCH"
+
+          if [ -n "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[].number')" ]; then
+            echo 'An earlier pull request is still open; the force-push updated it.'
+            exit 0
+          fi
+
+          cat > /tmp/body.md <<EOF
+          Upstream \`count.js\` has changed.
+
+          |          | size       | sha256      |
+          | -------- | ---------- | ----------- |
+          | vendored | $OLD_SIZE B | \`$OLD_SHA\` |
+          | upstream | $NEW_SIZE B | \`$NEW_SHA\` |
+
+          \`$VENDORED\` is a byte-for-byte copy of $UPSTREAM, vendored because that host
+          is DNS-poisoned in mainland China and readers there would otherwise never be
+          counted. See the note in \`_includes/head/custom.html\`.
+
+          Worth reading the diff before merging: this file is executable JavaScript
+          served to every reader of the site.
+          EOF
+
+          gh pr create --head "$BRANCH" --base master \
+            --title 'chore: update the vendored count.js' \
+            --body-file /tmp/body.md
