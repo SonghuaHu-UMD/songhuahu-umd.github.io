@@ -434,12 +434,29 @@ async function fetchGoatCounter(site, token) {
       start: STATS_START,
       limit: '100',
     });
-    const regions = (detail.stats || [])
-      .filter((r) => r.name && r.count >= REGION_MIN_HITS)
+    /* Two different things look identical from the outside when a country ends up with
+       no dots of its own: the API returned no region for those hits at all (not in the
+       site's collect_regions, or the GeoIP could not place them), or it did and every
+       one of them sits under the privacy floor. Say which, because the first is a
+       setting to go and change and the second only needs more traffic. */
+    const rows = detail.stats || [];
+    const named = rows.filter((r) => r.name);
+    const regions = named
+      .filter((r) => r.count >= REGION_MIN_HITS)
       .sort((a, b) => b.count - a.count)
       .slice(0, REGION_MAX)
       .map((r) => ({ id: r.id, name: r.name, count: r.count }));
-    if (regions.length) country.regions = regions;
+
+    if (regions.length) {
+      country.regions = regions;
+    } else if (!named.length) {
+      console.log(`visitors: ${country.name} (${country.count} visits) reports no region at all`
+        + ` -- ${rows.length} row(s) back, none named. Check collect_regions for ${country.id}.`);
+    } else {
+      const largest = Math.max(...named.map((r) => r.count));
+      console.log(`visitors: ${country.name} (${country.count} visits) has ${named.length} region(s),`
+        + ` largest ${largest} < ${REGION_MIN_HITS} -- all below the privacy floor.`);
+    }
   }
 
   const withRegions = countries.filter((c) => c.regions).length;
