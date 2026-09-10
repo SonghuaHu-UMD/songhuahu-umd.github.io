@@ -411,6 +411,44 @@ const REGION_MIN_COUNTRY_HITS = 5;
 const REGION_MIN_HITS = 2;
 const REGION_MAX = 12;
 
+/* Regions the reader's own browser reported, arriving as an event named "region/CN-ZJ".
+   See the note in _includes/head/custom.html for why mainland China needs this and
+   nowhere else does. */
+const REGION_EVENT = /^region\/([A-Z]{2})-([A-Z0-9]{1,3})$/;
+
+/* ipwho.is spells provinces out ("Zhejiang Sheng"). The vendored admin-1 table indexes
+   both spellings, so either would place; the short one is what belongs on a 200px map. */
+const REGION_SUFFIX = / (Sheng|Shi|Zizhiqu|Province|Municipality)$/i;
+
+/* stats/hits lists pages and events together, newest-largest first, 100 to a page. This
+   site has a few dozen paths, so the loop is really a formality -- but say so rather
+   than silently truncating if that ever stops being true. */
+async function fetchRegionEvents(base, headers) {
+  const found = new Map();
+  for (let offset = 0; offset < 500; offset += 100) {
+    const data = await apiGet(base, headers, 'stats/hits', {
+      start: STATS_START,
+      limit: '100',
+      offset: String(offset),
+    });
+    for (const hit of data.hits || []) {
+      if (!hit.event) continue;
+      const m = REGION_EVENT.exec(hit.path || '');
+      if (!m) continue;
+      const code = `${m[1]}-${m[2]}`;
+      const prev = found.get(code);
+      const name = String(hit.title || '').replace(REGION_SUFFIX, '').trim();
+      found.set(code, {
+        count: (prev ? prev.count : 0) + hit.count,
+        name: name || (prev && prev.name) || code,
+      });
+    }
+    if (!data.more) return found;
+  }
+  console.warn('visitors: stopped paging stats/hits at 500 rows; region events may be incomplete.');
+  return found;
+}
+
 async function fetchGoatCounter(site, token) {
   const base = `https://${site}.goatcounter.com/api/v0`;
   const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
@@ -424,12 +462,29 @@ async function fetchGoatCounter(site, token) {
   if (data.more) console.warn('visitors: API reported more rows than the limit returned; raise limit.');
   const countries = (data.stats || []).map((s) => ({ id: s.id, name: s.name, count: s.count }));
 
+  /* What readers reported about themselves. GoatCounter records a location for every
+     hit, events included, so each of these also landed on its own country's count:
+     take them back out before anything downstream reads it. The arithmetic is exact --
+     an event is only ever sent alongside a pageview from the same reader -- except for
+     one whose browser says China while GeoLite2 says elsewhere, which costs a single hit
+     in each of two countries. */
+  const reported = await fetchRegionEvents(base, headers);
+  const reportedFor = (id) => [...reported].filter(([code]) => code.startsWith(`${id}-`));
+  for (const country of countries) {
+    const mine = reportedFor(country.id);
+    if (mine.length) {
+      country.count = Math.max(country.count - mine.reduce((n, [, r]) => n + r.count, 0), 0);
+    }
+  }
+
   /* GET /stats/locations/{country} drills down to region. GoatCounter only records a
      region for countries listed in the site's collect_regions setting (default
      "US,RU,CN"); everywhere else every hit comes back under an empty name. So most
      countries yielding nothing here is expected, not a failure. */
   for (const country of countries) {
     if (country.count < REGION_MIN_COUNTRY_HITS) continue;
+    /* Already answered, and better, by the reader themselves. */
+    if (reportedFor(country.id).length) continue;
     const detail = await apiGet(base, headers, `stats/locations/${encodeURIComponent(country.id)}`, {
       start: STATS_START,
       limit: '100',
@@ -457,6 +512,30 @@ async function fetchGoatCounter(site, token) {
       console.log(`visitors: ${country.name} (${country.count} visits) has ${named.length} region(s),`
         + ` largest ${largest} < ${REGION_MIN_HITS} -- all below the privacy floor.`);
     }
+  }
+
+  /* Fold the reported regions in. They describe the same visits GeoLite2 was guessing
+     at, so they replace its answer instead of joining it: keeping both would draw a
+     visit twice. */
+  for (const country of countries) {
+    const mine = reportedFor(country.id);
+    if (!mine.length) continue;
+    if (country.count < REGION_MIN_COUNTRY_HITS) continue;
+
+    /* The same floors as above, plus a running clamp so the dots can never outgrow the
+       country they sit in; whatever does not fit stays on the country dot. */
+    let room = country.count;
+    const regions = [];
+    for (const [code, r] of mine.sort((a, b) => b[1].count - a[1].count)) {
+      if (regions.length >= REGION_MAX) break;
+      if (r.count < REGION_MIN_HITS) break; /* sorted: nothing after this is any bigger */
+      if (r.count > room) continue; /* too big for what is left, but a smaller one may fit */
+      regions.push({ id: code, name: r.name, count: r.count });
+      room -= r.count;
+    }
+    if (regions.length) country.regions = regions;
+    console.log(`visitors: ${country.name} reports ${mine.length} region(s) from the browser,`
+      + ` ${regions.length} above the floor.`);
   }
 
   const withRegions = countries.filter((c) => c.regions).length;
