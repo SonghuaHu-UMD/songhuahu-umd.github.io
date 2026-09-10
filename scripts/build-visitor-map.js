@@ -411,14 +411,38 @@ const REGION_MIN_COUNTRY_HITS = 5;
 const REGION_MIN_HITS = 2;
 const REGION_MAX = 12;
 
-/* Regions the reader's own browser reported, arriving as an event named "region/CN-ZJ".
-   See the note in _includes/head/custom.html for why mainland China needs this and
-   nowhere else does. */
-const REGION_EVENT = /^region\/([A-Z]{2})-([A-Z0-9]{1,3})$/;
+/* Regions the reader's own browser reported, arriving as an event named
+   "region/CN-430000". whois.pconline.com.cn answers with a 行政区划代码 rather than an
+   ISO 3166-2 code, and the number is what the page sends on: it is pure ASCII, so
+   nothing in the browser ever has to decode pconline's GBK Chinese. The table below is
+   the only place the two spellings meet.
 
-/* ipwho.is spells provinces out ("Zhejiang Sheng"). The vendored admin-1 table indexes
-   both spellings, so either would place; the short one is what belongs on a 200px map. */
-const REGION_SUFFIX = / (Sheng|Shi|Zizhiqu|Province|Municipality)$/i;
+   Only mainland province-level codes are listed. Taiwan (710000), Hong Kong (810000)
+   and Macau (820000) are countries of their own on this map, so an event carrying one
+   is quietly ignored rather than folded into China.
+
+   The "region/CN-ZJ" spelling this shipped with for half a day is deliberately not
+   matched any more: those events came from ipwho.is, which answered Beijing for a
+   reader in Yongzhou, Hunan. Ignoring that spelling discards the bad data with it. */
+const CN_DIVISIONS = {
+  110000: ['CN-BJ', 'Beijing'],        120000: ['CN-TJ', 'Tianjin'],
+  130000: ['CN-HE', 'Hebei'],          140000: ['CN-SX', 'Shanxi'],
+  150000: ['CN-NM', 'Inner Mongolia'], 210000: ['CN-LN', 'Liaoning'],
+  220000: ['CN-JL', 'Jilin'],          230000: ['CN-HL', 'Heilongjiang'],
+  310000: ['CN-SH', 'Shanghai'],       320000: ['CN-JS', 'Jiangsu'],
+  330000: ['CN-ZJ', 'Zhejiang'],       340000: ['CN-AH', 'Anhui'],
+  350000: ['CN-FJ', 'Fujian'],         360000: ['CN-JX', 'Jiangxi'],
+  370000: ['CN-SD', 'Shandong'],       410000: ['CN-HA', 'Henan'],
+  420000: ['CN-HB', 'Hubei'],          430000: ['CN-HN', 'Hunan'],
+  440000: ['CN-GD', 'Guangdong'],      450000: ['CN-GX', 'Guangxi'],
+  460000: ['CN-HI', 'Hainan'],         500000: ['CN-CQ', 'Chongqing'],
+  510000: ['CN-SC', 'Sichuan'],        520000: ['CN-GZ', 'Guizhou'],
+  530000: ['CN-YN', 'Yunnan'],         540000: ['CN-XZ', 'Tibet'],
+  610000: ['CN-SN', 'Shaanxi'],        620000: ['CN-GS', 'Gansu'],
+  630000: ['CN-QH', 'Qinghai'],        640000: ['CN-NX', 'Ningxia'],
+  650000: ['CN-XJ', 'Xinjiang'],
+};
+const REGION_EVENT = /^region\/CN-(\d{6})$/;
 
 /* stats/hits lists pages and events together, newest-largest first, 100 to a page. This
    site has a few dozen paths, so the loop is really a formality -- but say so rather
@@ -435,13 +459,11 @@ async function fetchRegionEvents(base, headers) {
       if (!hit.event) continue;
       const m = REGION_EVENT.exec(hit.path || '');
       if (!m) continue;
-      const code = `${m[1]}-${m[2]}`;
+      const division = CN_DIVISIONS[m[1]];
+      if (!division) continue;
+      const [code, name] = division;
       const prev = found.get(code);
-      const name = String(hit.title || '').replace(REGION_SUFFIX, '').trim();
-      found.set(code, {
-        count: (prev ? prev.count : 0) + hit.count,
-        name: name || (prev && prev.name) || code,
-      });
+      found.set(code, { count: (prev ? prev.count : 0) + hit.count, name });
     }
     if (!data.more) return found;
   }
