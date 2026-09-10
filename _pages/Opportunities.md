@@ -32,11 +32,15 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 
 **Ph.D. Funding Options:**
 
-* <span style="color: #27ae60;">**Self-funded Ph.D.**</span>
+* <span style="color: #27ae60;">**Self-funded Ph.D.**</span>: RA (research assistantship) will be provided.
 * <span style="color: #27ae60;">**Regular Ph.D. Scholarship**</span>: Full doctoral scholarship (~<span style="color: #e67e22;">**HK$19,600/month**</span>).
-* <span style="color: #27ae60;">**Presidential PhD Scholarship**</span>: Requirements: **985 or QS Top-100 undergraduate** (C9 preferred); master's degree and overseas experience preferred; first-authored SCI publication preferred.
+* <span style="color: #27ae60;">**Presidential PhD Scholarship**</span>: Two tiers, based on your undergraduate institution.
+  * <span style="color: #e67e22;">**Tier 1**</span> — **QS/THE Top-10 / Tsinghua or Peking University**: monthly stipend **higher than HKPFS**, plus full tuition coverage and an accommodation allowance.
+  * <span style="color: #e67e22;">**Tier 2**</span> — **QS/THE Top-20 / C9 / UCAS**: full living stipend, plus a **50% tuition waiver**.
 * <span style="color: #27ae60;">**[Hong Kong PhD Fellowship Scheme (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>: Monthly stipend up to <span style="color: #e67e22;">**HK$27,100**</span>, plus tuition waiver and conference travel allowance. Requirements: **985 or QS Top-100 undergraduate** (C9 preferred); master's degree and overseas experience preferred; first-authored SCI publication preferred.
-* <span style="color: #27ae60;">**Joint Ph.D. Program**</span>: Earn dual degrees from a mainland university and CityU. Full doctoral scholarship during the CityU HK period. C9 preferred.
+* <span style="color: #27ae60;">**[Joint Ph.D. Program (Mainland Collaboration Scheme)](https://www.cityu.edu.hk/pia/page.aspx?p=PhD_Joint_Degree_Programmes)**</span>: Dual degrees from a mainland university and CityU, with a full doctoral scholarship while at CityU. Apply **early November to mid-January**. C9 preferred.
+
+<span style="font-size: 0.85em; color: #7f8c8d;">Note: "C9" counts all campuses of a C9 university — e.g., Peking University Shenzhen Graduate School, HIT (Shenzhen), and HIT (Weihai).</span>
 
 <!--
 ---
@@ -52,11 +56,15 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 
 **博士奖学金类型：**
 
-* <span style="color: #27ae60;">**自费博士生**</span>
+* <span style="color: #27ae60;">**自费博士生**</span>：提供研究助理（RA）津贴。
 * <span style="color: #27ae60;">**常规入学博士生**</span>：提供全额博士奖学金（约<span style="color: #e67e22;">**19,600港元/月**</span>）。
-* <span style="color: #27ae60;">**校长奖学金**</span>：要求**985或QS前100本科**（C9优先）；有硕士学位和留学经历优先；一作SCI发表优先。
+* <span style="color: #27ae60;">**校长奖学金**</span>：按本科就读院校分两档。
+  * <span style="color: #e67e22;">**第一档**</span>——**QS/THE 前10 / 清华、北大**：月津贴**高于香港博士奖学金（HKPFS）**，全额学费资助，另提供住宿津贴。
+  * <span style="color: #e67e22;">**第二档**</span>——**QS/THE 前20 / C9 / 中国科学院大学**：全额生活津贴，学费减半。
 * <span style="color: #27ae60;">**[香港政府博士奖学金 (HKPFS)](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme)**</span>：要求**985或QS前100本科**（C9优先）；有硕士学位和留学经历优先；一作SCI发表优先（约<span style="color: #e67e22;">**27,100港元/月**</span>）。
-* <span style="color: #27ae60;">**联合培养博士**</span>：可同时获得内地高校和香港城市大学双博士学位，学校提供研究生奖学金（C9优先）。
+* <span style="color: #27ae60;">**[联合培养博士（Mainland Collaboration Scheme）](https://www.cityu.edu.hk/pia/page.aspx?p=PhD_Joint_Degree_Programmes)**</span>：内地高校与城大双博士学位，在港期间提供全额博士奖学金。申请期为**11月初至1月中**。C9优先。
+
+<span style="font-size: 0.85em; color: #7f8c8d;">注：C9 涵盖各校所有校区，例如北大深圳研究生院、哈工大（深圳）、哈工大（威海）。</span>
 -->
 
 ***
