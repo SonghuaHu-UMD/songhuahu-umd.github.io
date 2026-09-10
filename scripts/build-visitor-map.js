@@ -412,10 +412,9 @@ const REGION_MIN_HITS = 2;
 const REGION_MAX = 12;
 
 /* Regions the reader's own browser reported, arriving as an event named
-   "region/CN-430000". whois.pconline.com.cn answers with a 行政区划代码 rather than an
-   ISO 3166-2 code, and the number is what the page sends on: it is pure ASCII, so
-   nothing in the browser ever has to decode pconline's GBK Chinese. The table below is
-   the only place the two spellings meet.
+   "region/CN-430000". CZ88 answers with a 行政区划代码 rather than an ISO 3166-2 code,
+   and the number is what the page sends on. The table below is the only place the two
+   spellings meet.
 
    Only mainland province-level codes are listed. Taiwan (710000), Hong Kong (810000)
    and Macau (820000) are countries of their own on this map, so an event carrying one

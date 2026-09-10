@@ -110,8 +110,125 @@
 
   Liquid comment, not <!-- -->, so this maintainer note is not shipped to readers.
 {% endcomment %}
-<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
+<script id="goatcounter-count"
+        data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count"
         async src="{{ site.baseurl }}/assets/js/count.js"></script>
+
+{% comment %}
+  Province lookup for mainland readers.
+
+  GoatCounter's free GeoLite2 data leaves most mainland carrier/CGNAT addresses
+  without a province, and GoatCounter deliberately does not retain the IP needed
+  to improve that answer later.  The reader's browser therefore asks CZ88's
+  public base lookup for its own address.  CZ88 is hosted in mainland China and
+  returns JSON with CORS enabled; unlike the old pconline JSONP attempt, this is
+  a normal readable cross-origin response and is not subject to ORB.
+
+  Privacy and failure behaviour are intentionally conservative:
+    - only mainland time zones make the request;
+    - credentials and the page referrer are not sent;
+    - the lookup runs once per browser session;
+    - only an explicit CN response with a known mainland province code is sent
+      to GoatCounter, and every lookup/storage/network failure is silent.
+
+  The event is emitted on each pageview after the one-per-session lookup so its
+  count stays comparable to pageviews.  scripts/build-visitor-map.js validates
+  the code again, folds it into ISO 3166-2, and subtracts these event hits from
+  the country total.
+{% endcomment %}
+<script>
+(function () {
+  var MAINLAND_ZONES = {
+    'Asia/Shanghai': 1, 'Asia/Chongqing': 1, 'Asia/Chungking': 1,
+    'Asia/Harbin': 1, 'Asia/Urumqi': 1, 'Asia/Kashgar': 1, 'PRC': 1
+  };
+  var MAINLAND_DIVISIONS = {
+    110000: 1, 120000: 1, 130000: 1, 140000: 1, 150000: 1,
+    210000: 1, 220000: 1, 230000: 1, 310000: 1, 320000: 1,
+    330000: 1, 340000: 1, 350000: 1, 360000: 1, 370000: 1,
+    410000: 1, 420000: 1, 430000: 1, 440000: 1, 450000: 1,
+    460000: 1, 500000: 1, 510000: 1, 520000: 1, 530000: 1,
+    540000: 1, 610000: 1, 620000: 1, 630000: 1, 640000: 1,
+    650000: 1
+  };
+  var LOOKUP = 'https://www.cz88.net/api/cz88/ip/base?ip=';
+  var STORE = 'visitor-region';
+  var TIMEOUT_MS = 5000;
+
+  var zone;
+  try { zone = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch (e) { return; }
+  if (!MAINLAND_ZONES[zone]) return;
+
+  /* Private browsing modes can make Web Storage throw. */
+  function remember(value) {
+    try { sessionStorage.setItem(STORE, value); } catch (e) { /* fail open */ }
+  }
+  function recall() {
+    try { return sessionStorage.getItem(STORE); } catch (e) { return null; }
+  }
+
+  /* count.js is async, so the region answer can win the race. */
+  function whenCounterReady(fn) {
+    if (window.goatcounter && window.goatcounter.count) return fn();
+    var tag = document.getElementById('goatcounter-count');
+    if (tag) tag.addEventListener('load', fn, false);
+  }
+  function report(code) {
+    if (!code) return;
+    whenCounterReady(function () {
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({ path: 'region/CN-' + code, event: true });
+      }
+    });
+  }
+
+  /* Empty is a cached negative answer, distinct from never having looked up. */
+  var seen = recall();
+  if (seen !== null) return report(MAINLAND_DIVISIONS[seen] ? seen : '');
+
+  function accept(payload) {
+    var data = payload && payload.success && payload.data;
+    var code = data && data.provinceCode ? String(data.provinceCode) : '';
+    var valid = data && data.countryCode === 'CN' && MAINLAND_DIVISIONS[code];
+    remember(valid ? code : '');
+    report(valid ? code : '');
+  }
+
+  if (!window.fetch) return remember('');
+
+  var controller = window.AbortController ? new AbortController() : null;
+  var options = {
+    mode: 'cors',
+    credentials: 'omit',
+    cache: 'no-store',
+    referrerPolicy: 'no-referrer'
+  };
+  if (controller) options.signal = controller.signal;
+
+  var done = false;
+  var timer;
+  function finish(payload) {
+    if (done) return;
+    done = true;
+    clearTimeout(timer);
+    if (!payload && controller) controller.abort();
+    accept(payload);
+  }
+
+  /* The cache-buster matters because the response depends on the requester's IP. */
+  timer = setTimeout(function () { finish(null); }, TIMEOUT_MS);
+  try {
+    fetch(LOOKUP + '&_=' + Date.now(), options)
+      .then(function (response) {
+        if (!response.ok) throw new Error('region lookup HTTP ' + response.status);
+        return response.json();
+      })
+      .then(finish, function () { finish(null); });
+  } catch (e) {
+    finish(null);
+  }
+}());
+</script>
 {% endif %}
 
 <!-- end custom head snippets -->
