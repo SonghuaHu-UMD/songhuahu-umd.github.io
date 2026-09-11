@@ -443,30 +443,24 @@ const CN_DIVISIONS = {
 };
 const REGION_EVENT = /^region\/CN-(\d{6})$/;
 
-/* stats/hits lists pages and events together, newest-largest first, 100 to a page. This
-   site has a few dozen paths, so the loop is really a formality -- but say so rather
-   than silently truncating if that ever stops being true. */
+/* stats/hits lists pages and events together, largest first. It takes a limit but no
+   offset -- there is no second page to ask for -- so 100 rows is the whole answer.
+   That is several times this site's page count plus every mainland province, but say
+   so rather than silently truncating if it ever stops being true. */
 async function fetchRegionEvents(base, headers) {
+  const data = await apiGet(base, headers, 'stats/hits', { start: STATS_START, limit: '100' });
+  if (data.more) console.warn('visitors: stats/hits holds more than 100 rows; region events may be incomplete.');
   const found = new Map();
-  for (let offset = 0; offset < 500; offset += 100) {
-    const data = await apiGet(base, headers, 'stats/hits', {
-      start: STATS_START,
-      limit: '100',
-      offset: String(offset),
-    });
-    for (const hit of data.hits || []) {
-      if (!hit.event) continue;
-      const m = REGION_EVENT.exec(hit.path || '');
-      if (!m) continue;
-      const division = CN_DIVISIONS[m[1]];
-      if (!division) continue;
-      const [code, name] = division;
-      const prev = found.get(code);
-      found.set(code, { count: (prev ? prev.count : 0) + hit.count, name });
-    }
-    if (!data.more) return found;
+  for (const hit of data.hits || []) {
+    if (!hit.event) continue;
+    const m = REGION_EVENT.exec(hit.path || '');
+    if (!m) continue;
+    const division = CN_DIVISIONS[m[1]];
+    if (!division) continue;
+    const [code, name] = division;
+    const prev = found.get(code);
+    found.set(code, { count: (prev ? prev.count : 0) + hit.count, name });
   }
-  console.warn('visitors: stopped paging stats/hits at 500 rows; region events may be incomplete.');
   return found;
 }
 
