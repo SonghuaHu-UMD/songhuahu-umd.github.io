@@ -8,13 +8,16 @@
   on the two agreeing -- the bilingual rules and the nav script most visibly --
   is broken for exactly as long as that lasts.
 
-  The commit SHA is the honest token on GitHub Pages: it changes when, and only
-  when, the built output can have changed. Locally that variable is empty, so
-  the build timestamp stands in, which errs toward re-fetching rather than
-  toward showing a preview stale assets.
+  The build timestamp, not site.github.build_revision. The SHA reads like the
+  more honest token -- it changes when and only when the output can have
+  changed -- but it comes from jekyll-github-metadata asking the API what the
+  repo is at, and that answer can lag the tree the builder actually checked
+  out. It did, once: two Pages builds of different content both stamped
+  ebcbdaa2, which is the exact collision this file exists to rule out.
+
+  site.time cannot lag, because it is not asking anyone. The cost is that a
+  build which changed nothing in these two files still re-fetches them; at
+  roughly 200KB, on a site that deploys when something is actually edited, that
+  is the cheaper of the two mistakes by a wide margin.
 {% endcomment %}
-{% if site.github.build_revision %}
-  {% assign asset_version = site.github.build_revision | slice: 0, 8 %}
-{% else %}
-  {% assign asset_version = site.time | date: '%s' %}
-{% endif %}
+{% assign asset_version = site.time | date: '%s' %}
