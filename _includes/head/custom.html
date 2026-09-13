@@ -5,14 +5,16 @@
 {% comment %}
   Language state for the bilingual page (see _sass/_i18n.scss).
 
-  This runs in <head>, before the body is parsed, so the reader never sees the
-  wrong language painted and then replaced. Everything it does is one attribute
-  write, which is why it can afford to be inline and blocking.
+  English is the site's language. Chinese is shown only to a reader who asked
+  for it here before -- the browser's own Accept-Language is deliberately not
+  consulted, so the page a link or a search result leads to is the page the
+  author wrote.
 
-  Precedence: an explicit choice the reader made here before, then what the
-  browser asks for, then English. The stored value is validated rather than
-  trusted -- it is reader-writable storage being turned into an attribute
-  selector, and anything unrecognised falls back to the browser guess.
+  This runs in <head>, before the body is parsed, so the reader never sees one
+  language painted and then replaced. Everything it does is one attribute
+  write, which is why it can afford to be inline and blocking. The stored value
+  is checked against 'zh' rather than trusted: it is reader-writable storage
+  being turned into an attribute selector.
 
   lang= is kept in step with data-lang= on purpose: data-lang drives the
   stylesheet, while lang is what screen readers switch voices on and what
@@ -23,17 +25,24 @@
   var stored = null;
   try { stored = localStorage.getItem('site-lang'); } catch (e) { /* private mode */ }
 
-  var lang = stored === 'zh' || stored === 'en' ? stored : null;
-  if (!lang) {
-    var pref = (navigator.languages && navigator.languages[0]) || navigator.language || '';
-    lang = /^zh/i.test(pref) ? 'zh' : 'en';
-  }
-
+  var lang = stored === 'zh' ? 'zh' : 'en';
   var root = document.documentElement;
   root.setAttribute('data-lang', lang);
   root.setAttribute('lang', lang === 'zh' ? 'zh-Hans' : 'en');
 })();
 </script>
+
+{% comment %}
+  The same rule _sass/_i18n.scss carries, inlined.
+
+  main.css is a single cacheable file with a ten-minute freshness window, so a
+  reader can hold a copy of it older than the HTML now being served. Every other
+  rule in it degrades to "unstyled"; this one degrades to "every paragraph
+  printed twice, in two languages", which is not a state worth ever shipping.
+  Two hundred bytes in the document removes that possibility entirely, and the
+  versioned asset URLs mean it is only ever needed for one request anyway.
+{% endcomment %}
+<style>html:not([data-lang="zh"]) .lang-zh,html[data-lang="zh"] .lang-en{display:none!important}</style>
 
 <link rel="icon" type="image/png" sizes="32x32" href="{{ base_path }}/images/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon.png">

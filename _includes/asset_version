@@ -1,0 +1,20 @@
+{% comment %}
+  A token that changes whenever the site is rebuilt, for appending to the
+  stylesheet and script URLs.
+
+  Those two are served as one fixed filename each with a ten-minute freshness
+  window, so without this a reader can be handed HTML from the new build and
+  keep serving themselves CSS and JS from the old one. Everything that depends
+  on the two agreeing -- the bilingual rules and the nav script most visibly --
+  is broken for exactly as long as that lasts.
+
+  The commit SHA is the honest token on GitHub Pages: it changes when, and only
+  when, the built output can have changed. Locally that variable is empty, so
+  the build timestamp stands in, which errs toward re-fetching rather than
+  toward showing a preview stale assets.
+{% endcomment %}
+{% if site.github.build_revision %}
+  {% assign asset_version = site.github.build_revision | slice: 0, 8 %}
+{% else %}
+  {% assign asset_version = site.time | date: '%s' %}
+{% endif %}
