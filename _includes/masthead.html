@@ -21,10 +21,15 @@
             {% endcomment %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"><span class="lang-en">{{ link.title }}</span><span class="lang-zh">{{ link.title_zh | default: link.title }}</span></a></li>
           {% endfor %}
-          {% include lang-toggle.html %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+    {% comment %}
+      Outside the nav, not a item in its list: the greedy nav owns what is in
+      that list and folds its tail into the hamburger as the bar narrows, which
+      is the one place a language switch must never go.
+    {% endcomment %}
+    {% include lang-toggle.html %}
   </div>
 </div>

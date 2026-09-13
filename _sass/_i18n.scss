@@ -89,10 +89,36 @@ html[data-lang="zh"] .lang-switch button[data-set-lang="zh"] {
   cursor: default;
 }
 
-/* The masthead is a table row; the switch is the one cell that is not a link,
-   so it opts out of the link padding the others inherit. */
-.masthead__menu-item--lang {
-  padding: 0;
+/* Pinned to the right edge of the masthead, level with the site title.
+
+   A flex row rather than a float or an absolutely-positioned corner: the nav
+   then measures only the width actually left to it, so the greedy nav's
+   overflow arithmetic stays correct on its own and no constant has to be kept
+   in step with however wide "EN 中文" happens to render. */
+.masthead__inner-wrap {
+  display: flex;
+  align-items: center;
+
+  .masthead__menu {
+    /* min-width:0 because a flex item defaults to min-width:auto, which would
+       let the nav refuse to shrink and push the switch off the right edge. */
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  /* The theme floors the nav at 250px, which was free when the nav had the bar
+     to itself. Sharing it, that floor stops the nav shrinking on a small phone
+     and slides the overflow hamburger -- pinned to the nav's right edge -- out
+     from under the nav and on top of the switch. Below the floor there is
+     nothing to lose anyway: everything the nav still holds is one tap away in
+     the dropdown it already opened. */
+  .greedy-nav {
+    min-width: 0;
+  }
+}
+
+.masthead__lang {
+  flex: 0 0 auto;
 }
 
 /* Printing has no switch to click: emit whichever language is on screen. */
