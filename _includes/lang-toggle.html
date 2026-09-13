@@ -1,0 +1,65 @@
+{% comment %}
+  EN / 中文 switch, rendered into the masthead so it is on every page.
+
+  Two buttons rather than one that renames itself: "EN" stays readable to the
+  reader who wants English and "中文" to the one who wants Chinese, neither has
+  to recognise the other language to find the way back, and the control keeps a
+  constant width so switching never shifts the bar under the pointer.
+
+  aria-pressed rather than a radio group: these are not a form field, they act
+  immediately, and pressed/unpressed is exactly what a toggle announces.
+
+  The class hook is .no-collapse -- jquery.greedy-navigation.js keeps items
+  marked with it out of the overflow dropdown, so on a phone the switch is still
+  in the bar rather than behind the hamburger.
+{% endcomment %}
+<li class="masthead__menu-item masthead__menu-item--lang no-collapse">
+  <div class="lang-switch" id="lang-switch" role="group" aria-label="Language / 语言">
+    <button type="button" data-set-lang="en" aria-pressed="true" lang="en">EN</button>
+    <button type="button" data-set-lang="zh" aria-pressed="false" lang="zh-Hans">中文</button>
+  </div>
+</li>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var group = document.getElementById('lang-switch');
+  if (!group) return;
+
+  /* The buttons are served with English pressed because that is the markup's
+     default; the head script may already have resolved a different language
+     before this ran, so the first thing to do is agree with it. */
+  function sync() {
+    var lang = root.getAttribute('data-lang') === 'zh' ? 'zh' : 'en';
+    var opts = group.querySelectorAll('[data-set-lang]');
+    for (var i = 0; i < opts.length; i++) {
+      opts[i].setAttribute('aria-pressed', opts[i].getAttribute('data-set-lang') === lang ? 'true' : 'false');
+    }
+  }
+
+  group.addEventListener('click', function (e) {
+    var btn = e.target.closest('[data-set-lang]');
+    if (!btn) return;
+
+    var lang = btn.getAttribute('data-set-lang');
+    root.setAttribute('data-lang', lang);
+    root.setAttribute('lang', lang === 'zh' ? 'zh-Hans' : 'en');
+    /* Best effort: a reader in private mode still gets the switch, just not the
+       memory of it. */
+    try { localStorage.setItem('site-lang', lang); } catch (err) { /* no storage */ }
+
+    sync();
+
+    /* The nav links changed width with the language, and the greedy nav decided
+       what fits using the old ones. It is a global from main.min.js, which loads
+       at the end of <body> -- long before anyone can click this. */
+    if (typeof window.updateNav === 'function') window.updateNav();
+
+    /* Text the stylesheet cannot reach, because a script wrote it: the visitor
+       map caption, the co-author tooltips. They listen for this and redraw. */
+    document.dispatchEvent(new CustomEvent('langchange', { detail: { lang: lang } }));
+  });
+
+  sync();
+})();
+</script>

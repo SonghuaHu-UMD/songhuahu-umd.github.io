@@ -17,7 +17,12 @@ layout: default
 
   <div class="archive">
     {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ page.title }}</h1>
+      {% comment %}
+        title_zh is optional front matter; a page without one shows its English
+        title in both languages, which is what pages with no title at all (the
+        homepage) need anyway.
+      {% endcomment %}
+      <h1 class="page__title"><span class="lang-en">{{ page.title }}</span><span class="lang-zh">{{ page.title_zh | default: page.title }}</span></h1>
     {% endunless %}
     {{ content }}
   </div>

@@ -1,15 +1,23 @@
 # main links
+#
+# title_zh is the label shown when the site is switched to Chinese
+# (see _includes/masthead.html). Leave it out to keep the English label
+# in both languages.
 main:
   - title: "Research"
+    title_zh: "研究"
     url: /research/
 
   - title: "Teaching"
+    title_zh: "教学"
     url: /Teachings/
 
   - title: "Team"
+    title_zh: "团队"
     url: /Team/
 
   - title: "Opportunities"
+    title_zh: "招生招聘"
     url: /Opportunities/
 
   - title: "CV"

@@ -1,0 +1,103 @@
+/* ==========================================================================
+   BILINGUAL (EN / 中文)
+   ==========================================================================
+
+   Both languages ship in every page. The inactive one is hidden here rather
+   than swapped in by JavaScript, so the switch costs one attribute write on
+   <html> and nothing re-renders, re-fetches, or re-lays-out beyond the text.
+
+   English is the default state, not "whatever was stored": with JavaScript off
+   -- or before the head script in _includes/head/custom.html has run -- there
+   is no data-lang attribute at all, and the :not() below still resolves to a
+   complete English page. That is also why the rule is written against
+   :not([data-lang="zh"]) instead of [data-lang="en"].
+
+   Marking content: wrap a block in <div class="lang-en" markdown="1"> and its
+   translation in <div class="lang-zh" markdown="1">, or, inside a sentence,
+   use <span class="lang-en"> / <span class="lang-zh">. Prefer wrapping only the
+   prose: a card's image, link and venue are the same in both languages and
+   duplicating them is how the two halves drift apart.
+   ========================================================================== */
+
+html:not([data-lang="zh"]) .lang-zh,
+html[data-lang="zh"] .lang-en {
+  display: none !important;
+}
+
+/* Chinese has no word spaces to break on, so a long run in a narrow column
+   (the sidebar, a card body) would otherwise overflow rather than wrap. */
+html[data-lang="zh"] {
+  .lang-zh {
+    line-break: normal;
+    overflow-wrap: break-word;
+  }
+}
+
+/*
+   Language switch
+   ========================================================================== */
+
+/* A two-part segmented control rather than a single button that renames itself:
+   each label stays legible to the reader who needs it, and the control keeps
+   one width, so switching never reflows the masthead under the pointer. */
+.lang-switch {
+  display: inline-flex;
+  margin-left: 1rem;
+  border: 1px solid $border-color;
+  border-radius: 999px;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* .greedy-nav button is absolutely positioned and full height -- that rule is
+   meant for the overflow hamburger and would swallow these. Repeating the
+   .greedy-nav ancestor here is what outranks it. */
+.greedy-nav .lang-switch button,
+.lang-switch button {
+  position: static;
+  height: auto;
+  padding: 0.34rem 0.62rem;
+  border: 0;
+  background-color: transparent;
+  color: $masthead-link-color;
+  font-family: $sans-serif-narrow;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    color: $masthead-link-color-hover;
+    background-color: mix(#fff, $primary-color, 88%);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: -2px;
+  }
+}
+
+/* Last, so a tie on specificity resolves in favour of the selected state and
+   hovering the already-selected half does not repaint it. */
+html:not([data-lang="zh"]) .lang-switch button[data-set-lang="en"],
+html[data-lang="zh"] .lang-switch button[data-set-lang="zh"] {
+  background-color: $primary-color;
+  color: #fff;
+  cursor: default;
+}
+
+/* The masthead is a table row; the switch is the one cell that is not a link,
+   so it opts out of the link padding the others inherit. */
+.masthead__menu-item--lang {
+  padding: 0;
+}
+
+/* Printing has no switch to click: emit whichever language is on screen. */
+@media print {
+  .lang-switch {
+    display: none;
+  }
+}

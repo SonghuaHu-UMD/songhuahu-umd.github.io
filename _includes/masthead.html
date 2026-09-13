@@ -6,15 +6,22 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/"><span class="lang-en">{{ site.title }}</span><span class="lang-zh">{{ site.title_zh | default: site.title }}</span></a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% comment %}
+              Both labels ship and the stylesheet hides one, the same as page
+              content. title_zh is optional in _data/navigation.yml: a link
+              without one keeps its English label in both languages, which is
+              the right answer for names that are not translated.
+            {% endcomment %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}"><span class="lang-en">{{ link.title }}</span><span class="lang-zh">{{ link.title_zh | default: link.title }}</span></a></li>
           {% endfor %}
+          {% include lang-toggle.html %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>

@@ -15,24 +15,28 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    <h3 class="author__name"><span class="lang-en">{{ author.name }}</span><span class="lang-zh">{{ author.name_zh | default: author.name }}</span></h3>
+    {% if author.bio %}<p class="author__bio"><span class="lang-en">{{ author.bio }}</span><span class="lang-zh">{{ author.bio_zh | default: author.bio }}</span></p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
+    {% comment %}
+      This button only appears on narrow screens, where it expands the link list
+      below (see assets/js/_main.js) -- "Follow" is its label, not an action.
+    {% endcomment %}
+    <button class="btn btn--inverse"><span class="lang-en">Follow</span><span class="lang-zh">关注</span></button>
     <ul class="author__urls social-icons">
       {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span class="lang-en">{{ author.location }}</span><span class="lang-zh">{{ author.location_zh | default: author.location }}</span></li>
       {% endif %}
       {% if author.employer %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
+        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span class="lang-en">{{ author.employer }}</span><span class="lang-zh">{{ author.employer_zh | default: author.employer }}</span></li>
       {% endif %}
       {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> <span class="lang-en">{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span><span class="lang-zh">个人主页</span></a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> <span class="lang-en">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span><span class="lang-zh">邮箱</span></a></li>
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
@@ -86,7 +90,7 @@
         <li><a href="https://steamcommunity.com/id/{{ author.steam }}"><i class="fab fa-fw fa-steam-square" aria-hidden="true"></i> Steam</a></li>
       {% endif %}
       {% if author.zhihu %}
-        <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu" aria-hidden="true"></i> Zhihu</a></li>
+        <li><a href="https://www.zhihu.com/people/{{ author.zhihu }}"><i class="fab fa-fw fa-zhihu" aria-hidden="true"></i> <span class="lang-en">Zhihu</span><span class="lang-zh">知乎</span></a></li>
       {% endif %}
       {% if author.youtube %}
         <li><a href="https://www.youtube.com/user/{{ author.youtube }}"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
@@ -107,7 +111,7 @@
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fab fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> <span class="lang-en">Google Scholar</span><span class="lang-zh">谷歌学术</span></a></li>
       {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
@@ -130,7 +134,7 @@
     Stays hidden until assets/visitor_map.json actually has data.
   {% endcomment %}
   <div class="author__map" hidden>
-    <canvas class="author__map-canvas" role="img" aria-label="Map of visitor locations"></canvas>
+    <canvas class="author__map-canvas" role="img" aria-label="Map of visitor locations / 访客分布地图"></canvas>
     <p class="author__map-caption"></p>
   </div>
   <script>
@@ -149,6 +153,13 @@
        2:1 box into 2.5:1 and stops the sidebar wasting height on empty ice. */
     var LAT_MAX = 84, LAT_MIN = -60;
     var ASPECT = 360 / (LAT_MAX - LAT_MIN);
+
+    /* Strings a script writes are out of reach of the stylesheet rule that
+       hides the inactive language, so they are picked at call time instead and
+       the caption is rewritten when the reader switches. */
+    function t(en, zh) {
+      return document.documentElement.getAttribute('data-lang') === 'zh' ? zh : en;
+    }
 
     var started = false;
     function start() {
@@ -183,7 +194,7 @@
         }
         if (rest <= 0) continue;
         var dot = { lon: p.lon, lat: p.lat, count: rest, head: p.label + ' · ' + p.count };
-        if (rest < p.count) dot.sub = rest + ' elsewhere in the country';
+        if (rest < p.count) dot.sub = t(rest + ' elsewhere in the country', '该国其他地区 ' + rest);
         /* Nothing placed at all: name the largest few in text, the way this used to. */
         else if (regions.length) dot.sub = regions.slice(0, 4).map(function (x) { return x.name + ' ' + x.count; }).join(' · ');
         dots.push(dot);
@@ -251,9 +262,15 @@
          sovereign states with territories and dependencies, so the general noun is the
          accurate one -- a row only says where a reader was. "regions" is unavailable:
          the tooltip's second line already uses it for the level below this one. */
-      caption.textContent = total + ' visits · ' + points.length +
-        (points.length === 1 ? ' location' : ' locations');
-      if (data.generated) caption.title = 'Updated ' + data.generated;
+      function caption_text() {
+        caption.textContent = t(
+          total + ' visits · ' + points.length + (points.length === 1 ? ' location' : ' locations'),
+          total + ' 次访问 · ' + points.length + ' 个地区'
+        );
+        if (data.generated) caption.title = t('Updated ' + data.generated, '更新于 ' + data.generated);
+      }
+      caption_text();
+      document.addEventListener('langchange', caption_text);
 
       /* Nearest-dot hover readout. Cheap enough at this dot count to just scan. */
       canvas.addEventListener('mousemove', function (e) {

@@ -5,22 +5,33 @@ permalink: /Opportunities/
 author_profile: true
 ---
 
-About CityUHK
+{% comment %}
+  Bilingual page -- each block of prose is written twice, English first, and
+  _sass/_i18n.scss hides whichever the reader is not using. markdown="1" is what
+  keeps kramdown parsing the contents of these divs.
+
+  The Chinese here predates the switch: it was written alongside the English and
+  parked in HTML comments. It is now shown rather than commented out, so when a
+  deadline or a stipend changes, both halves have to be edited together.
+{% endcomment %}
+
+<span class="lang-en">About CityUHK</span><span class="lang-zh">关于香港城市大学</span>
 ======
 
+<div class="lang-en" markdown="1">
 [City University of Hong Kong](https://www.cityu.edu.hk/) is a young, research-intensive university and one of the few institutions worldwide placed in the <span style="color: #c0392b;">**global top 100 across all four major ranking systems**</span>: <span style="color: #e67e22;">**52nd**</span> in QS 2027, <span style="color: #e67e22;">**47th**</span> in U.S. News 2026–2027, <span style="color: #e67e22;">**73rd**</span> in THE 2026, and <span style="color: #e67e22;">**95th**</span> in ARWU 2026.
+</div>
 
-<!--
----
-
+<div class="lang-zh" markdown="1">
 [香港城市大学](https://www.cityu.edu.hk/)是一所年轻的研究型大学，也是全球少数<span style="color: #c0392b;">**四大权威排名均进入世界百强**</span>的高校：QS 2027 第 <span style="color: #e67e22;">**52**</span> 位、U.S. News 2026–2027 第 <span style="color: #e67e22;">**47**</span> 位、THE 2026 第 <span style="color: #e67e22;">**73**</span> 位、软科 ARWU 2026 第 <span style="color: #e67e22;">**95**</span> 位。
--->
+</div>
 
 ***
 
-Recruitment
+<span class="lang-en">Recruitment</span><span class="lang-zh">招生招聘</span>
 ======
 
+<div class="lang-en" markdown="1">
 **Current openings:**
 * <span style="color: #c0392b;">**2 fully-funded Ph.D. slots**</span> for **Summer/Fall 2027** admission.
 * <span style="color: #c0392b;">**1 Postdoc position**</span> focused on **multi-system resilience, human mobility, and network science**.
@@ -41,10 +52,9 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 * <span style="color: #27ae60;">**[Joint Ph.D. Program (Mainland Collaboration Scheme)](https://www.cityu.edu.hk/pia/page.aspx?p=PhD_Joint_Degree_Programmes)**</span>: Dual degrees from a mainland university and CityU, with a full doctoral scholarship while at CityU. Apply **early November to mid-January**. C9 preferred.
 
 <span style="font-size: 0.85em; color: #7f8c8d;">Note: "C9" counts all campuses of a C9 university — e.g., Peking University Shenzhen Graduate School, HIT (Shenzhen), and HIT (Weihai).</span>
+</div>
 
-<!--
----
-
+<div class="lang-zh" markdown="1">
 **当前重点招聘：**
 * <span style="color: #c0392b;">**2 名 2027 年 Summer/Fall 入学的全奖博士生**</span>
 * <span style="color: #c0392b;">**1 名博士后**</span>，研究方向为 **multi-system resilience、human mobility 与 network science**
@@ -65,23 +75,25 @@ To apply, please send your CV, Transcript, and Research Statement to <span style
 * <span style="color: #27ae60;">**[联合培养博士（Mainland Collaboration Scheme）](https://www.cityu.edu.hk/pia/page.aspx?p=PhD_Joint_Degree_Programmes)**</span>：内地高校与城大双博士学位，在港期间提供全额博士奖学金。申请期为**11月初至1月中**。C9优先。
 
 <span style="font-size: 0.85em; color: #7f8c8d;">注：C9 涵盖各校所有校区，例如北大深圳研究生院、哈工大（深圳）、哈工大（威海）。</span>
--->
+</div>
 
 ***
 
-Collaboration
+<span class="lang-en">Collaboration</span><span class="lang-zh">合作</span>
 ======
 
+<div class="lang-en" markdown="1">
 We are particularly looking for collaborators with expertise in <span style="color: #e67e22;">**LLM**</span>, <span style="color: #e67e22;">**Network Science**</span>, or <span style="color: #e67e22;">**Large-scale ABM**</span>. We offer:
 * Rich and diverse mobility data resources
 * Ample large-scale computing infrastructure
 * Long-term collaboration channels with top teams like MIT
 * Research designs targeting high-impact journals with deep involvement
+</div>
 
-<!--
+<div class="lang-zh" markdown="1">
 课题组长期寻找具有<span style="color: #e67e22;">**LLM**</span>、<span style="color: #e67e22;">**网络科学**</span>、<span style="color: #e67e22;">**大规模智能体仿真**</span>相关背景的合作伙伴。我们可提供：
 * 极其丰富的出行相关数据资源
 * 充足的大规模计算资源
 * 与MIT等顶级团队的长期合作通道
 * 面向子刊的研究设计与深度参与
--->
+</div>

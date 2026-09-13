@@ -8,6 +8,10 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Songhua Hu, Ph.D."
+# Chinese counterparts of the strings the theme renders on every page. The
+# masthead and sidebar emit both and let _sass/_i18n.scss hide one; a *_zh key
+# left blank falls back to the English string.
+title_zh                 : "胡松华"
 title_separator          : "-"
 name                     : &name "Sam Hu"
 description              : &description "Crowdsourced Data Mining, Spatiotemporal AI, Network Analysis, Transportation Planning"
@@ -27,10 +31,14 @@ atom_feed:
 # Site Author
 author:
   name             : "Songhua Hu"
+  name_zh          : "胡松华"
   avatar           : "head4.jpg"
   bio              : "Crowdsourced Data Mining, Spatiotemporal AI, Network Science, Transportation Planning"
+  bio_zh           : "群智数据挖掘、时空人工智能、网络科学、交通规划"
   location         : "Hong Kong"
+  location_zh      : "香港"
   employer         : "City University of Hong Kong"
+  employer_zh      : "香港城市大学"
   googlescholar    : "https://scholar.google.co.jp/citations?user=uVIbQyAAAAAJ&hl=en"
   email            : "Songhua.Hu@cityu.edu.hk"
   researchgate     : "https://www.researchgate.net/profile/Songhua_Hu2"

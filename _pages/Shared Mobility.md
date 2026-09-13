@@ -1,22 +1,39 @@
 ---
 layout: archive
 title: "Mobility as a service (MaaS) and shared mobility"
+title_zh: "出行即服务（MaaS）与共享出行"
 permalink: /Shared Mobility/
 author_profile: true
 ---
 
 
+{% comment %}
+  Bilingual page -- each block of prose is written twice, English first, and
+  _sass/_i18n.scss hides whichever the reader is not using. markdown="1" is what
+  keeps kramdown parsing the contents of these divs.
+{% endcomment %}
+
+<div class="lang-en" markdown="1">
 I have extensive research experience in shared and smart mobility.
 I have investigated various shared mobility programs to provide empirical evidence on how to promote their efficiency,
 how to allocate incentives to prevent user turnover, and how to encourage multi-modal integration.
 After joining University of Maryland, I am the technical leader of the first-in-the-nation MaaS APP "incenTrip" project,
 funded by USDOE and USDOT, to provide green travel options and personalized incentives for real-world travelers.
+</div>
+
+<div class="lang-zh" markdown="1">
+我在共享出行与智慧出行方面有丰富的研究经验，
+系统研究过多类共享出行项目，为如何提升其运营效率、如何投放激励以降低用户流失、
+以及如何促进多方式联运提供了实证依据。
+加入马里兰大学后，我担任全美首个 MaaS 应用 "incenTrip" 项目的技术负责人；
+该项目由美国能源部与美国交通部资助，为真实出行者提供绿色出行方案与个性化激励。
+</div>
 
 <iframe src="/images/Bikeshare_Heatmap.html" height="500" width="950" loading="lazy" title="Bikeshare heatmap"></iframe>
 
-## Related Publications
+## <span class="lang-en">Related Publications</span><span class="lang-zh">相关论文</span>
 
-### Journals
+### <span class="lang-en">Journals</span><span class="lang-zh">期刊论文</span>
 
 > 1. **Hu, Songhua**, Mingyang Chen, Yuan Jiang, Wei Sun, and Chenfeng Xiong. "Examining factors associated with
      bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems." Journal of
@@ -36,7 +53,7 @@ funded by USDOE and USDOT, to provide green travel options and personalized ince
 > 6. **Hu, Songhua**, Peng Chen, Hangfei Lin, Chi Xie, and Xiaohong Chen. "Promoting carsharing attractiveness and
      efficiency: An exploratory analysis." Transportation Research Part D: Transport and Environment 65 (2018): 229-243.
 
-### Conferences
+### <span class="lang-en">Conferences</span><span class="lang-zh">会议论文</span>
 
 > 1. Jing, Yi, **Songhua Hu**, and Hangfei Lin. Joint Analysis of Scooter Sharing and Bikesharing Usage: A Structural
      Equation Modeling Approach, Transportation Research Board 100th Annual Meeting (2021), Washington DC.
@@ -44,10 +61,10 @@ funded by USDOE and USDOT, to provide green travel options and personalized ince
      in urban carsharing program, The 21st IEEE International Conference on Intelligent Transportation Systems (2018).
 
 <p align="center">
-<img loading="lazy" decoding="async" src="/images/FF51.jpeg" width="310" hspace="5"/> 
+<img loading="lazy" decoding="async" src="/images/FF51.jpeg" width="310" hspace="5"/>
 <img loading="lazy" decoding="async" src="/images/FF52.jpeg" width="310" hspace="5"/>
-<img loading="lazy" decoding="async" src="/images/FF53.png" width="310" hspace="5"/> 
-<img loading="lazy" decoding="async" src="/images/FF54.png" width="310" hspace="5"/> 
+<img loading="lazy" decoding="async" src="/images/FF53.png" width="310" hspace="5"/>
+<img loading="lazy" decoding="async" src="/images/FF54.png" width="310" hspace="5"/>
 <img loading="lazy" decoding="async" src="/images/FF55.png" width="310" hspace="5"/>
-<img loading="lazy" decoding="async" src="/images/FF56.png" width="310" hspace="5"/> 
+<img loading="lazy" decoding="async" src="/images/FF56.png" width="310" hspace="5"/>
 </p>

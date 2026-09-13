@@ -2,6 +2,39 @@
 
 <!-- start custom head snippets -->
 
+{% comment %}
+  Language state for the bilingual page (see _sass/_i18n.scss).
+
+  This runs in <head>, before the body is parsed, so the reader never sees the
+  wrong language painted and then replaced. Everything it does is one attribute
+  write, which is why it can afford to be inline and blocking.
+
+  Precedence: an explicit choice the reader made here before, then what the
+  browser asks for, then English. The stored value is validated rather than
+  trusted -- it is reader-writable storage being turned into an attribute
+  selector, and anything unrecognised falls back to the browser guess.
+
+  lang= is kept in step with data-lang= on purpose: data-lang drives the
+  stylesheet, while lang is what screen readers switch voices on and what
+  tells a browser's own translate prompt to leave the page alone.
+{% endcomment %}
+<script>
+(function () {
+  var stored = null;
+  try { stored = localStorage.getItem('site-lang'); } catch (e) { /* private mode */ }
+
+  var lang = stored === 'zh' || stored === 'en' ? stored : null;
+  if (!lang) {
+    var pref = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    lang = /^zh/i.test(pref) ? 'zh' : 'en';
+  }
+
+  var root = document.documentElement;
+  root.setAttribute('data-lang', lang);
+  root.setAttribute('lang', lang === 'zh' ? 'zh-Hans' : 'en');
+})();
+</script>
+
 <link rel="icon" type="image/png" sizes="32x32" href="{{ base_path }}/images/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon.png">
 <link rel="manifest" href="{{ base_path }}/images/manifest.json">
