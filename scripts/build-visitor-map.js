@@ -279,14 +279,18 @@ function loadAdmin1() {
   const points = { ...at, ...EXTRA_REGION_POINTS };
   const index = { ...names, ...EXTRA_REGION_NAMES };
 
+  /* The analytics API names a region but never gives its code; this recovers it. */
+  const codeOf = (countryId, name) => index[`${countryId}|${normName(name)}`] || '';
+
   return {
     locate(countryId, region) {
       /* A region id arrives either as a bare subdivision code or as a full ISO 3166-2
          one; normalise to the latter, then fall back to the spelled-out name. */
       const raw = String(region.id || '');
       const code = raw.includes('-') ? raw : (raw && countryId ? `${countryId}-${raw}` : '');
-      return points[code] || points[index[`${countryId}|${normName(region.name)}`]] || null;
+      return points[code] || points[codeOf(countryId, region.name)] || null;
     },
+    codeOf,
     /* Natural Earth's own spelling first, then the alias table that already maps the
        analytics provider's names onto it. */
     countryCode(label) {
@@ -369,6 +373,16 @@ const RETRY_DELAYS_MS = [2000, 5000, 15000, 40000];
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+/* The hosted API allows four requests a second, and a run now makes a few dozen. Space
+   them out rather than tripping that limit and sitting through the retry each time. */
+const API_PACE_MS = 300;
+let lastCallAt = 0;
+async function pace() {
+  const wait = lastCallAt + API_PACE_MS - Date.now();
+  if (wait > 0) await sleep(wait);
+  lastCallAt = Date.now();
+}
+
 /* start must be RFC 3339 and the API asks for it rounded to the hour; omitting `end`
    defaults to now. The date just needs to predate the site, so the map shows cumulative
    totals the way the old ClustrMaps widget did rather than a trailing window. */
@@ -381,6 +395,7 @@ async function apiGet(base, headers, endpoint, params) {
   for (let attempt = 0; ; attempt++) {
     let failure, retryable;
     try {
+      await pace();
       const res = await fetch(url, { headers });
       if (res.ok) return await res.json();
       const body = await res.text().catch(() => '');
@@ -443,54 +458,50 @@ const CN_DIVISIONS = {
 };
 const REGION_EVENT = /^region\/CN-(\d{6})$/;
 
-/* stats/hits lists pages and events together, largest first. It takes a limit but no
-   offset -- there is no second page to ask for -- so 100 rows is the whole answer.
-   That is several times this site's page count plus every mainland province, but say
-   so rather than silently truncating if it ever stops being true. */
-async function fetchRegionEvents(base, headers) {
-  const data = await apiGet(base, headers, 'stats/hits', { start: STATS_START, limit: '100' });
-  if (data.more) console.warn('visitors: stats/hits holds more than 100 rows; region events may be incomplete.');
-  const found = new Map();
+/* stats/hits lists pages and events together, largest first, each with the path id
+   that the other stats endpoints filter on. It takes a limit but no offset -- there is
+   no second page to ask for -- so 100 rows is the whole answer. That is several times
+   this site's page count plus every mainland province, but say so rather than silently
+   truncating if it ever stops being true. */
+async function fetchPaths(get) {
+  const data = await get('stats/hits', { start: STATS_START, limit: '100' });
+  if (data.more) console.warn('visitors: stats/hits holds more than 100 rows; the page filter may be incomplete.');
+  const pages = [];
+  const reported = new Map();
   for (const hit of data.hits || []) {
-    if (!hit.event) continue;
+    if (!hit.event) {
+      pages.push(hit.path_id);
+      continue;
+    }
     const m = REGION_EVENT.exec(hit.path || '');
-    if (!m) continue;
-    const division = CN_DIVISIONS[m[1]];
+    const division = m && CN_DIVISIONS[m[1]];
     if (!division) continue;
     const [code, name] = division;
-    const prev = found.get(code);
-    found.set(code, { count: (prev ? prev.count : 0) + hit.count, name });
+    reported.set(code, { name, pathId: hit.path_id, count: hit.count });
   }
-  return found;
+  return { pages, reported };
 }
 
-async function fetchGoatCounter(site, token) {
+async function fetchGoatCounter(site, token, codeOf) {
   const base = `https://${site}.goatcounter.com/api/v0`;
   const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
+  const get = (endpoint, params) => apiGet(base, headers, endpoint, params);
+
+  /* GoatCounter records a location for every hit, events included, so each region
+     event below would otherwise land on its country's count as one more visit. The
+     stats endpoints take an include_paths filter (there is no exclude), so every count
+     from here on is asked for over the pages alone. */
+  const { pages, reported } = await fetchPaths(get);
+  const onPages = pages.length ? { include_paths: pages.join(',') } : {};
 
   /* "locations" is a {page} value of GET /api/v0/stats/{page} (alongside browsers,
      systems, languages, sizes, campaigns, toprefs). There is no city-level page:
      GoatCounter does not collect one at all. */
-  const data = await apiGet(base, headers, 'stats/locations', { start: STATS_START, limit: '250' });
+  const data = await get('stats/locations', { start: STATS_START, ...onPages, limit: '250' });
   /* 250 rows comfortably exceeds the number of countries, but say so rather than
      silently truncating if that ever stops being true. */
   if (data.more) console.warn('visitors: API reported more rows than the limit returned; raise limit.');
   const countries = (data.stats || []).map((s) => ({ id: s.id, name: s.name, count: s.count }));
-
-  /* What readers reported about themselves. GoatCounter records a location for every
-     hit, events included, so each of these also landed on its own country's count:
-     take them back out before anything downstream reads it. The arithmetic is exact --
-     an event is only ever sent alongside a pageview from the same reader -- except for
-     one whose browser says China while GeoLite2 says elsewhere, which costs a single hit
-     in each of two countries. */
-  const reported = await fetchRegionEvents(base, headers);
-  const reportedFor = (id) => [...reported].filter(([code]) => code.startsWith(`${id}-`));
-  for (const country of countries) {
-    const mine = reportedFor(country.id);
-    if (mine.length) {
-      country.count = Math.max(country.count - mine.reduce((n, [, r]) => n + r.count, 0), 0);
-    }
-  }
 
   /* GET /stats/locations/{country} drills down to region. GoatCounter only records a
      region for countries listed in the site's collect_regions setting (default
@@ -498,59 +509,76 @@ async function fetchGoatCounter(site, token) {
      countries yielding nothing here is expected, not a failure. */
   for (const country of countries) {
     if (country.count < REGION_MIN_COUNTRY_HITS) continue;
-    /* Already answered, and better, by the reader themselves. */
-    if (reportedFor(country.id).length) continue;
-    const detail = await apiGet(base, headers, `stats/locations/${encodeURIComponent(country.id)}`, {
+    const detail = await get(`stats/locations/${encodeURIComponent(country.id)}`, {
       start: STATS_START,
+      ...onPages,
       limit: '100',
     });
+    const rows = detail.stats || [];
+    /* The API names a region but never gives its code. Recover it where the vendored
+       table can, so that what the browser reports below -- which arrives as a code --
+       lands on the same row rather than beside it. */
+    const named = rows
+      .filter((r) => r.name)
+      .map((r) => ({ id: codeOf(country.id, r.name), name: r.name, count: r.count }));
+
+    /* Then what the readers' own browsers said. GeoLite2 leaves most mainland
+       addresses without a province; those readers asked CZ88 instead and the answer
+       arrived as an event. GoatCounter counts a path once per session, so an event
+       tallies sessions -- and it recorded its own location for each of them, which is
+       what the per-event drill-down returns. Sessions GeoLite2 could name are already
+       on a row above, through the pages they read. Sessions it could not are the ones
+       only the browser knows about, and each is worth exactly one more visit on the
+       province it named: the pageview that carried the event. That is a floor -- the
+       rest of what that reader read stays in the nameless bucket, on the country dot --
+       but it never counts anyone twice, and it never contradicts GeoLite2 where the two
+       disagree; that is only logged. */
+    const mine = [...reported].filter(([code]) => code.startsWith(`${country.id}-`));
+    let fromBrowser = 0;
+    let disagreed = 0;
+    for (const [code, r] of mine) {
+      const where = await get(`stats/locations/${encodeURIComponent(country.id)}`, {
+        start: STATS_START,
+        include_paths: String(r.pathId),
+        limit: '100',
+      });
+      for (const row of where.stats || []) {
+        if (row.name) {
+          if (codeOf(country.id, row.name) !== code) disagreed += row.count;
+          continue;
+        }
+        let target = named.find((n) => n.id === code);
+        if (!target) named.push((target = { id: code, name: r.name, count: 0 }));
+        target.count += row.count;
+        fromBrowser += row.count;
+      }
+    }
+
+    const regions = named
+      .filter((r) => r.count >= REGION_MIN_HITS)
+      .sort((a, b) => b.count - a.count)
+      .slice(0, REGION_MAX);
+    if (regions.length) country.regions = regions;
+
     /* Two different things look identical from the outside when a country ends up with
        no dots of its own: the API returned no region for those hits at all (not in the
        site's collect_regions, or the GeoIP could not place them), or it did and every
        one of them sits under the privacy floor. Say which, because the first is a
        setting to go and change and the second only needs more traffic. */
-    const rows = detail.stats || [];
-    const named = rows.filter((r) => r.name);
-    const regions = named
-      .filter((r) => r.count >= REGION_MIN_HITS)
-      .sort((a, b) => b.count - a.count)
-      .slice(0, REGION_MAX)
-      .map((r) => ({ id: r.id, name: r.name, count: r.count }));
-
-    if (regions.length) {
-      country.regions = regions;
+    if (mine.length) {
+      const placed = named.reduce((n, r) => n + r.count, 0);
+      console.log(`visitors: ${country.name} (${country.count} visits) has ${placed} placed in ${named.length}`
+        + ` region(s), ${fromBrowser} of them by the readers' browsers alone`
+        + (disagreed ? ` (${disagreed} placed elsewhere by GeoLite2, left there)` : '')
+        + `; ${regions.length} above the floor.`);
     } else if (!named.length) {
       console.log(`visitors: ${country.name} (${country.count} visits) reports no region at all`
         + ` -- ${rows.length} row(s) back, none named. Check collect_regions for ${country.id}.`);
-    } else {
+    } else if (!regions.length) {
       const largest = Math.max(...named.map((r) => r.count));
       console.log(`visitors: ${country.name} (${country.count} visits) has ${named.length} region(s),`
         + ` largest ${largest} < ${REGION_MIN_HITS} -- all below the privacy floor.`);
     }
-  }
-
-  /* Fold the reported regions in. They describe the same visits GeoLite2 was guessing
-     at, so they replace its answer instead of joining it: keeping both would draw a
-     visit twice. */
-  for (const country of countries) {
-    const mine = reportedFor(country.id);
-    if (!mine.length) continue;
-    if (country.count < REGION_MIN_COUNTRY_HITS) continue;
-
-    /* The same floors as above, plus a running clamp so the dots can never outgrow the
-       country they sit in; whatever does not fit stays on the country dot. */
-    let room = country.count;
-    const regions = [];
-    for (const [code, r] of mine.sort((a, b) => b[1].count - a[1].count)) {
-      if (regions.length >= REGION_MAX) break;
-      if (r.count < REGION_MIN_HITS) break; /* sorted: nothing after this is any bigger */
-      if (r.count > room) continue; /* too big for what is left, but a smaller one may fit */
-      regions.push({ id: code, name: r.name, count: r.count });
-      room -= r.count;
-    }
-    if (regions.length) country.regions = regions;
-    console.log(`visitors: ${country.name} reports ${mine.length} region(s) from the browser,`
-      + ` ${regions.length} above the floor.`);
   }
 
   const withRegions = countries.filter((c) => c.regions).length;
@@ -578,10 +606,10 @@ async function buildVisitors() {
   }
   const { centroids } = JSON.parse(fs.readFileSync(LAND_PATH, 'utf8'));
   const lookup = { ...centroids, ...EXTRA_CENTROIDS };
-  const { locate } = loadAdmin1();
+  const { locate, codeOf } = loadAdmin1();
 
   console.log(`visitors: querying GoatCounter site "${site}"...`);
-  const stats = await fetchGoatCounter(site, token);
+  const stats = await fetchGoatCounter(site, token, codeOf);
 
   const points = [];
   const unmatched = [];

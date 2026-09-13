@@ -131,10 +131,13 @@
     - only an explicit CN response with a known mainland province code is sent
       to GoatCounter, and every lookup/storage/network failure is silent.
 
-  The event is emitted on each pageview after the one-per-session lookup so its
-  count stays comparable to pageviews.  scripts/build-visitor-map.js validates
-  the code again, folds it into ISO 3166-2, and subtracts these event hits from
-  the country total.
+  The event is re-sent on every pageview so that a GoatCounter session begun
+  after the lookup still carries it, but GoatCounter counts a path once per
+  session: what the event tallies is sessions, not pageviews.
+  scripts/build-visitor-map.js validates the code again, folds it into
+  ISO 3166-2, asks GoatCounter where GeoLite2 put those same sessions, and
+  credits the province only for the ones GeoLite2 could not place itself.  The
+  events are filtered out of every count the map draws.
 {% endcomment %}
 <script>
 (function () {
