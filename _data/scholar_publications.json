@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27",
+  "generated": "2026-09-15",
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en",
   "journal_papers": 41,
@@ -80,6 +80,386 @@
       "count": 1,
       "first": 0,
       "corresponding": 0
+    }
+  ],
+  "records": [
+    {
+      "year": 2026,
+      "title": "Semantics-guided hierarchical decision-making for autonomous driving via LLM-assisted reinforcement learning",
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "authors": "W Li, T Wang, S Hu*",
+      "journal": true
+    },
+    {
+      "year": 2026,
+      "title": "Digital Twin for urban car traffic emission: A case study in Kista, Stockholm",
+      "venue": "Journal of Intelligent and Connected Vehicles",
+      "authors": "J Jostmann†, S Hu†, A Gustafsson, P Santi, C Ratti, Z Ma",
+      "journal": true
+    },
+    {
+      "year": 2026,
+      "title": "Mobility Inequality In Global Cities Via Dual-Layer Concentration Of Autonomous Vehicle Services",
+      "venue": "",
+      "authors": "X Wen, N Zheng, F Zhang, S Hu, S Jian, Z Cui, P Santi, Z Pu",
+      "journal": false
+    },
+    {
+      "year": 2026,
+      "title": "Ubiquitous mobility data enable near-real-time emission estimates for urban traffic",
+      "venue": "Nature Sustainability (Research Briefing)",
+      "authors": "S Hu, P Santi",
+      "journal": false
+    },
+    {
+      "year": 2026,
+      "title": "Ubiquitous data-driven framework for traffic emission estimation and policy evaluation",
+      "venue": "Nature Sustainability",
+      "authors": "S Hu*, P Santi, T Benson, X Zhou, A Wang, A Kumar, C Ratti",
+      "journal": true
+    },
+    {
+      "year": 2026,
+      "title": "Crowdsourced reviews reveal substantial disparities in public perceptions of parking",
+      "venue": "Cities",
+      "authors": "L Li†*, S Hu†*, L Dinh, L Hemphill",
+      "journal": true
+    },
+    {
+      "year": 2026,
+      "title": "A survey of multi-modal urban transportation network resilience: modeling, evaluation, and optimization",
+      "venue": "Transportation Research Part E: Logistics and Transportation Review",
+      "authors": "B Chen, S Hu, X Xu, G Wang, DH Lee, Z He",
+      "journal": true
+    },
+    {
+      "year": 2025,
+      "title": "Toward satisfactory public accessibility: A crowdsourcing approach through online reviews to inclusive urban design",
+      "venue": "Computers, Environment and Urban Systems",
+      "authors": "L Li†, S Hu†, Y Dai, M Deng, P Momeni, G Laverghetta, L Fan, Z Ma, ...",
+      "journal": true
+    },
+    {
+      "year": 2025,
+      "title": "Characterizing human mobility and its impact on the spread of COVID-19 during extreme weather events: A case study of hurricane Laura",
+      "venue": "Journal of Transport Geography",
+      "authors": "K Liu, X Wu, L Molnar, S Hu, L Zhang, C Xiong",
+      "journal": true
+    },
+    {
+      "year": 2025,
+      "title": "Complementary or Competing? Studying the Relationship between E-Scooter Sharing and Bikesharing in Austin, Texas",
+      "venue": "Journal of Planning Education and Research",
+      "authors": "P Chen, S Hu",
+      "journal": true
+    },
+    {
+      "year": 2025,
+      "title": "Evaluating the impact of zone 30 policies on citywide road traffic emissions and efficiency: A big data-driven approach",
+      "venue": "Transportation Research Part A: Policy and Practice",
+      "authors": "S Hu†*, G Orsi†, P Santi, A Wang, U Fugiglando, C Ratti",
+      "journal": true
+    },
+    {
+      "year": 2025,
+      "title": "Analyzing public response to wildfires: A socio-spatial study using SIR models and NLP techniques",
+      "venue": "Computers, Environment and Urban Systems",
+      "authors": "Z Ma, G Hu, TS Lin, L Li, S Hu, L Hagen, GB Baecher",
+      "journal": true
+    },
+    {
+      "year": 2025,
+      "title": "Modeling shared e-micromobility as a label propagation process for detecting overlapping communities",
+      "venue": "Computers, Environment and Urban Systems",
+      "authors": "P Luo, C Song, H Li, D Zhu, S Hu, F Duarte",
+      "journal": true
+    },
+    {
+      "year": 2025,
+      "title": "Determinants of the localized behavior of individual food delivery choices",
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "authors": "R Su, J Eshtiyagh, P Santi, S Hu, F Duarte, M Mazzarello, C Ratti",
+      "journal": true
+    },
+    {
+      "year": 2025,
+      "title": "Estimating vehicular emissions by applying deep learning on video camera scenes",
+      "venue": "",
+      "authors": "P Santi, A Kumar, T Benson, A Wang, S Hu, Y Sekimoto, F Duarte, X Zhu, ...",
+      "journal": false
+    },
+    {
+      "year": 2025,
+      "title": "The resiliency of transit and ride-hailing system through the coronavirus pandemic: Lessons from six large US cities",
+      "venue": "Case Studies on Transport Policy",
+      "authors": "P Chen, X Yang, Y Zhang, S Hu",
+      "journal": true
+    },
+    {
+      "year": 2024,
+      "title": "Multi-crowdsourced data fusion for modeling link-level traffic resilience to adverse weather events",
+      "venue": "International Journal of Disaster Risk Reduction",
+      "authors": "S Hu, K Wang, L Li, Y Zhao, Z He, Y Zhang",
+      "journal": true
+    },
+    {
+      "year": 2024,
+      "title": "Academic collaboration on large language model studies increases overall but varies across disciplines",
+      "venue": "arXiv preprint arXiv:2408.04163",
+      "authors": "L Li, L Dinh, S Hu, L Hemphill",
+      "journal": false
+    },
+    {
+      "year": 2024,
+      "title": "Understanding factors influencing user engagement in incentive-based travel demand management program",
+      "venue": "Transportation Research Part A: Policy and Practice",
+      "authors": "S Hu, C Xiong, Y Ji, X Wu, K Liu, P Schonfeld",
+      "journal": true
+    },
+    {
+      "year": 2024,
+      "title": "Evaluating equitable transit-oriented development (TOD) via the node-place-people model",
+      "venue": "Transportation Research Part A: Policy and Practice",
+      "authors": "Y Zhao, S Hu, M Zhang",
+      "journal": true
+    },
+    {
+      "year": 2024,
+      "title": "Crowdsourcing public attitudes toward local services through the lens of Google Maps reviews: An urban density-based perspective",
+      "venue": "arXiv preprint arXiv:2404.13156",
+      "authors": "L Li, S Hu, A Shaw, L Hemphill",
+      "journal": false
+    },
+    {
+      "year": 2024,
+      "title": "Evaluating travel behavior resilience across urban and rural areas during the COVID-19 pandemic: contributions of vaccination and epidemiological indicators",
+      "venue": "Transportation research part A: policy and practice",
+      "authors": "H Xi, JD Nelson, DA Hensher, S Hu, X Shao, C Xie",
+      "journal": true
+    },
+    {
+      "year": 2024,
+      "title": "Planning dynamic wireless charging infrastructure for battery electric bus systems with the joint optimization of charging scheduling",
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "authors": "W Li, Y He, S Hu, Z He, C Ratti",
+      "journal": true
+    },
+    {
+      "year": 2024,
+      "title": "Big-data driven framework to estimate vehicle volume based on mobile device location data",
+      "venue": "Transportation research record",
+      "authors": "Mofeng Yang, Weiyu Luo, Mohammad Ashoori, Jina Mahmoudi, Chenfeng Xiong, Jiawei Lu, Guangchen Zhao, Saeed Saleh Namadi, Songhua Hu, Aliakbar Kabiri, Ya Ji",
+      "journal": true
+    },
+    {
+      "year": 2024,
+      "title": "Assessing the damage of natural disasters using multimodal large language models and social media crowdsourcing",
+      "venue": "AGU24",
+      "authors": "L Li, Y Lu, S Hu, J Liu, Z Ma, M Deng, Z Han, GB Baecher, L Hemphill",
+      "journal": false
+    },
+    {
+      "year": 2023,
+      "title": "Vaccination, human mobility, and COVID-19 health outcomes: Empirical comparison before and during the outbreak of SARS‐Cov-2 B. 1.1. 529 (Omicron) variant",
+      "venue": "Vaccine",
+      "authors": "S Hu*, C Xiong, Y Zhao, X Yuan, X Wang",
+      "journal": true
+    },
+    {
+      "year": 2023,
+      "title": "Examining nonlinearity in population inflow estimation using big data: An empirical comparison of explainable machine learning models",
+      "venue": "Transportation Research Part A: Policy and Practice",
+      "authors": "S Hu, C Xiong, P Chen, P Schonfeld",
+      "journal": true
+    },
+    {
+      "year": 2023,
+      "title": "Health disparity in the spread of COVID-19: evidence from social distancing, risk of interactions, and access to testing",
+      "venue": "Health & place",
+      "authors": "R Wei, Y Zhang, S Gao, BJ Brown, S Hu, BG Link",
+      "journal": true
+    },
+    {
+      "year": 2023,
+      "title": "A big-data-driven framework for spatiotemporal travel demand estimation and prediction",
+      "venue": "University of Maryland, College Park",
+      "authors": "S Hu",
+      "journal": false
+    },
+    {
+      "year": 2023,
+      "title": "High-dimensional Population Inflow Time Series Forecasting via an Interpretable Hierarchical Transformer",
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "authors": "S Hu, C Xiong",
+      "journal": true
+    },
+    {
+      "year": 2022,
+      "title": "COVID-19 vaccine hesitancy cannot fully explain disparities in vaccination coverage across the contiguous United States",
+      "venue": "Vaccine",
+      "authors": "S Hu, C Xiong, Q Li, Z Wang, Y Jiang",
+      "journal": true
+    },
+    {
+      "year": 2022,
+      "title": "Examining factors associated with bike-and-ride (BnR) activities around metro stations in large-scale dockless bikesharing systems",
+      "venue": "Journal of Transport Geography",
+      "authors": "S Hu, M Chen, Y Jiang, W Sun, C Xiong",
+      "journal": true
+    },
+    {
+      "year": 2022,
+      "title": "Examining spatiotemporal evolution of racial/ethnic disparities in human mobility and COVID-19 health outcomes: Evidence from the contiguous United States",
+      "venue": "Sustainable Cities and Society",
+      "authors": "S Hu, C Xiong, H Younes, M Yang, A Darzi, ZC Jin",
+      "journal": true
+    },
+    {
+      "year": 2021,
+      "title": "Do racial and ethnic disparities in following stay-at-home orders influence COVID-19 health outcomes? A mediation analysis approach",
+      "venue": "PloS one",
+      "authors": "S Hu, W Luo, A Darzi, Y Pan, G Zhao, Y Liu, C Xiong",
+      "journal": true
+    },
+    {
+      "year": 2021,
+      "title": "Flatten the curve: Empirical evidence on how non-pharmaceutical interventions substituted pharmaceutical treatments during COVID-19 pandemic",
+      "venue": "PLoS One",
+      "authors": "W Luo, W Guo, S Hu, M Yang, X Hu, C Xiong",
+      "journal": true
+    },
+    {
+      "year": 2021,
+      "title": "Do personalized economic incentives work in promoting shared mobility? Examining customer churn using a time-varying Cox model",
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "authors": "S Hu, P Chen, X Chen",
+      "journal": true
+    },
+    {
+      "year": 2021,
+      "title": "Interactive COVID-19 mobility impact and social distancing analysis platform",
+      "venue": "Transportation Research Record",
+      "authors": "Lei Zhang, Aref Darzi, Sepehr Ghader, Michael L Pack, Chenfeng Xiong, Mofeng Yang, Qianqian Sun, AliAkbar Kabiri, Songhua Hu",
+      "journal": true
+    },
+    {
+      "year": 2021,
+      "title": "Examining spatiotemporal changing patterns of bike-sharing usage during COVID-19 pandemic",
+      "venue": "Journal of Transport Geography",
+      "authors": "S Hu, C Xiong, Z Liu, L Zhang",
+      "journal": true
+    },
+    {
+      "year": 2021,
+      "title": "A Big-Data Driven Approach to Analyzing and Modeling Human Mobility Trend under Non-Pharmaceutical Interventions during COVID-19 Pandemic",
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "authors": "S Hu, C Xiong, M Yang, H Younes, W Luo, L Zhang",
+      "journal": true
+    },
+    {
+      "year": 2021,
+      "title": "Who left riding transit? Examining socioeconomic disparities in the impact of COVID-19 on ridership",
+      "venue": "Transportation Research Part D: Transport and Environment",
+      "authors": "S Hu, P Chen",
+      "journal": true
+    },
+    {
+      "year": 2021,
+      "title": "Estimating Traffic Volume with Limited Observations: A Combination of Sampling Expansion and Geographically Weighted Poisson Regression",
+      "venue": "Transportation Research Board 100th Annual MeetingTransportation Research Board",
+      "authors": "Y Jing, S Hu, H Lin",
+      "journal": false
+    },
+    {
+      "year": 2021,
+      "title": "Joint Analysis of Scooter Sharing and Bikesharing Usage: A Structural Equation Modeling Approach",
+      "venue": "Transportation Research Board 100th Annual Meeting, TRBAM-21-00511",
+      "authors": "Y Jing, S Hu, H Lin",
+      "journal": false
+    },
+    {
+      "year": 2020,
+      "title": "Mobile device location data reveal human mobility response to state-level stay-at-home orders during the COVID-19 pandemic in the USA",
+      "venue": "Journal of the Royal Society Interface",
+      "authors": "C Xiong, S Hu, M Yang, H Younes, W Luo, S Ghader, L Zhang",
+      "journal": true
+    },
+    {
+      "year": 2020,
+      "title": "Mobile device data reveal the dynamics in a positive relationship between human mobility and COVID-19 infections",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "authors": "C Xiong, S Hu, M Yang, W Luo, L Zhang",
+      "journal": true
+    },
+    {
+      "year": 2020,
+      "title": "Predicting shared-car use and examining nonlinear effects using gradient boosting regression trees",
+      "venue": "International Journal of Sustainable Transportation",
+      "authors": "T Wang, S Hu*, Y Jiang",
+      "journal": true
+    },
+    {
+      "year": 2020,
+      "title": "Modeling Usage Frequencies and Vehicle Preferences in a Large-Scale Electric Vehicle Sharing System.",
+      "venue": "IEEE Intelligent Transportation Systems Magazine",
+      "authors": "S Hu, H Lin, X Chen, K Xie, X Shan",
+      "journal": true
+    },
+    {
+      "year": 2020,
+      "title": "University of Maryland COVID-19 impact analysis platform",
+      "venue": "College Park, USA: University of Maryland",
+      "authors": "L Zhang, S Ghader, ML Pack, C Xiong, A Darzi, M Yang, Q Sun, A Kabiri, ...",
+      "journal": false
+    },
+    {
+      "year": 2020,
+      "title": "COVID‐19 and Income Profile: How Communities in the United States Responded to Mobility Restrictions at Early‐pandemic Stage",
+      "venue": "Regional Science Policy & Practice",
+      "authors": "Q Sun, W Zhou, A Kabiri, A Darzi, S Hu, H Younes, L Zhang",
+      "journal": true
+    },
+    {
+      "year": 2019,
+      "title": "Exploring the effect of battery capacity on electric vehicle sharing programs using a simulation approach",
+      "venue": "Transportation Research Part D: Transport and Environment",
+      "authors": "S Hu, P Chen, F Xin, C Xie",
+      "journal": true
+    },
+    {
+      "year": 2019,
+      "title": "Estimating traffic volume for local streets with imbalanced data",
+      "venue": "Transportation Research Record",
+      "authors": "P Chen, S Hu*, Q Shen, H Lin, C Xie",
+      "journal": true
+    },
+    {
+      "year": 2018,
+      "title": "Promoting carsharing attractiveness and efficiency: An exploratory analysis",
+      "venue": "Transportation Research Part D: Transport and Environment",
+      "authors": "S Hu, P Chen, H Lin, C Xie, X Chen",
+      "journal": true
+    },
+    {
+      "year": 2018,
+      "title": "Impacts of rain and waterlogging on traffic speed and volume on urban roads",
+      "venue": "2018 21st International Conference on Intelligent Transportation Systems …",
+      "authors": "S Hu, H Lin, K Xie, J Dai, J Qui",
+      "journal": false
+    },
+    {
+      "year": 2018,
+      "title": "Modeling users' vehicles selection behavior in the urban carsharing program",
+      "venue": "2018 21st International Conference on Intelligent Transportation Systems …",
+      "authors": "S Hu, H Lin, K Xie, X Chen, H Shi",
+      "journal": false
+    },
+    {
+      "year": 2018,
+      "title": "Identification of Urban Road Waterlogging Using Floating Car Data",
+      "venue": "18th COTA International Conference of Transportation Professionals",
+      "authors": "S Hu, J Dai, J Qiu, H Lin",
+      "journal": false
     }
   ]
 }

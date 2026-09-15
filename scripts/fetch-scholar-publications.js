@@ -26,6 +26,13 @@
  * site.data, so about.md renders these numbers server-side -- no client fetch, no empty
  * strip while JS runs, and they survive JS being off.
  *
+ * The file also carries the profile itself (`records`: every row, with year, title, venue,
+ * author line and whether it counts as a journal paper), and that list is a second
+ * consumer's input, not decoration. The profile is curated by hand and is the one list of
+ * his work that is complete and correct, so build-coauthor-network.js treats it as the
+ * authority on what is his: it keeps only OpenAlex works that appear here, and looks up by
+ * title any journal paper OpenAlex has filed under some other "Songhua Hu" record.
+ *
  * Two ways in, picked by whether SERPAPI_KEY is set, matching fetch-scholar-metrics.js:
  *
  *   with the key     SerpAPI's google_scholar_author engine. This is what CI uses, because
@@ -561,6 +568,20 @@ async function main() {
     corresponding: corresponding,
     presentations: RULES.presentations,
     featured: r.featured,
+    /* Profile order (newest first), with the venue as it is counted -- volume and pages
+       stripped -- so the list reads as the roster it is used as, not as a citation. The
+       author line is the profile's own, markers included, and whole where a journal paper's
+       record was reopened above. */
+    records: articles.map((a) => {
+      const j = journals.find((x) => x.title === a.title && x.year === a.year);
+      return {
+        year: Number(a.year) || null,
+        title: a.title,
+        venue: venueName(a.venue),
+        authors: j ? j.authors : a.authors,
+        journal: Boolean(j),
+      };
+    }),
   }, 2);
   console.log((written ? 'Wrote ' : 'Unchanged ') + OUT_PATH);
 }

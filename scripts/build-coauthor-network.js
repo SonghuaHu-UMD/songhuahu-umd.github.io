@@ -17,28 +17,13 @@ const CITATIONS_PATH = path.resolve(__dirname, '..', 'assets', 'citations_by_yea
 const TOPICS_PATH = path.resolve(__dirname, '..', 'assets', 'topic_evolution.json');
 const MANUAL_ABSTRACTS_PATH = path.resolve(__dirname, '..', 'assets', 'manual_abstracts.json');
 const CURATED_PHRASES_PATH = path.resolve(__dirname, '..', 'assets', 'curated_phrases.json');
+const SCHOLAR_PATH = path.resolve(__dirname, '..', '_data', 'scholar_publications.json');
 const TOP_N_TOPICS = 6;
 
-/* Disambiguation filters — OpenAlex sometimes attributes works to the wrong person. */
-const MIN_YEAR = 2017;                   /* user's first transportation paper era */
-const BLOCKLIST = new Set([              /* explicit OpenAlex IDs known not to be the user */
-  'https://openalex.org/W4383197404',    /* "Review of Contentious Biometric Voters Registration..." (politics) */
-  'https://openalex.org/W2795257846',    /* "Power control algorithm based on non-cooperative game theory..." (telecom, Hefei UT — different person) */
-  'https://openalex.org/W3015065386',    /* "First-principles study on the electronic and optical properties of 2D chalcogenides" (physics, Shenzhen Polytechnic) */
-  'https://openalex.org/W3195056770',    /* "Research on a real-time control strategy of battery energy storage system" (Shenzhen Polytechnic) */
-  'https://openalex.org/W4225694807',    /* "Structural Design and Analysis of a Booster Arm Made of a Carbon Fiber Reinforced Epoxy Composite" (materials engineering) */
-  'https://openalex.org/W4321384946',    /* "Optimization of Driving Energy Consumption for Wearable Industrial Lower Limb Exoskeleton" (robotics) */
-]);
-
-/* Any authorship listing "Shenzhen Polytechnic" as Songhua Hu's institution belongs to a
-   different person who shares this ORCID in OpenAlex — auto-drop those works. */
-const ORCID_URL = 'https://orcid.org/' + ORCID;
-const WRONG_AFFIL_RE = /shenzhen polytechnic/i;
-const isWrongAffiliation = (w) => {
-  const me = (w.authorships || []).find(a => a.author && a.author.orcid === ORCID_URL);
-  if (!me) return false;
-  return (me.institutions || []).some(i => WRONG_AFFIL_RE.test(i.display_name || ''));
-};
+/* His first transportation paper: origin of the topic timeline's two-year bins and floor of
+   the citation chart. Not a filter -- what counts as his is decided by the Scholar profile
+   below, not by a date. */
+const MIN_YEAR = 2017;
 
 /* SSRN is a preprint server; OpenAlex sometimes labels its entries as 'article' rather than
    'preprint', so they slip past the type filter. Drop them explicitly. */
@@ -133,6 +118,99 @@ async function fetchAllWorks() {
   return works;
 }
 
+/* Names as printed on a paper come in every shape -- "Xiong, Chenfeng", "Younes, Hannah N",
+   "Xuefeng (David) Shao" -- so only the family name is compared: before the comma if there
+   is one, else the last word. givenFamily puts a comma-form name back into reading order. */
+const letters = (s) => String(s || '').toLowerCase().replace(/[^a-z\u00C0-\u017F]+/g, ' ').trim();
+const familyOf = (name) => {
+  const raw = String(name || '');
+  if (raw.includes(',')) return letters(raw.split(',')[0]);
+  return letters(raw).split(' ').pop();
+};
+const givenFamily = (name) => {
+  const raw = String(name || '').trim();
+  const i = raw.indexOf(',');
+  return (i === -1 ? raw : raw.slice(i + 1).trim() + ' ' + raw.slice(0, i).trim()).replace(/\s+/g, ' ');
+};
+
+/* The ORCID query is only as good as OpenAlex's author matching, and that matching is wrong
+   in both directions. It hands him other people's papers -- a physics paper from Shenzhen
+   Polytechnic, a telecom paper from Hefei, a politics review -- which used to be kept out by
+   a hand-typed blocklist that needed a new line every time it happened. And it files some of
+   his own under a stray "Songhua Hu" record with no ORCID (the TR Part E survey with
+   Zhengbing He was one, and with it a collaboration the graph never saw).
+
+   The Google Scholar profile is curated by hand and is the one complete, correct list of his
+   work, so it is the authority on what is his. fetch-scholar-publications.js writes every
+   row of it into _data as `records`; a fetched work is kept only if its title is on the
+   profile, and any journal paper on the profile that OpenAlex did not attribute to the ORCID
+   is looked up by title and added -- one request each, only for the gaps. Only journal rows
+   are looked up: they are what OpenAlex indexes reliably, and a conference paper filed under
+   someone else would mostly be a lookup for a record that does not exist.
+
+   Titles are matched on their opening rather than in full, because the profile keeps the
+   title a paper was submitted under and the publisher prints the one it was accepted with:
+   "...Mobility Restrictions at Early-pandemic Stage" on Scholar is "...in the pandemic's
+   early stages" in OpenAlex. The same is why the query sends only the first ten words --
+   title.search wants every word present. A match must also fall within two years (Scholar
+   dates an online-first paper by its first appearance, the issue can be two years later)
+   and carry a byline that reads as his. Preprints are left out here as everywhere else. */
+const normTitle = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const TITLE_PREFIX = 40;
+const sameTitle = (a, b) => {
+  const [na, nb] = [normTitle(a), normTitle(b)];
+  if (na === nb) return true;
+  return na.length >= TITLE_PREFIX && nb.length >= TITLE_PREFIX && na.slice(0, TITLE_PREFIX) === nb.slice(0, TITLE_PREFIX);
+};
+const isSelfByline = (a) => {
+  const printed = a.raw_author_name || (a.author && a.author.display_name);
+  return familyOf(printed) === 'hu' && /^s/i.test(givenFamily(printed));
+};
+
+/* The profile is committed, so a checkout always has it; a missing or empty roster means
+   fetch-scholar-publications.js has never written one here, and building without it would
+   silently fall back to trusting OpenAlex about whose papers these are. */
+function scholarRecords() {
+  let records;
+  try { records = JSON.parse(fs.readFileSync(SCHOLAR_PATH, 'utf8')).records; } catch (e) { /* reported below */ }
+  if (!Array.isArray(records) || !records.length) {
+    throw new Error('no Scholar profile records in ' + SCHOLAR_PATH + ' - run `npm run build:scholar-pubs` first');
+  }
+  return records;
+}
+const onProfile = (records, w) => records.some(r => sameTitle(r.title, w.title));
+
+async function addUnattributed(works, records) {
+  const haveId = new Set(works.map(w => w.id));
+  const journal = records.filter(r => r.journal);
+  const gaps = journal.filter(p => p.title && !works.some(w => sameTitle(w.title, p.title)));
+  console.log('  ' + records.length + ' profile records, ' + journal.length + ' journal papers, ' + gaps.length + ' of those not attributed to the ORCID');
+  for (const p of gaps) {
+    /* Commas separate OpenAlex filters and its edge rejects them even percent-encoded, and
+       title.search is a full-text match anyway, so punctuation is simply dropped. */
+    const q = String(p.title).replace(/[^\w\s-]/g, ' ').trim().split(/\s+/).slice(0, 10).join(' ');
+    const url = `https://api.openalex.org/works?filter=title.search:${encodeURIComponent(q)}&per-page=10&select=id,title,type,publication_year,authorships,cited_by_count,counts_by_year,primary_topic,concepts,keywords,abstract_inverted_index,doi,primary_location`;
+    const j = await fetchJSON(url, 'OpenAlex title lookup');
+    const hits = (j.results || []).filter(w =>
+      sameTitle(w.title, p.title) &&
+      (!p.year || !w.publication_year || Math.abs(w.publication_year - p.year) <= 2) &&
+      (w.authorships || []).some(isSelfByline));
+    const label = (p.year || '????') + '  ' + String(p.title).slice(0, 70);
+    const w = hits.find(x => x.type !== 'preprint' && !isSSRN(x));
+    if (!w) {
+      console.log('    ' + (hits.length ? 'preprint only  ' : 'not in OpenAlex') + '  ' + label);
+      continue;
+    }
+    if (haveId.has(w.id)) {
+      console.log('    already fetched  ' + label);
+      continue;
+    }
+    works.push(w);
+    haveId.add(w.id);
+    console.log('    + ' + w.id.replace('https://openalex.org/', '') + '  ' + label);
+  }
+}
+
 const INST_ABBREV = {
   'University of Maryland, College Park': 'UMD',
   'University of Maryland': 'UMD',
@@ -147,6 +225,48 @@ const INST_ABBREV = {
 };
 const TOP_INST_GROUPS = ['UMD', 'MIT', 'BJTU', 'USF', 'Tongji', 'Villanova'];
 
+/* OpenAlex matches each byline slot to an author record and now and then hangs the wrong
+   record on it: on W4390628442 the fourth author, printed "Zhengbing He", was filed under
+   Songhua Hu's own ID, so the graph counted Hu twice on that paper and He not at all.
+   raw_author_name is the byline as printed, so when its family name disagrees with the
+   matched record's, the byline wins. Otherwise the record's display name is kept: it is
+   the one spelling OpenAlex uses for that person across all works, which is what keeps one
+   person one node. */
+const bylineName = (a) => {
+  const matched = a.author && a.author.display_name;
+  const printed = a.raw_author_name;
+  if (!matched) return printed ? givenFamily(printed) : null;
+  if (!printed || familyOf(printed) === familyOf(matched)) return matched;
+  return givenFamily(printed);
+};
+
+/* The profile's author line is initials and family names -- "W Li, Y He, S Hu, Z He,
+   C Ratti" -- so it cannot supply a name the graph needs, but it can say whether the byline
+   OpenAlex returned is the byline on the paper. Both sides are reduced to first initial and
+   family name (middle initials are where the two sources differ innocently: "GB Baecher" on
+   the profile, "Gregory B. Baecher" in OpenAlex) and compared in order. A difference is
+   reported, never repaired, because which side is wrong takes a person to say. Lines the
+   profile list cut short ("...") are left alone; there is nothing to compare. */
+const initialsOf = (name) => {
+  const parts = givenFamily(name).replace(/[\u2020\u2021*#\u00a7\u00b6]+/g, '').trim().split(/\s+/);
+  if (parts.length < 2) return letters(parts[0] || '');
+  return letters(parts[0]).charAt(0) + ' ' + letters(parts[parts.length - 1]);
+};
+function checkBylines(works, records) {
+  let differ = 0;
+  for (const w of works) {
+    const r = records.find(x => sameTitle(x.title, w.title));
+    if (!r || !r.authors || /\.\.\.$|\u2026$/.test(r.authors.trim())) continue;
+    const scholar = r.authors.split(',').map(initialsOf);
+    const openalex = (w.authorships || []).map(a => initialsOf(bylineName(a) || ''));
+    if (scholar.join(', ') === openalex.join(', ')) continue;
+    if (!differ++) console.log('  byline differs between OpenAlex and the profile:');
+    console.log('    ' + (w.publication_year || '????') + '  ' + String(w.title || '').slice(0, 70));
+    console.log('        OpenAlex: ' + openalex.join(', '));
+    console.log('        Scholar:  ' + scholar.join(', '));
+  }
+}
+
 function buildGraph(works) {
   const norm = s => s.trim().toLowerCase().replace(/\s+/g, ' ');
   const nodeMap = new Map();
@@ -157,29 +277,24 @@ function buildGraph(works) {
     const seen = new Set();
     const authors = [];
     for (const a of (w.authorships || [])) {
-      const name = a.author && a.author.display_name;
+      const name = bylineName(a);
       if (!name) continue;
       const id = norm(name);
       if (seen.has(id)) continue;
       seen.add(id);
       authors.push({ id, name });
-    }
-
-    for (const a of authors) {
-      if (!nodeMap.has(a.id)) nodeMap.set(a.id, { id: a.id, name: a.name, count: 0 });
-      nodeMap.get(a.id).count++;
-    }
-    /* Track each author's institution(s) across all their joint papers. */
-    for (const a of (w.authorships || [])) {
-      const name = a.author && a.author.display_name;
-      if (!name) continue;
-      const id = norm(name);
+      /* Track each author's institution(s) across all their joint papers. */
       for (const inst of (a.institutions || [])) {
         if (!inst.display_name) continue;
         if (!authorInst.has(id)) authorInst.set(id, new Map());
         const m = authorInst.get(id);
         m.set(inst.display_name, (m.get(inst.display_name) || 0) + 1);
       }
+    }
+
+    for (const a of authors) {
+      if (!nodeMap.has(a.id)) nodeMap.set(a.id, { id: a.id, name: a.name, count: 0 });
+      nodeMap.get(a.id).count++;
     }
     for (let i = 0; i < authors.length; i++) {
       for (let j = i + 1; j < authors.length; j++) {
@@ -224,18 +339,28 @@ function buildGraph(works) {
   console.log('Fetching works for ORCID ' + ORCID + ' ...');
   const works = await fetchAllWorks();
   console.log('  ' + works.length + ' works');
+  const records = scholarRecords();
+  console.log('Checking the Scholar profile for papers OpenAlex filed under someone else...');
+  await addUnattributed(works, records);
 
-  const dropped = { preprint: 0, oldYear: 0, blocked: 0, wrongAffil: 0, ssrn: 0 };
+  /* Preprints go even when the profile lists them (it does, as their own rows): the journal
+     version carries the same byline, and counting both would double every co-author on it. */
+  const dropped = { preprint: 0, ssrn: 0, notHis: [] };
   const filtered = works.filter(w => {
-    if (BLOCKLIST.has(w.id)) { dropped.blocked++; return false; }
-    if (isWrongAffiliation(w)) { dropped.wrongAffil++; return false; }
-    if (!w.publication_year || w.publication_year < MIN_YEAR) { dropped.oldYear++; return false; }
     if (w.type === 'preprint') { dropped.preprint++; return false; }
     if (isSSRN(w)) { dropped.ssrn++; return false; }
+    if (!onProfile(records, w)) { dropped.notHis.push(w); return false; }
     return true;
   });
-  console.log('  dropped: ' + dropped.preprint + ' preprints, ' + dropped.oldYear + ' pre-' + MIN_YEAR + ', ' + dropped.blocked + ' blocklisted, ' + dropped.wrongAffil + ' wrong-affiliation, ' + dropped.ssrn + ' SSRN');
+  console.log('  dropped: ' + dropped.preprint + ' preprints, ' + dropped.ssrn + ' SSRN, ' + dropped.notHis.length + ' not on the Scholar profile');
+  /* Listed, because each is one of two things: a paper OpenAlex gave him that is someone
+     else's, which is the normal case and needs nothing done -- or, much rarer, his own paper
+     under a title the profile spells differently enough that the opening does not match. */
+  for (const w of dropped.notHis.sort((a, b) => (b.publication_year || 0) - (a.publication_year || 0))) {
+    console.log('    - ' + (w.publication_year || '????') + '  ' + String(w.title || '').slice(0, 70));
+  }
   console.log('  kept: ' + filtered.length);
+  checkBylines(filtered, records);
 
   const graph = buildGraph(filtered);
   console.log('  ' + graph.nodes.length + ' authors, ' + graph.links.length + ' edges');
@@ -296,14 +421,10 @@ function buildGraph(works) {
   } catch (e) { /* file optional */ }
 
   console.log('Resolving abstracts...');
-  const abstractCandidates = works.filter(w =>
-    w.publication_year && w.publication_year >= MIN_YEAR &&
-    !BLOCKLIST.has(w.id) && !isWrongAffiliation(w) &&
-    w.type !== 'preprint' && !isSSRN(w));
   const filledByWorkId = new Map();
   const newlyAdded = [];
   let filledManual = 0, stillEmpty = 0;
-  for (const w of abstractCandidates) {
+  for (const w of filtered) {
     if (w.abstract_inverted_index) continue;             /* already in OpenAlex */
     const shortId = w.id.replace('https://openalex.org/', '');
     const m = manualAbstracts[shortId];
@@ -326,7 +447,7 @@ function buildGraph(works) {
   console.log('  manual=' + filledManual + ', still-empty=' + stillEmpty);
   if (stillEmpty) {
     console.log('  >>> Please paste abstracts into manual_abstracts.json for these IDs:');
-    const empties = abstractCandidates
+    const empties = filtered
       .filter(w => !w.abstract_inverted_index)
       .filter(w => {
         const m = manualAbstracts[w.id.replace('https://openalex.org/', '')];
@@ -417,17 +538,10 @@ function buildGraph(works) {
   const yearPhraseEdges = new Map();  /* year -> Map("a||b" -> coOccurrence) */
   const yearPaperCount = new Map();
 
-  /* For abstracts only: include preprints to capture more recent papers (their journal versions
-     often haven't been indexed yet). Citations/coauthor still use the strict `filtered` set. */
-  const forAbstracts = works.filter(w =>
-    w.publication_year && w.publication_year >= MIN_YEAR &&
-    !BLOCKLIST.has(w.id) && !isWrongAffiliation(w) &&
-    w.type !== 'preprint' && !isSSRN(w));
-
   /* Group into 2-year periods so each panel has enough papers for meaningful phrases. */
   const BIN_SIZE = 2;
   const binStart = (year) => Math.floor((year - MIN_YEAR) / BIN_SIZE) * BIN_SIZE + MIN_YEAR;
-  const maxYear = Math.max(...forAbstracts.map(w => w.publication_year));
+  const maxYear = Math.max(...filtered.map(w => w.publication_year));
   const binLabel = (s) => {
     const end = s + BIN_SIZE - 1;
     if (end > maxYear) return s === maxYear ? String(s) : s + '–' + maxYear;
@@ -474,7 +588,7 @@ function buildGraph(works) {
     return parts.join(' ');
   };
 
-  for (const w of forAbstracts) {
+  for (const w of filtered) {
     const yr = binStart(w.publication_year);
     const text = textForWork(w);
     if (!text) continue;
@@ -509,9 +623,9 @@ function buildGraph(works) {
     'Huazhong University of Science and Technology': 'HUST',
   };
   const yearInst = new Map();
-  for (const w of forAbstracts) {
+  for (const w of filtered) {
     const yr = binStart(w.publication_year);
-    const me = (w.authorships || []).find(a => a.author && a.author.orcid === ORCID_URL);
+    const me = (w.authorships || []).find(isSelfByline);
     if (!me || !me.institutions || !me.institutions.length) continue;
     const inst = me.institutions[0].display_name;
     if (!inst) continue;
