@@ -214,9 +214,12 @@
         return [(lon + 180) / 360 * w, (LAT_MAX - lat) / (LAT_MAX - LAT_MIN) * h];
       }
       /* Dots share one alpha so overlapping regions read as density; area (not radius)
-         tracks the visit count, which is what a reader actually compares. */
+         tracks the visit count, which is what a reader actually compares. Small on
+         purpose: at 200px across, one pixel is nearly 2 degrees of longitude and Hong
+         Kong sits a pixel from Guangdong, so a busy dot much past 3px radius swallows
+         its neighbours and East Asia turns into one blob. */
       function radius(count) {
-        return 1.6 + Math.sqrt(count / maxCount) * 3.6;
+        return 1.1 + Math.sqrt(count / maxCount) * 1.8;
       }
 
       function draw() {
