@@ -427,9 +427,12 @@ const REGION_MIN_HITS = 2;
 const REGION_MAX = 12;
 
 /* Regions the reader's own browser reported, arriving as an event named
-   "region/CN-430000". CZ88 answers with a 行政区划代码 rather than an ISO 3166-2 code,
-   and the number is what the page sends on. The table below is the only place the two
-   spellings meet.
+   "region/China/Hunan". CZ88 answers with a 行政区划代码 rather than an ISO 3166-2 code;
+   the page validates that number and puts the name on at send time. Until 2026-09-18
+   it sent the number itself, "region/CN-430000", and rows of that spelling remain
+   until they are folded into the named ones in GoatCounter's settings (Manage
+   pageviews -> rename). Both are read here; the table below is the only place the
+   three spellings meet.
 
    Only mainland province-level codes are listed. Taiwan (710000), Hong Kong (810000)
    and Macau (820000) are countries of their own on this map, so an event carrying one
@@ -456,7 +459,20 @@ const CN_DIVISIONS = {
   630000: ['CN-QH', 'Qinghai'],        640000: ['CN-NX', 'Ningxia'],
   650000: ['CN-XJ', 'Xinjiang'],
 };
-const REGION_EVENT = /^region\/CN-(\d{6})$/;
+const CN_BY_NAME = Object.fromEntries(Object.values(CN_DIVISIONS).map((d) => [normName(d[1]), d]));
+const REGION_EVENT_CODE = /^region\/CN-(\d{6})$/;
+const REGION_EVENT_NAME = /^region\/China\/(.+)$/i;
+
+/* The path is matched before the event flag is consulted: a row renamed in
+   GoatCounter's settings comes back as a plain page when the new name did not exist
+   yet, and it must not be mistaken for one. */
+function regionDivision(path) {
+  const byCode = REGION_EVENT_CODE.exec(path);
+  if (byCode) return CN_DIVISIONS[byCode[1]] || null;
+  const byName = REGION_EVENT_NAME.exec(path);
+  if (byName) return CN_BY_NAME[normName(byName[1])] || null;
+  return null;
+}
 
 /* stats/hits lists pages and events together, largest first, each with the path id
    that the other stats endpoints filter on. It takes a limit but no offset -- there is
@@ -469,15 +485,17 @@ async function fetchPaths(get) {
   const pages = [];
   const reported = new Map();
   for (const hit of data.hits || []) {
-    if (!hit.event) {
-      pages.push(hit.path_id);
+    const division = regionDivision(hit.path || '');
+    if (!division) {
+      if (!hit.event) pages.push(hit.path_id);
       continue;
     }
-    const m = REGION_EVENT.exec(hit.path || '');
-    const division = m && CN_DIVISIONS[m[1]];
-    if (!division) continue;
+    /* One province, possibly two spellings: every path id is kept, since the stats
+       endpoints take a list. */
     const [code, name] = division;
-    reported.set(code, { name, pathId: hit.path_id, count: hit.count });
+    const r = reported.get(code) || reported.set(code, { name, pathIds: [], count: 0 }).get(code);
+    r.pathIds.push(hit.path_id);
+    r.count += hit.count;
   }
   return { pages, reported };
 }
@@ -537,7 +555,7 @@ async function fetchGoatCounter(site, token, codeOf) {
   const moves = new Map(); /* country id -> what arrived there, for the log */
   for (const [code, r] of reported) {
     const homeId = code.slice(0, 2);
-    const split = await locations('', { include_paths: String(r.pathId) });
+    const split = await locations('', { include_paths: r.pathIds.join(',') });
     let home = byId.get(homeId);
     if (!home) {
       /* GoatCounter placed nobody there, so it never listed the country. The event's
@@ -556,7 +574,7 @@ async function fetchGoatCounter(site, token, codeOf) {
       const from = byId.get(s.id);
       /* An empty id is the country GeoLite2 could not name at all; it has no regions
          to drill into. */
-      const where = s.id ? await locations(s.id, { include_paths: String(r.pathId) }) : [{ name: '', count: s.count }];
+      const where = s.id ? await locations(s.id, { include_paths: r.pathIds.join(',') }) : [{ name: '', count: s.count }];
       for (const row of where) {
         if (from === home && codeOf(homeId, row.name) === code) continue; /* already where the browser says */
         const n = row.count;

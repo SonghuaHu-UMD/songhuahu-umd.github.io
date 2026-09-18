@@ -173,12 +173,18 @@
     - only an explicit CN response with a known mainland province code is sent
       to GoatCounter, and every lookup/storage/network failure is silent.
 
+  The event is named after the province, "region/China/Guangdong", so the
+  dashboard reads without a lookup table; the 行政区划代码 CZ88 answers with is
+  what gets validated and cached, the name is only put on at send time.  Until
+  2026-09-18 the code itself was sent ("region/CN-440000"); those rows can be
+  folded into the named ones with Settings -> Manage pageviews -> rename, and
+  scripts/build-visitor-map.js reads both spellings regardless.
+
   The event is re-sent on every pageview so that a GoatCounter session begun
   after the lookup still carries it, but GoatCounter counts a path once per
-  session: what the event tallies is sessions, not pageviews.
-  scripts/build-visitor-map.js validates the code again, folds it into
-  ISO 3166-2, asks GoatCounter where GeoLite2 put those same sessions, and
-  credits the province only for the ones GeoLite2 could not place itself.  The
+  session: what the event tallies is sessions, not pageviews.  The build
+  script asks GoatCounter where GeoLite2 put each of those sessions and lets
+  one visit per session follow the browser, onto the province it named.  The
   events are filtered out of every count the map draws.
 {% endcomment %}
 <script>
@@ -187,14 +193,21 @@
     'Asia/Shanghai': 1, 'Asia/Chongqing': 1, 'Asia/Chungking': 1,
     'Asia/Harbin': 1, 'Asia/Urumqi': 1, 'Asia/Kashgar': 1, 'PRC': 1
   };
+  /* Province-level codes only; Taiwan, Hong Kong and Macau are countries of
+     their own on the map.  Names as GoatCounter spells them elsewhere, without
+     spaces: its rename tool splits on whitespace. */
   var MAINLAND_DIVISIONS = {
-    110000: 1, 120000: 1, 130000: 1, 140000: 1, 150000: 1,
-    210000: 1, 220000: 1, 230000: 1, 310000: 1, 320000: 1,
-    330000: 1, 340000: 1, 350000: 1, 360000: 1, 370000: 1,
-    410000: 1, 420000: 1, 430000: 1, 440000: 1, 450000: 1,
-    460000: 1, 500000: 1, 510000: 1, 520000: 1, 530000: 1,
-    540000: 1, 610000: 1, 620000: 1, 630000: 1, 640000: 1,
-    650000: 1
+    110000: 'Beijing',   120000: 'Tianjin',      130000: 'Hebei',
+    140000: 'Shanxi',    150000: 'Inner-Mongolia', 210000: 'Liaoning',
+    220000: 'Jilin',     230000: 'Heilongjiang', 310000: 'Shanghai',
+    320000: 'Jiangsu',   330000: 'Zhejiang',     340000: 'Anhui',
+    350000: 'Fujian',    360000: 'Jiangxi',      370000: 'Shandong',
+    410000: 'Henan',     420000: 'Hubei',        430000: 'Hunan',
+    440000: 'Guangdong', 450000: 'Guangxi',      460000: 'Hainan',
+    500000: 'Chongqing', 510000: 'Sichuan',      520000: 'Guizhou',
+    530000: 'Yunnan',    540000: 'Tibet',        610000: 'Shaanxi',
+    620000: 'Gansu',     630000: 'Qinghai',      640000: 'Ningxia',
+    650000: 'Xinjiang'
   };
   var LOOKUP = 'https://www.cz88.net/api/cz88/ip/base?ip=';
   var STORE = 'visitor-region';
@@ -222,7 +235,7 @@
     if (!code) return;
     whenCounterReady(function () {
       if (window.goatcounter && window.goatcounter.count) {
-        window.goatcounter.count({ path: 'region/CN-' + code, event: true });
+        window.goatcounter.count({ path: 'region/China/' + MAINLAND_DIVISIONS[code], event: true });
       }
     });
   }
