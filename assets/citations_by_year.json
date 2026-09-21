@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-15",
-  "total_citations": 1938,
+  "generated": "2026-09-21",
+  "total_citations": 1942,
   "total_works": 44,
   "h_index": 19,
   "i10_index": 27,
@@ -42,8 +42,8 @@
     },
     {
       "year": 2026,
-      "annual": 157,
-      "cumulative": 1938
+      "annual": 161,
+      "cumulative": 1942
     }
   ]
 }
