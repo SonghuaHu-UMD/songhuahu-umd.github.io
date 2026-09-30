@@ -225,6 +225,23 @@ const INST_ABBREV = {
 };
 const TOP_INST_GROUPS = ['UMD', 'MIT', 'BJTU', 'USF', 'Tongji', 'Villanova'];
 
+const normName = (s) => String(s || '').trim().toLowerCase().replace(/\s+/g, ' ');
+
+/* OpenAlex occasionally moves the same person between author records or changes the
+   record's display name. Keep this deliberately small: unlike fuzzy matching, these
+   reviewed aliases cannot merge two merely similar names. They are applied after
+   bylineName(), so a mismatched OpenAlex author record still loses to the printed byline. */
+const AUTHOR_ALIAS_GROUPS = [
+  ['Jiandong Qiu', 'Jiandong Qui'],
+  ['Fábio Duarte', 'Fábio Dias Duarte'],
+  ['Paul M. Schonfeld', 'Paul Schonfeld'],
+  ['Xuesong Simon Zhou', 'Xuesong Zhou'],
+  ['Xin Hui Wu', 'Xin Wu'],
+];
+const AUTHOR_ALIASES = new Map(AUTHOR_ALIAS_GROUPS.flatMap(group =>
+  group.map(name => [normName(name), group[0]])));
+const canonicalAuthorName = (name) => AUTHOR_ALIASES.get(normName(name)) || name;
+
 /* OpenAlex matches each byline slot to an author record and now and then hangs the wrong
    record on it: on W4390628442 the fourth author, printed "Zhengbing He", was filed under
    Songhua Hu's own ID, so the graph counted Hu twice on that paper and He not at all.
@@ -268,7 +285,6 @@ function checkBylines(works, records) {
 }
 
 function buildGraph(works) {
-  const norm = s => s.trim().toLowerCase().replace(/\s+/g, ' ');
   const nodeMap = new Map();
   const edgeMap = new Map();
   const authorInst = new Map();   /* normName -> Map(inst -> count) */
@@ -277,9 +293,10 @@ function buildGraph(works) {
     const seen = new Set();
     const authors = [];
     for (const a of (w.authorships || [])) {
-      const name = bylineName(a);
-      if (!name) continue;
-      const id = norm(name);
+      const byline = bylineName(a);
+      if (!byline) continue;
+      const name = canonicalAuthorName(byline);
+      const id = normName(name);
       if (seen.has(id)) continue;
       seen.add(id);
       authors.push({ id, name });
@@ -323,7 +340,7 @@ function buildGraph(works) {
       id: n.id,
       name: n.name,
       count: n.count,
-      isSelf: norm(n.name) === norm(SELF_NAME),
+      isSelf: normName(n.name) === normName(SELF_NAME),
       institution: inst,
       instGroup: groupFor(inst),
     };
@@ -332,6 +349,14 @@ function buildGraph(works) {
     const [source, target] = k.split('|');
     return { source, target, weight: w };
   });
+
+  /* A future refactor must not accidentally bypass the reviewed alias layer. */
+  for (const [canonical, ...variants] of AUTHOR_ALIAS_GROUPS) {
+    const bad = variants.map(normName).filter(id => nodeMap.has(id));
+    if (bad.length) {
+      throw new Error(`author aliases split from ${canonical}: ${bad.join(', ')}`);
+    }
+  }
   return { nodes, links };
 }
 
