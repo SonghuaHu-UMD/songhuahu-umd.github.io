@@ -1,8 +1,8 @@
 {
-  "generated": "2026-09-15",
+  "generated": "2026-10-01",
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en",
-  "journal_papers": 41,
+  "journal_papers": 42,
   "journal_papers_rounded": 40,
   "first_author": 21,
   "co_first": 4,
@@ -88,6 +88,13 @@
       "title": "Semantics-guided hierarchical decision-making for autonomous driving via LLM-assisted reinforcement learning",
       "venue": "Transportation Research Part C: Emerging Technologies",
       "authors": "W Li, T Wang, S Hu*",
+      "journal": true
+    },
+    {
+      "year": 2026,
+      "title": "Estimating vehicular emissions by applying deep learning on video camera scenes",
+      "venue": "Communications Engineering",
+      "authors": "A Kumar, T Benson, A Wang, S Hu, Y Sekimoto, P Santi, F Duarte, X Zhu, ...",
       "journal": true
     },
     {
@@ -180,13 +187,6 @@
       "venue": "Transportation Research Part C: Emerging Technologies",
       "authors": "R Su, J Eshtiyagh, P Santi, S Hu, F Duarte, M Mazzarello, C Ratti",
       "journal": true
-    },
-    {
-      "year": 2025,
-      "title": "Estimating vehicular emissions by applying deep learning on video camera scenes",
-      "venue": "",
-      "authors": "P Santi, A Kumar, T Benson, A Wang, S Hu, Y Sekimoto, F Duarte, X Zhu, ...",
-      "journal": false
     },
     {
       "year": 2025,
