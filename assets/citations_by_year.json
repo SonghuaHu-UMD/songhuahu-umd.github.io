@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-05",
-  "total_citations": 1950,
+  "generated": "2026-10-12",
+  "total_citations": 1931,
   "total_works": 45,
   "h_index": 19,
   "i10_index": 27,
@@ -12,38 +12,38 @@
     },
     {
       "year": 2020,
-      "annual": 37,
-      "cumulative": 43
+      "annual": 52,
+      "cumulative": 58
     },
     {
       "year": 2021,
-      "annual": 315,
-      "cumulative": 358
+      "annual": 295,
+      "cumulative": 353
     },
     {
       "year": 2022,
-      "annual": 352,
-      "cumulative": 710
+      "annual": 347,
+      "cumulative": 700
     },
     {
       "year": 2023,
-      "annual": 371,
-      "cumulative": 1081
+      "annual": 363,
+      "cumulative": 1063
     },
     {
       "year": 2024,
-      "annual": 344,
-      "cumulative": 1425
+      "annual": 333,
+      "cumulative": 1396
     },
     {
       "year": 2025,
-      "annual": 352,
-      "cumulative": 1777
+      "annual": 354,
+      "cumulative": 1750
     },
     {
       "year": 2026,
-      "annual": 173,
-      "cumulative": 1950
+      "annual": 181,
+      "cumulative": 1931
     }
   ]
 }
