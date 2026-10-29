@@ -26,9 +26,9 @@ redirect_from:
   using. markdown="1" is what keeps kramdown parsing the contents of these divs
   -- without it the markdown inside is emitted verbatim.
 
-  Only the prose is duplicated. Anything language-neutral -- the figures, the
-  dates leading each news item, every number rendered from `pubs` -- stays
-  written once and shared, which is what stops the two halves drifting apart.
+  Only the prose is duplicated. Anything language-neutral -- the figures, every
+  number rendered from `pubs` -- stays written once and shared, which is what
+  stops the two halves drifting apart.
 {% endcomment %}
 
 <div class="lang-en" markdown="1">
@@ -56,37 +56,11 @@ I serve as a reviewer for **over 60** journals including _Nature Cities_, _Natur
 我的研究综合运用<span style="color: #e67e22;">时空数据挖掘</span>、<span style="color: #e67e22;">网络科学</span>、<span style="color: #e67e22;">人工智能</span>、<span style="color: #e67e22;">交通建模</span>与<span style="color: #e67e22;">高级统计方法</span>，
 致力于推动<span style="color: #27ae60;">智能、可持续、有韧性且公平的交通出行系统</span>。
 已在 _Nature Sustainability_、_PNAS_、_Transportation Research Part A/C/D/E_ 等期刊发表期刊论文 **{{ pubs.journal_papers_rounded | default: 40 }} 余篇**（其中第一作者 **{{ pubs.first_author | default: 21 }}** 篇）。
-主持<span style="color: #8e44ad;">**香港研资局杰出青年学者计划（ECS）**</span>与<span style="color: #8e44ad;">**国家自然科学基金（NSFC）**</span>，共同主持<span style="color: #8e44ad;">**香港研资局主题研究计划（TRS）**</span>，并参与<span style="color: #8e44ad;">美国交通部、NIH、NSF、FHWA、美国能源部、斯德哥尔摩市政府及丰田 Woven City</span> 资助的多项课题。
+主持<span style="color: #8e44ad;">**香港研资局杰出青年学者计划（ECS）**</span>与<span style="color: #8e44ad;">**国家自然科学基金（NSFC）**</span>，共同主持<span style="color: #8e44ad;">**香港研资局主题研究计划（TRS）**</span>。
 现担任 _Nature Cities_、_Nature Communications_、_Transportation Research Part A-E_ 等 **60 余**本期刊审稿人。
 </div>
 
 <img src="/images/research_interests.svg" alt="Research interests" loading="lazy" decoding="async" style="width: 100%; max-width: 1100px; display: block; margin: 1em auto;" />
-
-
----
-
-<span class="lang-en">News</span><span class="lang-zh">最新动态</span>
-======
-
-{% comment %}
-  The bracketed date opens each line in both languages, so it is written once
-  and only the sentence after it is paired. Keeping the list itself shared also
-  keeps the two languages in the same order, with no way to add an item to one
-  and forget the other.
-{% endcomment %}
-* **[08/2026]** <span class="lang-en">My project on _<span style="color: #2980b9;">Data-Driven Human Exposure Modeling</span>_ is funded by **NSFC Young Scientists Fund C** <span style="color: #8e44ad;">**(PI)**</span>!</span><span class="lang-zh">课题《<span style="color: #2980b9;">数据驱动的人群暴露建模</span>》获**国家自然科学基金青年科学基金项目（C 类）**资助<span style="color: #8e44ad;">**（主持）**</span>！</span>
-* **[08/2026]** <span class="lang-en">Our project on _<span style="color: #2980b9;">AI-Driven Urban Emergency Response and Rescue</span>_ is funded by the **HK RGC Theme-based Research Scheme** <span style="color: #8e44ad;">**(Co-PI)**</span>!</span><span class="lang-zh">课题《<span style="color: #2980b9;">AI 驱动的城市应急响应与救援</span>》获**香港研资局主题研究计划（TRS）**资助<span style="color: #8e44ad;">**（共同主持）**</span>！</span>
-* **[06/2026]** <span class="lang-en">Welcoming **four new Ph.D. students** joining our group in Summer/Fall 2026!</span><span class="lang-zh">欢迎**四位新博士生**于 2026 年夏/秋季加入课题组！</span>
-* **[06/2026]** <span class="lang-en">My project on _<span style="color: #2980b9;">AI-Driven Mobility Chain Inference</span>_ is funded by the **HK RGC Early Career Scheme** <span style="color: #8e44ad;">**(PI)**</span>!</span><span class="lang-zh">课题《<span style="color: #2980b9;">AI 驱动的出行链推断</span>》获**香港研资局杰出青年学者计划（ECS）**资助<span style="color: #8e44ad;">**（主持）**</span>！</span>
-* **[04/2026]** <span class="lang-en">Our research featured on [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) and [**NS Research Briefing**](https://www.nature.com/articles/s41893-026-01798-8)!</span><span class="lang-zh">研究成果获 [**MIT NEWS**](https://news.mit.edu/2026/mit-researchers-measure-traffic-emissions-block-real-time-0402) 与 [**Nature Sustainability 研究简报**](https://www.nature.com/articles/s41893-026-01798-8) 报道！</span>
-* **[04/2026]** <span class="lang-en">New paper in [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)! See the visualization [**HERE**](https://senseable.mit.edu/fleeting-emissions/).</span><span class="lang-zh">新论文发表于 [**_Nature Sustainability_**](https://www.nature.com/articles/s41893-026-01797-9)！可视化展示见[**此处**](https://senseable.mit.edu/fleeting-emissions/)。</span>
-* **[09/2025]** <span class="lang-en">My project on _<span style="color: #2980b9;">Agentic AI Activity-Based Modeling</span>_ is funded by the **CityUHK Startup Grant** <span style="color: #8e44ad;">**(PI)**</span>!</span><span class="lang-zh">课题《<span style="color: #2980b9;">智能体 AI 驱动的活动链建模</span>》获**香港城市大学启动基金**资助<span style="color: #8e44ad;">**（主持）**</span>！</span>
-* **[09/2025]** <span class="lang-en">Joined [**_CityUHK_**](https://scholars.cityu.edu.hk/en/persons/songhuhu/) as a tenure-track Assistant Professor!</span><span class="lang-zh">加入[**香港城市大学**](https://scholars.cityu.edu.hk/en/persons/songhuhu/)，任终身教轨助理教授！</span>
-* **[05/2025]** <span class="lang-en">Invited job talk at **_UCL CEGE_** on Agentic AI in Human Mobility Simulation!</span><span class="lang-zh">受邀在**伦敦大学学院（UCL）土木、环境与地理工程系**作求职报告，主题为智能体 AI 与人类出行仿真！</span>
-* **[02/2025]** <span class="lang-en">Invited [job talk](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/) at **_Princeton University ACEE_**!</span><span class="lang-zh">受邀在**普林斯顿大学安德林格能源与环境中心（ACEE）**作[求职报告](https://acee.princeton.edu/events/towards-sustainable-urban-systems-with-human-centered-big-data-mining/)！</span>
-* **[01/2025]** <span class="lang-en">Invited job talk at **_University of Alberta CEE_**!</span><span class="lang-zh">受邀在**阿尔伯塔大学土木与环境工程系**作求职报告！</span>
-* **[10/2023]** <span class="lang-en">Received [**COTA Best Dissertation Award**](https://cee.umd.edu/news/story/hu-receives-cota-best-dissertation-award)!</span><span class="lang-zh">获 [**COTA 最佳博士论文奖**](https://cee.umd.edu/news/story/hu-receives-cota-best-dissertation-award)！</span>
-* **[05/2023]** <span class="lang-en">Received [**UMD CEE Best Doctoral Research Award**](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards)!</span><span class="lang-zh">获[**马里兰大学土木与环境工程系最佳博士研究奖**](https://cee.umd.edu/news/story/hu-waters-win-thesis-awards)！</span>
 
 
 ***
