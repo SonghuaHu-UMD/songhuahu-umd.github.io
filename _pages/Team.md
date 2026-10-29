@@ -28,16 +28,16 @@ We are a young and energetic group at the ACE department, CityUHK, brought toget
 Come and build the lab together with us! See the current opening: <a href="/Opportunities/" style="color: #c0392b; font-weight: bold;">2 fully-funded Ph.D. positions for 2027</a>.
 
 *Ph.D. Students*
-* <span style="color: #e67e22;">**Junxiang Zhang**</span> (2026~) — B.S. in Computer Science, Southern University of Science and Technology.
+* <span style="color: #e67e22;">**Junxiang Zhang**</span> (2026~) — B.S. in Computer Science.
   <br><span style="color: #7f8c8d;">*Research interests:* spatiotemporal data mining, vehicle electrification, V2G.</span>
   <br><span style="color: #7f8c8d;">*Email:* <a href="mailto:jz.7889@my.cityu.edu.hk">jz.7889@my.cityu.edu.hk</a></span>
-* <span style="color: #e67e22;">**Huazu Zhang**</span> (2026~) — M.S. in Geographic Information Science, Wuhan University.
+* <span style="color: #e67e22;">**Huazu Zhang**</span> (2026~) — M.S. in Geographic Information Science.
   <br><span style="color: #7f8c8d;">*Research interests:* spatiotemporal data mining, human mobility, complex networks.</span>
   <br><span style="color: #7f8c8d;">*Email:* <a href="mailto:huazzhang3-c@my.cityu.edu.hk">huazzhang3-c@my.cityu.edu.hk</a></span>
-* <span style="color: #e67e22;">**Jintong Zhang**</span> (2026~) — M.S. in Electronic and Information Engineering, Beihang University.
+* <span style="color: #e67e22;">**Jintong Zhang**</span> (2026~) — M.S. in Electronic and Information Engineering.
   <br><span style="color: #7f8c8d;">*Research interests:* UAV optimization, route planning, digital twins.</span>
   <br><span style="color: #7f8c8d;">*Email:* <a href="mailto:jintzhang9-c@my.cityu.edu.hk">jintzhang9-c@my.cityu.edu.hk</a></span>
-* <span style="color: #e67e22;">**Qishen Guo**</span> (2026~) — M.S. in Architecture and Urban Planning, Harbin Institute of Technology.
+* <span style="color: #e67e22;">**Qishen Guo**</span> (2026~) — M.S. in Architecture and Urban Planning.
   <br><span style="color: #7f8c8d;">*Research interests:* computer vision, urban regeneration, multi-source data fusion.</span>
   <br><span style="color: #7f8c8d;">*Email:* <a href="mailto:qishenguo2-c@my.cityu.edu.hk">qishenguo2-c@my.cityu.edu.hk</a></span>
 </div>
@@ -48,16 +48,16 @@ Come and build the lab together with us! See the current opening: <a href="/Oppo
 欢迎加入，与我们一起建设课题组！当前招生信息：<a href="/Opportunities/" style="color: #c0392b; font-weight: bold;">2027 年 2 个全奖博士名额</a>。
 
 *博士生*
-* <span style="color: #e67e22;">**Junxiang Zhang**</span>（2026~）—— 南方科技大学，计算机科学学士。
+* <span style="color: #e67e22;">**Junxiang Zhang**</span>（2026~）—— 计算机科学学士。
   <br><span style="color: #7f8c8d;">*研究兴趣：*时空数据挖掘、车辆电动化、车网互动（V2G）。</span>
   <br><span style="color: #7f8c8d;">*邮箱：*<a href="mailto:jz.7889@my.cityu.edu.hk">jz.7889@my.cityu.edu.hk</a></span>
-* <span style="color: #e67e22;">**Huazu Zhang**</span>（2026~）—— 武汉大学，地理信息科学硕士。
+* <span style="color: #e67e22;">**Huazu Zhang**</span>（2026~）—— 地理信息科学硕士。
   <br><span style="color: #7f8c8d;">*研究兴趣：*时空数据挖掘、人类出行、复杂网络。</span>
   <br><span style="color: #7f8c8d;">*邮箱：*<a href="mailto:huazzhang3-c@my.cityu.edu.hk">huazzhang3-c@my.cityu.edu.hk</a></span>
-* <span style="color: #e67e22;">**Jintong Zhang**</span>（2026~）—— 北京航空航天大学，电子与信息工程硕士。
+* <span style="color: #e67e22;">**Jintong Zhang**</span>（2026~）—— 电子与信息工程硕士。
   <br><span style="color: #7f8c8d;">*研究兴趣：*无人机优化、路径规划、数字孪生。</span>
   <br><span style="color: #7f8c8d;">*邮箱：*<a href="mailto:jintzhang9-c@my.cityu.edu.hk">jintzhang9-c@my.cityu.edu.hk</a></span>
-* <span style="color: #e67e22;">**Qishen Guo**</span>（2026~）—— 哈尔滨工业大学，建筑与城市规划硕士。
+* <span style="color: #e67e22;">**Qishen Guo**</span>（2026~）—— 建筑与城市规划硕士。
   <br><span style="color: #7f8c8d;">*研究兴趣：*计算机视觉、城市更新、多源数据融合。</span>
   <br><span style="color: #7f8c8d;">*邮箱：*<a href="mailto:qishenguo2-c@my.cityu.edu.hk">qishenguo2-c@my.cityu.edu.hk</a></span>
 </div>
