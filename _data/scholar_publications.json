@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01",
+  "generated": "2026-11-01",
   "source": "Google Scholar",
   "profile_url": "https://scholar.google.com/citations?user=uVIbQyAAAAAJ&hl=en",
   "journal_papers": 42,
@@ -89,6 +89,13 @@
       "venue": "Transportation Research Part C: Emerging Technologies",
       "authors": "W Li, T Wang, S Hu*",
       "journal": true
+    },
+    {
+      "year": 2026,
+      "title": "From Outcomes to Components: A Counterfactual Evaluation Framework for LLM-Proposed Repairs",
+      "venue": "arXiv preprint arXiv:2610.26650",
+      "authors": "H Ye, S Hu",
+      "journal": false
     },
     {
       "year": 2026,
